@@ -1,0 +1,15 @@
+{
+  "name": "KALM Move",
+  "short_name": "KALM Move",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f4ec",
+  "theme_color": "#121713",
+  "icons": [
+    {
+      "src": "branding/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
