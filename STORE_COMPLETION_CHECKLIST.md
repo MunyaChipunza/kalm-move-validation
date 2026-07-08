@@ -15,6 +15,6 @@
 | Contact form complete | Complete | Netlify contact form |
 | Policies complete | Complete | Returns, privacy, delivery, payment and terms sections |
 | Mobile complete | Complete | Edge headless desktop/mobile QA passed with no horizontal overflow |
-| Netlify deploy | Pending | Push and trigger deploy |
+| Netlify deploy | Complete | Live at https://kalm-move-validation.netlify.app/ |
 | Payment setup | Outstanding | See `PAYMENT_SHIPPING_SETUP.md` |
 | Shipping setup | Outstanding | See `PAYMENT_SHIPPING_SETUP.md` |
