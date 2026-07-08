@@ -2,37 +2,32 @@
 
 ## Public storefront images
 
-| File | Public use | Source/reference | Notes |
+| File | Public use | Source/reference | Status | Notes |
+|---|---|---|---|---|
+| `branding/kalm-collective-transparent-logo.png` | Source parent logo | Google Drive `Branding/Kalm Collective Transparent Logo.png` | verified-brand-asset | Source of truth for KALM Collective on the public site. |
+| `branding/kalm-collective-display-logo.png` | Header and footer parent logo | Trimmed derivative of Google Drive `Branding/Kalm Collective Transparent Logo.png` | verified-brand-asset | Used for display because the raw source PNG has a large transparent canvas. |
+| `branding/kalm-collective-logo.png` | Brand backup/source logo | Google Drive `Branding/Kalm Collective Logo.png` | verified-brand-asset | Stored as backup/source asset. |
+| `branding/ks-active-logo-transparent.png` | KS Active brand page | Local KS Active documents folder | verified-brand-asset | Keeps KS Active distinct as a brand/collection inside KALM Collective. |
+| `assets/images/home-hero-source-collage.webp` | Home hero collage | KS Active workbook CDN images | verified-source-collage | Built from the same source image set used for KS Active products. |
+| `assets/images/ks-active-archive-hero.webp` | KS Active brand hero | KS Active workbook CDN images | verified-source-collage | Does not imply current physical stock. |
+| `assets/images/ks-active-archive-tile.webp` | KS Active category tile | KS Active workbook CDN images | verified-source-collage | Used for the archive drop tile. |
+| `assets/images/ks-active/*.webp` | KS Active product cards/details | `January 2023 Order.xlsx` Shopify CDN links | verified-image | See `PRODUCT_IMAGE_AUDIT.md` for per-product mapping. |
+| `branding/favicon.png` | Browser favicon | Google Drive KALM Collective logo | verified-brand-asset | Generated from the Drive PNG logo. |
+| `branding/icon-192.png` | Web manifest icon | Google Drive KALM Collective logo | verified-brand-asset | Generated from the Drive PNG logo. |
+| `branding/icon-512.png` | Web manifest icon | Google Drive KALM Collective logo | verified-brand-asset | Generated from the Drive PNG logo. |
+| `branding/social-preview.png` | Social preview | Google Drive logo plus KS source collage | verified-source-composite | Does not use generated product imagery. |
+
+## Pending or intentionally unused
+
+| Asset group | Public use | Status | Notes |
 |---|---|---|---|
-| `assets/images/home-hero-shop.webp` | Home hero | Newly created campaign visual | KALM Collective retail hero |
-| `assets/images/ks-active-hero.webp` | KS Active brand hero | Newly created from KS colour/product references | Replaces old public model imagery |
-| `assets/images/kalm-move-hero-shop.webp` | KALM Move brand hero | Newly created campaign visual | Uses KALM Move product direction |
-| `assets/images/ks-active-brand-tile.webp` | KS Active category tile | Newly created from archive references | Public category image |
-| `assets/images/kalm-move-brand-tile.webp` | KALM Move category tile | Newly created from KALM Move product direction | Public category image |
-| `assets/images/full-outfit-lifestyle-shop.webp` | KALM Move set product | Newly created lifestyle visual | Public product image |
-| `assets/images/ks-archive-leggings-flatlay.webp` | KS Active leggings products | Newly created from workbook colours | Public product flatlay |
-| `assets/images/ks-archive-sports-bras-flatlay.webp` | KS Active sports bra products | Newly created from workbook colours and styles | Public product flatlay |
-| `assets/images/ks-archive-shorts-romper-flatlay.webp` | KS Active shorts, crop and romper products | Newly created from workbook colours and styles | Public product flatlay |
-| `assets/images/legging-flatlay.webp` | KALM Move legging product | Existing generated KALM Move asset | Public product flatlay |
-| `assets/images/bra-flatlay.webp` | KALM Move sports bra product | Existing generated KALM Move asset | Public product flatlay |
-| `assets/images/tee-flatlay.webp` | KALM Move tee product | Existing generated KALM Move asset | Public product flatlay |
-| `assets/images/starter-accessory-flatlay.webp` | KALM Move accessory and set support | Existing generated KALM Move asset | Public product flatlay |
+| KALM Move product images | Product cards/details | concept-only | No final supplier/product images found; public UI renders honest placeholders. |
+| Wellness, Home + Living and Outdoor Living category images | Category tiles | pending | Public UI marks these as pending rather than showing unrelated imagery. |
+| Older generated KALM Move lifestyle and flatlay files | None | not-used-publicly | Retained in the folder for reference only; not referenced by `products.json` or the current UI. |
+| Older generated KS flatlay files | None | superseded | Replaced by workbook-source product images. |
 
-## Branding
+## Guardrails
 
-| File | Public use | Source/reference | Notes |
-|---|---|---|---|
-| `branding/kalm-collective-logo.svg` | Header parent brand | KALM buffalo family mark | Storefront parent lockup |
-| `branding/kalm-collective-logo-light.svg` | Footer parent brand | KALM buffalo family mark | Dark background lockup |
-| `branding/kalm-move-logo.svg` | KALM Move brand page/data | KALM buffalo family mark | Existing KALM Move lockup |
-| `branding/ks-active-logo-transparent.png` | KS Active brand page | KS Active source logo | Copied from KS Active documents |
-| `branding/favicon.svg` | Site favicon | Existing KALM buffalo favicon | Store favicon |
-| `branding/social-preview.png` | Social preview | Cropped from home shop hero | 1200 x 630 |
-
-## Legacy KS Active references
-
-Legacy KS Active product images and Shopify CDN links from `January 2023 Order.xlsx` were used for product naming, colour and garment reference. Old KS Active human model images are not used as public model imagery.
-
-## Public claim guardrails
-
-The public site must not claim that campaign visuals are customer photos, verified buyers, final photoshoot output or current in-stock model photography.
+- Do not claim that generated visuals are customer photos, verified buyer images, final photoshoot output or current stock photography.
+- Do not claim KS Active items are currently available until the historical workbook quantities are physically counted.
+- Do not show KALM Move product imagery as final until supplier/sample review confirms the actual item.

@@ -26,13 +26,14 @@
       size: "all",
       color: "all",
       price: "all",
-      search: ""
+      search: "",
+      sort: "featured"
     }
   };
 
   const routes = {
     home: /^#\/?$/,
-    shop: /^#\/shop$/,
+    shop: /^#\/shop(?:\?.*)?$/,
     brand: /^#\/brand\/([^/]+)$/,
     product: /^#\/product\/([^/]+)$/,
     checkout: /^#\/checkout$/,
@@ -126,34 +127,82 @@
   }
 
   function renderHome() {
-    const featured = state.products.filter((product) => ["kalm-everyday-movement-legging", "kalm-modest-performance-tee", "ks-seamless-breathable-leggings", "ks-crisscross-back-sports-bra"].includes(product.id));
+    const featured = state.products.filter((product) => ["ks-seamless-breathable-leggings", "ks-crisscross-back-sports-bra", "ks-high-waist-seamless-shorts", "ks-open-back-romper", "kalm-modest-performance-tee"].includes(product.id));
+    const categories = [
+      {
+        title: "KS Active Archive Drop",
+        copy: "Original KS Active styles with source images now mapped product by product.",
+        href: "#/brand/ks-active",
+        image: "assets/images/ks-active-archive-tile.webp",
+        status: "Archive availability confirmed by WhatsApp"
+      },
+      {
+        title: "KALM Move",
+        copy: "Concept collection for modest tees, leggings and support layers.",
+        href: "#/brand/kalm-move",
+        status: "Product images pending supplier confirmation"
+      },
+      {
+        title: "Wellness Accessories",
+        copy: "Accessories will be added after source images and availability are confirmed.",
+        href: "#/shop?category=wellness",
+        status: "Image to be confirmed after stock count"
+      },
+      {
+        title: "Home + Living",
+        copy: "Future KALM Collective home essentials category.",
+        href: "#/shop?category=home-living",
+        status: "Archive product image pending"
+      },
+      {
+        title: "Outdoor Living",
+        copy: "Future outdoor and everyday-living category.",
+        href: "#/shop?category=outdoor-living",
+        status: "Archive product image pending"
+      }
+    ];
     app.innerHTML = `
       <div class="page">
-        <section class="hero">
+        <section class="hero retail-hero">
           <div class="hero-copy">
-            <h1>Activewear for real routines.</h1>
-            <p>KALM Collective brings KS Active archive styles and the new KALM Move line into one calm, practical activewear shop.</p>
+            <p class="micro">KALM Collective</p>
+            <h1>KALM Collective</h1>
+            <p>Curated active, home and lifestyle essentials.</p>
             <div class="hero-actions">
-              <a class="button primary" href="#/shop">Shop all products</a>
-              <a class="button secondary" href="#/brand/ks-active">Shop by brand</a>
+              <a class="button primary" href="#/brand/ks-active">Shop KS Active Archive</a>
+              <a class="button secondary" href="#/shop">Browse all collections</a>
             </div>
             <div class="hero-strip" aria-label="Store highlights">
-              <div><strong>KS Active</strong><span>Archive stock and original styles</span></div>
-              <div><strong>KALM Move</strong><span>New everyday movement line</span></div>
-              <div><strong>Assisted checkout</strong><span>Order help while payment setup is finalised</span></div>
+              <div><strong>KS Active</strong><span>Archive drop being prepared</span></div>
+              <div><strong>KALM Move</strong><span>Concept collection</span></div>
+              <div><strong>More brands</strong><span>Coming soon</span></div>
             </div>
           </div>
           <figure class="hero-media">
-            <img src="assets/images/home-hero-shop.webp" alt="KALM Collective activewear campaign with women in practical everyday movement outfits">
+            <img src="assets/images/home-hero-source-collage.webp" alt="KS Active archive product source collage">
           </figure>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2>Shop categories</h2>
+                <p>Current product images are either verified source images or marked pending in the product card.</p>
+              </div>
+            </div>
+            <div class="category-grid">
+              ${categories.map(renderCategoryTile).join("")}
+            </div>
+          </div>
         </section>
 
         <section class="section soft">
           <div class="container">
             <div class="section-head">
               <div>
-                <h2>Shop by brand</h2>
-                <p>Move between the original KS Active archive range and the new KALM Move collection.</p>
+                <h2>Brand collections</h2>
+                <p>KS Active and KALM Move sit inside KALM Collective as distinct brands.</p>
               </div>
               <a class="button secondary" href="#/shop">View all</a>
             </div>
@@ -168,7 +217,7 @@
             <div class="section-head">
               <div>
                 <h2>Featured products</h2>
-                <p>Cart-ready product pages with size, colour and order-assistance capture.</p>
+                <p>KS Active images are source-mapped. KALM Move product images remain clearly marked as pending.</p>
               </div>
               <a class="button text" href="#/shop">Open shop</a>
             </div>
@@ -179,12 +228,12 @@
         <section class="section soft">
           <div class="container about-grid">
             <div>
-              <p class="micro">Store setup</p>
-              <h2>Checkout assistance is live; payment and shipping setup are next.</h2>
+              <p class="micro">Order handoff</p>
+              <h2>Requests are captured first; payment and delivery are confirmed directly.</h2>
             </div>
             <div class="panel">
-              <p>Products can be added to cart, edited and sent through order assistance. Live card payment and automated courier rates are intentionally not connected until the selected South African payment provider and shipping rules are configured.</p>
-              <a class="button primary" href="#/checkout">Go to checkout assistance</a>
+              <p>Items can be added to an enquiry bag, edited and sent through order assistance. Card payment and automated courier rates are intentionally not connected until the selected South African payment provider and shipping rules are configured.</p>
+              <a class="button primary" href="#/checkout">Send enquiry</a>
             </div>
           </div>
         </section>
@@ -195,7 +244,19 @@
     focusApp();
   }
 
+  function renderCategoryTile(category) {
+    return `
+      <a class="category-tile" href="${category.href}">
+        ${category.image ? `<img src="${category.image}" alt="${escapeAttr(category.title)} category image" loading="lazy">` : renderMediaPlaceholder({ imageLabel: category.title, imageSubtext: category.status }, "category")}
+        <span>${escapeHtml(category.status)}</span>
+        <strong>${escapeHtml(category.title)}</strong>
+        <p>${escapeHtml(category.copy)}</p>
+      </a>
+    `;
+  }
+
   function renderBrandTile(brand) {
+    const action = brand.id === "kalm-move" ? "View" : "Shop";
     return `
       <article class="brand-tile">
         <div class="brand-tile-content">
@@ -204,10 +265,35 @@
             <h3>${escapeHtml(brand.name)}</h3>
             <p>${escapeHtml(brand.summary)}</p>
           </div>
-          <a class="button primary" href="#/brand/${brand.id}">Shop ${escapeHtml(brand.name)}</a>
+          <a class="button primary" href="#/brand/${brand.id}">${action} ${escapeHtml(brand.name)}</a>
         </div>
-        <img src="${brand.tileImage}" alt="${escapeHtml(brand.name)} activewear category image">
+        ${brand.tileImage ? `<img src="${brand.tileImage}" alt="${escapeAttr(brand.name)} category image">` : renderMediaPlaceholder({ imageLabel: brand.name, imageSubtext: "Product image to be confirmed" }, "brand")}
       </article>
+    `;
+  }
+
+  function renderProductMedia(product, context = "card") {
+    if (product.image) {
+      const loading = context === "detail" ? "" : ' loading="lazy"';
+      return `<img src="${product.image}" alt="${escapeAttr(product.title)} product image"${loading}>`;
+    }
+    return renderMediaPlaceholder(product, context);
+  }
+
+  function renderLineMedia(product, className) {
+    if (product.image) return `<img src="${product.image}" alt="${escapeAttr(product.title)}">`;
+    return renderMediaPlaceholder(product, className);
+  }
+
+  function renderMediaPlaceholder(item, context = "card") {
+    const label = item.imageLabel || item.title || "Image pending";
+    const subtext = item.imageSubtext || item.status || "Image to be confirmed";
+    const classes = `media-placeholder media-placeholder-${context}`;
+    return `
+      <div class="${classes}" role="img" aria-label="${escapeAttr(label)}: ${escapeAttr(subtext)}">
+        <span>${escapeHtml(subtext)}</span>
+        <strong>${escapeHtml(label)}</strong>
+      </div>
     `;
   }
 
@@ -218,8 +304,8 @@
       <div class="page">
         <section class="checkout container">
           <p class="micro">Shop</p>
-          <h1>All products</h1>
-          <p>Browse KS Active archive stock and KALM Move products by brand, product type, size, colour and price.</p>
+          <h1>Shop KALM Collective</h1>
+          <p>Browse KS Active archive styles and KALM Move concept products by brand, product type, size, colour and price.</p>
         </section>
         <section class="section">
           <div class="container filters-shell">
@@ -238,8 +324,16 @@
               </div>
               <div class="result-bar">
                 <span>${filtered.length} product${filtered.length === 1 ? "" : "s"}</span>
-                <span>Assisted checkout enabled</span>
+                <label class="sort-control">Sort
+                  <select data-sort>
+                    <option value="featured"${state.filters.sort === "featured" ? " selected" : ""}>Featured</option>
+                    <option value="price-low"${state.filters.sort === "price-low" ? " selected" : ""}>Price: low to high</option>
+                    <option value="price-high"${state.filters.sort === "price-high" ? " selected" : ""}>Price: high to low</option>
+                    <option value="brand"${state.filters.sort === "brand" ? " selected" : ""}>Brand</option>
+                  </select>
+                </label>
               </div>
+              <p class="shop-note">No payment is taken online. KALM confirms availability, payment method and delivery timing directly.</p>
               <div class="product-grid">${filtered.length ? filtered.map(renderProductCard).join("") : renderEmpty("No products match those filters.")}</div>
             </div>
           </div>
@@ -280,8 +374,14 @@
       grid.innerHTML = filtered.length ? filtered.map(renderProductCard).join("") : renderEmpty("No products match those filters.");
       bindProductCards();
     });
+    const sort = document.querySelector("[data-sort]");
+    sort.addEventListener("change", (event) => {
+      state.filters.sort = event.target.value;
+      renderShop();
+      track("product_sort_change", { sort: event.target.value });
+    });
     document.querySelector("[data-clear-filters]").addEventListener("click", () => {
-      state.filters = { brand: "all", type: "all", size: "all", color: "all", price: "all", search: "" };
+      state.filters = { brand: "all", type: "all", size: "all", color: "all", price: "all", search: "", sort: "featured" };
       renderShop();
       track("product_filters_clear", {});
     });
@@ -289,7 +389,7 @@
 
   function getFilteredProducts() {
     const search = state.filters.search.trim().toLowerCase();
-    return state.products.filter((product) => {
+    const filtered = state.products.filter((product) => {
       if (state.filters.brand !== "all" && product.brand !== state.filters.brand) return false;
       if (state.filters.type !== "all" && product.type !== state.filters.type) return false;
       if (state.filters.size !== "all" && !product.sizes.includes(state.filters.size)) return false;
@@ -303,36 +403,46 @@
       }
       return true;
     });
+    const sorted = [...filtered];
+    if (state.filters.sort === "price-low") sorted.sort((a, b) => a.price - b.price);
+    else if (state.filters.sort === "price-high") sorted.sort((a, b) => b.price - a.price);
+    else if (state.filters.sort === "brand") sorted.sort((a, b) => `${a.brand} ${a.title}`.localeCompare(`${b.brand} ${b.title}`));
+    else sorted.sort((a, b) => {
+      if (a.brandId !== b.brandId) return a.brandId === "ks-active" ? -1 : 1;
+      return String(a.type).localeCompare(String(b.type)) || String(a.title).localeCompare(String(b.title));
+    });
+    return sorted;
   }
 
   function renderBrand(brandId) {
     const brand = state.brands.find((item) => item.id === brandId);
     if (!brand) return renderShop();
     const products = state.products.filter((product) => product.brandId === brandId);
+    const isKsActive = brandId === "ks-active";
     app.innerHTML = `
       <div class="page">
-        <section class="brand-hero">
-          <img src="${brand.heroImage}" alt="${escapeHtml(brand.name)} campaign image">
+        <section class="brand-hero ${brand.heroImage ? "" : "is-placeholder"}">
+          ${brand.heroImage ? `<img src="${brand.heroImage}" alt="${escapeAttr(brand.name)} source image collage">` : renderMediaPlaceholder({ imageLabel: brand.name, imageSubtext: "Concept collection, product image to be confirmed" }, "hero")}
           <div class="brand-hero-content">
             <img class="brand-mark" src="${brand.logo}" alt="${escapeHtml(brand.name)} logo">
             <h1>${escapeHtml(brand.name)}</h1>
             <p>${escapeHtml(brand.summary)}</p>
-            <a class="button primary" href="#/shop">Shop ${escapeHtml(brand.name)}</a>
+            <a class="button primary" href="#/shop">${isKsActive ? "Shop" : "View"} ${escapeHtml(brand.name)}</a>
           </div>
         </section>
         <section class="section">
           <div class="container">
             <div class="section-head">
               <div>
-                <h2>${brandId === "ks-active" ? "Archive stock" : "New collection"}</h2>
-                <p>${brandId === "ks-active" ? "Historical workbook quantities exist, but final availability is confirmed through order assistance before payment." : "Practical movement wear designed around everyday routines, calm styling and easy outfit building."}</p>
+                <h2>${isKsActive ? "Archive availability" : "Concept collection"}</h2>
+                <p>${isKsActive ? "Historical workbook quantities exist, but final availability is confirmed through order assistance before payment." : "Practical movement wear being shaped around modest tees, leggings, support layers and calm outfit building. Final product imagery is pending."}</p>
               </div>
               <a class="button secondary" href="#/shop">All products</a>
             </div>
             <div class="product-grid">${products.map(renderProductCard).join("")}</div>
           </div>
         </section>
-        ${brandId === "kalm-move" ? renderMoveStory() : renderArchiveStory()}
+        ${isKsActive ? renderArchiveStory() : renderMoveStory()}
         ${renderFooter()}
       </div>
     `;
@@ -349,7 +459,7 @@
             <h2>Original styles, cleaner retail copy.</h2>
           </div>
           <div class="panel">
-            <p>The archive range keeps the KS Active name for the original products while removing older body-shaping language from the public shop. Size and colour requests are confirmed before payment so the store does not oversell remaining stock.</p>
+            <p>The archive range keeps the KS Active name for the original products while removing older body-shaping language from the public shop. Size and colour requests are confirmed before payment so the store does not overstate remaining availability.</p>
           </div>
         </div>
       </section>
@@ -365,7 +475,7 @@
             <h2>Movement wear for everyday life.</h2>
           </div>
           <div class="panel">
-            <p>KALM Move uses the buffalo brand family and a practical product language: leggings, support layers, modest tees and full looks that work for walks, errands, home-to-gym transitions and calm outdoor movement.</p>
+            <p>KALM Move uses the buffalo brand family and a practical product language: leggings, support layers, modest tees and full looks for walks, errands, home-to-gym transitions and calm outdoor movement.</p>
           </div>
         </div>
       </section>
@@ -373,14 +483,14 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <h2>Everyday movement scenes</h2>
-              <p>Legging, support layer and modest tee styling for real routines.</p>
+              <h2>What remains pending</h2>
+              <p>These items stay in enquiry mode until supplier samples, final product photos, payment setup and delivery handoff are confirmed.</p>
             </div>
           </div>
-          <div class="image-rail">
-            <figure><img src="assets/images/legging-lifestyle.webp" alt="KALM Move legging lifestyle image"><figcaption>Everyday legging</figcaption></figure>
-            <figure><img src="assets/images/bra-lifestyle.webp" alt="KALM Move sports bra lifestyle image"><figcaption>Support layer</figcaption></figure>
-            <figure><img src="assets/images/tee-lifestyle.webp" alt="KALM Move modest tee lifestyle image"><figcaption>Modest tee</figcaption></figure>
+          <div class="pending-grid">
+            <article><strong>Product photos</strong><span>To be confirmed after supplier and sample review.</span></article>
+            <article><strong>Payment method</strong><span>No card details are collected on this website yet.</span></article>
+            <article><strong>Delivery timing</strong><span>Confirmed directly after availability and fulfilment checks.</span></article>
           </div>
         </div>
       </section>
@@ -396,7 +506,7 @@
         <section class="container product-detail">
           <div class="product-gallery">
             <div class="product-gallery-main">
-              <img src="${product.image}" alt="${escapeHtml(product.title)} product image">
+              ${renderProductMedia(product, "detail")}
             </div>
           </div>
           <div class="product-info">
@@ -406,13 +516,13 @@
               <p class="detail-copy">${escapeHtml(product.description)}</p>
             </div>
             <div class="price">${formatMoney(product.price)}</div>
-            <div class="status-note">${escapeHtml(product.stockLabel)}. Checkout is being finalised. Contact us to complete this order.</div>
+            <div class="status-note">${escapeHtml(product.stockLabel)}. No payment is taken here; KALM confirms availability, payment and delivery directly.</div>
             <div class="option-panel">
               <div class="selectors">
                 <label>Size${renderOptionSelect(product, "size")}</label>
                 <label>Colour${renderOptionSelect(product, "color")}</label>
               </div>
-              <button class="button primary" type="button" data-add-to-cart="${product.id}">Add to cart</button>
+              <button class="button primary" type="button" data-add-to-cart="${product.id}">${escapeHtml(product.ctaLabel || "Add to enquiry")}</button>
             </div>
             <div class="detail-list">
               <div><strong>Fit notes</strong><span>${escapeHtml(product.fitNotes)}</span></div>
@@ -440,7 +550,7 @@
     return `
       <article class="product-card" data-product-id="${product.id}">
         <a class="product-card-media" href="#/product/${product.slug}" aria-label="View ${escapeAttr(product.title)}">
-          <img src="${product.image}" alt="${escapeAttr(product.title)} product image" loading="lazy">
+          ${renderProductMedia(product, "card")}
           <span class="stock-chip">${escapeHtml(product.stockLabel)}</span>
         </a>
         <div class="product-card-body">
@@ -452,7 +562,7 @@
             <label>Colour${renderOptionSelect(product, "color")}</label>
           </div>
           <div class="card-actions">
-            <button class="button primary" type="button" data-add-to-cart="${product.id}">Add to cart</button>
+            <button class="button primary" type="button" data-add-to-cart="${product.id}">${escapeHtml(product.ctaLabel || "Add to enquiry")}</button>
             <a class="button secondary" href="#/product/${product.slug}">View details</a>
           </div>
         </div>
@@ -474,17 +584,19 @@
     document.querySelectorAll("[data-add-to-cart]").forEach((button) => {
       button.addEventListener("click", () => {
         const productId = button.dataset.addToCart;
+        const product = productById(productId);
+        const label = product?.ctaLabel || "Add to enquiry";
         const scope = button.closest(".product-card, .option-panel, .product-info") || document;
         const size = scope.querySelector(`[data-size-select="${cssEscape(productId)}"]`)?.value || "";
         const color = scope.querySelector(`[data-color-select="${cssEscape(productId)}"]`)?.value || "";
         if (!size || !color) {
           button.textContent = "Choose size and colour";
-          setTimeout(() => (button.textContent = "Add to cart"), 1300);
+          setTimeout(() => (button.textContent = label), 1300);
           return;
         }
         addToCart(productId, size, color);
-        button.textContent = "Added";
-        setTimeout(() => (button.textContent = "Add to cart"), 1200);
+        button.textContent = "Added to enquiry";
+        setTimeout(() => (button.textContent = label), 1200);
       });
     });
   }
@@ -499,21 +611,21 @@
     saveCart();
     renderCart();
     openCart();
-    track("add_to_cart", { productId, title: product.title, brand: product.brand, size, color, price: product.price });
+    track("add_to_enquiry", { productId, title: product.title, brand: product.brand, size, color, price: product.price });
   }
 
   function renderCart() {
     cartCountEl.textContent = cartCount();
     cartSubtotalEl.textContent = formatMoney(cartSubtotal());
     if (!state.cart.length) {
-      cartItemsEl.innerHTML = renderEmpty("Your cart is empty. Add products to request checkout assistance.");
+      cartItemsEl.innerHTML = renderEmpty("Your enquiry bag is empty. Add products to request availability or checkout assistance.");
       return;
     }
     cartItemsEl.innerHTML = state.cart.map((line) => {
       const product = productById(line.productId);
       return `
         <div class="cart-line">
-          <img src="${product.image}" alt="${escapeAttr(product.title)}">
+          ${renderLineMedia(product, "line")}
           <div>
             <h3>${escapeHtml(product.title)}</h3>
             <p>${escapeHtml(line.size)} / ${escapeHtml(line.color)}</p>
@@ -557,13 +669,13 @@
     app.innerHTML = `
       <div class="page">
         <section class="checkout container">
-          <p class="micro">Checkout assistance</p>
-          <h1>Complete this order with KALM.</h1>
-          <p>Checkout is being finalised. Contact us to complete this order.</p>
+          <p class="micro">Enquiry assistance</p>
+          <h1>Send your request to KALM.</h1>
+          <p>No payment is taken here. KALM confirms availability, payment method and delivery timing directly.</p>
           <div class="checkout-grid">
             <div class="panel soft">
-              <h2>Cart</h2>
-              ${state.cart.length ? `<div class="order-list">${state.cart.map(renderOrderLine).join("")}</div>` : renderEmpty("Your cart is empty.")}
+              <h2>Enquiry bag</h2>
+              ${state.cart.length ? `<div class="order-list">${state.cart.map(renderOrderLine).join("")}</div>` : renderEmpty("Your enquiry bag is empty.")}
               <div class="cart-summary">
                 <div><span>Subtotal</span><strong>${formatMoney(cartSubtotal())}</strong></div>
                 <p>Payment gateway and shipping rates are not connected yet, so no card details are collected here.</p>
@@ -583,7 +695,7 @@
                 <label>Delivery area<input name="delivery_area" placeholder="Suburb, city" required></label>
               </div>
               <label>Order notes<textarea name="message" placeholder="Sizing questions, colour substitutions, delivery notes"></textarea></label>
-              <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may use my details to respond to this order assistance request and stock or size questions.</span></label>
+              <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may use my details to respond to this order assistance request and availability or size questions.</span></label>
               <button class="button primary" type="submit">Send order request</button>
               <p class="form-status" role="status"></p>
             </form>
@@ -599,8 +711,8 @@
   function renderOrderLine(line) {
     const product = productById(line.productId);
     return `
-      <div class="order-line">
-        <img src="${product.image}" alt="${escapeAttr(product.title)}">
+        <div class="order-line">
+        ${renderLineMedia(product, "order")}
         <div>
           <strong>${escapeHtml(product.title)}</strong>
           <span>${escapeHtml(line.size)} / ${escapeHtml(line.color)} x ${line.qty}</span>
@@ -621,13 +733,13 @@
             <div class="about-grid">
               <article class="about-card">
                 <h2>KS Active</h2>
-                <p>The original activewear brand, now held as an archive stock section with cleaner product copy and order assistance before final payment.</p>
+                <p>The original activewear brand, now held as an archive section with cleaner product copy and order assistance before final payment.</p>
                 <a class="button secondary" href="#/brand/ks-active">Shop KS Active</a>
               </article>
               <article class="about-card">
                 <h2>KALM Move</h2>
-                <p>New activewear for real routines: walking, school-run-to-training, errands, light gym and calm outdoor movement.</p>
-                <a class="button secondary" href="#/brand/kalm-move">Shop KALM Move</a>
+                <p>Concept activewear for real routines: walking, school-run-to-training, errands, light gym and calm outdoor movement.</p>
+                <a class="button secondary" href="#/brand/kalm-move">View KALM Move</a>
               </article>
             </div>
           </section>
@@ -659,7 +771,7 @@
               </div>
               <div class="form-row">
                 <label>WhatsApp number<input name="whatsapp" autocomplete="tel" inputmode="tel"></label>
-                <label>Topic<select name="topic" required><option>Order assistance</option><option>Size help</option><option>Stock question</option><option>Returns or exchange</option></select></label>
+                <label>Topic<select name="topic" required><option>Order assistance</option><option>Size help</option><option>Availability question</option><option>Returns or exchange</option></select></label>
               </div>
               <label>Message<textarea name="message" required></textarea></label>
               <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may use my details to respond to this enquiry.</span></label>
@@ -681,7 +793,7 @@
         <section class="simple-page container">
           <p class="micro">Policies</p>
           <h1>Store policies.</h1>
-          <p class="lead">These policies are prepared for assisted checkout and can be tightened once the payment gateway and courier rules are connected.</p>
+          <p class="lead">These policies are prepared for assisted enquiries and can be tightened once the payment gateway and courier rules are connected.</p>
           <section class="section policies-grid">
             <article class="policy-card"><h2>Returns and exchanges</h2><p>Unworn items with tags and packaging can be reviewed for return or exchange within 7 days of receipt. Hygiene-sensitive items must be unworn and unwashed.</p></article>
             <article class="policy-card"><h2>Privacy and POPIA</h2><p>Customer details are used to respond to orders, delivery, size help and service questions. Details are not sold.</p></article>
@@ -715,8 +827,8 @@
       <footer class="site-footer">
         <div class="footer-inner">
           <div>
-            <img src="branding/kalm-collective-logo-light.svg" alt="KALM Collective">
-            <p>KS Active archive stock and KALM Move activewear under one KALM Collective storefront.</p>
+            <img src="branding/kalm-collective-display-logo.png" alt="KALM Collective">
+            <p>KS Active archive styles and KALM Move concept activewear under one KALM Collective storefront.</p>
           </div>
           <nav class="footer-links" aria-label="Footer navigation">
             <a href="#/shop">Shop</a>
@@ -746,7 +858,7 @@
   }
 
   function cartSummaryText() {
-    if (!state.cart.length) return "Cart is empty";
+    if (!state.cart.length) return "Enquiry bag is empty";
     return state.cart.map((line) => {
       const product = productById(line.productId);
       return `${product.title} / ${line.size} / ${line.color} / qty ${line.qty} / ${formatMoney(product.price * line.qty)}`;

@@ -4,20 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KALM Collective | KS Active and KALM Move</title>
-  <meta name="description" content="Shop KALM Collective activewear across KS Active archive stock and the KALM Move collection. Checkout assistance is available while payment and shipping setup is finalised.">
+  <meta name="description" content="Shop KALM Collective across KS Active archive styles and the KALM Move concept collection. Enquiry assistance is available while payment and shipping setup is finalised.">
   <meta property="og:title" content="KALM Collective">
-  <meta property="og:description" content="Activewear for real routines. Shop KS Active archive stock and KALM Move.">
+  <meta property="og:description" content="Curated active, home and lifestyle essentials. Shop KS Active archive styles and KALM Move.">
   <meta property="og:image" content="branding/social-preview.png">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#182116">
-  <link rel="icon" href="branding/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="branding/favicon.png" type="image/png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="promo-strip">KS Active Archive Drop now being prepared</div>
   <header class="site-header" data-header>
     <a class="brand" href="#/" aria-label="KALM Collective home">
-      <img src="branding/kalm-collective-logo.svg" alt="KALM Collective">
+      <img src="branding/kalm-collective-display-logo.png" alt="KALM Collective">
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
       <span></span>
@@ -26,16 +27,17 @@
       <span class="sr-only">Menu</span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
-      <a href="#/">Home</a>
-      <a href="#/shop">Shop</a>
-      <a href="#/brand/ks-active">KS Active</a>
-      <a href="#/brand/kalm-move">KALM Move</a>
-      <a href="#/about">About</a>
-      <a href="#/contact">Contact</a>
+      <a href="#/shop?category=women">Women</a>
+      <a href="#/shop">Activewear</a>
+      <a href="#/shop?category=wellness">Wellness</a>
+      <a href="#/shop?category=home-living">Home + Living</a>
+      <a href="#/shop?category=outdoor-living">Outdoor Living</a>
+      <a href="#/brand/ks-active">Brands</a>
+      <a href="#/shop?category=sale">Sale</a>
     </nav>
-    <button class="cart-button" type="button" data-cart-open aria-label="Open cart">
+    <button class="cart-button" type="button" data-cart-open aria-label="Open enquiry bag">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 7.5h11l-1 9h-9l-1-9Z"/><path d="M8.5 7.5a3.5 3.5 0 0 1 7 0"/><path d="M9 20h.01M15 20h.01"/></svg>
-      <span>Cart</span>
+      <span>Enquiry</span>
       <strong data-cart-count>0</strong>
     </button>
   </header>
@@ -47,12 +49,12 @@
     </section>
   </main>
 
-  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Shopping cart">
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Enquiry bag">
     <div class="cart-panel">
       <div class="cart-head">
         <div>
-          <p class="micro">Your cart</p>
-          <h2>Order summary</h2>
+          <p class="micro">Your enquiry</p>
+          <h2>Request summary</h2>
         </div>
         <button class="icon-button" type="button" data-cart-close aria-label="Close cart">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
@@ -61,8 +63,8 @@
       <div class="cart-items" data-cart-items></div>
       <div class="cart-summary">
         <div><span>Subtotal</span><strong data-cart-subtotal>R0</strong></div>
-        <p>Checkout is being finalised. Contact us to complete this order.</p>
-        <a class="button primary full" href="#/checkout" data-cart-checkout>Checkout assistance</a>
+        <p>No payment is taken here. KALM confirms availability, payment and delivery details directly.</p>
+        <a class="button primary full" href="#/checkout" data-cart-checkout>Send enquiry</a>
       </div>
     </div>
   </aside>

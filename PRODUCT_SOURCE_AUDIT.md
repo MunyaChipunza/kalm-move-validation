@@ -7,6 +7,7 @@
 - `G:/My Drive/Master Folder/08 Business Documents/KS active/Documents/KS active logo transparent.png`
 - `G:/My Drive/Master Folder/08 Business Documents/KS active/Raw Pictures KS Active/`
 - `G:/My Drive/Master Folder/08 Business Documents/KS active/product images/`
+- Google Drive folder `14tjk_QqPopeu85bKqxeDucWrboUFWGBX` / `Branding/`
 - Current storefront files in `site/`
 
 ## KS Active workbook summary
@@ -32,17 +33,17 @@ These quantities are historical workbook quantities, not a current physical stoc
 
 ## Shopify image links
 
-The workbook includes Shopify CDN image links for each product-colour row. They were used as product colour, style and naming reference. They are not embedded as public model imagery.
+The workbook includes Shopify CDN image links for each product-colour row. Representative product-family images are embedded in the storefront after conversion to local `.webp` files. See `PRODUCT_IMAGE_AUDIT.md` for exact mappings.
 
 ## KS Active image handling
 
-- Old KS Active product images and Shopify links are treated as reference material for colour, garment type and archive accuracy.
+- Old KS Active product images and Shopify links are treated as source material for colour, garment type and archive accuracy.
 - Old KS Active human model imagery is not used as public model imagery on the storefront.
-- New storefront category and product imagery was created for public presentation.
+- KS Active product cards now use workbook-source product images. Category collage images are composites built from those same source images.
 
 ## KALM Move products
 
-KALM Move products come from the current KALM Move product direction and generated campaign/product assets:
+KALM Move products come from the current KALM Move product direction only. No final supplier product imagery was found in the supplied Drive folder, so the public storefront renders honest placeholders rather than generated product images:
 
 - Everyday Movement Legging, R649
 - Medium Support Sports Bra, R449
@@ -50,4 +51,4 @@ KALM Move products come from the current KALM Move product direction and generat
 - Full Starter Look, R1,299
 - Cap or Tote Add-On, R199
 
-KALM Move pages are product-ready storefront pages. Live payment and shipping activation are still separate setup tasks.
+KALM Move pages are validation-ready concept pages, not bank-ready or production-ready pages. Final supplier samples, product imagery, payment and shipping activation are still separate setup tasks.
