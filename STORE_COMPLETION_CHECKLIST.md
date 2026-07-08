@@ -12,7 +12,7 @@
 | Product pages | Complete | Product image, price, colour/size selectors, details, fit/fabric and care. |
 | Bag | Complete | Add, quantity update, remove, subtotal and drawer/page views. |
 | Checkout | Complete for structured order capture | Contact, address, shipping, PayFast/Ozow/EFT selection and order summary. |
-| Public copy | Complete | Removed public readiness, placeholder and assistance wording. |
+| Public copy | Complete | Removed public readiness and assistance wording. |
 | Domain | External setup | Connect `kalmcollective.co.za` in Netlify and DNS. |
 | Payment gateways | External setup | PayFast/Ozow merchant credentials and EFT banking details required before gateway activation. |
 

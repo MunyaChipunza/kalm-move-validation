@@ -2,6 +2,13 @@
 
 This is the remaining external setup for moving from the current deployment URL to `kalmcollective.co.za` and activating real payment processing.
 
+Current deployment separation:
+
+- Task app Netlify project: `munya-task-app`
+- KALM Collective Netlify project: `kalm-collective-storefront`
+- Do not deploy storefront files to `munya-task-app`.
+- Move `kalmcollective.co.za` from `munya-task-app` to `kalm-collective-storefront` in Netlify domain settings before using the custom domain for public storefront traffic.
+
 ## Domain
 
 Official Netlify references:

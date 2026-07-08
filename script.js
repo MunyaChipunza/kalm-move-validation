@@ -20,7 +20,7 @@ const currency = new Intl.NumberFormat("en-ZA", {
   currency: "ZAR",
   maximumFractionDigits: 0
 });
-const imagePlaceholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20'%3E%3C/svg%3E";
+const transparentPixel = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20'%3E%3C/svg%3E";
 let deferredImageObserver = null;
 
 init();
@@ -90,6 +90,12 @@ function bindChrome() {
       if (colorSelect) colorSelect.value = color;
       updateVariantImage(scope, color);
       clearVariantError(scope);
+    }
+
+    const galleryButton = event.target.closest("[data-gallery-image]");
+    if (galleryButton) {
+      const scope = galleryButton.closest("[data-product-scope]");
+      updateGalleryImage(scope, galleryButton.getAttribute("data-gallery-image"));
     }
   });
 
@@ -253,7 +259,7 @@ function renderHome({ preserveHero = false } = {}) {
         <p>Build a clean everyday rotation across training, outdoor plans, recovery and home essentials.</p>
         <a class="button primary" href="#/shop">Shop the edit</a>
       </div>
-      <img src="${imagePlaceholder}" data-src="${escapeHtml(meta.featureImage)}" alt="KALM Collective featured products" width="1200" height="760" loading="lazy" decoding="async" fetchpriority="low">
+      <img src="${transparentPixel}" data-src="${escapeHtml(meta.featureImage)}" alt="KALM Collective featured products" width="1200" height="760" loading="lazy" decoding="async" fetchpriority="low">
     </section>
 
     ${renderProductRail("Most Wanted", featured, "#/shop")}
@@ -322,7 +328,7 @@ function renderShop(params = new URLSearchParams()) {
     <section class="page-hero compact">
       <p class="eyebrow">Shop</p>
       <h1>${escapeHtml(heading)}</h1>
-      <p>${products.length} products across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.</p>
+      <p>Curated essentials for movement, wellness, home and outdoor living.</p>
     </section>
 
     <section class="shop-layout">
@@ -387,9 +393,9 @@ function renderBrands() {
       ${state.data.brands.map((brand, index) => `
         <article class="brand-card-large">
           <a href="#/brand/${brand.id}">
-            <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${imagePlaceholder}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
+            <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
             <div class="brand-content">
-              <img class="brand-card-logo" ${index < 2 ? `src="${escapeHtml(brand.logo)}"` : `src="${imagePlaceholder}" data-src="${escapeHtml(brand.logo)}"`} alt="${escapeAttribute(brand.name)}" width="460" height="172" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
+              <img class="brand-card-logo" ${index < 2 ? `src="${escapeHtml(brand.logo)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.logo)}"`} alt="${escapeAttribute(brand.name)}" width="460" height="172" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
               <p>${escapeHtml(brand.role)}</p>
               <h2>${escapeHtml(brand.name)}</h2>
               <span class="text-link">Shop brand</span>
@@ -405,10 +411,6 @@ function renderBrands() {
 }
 
 function renderBrand(brandId) {
-  if (brandId === "kalm-living") {
-    window.location.hash = "#/brand/kalm-outdoor";
-    return;
-  }
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
   const products = state.data.products.filter((product) => product.brandId === brand.id);
@@ -428,7 +430,7 @@ function renderBrand(brandId) {
       <div class="section-head">
         <div>
           <p class="eyebrow">${escapeHtml(brand.name)}</p>
-          <h2>${products.length} styles</h2>
+          <h2>Shop the edit</h2>
         </div>
       </div>
       <div class="product-grid">
@@ -452,6 +454,7 @@ function renderProduct(slug) {
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
       <div class="product-gallery">
         <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="900" height="1125" data-product-image>
+        ${renderProductGallery(product)}
       </div>
       <div class="product-info">
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
@@ -700,7 +703,7 @@ function renderNotFound() {
 function renderBrandLogoCard(brand) {
   return `
     <a class="brand-logo-card" href="#/brand/${brand.id}">
-      <img src="${imagePlaceholder}" data-src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="370" height="116" loading="lazy" decoding="async" fetchpriority="low">
+      <img src="${transparentPixel}" data-src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="370" height="116" loading="lazy" decoding="async" fetchpriority="low">
       <span>${escapeHtml(brand.name)}</span>
     </a>
   `;
@@ -709,7 +712,7 @@ function renderBrandLogoCard(brand) {
 function renderCategoryTile(category) {
   return `
     <a class="category-tile" href="#/shop?category=${category.id}">
-      <img src="${imagePlaceholder}" data-src="${escapeHtml(category.image)}" alt="${escapeAttribute(category.name)}" width="640" height="736" loading="lazy" decoding="async" fetchpriority="low">
+      <img src="${transparentPixel}" data-src="${escapeHtml(category.image)}" alt="${escapeAttribute(category.name)}" width="640" height="736" loading="lazy" decoding="async" fetchpriority="low">
       <span>${escapeHtml(category.name)}</span>
     </a>
   `;
@@ -721,7 +724,21 @@ function renderVariantPreviews(product) {
     <div class="variant-previews" aria-label="Colour previews">
       ${product.colors.map((color) => `
         <button type="button" data-variant-preview="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}">
-          <img src="${imagePlaceholder}" data-src="${escapeHtml(getVariantImage(product, color))}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(color)}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
+          <img src="${transparentPixel}" data-src="${escapeHtml(getVariantImage(product, color))}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(color)}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderProductGallery(product) {
+  const images = Array.from(new Set(product.gallery || [product.image])).filter(Boolean);
+  if (images.length <= 1) return "";
+  return `
+    <div class="gallery-thumbs" aria-label="Product images">
+      ${images.map((image, index) => `
+        <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}">
+          <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
         </button>
       `).join("")}
     </div>
@@ -731,7 +748,7 @@ function renderVariantPreviews(product) {
 function renderProductCard(product, options = {}) {
   const imageMarkup = options.eager
     ? `src="${escapeHtml(product.image)}" decoding="async"`
-    : `src="${imagePlaceholder}" data-src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
+    : `src="${transparentPixel}" data-src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
@@ -778,9 +795,20 @@ function updateVariantImage(scope, color) {
   const image = scope?.querySelector("[data-product-image]");
   if (!product || !image || !color) return;
   const imagePath = getVariantImage(product, color);
+  setProductImage(image, imagePath, `${product.title} in ${color}`);
+}
+
+function updateGalleryImage(scope, imagePath) {
+  const product = findProduct(scope?.getAttribute("data-product-id"));
+  const image = scope?.querySelector("[data-product-image]");
+  if (!product || !image || !imagePath) return;
+  setProductImage(image, imagePath, product.title);
+}
+
+function setProductImage(image, imagePath, altText) {
   image.src = imagePath;
   image.removeAttribute("data-src");
-  image.alt = `${product.title} in ${color}`;
+  image.alt = altText;
 }
 
 function clearVariantError(scope) {
@@ -1022,14 +1050,16 @@ function renderFooter() {
       </div>
       <div class="footer-grid">
         <div>
-          <img src="${imagePlaceholder}" data-src="branding/kalm-collective-display-logo.webp" alt="KALM Collective" width="420" height="118" loading="lazy" decoding="async" fetchpriority="low">
+          <img src="${transparentPixel}" data-src="branding/kalm-collective-display-logo.webp" alt="KALM Collective" width="420" height="118" loading="lazy" decoding="async" fetchpriority="low">
           <p>Premium essentials for movement, outdoor routines and everyday living.</p>
         </div>
         <div>
           <h3>Shop</h3>
           <a href="#/shop?category=new-in">New In</a>
-          <a href="#/shop?category=women">Women</a>
           <a href="#/shop?category=activewear">Activewear</a>
+          <a href="#/shop?category=wellness">Wellness</a>
+          <a href="#/shop?category=home">Home</a>
+          <a href="#/shop?category=outdoor">Outdoor</a>
           <a href="#/shop?category=sale">Sale</a>
         </div>
         <div>
@@ -1046,7 +1076,7 @@ function renderFooter() {
         <div>
           <h3>Follow</h3>
           <p>@kalmcollective</p>
-          <p>kalmcollective.co.za</p>
+          <p>kalm-collective-storefront.netlify.app</p>
         </div>
       </div>
       <p class="copyright">© 2026 KALM Collective. All rights reserved.</p>

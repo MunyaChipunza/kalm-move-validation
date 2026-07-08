@@ -3,7 +3,7 @@
     "store": "KALM Collective",
     "updated": "2026-07-08",
     "currency": "ZAR",
-    "publicDomain": "kalmcollective.co.za",
+    "publicDomain": "kalm-collective-storefront.netlify.app",
     "heroImage": "assets/images/home-hero-shop.webp",
     "featureImage": "assets/images/campaign-hero.webp"
   },
@@ -61,34 +61,29 @@
       "image": "assets/images/generated/hero/kalm-collective-feature-band.webp"
     },
     {
-      "id": "women",
-      "name": "Women",
-      "image": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp"
-    },
-    {
       "id": "activewear",
       "name": "Activewear",
-      "image": "assets/images/generated/kalm-move/studio-starter-set.webp"
+      "image": "assets/images/products/kalm-move/kalm-move-studio-starter-set-main.webp"
     },
     {
       "id": "wellness",
       "name": "Wellness",
-      "image": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp"
-    },
-    {
-      "id": "outdoor",
-      "name": "Outdoor",
-      "image": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp"
+      "image": "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp"
     },
     {
       "id": "home",
       "name": "Home",
-      "image": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp"
+      "image": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp"
+    },
+    {
+      "id": "outdoor",
+      "name": "Outdoor",
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp"
     },
     {
       "id": "sale",
       "name": "Sale",
-      "image": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp"
+      "image": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-main.webp"
     }
   ],
   "products": [
@@ -114,7 +109,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp",
+      "image": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-main.webp",
       "description": "A sculpting seamless legging with a high-rise waistband and clean studio-to-street finish.",
       "detailBullets": [
         "High-rise waistband",
@@ -126,7 +121,6 @@
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
         "new-in",
-        "women",
         "activewear",
         "leggings",
         "sale"
@@ -134,10 +128,16 @@
       "badge": "Best seller",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp",
-        "Wine": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp",
-        "Deep Plum": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp"
-      }
+        "Black": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-black.webp",
+        "Wine": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-wine.webp",
+        "Deep Plum": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-deep-plum.webp"
+      },
+      "gallery": [
+        "assets/images/products/ks-active/ks-high-waist-seamless-leggings-main.webp",
+        "assets/images/products/ks-active/ks-high-waist-seamless-leggings-black.webp",
+        "assets/images/products/ks-active/ks-high-waist-seamless-leggings-wine.webp",
+        "assets/images/products/ks-active/ks-high-waist-seamless-leggings-deep-plum.webp"
+      ]
     },
     {
       "id": "ks-high-stretch-seamless-leggings",
@@ -160,7 +160,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/ks-active/ks-high-stretch-seamless-leggings.webp",
+      "image": "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-main.webp",
       "description": "A flexible everyday legging with a smooth waistband and minimal seam lines.",
       "detailBullets": [
         "Smooth high waist",
@@ -171,23 +171,27 @@
       "fabric": "Soft seamless knit with four-way stretch.",
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
-        "women",
         "activewear",
         "leggings"
       ],
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/ks-active/ks-high-stretch-seamless-leggings.webp",
-        "Charcoal": "assets/images/ks-active/ks-high-stretch-seamless-leggings.webp"
-      }
+        "Black": "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-black.webp",
+        "Charcoal": "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-charcoal.webp"
+      },
+      "gallery": [
+        "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-main.webp",
+        "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-black.webp",
+        "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-charcoal.webp"
+      ]
     },
     {
       "id": "ks-open-back-romper",
       "brand": "KS Active",
       "brandId": "ks-active",
       "collection": "KS Active Essentials",
-      "category": "women",
+      "category": "activewear",
       "type": "One-piece",
       "title": "Open Back Romper",
       "slug": "ks-open-back-romper",
@@ -202,7 +206,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/ks-active/ks-open-back-romper.webp",
+      "image": "assets/images/products/ks-active/ks-open-back-romper-main.webp",
       "description": "A streamlined one-piece with a sculpted open back for training and layered styling.",
       "detailBullets": [
         "Built-in active silhouette",
@@ -214,14 +218,17 @@
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
         "new-in",
-        "women",
         "activewear"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/ks-active/ks-open-back-romper.webp"
-      }
+        "Black": "assets/images/products/ks-active/ks-open-back-romper-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/ks-active/ks-open-back-romper-main.webp",
+        "assets/images/products/ks-active/ks-open-back-romper-black.webp"
+      ]
     },
     {
       "id": "ks-high-waist-seamless-shorts",
@@ -245,7 +252,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp",
+      "image": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-main.webp",
       "description": "Breathable high-waist shorts for warm days, gym sessions and layered looks.",
       "detailBullets": [
         "Wide waistband",
@@ -256,7 +263,6 @@
       "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
-        "women",
         "activewear",
         "shorts",
         "sale"
@@ -264,10 +270,16 @@
       "badge": "Sale",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp",
-        "Wine": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp",
-        "Deep Plum": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp"
-      }
+        "Black": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-black.webp",
+        "Wine": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-wine.webp",
+        "Deep Plum": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-deep-plum.webp"
+      },
+      "gallery": [
+        "assets/images/products/ks-active/ks-high-waist-seamless-shorts-main.webp",
+        "assets/images/products/ks-active/ks-high-waist-seamless-shorts-black.webp",
+        "assets/images/products/ks-active/ks-high-waist-seamless-shorts-wine.webp",
+        "assets/images/products/ks-active/ks-high-waist-seamless-shorts-deep-plum.webp"
+      ]
     },
     {
       "id": "ks-crisscross-back-sports-bra",
@@ -291,7 +303,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp",
+      "image": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-main.webp",
       "description": "A medium-support sports bra with clean crisscross straps and a smooth front.",
       "detailBullets": [
         "Medium support",
@@ -302,24 +314,29 @@
       "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
-        "women",
         "activewear",
         "sports-bra"
       ],
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Blue": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp",
-        "Black": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp",
-        "Purple": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp"
-      }
+        "Blue": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-blue.webp",
+        "Black": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-black.webp",
+        "Purple": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-purple.webp"
+      },
+      "gallery": [
+        "assets/images/products/ks-active/ks-crisscross-back-sports-bra-main.webp",
+        "assets/images/products/ks-active/ks-crisscross-back-sports-bra-blue.webp",
+        "assets/images/products/ks-active/ks-crisscross-back-sports-bra-black.webp",
+        "assets/images/products/ks-active/ks-crisscross-back-sports-bra-purple.webp"
+      ]
     },
     {
       "id": "ks-dual-zip-long-sleeve-crop",
       "brand": "KS Active",
       "brandId": "ks-active",
       "collection": "KS Active Essentials",
-      "category": "women",
+      "category": "activewear",
       "type": "Top",
       "title": "Dual Zip Long-Sleeve Crop",
       "slug": "ks-dual-zip-long-sleeve-crop",
@@ -336,7 +353,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp",
+      "image": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-main.webp",
       "description": "A fitted cropped layer with zip styling for studio warmups and everyday layering.",
       "detailBullets": [
         "Long sleeve crop",
@@ -347,17 +364,22 @@
       "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
-        "women",
         "activewear",
         "tops"
       ],
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp",
-        "Stone": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp",
-        "Taupe": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp"
-      }
+        "Black": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-black.webp",
+        "Stone": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-stone.webp",
+        "Taupe": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-taupe.webp"
+      },
+      "gallery": [
+        "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-main.webp",
+        "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-black.webp",
+        "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-stone.webp",
+        "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-taupe.webp"
+      ]
     },
     {
       "id": "kalm-move-everyday-movement-legging",
@@ -381,7 +403,7 @@
         "XL"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-move/everyday-movement-legging.webp",
+      "image": "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-main.webp",
       "description": "A clean high-waist legging designed for walking, travel days and low-impact training.",
       "detailBullets": [
         "Wide waistband",
@@ -393,15 +415,18 @@
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
         "new-in",
-        "women",
         "activewear",
         "leggings"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/generated/kalm-move/everyday-movement-legging.webp"
-      }
+        "Black": "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-main.webp",
+        "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-black.webp"
+      ]
     },
     {
       "id": "kalm-move-medium-support-sports-bra",
@@ -425,7 +450,7 @@
         "XL"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-move/medium-support-sports-bra.webp",
+      "image": "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-main.webp",
       "description": "A soft olive sports bra with cross-back straps and everyday medium support.",
       "detailBullets": [
         "Medium support",
@@ -437,15 +462,18 @@
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
         "new-in",
-        "women",
         "activewear",
         "sports-bra"
       ],
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Olive": "assets/images/generated/kalm-move/medium-support-sports-bra.webp"
-      }
+        "Olive": "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-olive.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-main.webp",
+        "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-olive.webp"
+      ]
     },
     {
       "id": "kalm-move-modest-performance-tee",
@@ -470,7 +498,7 @@
         "XXL"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-move/modest-performance-tee.webp",
+      "image": "assets/images/products/kalm-move/kalm-move-modest-performance-tee-main.webp",
       "description": "A relaxed performance tee with a longer body and breathable everyday feel.",
       "detailBullets": [
         "Modest-length body",
@@ -482,15 +510,18 @@
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
         "new-in",
-        "women",
         "activewear",
         "tops"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Oat": "assets/images/generated/kalm-move/modest-performance-tee.webp"
-      }
+        "Oat": "assets/images/products/kalm-move/kalm-move-modest-performance-tee-oat.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/kalm-move-modest-performance-tee-main.webp",
+        "assets/images/products/kalm-move/kalm-move-modest-performance-tee-oat.webp"
+      ]
     },
     {
       "id": "kalm-move-studio-starter-set",
@@ -514,7 +545,7 @@
         "XL"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-move/studio-starter-set.webp",
+      "image": "assets/images/products/kalm-move/kalm-move-studio-starter-set-main.webp",
       "description": "A three-piece starter look pairing the core legging, bra and modest tee.",
       "detailBullets": [
         "Complete active look",
@@ -526,15 +557,18 @@
       "care": "Cold gentle wash, dry in shade, do not bleach.",
       "tags": [
         "new-in",
-        "women",
         "activewear",
         "sets"
       ],
       "badge": "Set value",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Olive / Oat": "assets/images/generated/kalm-move/studio-starter-set.webp"
-      }
+        "Black / Olive / Oat": "assets/images/products/kalm-move/kalm-move-studio-starter-set-black-olive-oat.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/kalm-move-studio-starter-set-main.webp",
+        "assets/images/products/kalm-move/kalm-move-studio-starter-set-black-olive-oat.webp"
+      ]
     },
     {
       "id": "kalm-move-canvas-tote-and-cap",
@@ -554,7 +588,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-move/canvas-tote-and-cap.webp",
+      "image": "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-main.webp",
       "description": "A simple active-day pair with a soft cotton cap and everyday canvas tote.",
       "detailBullets": [
         "Cotton cap",
@@ -571,8 +605,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Natural": "assets/images/generated/kalm-move/canvas-tote-and-cap.webp"
-      }
+        "Black / Natural": "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-main.webp",
+        "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp"
+      ]
     },
     {
       "id": "kalm-outdoor-canvas-utility-tote",
@@ -592,7 +630,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp",
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp",
       "description": "A structured canvas tote for picnic days, markets and relaxed weekend carry.",
       "detailBullets": [
         "Structured canvas body",
@@ -610,8 +648,12 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Natural": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp"
-      }
+        "Black / Natural": "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp"
+      ]
     },
     {
       "id": "kalm-outdoor-weather-ready-picnic-blanket",
@@ -631,7 +673,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-outdoor/weather-ready-picnic-blanket.webp",
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp",
       "description": "A roll-up picnic blanket with a soft top layer and practical outdoor underside.",
       "detailBullets": [
         "Roll-and-carry strap",
@@ -648,8 +690,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Charcoal": "assets/images/generated/kalm-outdoor/weather-ready-picnic-blanket.webp"
-      }
+        "Charcoal": "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
+      ]
     },
     {
       "id": "kalm-outdoor-patio-cushion-pair",
@@ -669,7 +715,7 @@
         "Pair"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-outdoor/patio-cushion-pair.webp",
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-main.webp",
       "description": "A two-piece cushion pair for patio chairs, balcony benches and relaxed outdoor corners.",
       "detailBullets": [
         "Two cushions included",
@@ -686,8 +732,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Ivory / Black": "assets/images/generated/kalm-outdoor/patio-cushion-pair.webp"
-      }
+        "Ivory / Black": "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp"
+      ]
     },
     {
       "id": "kalm-outdoor-matte-camp-lantern",
@@ -707,7 +757,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-outdoor/matte-camp-lantern.webp",
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-main.webp",
       "description": "A compact matte lantern for patio evenings, camping tables and load-shedding backup.",
       "detailBullets": [
         "Carry handle",
@@ -724,8 +774,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/generated/kalm-outdoor/matte-camp-lantern.webp"
-      }
+        "Black": "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp"
+      ]
     },
     {
       "id": "kalm-outdoor-insulated-carafe-and-tumbler",
@@ -745,7 +799,7 @@
         "Set"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-outdoor/insulated-carafe-and-tumbler.webp",
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-main.webp",
       "description": "A durable drinkware set for garden tables, road trips and slow mornings outside.",
       "detailBullets": [
         "Carafe and tumbler",
@@ -762,8 +816,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Smoke / Steel": "assets/images/generated/kalm-outdoor/insulated-carafe-and-tumbler.webp"
-      }
+        "Smoke / Steel": "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp"
+      ]
     },
     {
       "id": "kalm-wellness-matte-steel-water-bottle",
@@ -783,7 +841,7 @@
         "750ml"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-wellness/matte-steel-water-bottle.webp",
+      "image": "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp",
       "description": "A matte black stainless-steel bottle for studio bags, desks and daily hydration.",
       "detailBullets": [
         "750ml capacity",
@@ -801,8 +859,12 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/generated/kalm-wellness/matte-steel-water-bottle.webp"
-      }
+        "Black": "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp",
+        "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp"
+      ]
     },
     {
       "id": "kalm-wellness-studio-mat-and-towel",
@@ -822,7 +884,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp",
+      "image": "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp",
       "description": "A studio-ready mat and towel set for stretching, Pilates and quiet recovery work.",
       "detailBullets": [
         "Textured mat surface",
@@ -840,8 +902,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Charcoal": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp"
-      }
+        "Black / Charcoal": "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp",
+        "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp"
+      ]
     },
     {
       "id": "kalm-wellness-olive-resistance-band-set",
@@ -861,7 +927,7 @@
         "Set of 4"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-wellness/olive-resistance-band-set.webp",
+      "image": "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp",
       "description": "A compact resistance band set for warmups, travel workouts and glute activation.",
       "detailBullets": [
         "Four resistance levels",
@@ -878,8 +944,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Olive": "assets/images/generated/kalm-wellness/olive-resistance-band-set.webp"
-      }
+        "Olive": "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp",
+        "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp"
+      ]
     },
     {
       "id": "kalm-wellness-calm-roller-and-balm",
@@ -899,7 +969,7 @@
         "Set"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-wellness/calm-roller-and-balm.webp",
+      "image": "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp",
       "description": "A small-format roller and balm set for desk drawers, gym bags and evening routines.",
       "detailBullets": [
         "Roller bottle",
@@ -916,8 +986,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Amber / Black": "assets/images/generated/kalm-wellness/calm-roller-and-balm.webp"
-      }
+        "Amber / Black": "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp",
+        "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp"
+      ]
     },
     {
       "id": "kalm-wellness-recovery-strap-and-cork-ball",
@@ -937,7 +1011,7 @@
         "Set"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-wellness/recovery-strap-and-cork-ball.webp",
+      "image": "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp",
       "description": "A simple recovery pair for stretching, shoulder mobility and foot release.",
       "detailBullets": [
         "Stretch strap",
@@ -954,8 +1028,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Cork": "assets/images/generated/kalm-wellness/recovery-strap-and-cork-ball.webp"
-      }
+        "Black / Cork": "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp",
+        "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp"
+      ]
     },
     {
       "id": "kalm-home-white-cotton-bedding-set",
@@ -977,7 +1055,7 @@
         "King"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp",
+      "image": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp",
       "description": "A crisp white bedding set with a clean hotel feel and easy everyday finish.",
       "detailBullets": [
         "Duvet cover and pillowcase set",
@@ -995,8 +1073,12 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "White": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp"
-      }
+        "White": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp",
+        "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
+      ]
     },
     {
       "id": "kalm-home-charcoal-bath-towel-stack",
@@ -1016,7 +1098,7 @@
         "Set"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-home/charcoal-bath-towel-stack.webp",
+      "image": "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp",
       "description": "A plush charcoal towel stack for bathrooms, guest suites and gym showers.",
       "detailBullets": [
         "Bath sheet, bath towel and hand towel mix",
@@ -1033,8 +1115,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Charcoal": "assets/images/generated/kalm-home/charcoal-bath-towel-stack.webp"
-      }
+        "Charcoal": "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp",
+        "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
+      ]
     },
     {
       "id": "kalm-home-ceramic-mug-pair",
@@ -1054,7 +1140,7 @@
         "Pair"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-home/ceramic-mug-pair.webp",
+      "image": "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp",
       "description": "A matte ceramic mug pair for morning coffee and slow evening tea.",
       "detailBullets": [
         "Two mugs included",
@@ -1071,8 +1157,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Ivory": "assets/images/generated/kalm-home/ceramic-mug-pair.webp"
-      }
+        "Black / Ivory": "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp",
+        "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp"
+      ]
     },
     {
       "id": "kalm-home-woven-storage-basket",
@@ -1092,7 +1182,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-home/woven-storage-basket.webp",
+      "image": "assets/images/products/kalm-home/kalm-home-woven-storage-basket-main.webp",
       "description": "A woven storage basket for throws, towels, toys and everyday living-room organization.",
       "detailBullets": [
         "Structured woven body",
@@ -1109,8 +1199,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Natural": "assets/images/generated/kalm-home/woven-storage-basket.webp"
-      }
+        "Natural": "assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-home/kalm-home-woven-storage-basket-main.webp",
+        "assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp"
+      ]
     },
     {
       "id": "kalm-home-black-reed-diffuser",
@@ -1130,7 +1224,7 @@
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-home/black-reed-diffuser.webp",
+      "image": "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp",
       "description": "A black reed diffuser with a clean silhouette for bathrooms, entries and bedside tables.",
       "detailBullets": [
         "Glass vessel",
@@ -1147,8 +1241,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Smoke black": "assets/images/generated/kalm-home/black-reed-diffuser.webp"
-      }
+        "Smoke black": "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp",
+        "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+      ]
     }
   ]
 }

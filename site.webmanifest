@@ -2,7 +2,7 @@
   "name": "KALM Collective",
   "short_name": "KALM",
   "description": "Premium essentials for movement, outdoor routines and everyday living.",
-  "id": "https://kalmcollective.co.za/",
+  "id": "https://kalm-collective-storefront.netlify.app/",
   "start_url": "/",
   "scope": "/",
   "display": "browser",

@@ -6,6 +6,7 @@
 - Publish directory: `.`
 - Forms: enabled
 - Repository: `MunyaChipunza/kalm-move-validation`
+- Netlify site: `kalm-collective-storefront`
 
 ## Required files
 
@@ -28,10 +29,10 @@
 4. Open at least one product detail page.
 5. Add an item to cart with size and colour.
 6. Change cart quantity and remove an item.
-7. Submit one Netlify form test from checkout assistance or contact.
+7. Submit one Netlify form check from checkout or contact.
 8. Check mobile layout.
 
-## Analytics placeholders
+## Analytics setup
 
 `script.js` pushes events to `window.kalmStoreEvents` and `window.dataLayer`:
 

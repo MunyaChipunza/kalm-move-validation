@@ -21,4 +21,4 @@
 
 ## Notes
 
-The public site no longer displays placeholder product-image copy. The internal venture verdict is unchanged: KALM Move is validation-ready, not bank-ready or production-ready.
+The public site no longer displays product-image setup copy. The internal venture verdict is unchanged: KALM Move is validation-ready, not bank-ready or production-ready.
