@@ -6,14 +6,14 @@
 
 - KS Active: 6
 - KALM Move: 5
-- KALM Living: 5
+- KALM Outdoor: 5
 - KALM Wellness: 5
 - KALM Home: 5
 
 ## Source Notes
 
 - KS Active uses the existing product-image set already available in the site assets.
-- KALM Move, Living, Wellness and Home use generated ecommerce imagery created for the storefront rebuild.
+- KALM Move, Outdoor, Wellness and Home use generated ecommerce imagery created for the storefront rebuild.
 - Product titles, pricing and descriptions are retail-facing and no longer expose internal source notes in the public catalog file.
 
 ## Internal Readiness

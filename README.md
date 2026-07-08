@@ -5,7 +5,7 @@ Static ecommerce storefront for `kalmcollective.co.za`.
 ## Current Storefront
 
 - Parent brand: KALM Collective.
-- Brand family: KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home.
+- Brand family: KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.
 - Catalog: 26 products in `products.json`.
 - Checkout: structured bag, contact details, delivery address, shipping method and payment method selection for PayFast, Ozow and EFT.
 - Public metadata: canonical and Open Graph URLs point to `https://kalmcollective.co.za/`.

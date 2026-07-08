@@ -10,7 +10,8 @@ const siteSearch = document.querySelector("[data-site-search]");
 
 const state = {
   data: null,
-  bag: loadBag()
+  bag: loadBag(),
+  hasRenderedRoute: false
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -18,6 +19,8 @@ const currency = new Intl.NumberFormat("en-ZA", {
   currency: "ZAR",
   maximumFractionDigits: 0
 });
+const imagePlaceholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20'%3E%3C/svg%3E";
+let deferredImageObserver = null;
 
 init();
 
@@ -49,6 +52,12 @@ function bindChrome() {
       const card = addButton.closest("[data-product-scope]");
       const size = card?.querySelector("[data-size-select]")?.value;
       const color = card?.querySelector("[data-color-select]")?.value;
+      const error = card?.querySelector("[data-variant-error]");
+      if (!size || !color) {
+        if (error) error.textContent = "Please choose size and colour.";
+        card?.querySelectorAll("[data-size-select], [data-color-select]").forEach((field) => field.setAttribute("aria-invalid", "true"));
+        return;
+      }
       addToBag(productId, size, color);
       addButton.textContent = "Added";
       window.setTimeout(() => {
@@ -71,6 +80,24 @@ function bindChrome() {
     if (event.target.closest("[data-cart-close]")) closeBag();
     if (event.target.closest("[data-search-open]")) openSearch();
     if (event.target.closest("[data-search-close]")) closeSearch();
+
+    const previewButton = event.target.closest("[data-variant-preview]");
+    if (previewButton) {
+      const scope = previewButton.closest("[data-product-scope]");
+      const color = previewButton.getAttribute("data-variant-preview");
+      const colorSelect = scope?.querySelector("[data-color-select]");
+      if (colorSelect) colorSelect.value = color;
+      updateVariantImage(scope, color);
+      clearVariantError(scope);
+    }
+  });
+
+  document.addEventListener("change", (event) => {
+    const field = event.target.closest("[data-color-select], [data-size-select]");
+    if (!field) return;
+    const scope = field.closest("[data-product-scope]");
+    clearVariantError(scope);
+    if (field.matches("[data-color-select]")) updateVariantImage(scope, field.value);
   });
 
   searchPanel?.addEventListener("submit", (event) => event.preventDefault());
@@ -86,11 +113,15 @@ function bindChrome() {
 function renderRoute() {
   if (!state.data) return;
   const route = getRoute();
+  const isFirstRoute = !state.hasRenderedRoute;
+  state.hasRenderedRoute = true;
   closeBag();
   nav?.classList.remove("open");
   navToggle?.setAttribute("aria-expanded", "false");
 
-  if (route.path === "/" || route.path === "") return renderHome();
+  if (route.path === "/" || route.path === "") return renderHome({
+    preserveHero: isFirstRoute && Boolean(app.querySelector(".hero-shell"))
+  });
   if (route.path === "/shop") return renderShop(route.params);
   if (route.path === "/brands") return renderBrands();
   if (route.path.startsWith("/brand/")) return renderBrand(route.path.split("/").pop());
@@ -112,31 +143,60 @@ function getRoute() {
   };
 }
 
-function renderHome() {
+function hydrateDeferredImages(root = document) {
+  const images = [...root.querySelectorAll("img[data-src]")];
+  if (!images.length) return;
+  const loadImage = (image) => {
+    const source = image.getAttribute("data-src");
+    if (!source) return;
+    image.src = source;
+    image.removeAttribute("data-src");
+  };
+  if (!("IntersectionObserver" in window)) {
+    images.forEach(loadImage);
+    return;
+  }
+  if (!deferredImageObserver) {
+    deferredImageObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        deferredImageObserver.unobserve(entry.target);
+        loadImage(entry.target);
+      });
+    }, { rootMargin: "220px 0px" });
+  }
+  images.forEach((image) => deferredImageObserver.observe(image));
+}
+
+function renderHome({ preserveHero = false } = {}) {
   const { meta, brands, categories, products } = state.data;
   const arrivals = products.filter((product) => product.tags.includes("new-in")).slice(0, 8);
   const featured = [
     products.find((product) => product.id === "kalm-move-studio-starter-set"),
     products.find((product) => product.id === "kalm-home-white-cotton-bedding-set"),
-    products.find((product) => product.id === "kalm-living-woven-throw-blanket")
+    products.find((product) => product.id === "kalm-outdoor-weather-ready-picnic-blanket")
   ].filter(Boolean);
 
-  app.innerHTML = `
+  const hero = `
     <section class="hero-shell">
       <div class="hero-copy">
         <p class="eyebrow">KALM Collective</p>
-        <h1>Premium essentials for movement and everyday living.</h1>
-        <p>Shop activewear, wellness accessories, living pieces and home staples from the KALM brand family.</p>
+        <h1>Premium essentials for movement, outdoor routines and everyday living.</h1>
+        <p>Shop activewear, outdoor staples, wellness accessories and home essentials from the KALM brand family.</p>
         <div class="hero-actions">
           <a class="button primary" href="#/shop?category=new-in">Shop new arrivals</a>
           <a class="button secondary" href="#/brands">Explore brands</a>
         </div>
       </div>
       <a class="hero-media" href="#/shop" aria-label="Shop KALM Collective">
-        <img src="${escapeHtml(meta.heroImage)}" alt="KALM Collective activewear and lifestyle products">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w" sizes="100vw">
+          <img src="assets/images/home-hero-shop-1200.webp" srcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w, assets/images/home-hero-shop-1200.webp 1200w, ${escapeHtml(meta.heroImage)} 1800w" sizes="(max-width: 760px) 100vw, 63vw" alt="KALM Collective activewear and lifestyle products" width="1200" height="900" fetchpriority="high" decoding="async">
+        </picture>
       </a>
-    </section>
+    </section>`;
 
+  const sections = `
     <section class="brand-ribbon" aria-label="Featured brands">
       ${brands.map(renderBrandLogoCard).join("")}
     </section>
@@ -159,10 +219,10 @@ function renderHome() {
       <div>
         <p class="eyebrow">Featured collection</p>
         <h2>Core pieces for calm routines.</h2>
-        <p>Build a clean everyday rotation across training, recovery, living spaces and home essentials.</p>
+        <p>Build a clean everyday rotation across training, outdoor plans, recovery and home essentials.</p>
         <a class="button primary" href="#/shop">Shop the edit</a>
       </div>
-      <img src="${escapeHtml(meta.featureImage)}" alt="KALM Collective featured products">
+      <img src="${imagePlaceholder}" data-src="${escapeHtml(meta.featureImage)}" alt="KALM Collective featured products" width="1200" height="760" loading="lazy" decoding="async" fetchpriority="low">
     </section>
 
     ${renderProductRail("Most Wanted", featured, "#/shop")}
@@ -175,7 +235,7 @@ function renderHome() {
       </div>
       <form data-newsletter-form>
         <label class="sr-only" for="newsletter-email">Email address</label>
-        <input id="newsletter-email" type="email" placeholder="Enter your email" required>
+        <input id="newsletter-email" type="email" required>
         <button class="button primary" type="submit">Subscribe</button>
         <p class="form-status" data-newsletter-status></p>
       </form>
@@ -184,7 +244,19 @@ function renderHome() {
     ${renderFooter()}
   `;
 
+  if (preserveHero) {
+    const initialHero = app.querySelector(".hero-shell");
+    if (initialHero) {
+      initialHero.insertAdjacentHTML("afterend", sections);
+    } else {
+      app.innerHTML = `${hero}${sections}`;
+    }
+  } else {
+    app.innerHTML = `${hero}${sections}`;
+  }
+
   bindNewsletter();
+  hydrateDeferredImages(app);
 }
 
 function renderProductRail(title, products, href) {
@@ -217,7 +289,7 @@ function renderShop(params = new URLSearchParams()) {
     <section class="page-hero compact">
       <p class="eyebrow">Shop</p>
       <h1>${escapeHtml(heading)}</h1>
-      <p>${products.length} products across KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home.</p>
+      <p>${products.length} products across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.</p>
     </section>
 
     <section class="shop-layout">
@@ -244,7 +316,7 @@ function renderShop(params = new URLSearchParams()) {
             </select>
           </label>
           <label>Search
-            <input name="search" value="${escapeAttribute(search)}" placeholder="Product or brand">
+            <input name="search" value="${escapeAttribute(search)}">
           </label>
         </form>
       </aside>
@@ -267,6 +339,7 @@ function renderShop(params = new URLSearchParams()) {
     event.preventDefault();
     updateShopFromForm(event);
   });
+  hydrateDeferredImages(app);
 }
 
 function renderBrands() {
@@ -274,16 +347,16 @@ function renderBrands() {
     <section class="page-hero">
       <p class="eyebrow">Brands</p>
       <h1>The KALM Collective family.</h1>
-      <p>Five connected brands, each built around simple essentials for movement, wellness, living and home.</p>
+      <p>Five connected brands, each built around simple essentials for movement, outdoor routines, wellness and home.</p>
     </section>
 
     <section class="brand-grid">
       ${state.data.brands.map((brand) => `
         <article class="brand-card-large">
           <a href="#/brand/${brand.id}">
-            <img class="brand-image" src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} products">
+            <img class="brand-image" src="${imagePlaceholder}" data-src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} products" width="900" height="660" loading="lazy" decoding="async" fetchpriority="low">
             <div class="brand-content">
-              <img class="brand-card-logo" src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}">
+              <img class="brand-card-logo" src="${imagePlaceholder}" data-src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="460" height="172" loading="lazy" decoding="async" fetchpriority="low">
               <p>${escapeHtml(brand.role)}</p>
               <h2>${escapeHtml(brand.name)}</h2>
               <span class="text-link">Shop brand</span>
@@ -295,22 +368,27 @@ function renderBrands() {
 
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderBrand(brandId) {
+  if (brandId === "kalm-living") {
+    window.location.hash = "#/brand/kalm-outdoor";
+    return;
+  }
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
   const products = state.data.products.filter((product) => product.brandId === brand.id);
   app.innerHTML = `
     <section class="brand-hero">
       <div>
-        <img class="brand-hero-logo" src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}">
+        <img class="brand-hero-logo" src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="520" height="210">
         <p class="eyebrow">${escapeHtml(brand.role)}</p>
         <h1>${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
         <a class="button primary" href="#/shop?brand=${brand.id}">Shop ${escapeHtml(brand.name)}</a>
       </div>
-      <img src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} edit">
+      <img src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} edit" width="1200" height="900">
     </section>
 
     <section class="section-block">
@@ -327,6 +405,7 @@ function renderBrand(brandId) {
 
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderProduct(slug) {
@@ -337,9 +416,9 @@ function renderProduct(slug) {
     .slice(0, 4);
 
   app.innerHTML = `
-    <section class="product-detail" data-product-scope>
+    <section class="product-detail" data-product-scope data-product-id="${product.id}">
       <div class="product-gallery">
-        <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}">
+        <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="900" height="1125" data-product-image>
       </div>
       <div class="product-info">
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
@@ -351,15 +430,19 @@ function renderProduct(slug) {
         <div class="selector-row">
           <label>Colour
             <select data-color-select>
-              ${product.colors.map((color) => `<option>${escapeHtml(color)}</option>`).join("")}
+              <option value="">Choose colour</option>
+              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}">${escapeHtml(color)}</option>`).join("")}
             </select>
           </label>
           <label>Size
             <select data-size-select>
-              ${product.sizes.map((size) => `<option>${escapeHtml(size)}</option>`).join("")}
+              <option value="">Choose size</option>
+              ${product.sizes.map((size) => `<option value="${escapeAttribute(size)}">${escapeHtml(size)}</option>`).join("")}
             </select>
           </label>
         </div>
+        ${renderVariantPreviews(product)}
+        <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
 
         <button class="button primary full" type="button" data-add-to-bag="${product.id}">${escapeHtml(product.ctaLabel)}</button>
 
@@ -384,6 +467,7 @@ function renderProduct(slug) {
     ${renderProductRail("More from " + product.brand, related, "#/shop?brand=" + product.brandId)}
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderCartPage() {
@@ -407,6 +491,7 @@ function renderCartPage() {
     </section>
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderCheckout() {
@@ -415,7 +500,7 @@ function renderCheckout() {
     <section class="page-hero compact">
       <p class="eyebrow">Checkout</p>
       <h1>Complete your order.</h1>
-      <p>Enter your details, choose delivery and select a payment method.</p>
+      <p>Enter your details, choose delivery and select a payment method. Payment instructions will be confirmed after order review.</p>
     </section>
 
     <section class="checkout-layout">
@@ -454,8 +539,9 @@ function renderCheckout() {
           <label class="option-card"><input type="radio" name="payment_method" value="Ozow"><span><strong>Ozow</strong><small>Instant EFT</small></span></label>
           <label class="option-card"><input type="radio" name="payment_method" value="EFT"><span><strong>EFT</strong><small>Bank transfer</small></span></label>
         </div>
+        <p class="payment-note">Payment instructions will be confirmed after order review. Card details are not collected on this page.</p>
 
-        <label>Order notes<textarea name="notes" rows="4" placeholder="Sizing, delivery or gift notes"></textarea></label>
+        <label>Order notes<textarea name="notes" rows="4"></textarea></label>
         <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may process my details to complete this order and provide customer care.</span></label>
         <p class="form-status" data-order-status></p>
         <button class="button primary full" type="submit">Place order</button>
@@ -481,6 +567,7 @@ function renderCheckout() {
     event.currentTarget.cart_summary.value = getCartSummary();
     event.currentTarget.order_total.value = String(getSubtotal());
   });
+  hydrateDeferredImages(app);
 }
 
 function renderContact() {
@@ -488,7 +575,7 @@ function renderContact() {
     <section class="page-hero compact">
       <p class="eyebrow">Customer care</p>
       <h1>How can we help?</h1>
-      <p>For product, order, delivery and brand enquiries, send a note to the KALM Collective team.</p>
+      <p>For product, order, delivery and brand questions, send a note to the KALM Collective team.</p>
     </section>
     <section class="contact-layout">
       <form class="panel checkout-form" name="kalm-collective-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
@@ -521,6 +608,7 @@ function renderContact() {
     </section>
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderPolicies() {
@@ -533,11 +621,12 @@ function renderPolicies() {
     <section class="policy-grid">
       <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Courier delivery is available across South Africa. Standard delivery takes 2 to 5 business days after order confirmation, with express delivery available in selected areas.</p></article>
       <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused home or wellness items in their original condition and packaging.</p></article>
-      <article class="policy-card"><h2>Payment</h2><p>Checkout supports PayFast, Ozow and EFT selections. Order receipts are sent to the email address provided at checkout.</p></article>
+      <article class="policy-card"><h2>Payment</h2><p>Checkout supports PayFast, Ozow and EFT selections. Payment instructions are confirmed after order review, and card details are not collected on this page.</p></article>
       <article class="policy-card"><h2>Privacy</h2><p>KALM Collective processes customer information for orders, delivery, customer care and opt-in marketing in line with POPIA.</p></article>
     </section>
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderAccount() {
@@ -549,7 +638,7 @@ function renderAccount() {
     </section>
     <section class="contact-layout">
       <form class="panel checkout-form">
-        <label>Email address<input type="email" required placeholder="you@example.com"></label>
+        <label>Email address<input type="email" required></label>
         <button class="button primary" type="submit">Continue</button>
       </form>
       <aside class="care-panel">
@@ -559,6 +648,7 @@ function renderAccount() {
     </section>
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderNotFound() {
@@ -571,12 +661,13 @@ function renderNotFound() {
     </section>
     ${renderFooter()}
   `;
+  hydrateDeferredImages(app);
 }
 
 function renderBrandLogoCard(brand) {
   return `
     <a class="brand-logo-card" href="#/brand/${brand.id}">
-      <img src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}">
+      <img src="${imagePlaceholder}" data-src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="370" height="116" loading="lazy" decoding="async" fetchpriority="low">
       <span>${escapeHtml(brand.name)}</span>
     </a>
   `;
@@ -585,26 +676,54 @@ function renderBrandLogoCard(brand) {
 function renderCategoryTile(category) {
   return `
     <a class="category-tile" href="#/shop?category=${category.id}">
-      <img src="${escapeHtml(category.image)}" alt="${escapeAttribute(category.name)}">
+      <img src="${imagePlaceholder}" data-src="${escapeHtml(category.image)}" alt="${escapeAttribute(category.name)}" width="640" height="736" loading="lazy" decoding="async" fetchpriority="low">
       <span>${escapeHtml(category.name)}</span>
     </a>
   `;
 }
 
+function renderVariantPreviews(product) {
+  if (!product.colors.length) return "";
+  return `
+    <div class="variant-previews" aria-label="Colour previews">
+      ${product.colors.map((color) => `
+        <button type="button" data-variant-preview="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}">
+          <img src="${imagePlaceholder}" data-src="${escapeHtml(getVariantImage(product, color))}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(color)}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
 function renderProductCard(product) {
   return `
-    <article class="product-card" data-product-scope>
+    <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
         ${product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" loading="lazy">
+        <img src="${imagePlaceholder}" data-src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="640" height="800" loading="lazy" decoding="async" fetchpriority="low" data-product-image>
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h3><a href="#/product/${product.slug}">${escapeHtml(product.title)}</a></h3>
         <div class="price-line">${renderPrice(product)}</div>
         <div class="swatches" aria-label="Available colours">
-          ${product.colors.slice(0, 4).map((color) => `<span title="${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></span>`).join("")}
+          ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
         </div>
+        <div class="quick-selectors">
+          <label><span class="sr-only">Colour</span>
+            <select data-color-select aria-label="Choose colour for ${escapeAttribute(product.title)}">
+              <option value="">Colour</option>
+              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}">${escapeHtml(color)}</option>`).join("")}
+            </select>
+          </label>
+          <label><span class="sr-only">Size</span>
+            <select data-size-select aria-label="Choose size for ${escapeAttribute(product.title)}">
+              <option value="">Size</option>
+              ${product.sizes.map((size) => `<option value="${escapeAttribute(size)}">${escapeHtml(size)}</option>`).join("")}
+            </select>
+          </label>
+        </div>
+        <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
         <button class="button secondary full" type="button" data-add-to-bag="${product.id}">${escapeHtml(product.ctaLabel)}</button>
       </div>
     </article>
@@ -618,15 +737,42 @@ function renderPrice(product) {
   `;
 }
 
+function updateVariantImage(scope, color) {
+  const product = findProduct(scope?.getAttribute("data-product-id"));
+  const image = scope?.querySelector("[data-product-image]");
+  if (!product || !image || !color) return;
+  const imagePath = getVariantImage(product, color);
+  image.src = imagePath;
+  image.removeAttribute("data-src");
+  image.alt = `${product.title} in ${color}`;
+}
+
+function clearVariantError(scope) {
+  if (!scope) return;
+  const error = scope.querySelector("[data-variant-error]");
+  if (error) error.textContent = "";
+  scope.querySelectorAll("[data-size-select], [data-color-select]").forEach((field) => field.removeAttribute("aria-invalid"));
+}
+
+function getVariantImage(product, color) {
+  if (!product) return "";
+  const fromMap = color && product.variantImages?.[color];
+  if (fromMap) return fromMap;
+  const fromVariant = product.variants?.find((variant) => variant.colour === color || variant.color === color)?.image;
+  return fromVariant || product.image;
+}
+
 function renderBagLine(item) {
   const product = findProduct(item.productId);
   if (!product) return "";
+  const image = item.image || getVariantImage(product, item.color);
   return `
     <div class="bag-line">
-      <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}">
+      <img src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(item.color)}" width="184" height="224">
       <div>
         <a href="#/product/${product.slug}">${escapeHtml(product.title)}</a>
-        <p>${escapeHtml(item.color)} / ${escapeHtml(item.size)}</p>
+        <p class="bag-brand">${escapeHtml(product.brand)}</p>
+        <p>Colour: ${escapeHtml(item.color)} / Size: ${escapeHtml(item.size)}</p>
         <strong>${formatPrice(product.price * item.qty)}</strong>
         <div class="qty-row">
           <button type="button" data-key="${item.key}" data-qty="-1" aria-label="Decrease quantity">-</button>
@@ -642,11 +788,13 @@ function renderBagLine(item) {
 function renderOrderLine(item) {
   const product = findProduct(item.productId);
   if (!product) return "";
+  const image = item.image || getVariantImage(product, item.color);
   return `
     <div class="order-line">
-      <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}">
+      <img src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(item.color)}" width="136" height="164">
       <div>
         <strong>${escapeHtml(product.title)}</strong>
+        <span>${escapeHtml(product.brand)}</span>
         <span>${item.qty} x ${escapeHtml(item.color)} / ${escapeHtml(item.size)}</span>
       </div>
       <b>${formatPrice(product.price * item.qty)}</b>
@@ -665,12 +813,18 @@ function renderBag() {
 function addToBag(productId, selectedSize, selectedColor) {
   const product = findProduct(productId);
   if (!product) return;
-  const size = selectedSize || product.sizes[0];
-  const color = selectedColor || product.colors[0];
+  if (!selectedSize || !selectedColor) return;
+  const size = selectedSize;
+  const color = selectedColor;
+  const image = getVariantImage(product, color);
   const key = `${productId}::${size}::${color}`;
   const item = state.bag.find((entry) => entry.key === key);
-  if (item) item.qty += 1;
-  else state.bag.push({ key, productId, size, color, qty: 1 });
+  if (item) {
+    item.qty += 1;
+    item.image = image;
+  } else {
+    state.bag.push({ key, productId, size, color, image, qty: 1 });
+  }
   saveBag();
   renderBag();
   openBag();
@@ -699,11 +853,13 @@ function removeFromBag(key) {
 
 function openBag() {
   cartDrawer?.setAttribute("aria-hidden", "false");
+  cartDrawer?.removeAttribute("inert");
   document.body.classList.add("bag-open");
 }
 
 function closeBag() {
   cartDrawer?.setAttribute("aria-hidden", "true");
+  cartDrawer?.setAttribute("inert", "");
   document.body.classList.remove("bag-open");
 }
 
@@ -786,7 +942,7 @@ function getSubtotal() {
 function getCartSummary() {
   return state.bag.map((item) => {
     const product = findProduct(item.productId);
-    return product ? `${item.qty} x ${product.title} (${item.color}, ${item.size})` : "";
+    return product ? `${item.qty} x ${product.brand} ${product.title} (Colour: ${item.color}, Size: ${item.size})` : "";
   }).filter(Boolean).join("; ");
 }
 
@@ -830,8 +986,8 @@ function renderFooter() {
       </div>
       <div class="footer-grid">
         <div>
-          <img src="branding/kalm-collective-display-logo.png" alt="KALM Collective">
-          <p>Premium essentials for movement and everyday living.</p>
+          <img src="${imagePlaceholder}" data-src="branding/kalm-collective-display-logo.webp" alt="KALM Collective" width="420" height="118" loading="lazy" decoding="async" fetchpriority="low">
+          <p>Premium essentials for movement, outdoor routines and everyday living.</p>
         </div>
         <div>
           <h3>Shop</h3>

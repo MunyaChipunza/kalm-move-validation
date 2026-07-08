@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KALM Collective | Premium Movement, Living, Wellness and Home</title>
-  <meta name="description" content="Shop KALM Collective across KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home. Premium essentials for movement and everyday living.">
+  <title>KALM Collective | Premium Movement, Outdoor, Wellness and Home</title>
+  <meta name="description" content="Shop KALM Collective across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home. Premium essentials for movement, outdoor routines and everyday living.">
   <link rel="canonical" href="https://kalmcollective.co.za/">
   <meta property="og:title" content="KALM Collective">
-  <meta property="og:description" content="Premium essentials for movement and everyday living. Shop the KALM Collective brand family online.">
+  <meta property="og:description" content="Premium essentials for movement, outdoor routines and everyday living. Shop the KALM Collective brand family online.">
   <meta property="og:image" content="https://kalmcollective.co.za/branding/social-preview.png">
   <meta property="og:url" content="https://kalmcollective.co.za/">
   <meta property="og:type" content="website">
@@ -15,6 +15,7 @@
   <meta name="theme-color" content="#111111">
   <link rel="icon" href="branding/favicon.png" type="image/png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="assets/images/home-hero-shop-900.webp" imagesrcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w, assets/images/home-hero-shop-1200.webp 1200w, assets/images/home-hero-shop.webp 1800w" imagesizes="(max-width: 760px) 100vw, 63vw" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
     </div>
 
     <a class="brand" href="#/" aria-label="KALM Collective home">
-      <img src="branding/kalm-collective-display-logo.png" alt="KALM Collective">
+      <img src="branding/kalm-collective-display-logo.webp" alt="KALM Collective" width="520" height="148" decoding="async">
     </a>
 
     <div class="header-actions right">
@@ -60,7 +61,7 @@
       <a href="#/shop?category=women">Women</a>
       <a href="#/shop?category=activewear">Activewear</a>
       <a href="#/shop?category=wellness">Wellness</a>
-      <a href="#/shop?category=living">Living</a>
+      <a href="#/shop?category=outdoor">Outdoor</a>
       <a href="#/shop?category=home">Home</a>
       <a href="#/brands">Brands</a>
       <a class="sale-link" href="#/shop?category=sale">Sale</a>
@@ -70,7 +71,7 @@
   <div class="search-panel" data-search-panel hidden>
     <label class="search-field">
       <span class="sr-only">Search KALM Collective</span>
-      <input type="search" placeholder="Search products or brands" data-site-search>
+      <input type="search" data-site-search>
     </label>
     <button class="icon-button" type="button" data-search-close aria-label="Close search">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
@@ -78,13 +79,26 @@
   </div>
 
   <main id="app" tabindex="-1">
-    <section class="loading-state" aria-live="polite">
-      <p>KALM Collective</p>
-      <h1>Loading the shop</h1>
+    <section class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">KALM Collective</p>
+        <h1>Premium essentials for movement, outdoor routines and everyday living.</h1>
+        <p>Shop activewear, outdoor staples, wellness accessories and home essentials from the KALM brand family.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#/shop?category=new-in">Shop new arrivals</a>
+          <a class="button secondary" href="#/brands">Explore brands</a>
+        </div>
+      </div>
+      <a class="hero-media" href="#/shop" aria-label="Shop KALM Collective">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w" sizes="100vw">
+          <img src="assets/images/home-hero-shop-1200.webp" srcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w, assets/images/home-hero-shop-1200.webp 1200w, assets/images/home-hero-shop.webp 1800w" sizes="(max-width: 760px) 100vw, 63vw" alt="KALM Collective activewear and lifestyle products" width="1200" height="900" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
     </section>
   </main>
 
-  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Shopping bag">
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" inert aria-label="Shopping bag">
     <div class="cart-panel">
       <div class="cart-head">
         <div>

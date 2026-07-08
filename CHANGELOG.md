@@ -3,10 +3,10 @@
 ## 2026-07-08
 
 - Rebuilt the public storefront as KALM Collective for `kalmcollective.co.za`.
-- Added full five-brand architecture: KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home.
+- Added full five-brand architecture: KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.
 - Added four new KALM sub-brand display logos using the buffalo device.
 - Expanded the catalog to 26 visible products, with at least five products per brand.
-- Added generated ecommerce imagery for KALM Move, Living, Wellness and Home products.
+- Added generated ecommerce imagery for KALM Move, Outdoor, Wellness and Home products.
 - Reworked homepage, shop, brand, product, bag, checkout, contact and policy routes.
 - Replaced public readiness copy with retail copy.
 - Added domain and payment setup notes for the remaining external tasks.

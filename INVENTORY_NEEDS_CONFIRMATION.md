@@ -6,7 +6,7 @@ The public storefront uses retail-ready product presentation. Internal operation
 
 1. Count each KS Active SKU by style, colour and size.
 2. Confirm which KALM Move samples move from validation interest into purchasable supply.
-3. Confirm supplier lead times for KALM Living, KALM Wellness and KALM Home products.
+3. Confirm supplier lead times for KALM Outdoor, KALM Wellness and KALM Home products.
 4. Update `products.json` only after stock and replenishment assumptions are confirmed.
 5. Match checkout volume to confirmed fulfilment capacity.
 

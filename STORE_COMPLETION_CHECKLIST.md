@@ -2,10 +2,10 @@
 
 | Area | Status | Notes |
 | --- | --- | --- |
-| Brand architecture | Complete | KALM Collective parent with KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home. |
+| Brand architecture | Complete | KALM Collective parent with KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home. |
 | Brand logos | Complete | Four new KALM sub-brand display logos created from the buffalo device. |
 | Catalog | Complete for storefront | 26 visible products; at least 5 per brand. |
-| Product imagery | Complete for storefront | KS Active photography retained; KALM Move, Living, Wellness and Home product imagery added. |
+| Product imagery | Complete for storefront | KS Active photography retained; KALM Move, Outdoor, Wellness and Home product imagery added. |
 | Homepage | Complete | Hero, featured brands, new arrivals, categories, featured collection, newsletter and footer. |
 | Shop page | Complete | Product grid, brand/category/search/sort filters and sale/new-in routes. |
 | Brand pages | Complete | Five brand pages with logos, hero imagery and product grids. |

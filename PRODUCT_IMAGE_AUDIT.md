@@ -6,14 +6,14 @@
 | --- | ---: | --- |
 | KS Active | 6 | Existing KS Active product photography assets. |
 | KALM Move | 5 | Generated ecommerce product imagery for the storefront. |
-| KALM Living | 5 | Generated ecommerce product imagery for the storefront. |
+| KALM Outdoor | 5 | Generated ecommerce product imagery for the storefront. |
 | KALM Wellness | 5 | Generated ecommerce product imagery for the storefront. |
 | KALM Home | 5 | Generated ecommerce product imagery for the storefront. |
 
 ## New Generated Assets
 
 - `assets/images/generated/kalm-move/`
-- `assets/images/generated/kalm-living/`
+- `assets/images/generated/kalm-outdoor/`
 - `assets/images/generated/kalm-wellness/`
 - `assets/images/generated/kalm-home/`
 - `assets/images/generated/brand-tiles/`

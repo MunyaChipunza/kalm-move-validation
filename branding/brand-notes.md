@@ -6,7 +6,7 @@ KALM Collective is the parent storefront. The five visible brands are:
 
 - KS Active
 - KALM Move
-- KALM Living
+- KALM Outdoor
 - KALM Wellness
 - KALM Home
 
@@ -16,9 +16,9 @@ The KALM sub-brand display logos use the same buffalo device from the Drive bran
 
 New logo files:
 
-- `kalm-move-display-logo.png`
-- `kalm-living-display-logo.png`
-- `kalm-wellness-display-logo.png`
-- `kalm-home-display-logo.png`
+- `kalm-move-display-logo-a.webp`
+- `kalm-outdoor-display-logo.webp`
+- `kalm-wellness-display-logo-b.webp`
+- `kalm-home-display-logo.webp`
 
 Verdict remains unchanged: KALM Move is validation-ready, not bank-ready or production-ready.

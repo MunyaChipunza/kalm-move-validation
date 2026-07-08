@@ -331,6 +331,12 @@ button {
   overflow: hidden;
 }
 
+.hero-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-media img {
   width: 100%;
   height: 100%;
@@ -342,6 +348,8 @@ button {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
   padding: 34px 42px 18px;
+  content-visibility: auto;
+  contain-intrinsic-size: 150px;
 }
 
 .brand-logo-card {
@@ -366,6 +374,8 @@ button {
 
 .section-block {
   padding: 48px 42px;
+  content-visibility: auto;
+  contain-intrinsic-size: 720px;
 }
 
 .section-head {
@@ -472,12 +482,31 @@ button {
   min-height: 18px;
 }
 
-.swatches span {
+.swatches span,
+.swatches button {
   width: 14px;
   height: 14px;
   border: 1px solid #c4c0b8;
   border-radius: 999px;
   background: var(--swatch);
+  padding: 0;
+}
+
+.quick-selectors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.quick-selectors select {
+  width: 100%;
+  height: 38px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
 }
 
 .category-grid {
@@ -515,6 +544,8 @@ button {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--soft);
+  content-visibility: auto;
+  contain-intrinsic-size: 620px;
 }
 
 .feature-band > div {
@@ -543,6 +574,8 @@ button {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: #fbfaf7;
+  content-visibility: auto;
+  contain-intrinsic-size: 260px;
 }
 
 .newsletter-panel p {
@@ -828,6 +861,40 @@ button {
   background: #fff;
 }
 
+.variant-previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.variant-previews button {
+  width: 58px;
+  height: 68px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.variant-previews img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.variant-error {
+  min-height: 18px;
+  margin: -8px 0 0 !important;
+  color: var(--danger) !important;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+[aria-invalid="true"] {
+  border-color: var(--danger) !important;
+}
+
 .accordion-list {
   border-top: 1px solid var(--line);
 }
@@ -1003,6 +1070,13 @@ button {
 .checkout-form h2 {
   margin: 14px 0 0;
   font-size: 22px;
+}
+
+.payment-note {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .form-grid.two {

@@ -15,7 +15,7 @@
       "summary": "Supportive stretch staples for training, errands and everyday movement.",
       "heroImage": "assets/images/ks-active-hero.webp",
       "tileImage": "assets/images/ks-active-brand-tile.webp",
-      "logo": "branding/ks-active-logo-black.png"
+      "logo": "branding/ks-active-logo-black.webp"
     },
     {
       "id": "kalm-move",
@@ -24,16 +24,16 @@
       "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-move-tile.webp",
       "tileImage": "assets/images/generated/kalm-move/studio-starter-set.webp",
-      "logo": "branding/kalm-move-display-logo.png"
+      "logo": "branding/kalm-move-display-logo-a.webp"
     },
     {
-      "id": "kalm-living",
-      "name": "KALM Living",
-      "role": "Living essentials",
-      "summary": "Soft textures, warm details and considered pieces for everyday spaces.",
-      "heroImage": "assets/images/generated/brand-tiles/kalm-living-tile.webp",
-      "tileImage": "assets/images/generated/kalm-living/ceramic-soy-candle.webp",
-      "logo": "branding/kalm-living-display-logo.png"
+      "id": "kalm-outdoor",
+      "name": "KALM Outdoor",
+      "role": "Outdoor essentials",
+      "summary": "Polished outdoor staples for picnics, patios, day trips and open-air routines.",
+      "heroImage": "assets/images/generated/brand-tiles/kalm-outdoor-tile.webp",
+      "tileImage": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp",
+      "logo": "branding/kalm-outdoor-display-logo.webp"
     },
     {
       "id": "kalm-wellness",
@@ -42,7 +42,7 @@
       "summary": "Simple recovery, hydration and studio essentials for balanced routines.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-wellness-tile.webp",
       "tileImage": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp",
-      "logo": "branding/kalm-wellness-display-logo.png"
+      "logo": "branding/kalm-wellness-display-logo-b.webp"
     },
     {
       "id": "kalm-home",
@@ -51,7 +51,7 @@
       "summary": "Clean, tactile pieces for bedrooms, bathrooms and calm daily rituals.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-home-tile.webp",
       "tileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp",
-      "logo": "branding/kalm-home-display-logo.png"
+      "logo": "branding/kalm-home-display-logo.webp"
     }
   ],
   "categories": [
@@ -76,9 +76,9 @@
       "image": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp"
     },
     {
-      "id": "living",
-      "name": "Living",
-      "image": "assets/images/generated/kalm-living/ceramic-soy-candle.webp"
+      "id": "outdoor",
+      "name": "Outdoor",
+      "image": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp"
     },
     {
       "id": "home",
@@ -132,7 +132,12 @@
         "sale"
       ],
       "badge": "Best seller",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp",
+        "Wine": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp",
+        "Deep Plum": "assets/images/ks-active/ks-high-waist-seamless-leggings.webp"
+      }
     },
     {
       "id": "ks-high-stretch-seamless-leggings",
@@ -171,7 +176,11 @@
         "leggings"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/ks-active/ks-high-stretch-seamless-leggings.webp",
+        "Charcoal": "assets/images/ks-active/ks-high-stretch-seamless-leggings.webp"
+      }
     },
     {
       "id": "ks-open-back-romper",
@@ -209,7 +218,10 @@
         "activewear"
       ],
       "badge": "New in",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/ks-active/ks-open-back-romper.webp"
+      }
     },
     {
       "id": "ks-high-waist-seamless-shorts",
@@ -250,7 +262,12 @@
         "sale"
       ],
       "badge": "Sale",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp",
+        "Wine": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp",
+        "Deep Plum": "assets/images/ks-active/ks-high-waist-seamless-shorts.webp"
+      }
     },
     {
       "id": "ks-crisscross-back-sports-bra",
@@ -290,7 +307,12 @@
         "sports-bra"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Blue": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp",
+        "Black": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp",
+        "Purple": "assets/images/ks-active/ks-crisscross-back-sports-bra.webp"
+      }
     },
     {
       "id": "ks-dual-zip-long-sleeve-crop",
@@ -330,7 +352,12 @@
         "tops"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp",
+        "Stone": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp",
+        "Taupe": "assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp"
+      }
     },
     {
       "id": "kalm-move-everyday-movement-legging",
@@ -371,7 +398,10 @@
         "leggings"
       ],
       "badge": "New in",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/generated/kalm-move/everyday-movement-legging.webp"
+      }
     },
     {
       "id": "kalm-move-medium-support-sports-bra",
@@ -412,7 +442,10 @@
         "sports-bra"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Olive": "assets/images/generated/kalm-move/medium-support-sports-bra.webp"
+      }
     },
     {
       "id": "kalm-move-modest-performance-tee",
@@ -454,7 +487,10 @@
         "tops"
       ],
       "badge": "New in",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Oat": "assets/images/generated/kalm-move/modest-performance-tee.webp"
+      }
     },
     {
       "id": "kalm-move-studio-starter-set",
@@ -495,7 +531,10 @@
         "sets"
       ],
       "badge": "Set value",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black / Olive / Oat": "assets/images/generated/kalm-move/studio-starter-set.webp"
+      }
     },
     {
       "id": "kalm-move-canvas-tote-and-cap",
@@ -530,88 +569,97 @@
         "accessories"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black / Natural": "assets/images/generated/kalm-move/canvas-tote-and-cap.webp"
+      }
     },
     {
-      "id": "kalm-living-ceramic-soy-candle",
-      "brand": "KALM Living",
-      "brandId": "kalm-living",
-      "collection": "KALM Living Edit",
-      "category": "living",
-      "type": "Candle",
-      "title": "Ceramic Soy Candle",
-      "slug": "kalm-living-ceramic-soy-candle",
-      "price": 289,
+      "id": "kalm-outdoor-canvas-utility-tote",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Edit",
+      "category": "outdoor",
+      "type": "Tote",
+      "title": "Canvas Utility Tote",
+      "slug": "kalm-outdoor-canvas-utility-tote",
+      "price": 449,
       "compareAtPrice": null,
       "colors": [
-        "Black ceramic"
+        "Black / Natural"
       ],
       "sizes": [
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-living/ceramic-soy-candle.webp",
-      "description": "A sculptural soy candle for coffee tables, bathrooms and nightstand rituals.",
+      "image": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp",
+      "description": "A structured canvas tote for picnic days, markets and relaxed weekend carry.",
       "detailBullets": [
-        "Ceramic vessel",
-        "Soft ambient scent",
-        "Clean modern shape"
+        "Structured canvas body",
+        "Interior slip pocket",
+        "Designed for open-air errands"
       ],
-      "fitNotes": "One size.",
-      "fabric": "Soy wax blend in a ceramic vessel.",
-      "care": "Trim wick before lighting and burn on a heat-safe surface.",
+      "fitNotes": "One size carry-all.",
+      "fabric": "Heavy canvas with reinforced handles.",
+      "care": "Spot clean with a damp cloth and air dry.",
       "tags": [
         "new-in",
-        "living",
-        "home-fragrance"
+        "outdoor",
+        "bags"
       ],
       "badge": "New in",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black / Natural": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp"
+      }
     },
     {
-      "id": "kalm-living-woven-throw-blanket",
-      "brand": "KALM Living",
-      "brandId": "kalm-living",
-      "collection": "KALM Living Edit",
-      "category": "living",
-      "type": "Throw",
-      "title": "Woven Throw Blanket",
-      "slug": "kalm-living-woven-throw-blanket",
+      "id": "kalm-outdoor-weather-ready-picnic-blanket",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Edit",
+      "category": "outdoor",
+      "type": "Blanket",
+      "title": "Weather-Ready Picnic Blanket",
+      "slug": "kalm-outdoor-weather-ready-picnic-blanket",
       "price": 699,
       "compareAtPrice": null,
       "colors": [
-        "Grey"
+        "Charcoal"
       ],
       "sizes": [
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-living/woven-throw-blanket.webp",
-      "description": "A textured woven throw with a soft hand feel and relaxed fringe edge.",
+      "image": "assets/images/generated/kalm-outdoor/weather-ready-picnic-blanket.webp",
+      "description": "A roll-up picnic blanket with a soft top layer and practical outdoor underside.",
       "detailBullets": [
-        "Generous sofa throw",
-        "Fringe edge",
-        "Layered neutral texture"
+        "Roll-and-carry strap",
+        "Soft woven top",
+        "Outdoor-ready backing"
       ],
-      "fitNotes": "One size throw.",
-      "fabric": "Soft woven acrylic-cotton blend.",
-      "care": "Cold gentle wash or dry clean for best finish.",
+      "fitNotes": "One size picnic blanket.",
+      "fabric": "Woven acrylic-cotton blend with coated underside.",
+      "care": "Shake off debris and spot clean after use.",
       "tags": [
-        "living",
-        "soft-furnishings"
+        "outdoor",
+        "picnic"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Charcoal": "assets/images/generated/kalm-outdoor/weather-ready-picnic-blanket.webp"
+      }
     },
     {
-      "id": "kalm-living-linen-cushion-pair",
-      "brand": "KALM Living",
-      "brandId": "kalm-living",
-      "collection": "KALM Living Edit",
-      "category": "living",
+      "id": "kalm-outdoor-patio-cushion-pair",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Edit",
+      "category": "outdoor",
       "type": "Cushions",
-      "title": "Linen Cushion Pair",
-      "slug": "kalm-living-linen-cushion-pair",
+      "title": "Patio Cushion Pair",
+      "slug": "kalm-outdoor-patio-cushion-pair",
       "price": 549,
       "compareAtPrice": null,
       "colors": [
@@ -621,92 +669,101 @@
         "Pair"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-living/linen-cushion-pair.webp",
-      "description": "A two-piece cushion pair in quiet neutrals for sofas, beds and reading corners.",
+      "image": "assets/images/generated/kalm-outdoor/patio-cushion-pair.webp",
+      "description": "A two-piece cushion pair for patio chairs, balcony benches and relaxed outdoor corners.",
       "detailBullets": [
         "Two cushions included",
-        "Textured linen feel",
-        "Easy monochrome styling"
+        "Textured outdoor handle",
+        "Neutral monochrome styling"
       ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "fitNotes": "Pair of outdoor cushions.",
+      "fabric": "Outdoor-feel woven cover with filled insert.",
+      "care": "Spot clean and store indoors during heavy rain.",
       "tags": [
-        "living",
-        "soft-furnishings"
+        "outdoor",
+        "patio"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Ivory / Black": "assets/images/generated/kalm-outdoor/patio-cushion-pair.webp"
+      }
     },
     {
-      "id": "kalm-living-stoneware-tray-and-vase",
-      "brand": "KALM Living",
-      "brandId": "kalm-living",
-      "collection": "KALM Living Edit",
-      "category": "living",
-      "type": "Decor",
-      "title": "Stoneware Tray and Vase Set",
-      "slug": "kalm-living-stoneware-tray-and-vase",
+      "id": "kalm-outdoor-matte-camp-lantern",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Edit",
+      "category": "outdoor",
+      "type": "Lantern",
+      "title": "Matte Camp Lantern",
+      "slug": "kalm-outdoor-matte-camp-lantern",
       "price": 489,
       "compareAtPrice": null,
       "colors": [
-        "Stone"
+        "Black"
       ],
       "sizes": [
         "One size"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-living/stoneware-tray-and-vase.webp",
-      "description": "A compact stoneware styling set for shelves, side tables and entry consoles.",
+      "image": "assets/images/generated/kalm-outdoor/matte-camp-lantern.webp",
+      "description": "A compact matte lantern for patio evenings, camping tables and load-shedding backup.",
       "detailBullets": [
-        "Tray and vase set",
-        "Matte stone finish",
-        "Designed for small-space styling"
+        "Carry handle",
+        "Matte black finish",
+        "Warm ambient glow"
       ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "fitNotes": "One size lantern.",
+      "fabric": "Powder-coated metal body with LED light source.",
+      "care": "Wipe clean and keep dry when stored.",
       "tags": [
-        "living",
-        "decor"
+        "outdoor",
+        "lighting"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/generated/kalm-outdoor/matte-camp-lantern.webp"
+      }
     },
     {
-      "id": "kalm-living-ribbed-carafe-and-tumbler",
-      "brand": "KALM Living",
-      "brandId": "kalm-living",
-      "collection": "KALM Living Edit",
-      "category": "living",
-      "type": "Serveware",
-      "title": "Ribbed Carafe and Tumbler Set",
-      "slug": "kalm-living-ribbed-carafe-and-tumbler",
+      "id": "kalm-outdoor-insulated-carafe-and-tumbler",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Edit",
+      "category": "outdoor",
+      "type": "Drinkware",
+      "title": "Insulated Carafe and Tumbler Set",
+      "slug": "kalm-outdoor-insulated-carafe-and-tumbler",
       "price": 399,
       "compareAtPrice": null,
       "colors": [
-        "Smoke glass"
+        "Smoke / Steel"
       ],
       "sizes": [
         "Set"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/generated/kalm-living/ribbed-carafe-and-tumbler.webp",
-      "description": "A ribbed glass bedside or table set with a quiet smoked finish.",
+      "image": "assets/images/generated/kalm-outdoor/insulated-carafe-and-tumbler.webp",
+      "description": "A durable drinkware set for garden tables, road trips and slow mornings outside.",
       "detailBullets": [
         "Carafe and tumbler",
-        "Ribbed glass texture",
-        "Bedside-ready scale"
+        "Outdoor-friendly finish",
+        "Designed for hot or cold drinks"
       ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "fitNotes": "One drinkware set.",
+      "fabric": "Insulated stainless steel with smoke-finish tumbler.",
+      "care": "Hand wash recommended.",
       "tags": [
-        "living",
-        "serveware"
+        "outdoor",
+        "drinkware"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Smoke / Steel": "assets/images/generated/kalm-outdoor/insulated-carafe-and-tumbler.webp"
+      }
     },
     {
       "id": "kalm-wellness-matte-steel-water-bottle",
@@ -742,7 +799,10 @@
         "hydration"
       ],
       "badge": "New in",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/generated/kalm-wellness/matte-steel-water-bottle.webp"
+      }
     },
     {
       "id": "kalm-wellness-studio-mat-and-towel",
@@ -778,7 +838,10 @@
         "studio"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black / Charcoal": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp"
+      }
     },
     {
       "id": "kalm-wellness-olive-resistance-band-set",
@@ -813,7 +876,10 @@
         "studio"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Olive": "assets/images/generated/kalm-wellness/olive-resistance-band-set.webp"
+      }
     },
     {
       "id": "kalm-wellness-calm-roller-and-balm",
@@ -848,7 +914,10 @@
         "body-care"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Amber / Black": "assets/images/generated/kalm-wellness/calm-roller-and-balm.webp"
+      }
     },
     {
       "id": "kalm-wellness-recovery-strap-and-cork-ball",
@@ -883,7 +952,10 @@
         "recovery"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black / Cork": "assets/images/generated/kalm-wellness/recovery-strap-and-cork-ball.webp"
+      }
     },
     {
       "id": "kalm-home-white-cotton-bedding-set",
@@ -921,7 +993,10 @@
         "bedding"
       ],
       "badge": "New in",
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "White": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp"
+      }
     },
     {
       "id": "kalm-home-charcoal-bath-towel-stack",
@@ -956,7 +1031,10 @@
         "bathroom"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Charcoal": "assets/images/generated/kalm-home/charcoal-bath-towel-stack.webp"
+      }
     },
     {
       "id": "kalm-home-ceramic-mug-pair",
@@ -991,7 +1069,10 @@
         "kitchen"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black / Ivory": "assets/images/generated/kalm-home/ceramic-mug-pair.webp"
+      }
     },
     {
       "id": "kalm-home-woven-storage-basket",
@@ -1026,7 +1107,10 @@
         "storage"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Natural": "assets/images/generated/kalm-home/woven-storage-basket.webp"
+      }
     },
     {
       "id": "kalm-home-black-reed-diffuser",
@@ -1061,7 +1145,10 @@
         "home-fragrance"
       ],
       "badge": null,
-      "ctaLabel": "Add to bag"
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Smoke black": "assets/images/generated/kalm-home/black-reed-diffuser.webp"
+      }
     }
   ]
 }
