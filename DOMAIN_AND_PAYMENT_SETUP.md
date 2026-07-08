@@ -1,6 +1,6 @@
 # Domain And Payment Setup
 
-This is the remaining external setup for moving from the current deployment URL to `kalmcollective.com` and activating real payment processing.
+This is the remaining external setup for moving from the current deployment URL to `kalmcollective.co.za` and activating real payment processing.
 
 ## Domain
 
@@ -13,16 +13,16 @@ Official Netlify references:
 Steps:
 
 1. In Netlify, open the KALM Collective site, then go to **Domain management**.
-2. Add `kalmcollective.com` and `www.kalmcollective.com` as production domains.
+2. Add `kalmcollective.co.za` and `www.kalmcollective.co.za` as production domains.
 3. Choose the DNS route:
    - Netlify DNS route: follow Netlify's prompts and update the registrar nameservers to the Netlify nameservers shown in the dashboard.
    - External DNS route: point the apex `A` record to `75.2.60.5` and set `www` as a `CNAME` to the Netlify site subdomain. Netlify currently recommends using `www` as the primary domain when external DNS is used.
 4. Set the preferred primary domain in Netlify.
 5. Wait for DNS propagation, then verify HTTPS under **Domain management > HTTPS**. Netlify provisions Let's Encrypt certificates automatically after valid DNS is detected.
 6. Confirm these URLs resolve:
-   - `https://kalmcollective.com/`
-   - `https://www.kalmcollective.com/`
-   - `https://kalmcollective.com/#/shop`
+   - `https://kalmcollective.co.za/`
+   - `https://www.kalmcollective.co.za/`
+   - `https://kalmcollective.co.za/#/shop`
 
 ## Payment
 
@@ -48,7 +48,7 @@ STORE_BANK_NAME=
 STORE_BANK_ACCOUNT_NAME=
 STORE_BANK_ACCOUNT_NUMBER=
 STORE_BANK_BRANCH_CODE=
-STORE_SUPPORT_EMAIL=hello@kalmcollective.com
+STORE_SUPPORT_EMAIL=hello@kalmcollective.co.za
 ```
 
 Implementation steps after credentials are available:

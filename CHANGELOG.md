@@ -2,7 +2,7 @@
 
 ## 2026-07-08
 
-- Rebuilt the public storefront as KALM Collective for `kalmcollective.com`.
+- Rebuilt the public storefront as KALM Collective for `kalmcollective.co.za`.
 - Added full five-brand architecture: KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home.
 - Added four new KALM sub-brand display logos using the buffalo device.
 - Expanded the catalog to 26 visible products, with at least five products per brand.

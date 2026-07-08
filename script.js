@@ -514,7 +514,7 @@ function renderContact() {
       </form>
       <aside class="care-panel">
         <h2>Customer Care</h2>
-        <p>Email: hello@kalmcollective.com</p>
+        <p>Email: hello@kalmcollective.co.za</p>
         <p>Hours: Monday to Friday, 09:00 to 17:00 SAST.</p>
         <p>Follow: @kalmcollective</p>
       </aside>
@@ -854,7 +854,7 @@ function renderFooter() {
         <div>
           <h3>Follow</h3>
           <p>@kalmcollective</p>
-          <p>kalmcollective.com</p>
+          <p>kalmcollective.co.za</p>
         </div>
       </div>
       <p class="copyright">© 2026 KALM Collective. All rights reserved.</p>
