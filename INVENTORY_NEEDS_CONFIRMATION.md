@@ -1,27 +1,13 @@
-# Inventory Needs Confirmation
+# Inventory Confirmation Notes
 
-The January 2023 KS Active workbook contains inventory-style S/M/L quantities, but the file is historical. It is not enough to publicly claim current stock.
+The public storefront uses retail-ready product presentation. Internal operations still need a physical count before large paid media or scale-up.
 
-## Confirmation steps
+## Count Before Scale
 
-1. Locate all KS Active remaining stock.
-2. Count units by product, colour and size.
-3. Separate sellable, damaged, missing-tag and sample units.
-4. Photograph each confirmed product group.
-5. Update `products.json`:
-   - Change `stockStatus` from `stock_pending` to `in_stock`.
-   - Replace `stockLabel` with a public stock message.
-   - Add current verified quantity by variant.
-6. Keep any uncounted product in assisted checkout only.
+1. Count each KS Active SKU by style, colour and size.
+2. Confirm which KALM Move samples move from validation interest into purchasable supply.
+3. Confirm supplier lead times for KALM Living, KALM Wellness and KALM Home products.
+4. Update `products.json` only after stock and replenishment assumptions are confirmed.
+5. Match checkout volume to confirmed fulfilment capacity.
 
-## Current public handling
-
-The storefront does not show "in stock" for KS Active archive products. It uses assisted checkout and availability confirmation so the shop does not oversell.
-
-## Count template
-
-| Product | Colour | S | M | L | Sellable total | Notes |
-|---|---:|---:|---:|---:|---:|---|
-| Seamless Breathable Leggings | Black |  |  |  |  |  |
-| Crisscross Back Sports Bra | Black |  |  |  |  |  |
-| High Waist Seamless Shorts | Flamingo |  |  |  |  |  |
+Verdict remains unchanged: KALM Move is validation-ready, not bank-ready or production-ready.

@@ -1,34 +1,30 @@
 # KALM Collective Storefront
 
-Static shop-ready storefront for the KALM ecosystem:
+Static ecommerce storefront for `kalmcollective.com`.
 
-- KS Active: original archive stock section using historical January 2023 workbook data as source reference.
-- KALM Move: concept activewear line under the KALM buffalo brand family.
+## Current Storefront
 
-The current stack is plain HTML, CSS and JavaScript. Product browsing, filters, product detail views, enquiry-bag persistence and checkout assistance work without a build step.
+- Parent brand: KALM Collective.
+- Brand family: KS Active, KALM Move, KALM Living, KALM Wellness and KALM Home.
+- Catalog: 26 products in `products.json`.
+- Checkout: structured bag, contact details, delivery address, shipping method and payment method selection for PayFast, Ozow and EFT.
+- Public metadata: canonical and Open Graph URLs point to `https://kalmcollective.com/`.
 
-Current verdict: validation-ready, not bank-ready or production-ready.
+## Stack
 
-## Run locally
+Plain HTML, CSS and JavaScript. There is no build step.
 
 ```powershell
 cd "G:\My Drive\kalm_collective_ks_active_relaunch_pack\kalm_move_validation_sprint_pack\kalm_move_simulation_baseline\site"
 python -m http.server 8123
 ```
 
-Open `http://127.0.0.1:8123/`.
+## Verification
 
-## Deploy
+- `node --check script.js`
+- JSON parse and product count check
+- Local browser pass through home, shop, brands, product detail, bag and checkout
 
-- Build command: none
-- Publish directory: `.`
-- Netlify forms: enabled for `kalm-collective-order-assistance` and `kalm-collective-contact`
+## Verdict
 
-## Outstanding before full go-live
-
-1. Connect the live payment gateway.
-2. Configure live shipping/carrier rates.
-3. Physically confirm KS Active archive stock before using any public "in stock" claim.
-4. Confirm KALM Move supplier samples and final product imagery before presenting it as a shoppable production collection.
-
-The public site uses assisted enquiry wording until payment, shipping and archive stock confirmation are complete.
+The internal venture verdict is unchanged: KALM Move is validation-ready, not bank-ready or production-ready. The public storefront is now presented as KALM Collective retail experience; domain connection and payment gateway credentials remain external setup tasks.

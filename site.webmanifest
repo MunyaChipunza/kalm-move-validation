@@ -1,7 +1,10 @@
 {
   "name": "KALM Collective",
   "short_name": "KALM",
+  "description": "Premium essentials for movement and everyday living.",
+  "id": "https://kalmcollective.com/",
   "start_url": "/",
+  "scope": "/",
   "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#111111",
