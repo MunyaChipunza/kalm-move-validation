@@ -1291,6 +1291,14 @@ button {
     position: static;
   }
 
+  .shop-layout > div {
+    order: 1;
+  }
+
+  .filter-panel {
+    order: 2;
+  }
+
   .brand-card-large a {
     grid-template-columns: 1fr;
   }
