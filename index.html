@@ -3,233 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KALM Move | Validation Collection Preview</title>
-  <meta name="description" content="KALM Move validation collection preview. Movement wear for real routines. No payment is currently being taken.">
-  <meta property="og:title" content="KALM Move">
-  <meta property="og:description" content="Validation collection preview for practical movement wear.">
+  <title>KALM Collective | KS Active and KALM Move</title>
+  <meta name="description" content="Shop KALM Collective activewear across KS Active archive stock and the KALM Move collection. Checkout assistance is available while payment and shipping setup is finalised.">
+  <meta property="og:title" content="KALM Collective">
+  <meta property="og:description" content="Activewear for real routines. Shop KS Active archive stock and KALM Move.">
   <meta property="og:image" content="branding/social-preview.png">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#121713">
+  <meta name="theme-color" content="#182116">
   <link rel="icon" href="branding/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="KALM Move home">
-      <img src="branding/kalm-move-logo.svg" alt="KALM Move">
+  <header class="site-header" data-header>
+    <a class="brand" href="#/" aria-label="KALM Collective home">
+      <img src="branding/kalm-collective-logo.svg" alt="KALM Collective">
     </a>
-    <nav aria-label="Main navigation">
-      <a href="#collection">Collection</a>
-      <a href="#campaign">Concept campaign</a>
-      <a href="#waitlist">Waitlist</a>
-      <a href="#faq">FAQ</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
+      <a href="#/">Home</a>
+      <a href="#/shop">Shop</a>
+      <a href="#/brand/ks-active">KS Active</a>
+      <a href="#/brand/kalm-move">KALM Move</a>
+      <a href="#/about">About</a>
+      <a href="#/contact">Contact</a>
     </nav>
+    <button class="cart-button" type="button" data-cart-open aria-label="Open cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 7.5h11l-1 9h-9l-1-9Z"/><path d="M8.5 7.5a3.5 3.5 0 0 1 7 0"/><path d="M9 20h.01M15 20h.01"/></svg>
+      <span>Cart</span>
+      <strong data-cart-count>0</strong>
+    </button>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <h1>Movement wear for real routines.</h1>
-        <p>KALM Move is testing a practical activewear direction for walking, school-run-to-training, light gym, errands and calm outdoor movement.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#waitlist" data-event="hero_waitlist_click">Join waitlist</a>
-          <a class="button secondary" href="#collection" data-event="hero_collection_click">View first-drop preview</a>
-        </div>
-        <p class="validation-note">This is a validation page. Products are not yet available for purchase. No payment is currently being taken. Final product details may change after supplier confirmation and fit testing.</p>
-      </div>
-      <figure class="hero-media">
-        <img src="assets/images/campaign-hero.webp" alt="KALM Move concept campaign showing practical everyday movement wear">
-        <figcaption>KALM Move concept campaign</figcaption>
-      </figure>
-    </section>
-
-    <section class="intro-panel" aria-label="Validation status">
-      <div>
-        <strong>Validation collection preview</strong>
-        <span>No stock claim. No payment link. No delivery promise.</span>
-      </div>
-      <div>
-        <strong>What is being tested</strong>
-        <span>Product preference, size demand, colour preference and price acceptance.</span>
-      </div>
-      <div>
-        <strong>Decision rule</strong>
-        <span>Supplier and sample spend only follows strong demand evidence.</span>
-      </div>
-    </section>
-
-    <section id="collection" class="section">
-      <div class="section-head">
-        <div>
-          <h2>First-drop preview</h2>
-          <p>These concept visuals show the intended product direction. They are not final production photos and do not imply stock availability.</p>
-        </div>
-        <a class="text-link" href="#waitlist">Record interest</a>
-      </div>
-      <div id="product-grid" class="product-grid" aria-live="polite">
-        <article class="product-card" data-product-id="everyday-legging">
-          <div class="product-image-wrap"><img src="assets/images/legging-flatlay.webp" alt="Everyday movement legging product direction flatlay" loading="lazy"><span class="product-status">First-drop preview</span></div>
-          <div class="product-body"><div><p class="product-meta">Legging</p><h3>Everyday movement legging</h3></div><p>A practical black legging direction for walks, errands, light gym and rebuilding routine.</p><div class="price">Target R649</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="everyday-legging" data-product="Everyday movement legging"><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><label>Colour<select class="colour-select" data-product-id="everyday-legging" data-product="Everyday movement legging"><option value="">Choose</option><option>Black</option><option>Olive</option><option>Warm neutral</option></select></label></div><p class="proof-note">Supplier fit, opacity and size curve still need confirmation.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="everyday-legging" data-product="Everyday movement legging" data-price="649">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="everyday-legging" data-product="Everyday movement legging">Fake-door checkout</button></div></div>
-        </article>
-        <article class="product-card" data-product-id="medium-support-bra">
-          <div class="product-image-wrap"><img src="assets/images/bra-flatlay.webp" alt="Medium-support sports bra product direction flatlay" loading="lazy"><span class="product-status">First-drop preview</span></div>
-          <div class="product-body"><div><p class="product-meta">Sports bra</p><h3>Medium-support sports bra</h3></div><p>A clean sports-bra direction for light gym, stretching and everyday training routines.</p><div class="price">Target R449</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="medium-support-bra" data-product="Medium-support sports bra"><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><label>Colour<select class="colour-select" data-product-id="medium-support-bra" data-product="Medium-support sports bra"><option value="">Choose</option><option>Black</option><option>Olive</option><option>Warm neutral</option></select></label></div><p class="proof-note">Support, coverage and wash performance still need fit testing.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="medium-support-bra" data-product="Medium-support sports bra" data-price="449">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="medium-support-bra" data-product="Medium-support sports bra">Fake-door checkout</button></div></div>
-        </article>
-        <article class="product-card" data-product-id="modest-tee">
-          <div class="product-image-wrap"><img src="assets/images/tee-flatlay.webp" alt="Modest performance tee product direction flatlay" loading="lazy"><span class="product-status">Supplier gap</span></div>
-          <div class="product-body"><div><p class="product-meta">Tee</p><h3>Modest performance tee</h3></div><p>A modest tee direction for school-run-to-training, walking and calm outdoor movement.</p><div class="price">Target R399</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="modest-tee" data-product="Modest performance tee"><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option></select></label><label>Colour<select class="colour-select" data-product-id="modest-tee" data-product="Modest performance tee"><option value="">Choose</option><option>Black</option><option>Olive</option><option>Warm neutral</option></select></label></div><p class="proof-note">The current pricelist does not solve the tee requirement. This is a validation concept.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="modest-tee" data-product="Modest performance tee" data-price="399">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="modest-tee" data-product="Modest performance tee">Fake-door checkout</button></div></div>
-        </article>
-        <article class="product-card" data-product-id="legging-tee-look">
-          <div class="product-image-wrap"><img src="assets/images/legging-tee-flatlay.webp" alt="Legging and tee product direction flatlay" loading="lazy"><span class="product-status">Bundle preview</span></div>
-          <div class="product-body"><div><p class="product-meta">Bundle</p><h3>Legging + tee look</h3></div><p>A practical bundle direction built around coverage, comfort and routine.</p><div class="price">Target R999</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="legging-tee-look" data-product="Legging + tee look"><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option></select></label><label>Colour<select class="colour-select" data-product-id="legging-tee-look" data-product="Legging + tee look"><option value="">Choose</option><option>Black + olive</option><option>Black + warm neutral</option></select></label></div><p class="proof-note">Bundle economics depend on sourcing the tee at acceptable landed cost.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="legging-tee-look" data-product="Legging + tee look" data-price="999">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="legging-tee-look" data-product="Legging + tee look">Fake-door checkout</button></div></div>
-        </article>
-        <article class="product-card" data-product-id="legging-bra-look">
-          <div class="product-image-wrap"><img src="assets/images/legging-bra-flatlay.webp" alt="Legging and bra product direction flatlay" loading="lazy"><span class="product-status">Bundle preview</span></div>
-          <div class="product-body"><div><p class="product-meta">Bundle</p><h3>Legging + bra look</h3></div><p>A clean low-to-medium movement outfit direction if bra support passes testing.</p><div class="price">Target R999</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="legging-bra-look" data-product="Legging + bra look"><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><label>Colour<select class="colour-select" data-product-id="legging-bra-look" data-product="Legging + bra look"><option value="">Choose</option><option>Black + olive</option><option>Black + warm neutral</option></select></label></div><p class="proof-note">Sports-bra support must score strongly before inclusion.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="legging-bra-look" data-product="Legging + bra look" data-price="999">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="legging-bra-look" data-product="Legging + bra look">Fake-door checkout</button></div></div>
-        </article>
-        <article class="product-card" data-product-id="starter-look">
-          <div class="product-image-wrap"><img src="assets/images/starter-accessory-flatlay.webp" alt="Full starter product direction flatlay" loading="lazy"><span class="product-status">Full preview</span></div>
-          <div class="product-body"><div><p class="product-meta">Bundle</p><h3>Full starter look</h3></div><p>The broader first-drop concept if demand supports a complete movement set.</p><div class="price">Target R1,299</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="starter-look" data-product="Full starter look"><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option></select></label><label>Colour<select class="colour-select" data-product-id="starter-look" data-product="Full starter look"><option value="">Choose</option><option>Black + olive</option><option>Black + warm neutral</option></select></label></div><p class="proof-note">Only viable if each component passes landed-cost, fit and demand gates.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="starter-look" data-product="Full starter look" data-price="1299">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="starter-look" data-product="Full starter look">Fake-door checkout</button></div></div>
-        </article>
-        <article class="product-card" data-product-id="cap-tote-addon">
-          <div class="product-image-wrap"><img src="assets/images/starter-accessory-flatlay.webp" alt="Optional cap and tote product direction flatlay" loading="lazy"><span class="product-status">Optional</span></div>
-          <div class="product-body"><div><p class="product-meta">Accessory</p><h3>Optional cap or tote add-on</h3></div><p>A simple add-on direction only if it supports the movement story without distracting from fit validation.</p><div class="price">Target R199</div><div class="selector-row"><label>Size<select class="size-select" data-product-id="cap-tote-addon" data-product="Optional cap or tote add-on"><option value="">Choose</option><option>One size</option></select></label><label>Colour<select class="colour-select" data-product-id="cap-tote-addon" data-product="Optional cap or tote add-on"><option value="">Choose</option><option>Black</option><option>Olive</option><option>Canvas neutral</option></select></label></div><p class="proof-note">Accessory should be removed if it distracts from activewear validation.</p><div class="card-actions"><button class="button secondary price-button" type="button" data-product-id="cap-tote-addon" data-product="Optional cap or tote add-on" data-price="199">Price feels possible</button><button class="button primary fake-checkout" type="button" data-product-id="cap-tote-addon" data-product="Optional cap or tote add-on">Fake-door checkout</button></div></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="campaign" class="section campaign-section">
-      <div class="section-head">
-        <div>
-          <h2>Concept campaign</h2>
-          <p>Everyday movement, not body-goal marketing. The visual direction is practical, covered, grounded and confidence-building.</p>
-        </div>
-      </div>
-      <div class="campaign-grid">
-        <figure>
-          <img src="assets/images/tee-lifestyle.webp" alt="KALM Move modest tee concept in an everyday walking context">
-          <figcaption>School-run-to-training direction</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/legging-tee-lifestyle.webp" alt="KALM Move legging and tee look in calm outdoor movement">
-          <figcaption>Legging + tee look</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/starter-lifestyle.webp" alt="KALM Move starter look with practical outdoor movement styling">
-          <figcaption>Full starter look</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section proof-section">
-      <div class="proof-copy">
-        <h2>What happens before any order</h2>
-        <p>The site is designed to create evidence before cash is spent. KALM Move still needs supplier confirmation, clearing-agent feedback and fit testing before any product can be sold.</p>
-      </div>
-      <div class="rules-grid">
-        <article>
-          <span>1</span>
-          <h3>Demand signal</h3>
-          <p>Waitlist, size demand, price acceptance and fake-door checkout clicks.</p>
-        </article>
-        <article>
-          <span>2</span>
-          <h3>Supplier signal</h3>
-          <p>Confirmed MOQ, GSM, size curve, carton data, labels and defect policy.</p>
-        </article>
-        <article>
-          <span>3</span>
-          <h3>Fit signal</h3>
-          <p>Fit, opacity, support, wash quality and purchase intent from testers.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="waitlist" class="section waitlist-section">
-      <div class="waitlist-copy">
-        <h2>Join the no-payment waitlist</h2>
-        <p>Leave your preference so KALM can decide whether to source samples. No delivery date is promised until supplier and clearing-agent feedback is confirmed.</p>
-        <p class="privacy-note">POPIA-conscious use: your details are used only to contact you about this KALM Move validation test, unless you later consent to broader marketing.</p>
-      </div>
-      <form id="waitlist-form" class="waitlist-form" name="kalm-move-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
-        <input type="hidden" name="form-name" value="kalm-move-waitlist">
-        <p class="hidden-field">
-          <label>Do not fill this out <input name="bot-field"></label>
-        </p>
-        <div class="form-row">
-          <label>Name<input name="name" autocomplete="name" required></label>
-          <label>Email<input name="email" type="email" autocomplete="email" required></label>
-        </div>
-        <div class="form-row">
-          <label>WhatsApp number<input name="whatsapp" autocomplete="tel" inputmode="tel"></label>
-          <label>Product preference<select name="product" required><option value="">Choose one</option></select></label>
-        </div>
-        <div class="form-row">
-          <label>Size<select name="size" required><option value="">Choose one</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>One size</option></select></label>
-          <label>Colour preference<select name="colour" required><option value="">Choose one</option><option>Black</option><option>Olive</option><option>Warm neutral</option><option>Canvas neutral</option></select></label>
-        </div>
-        <label>Price comfort<select name="price_comfort" required><option value="">Choose one</option><option>Price feels possible</option><option>Interested, but price feels high</option><option>Need bundle value</option><option>Only interested after fit testing</option></select></label>
-        <label class="consent"><input type="checkbox" name="consent" required> I agree that KALM may contact me about this validation test. I understand products are not yet available for purchase and no payment is currently being taken.</label>
-        <button class="button primary" type="submit">Submit interest</button>
-        <p id="form-status" class="form-status" role="status"></p>
-      </form>
-    </section>
-
-    <section id="faq" class="section faq-section">
-      <div class="section-head">
-        <h2>FAQ</h2>
-      </div>
-      <div class="faq-grid">
-        <details open>
-          <summary>Can I buy now?</summary>
-          <p>No. This is a validation page. Products are not yet available for purchase and no payment is currently being taken.</p>
-        </details>
-        <details>
-          <summary>Are these final products?</summary>
-          <p>No. The visuals show first-drop concept direction. Final product details may change after supplier confirmation and fit testing.</p>
-        </details>
-        <details>
-          <summary>Do the visuals show buyers?</summary>
-          <p>No buyer claim is being made. The imagery is used as concept campaign material for validation.</p>
-        </details>
-        <details>
-          <summary>When will delivery happen?</summary>
-          <p>No delivery date is promised until demand, supplier, clearing-agent and fit-testing evidence are confirmed.</p>
-        </details>
-        <details>
-          <summary>What happens after I submit interest?</summary>
-          <p>KALM reviews product preference, size demand, price acceptance and fake-door checkout clicks before deciding whether to request final quotes and samples.</p>
-        </details>
-        <details>
-          <summary>Will my information be sold?</summary>
-          <p>No. Your details are captured for this validation test only unless you later opt in to broader KALM marketing.</p>
-        </details>
-      </div>
+  <main id="app" tabindex="-1">
+    <section class="loading-state" aria-live="polite">
+      <p class="micro">KALM Collective</p>
+      <h1>Loading the shop.</h1>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <img src="branding/kalm-move-logo-light.svg" alt="KALM Move">
-      <p>Validation collection preview under the KALM buffalo brand family.</p>
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-panel">
+      <div class="cart-head">
+        <div>
+          <p class="micro">Your cart</p>
+          <h2>Order summary</h2>
+        </div>
+        <button class="icon-button" type="button" data-cart-close aria-label="Close cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong data-cart-subtotal>R0</strong></div>
+        <p>Checkout is being finalised. Contact us to complete this order.</p>
+        <a class="button primary full" href="#/checkout" data-cart-checkout>Checkout assistance</a>
+      </div>
     </div>
-    <div>
-      <a href="#collection">Collection</a>
-      <a href="#waitlist">Waitlist</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <p class="footer-disclaimer">This is a validation page. Products are not yet available for purchase. No payment is currently being taken. Final product details may change after supplier confirmation and fit testing.</p>
-  </footer>
+  </aside>
 
-  <div id="validation-modal" class="modal" hidden>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <button class="modal-close" type="button" aria-label="Close message">&times;</button>
-      <h2 id="modal-title">No payment is being taken</h2>
-      <p>This fake-door click records interest only. No order has been placed, no card details are requested and no delivery date is promised.</p>
-      <a class="button primary" href="#waitlist">Join waitlist instead</a>
-    </div>
-  </div>
+  <form name="kalm-collective-order-assistance" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" hidden>
+    <input type="hidden" name="form-name" value="kalm-collective-order-assistance">
+    <input name="bot-field">
+    <input name="name">
+    <input name="email">
+    <input name="whatsapp">
+    <input name="cart_summary">
+    <input name="delivery_area">
+    <textarea name="message"></textarea>
+    <input name="popia_consent">
+  </form>
 
-  <script src="script.js"></script>
+  <form name="kalm-collective-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" hidden>
+    <input type="hidden" name="form-name" value="kalm-collective-contact">
+    <input name="bot-field">
+    <input name="name">
+    <input name="email">
+    <input name="whatsapp">
+    <select name="topic"><option>Order assistance</option></select>
+    <textarea name="message"></textarea>
+    <input name="popia_consent">
+  </form>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

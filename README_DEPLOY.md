@@ -1,69 +1,45 @@
-# KALM Move Site Deployment
+# KALM Collective Deploy Notes
 
-## Purpose
+## Netlify
 
-This is the public KALM Move validation site. It is a complete static site with campaign visuals, product-direction visuals, waitlist capture, fake-door checkout intent and Netlify-ready form wiring.
+- Build command: none
+- Publish directory: `.`
+- Forms: enabled
+- Repository: `MunyaChipunza/kalm-move-validation`
 
-The site must continue to state:
+## Required files
 
-> This is a validation page. Products are not yet available for purchase. No payment is currently being taken. Final product details may change after supplier confirmation and fit testing.
-
-## Files
-
-| File/folder | Purpose |
+| Path | Purpose |
 |---|---|
-| `index.html` | Public homepage and validation page |
-| `styles.css` | Brand visual system and responsive layout |
-| `script.js` | Product card loading, analytics placeholders, fake checkout and form states |
-| `products.json` | Product and bundle data with simulation price points |
-| `assets/images/` | Campaign, lifestyle and product-direction imagery |
-| `branding/` | KALM Move logo assets, favicon, social preview and notes |
-| `netlify.toml` | Static publish and cache rules |
-| `thanks.html` | Fallback form thank-you page |
-| `robots.txt` | Search crawler instruction |
-| `site.webmanifest` | Basic install metadata |
+| `index.html` | Storefront shell and static Netlify form detection |
+| `styles.css` | Responsive retail design system |
+| `script.js` | Routing, filters, product detail views, cart and forms |
+| `products.json` | Structured product catalog |
+| `assets/images/` | Campaign, category and product imagery |
+| `branding/` | KALM, KALM Move and KS Active brand assets |
+| `netlify.toml` | Static publish and cache headers |
+| `thanks.html` | Form confirmation page |
 
-## Netlify Deploy
+## Smoke test after deploy
 
-If using the same GitHub + Netlify workflow as `munyachipunza.com`:
+1. Open the live site.
+2. Open Shop and use brand, type, size, colour, price and search filters.
+3. Open KS Active and KALM Move brand pages.
+4. Open at least one product detail page.
+5. Add an item to cart with size and colour.
+6. Change cart quantity and remove an item.
+7. Submit one Netlify form test from checkout assistance or contact.
+8. Check mobile layout.
 
-1. Create or update a GitHub repository for this `site` folder.
-2. Push all files in this folder to the repository root.
-3. In Netlify, create or link a site to that repository.
-4. Build command: none.
-5. Publish directory: `.`.
-6. Forms: enabled. Netlify detects `name="kalm-move-waitlist"` because the form is present in `index.html`.
-7. After deployment, submit one test waitlist entry and confirm the form appears in Netlify Forms.
+## Analytics placeholders
 
-## Manual Netlify Drop
-
-1. Open Netlify Drop.
-2. Drag the whole `site` folder.
-3. Confirm `index.html`, `styles.css`, `script.js`, `products.json`, `assets/` and `branding/` all deploy.
-4. Netlify Drop may not preserve form handling in the same way as a linked site. Prefer a GitHub-linked Netlify project for live validation.
-
-## Analytics Placeholders
-
-`script.js` pushes events to both `window.kalmMoveEvents` and `window.dataLayer`.
-
-Events:
+`script.js` pushes events to `window.kalmStoreEvents` and `window.dataLayer`:
 
 - `page_view`
-- `product_card_click`
-- `size_selection`
-- `colour_selection`
-- `price_acceptance_click`
-- `fake_checkout_click`
-- `waitlist_submit`
-- `hero_waitlist_click`
-- `hero_collection_click`
-
-## Before Public Traffic
-
-- Keep the validation disclaimer visible.
-- Do not add payment links.
-- Do not claim products are in stock.
-- Do not claim visuals show real customers, verified buyers or final production products.
-- Confirm the Netlify form submission flow.
-- Review POPIA wording if collecting high volume data.
-- Replace the embedded PNG buffalo mark with an official vector only if one is later found.
+- `product_filter_change`
+- `product_filters_clear`
+- `add_to_cart`
+- `cart_open`
+- `cart_quantity_change`
+- `cart_remove`
+- `form_submit`

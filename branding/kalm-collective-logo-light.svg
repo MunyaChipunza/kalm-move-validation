@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 260" role="img" aria-labelledby="title desc">
+  <title id="title">KALM Collective logo light</title>
+  <desc id="desc">Light KALM Collective lockup using the KALM buffalo family mark.</desc>
+  <rect width="1120" height="260" fill="none"/>
+  <image href="source-kalm-nyati-transparent.png" x="26" y="24" width="196" height="196" preserveAspectRatio="xMidYMid meet"/>
+  <g fill="#ffffff" font-family="Inter, Arial, sans-serif">
+    <text x="246" y="124" font-size="82" font-weight="850" letter-spacing="0">KALM</text>
+    <text x="246" y="190" font-size="48" font-weight="750" letter-spacing="1">COLLECTIVE</text>
+  </g>
+</svg>
