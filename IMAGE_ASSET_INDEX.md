@@ -5,13 +5,16 @@
 | File | Use |
 | --- | --- |
 | `branding/kalm-collective-display-logo.webp` | Header and footer live storefront logo. |
+| `branding/kalm-collective-logo.png` | Approved KALM Collective source logo. |
 | `branding/ks-active-logo-black.webp` | KS Active brand card/page. |
 | `branding/ks-active-logo-transparent.png` | Source KS Active logo asset. |
 | `branding/kalm-move-display-logo-a.webp` | KALM Move brand card/page. |
+| `branding/approved-kalm-move-source.png` | Approved source image for KALM Move. |
 | `branding/kalm-outdoor-display-logo.webp` | KALM Outdoor brand card/page. |
 | `branding/kalm-wellness-display-logo-b.webp` | KALM Wellness brand card/page. |
-| `branding/kalm-home-display-logo.webp` | KALM Home brand card/page. |
+| `branding/kalm-home-display-logo.webp` | KALM Home brand card/page using the selected house-logo direction. |
 | `branding/source-kalm-nyati-transparent.png` | Source buffalo device used for the KALM family logos. |
+| `branding/approved-kalm-nyati-source.png` | Locked copy of the approved buffalo source used for selected sub-brand logo rebuilds. |
 
 ## Storefront Images
 
