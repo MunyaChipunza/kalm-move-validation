@@ -1,6 +1,6 @@
 # KALM Collective Storefront
 
-Static ecommerce storefront for `kalm-collective-storefront.netlify.app`.
+Static ecommerce storefront for `kalmcollective.co.za`.
 
 ## Current Storefront
 
@@ -8,7 +8,7 @@ Static ecommerce storefront for `kalm-collective-storefront.netlify.app`.
 - Brand family: KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.
 - Catalog: product data lives in `products.json`.
 - Checkout: structured bag, contact details, delivery address, shipping method and payment method selection for PayFast, Ozow and EFT.
-- Public metadata: canonical and Open Graph URLs point to `https://kalm-collective-storefront.netlify.app/` until `kalmcollective.co.za` is moved from the task-app Netlify project to the storefront project.
+- Public metadata: canonical and Open Graph URLs point to `https://kalmcollective.co.za/`.
 
 ## Stack
 
@@ -27,4 +27,4 @@ python -m http.server 8123
 
 ## Verdict
 
-The internal venture verdict is unchanged: KALM Move is validation-ready, not bank-ready or production-ready. The public storefront is now presented as KALM Collective retail experience; domain connection and payment gateway credentials remain external setup tasks.
+The internal venture verdict is unchanged: KALM Move is validation-ready, not bank-ready or production-ready. The public storefront is now presented as KALM Collective retail experience; payment gateway credentials remain an external setup task.

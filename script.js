@@ -1076,7 +1076,7 @@ function renderFooter() {
         <div>
           <h3>Follow</h3>
           <p>@kalmcollective</p>
-          <p>kalm-collective-storefront.netlify.app</p>
+          <p>kalmcollective.co.za</p>
         </div>
       </div>
       <p class="copyright">© 2026 KALM Collective. All rights reserved.</p>

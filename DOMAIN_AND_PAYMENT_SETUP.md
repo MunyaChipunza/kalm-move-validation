@@ -1,13 +1,14 @@
 # Domain And Payment Setup
 
-This is the remaining external setup for moving from the current deployment URL to `kalmcollective.co.za` and activating real payment processing.
+This records the live domain setup and the remaining external setup for activating real payment processing.
 
 Current deployment separation:
 
 - Task app Netlify project: `munya-task-app`
 - KALM Collective Netlify project: `kalm-collective-storefront`
 - Do not deploy storefront files to `munya-task-app`.
-- Move `kalmcollective.co.za` from `munya-task-app` to `kalm-collective-storefront` in Netlify domain settings before using the custom domain for public storefront traffic.
+- `kalmcollective.co.za` is assigned to `kalm-collective-storefront`.
+- `munya-task-app` uses `https://munya-task-app.netlify.app`.
 
 ## Domain
 
@@ -17,16 +18,12 @@ Official Netlify references:
 - External DNS record guidance: https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
 - SSL guidance: https://docs.netlify.com/manage/domains/troubleshooting/troubleshoot-ssl-and-https/
 
-Steps:
+Current status:
 
-1. In Netlify, open the KALM Collective site, then go to **Domain management**.
-2. Add `kalmcollective.co.za` and `www.kalmcollective.co.za` as production domains.
-3. Choose the DNS route:
-   - Netlify DNS route: follow Netlify's prompts and update the registrar nameservers to the Netlify nameservers shown in the dashboard.
-   - External DNS route: point the apex `A` record to `75.2.60.5` and set `www` as a `CNAME` to the Netlify site subdomain. Netlify currently recommends using `www` as the primary domain when external DNS is used.
-4. Set the preferred primary domain in Netlify.
-5. Wait for DNS propagation, then verify HTTPS under **Domain management > HTTPS**. Netlify provisions Let's Encrypt certificates automatically after valid DNS is detected.
-6. Confirm these URLs resolve:
+1. `kalmcollective.co.za` is the storefront primary custom domain.
+2. `www.kalmcollective.co.za` is a storefront domain alias.
+3. HTTPS is active on the storefront domain.
+4. Confirmed URLs:
    - `https://kalmcollective.co.za/`
    - `https://www.kalmcollective.co.za/`
    - `https://kalmcollective.co.za/#/shop`
