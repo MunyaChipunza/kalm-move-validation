@@ -5,7 +5,8 @@
 | File | Use |
 | --- | --- |
 | `branding/kalm-collective-display-logo.png` | Header, footer and social preview. |
-| `branding/ks-active-logo-transparent.png` | KS Active brand card/page. |
+| `branding/ks-active-logo-black.png` | KS Active brand card/page. |
+| `branding/ks-active-logo-transparent.png` | Source KS Active logo asset. |
 | `branding/kalm-move-display-logo.png` | KALM Move brand card/page. |
 | `branding/kalm-living-display-logo.png` | KALM Living brand card/page. |
 | `branding/kalm-wellness-display-logo.png` | KALM Wellness brand card/page. |
