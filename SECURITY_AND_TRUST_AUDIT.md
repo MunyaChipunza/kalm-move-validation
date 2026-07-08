@@ -24,6 +24,8 @@ The CSP allows:
 - images from the site, `data:` placeholders and HTTPS image URLs
 - forms posting back to the site
 
+Production header check on `https://kalmcollective.co.za/` confirmed these headers are live on deploy `6a4eb00ae3f1bc522f8f6c88`.
+
 ## Forms Checked
 
 Forms use Netlify Forms with hidden detection skeletons in `index.html`.
@@ -37,6 +39,8 @@ Live form names:
 - `kalm-collective-account-updates`
 
 All visible forms include POPIA consent where customer personal information is submitted.
+
+Production Netlify Forms API confirmed the current form names were detected on `kalm-collective-storefront`.
 
 ## Exposed Environment Variables And Secrets
 
@@ -77,7 +81,7 @@ The storefront includes:
 
 ## Console Errors Checked
 
-Local Playwright QA captured no console warnings or errors on the tested storefront routes.
+Local and production Playwright QA captured no console warnings or errors on the tested storefront routes.
 
 Routes/flows checked:
 

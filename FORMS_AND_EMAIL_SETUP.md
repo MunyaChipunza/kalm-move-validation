@@ -24,6 +24,8 @@ Recommended recipient: `hello@kalmcollective.co.za`
 
 ## Live Forms
 
+Verified on production deploy `6a4eb00ae3f1bc522f8f6c88`: Netlify detected the current form names below.
+
 | Form | Netlify form name | Where used | Fields |
 |---|---|---|---|
 | Contact form | `kalm-collective-contact` | `#/contact` | name, email, phone, topic, message, POPIA consent |
@@ -67,3 +69,4 @@ Current source value: `homepage`
 - Do not add API keys to `script.js`, `index.html`, or `products.json`.
 - Keep the hidden Netlify detection forms in `index.html`.
 - If a new JavaScript-rendered form is added, add a matching hidden skeleton form in `index.html` with the exact same `name` and fields.
+- Netlify may still list older inactive form names from previous deploys. Use the current form names in this document as the source of truth.
