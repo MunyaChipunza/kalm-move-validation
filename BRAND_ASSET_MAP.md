@@ -1,5 +1,7 @@
 # KALM Collective Brand Asset Map
 
+Verified: 2026-07-08
+
 Use only the logo files listed below for the public storefront. Do not replace these with newly generated logos unless a new approved logo file is provided.
 
 | Brand | Approved logo file | Source folder/path | Where used | Status |
@@ -15,5 +17,8 @@ Use only the logo files listed below for the public storefront. Do not replace t
 
 - `products.json` is the source of truth for which brand logo appears on the storefront.
 - KALM Outdoor is the outdoor brand used in public data, navigation, filters, routes, and brand pages.
+- The verified files above exist in `branding/` and are the only production logo assets to use for the listed brands.
+- KALM Home uses the selected minimalist one-line-house direction with the provided KALM buffalo mark.
+- KALM Wellness uses the selected option B lotus direction with the provided KALM buffalo mark.
 - If a selected logo file is missing, stop and add the approved file to `branding/` before changing the storefront.
 - Do not replace these display files with new generated concepts. Only regenerate a display file from the approved source listed in this table.

@@ -511,7 +511,7 @@ button {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -533,6 +533,40 @@ button {
 
 .category-tile span {
   padding: 14px;
+}
+
+.edit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.edit-card {
+  display: grid;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+
+.edit-card img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  background: var(--soft);
+}
+
+.edit-card span {
+  padding: 18px 18px 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.edit-card p {
+  margin: 0;
+  padding: 0 18px 20px;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .feature-band {
@@ -578,6 +612,36 @@ button {
   contain-intrinsic-size: 260px;
 }
 
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.trust-strip a {
+  display: grid;
+  gap: 7px;
+  min-height: 118px;
+  padding: 26px 42px;
+  border-right: 1px solid var(--line);
+}
+
+.trust-strip a:last-child {
+  border-right: 0;
+}
+
+.trust-strip strong {
+  font-size: 15px;
+}
+
+.trust-strip span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
 .newsletter-panel p {
   color: var(--muted);
 }
@@ -586,6 +650,22 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
+}
+
+.newsletter-consent {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.newsletter-consent input {
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: 1px;
 }
 
 .newsletter-panel input,
@@ -941,6 +1021,40 @@ button {
   padding-left: 18px;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.inline-help-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.inline-help-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.inline-help-form input,
+.inline-help-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+}
+
+.inline-help-form input {
+  height: 42px;
+  padding: 0 12px;
+}
+
+.inline-help-form textarea {
+  min-height: 92px;
+  padding: 12px;
+  resize: vertical;
 }
 
 .cart-drawer {
@@ -1377,12 +1491,25 @@ button {
   }
 
   .newsletter-panel form,
+  .edit-grid,
+  .trust-strip,
   .form-grid.two,
   .option-grid,
   .policy-grid,
   .footer-service,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .trust-strip a {
+    min-height: 0;
+    padding: 20px 18px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .trust-strip a:last-child {
+    border-bottom: 0;
   }
 
   .filter-panel,

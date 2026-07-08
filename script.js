@@ -138,18 +138,31 @@ function renderRoute() {
   if (route.path === "/cart") return renderCartPage();
   if (route.path === "/checkout") return renderCheckout();
   if (route.path === "/contact") return renderContact();
-  if (route.path === "/policies") return renderPolicies();
+  if (route.path === "/policies") {
+    renderPolicies();
+    scrollToAnchor(route.anchor);
+    return;
+  }
   if (route.path === "/account") return renderAccount();
   renderNotFound();
 }
 
 function getRoute() {
   const raw = window.location.hash.replace(/^#/, "") || "/";
-  const [path, query = ""] = raw.split("?");
+  const [pathPart, query = ""] = raw.split("?");
+  const [path, anchor = ""] = pathPart.split("#");
   return {
     path,
-    params: new URLSearchParams(query)
+    params: new URLSearchParams(query),
+    anchor
   };
+}
+
+function scrollToAnchor(anchor) {
+  if (!anchor) return;
+  window.setTimeout(() => {
+    document.getElementById(anchor)?.scrollIntoView({ block: "start" });
+  }, 0);
 }
 
 function hydrateDeferredImages(root = document) {
@@ -197,7 +210,7 @@ function scheduleHomeSections(sections) {
     if (route.path !== "/" && route.path !== "") return;
     if (app.querySelector("[data-home-sections]")) return;
     app.insertAdjacentHTML("beforeend", `<div data-home-sections>${sections}</div>`);
-    bindNewsletter();
+    bindNetlifyForms(app);
     hydrateDeferredImages(app);
   };
   window.addEventListener("scroll", loadSections, { once: true, passive: true });
@@ -208,6 +221,13 @@ function scheduleHomeSections(sections) {
 function renderHome({ preserveHero = false } = {}) {
   const { meta, brands, categories, products } = state.data;
   const arrivals = products.filter((product) => product.tags.includes("new-in")).slice(0, 8);
+  const bestSellers = [
+    products.find((product) => product.id === "ks-high-waist-seamless-leggings"),
+    products.find((product) => product.id === "kalm-move-studio-starter-set"),
+    products.find((product) => product.id === "kalm-home-white-cotton-bedding-set"),
+    products.find((product) => product.id === "kalm-wellness-studio-mat-and-towel")
+  ].filter(Boolean);
+  const saleEdit = products.filter((product) => product.compareAtPrice).slice(0, 4);
   const featured = [
     products.find((product) => product.id === "kalm-move-studio-starter-set"),
     products.find((product) => product.id === "kalm-home-white-cotton-bedding-set"),
@@ -234,23 +254,26 @@ function renderHome({ preserveHero = false } = {}) {
     </section>`;
 
   const sections = `
+    <section class="section-block category-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop by category</p>
+          <h2>Find your edit</h2>
+        </div>
+        <a class="text-link" href="#/shop">Shop all</a>
+      </div>
+      <div class="category-grid">
+        ${categories.filter((category) => ["activewear", "wellness", "home", "outdoor"].includes(category.id)).map(renderCategoryTile).join("")}
+      </div>
+    </section>
+
     <section class="brand-ribbon" aria-label="Featured brands">
       ${brands.map(renderBrandLogoCard).join("")}
     </section>
 
     ${renderProductRail("New Arrivals", arrivals, "#/shop?category=new-in")}
 
-    <section class="section-block">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Shop by category</p>
-          <h2>Find your edit</h2>
-        </div>
-      </div>
-      <div class="category-grid">
-        ${categories.filter((category) => category.id !== "new-in").map(renderCategoryTile).join("")}
-      </div>
-    </section>
+    ${renderEditorialEdits()}
 
     <section class="feature-band">
       <div>
@@ -262,18 +285,25 @@ function renderHome({ preserveHero = false } = {}) {
       <img src="${transparentPixel}" data-src="${escapeHtml(meta.featureImage)}" alt="KALM Collective featured products" width="1200" height="760" loading="lazy" decoding="async" fetchpriority="low">
     </section>
 
+    ${renderProductRail("Best Sellers", bestSellers, "#/shop")}
+    ${renderProductRail("Archive Sale", saleEdit, "#/shop?category=sale")}
     ${renderProductRail("Most Wanted", featured, "#/shop")}
+
+    ${renderTrustStrip()}
 
     <section class="newsletter-panel">
       <div>
-        <p class="eyebrow">Community</p>
         <h2>Join the KALM Collective.</h2>
         <p>Receive new arrivals, care notes and private offers from the brand family.</p>
       </div>
-      <form data-newsletter-form>
+      <form name="kalm-collective-newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-newsletter-form data-netlify-ajax data-success-message="You are subscribed to KALM Collective updates.">
+        <input type="hidden" name="form-name" value="kalm-collective-newsletter">
+        <input type="hidden" name="bot-field">
+        <input type="hidden" name="source" value="homepage">
         <label class="sr-only" for="newsletter-email">Email address</label>
-        <input id="newsletter-email" type="email" required>
+        <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
         <button class="button primary" type="submit">Subscribe</button>
+        <label class="consent newsletter-consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree to receive KALM Collective updates.</span></label>
         <p class="form-status" data-newsletter-status></p>
       </form>
     </section>
@@ -287,15 +317,68 @@ function renderHome({ preserveHero = false } = {}) {
       scheduleHomeSections(sections);
     } else {
       app.innerHTML = `${hero}${sections}`;
-      bindNewsletter();
+      bindNetlifyForms(app);
       hydrateDeferredImages(app);
     }
   } else {
     clearHomeSectionSchedule();
     app.innerHTML = `${hero}${sections}`;
-    bindNewsletter();
+    bindNetlifyForms(app);
     hydrateDeferredImages(app);
   }
+}
+
+function renderEditorialEdits() {
+  const edits = [
+    {
+      title: "Everyday movement",
+      copy: "Soft active staples for school runs, studio sessions and slow weekend plans.",
+      image: "assets/images/generated/brand-tiles/kalm-move-tile.webp",
+      href: "#/shop?category=activewear"
+    },
+    {
+      title: "Calm home essentials",
+      copy: "Clean bedding, towels, ceramics and storage for a quieter daily rhythm.",
+      image: "assets/images/generated/brand-tiles/kalm-home-tile.webp",
+      href: "#/shop?category=home"
+    },
+    {
+      title: "Outdoor living, simplified",
+      copy: "Patio, picnic and day-trip pieces with a polished monochrome feel.",
+      image: "assets/images/generated/brand-tiles/kalm-outdoor-tile.webp",
+      href: "#/shop?category=outdoor"
+    }
+  ];
+  return `
+    <section class="section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Featured edit</p>
+          <h2>Built for the way you live.</h2>
+        </div>
+      </div>
+      <div class="edit-grid">
+        ${edits.map((edit) => `
+          <a class="edit-card" href="${edit.href}">
+            <img src="${transparentPixel}" data-src="${escapeHtml(edit.image)}" alt="${escapeAttribute(edit.title)}" width="900" height="1040" loading="lazy" decoding="async" fetchpriority="low">
+            <span>${escapeHtml(edit.title)}</span>
+            <p>${escapeHtml(edit.copy)}</p>
+          </a>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderTrustStrip() {
+  return `
+    <section class="trust-strip" aria-label="Customer support">
+      <a href="#/policies#delivery"><strong>Delivery</strong><span>Courier options across South Africa</span></a>
+      <a href="#/policies#returns"><strong>Returns</strong><span>30-day returns on eligible items</span></a>
+      <a href="#/contact"><strong>Contact</strong><span>Customer care weekdays</span></a>
+      <a href="#/contact"><strong>Order help</strong><span>Support for sizing, products and delivery</span></a>
+    </section>
+  `;
 }
 
 function renderProductRail(title, products, href) {
@@ -496,6 +579,20 @@ function renderProduct(slug) {
             <summary>Care</summary>
             <p>${escapeHtml(product.care)}</p>
           </details>
+          <details>
+            <summary>Product help</summary>
+            <form class="inline-help-form" name="kalm-collective-product-help" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-success-message="Thanks. Customer care will reply to your product question.">
+              <input type="hidden" name="form-name" value="kalm-collective-product-help">
+              <input type="hidden" name="bot-field">
+              <input type="hidden" name="product" value="${escapeAttribute(product.brand + " " + product.title)}">
+              <label>Name<input name="name" autocomplete="name" required></label>
+              <label>Email<input name="email" type="email" autocomplete="email" required></label>
+              <label>Message<textarea name="message" rows="3" required></textarea></label>
+              <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may use my details to respond.</span></label>
+              <button class="button secondary full" type="submit">Request help</button>
+              <p class="form-status"></p>
+            </form>
+          </details>
         </div>
       </div>
     </section>
@@ -503,6 +600,7 @@ function renderProduct(slug) {
     ${renderProductRail("More from " + product.brand, related, "#/shop?brand=" + product.brandId)}
     ${renderFooter()}
   `;
+  bindNetlifyForms(app);
   hydrateDeferredImages(app);
 }
 
@@ -540,7 +638,7 @@ function renderCheckout() {
     </section>
 
     <section class="checkout-layout">
-      <form class="checkout-form panel" name="kalm-collective-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-order-form>
+      <form class="checkout-form panel" name="kalm-collective-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-order-form data-netlify-ajax data-clear-bag="true" data-redirect="/thanks.html" data-success-message="Order received.">
         <input type="hidden" name="form-name" value="kalm-collective-order">
         <input type="hidden" name="bot-field">
         <input type="hidden" name="cart_summary" value="${escapeAttribute(getCartSummary())}">
@@ -603,6 +701,7 @@ function renderCheckout() {
     event.currentTarget.cart_summary.value = getCartSummary();
     event.currentTarget.order_total.value = String(getSubtotal());
   });
+  bindNetlifyForms(app);
   hydrateDeferredImages(app);
 }
 
@@ -614,7 +713,7 @@ function renderContact() {
       <p>For product, order, delivery and brand questions, send a note to the KALM Collective team.</p>
     </section>
     <section class="contact-layout">
-      <form class="panel checkout-form" name="kalm-collective-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+      <form class="panel checkout-form" name="kalm-collective-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-success-message="Thanks. Customer care will reply as soon as possible.">
         <input type="hidden" name="form-name" value="kalm-collective-contact">
         <input type="hidden" name="bot-field">
         <div class="form-grid two">
@@ -633,6 +732,7 @@ function renderContact() {
         </div>
         <label>Message<textarea name="message" rows="5" required></textarea></label>
         <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may use my details to respond to my message.</span></label>
+        <p class="form-status"></p>
         <button class="button primary" type="submit">Send message</button>
       </form>
       <aside class="care-panel">
@@ -644,6 +744,7 @@ function renderContact() {
     </section>
     ${renderFooter()}
   `;
+  bindNetlifyForms(app);
   hydrateDeferredImages(app);
 }
 
@@ -673,8 +774,13 @@ function renderAccount() {
       <p>Use your email for order updates, product care and private offers.</p>
     </section>
     <section class="contact-layout">
-      <form class="panel checkout-form">
-        <label>Email address<input type="email" required></label>
+      <form class="panel checkout-form" name="kalm-collective-account-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-success-message="Your details have been saved for KALM Collective updates.">
+        <input type="hidden" name="form-name" value="kalm-collective-account-updates">
+        <input type="hidden" name="bot-field">
+        <label>Full name<input name="name" autocomplete="name" required></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+        <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree to receive KALM Collective order and product updates.</span></label>
+        <p class="form-status"></p>
         <button class="button primary" type="submit">Continue</button>
       </form>
       <aside class="care-panel">
@@ -684,6 +790,7 @@ function renderAccount() {
     </section>
     ${renderFooter()}
   `;
+  bindNetlifyForms(app);
   hydrateDeferredImages(app);
 }
 
@@ -793,9 +900,10 @@ function renderPrice(product) {
 function updateVariantImage(scope, color) {
   const product = findProduct(scope?.getAttribute("data-product-id"));
   const image = scope?.querySelector("[data-product-image]");
-  if (!product || !image || !color) return;
-  const imagePath = getVariantImage(product, color);
-  setProductImage(image, imagePath, `${product.title} in ${color}`);
+  if (!product || !image) return;
+  const imagePath = color ? getVariantImage(product, color) : product.image;
+  const altText = color ? `${product.title} in ${color}` : product.title;
+  setProductImage(image, imagePath, altText);
 }
 
 function updateGalleryImage(scope, imagePath) {
@@ -983,13 +1091,55 @@ function shopHeading({ brand, category, search }) {
   return "Shop All";
 }
 
-function bindNewsletter() {
-  document.querySelector("[data-newsletter-form]")?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const status = document.querySelector("[data-newsletter-status]");
-    status.textContent = "You are subscribed to KALM Collective updates.";
-    event.currentTarget.reset();
+function bindNetlifyForms(root = document) {
+  root.querySelectorAll("[data-netlify-ajax]").forEach((form) => {
+    if (form.dataset.netlifyBound === "true") return;
+    form.dataset.netlifyBound = "true";
+    form.addEventListener("submit", submitNetlifyForm);
   });
+}
+
+async function submitNetlifyForm(event) {
+  if (event.defaultPrevented) return;
+  event.preventDefault();
+  const form = event.currentTarget;
+  const status = form.querySelector(".form-status");
+  const button = form.querySelector("button[type='submit']");
+  const originalLabel = button?.textContent || "";
+  const successMessage = form.dataset.successMessage || "Thanks. Your message has been received.";
+
+  if (status) status.textContent = "Sending...";
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Sending";
+  }
+
+  try {
+    const formData = new FormData(form);
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    });
+    if (!response.ok) throw new Error(`Form post failed with ${response.status}`);
+    if (status) status.textContent = successMessage;
+    if (form.dataset.clearBag === "true") {
+      state.bag = [];
+      saveBag();
+      renderBag();
+    }
+    form.reset();
+    if (form.dataset.redirect) window.location.href = form.dataset.redirect;
+  } catch (error) {
+    console.warn(error);
+    if (status) status.textContent = "The form could not send in this browser session. Opening the standard form submission.";
+    HTMLFormElement.prototype.submit.call(form);
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = originalLabel;
+    }
+  }
 }
 
 function findProduct(productId) {

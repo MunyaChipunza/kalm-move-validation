@@ -65,7 +65,8 @@ Gallery images appear as thumbnails on the product detail page.
 3. Set `image` to the main product image.
 4. Add `gallery` with the main image and any detail images.
 5. Add `variantImages` for each colour.
-6. Make sure every image path exactly matches the file name.
+6. Add `brand`, `brandId`, `category`, `colors`, `sizes`, `price`, `description`, `detailBullets`, `fitNotes`, `fabric`, `care`, `tags` and `ctaLabel`.
+7. Make sure every image path exactly matches the file name.
 
 Example:
 
@@ -94,6 +95,16 @@ Then update `products.json`:
 5. Add the product to the bag.
 6. Confirm the bag shows the selected colour, size and image.
 7. Check the browser console or page for broken image icons.
+
+## Confirm After Live Deployment
+
+1. Deploy the storefront.
+2. Open `https://kalmcollective.co.za/#/shop`.
+3. Open the product detail page.
+4. Select each colour and size.
+5. Add the item to the bag.
+6. Confirm the bag and checkout summary show the selected image, colour, size and price.
+7. If an image is broken, check the exact file name and path in `products.json`.
 
 ## Avoid Broken Images
 
