@@ -11,7 +11,8 @@ const siteSearch = document.querySelector("[data-site-search]");
 const state = {
   data: null,
   bag: loadBag(),
-  hasRenderedRoute: false
+  hasRenderedRoute: false,
+  homeSectionsTimer: null
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -114,12 +115,14 @@ function renderRoute() {
   if (!state.data) return;
   const route = getRoute();
   const isFirstRoute = !state.hasRenderedRoute;
+  const isHomeRoute = route.path === "/" || route.path === "";
   state.hasRenderedRoute = true;
+  if (!isHomeRoute) clearHomeSectionSchedule();
   closeBag();
   nav?.classList.remove("open");
   navToggle?.setAttribute("aria-expanded", "false");
 
-  if (route.path === "/" || route.path === "") return renderHome({
+  if (isHomeRoute) return renderHome({
     preserveHero: isFirstRoute && Boolean(app.querySelector(".hero-shell"))
   });
   if (route.path === "/shop") return renderShop(route.params);
@@ -166,6 +169,34 @@ function hydrateDeferredImages(root = document) {
     }, { rootMargin: "220px 0px" });
   }
   images.forEach((image) => deferredImageObserver.observe(image));
+}
+
+function clearHomeSectionSchedule() {
+  if (state.homeSectionsTimer) {
+    window.clearTimeout(state.homeSectionsTimer);
+    state.homeSectionsTimer = null;
+  }
+}
+
+function scheduleHomeSections(sections) {
+  clearHomeSectionSchedule();
+  let loaded = false;
+  const loadSections = () => {
+    if (loaded) return;
+    loaded = true;
+    clearHomeSectionSchedule();
+    window.removeEventListener("scroll", loadSections);
+    window.removeEventListener("pointerdown", loadSections);
+    const route = getRoute();
+    if (route.path !== "/" && route.path !== "") return;
+    if (app.querySelector("[data-home-sections]")) return;
+    app.insertAdjacentHTML("beforeend", `<div data-home-sections>${sections}</div>`);
+    bindNewsletter();
+    hydrateDeferredImages(app);
+  };
+  window.addEventListener("scroll", loadSections, { once: true, passive: true });
+  window.addEventListener("pointerdown", loadSections, { once: true });
+  state.homeSectionsTimer = window.setTimeout(loadSections, 7000);
 }
 
 function renderHome({ preserveHero = false } = {}) {
@@ -247,16 +278,18 @@ function renderHome({ preserveHero = false } = {}) {
   if (preserveHero) {
     const initialHero = app.querySelector(".hero-shell");
     if (initialHero) {
-      initialHero.insertAdjacentHTML("afterend", sections);
+      scheduleHomeSections(sections);
     } else {
       app.innerHTML = `${hero}${sections}`;
+      bindNewsletter();
+      hydrateDeferredImages(app);
     }
   } else {
+    clearHomeSectionSchedule();
     app.innerHTML = `${hero}${sections}`;
+    bindNewsletter();
+    hydrateDeferredImages(app);
   }
-
-  bindNewsletter();
-  hydrateDeferredImages(app);
 }
 
 function renderProductRail(title, products, href) {
@@ -271,7 +304,7 @@ function renderProductRail(title, products, href) {
         <a class="text-link" href="${href}">View all</a>
       </div>
       <div class="product-grid rail-grid">
-        ${products.map(renderProductCard).join("")}
+        ${products.map((product, index) => renderProductCard(product, { eager: index < 4 })).join("")}
       </div>
     </section>
   `;
@@ -326,7 +359,7 @@ function renderShop(params = new URLSearchParams()) {
           <a href="#/shop">Clear filters</a>
         </div>
         <div class="product-grid">
-          ${products.length ? products.map(renderProductCard).join("") : renderEmptyState("No products match those filters.")}
+          ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 4 })).join("") : renderEmptyState("No products match those filters.")}
         </div>
       </div>
     </section>
@@ -351,12 +384,12 @@ function renderBrands() {
     </section>
 
     <section class="brand-grid">
-      ${state.data.brands.map((brand) => `
+      ${state.data.brands.map((brand, index) => `
         <article class="brand-card-large">
           <a href="#/brand/${brand.id}">
-            <img class="brand-image" src="${imagePlaceholder}" data-src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} products" width="900" height="660" loading="lazy" decoding="async" fetchpriority="low">
+            <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${imagePlaceholder}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
             <div class="brand-content">
-              <img class="brand-card-logo" src="${imagePlaceholder}" data-src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="460" height="172" loading="lazy" decoding="async" fetchpriority="low">
+              <img class="brand-card-logo" ${index < 2 ? `src="${escapeHtml(brand.logo)}"` : `src="${imagePlaceholder}" data-src="${escapeHtml(brand.logo)}"`} alt="${escapeAttribute(brand.name)}" width="460" height="172" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
               <p>${escapeHtml(brand.role)}</p>
               <h2>${escapeHtml(brand.name)}</h2>
               <span class="text-link">Shop brand</span>
@@ -399,7 +432,7 @@ function renderBrand(brandId) {
         </div>
       </div>
       <div class="product-grid">
-        ${products.map(renderProductCard).join("")}
+        ${products.map((product, index) => renderProductCard(product, { eager: index < 4 })).join("")}
       </div>
     </section>
 
@@ -695,12 +728,15 @@ function renderVariantPreviews(product) {
   `;
 }
 
-function renderProductCard(product) {
+function renderProductCard(product, options = {}) {
+  const imageMarkup = options.eager
+    ? `src="${escapeHtml(product.image)}" decoding="async"`
+    : `src="${imagePlaceholder}" data-src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
         ${product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        <img src="${imagePlaceholder}" data-src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="640" height="800" loading="lazy" decoding="async" fetchpriority="low" data-product-image>
+        <img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
