@@ -143,7 +143,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-main.webp",
+      "image": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp",
       "description": "A sculpting seamless legging with a high-rise waistband and clean studio-to-street finish.",
       "detailBullets": [
         "High-rise waistband",
@@ -162,11 +162,14 @@
       "badge": "Best seller",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-black.webp",
-        "Wine": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-wine.webp",
-        "Deep Plum": "assets/images/products/ks-active/ks-high-waist-seamless-leggings-deep-plum.webp"
+        "Black": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp",
+        "Wine": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine-01.webp",
+        "Deep Plum": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum-01.webp"
       },
       "gallery": [
+        "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum-01.webp",
         "assets/images/products/ks-active/ks-high-waist-seamless-leggings-main.webp",
         "assets/images/products/ks-active/ks-high-waist-seamless-leggings-black.webp",
         "assets/images/products/ks-active/ks-high-waist-seamless-leggings-wine.webp",
@@ -194,7 +197,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-main.webp",
+      "image": "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp",
       "description": "A flexible everyday legging with a smooth waistband and minimal seam lines.",
       "detailBullets": [
         "Smooth high waist",
@@ -211,10 +214,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-black.webp",
-        "Charcoal": "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-charcoal.webp"
+        "Black": "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp",
+        "Charcoal": "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal-01.webp"
       },
       "gallery": [
+        "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal-01.webp",
         "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-main.webp",
         "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-black.webp",
         "assets/images/products/ks-active/ks-high-stretch-seamless-leggings-charcoal.webp"
@@ -240,7 +245,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/ks-active/ks-open-back-romper-main.webp",
+      "image": "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp",
       "description": "A streamlined one-piece with a sculpted open back for training and layered styling.",
       "detailBullets": [
         "Built-in active silhouette",
@@ -257,9 +262,10 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/ks-open-back-romper-black.webp"
+        "Black": "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp"
       },
       "gallery": [
+        "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp",
         "assets/images/products/ks-active/ks-open-back-romper-main.webp",
         "assets/images/products/ks-active/ks-open-back-romper-black.webp"
       ]
@@ -286,7 +292,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-main.webp",
+      "image": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp",
       "description": "Breathable high-waist shorts for warm days, gym sessions and layered looks.",
       "detailBullets": [
         "Wide waistband",
@@ -304,11 +310,14 @@
       "badge": "Sale",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-black.webp",
-        "Wine": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-wine.webp",
-        "Deep Plum": "assets/images/products/ks-active/ks-high-waist-seamless-shorts-deep-plum.webp"
+        "Black": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp",
+        "Wine": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine-01.webp",
+        "Deep Plum": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum-01.webp"
       },
       "gallery": [
+        "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum-01.webp",
         "assets/images/products/ks-active/ks-high-waist-seamless-shorts-main.webp",
         "assets/images/products/ks-active/ks-high-waist-seamless-shorts-black.webp",
         "assets/images/products/ks-active/ks-high-waist-seamless-shorts-wine.webp",
@@ -337,7 +346,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-main.webp",
+      "image": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp",
       "description": "A medium-support sports bra with clean crisscross straps and a smooth front.",
       "detailBullets": [
         "Medium support",
@@ -354,11 +363,14 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Blue": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-blue.webp",
-        "Black": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-black.webp",
-        "Purple": "assets/images/products/ks-active/ks-crisscross-back-sports-bra-purple.webp"
+        "Blue": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp",
+        "Black": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black-01.webp",
+        "Purple": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple-01.webp"
       },
       "gallery": [
+        "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple-01.webp",
         "assets/images/products/ks-active/ks-crisscross-back-sports-bra-main.webp",
         "assets/images/products/ks-active/ks-crisscross-back-sports-bra-blue.webp",
         "assets/images/products/ks-active/ks-crisscross-back-sports-bra-black.webp",
@@ -387,7 +399,7 @@
         "L"
       ],
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-main.webp",
+      "image": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp",
       "description": "A fitted cropped layer with zip styling for studio warmups and everyday layering.",
       "detailBullets": [
         "Long sleeve crop",
@@ -404,11 +416,14 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-black.webp",
-        "Stone": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-stone.webp",
-        "Taupe": "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-taupe.webp"
+        "Black": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp",
+        "Stone": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone-01.webp",
+        "Taupe": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe-01.webp"
       },
       "gallery": [
+        "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone-01.webp",
+        "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe-01.webp",
         "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-main.webp",
         "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-black.webp",
         "assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-stone.webp",

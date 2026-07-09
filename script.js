@@ -491,7 +491,7 @@ function renderShop(params = new URLSearchParams()) {
           <a href="#/shop">Clear filters</a>
         </div>
         <div class="product-grid">
-          ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 4 })).join("") : renderEmptyState("No products match those filters.")}
+          ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 8 })).join("") : renderEmptyState("No products match those filters.")}
         </div>
       </div>
     </section>
