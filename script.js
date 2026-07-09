@@ -525,7 +525,7 @@ function renderBrands() {
           <a href="#/brand/${brand.id}">
             <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
             <div class="brand-content">
-              <img class="brand-card-logo" ${index < 2 ? `src="${escapeHtml(brand.logo)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.logo)}"`} alt="${escapeAttribute(brand.name)}" width="460" height="172" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
+              <img class="brand-card-logo" ${index < 2 ? `src="${escapeHtml(getBrandLogo(brand))}"` : `src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}"`} alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
               <p>${escapeHtml(brand.role)}</p>
               <h2>${escapeHtml(brand.name)}</h2>
               <span class="text-link">Shop brand</span>
@@ -548,7 +548,7 @@ function renderBrand(brandId) {
   app.innerHTML = `
     <section class="brand-hero">
       <div>
-        <img class="brand-hero-logo" src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="520" height="210">
+        <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <p class="eyebrow">${escapeHtml(brand.role)}</p>
         <h1>${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
@@ -876,10 +876,14 @@ function renderNotFound() {
 function renderBrandLogoCard(brand) {
   return `
     <a class="brand-logo-card" href="#/brand/${brand.id}">
-      <img src="${transparentPixel}" data-src="${escapeHtml(brand.logo)}" alt="${escapeAttribute(brand.name)}" width="370" height="116" loading="lazy" decoding="async" fetchpriority="low">
+      <img class="brand-logo" src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async" fetchpriority="low">
       <span>${escapeHtml(brand.name)}</span>
     </a>
   `;
+}
+
+function getBrandLogo(brand) {
+  return brand?.approvedLogo || brand?.logo || "";
 }
 
 function renderCategoryTile(category) {
@@ -1274,6 +1278,8 @@ function swatch(color) {
 }
 
 function renderFooter() {
+  const logo = state.data.meta.logo || "assets/branding/kalm-collective/kalm-collective-logo.png";
+  const logoAlt = state.data.meta.logoAlt || "KALM Collective logo";
   return `
     <footer class="site-footer">
       <div class="footer-service">
@@ -1284,7 +1290,7 @@ function renderFooter() {
       </div>
       <div class="footer-grid">
         <div>
-          <img src="${transparentPixel}" data-src="branding/kalm-collective-display-logo.webp" alt="KALM Collective" width="420" height="118" loading="lazy" decoding="async" fetchpriority="low">
+          <img src="${transparentPixel}" data-src="${escapeHtml(logo)}" alt="${escapeAttribute(logoAlt)}" width="1563" height="1563" loading="lazy" decoding="async" fetchpriority="low">
           <p>Premium essentials for movement, outdoor routines and everyday living.</p>
         </div>
         <div>

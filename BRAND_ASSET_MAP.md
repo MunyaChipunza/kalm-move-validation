@@ -1,24 +1,24 @@
 # KALM Collective Brand Asset Map
 
-Verified: 2026-07-08
+Verified: 2026-07-09
 
-Use only the logo files listed below for the public storefront. Do not replace these with newly generated logos unless a new approved logo file is provided.
+The approved selected files in Google Drive are the source of truth. The storefront must reference the copied files under `assets/branding/`, not the older generated display-logo files under `branding/`.
 
-| Brand | Approved logo file | Source folder/path | Where used | Status |
-|---|---|---|---|---|
-| KALM Collective | `kalm-collective-display-logo.webp` | Display crop derived from `branding/kalm-collective-logo.png`; original source: Drive `Kalm Collective/Branding/Kalm Collective Logo.png` | Header, footer, metadata/social surfaces | Approved source logo, display file regenerated |
-| KS Active | `ks-active-logo-black.webp` | Display file derived from `branding/ks-active-logo-transparent.png` | Brand page, brand cards, brand filters | Existing approved KS Active asset; no new generated KS logo |
-| KALM Move | `kalm-move-display-logo-a.webp` | Display crop derived from `branding/approved-kalm-move-source.png`; original source: `C:\Users\Dell\Downloads\ChatGPT Image Jul 8, 2026, 02_30_59 PM.png` / Drive `Kalm Move.png` | Brand page, brand cards, product brand surfaces | Approved selected option A using the provided KALM Move file |
-| KALM Home | `kalm-home-display-logo.webp` | Selected house-logo layout rebuilt with `branding/approved-kalm-nyati-source.png` | Brand page, brand cards, product brand surfaces | Approved selected Home house direction with the provided buffalo inside the house |
-| KALM Wellness | `kalm-wellness-display-logo-b.webp` | Selected option B lotus layout rebuilt with `branding/approved-kalm-nyati-source.png` | Brand page, brand cards, product brand surfaces | Approved selected option B with the provided buffalo inside the lotus |
-| KALM Outdoor | `kalm-outdoor-display-logo.webp` | Selected outdoor option C layout rebuilt with `branding/approved-kalm-nyati-source.png` | Brand page, brand cards, product brand surfaces | Approved selected option C with the provided buffalo |
+| Brand | Approved selected file name | Drive/source path | Local repo path | Where used | Status |
+|---|---|---|---|---|---|
+| KALM Collective | `Kalm Collective Logo.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Collective Logo.png` | `assets/branding/kalm-collective/kalm-collective-logo.png` | Header logo, footer logo, favicon, web manifest icon, OpenGraph image, site metadata | Copied from Drive, hash verified, referenced in `index.html`, `site.webmanifest`, `products.json`, `script.js` |
+| KS Active | `KS active logo.png` | `G:\My Drive\Master Folder\08 Business Documents\KS active\Documents\KS active logo.png` | `assets/branding/ks-active/ks-active-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
+| KALM Move | `Kalm Move.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Move.png` | `assets/branding/kalm-move/kalm-move-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
+| KALM Home | `Kalm Home.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Home.png` | `assets/branding/kalm-home/kalm-home-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
+| KALM Wellness | `Kalm Wellness.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Wellness.png` | `assets/branding/kalm-wellness/kalm-wellness-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
+| KALM Outdoor | `Kalm Outdoor.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Outdoor.png` | `assets/branding/kalm-outdoor/kalm-outdoor-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
 
-## Notes
+## Source Of Truth
 
-- `products.json` is the source of truth for which brand logo appears on the storefront.
-- KALM Outdoor is the outdoor brand used in public data, navigation, filters, routes, and brand pages.
-- The verified files above exist in `branding/` and are the only production logo assets to use for the listed brands.
-- KALM Home uses the selected minimalist one-line-house direction with the provided KALM buffalo mark.
-- KALM Wellness uses the selected option B lotus direction with the provided KALM buffalo mark.
-- If a selected logo file is missing, stop and add the approved file to `branding/` before changing the storefront.
-- Do not replace these display files with new generated concepts. Only regenerate a display file from the approved source listed in this table.
+- `products.json` is the source of truth for sub-brand logo paths through `approvedLogo`, `logo`, `logoAlt`, `slug`, `description`, `categoryLink` and `homepageTileImage`.
+- `products.json` also stores the KALM Collective site logo paths through `meta.logo`, `meta.logoAlt`, `meta.favicon` and `meta.socialPreview`.
+- KALM Outdoor is the only outdoor brand name in public data, navigation, filters, routes, metadata and brand pages.
+
+## Removed From Active Use
+
+The storefront no longer references the older `branding/*display-logo*`, `branding/favicon.png`, `branding/icon-192.png`, `branding/icon-512.png` or `branding/social-preview.png` paths for live brand presentation.

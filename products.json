@@ -5,7 +5,11 @@
     "currency": "ZAR",
     "publicDomain": "kalmcollective.co.za",
     "heroImage": "assets/images/home-hero-shop.webp",
-    "featureImage": "assets/images/campaign-hero.webp"
+    "featureImage": "assets/images/campaign-hero.webp",
+    "logo": "assets/branding/kalm-collective/kalm-collective-logo.png",
+    "logoAlt": "KALM Collective logo",
+    "favicon": "assets/branding/kalm-collective/kalm-collective-logo.png",
+    "socialPreview": "assets/branding/kalm-collective/kalm-collective-logo.png"
   },
   "brands": [
     {
@@ -15,7 +19,13 @@
       "summary": "Supportive stretch staples for training, errands and everyday movement.",
       "heroImage": "assets/images/ks-active-hero.webp",
       "tileImage": "assets/images/ks-active-brand-tile.webp",
-      "logo": "branding/ks-active-logo-black.webp"
+      "logo": "assets/branding/ks-active/ks-active-logo.png",
+      "slug": "ks-active",
+      "approvedLogo": "assets/branding/ks-active/ks-active-logo.png",
+      "logoAlt": "KS Active logo",
+      "description": "Archive activewear and performance essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=activewear",
+      "homepageTileImage": "assets/images/ks-active-brand-tile.webp"
     },
     {
       "id": "kalm-move",
@@ -24,7 +34,13 @@
       "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-move-tile.webp",
       "tileImage": "assets/images/generated/kalm-move/studio-starter-set.webp",
-      "logo": "branding/kalm-move-display-logo-a.webp"
+      "logo": "assets/branding/kalm-move/kalm-move-logo.png",
+      "slug": "kalm-move",
+      "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
+      "logoAlt": "KALM Move logo",
+      "description": "Movement and activewear essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=activewear",
+      "homepageTileImage": "assets/images/generated/kalm-move/studio-starter-set.webp"
     },
     {
       "id": "kalm-outdoor",
@@ -33,7 +49,13 @@
       "summary": "Original buffalo-branded outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "heroImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp",
       "tileImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp",
-      "logo": "branding/kalm-outdoor-display-logo.webp"
+      "logo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
+      "slug": "kalm-outdoor",
+      "approvedLogo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
+      "logoAlt": "KALM Outdoor logo",
+      "description": "Outdoor cooking and living essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=outdoor",
+      "homepageTileImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp"
     },
     {
       "id": "kalm-wellness",
@@ -42,7 +64,13 @@
       "summary": "Simple recovery, hydration and studio essentials for balanced routines.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-wellness-tile.webp",
       "tileImage": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp",
-      "logo": "branding/kalm-wellness-display-logo-b.webp"
+      "logo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
+      "slug": "kalm-wellness",
+      "approvedLogo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
+      "logoAlt": "KALM Wellness logo",
+      "description": "Wellness accessories and self-care essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=wellness",
+      "homepageTileImage": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp"
     },
     {
       "id": "kalm-home",
@@ -51,7 +79,13 @@
       "summary": "Clean, tactile pieces for bedrooms, bathrooms and calm daily rituals.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-home-tile.webp",
       "tileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp",
-      "logo": "branding/kalm-home-display-logo.webp"
+      "logo": "assets/branding/kalm-home/kalm-home-logo.png",
+      "slug": "kalm-home",
+      "approvedLogo": "assets/branding/kalm-home/kalm-home-logo.png",
+      "logoAlt": "KALM Home logo",
+      "description": "Home decor, bedding, storage and living essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=home",
+      "homepageTileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp"
     }
   ],
   "categories": [

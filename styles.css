@@ -107,8 +107,9 @@ button {
 }
 
 .brand img {
-  width: 260px;
-  height: auto;
+  width: 132px;
+  height: 132px;
+  object-fit: contain;
 }
 
 .header-actions {
@@ -355,7 +356,7 @@ button {
 .brand-logo-card {
   display: grid;
   place-items: center;
-  min-height: 128px;
+  min-height: 172px;
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -366,8 +367,8 @@ button {
 }
 
 .brand-logo-card img {
-  max-width: 185px;
-  max-height: 58px;
+  width: min(150px, 100%);
+  height: 112px;
   margin-bottom: 12px;
   object-fit: contain;
 }
@@ -923,8 +924,8 @@ button {
 }
 
 .brand-card-logo {
-  max-width: 230px;
-  max-height: 86px;
+  width: 190px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -959,8 +960,8 @@ button {
 }
 
 .brand-hero-logo {
-  width: 260px;
-  max-height: 105px;
+  width: 230px;
+  height: 230px;
   margin-bottom: 26px;
   object-fit: contain;
 }
@@ -1457,8 +1458,10 @@ button {
 }
 
 .footer-grid img {
-  width: 210px;
+  width: 170px;
+  height: 170px;
   margin-bottom: 16px;
+  object-fit: contain;
 }
 
 .footer-grid h3 {
@@ -1512,7 +1515,8 @@ button {
   }
 
   .brand img {
-    width: 190px;
+    width: 94px;
+    height: 94px;
   }
 
   .account-link,
@@ -1714,7 +1718,8 @@ button {
 
 @media (max-width: 520px) {
   .brand img {
-    width: 160px;
+    width: 82px;
+    height: 82px;
   }
 
   .cart-button span {
