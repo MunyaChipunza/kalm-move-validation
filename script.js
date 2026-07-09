@@ -165,6 +165,12 @@ function scrollToAnchor(anchor) {
   }, 0);
 }
 
+function setDocumentMeta(title, description) {
+  document.title = title;
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription && description) metaDescription.setAttribute("content", description);
+}
+
 function hydrateDeferredImages(root = document) {
   const images = [...root.querySelectorAll("img[data-src]")];
   if (!images.length) return;
@@ -220,12 +226,17 @@ function scheduleHomeSections(sections) {
 
 function renderHome({ preserveHero = false } = {}) {
   const { meta, brands, categories, products } = state.data;
+  setDocumentMeta(
+    "KALM Collective | Premium Movement, Outdoor, Wellness and Home",
+    "Shop KALM Collective across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home."
+  );
   const arrivals = products.filter((product) => product.tags.includes("new-in")).slice(0, 8);
+  const outdoorCooking = products.filter((product) => product.tags.includes("outdoor-cooking")).slice(0, 3);
   const bestSellers = [
     products.find((product) => product.id === "ks-high-waist-seamless-leggings"),
     products.find((product) => product.id === "kalm-move-studio-starter-set"),
-    products.find((product) => product.id === "kalm-home-white-cotton-bedding-set"),
-    products.find((product) => product.id === "kalm-wellness-studio-mat-and-towel")
+    products.find((product) => product.id === "kalm-outdoor-ember-16-gas-pizza-oven"),
+    products.find((product) => product.id === "kalm-home-white-cotton-bedding-set")
   ].filter(Boolean);
   const saleEdit = products.filter((product) => product.compareAtPrice).slice(0, 4);
   const featured = [
@@ -272,6 +283,7 @@ function renderHome({ preserveHero = false } = {}) {
     </section>
 
     ${renderProductRail("New Arrivals", arrivals, "#/shop?category=new-in")}
+    ${renderOutdoorCookingFeature(outdoorCooking)}
 
     ${renderEditorialEdits()}
 
@@ -399,6 +411,33 @@ function renderProductRail(title, products, href) {
   `;
 }
 
+function renderOutdoorCookingFeature(products) {
+  if (!products.length) return "";
+  const heroProduct = products[0];
+  return `
+    <section class="outdoor-cooking-band">
+      <a class="outdoor-cooking-media" href="#/product/${heroProduct.slug}">
+        <img src="${transparentPixel}" data-src="${escapeHtml(heroProduct.gallery?.[4] || heroProduct.image)}" alt="${escapeAttribute(heroProduct.title)} outdoor cooking scene" width="1200" height="1500" loading="lazy" decoding="async" fetchpriority="low">
+      </a>
+      <div class="outdoor-cooking-copy">
+        <p class="eyebrow">KALM Outdoor Cooking</p>
+        <h2>Buffalo-branded pieces for open-air meals.</h2>
+        <p>Original gas pizza, flat-top and braai products designed for patio counters, weekend hosting and premium outdoor routines.</p>
+        <a class="button primary" href="#/shop?category=outdoor">Shop outdoor cooking</a>
+      </div>
+      <div class="outdoor-cooking-products">
+        ${products.map((product) => `
+          <a href="#/product/${product.slug}">
+            <img src="${transparentPixel}" data-src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="360" height="450" loading="lazy" decoding="async" fetchpriority="low">
+            <span>${escapeHtml(product.title)}</span>
+            <strong>${formatPrice(product.price)}</strong>
+          </a>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderShop(params = new URLSearchParams()) {
   const brand = params.get("brand") || "all";
   const category = params.get("category") || "all";
@@ -406,6 +445,10 @@ function renderShop(params = new URLSearchParams()) {
   const search = params.get("search") || "";
   const products = sortProducts(filterProducts({ brand, category, search }), sort);
   const heading = shopHeading({ brand, category, search });
+  setDocumentMeta(
+    `${heading} | KALM Collective`,
+    "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear."
+  );
 
   app.innerHTML = `
     <section class="page-hero compact">
@@ -465,6 +508,10 @@ function renderShop(params = new URLSearchParams()) {
 }
 
 function renderBrands() {
+  setDocumentMeta(
+    "Brands | KALM Collective",
+    "Explore KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home."
+  );
   app.innerHTML = `
     <section class="page-hero">
       <p class="eyebrow">Brands</p>
@@ -497,6 +544,7 @@ function renderBrand(brandId) {
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
   const products = state.data.products.filter((product) => product.brandId === brand.id);
+  setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
     <section class="brand-hero">
       <div>
@@ -529,9 +577,14 @@ function renderBrand(brandId) {
 function renderProduct(slug) {
   const product = state.data.products.find((item) => item.slug === slug);
   if (!product) return renderNotFound();
-  const related = state.data.products
-    .filter((item) => item.brandId === product.brandId && item.id !== product.id)
+  const manualRelated = (product.relatedProducts || [])
+    .map((productId) => findProduct(productId))
+    .filter(Boolean);
+  const related = (manualRelated.length ? manualRelated : state.data.products
+    .filter((item) => item.brandId === product.brandId && item.id !== product.id))
     .slice(0, 4);
+  const details = product.features || product.detailBullets || [];
+  setDocumentMeta(product.metaTitle || `${product.title} | ${product.brand}`, product.metaDescription || product.description);
 
   app.innerHTML = `
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
@@ -544,7 +597,8 @@ function renderProduct(slug) {
         <h1>${escapeHtml(product.title)}</h1>
         <div class="price-line">${renderPrice(product)}</div>
         <p class="stock-line">${escapeHtml(product.stockLabel)}</p>
-        <p>${escapeHtml(product.description)}</p>
+        ${product.sku ? `<p class="sku-line">SKU: ${escapeHtml(product.sku)}</p>` : ""}
+        <p>${escapeHtml(product.longDescription || product.description)}</p>
 
         <div class="selector-row">
           <label>Colour
@@ -568,8 +622,14 @@ function renderProduct(slug) {
         <div class="accordion-list">
           <details open>
             <summary>Product details</summary>
-            <ul>${product.detailBullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+            <ul>${details.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
           </details>
+          ${product.specifications?.length ? `
+            <details>
+              <summary>Specifications</summary>
+              ${renderSpecifications(product.specifications)}
+            </details>
+          ` : ""}
           <details>
             <summary>Fit and fabric</summary>
             <p>${escapeHtml(product.fitNotes)}</p>
@@ -605,6 +665,7 @@ function renderProduct(slug) {
 }
 
 function renderCartPage() {
+  setDocumentMeta("Shopping Bag | KALM Collective", "Review selected KALM Collective products before checkout.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Your bag</p>
@@ -630,6 +691,7 @@ function renderCartPage() {
 
 function renderCheckout() {
   const subtotal = getSubtotal();
+  setDocumentMeta("Checkout | KALM Collective", "Complete your KALM Collective order with delivery details, order notes and payment selection.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Checkout</p>
@@ -706,6 +768,7 @@ function renderCheckout() {
 }
 
 function renderContact() {
+  setDocumentMeta("Customer Care | KALM Collective", "Contact KALM Collective for product, order, delivery and brand support.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Customer care</p>
@@ -749,6 +812,7 @@ function renderContact() {
 }
 
 function renderPolicies() {
+  setDocumentMeta("Policies | KALM Collective", "Delivery, returns, payment and privacy information for KALM Collective customers.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Policies</p>
@@ -767,6 +831,7 @@ function renderPolicies() {
 }
 
 function renderAccount() {
+  setDocumentMeta("Account | KALM Collective", "Use your email for KALM Collective order updates, product care and private offers.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Account</p>
@@ -795,6 +860,7 @@ function renderAccount() {
 }
 
 function renderNotFound() {
+  setDocumentMeta("Page Not Found | KALM Collective", "Return to the KALM Collective shop or explore the brand family.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">KALM Collective</p>
@@ -849,6 +915,19 @@ function renderProductGallery(product) {
         </button>
       `).join("")}
     </div>
+  `;
+}
+
+function renderSpecifications(specifications) {
+  return `
+    <dl class="spec-list">
+      ${specifications.map((item) => `
+        <div>
+          <dt>${escapeHtml(item.label)}</dt>
+          <dd>${escapeHtml(item.value)}</dd>
+        </div>
+      `).join("")}
+    </dl>
   `;
 }
 
@@ -1059,6 +1138,11 @@ function filterProducts({ brand = "all", category = "all", search = "" }) {
       product.collection,
       product.type,
       product.description,
+      product.shortDescription,
+      product.longDescription,
+      product.sku,
+      (product.features || []).join(" "),
+      (product.specifications || []).map((item) => `${item.label} ${item.value}`).join(" "),
       product.tags.join(" ")
     ].join(" ").toLowerCase().includes(term);
     return brandMatch && categoryMatch && searchMatch;

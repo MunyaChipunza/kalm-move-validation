@@ -1,7 +1,7 @@
 {
   "meta": {
     "store": "KALM Collective",
-    "updated": "2026-07-08",
+    "updated": "2026-07-09",
     "currency": "ZAR",
     "publicDomain": "kalmcollective.co.za",
     "heroImage": "assets/images/home-hero-shop.webp",
@@ -29,10 +29,10 @@
     {
       "id": "kalm-outdoor",
       "name": "KALM Outdoor",
-      "role": "Outdoor essentials",
-      "summary": "Polished outdoor staples for picnics, patios, day trips and open-air routines.",
-      "heroImage": "assets/images/generated/brand-tiles/kalm-outdoor-tile.webp",
-      "tileImage": "assets/images/generated/kalm-outdoor/canvas-utility-tote.webp",
+      "role": "Outdoor cooking and living",
+      "summary": "Original buffalo-branded outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
+      "heroImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp",
+      "tileImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp",
       "logo": "branding/kalm-outdoor-display-logo.webp"
     },
     {
@@ -78,7 +78,7 @@
     {
       "id": "outdoor",
       "name": "Outdoor",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp"
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp"
     },
     {
       "id": "sale",
@@ -611,6 +611,300 @@
         "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-main.webp",
         "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp"
       ]
+    },
+    {
+      "id": "kalm-outdoor-ember-16-gas-pizza-oven",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Cooking",
+      "category": "outdoor",
+      "type": "Gas Pizza Oven",
+      "title": "Ember 16 Gas Pizza Oven",
+      "slug": "kalm-outdoor-ember-16-gas-pizza-oven",
+      "sku": "KO-EMBER16-GPO-BLK",
+      "price": 7999,
+      "compareAtPrice": null,
+      "colors": [
+        "Matte Black"
+      ],
+      "sizes": [
+        "16 inch"
+      ],
+      "stockLabel": "Available for order",
+      "inventoryStatus": "in-stock",
+      "inventoryQuantity": 24,
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp",
+      "description": "A compact 16-inch gas pizza oven for fast patio dinners, open-air hosting and crisp high-heat cooking.",
+      "shortDescription": "Original buffalo-branded 16-inch outdoor gas pizza oven.",
+      "longDescription": "The Ember 16 is designed for weekend pizza nights and compact outdoor kitchens. A dark faceted shell, stone-style cooking deck and simple gas control give it a premium KALM Outdoor profile for patios, garden counters and relaxed hosting.",
+      "detailBullets": [
+        "16-inch stone-style cooking deck",
+        "Single side gas control with visible rear flame path",
+        "Compact freestanding body for patio counters",
+        "Matte black buffalo-branded exterior",
+        "Designed for pizzas, flatbreads and high-heat roasting"
+      ],
+      "features": [
+        "16-inch deck sized for family pizza nights",
+        "Fast gas-fired cooking with one front control",
+        "Stone-style cooking surface for crisp bases",
+        "Low-profile legs for outdoor counters and tables",
+        "Premium graphite finish with KALM buffalo mark"
+      ],
+      "specifications": [
+        {
+          "label": "Cooking area",
+          "value": "16-inch deck"
+        },
+        {
+          "label": "Fuel type",
+          "value": "Outdoor LPG gas"
+        },
+        {
+          "label": "Body finish",
+          "value": "Matte graphite powder-coated steel"
+        },
+        {
+          "label": "Cooking surface",
+          "value": "Stone-style removable deck"
+        },
+        {
+          "label": "Use case",
+          "value": "Outdoor patios, garden counters and covered braai areas"
+        },
+        {
+          "label": "Included",
+          "value": "Oven body, cooking deck and gas connection point"
+        }
+      ],
+      "fitNotes": "Best for covered patios, outdoor counters and braai areas with ventilation.",
+      "fabric": "Powder-coated steel body, stainless control panel and stone-style cooking deck.",
+      "care": "Use outdoors only. Cool completely before cleaning, brush the deck after use and wipe the exterior with a damp cloth.",
+      "tags": [
+        "new-in",
+        "outdoor",
+        "outdoor-cooking",
+        "pizza-oven",
+        "gas-cooking",
+        "braai"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Matte Black": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-front.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-side.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-lifestyle.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-detail.webp"
+      ],
+      "relatedProducts": [
+        "kalm-outdoor-forge-2-portable-gas-griddle",
+        "kalm-outdoor-ridge-4-stainless-gas-braai",
+        "kalm-outdoor-matte-camp-lantern",
+        "kalm-outdoor-insulated-carafe-and-tumbler"
+      ],
+      "metaTitle": "Ember 16 Gas Pizza Oven | KALM Outdoor",
+      "metaDescription": "Shop the KALM Outdoor Ember 16, an original 16-inch buffalo-branded gas pizza oven for patio cooking and open-air hosting."
+    },
+    {
+      "id": "kalm-outdoor-forge-2-portable-gas-griddle",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Cooking",
+      "category": "outdoor",
+      "type": "Portable Gas Griddle",
+      "title": "Forge 2 Portable Gas Griddle",
+      "slug": "kalm-outdoor-forge-2-portable-gas-griddle",
+      "sku": "KO-FORGE2-FTG-BLK",
+      "price": 6499,
+      "compareAtPrice": null,
+      "colors": [
+        "Matte Black"
+      ],
+      "sizes": [
+        "Two burner"
+      ],
+      "stockLabel": "Available for order",
+      "inventoryStatus": "in-stock",
+      "inventoryQuantity": 18,
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp",
+      "description": "A two-burner flat-top gas griddle on a rolling frame for breakfasts, burgers and relaxed outdoor cooking.",
+      "shortDescription": "Original buffalo-branded two-burner portable flat-top gas griddle.",
+      "longDescription": "The Forge 2 brings flat-top cooking into the KALM Outdoor range with a clean black frame, stainless cooking plate and folding-friendly silhouette. It is built for breakfasts, burgers, vegetables and casual meals around the patio.",
+      "detailBullets": [
+        "Two independent gas controls",
+        "Raised-edge stainless flat-top cooking plate",
+        "Rolling frame with lower shelf",
+        "Side shelf for prep and plating",
+        "Buffalo-branded front apron and lid detail"
+      ],
+      "features": [
+        "Twin-burner control for split-zone cooking",
+        "Flat-top plate for eggs, vegetables, steak and smash burgers",
+        "Wheeled frame for patio storage and repositioning",
+        "Lower shelf for pans, condiments and serving pieces",
+        "Matte black KALM Outdoor finish"
+      ],
+      "specifications": [
+        {
+          "label": "Burners",
+          "value": "2 gas zones"
+        },
+        {
+          "label": "Cooking surface",
+          "value": "Flat stainless griddle plate with raised rim"
+        },
+        {
+          "label": "Fuel type",
+          "value": "Outdoor LPG gas"
+        },
+        {
+          "label": "Frame",
+          "value": "Powder-coated wheeled cart with lower shelf"
+        },
+        {
+          "label": "Use case",
+          "value": "Patio breakfasts, burgers, vegetables and casual hosting"
+        },
+        {
+          "label": "Included",
+          "value": "Griddle body, rolling frame, side shelf and gas connection point"
+        }
+      ],
+      "fitNotes": "Designed for patios, balconies and compact outdoor entertainment spaces with ventilation.",
+      "fabric": "Powder-coated steel frame with stainless flat-top cooking plate and metal control hardware.",
+      "care": "Season the cooking plate before first use, clean while warm and store covered when not in use.",
+      "tags": [
+        "new-in",
+        "outdoor",
+        "outdoor-cooking",
+        "griddle",
+        "gas-cooking",
+        "braai"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Matte Black": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-front.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-side.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-lifestyle.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-scene.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-detail.webp"
+      ],
+      "relatedProducts": [
+        "kalm-outdoor-ember-16-gas-pizza-oven",
+        "kalm-outdoor-ridge-4-stainless-gas-braai",
+        "kalm-outdoor-canvas-utility-tote",
+        "kalm-outdoor-matte-camp-lantern"
+      ],
+      "metaTitle": "Forge 2 Portable Gas Griddle | KALM Outdoor",
+      "metaDescription": "Shop the KALM Outdoor Forge 2, an original two-burner buffalo-branded flat-top gas griddle for patio cooking."
+    },
+    {
+      "id": "kalm-outdoor-ridge-4-stainless-gas-braai",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Cooking",
+      "category": "outdoor",
+      "type": "Gas Braai",
+      "title": "Ridge 4 Stainless Gas Braai",
+      "slug": "kalm-outdoor-ridge-4-stainless-gas-braai",
+      "sku": "KO-RIDGE4-GBR-SS",
+      "price": 14999,
+      "compareAtPrice": null,
+      "colors": [
+        "Stainless / Black"
+      ],
+      "sizes": [
+        "Four burner"
+      ],
+      "stockLabel": "Available for order",
+      "inventoryStatus": "in-stock",
+      "inventoryQuantity": 12,
+      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp",
+      "description": "A four-burner stainless cart gas braai for polished outdoor kitchens, family grilling and weekend hosting.",
+      "shortDescription": "Original buffalo-branded stainless four-burner cart gas braai.",
+      "longDescription": "The Ridge 4 anchors the KALM Outdoor Cooking range with a stainless hood, black cart frame and open-air hosting presence. It gives larger patios a polished braai setup for family grilling, weekend prep and outdoor meals.",
+      "detailBullets": [
+        "Four front gas controls",
+        "Stainless hood with integrated thermometer",
+        "Side shelves for prep and serving",
+        "Cart cabinet storage with rolling base",
+        "Buffalo-branded stainless and black finish"
+      ],
+      "features": [
+        "Four-burner cooking surface for full outdoor meals",
+        "Stainless hood supports covered grilling and heat retention",
+        "Side shelves create practical prep space",
+        "Rolling cart with enclosed cabinet storage",
+        "Premium KALM Outdoor buffalo detailing"
+      ],
+      "specifications": [
+        {
+          "label": "Burners",
+          "value": "4 gas zones"
+        },
+        {
+          "label": "Fuel type",
+          "value": "Outdoor LPG gas"
+        },
+        {
+          "label": "Hood",
+          "value": "Stainless steel with temperature gauge"
+        },
+        {
+          "label": "Cooking setup",
+          "value": "Grill grates, warming rack and enclosed cart storage"
+        },
+        {
+          "label": "Use case",
+          "value": "Outdoor kitchens, patios and family braai areas"
+        },
+        {
+          "label": "Included",
+          "value": "Braai body, cart cabinet, side shelves and gas connection point"
+        }
+      ],
+      "fitNotes": "Best for permanent patio setups, outdoor kitchens and larger braai areas with ventilation.",
+      "fabric": "Stainless steel hood and shelves with powder-coated black cart frame and metal control hardware.",
+      "care": "Brush grates after cooking, empty grease tray regularly and keep covered when stored outside.",
+      "tags": [
+        "new-in",
+        "outdoor",
+        "outdoor-cooking",
+        "gas-braai",
+        "grill",
+        "braai"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Stainless / Black": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-front.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-side.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-lifestyle.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp",
+        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-detail.webp"
+      ],
+      "relatedProducts": [
+        "kalm-outdoor-ember-16-gas-pizza-oven",
+        "kalm-outdoor-forge-2-portable-gas-griddle",
+        "kalm-outdoor-patio-cushion-pair",
+        "kalm-outdoor-insulated-carafe-and-tumbler"
+      ],
+      "metaTitle": "Ridge 4 Stainless Gas Braai | KALM Outdoor",
+      "metaDescription": "Shop the KALM Outdoor Ridge 4, an original buffalo-branded stainless four-burner gas braai for premium outdoor hosting."
     },
     {
       "id": "kalm-outdoor-canvas-utility-tote",
