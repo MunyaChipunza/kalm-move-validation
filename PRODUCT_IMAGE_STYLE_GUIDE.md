@@ -126,3 +126,13 @@ Before shipping replacement imagery:
 - collection grid looks premium and not repetitive,
 - no obvious pasted-on garment effect,
 - no visible placeholder or “image coming soon” text.
+
+## Rollout Completed After Motion Hoodie Benchmark
+
+Implementation notes for the completed rollout:
+
+- Use the Motion Hoodie data shape for new premium product imagery: `image`, default `gallery`, and object-form `variantImages` with `hero` and `gallery`.
+- The current KALM Move and KS Active rollout now uses three gallery files per sold colour variant.
+- KS Active colour galleries are derived from colour-specific model-shot sources only, so Black, Wine, Deep Plum, Blue, Purple, Stone and Taupe variants do not borrow mismatched source colours.
+- Existing KALM Move men and bottle imagery was expanded into gallery-ready `front`, `angle` and `movement` files without changing product design, logos, copy, checkout, domains or routing.
+- The original KALM Move women apparel flatlay/source assets remain usable for variant switching, but still need approved model photography before final production merchandising.

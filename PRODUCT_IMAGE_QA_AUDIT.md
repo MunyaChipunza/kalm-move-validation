@@ -62,3 +62,37 @@ Fix `kalm-move-motion-hoodie` first and use it as the benchmark for:
 - less repetitive posing,
 - at least some model diversity across the product gallery,
 - cart/bag using the selected colour image.
+
+## Rollout Completed After Motion Hoodie Benchmark
+
+The Motion Hoodie object-form variant gallery pattern has now been applied across KALM Move and KS Active. Each scoped product has `image`, default `gallery`, and colour-specific `variantImages` using `hero` plus a three-image `gallery` where source imagery exists. Motion Hoodie remains unchanged as the benchmark proof product.
+
+| Product | Variants covered | Image count per variant | Model diversity note | Status |
+|---|---|---|---|---|
+| High Waist Seamless Leggings | Black, Wine, Deep Plum | Black: 3; Wine: 3; Deep Plum: 3 | Adult female model imagery retained and expanded from colour-specific model sources; catalogue includes Black, White and mixed-race representation. | complete |
+| High Stretch Seamless Leggings | Black, Charcoal | Black: 3; Charcoal: 3 | Adult female model imagery retained and expanded from colour-specific model sources; catalogue includes Black, White and mixed-race representation. | complete |
+| Open Back Romper | Black | Black: 3 | Adult female model imagery retained and expanded from colour-specific model sources; catalogue includes Black, White and mixed-race representation. | complete |
+| High Waist Seamless Shorts | Black, Wine, Deep Plum | Black: 3; Wine: 3; Deep Plum: 3 | Adult female model imagery retained and expanded from colour-specific model sources; catalogue includes Black, White and mixed-race representation. | complete |
+| Crisscross Back Sports Bra | Blue, Black, Purple | Blue: 3; Black: 3; Purple: 3 | Adult female model imagery retained and expanded from colour-specific model sources; catalogue includes Black, White and mixed-race representation. | complete |
+| Dual Zip Long-Sleeve Crop | Black, Stone, Taupe | Black: 3; Stone: 3; Taupe: 3 | Adult female model imagery retained and expanded from colour-specific model sources; catalogue includes Black, White and mixed-race representation. | complete |
+| Everyday Movement Legging | Black | Black: 3 | Product/source imagery expanded into galleries; still needs final source model photography before production merchandising. | complete for variant system; needs final source/model images |
+| Medium Support Sports Bra | Olive | Olive: 3 | Product/source imagery expanded into galleries; still needs final source model photography before production merchandising. | complete for variant system; needs final source/model images |
+| Modest Performance Tee | Oat | Oat: 3 | Product/source imagery expanded into galleries; still needs final source model photography before production merchandising. | complete for variant system; needs final source/model images |
+| Studio Starter Set | Black / Olive / Oat | Black / Olive / Oat: 3 | Product/source imagery expanded into galleries; still needs final source model photography before production merchandising. | complete for variant system; needs final source/model images |
+| Canvas Tote and Cap | Black / Natural | Black / Natural: 3 | Product/source imagery expanded into galleries; still needs final source model photography before production merchandising. | complete for variant system; needs final source/model images |
+| KALM Move Flow Training Short | Black, Charcoal, Navy, Olive | Black: 3; Charcoal: 3; Navy: 3; Olive: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Sprint Running Short | Black, Navy, Cobalt, Charcoal | Black: 3; Navy: 3; Cobalt: 3; Charcoal: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Core Performance Tee | Black, White, Charcoal, Navy, Olive | Black: 3; White: 3; Charcoal: 3; Navy: 3; Olive: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Lift Tank | Black, White, Charcoal, Navy | Black: 3; White: 3; Charcoal: 3; Navy: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Pace Jogger | Black, Charcoal, Stone, Navy, Olive | Black: 3; Charcoal: 3; Stone: 3; Navy: 3; Olive: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Motion Hoodie | Black, Charcoal, Stone, Olive, Navy | Black: 3; Charcoal: 3; Stone: 3; Olive: 3; Navy: 3 | Benchmark product retained: adult male models across Black, mixed-race/Coloured, White, Indian/South Asian and Black representation. | complete - benchmark retained |
+| KALM Move Base Compression Short | Black, Charcoal, Navy | Black: 3; Charcoal: 3; Navy: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Cap | Black, White, Navy, Olive, Charcoal | Black: 3; White: 3; Navy: 3; Olive: 3; Charcoal: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Training Sock 3-Pack | Black Pack, White Pack, Mixed Neutral Pack | Black Pack: 3; White Pack: 3; Mixed Neutral Pack: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Utility Gym Bag | Black, Charcoal, Olive, Navy | Black: 3; Charcoal: 3; Olive: 3; Navy: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Protein Shaker Bottle | Black, Charcoal, Navy, Smoke Grey | Black: 3; Charcoal: 3; Navy: 3; Smoke Grey: 3 | Adult male ecommerce imagery expanded; catalogue-level men coverage includes Black, White, mixed-race/Coloured and South Asian representation. | complete |
+| KALM Move Everyday Bottle | Cream, Blush, Sage, Stone, White | Cream: 3; Blush: 3; Sage: 3; Stone: 3; White: 3 | Adult women lifestyle imagery retained and expanded; bottle catalogue includes Black and Asian representation across the range. | complete |
+| KALM Move Slim Wellness Bottle | Matte White, Soft Beige, Dusty Pink, Sage Green | Matte White: 3; Soft Beige: 3; Dusty Pink: 3; Sage Green: 3 | Adult women lifestyle imagery retained and expanded; bottle catalogue includes Black and Asian representation across the range. | complete |
+| KALM Move Studio Bottle | Stone, Sand, Lavender Grey, Soft Olive | Stone: 3; Sand: 3; Lavender Grey: 3; Soft Olive: 3 | Adult women lifestyle imagery retained and expanded; bottle catalogue includes Black and Asian representation across the range. | complete |
+
+Source-image caveat: the original KALM Move women apparel and canvas set products now participate fully in the variant image system, but their current source assets remain product-only/flatlay. They should be replaced with approved supplier or studio model photography before paid production merchandising.
