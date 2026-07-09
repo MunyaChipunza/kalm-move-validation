@@ -10,7 +10,7 @@ Goal: The catalogue should feel inclusive and intentional across model race/skin
 |---|---|---|
 | KALM Move Motion Hoodie | Improved. Five colour variants now use different adult male models across Black, mixed-race/Coloured, White, Indian/South Asian and Black representation. Each colour has front, angle and movement poses. | Use as the first benchmark product. |
 | KALM Move men apparel, excluding Motion Hoodie | Partial representation exists, but many products repeat one model or pose across all colours. | Replace product-by-product after Motion Hoodie is accepted. |
-| KALM Move women apparel | Mostly product-only imagery; no adult female model coverage. | Needs source or generated model imagery before production. |
+| KALM Move women apparel | Rebuilt with adult model-on-body ecommerce imagery derived from Munya's supplier references. Coverage now includes Black, White, mixed-race/Coloured and South Asian/Indian women across the live women clothing variants. | Keep future additions supplier-backed; do not invent garment cuts or unsupported colours. |
 | KALM Move bottles/accessories | Lifestyle model imagery exists but is repetitive and narrow. | Add product close-ups and varied lifestyle hands/body context. |
 | KS Active | Adult female model imagery exists and looks more realistic than KALM Move men imagery. Diversity is still limited and most colour variants only have one pose. | Keep current hero shots; add additional angles and broader model representation. |
 
@@ -60,7 +60,7 @@ Goal: The catalogue should feel inclusive and intentional across model race/skin
 
 ## Gaps To Fix After Motion Hoodie
 
-- KALM Move women apparel needs adult female model photography.
+- KALM Move women apparel now has generated adult female model photography for the live supplier-backed reset range; future additions still need source-backed garment references.
 - KS Active needs more than one image per colour variant.
 - KALM Move men products need less repetition across models and poses.
 - Accessories need product close-ups and scale/detail shots, not only lifestyle poses.
@@ -95,4 +95,30 @@ Goal: The catalogue should feel inclusive and intentional across model race/skin
 | KALM Move Slim Wellness Bottle | Matte White, Soft Beige, Dusty Pink, Sage Green | Adult women lifestyle imagery retained and expanded; bottle catalogue includes Black and Asian representation across the range. | Matte White: 3; Soft Beige: 3; Dusty Pink: 3; Sage Green: 3 | complete |
 | KALM Move Studio Bottle | Stone, Sand, Lavender Grey, Soft Olive | Adult women lifestyle imagery retained and expanded; bottle catalogue includes Black and Asian representation across the range. | Stone: 3; Sand: 3; Lavender Grey: 3; Soft Olive: 3 | complete |
 
-Catalogue-level diversity after rollout: KS Active presents adult women across Black, White and mixed-race representation; KALM Move men presents several adult male looks across Black, White, mixed-race/Coloured and South Asian representation; KALM Move women bottle imagery includes Black and Asian women. The remaining gap is not variant functionality but source photography for the original KALM Move women apparel flatlays.
+Catalogue-level diversity after rollout: KS Active presents adult women across Black, White and mixed-race representation; KALM Move men presents several adult male looks across Black, White, mixed-race/Coloured and South Asian representation; KALM Move women clothing now includes Black, White, mixed-race/Coloured and South Asian/Indian women across the supplier-backed reset range; KALM Move women bottle imagery includes Black and Asian women. The remaining gap is not variant functionality, but the need for more supplier/source evidence before adding extra unsupported colours or silhouettes.
+
+## KALM Move Reference Reset - 2026-07-09
+
+The old KALM Move women clothing products with no model representation have been removed from live product data. The replacement women range uses Munya's supplier references only for garment direction, with generated adult model-on-body ecommerce imagery used for the final customer-facing product files.
+
+| Area | Current representation | Constraint | Status |
+|---|---|---|---|
+| KALM Move women clothing reset | Generated model-on-body imagery now includes Black, White, mixed-race/Coloured and South Asian/Indian women, with slim, athletic-average and curvy-average body presentation. | The supplied reference pack controls garment design; broader or different body representation should still preserve the exact supplier-backed cut and not invent new garments. | Complete for this supplied-reference reset |
+| KALM Move men | Motion Hoodie remains strongest; several other men products now expose fewer weak colour variants. | Existing men imagery is still not as strong as a real studio shoot. | Checked and trimmed against Hoodie benchmark |
+| KALM Move bottles | Existing lifestyle bottle imagery retained. | Not part of this clothing reset. | Kept |
+| KS Active | Existing adult women model imagery retained. | Not part of this KALM Move reset. | Kept |
+
+Current new women products and live source-backed coverage:
+
+| Product | Live colours | Model/body note | Status |
+|---|---|---|---|
+| KALM Move Align Strappy Jumpsuit | Grayish Blue, Date Brown | Generated adult model imagery matched to supplier one-piece/cross-back reference; Black and mixed-race/Coloured representation | Complete for supplied-reference reset |
+| KALM Move Form Short Set | White | Generated adult South Asian/Indian model imagery matched to supplier fitted short-set reference | Complete for supplied-reference reset |
+| KALM Move Pulse Crop Short Set | Black | Generated adult White model imagery matched to supplier high-neck crop and short-set reference | Complete for supplied-reference reset |
+| KALM Move Ease Flare Legging | Gray Blue | Generated adult Black model imagery matched to supplier flare-legging reference | Complete for supplied-reference reset |
+| KALM Move Balance Strappy Set | Blossom Pink | Generated adult mixed-race/Coloured model imagery matched to supplier strappy set reference | Complete for supplied-reference reset |
+| KALM Move Rise Long Sleeve Set | Apricot, Rose Red, Green | Generated adult model imagery matched to supplier long-sleeve set reference; White and Black representation | Complete for supplied-reference reset |
+| KALM Move Core Seamless Tank | Charcoal, Black | Generated adult South Asian/Indian and Black model imagery matched to supplier seamless tank/short reference | Complete for supplied-reference reset |
+| KALM Move Align Ruched Short | Purple, Pink | Generated adult White and mixed-race/Coloured model imagery matched to supplier ruched short reference | Complete for supplied-reference reset |
+
+Residual diversity risk: the current reset improves human representation, but every future body-type or colour expansion must still preserve a supplier-backed garment cut. No unsupported product silhouettes should be added just to make an image look cleaner.

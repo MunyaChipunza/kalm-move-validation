@@ -264,13 +264,13 @@ function renderHome({ preserveHero = false } = {}) {
   const outdoorCooking = products.filter((product) => product.tags.includes("outdoor-cooking")).slice(0, 3);
   const bestSellers = [
     products.find((product) => product.id === "ks-high-waist-seamless-leggings"),
-    products.find((product) => product.id === "kalm-move-studio-starter-set"),
+    products.find((product) => product.id === "kalm-move-rise-long-sleeve-set"),
     products.find((product) => product.id === "kalm-outdoor-ember-16-gas-pizza-oven"),
     products.find((product) => product.id === "kalm-home-white-cotton-bedding-set")
   ].filter(Boolean);
   const saleEdit = products.filter((product) => product.compareAtPrice).slice(0, 4);
   const featured = [
-    products.find((product) => product.id === "kalm-move-studio-starter-set"),
+    products.find((product) => product.id === "kalm-move-align-strappy-jumpsuit"),
     products.find((product) => product.id === "kalm-home-white-cotton-bedding-set"),
     products.find((product) => product.id === "kalm-outdoor-weather-ready-picnic-blanket")
   ].filter(Boolean);

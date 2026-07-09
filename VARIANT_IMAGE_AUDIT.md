@@ -47,3 +47,18 @@ Generated after normalizing product variant image data so colour selection can d
 | Ceramic Mug Pair | Black / Ivory | Yes | None | No | Yes |
 | Woven Storage Basket | Natural | Yes | None | No | Yes |
 | Black Reed Diffuser | Smoke black | Yes | None | No | Yes |
+
+## KALM Move Reference Reset - 2026-07-09
+
+The previous KALM Move women clothing rows for Everyday Movement Legging, Medium Support Sports Bra, Modest Performance Tee, Studio Starter Set and Canvas Tote and Cap are superseded by the reset below.
+
+| Product | Colour variants | Images exist per colour? | Missing images | Fallback used? | Fixed? |
+|---|---|---|---|---|---|
+| KALM Move Align Strappy Jumpsuit | Grayish Blue, Date Brown | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Form Short Set | White | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Pulse Crop Short Set | Black | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Ease Flare Legging | Gray Blue | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Balance Strappy Set | Blossom Pink | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Rise Long Sleeve Set | Apricot, Rose Red, Green | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Core Seamless Tank | Charcoal, Black | Yes, 3 per live colour | None for live colours | No | Yes |
+| KALM Move Align Ruched Short | Purple, Pink | Yes, 3 per live colour | None for live colours | No | Yes |

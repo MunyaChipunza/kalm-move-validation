@@ -96,3 +96,30 @@ The Motion Hoodie object-form variant gallery pattern has now been applied acros
 | KALM Move Studio Bottle | Stone, Sand, Lavender Grey, Soft Olive | Stone: 3; Sand: 3; Lavender Grey: 3; Soft Olive: 3 | Adult women lifestyle imagery retained and expanded; bottle catalogue includes Black and Asian representation across the range. | complete |
 
 Source-image caveat: the original KALM Move women apparel and canvas set products now participate fully in the variant image system, but their current source assets remain product-only/flatlay. They should be replaced with approved supplier or studio model photography before paid production merchandising.
+
+## KALM Move Reference Reset - 2026-07-09
+
+The original KALM Move women clothing products listed above have now been removed from the live catalogue data:
+
+- Everyday Movement Legging
+- Medium Support Sports Bra
+- Modest Performance Tee
+- Studio Starter Set
+- Canvas Tote and Cap
+
+The current KALM Move women clothing range is rebuilt from Munya's supplied supplier screenshots only. The screenshots define the garment cut, colour and silhouette; the customer-facing files are generated adult model-on-body ecommerce images checked against those references, not Alibaba UI crops.
+
+| Product | Live colours | Sizes | Image count per live colour | Source status | QA status |
+|---|---|---|---|---|---|
+| KALM Move Align Strappy Jumpsuit | Grayish Blue, Date Brown | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0077` to `WA0081` | Complete for source-backed reset |
+| KALM Move Form Short Set | White | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0082` to `WA0084` | Complete for source-backed reset |
+| KALM Move Pulse Crop Short Set | Black | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0085` to `WA0087` | Complete for source-backed reset |
+| KALM Move Ease Flare Legging | Gray Blue | XS, S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0088` to `WA0091` | Complete for source-backed reset |
+| KALM Move Balance Strappy Set | Blossom Pink | One Size, 4, 6, 8, 10 | 3 | Generated model-on-body images matched to `IMG-20260709-WA0091` to `WA0094` | Complete for source-backed reset |
+| KALM Move Rise Long Sleeve Set | Apricot, Rose Red, Green | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0095` to `WA0098` | Complete for source-backed reset |
+| KALM Move Core Seamless Tank | Charcoal, Black | XS, S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0103` to `WA0106` | Complete for source-backed reset |
+| KALM Move Align Ruched Short | Purple, Pink | XS, S, M, L | 3 | Generated model-on-body images matched to `IMG-20260709-WA0107` to `WA0108` | Complete for source-backed reset |
+
+Men correction status: Motion Hoodie remains the benchmark. Flow Training Short, Sprint Running Short, Core Performance Tee, Pace Jogger and Utility Gym Bag have been trimmed to the strongest live variants to avoid exposing the weakest recoloured catalogue variants. Remaining men products keep the three-image `front`, `angle`, `movement` folder structure and pass path validation.
+
+Known source limitation: the supplier pack shows more colour names in variation panels than it provides enough product evidence for faithful model imagery. Live women colours are limited to colours with usable supplier-backed references; the full visible colour lists are documented in `KALM_MOVE_SUPPLIER_REFERENCE_NOTES.md`.
