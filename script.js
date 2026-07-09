@@ -990,14 +990,18 @@ function renderProductGallery(product) {
   const images = getProductGalleryImages(product);
   if (images.length <= 1) return "";
   return `
-    <div class="gallery-thumbs" aria-label="Product images">
-      ${images.map((image, index) => `
-        <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}" ${index === 0 ? 'aria-current="true"' : ""}>
-          <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
-        </button>
-      `).join("")}
+    <div class="gallery-thumbs" data-product-gallery-thumbs aria-label="Product images">
+      ${renderGalleryThumbs(product, images)}
     </div>
   `;
+}
+
+function renderGalleryThumbs(product, images) {
+  return images.map((image, index) => `
+    <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}" ${index === 0 ? 'aria-current="true"' : ""}>
+      <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
+    </button>
+  `).join("");
 }
 
 function renderSpecifications(specifications) {
@@ -1062,8 +1066,10 @@ function updateVariantImage(scope, color) {
   const product = findProduct(scope?.getAttribute("data-product-id"));
   const image = scope?.querySelector("[data-product-image]");
   if (!product || !image) return;
-  const imagePath = color ? getVariantImage(product, color) : product.image;
+  const images = color ? getVariantImages(product, color) : getProductGalleryImages(product);
+  const imagePath = images[0] || product.image;
   const altText = color ? `${product.title} in ${color}` : product.title;
+  updateGalleryThumbnails(scope, product, images);
   setProductImage(image, imagePath, altText);
   setActiveGalleryImage(scope, imagePath);
 }
@@ -1102,9 +1108,9 @@ function getVariantImages(product, color) {
 }
 
 function getProductGalleryImages(product) {
+  if (product?.gallery?.length) return Array.from(new Set(product.gallery)).filter(Boolean);
   const images = [
     product?.image,
-    ...(product?.gallery || []),
     ...Object.values(product?.variantImages || {}).flatMap(normalizeImageList)
   ];
   return Array.from(new Set(images)).filter(Boolean);
@@ -1113,6 +1119,12 @@ function getProductGalleryImages(product) {
 function normalizeImageList(value) {
   if (!value) return [];
   if (Array.isArray(value)) return value.filter(Boolean);
+  if (typeof value === "object") {
+    return Array.from(new Set([
+      value.hero,
+      ...(Array.isArray(value.gallery) ? value.gallery : [])
+    ].filter(Boolean)));
+  }
   return [value].filter(Boolean);
 }
 
@@ -1122,6 +1134,13 @@ function setActiveGalleryImage(scope, imagePath) {
     if (button.getAttribute("data-gallery-image") === imagePath) button.setAttribute("aria-current", "true");
     else button.removeAttribute("aria-current");
   });
+}
+
+function updateGalleryThumbnails(scope, product, images) {
+  const gallery = scope?.querySelector("[data-product-gallery-thumbs]");
+  if (!gallery || !images?.length) return;
+  gallery.innerHTML = renderGalleryThumbs(product, images);
+  hydrateDeferredImages(gallery);
 }
 
 function renderBagLine(item) {

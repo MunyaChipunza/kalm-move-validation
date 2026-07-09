@@ -1159,7 +1159,7 @@
       "audience": "men",
       "moveCategory": "layers",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp",
+      "image": "assets/images/products/kalm-move/men/motion-hoodie/black/front.webp",
       "description": "A clean training hoodie with a premium off-duty feel.",
       "shortDescription": "A clean training hoodie with a premium off-duty feel.",
       "longDescription": "The Motion Hoodie is the everyday layer in the KALM Move men's range. It should feel comfortable enough for recovery days, sharp enough for casual wear, and practical enough for warmups or travel. The branding is quiet and placed with restraint so the hoodie remains versatile.",
@@ -1191,28 +1191,51 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": [
-          "assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp"
-        ],
-        "Charcoal": [
-          "assets/images/products/kalm-move/men/motion-hoodie/charcoal-hero.webp"
-        ],
-        "Stone": [
-          "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp"
-        ],
-        "Olive": [
-          "assets/images/products/kalm-move/men/motion-hoodie/olive-hero.webp"
-        ],
-        "Navy": [
-          "assets/images/products/kalm-move/men/motion-hoodie/navy-hero.webp"
-        ]
+        "Black": {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie/black/front.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/black/angle.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/black/movement.webp"
+          ]
+        },
+        "Charcoal": {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie/charcoal/front.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/charcoal/angle.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/charcoal/movement.webp"
+          ]
+        },
+        "Stone": {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie/stone/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie/stone/front.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/stone/angle.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/stone/movement.webp"
+          ]
+        },
+        "Olive": {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie/olive/front.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/olive/angle.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/olive/movement.webp"
+          ]
+        },
+        "Navy": {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie/navy/front.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/navy/angle.webp",
+            "assets/images/products/kalm-move/men/motion-hoodie/navy/movement.webp"
+          ]
+        }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp",
-        "assets/images/products/kalm-move/men/motion-hoodie/charcoal-hero.webp",
-        "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp",
-        "assets/images/products/kalm-move/men/motion-hoodie/olive-hero.webp",
-        "assets/images/products/kalm-move/men/motion-hoodie/navy-hero.webp"
+        "assets/images/products/kalm-move/men/motion-hoodie/black/front.webp",
+        "assets/images/products/kalm-move/men/motion-hoodie/black/angle.webp",
+        "assets/images/products/kalm-move/men/motion-hoodie/black/movement.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Motion Hoodie | KALM Move",
