@@ -19,9 +19,9 @@
       "summary": "Supportive stretch staples for training, errands and everyday movement.",
       "heroImage": "assets/images/ks-active-hero.webp",
       "tileImage": "assets/images/ks-active-brand-tile.webp",
-      "logo": "assets/branding/ks-active/ks-active-logo.png",
+      "logo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
       "slug": "ks-active",
-      "approvedLogo": "assets/branding/ks-active/ks-active-logo.png",
+      "approvedLogo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
       "logoAlt": "KS Active logo",
       "description": "Archive activewear and performance essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
@@ -46,14 +46,14 @@
       "id": "kalm-outdoor",
       "name": "KALM Outdoor",
       "role": "Outdoor cooking and living",
-      "summary": "Original buffalo-branded outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
+      "summary": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "heroImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp",
       "tileImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp",
       "logo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
       "slug": "kalm-outdoor",
       "approvedLogo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
       "logoAlt": "KALM Outdoor logo",
-      "description": "Outdoor cooking and living essentials from KALM Collective.",
+      "description": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "categoryLink": "#/shop?category=outdoor",
       "homepageTileImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp"
     },
@@ -475,7 +475,9 @@
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-main.webp",
         "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-black.webp"
-      ]
+      ],
+      "audience": "women",
+      "moveCategory": "bottoms"
     },
     {
       "id": "kalm-move-medium-support-sports-bra",
@@ -522,7 +524,9 @@
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-main.webp",
         "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-olive.webp"
-      ]
+      ],
+      "audience": "women",
+      "moveCategory": "tops"
     },
     {
       "id": "kalm-move-modest-performance-tee",
@@ -570,7 +574,9 @@
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-modest-performance-tee-main.webp",
         "assets/images/products/kalm-move/kalm-move-modest-performance-tee-oat.webp"
-      ]
+      ],
+      "audience": "women",
+      "moveCategory": "tops"
     },
     {
       "id": "kalm-move-studio-starter-set",
@@ -617,7 +623,9 @@
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-studio-starter-set-main.webp",
         "assets/images/products/kalm-move/kalm-move-studio-starter-set-black-olive-oat.webp"
-      ]
+      ],
+      "audience": "women",
+      "moveCategory": "sets"
     },
     {
       "id": "kalm-move-canvas-tote-and-cap",
@@ -659,7 +667,939 @@
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-main.webp",
         "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp"
-      ]
+      ],
+      "audience": "women",
+      "moveCategory": "accessories"
+    },
+    {
+      "id": "kalm-move-flow-training-short",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Training short",
+      "title": "KALM Move Flow Training Short",
+      "slug": "kalm-move-flow-training-short",
+      "price": 499,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Navy",
+        "Olive"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "shorts",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp",
+      "description": "A clean everyday training short built for gym sessions, movement work and off-duty wear.",
+      "shortDescription": "A clean everyday training short built for gym sessions, movement work and off-duty wear.",
+      "longDescription": "The Flow Training Short is designed as the go-to short in the KALM Move men's range. It has a clean above-knee cut, a comfortable athletic waistband, and a streamlined shape that works for training, walking, travel and everyday movement. Finished with a subtle buffalo mark, it is made to feel premium without looking over-branded.",
+      "detailBullets": [
+        "Above-knee athletic cut",
+        "Clean waistband",
+        "Easy movement fit",
+        "Subtle buffalo mark",
+        "Works for training and casual wear"
+      ],
+      "features": [
+        "Above-knee athletic cut",
+        "Clean waistband",
+        "Easy movement fit",
+        "Subtle buffalo mark",
+        "Works for training and casual wear"
+      ],
+      "fitNotes": "Regular athletic fit. Size up if you prefer a looser training short.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "shorts",
+        "training"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Flow Training Short | KALM Move",
+      "metaDescription": "A clean everyday training short built for gym sessions, movement work and off-duty wear."
+    },
+    {
+      "id": "kalm-move-sprint-running-short",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Running short",
+      "title": "KALM Move Sprint Running Short",
+      "slug": "kalm-move-sprint-running-short",
+      "price": 459,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Navy",
+        "Cobalt",
+        "Charcoal"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "shorts",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp",
+      "description": "A lightweight running short with a clean, fast feel and a refined KALM finish.",
+      "shortDescription": "A lightweight running short with a clean, fast feel and a refined KALM finish.",
+      "longDescription": "The Sprint Running Short is made for lighter, faster sessions. The shorter profile gives better freedom of movement, while the clean design keeps it wearable beyond the run. A small buffalo mark near the hem gives the piece a quiet KALM identity without overpowering the look.",
+      "detailBullets": [
+        "Lightweight run-focused silhouette",
+        "Shorter athletic cut",
+        "Clean side profile",
+        "Subtle hem branding",
+        "Ideal for running and high-movement training"
+      ],
+      "features": [
+        "Lightweight run-focused silhouette",
+        "Shorter athletic cut",
+        "Clean side profile",
+        "Subtle hem branding",
+        "Ideal for running and high-movement training"
+      ],
+      "fitNotes": "Lean running fit. Choose your usual size for a close athletic feel.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "shorts",
+        "running"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Navy": "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Sprint Running Short | KALM Move",
+      "metaDescription": "A lightweight running short with a clean, fast feel and a refined KALM finish."
+    },
+    {
+      "id": "kalm-move-core-performance-tee",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Performance tee",
+      "title": "KALM Move Core Performance Tee",
+      "slug": "kalm-move-core-performance-tee",
+      "price": 399,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "White",
+        "Charcoal",
+        "Navy",
+        "Olive"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "tops",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp",
+      "description": "A refined performance tee for training, layering and everyday movement.",
+      "shortDescription": "A refined performance tee for training, layering and everyday movement.",
+      "longDescription": "The Core Performance Tee is the foundation piece of the men's KALM Move range. It is cut to sit cleanly across the shoulders and chest without feeling tight, making it useful for training, commuting and casual wear. The design stays minimal, with only a small buffalo mark for a premium finish.",
+      "detailBullets": [
+        "Clean performance cut",
+        "Flattering shoulder shape",
+        "Easy layering piece",
+        "Minimal buffalo branding",
+        "Works in and out of the gym"
+      ],
+      "features": [
+        "Clean performance cut",
+        "Flattering shoulder shape",
+        "Easy layering piece",
+        "Minimal buffalo branding",
+        "Works in and out of the gym"
+      ],
+      "fitNotes": "Regular athletic fit. Designed to skim the body without clinging.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "tops",
+        "tee"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Olive": "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Core Performance Tee | KALM Move",
+      "metaDescription": "A refined performance tee for training, layering and everyday movement."
+    },
+    {
+      "id": "kalm-move-lift-tank",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Training tank",
+      "title": "KALM Move Lift Tank",
+      "slug": "kalm-move-lift-tank",
+      "price": 349,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "White",
+        "Charcoal",
+        "Navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "tops",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/lift-tank/black-hero.webp",
+      "description": "A premium training tank shaped for lifting, warm-weather sessions and confident movement.",
+      "shortDescription": "A premium training tank shaped for lifting, warm-weather sessions and confident movement.",
+      "longDescription": "The Lift Tank is built for men who want freedom through the shoulders without losing a clean, premium look. The cut is open enough for training and movement, but still controlled enough to feel refined. The buffalo mark is kept small and intentional so the product feels elevated, not loud.",
+      "detailBullets": [
+        "Training-focused tank cut",
+        "Strong shoulder visibility",
+        "Premium minimal design",
+        "Lightweight active feel",
+        "Subtle KALM buffalo mark"
+      ],
+      "features": [
+        "Training-focused tank cut",
+        "Strong shoulder visibility",
+        "Premium minimal design",
+        "Lightweight active feel",
+        "Subtle KALM buffalo mark"
+      ],
+      "fitNotes": "Athletic fit. Best for those who prefer a stronger training silhouette.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "tops",
+        "tank"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/products/kalm-move/men/lift-tank/black-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/lift-tank/black-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Lift Tank | KALM Move",
+      "metaDescription": "A premium training tank shaped for lifting, warm-weather sessions and confident movement."
+    },
+    {
+      "id": "kalm-move-pace-jogger",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Jogger",
+      "title": "KALM Move Pace Jogger",
+      "slug": "kalm-move-pace-jogger",
+      "price": 749,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Stone",
+        "Navy",
+        "Olive"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "bottoms",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp",
+      "description": "A tapered athletic jogger for movement, travel and everyday wear.",
+      "shortDescription": "A tapered athletic jogger for movement, travel and everyday wear.",
+      "longDescription": "The Pace Jogger is designed to bridge training and lifestyle. It has a tapered shape, a comfortable waistband and a clean finish that works with tees, hoodies and tanks. The fit should feel athletic without being too tight, making it suitable for different male body types.",
+      "detailBullets": [
+        "Tapered athletic profile",
+        "Comfortable waistband",
+        "Clean cuff detail",
+        "Subtle hip or thigh branding",
+        "Easy gym-to-street styling"
+      ],
+      "features": [
+        "Tapered athletic profile",
+        "Comfortable waistband",
+        "Clean cuff detail",
+        "Subtle hip or thigh branding",
+        "Easy gym-to-street styling"
+      ],
+      "fitNotes": "Regular tapered fit. Size up if you prefer more room through the thigh.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "bottoms",
+        "joggers"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Charcoal": "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Pace Jogger | KALM Move",
+      "metaDescription": "A tapered athletic jogger for movement, travel and everyday wear."
+    },
+    {
+      "id": "kalm-move-motion-hoodie",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Hoodie",
+      "title": "KALM Move Motion Hoodie",
+      "slug": "kalm-move-motion-hoodie",
+      "price": 899,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Stone",
+        "Olive",
+        "Navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "layers",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp",
+      "description": "A clean training hoodie with a premium off-duty feel.",
+      "shortDescription": "A clean training hoodie with a premium off-duty feel.",
+      "longDescription": "The Motion Hoodie is the everyday layer in the KALM Move men's range. It should feel comfortable enough for recovery days, sharp enough for casual wear, and practical enough for warmups or travel. The branding is quiet and placed with restraint so the hoodie remains versatile.",
+      "detailBullets": [
+        "Premium everyday layer",
+        "Clean hood and cuff detail",
+        "Comfortable relaxed-athletic fit",
+        "Subtle buffalo placement",
+        "Works for warmups, travel and off-duty wear"
+      ],
+      "features": [
+        "Premium everyday layer",
+        "Clean hood and cuff detail",
+        "Comfortable relaxed-athletic fit",
+        "Subtle buffalo placement",
+        "Works for warmups, travel and off-duty wear"
+      ],
+      "fitNotes": "Relaxed athletic fit. Choose your usual size for a clean fit or size up for a looser look.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "layers",
+        "hoodie"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Stone": "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Motion Hoodie | KALM Move",
+      "metaDescription": "A clean training hoodie with a premium off-duty feel."
+    },
+    {
+      "id": "kalm-move-base-compression-short",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Men",
+      "category": "activewear",
+      "type": "Compression short",
+      "title": "KALM Move Base Compression Short",
+      "slug": "kalm-move-base-compression-short",
+      "price": 399,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "audience": "men",
+      "moveCategory": "shorts",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp",
+      "description": "A supportive base layer for training, running and high-movement sessions.",
+      "shortDescription": "A supportive base layer for training, running and high-movement sessions.",
+      "longDescription": "The Base Compression Short is designed as a practical foundation layer for movement. It should feel supportive, smooth and secure under training shorts or on its own in appropriate training settings. Keep the look clean and premium, with a small buffalo mark on the lower thigh.",
+      "detailBullets": [
+        "Supportive compression feel",
+        "Smooth base-layer profile",
+        "Clean seam design",
+        "Subtle lower-thigh logo",
+        "Suitable under shorts or for focused training"
+      ],
+      "features": [
+        "Supportive compression feel",
+        "Smooth base-layer profile",
+        "Clean seam design",
+        "Subtle lower-thigh logo",
+        "Suitable under shorts or for focused training"
+      ],
+      "fitNotes": "Close compression fit. Choose your usual size for support.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "shorts",
+        "compression"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Base Compression Short | KALM Move",
+      "metaDescription": "A supportive base layer for training, running and high-movement sessions."
+    },
+    {
+      "id": "kalm-move-cap",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Cap",
+      "title": "KALM Move Cap",
+      "slug": "kalm-move-cap",
+      "price": 299,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "White",
+        "Navy",
+        "Olive",
+        "Charcoal"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "men",
+      "moveCategory": "accessories",
+      "stockLabel": "Available for order",
+      "image": "assets/images/products/kalm-move/men/move-cap/black-hero.webp",
+      "description": "A minimal sports cap finished with the KALM buffalo mark.",
+      "shortDescription": "A minimal sports cap finished with the KALM buffalo mark.",
+      "longDescription": "The KALM Move Cap is a simple finishing piece for training, travel and everyday wear. It keeps the silhouette clean and the branding subtle, using the buffalo mark as a quiet identity detail rather than a loud graphic.",
+      "detailBullets": [
+        "Minimal sports silhouette",
+        "Adjustable fit",
+        "Small buffalo logo",
+        "Easy everyday styling",
+        "Works with the full KALM Move range"
+      ],
+      "features": [
+        "Minimal sports silhouette",
+        "Adjustable fit",
+        "Small buffalo logo",
+        "Easy everyday styling",
+        "Works with the full KALM Move range"
+      ],
+      "fitNotes": "Adjustable one-size fit.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "accessories",
+        "cap"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/products/kalm-move/men/move-cap/black-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/move-cap/black-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Cap | KALM Move",
+      "metaDescription": "A minimal sports cap finished with the KALM buffalo mark."
+    },
+    {
+      "id": "kalm-move-training-sock-3-pack",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Socks",
+      "title": "KALM Move Training Sock 3-Pack",
+      "slug": "kalm-move-training-sock-3-pack",
+      "price": 249,
+      "compareAtPrice": null,
+      "colors": [
+        "Black Pack",
+        "White Pack",
+        "Mixed Neutral Pack"
+      ],
+      "sizes": [
+        "S-M",
+        "L-XL"
+      ],
+      "audience": "men",
+      "moveCategory": "accessories",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp",
+      "description": "A clean 3-pack of training socks for everyday movement.",
+      "shortDescription": "A clean 3-pack of training socks for everyday movement.",
+      "longDescription": "The Training Sock 3-Pack is designed as a simple repeat-buy essential. Keep the branding minimal, with a small buffalo mark near the cuff. The socks should work across gym sessions, walks, travel and casual outfits.",
+      "detailBullets": [
+        "3-pack essential",
+        "Clean cuff branding",
+        "Training and everyday use",
+        "Neutral colour options",
+        "Easy add-on purchase"
+      ],
+      "features": [
+        "3-pack essential",
+        "Clean cuff branding",
+        "Training and everyday use",
+        "Neutral colour options",
+        "Easy add-on purchase"
+      ],
+      "fitNotes": "Comfort stretch fit. Choose the size range that best matches your shoe size.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "accessories",
+        "socks"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Mixed Neutral Pack": "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Training Sock 3-Pack | KALM Move",
+      "metaDescription": "A clean 3-pack of training socks for everyday movement."
+    },
+    {
+      "id": "kalm-move-utility-gym-bag",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Gym bag",
+      "title": "KALM Move Utility Gym Bag",
+      "slug": "kalm-move-utility-gym-bag",
+      "price": 899,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Olive",
+        "Navy"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "men",
+      "moveCategory": "accessories",
+      "stockLabel": "Available for order",
+      "image": "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp",
+      "description": "A clean utility gym bag for training days, workdays and short trips.",
+      "shortDescription": "A clean utility gym bag for training days, workdays and short trips.",
+      "longDescription": "The Utility Gym Bag is the carry-all piece for the KALM Move men's range. It should feel premium, practical and understated, with enough structure to look sharp and enough softness to use daily. The buffalo logo should be small and placed in a refined position such as the corner, side panel or strap detail.",
+      "detailBullets": [
+        "Practical training carry bag",
+        "Premium minimal styling",
+        "Subtle buffalo mark",
+        "Works for gym, work and travel",
+        "Easy accessory add-on"
+      ],
+      "features": [
+        "Practical training carry bag",
+        "Premium minimal styling",
+        "Subtle buffalo mark",
+        "Works for gym, work and travel",
+        "Easy accessory add-on"
+      ],
+      "fitNotes": "Structured carry style. Product imagery shows scale on body.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "accessories",
+        "bag"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Black": "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Utility Gym Bag | KALM Move",
+      "metaDescription": "A clean utility gym bag for training days, workdays and short trips."
+    },
+    {
+      "id": "kalm-move-protein-shaker-bottle",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Shaker bottle",
+      "title": "KALM Move Protein Shaker Bottle",
+      "slug": "kalm-move-protein-shaker-bottle",
+      "price": 249,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Navy",
+        "Smoke Grey"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "men",
+      "moveCategory": "accessories",
+      "stockLabel": "Available for order",
+      "image": "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp",
+      "description": "A clean shaker bottle for training days and post-session routines.",
+      "shortDescription": "A clean shaker bottle for training days and post-session routines.",
+      "longDescription": "The Protein Shaker Bottle is designed as a practical gym essential with a premium KALM Move finish. It should feel strong, simple and easy to carry, with a small buffalo mark that keeps the branding refined.",
+      "detailBullets": [
+        "Premium gym bottle look",
+        "Small buffalo logo",
+        "Easy training-day accessory",
+        "Neutral masculine colours",
+        "Works with the KALM Move men's range"
+      ],
+      "features": [
+        "Premium gym bottle look",
+        "Small buffalo logo",
+        "Easy training-day accessory",
+        "Neutral masculine colours",
+        "Works with the KALM Move men's range"
+      ],
+      "fitNotes": "Accessory item. Product imagery shows scale clearly.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "accessories",
+        "bottle",
+        "shaker"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Smoke Grey": "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Protein Shaker Bottle | KALM Move",
+      "metaDescription": "A clean shaker bottle for training days and post-session routines."
+    },
+    {
+      "id": "kalm-move-everyday-bottle",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Bottle",
+      "title": "KALM Move Everyday Bottle",
+      "slug": "kalm-move-everyday-bottle",
+      "price": 279,
+      "compareAtPrice": null,
+      "colors": [
+        "Cream",
+        "Blush",
+        "Sage",
+        "Stone",
+        "White"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "women",
+      "moveCategory": "accessories",
+      "stockLabel": "Available for order",
+      "image": "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp",
+      "description": "A clean everyday bottle for movement, errands and studio days.",
+      "shortDescription": "A clean everyday bottle for movement, errands and studio days.",
+      "longDescription": "The Everyday Bottle is designed as an easy carry piece for daily movement. It should feel stylish enough for errands and studio sessions, while still fitting naturally into the KALM Move accessories range.",
+      "detailBullets": [
+        "Everyday lifestyle bottle",
+        "Soft neutral colours",
+        "Small buffalo logo",
+        "Gym and studio friendly",
+        "Easy add-on accessory"
+      ],
+      "features": [
+        "Everyday lifestyle bottle",
+        "Soft neutral colours",
+        "Small buffalo logo",
+        "Gym and studio friendly",
+        "Easy add-on accessory"
+      ],
+      "fitNotes": "Accessory item. Designed for everyday carry and studio routines.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "women",
+        "accessories",
+        "bottle"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Cream": "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Everyday Bottle | KALM Move",
+      "metaDescription": "A clean everyday bottle for movement, errands and studio days."
+    },
+    {
+      "id": "kalm-move-slim-wellness-bottle",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Bottle",
+      "title": "KALM Move Slim Wellness Bottle",
+      "slug": "kalm-move-slim-wellness-bottle",
+      "price": 299,
+      "compareAtPrice": null,
+      "colors": [
+        "Matte White",
+        "Soft Beige",
+        "Dusty Pink",
+        "Sage Green"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "women",
+      "moveCategory": "accessories",
+      "stockLabel": "Available for order",
+      "image": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp",
+      "description": "A sleek wellness bottle with a slim profile and calm studio finish.",
+      "shortDescription": "A sleek wellness bottle with a slim profile and calm studio finish.",
+      "longDescription": "The Slim Wellness Bottle is a refined accessory for studio sessions, walks and daily routines. Its slim profile keeps the look elegant, while the small buffalo mark keeps the KALM Move identity subtle and premium.",
+      "detailBullets": [
+        "Slim premium profile",
+        "Soft wellness colour palette",
+        "Small buffalo logo",
+        "Studio and everyday friendly",
+        "Easy add-on accessory"
+      ],
+      "features": [
+        "Slim premium profile",
+        "Soft wellness colour palette",
+        "Small buffalo logo",
+        "Studio and everyday friendly",
+        "Easy add-on accessory"
+      ],
+      "fitNotes": "Accessory item. Slim profile for easy carry.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "women",
+        "accessories",
+        "bottle"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Matte White": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Slim Wellness Bottle | KALM Move",
+      "metaDescription": "A sleek wellness bottle with a slim profile and calm studio finish."
+    },
+    {
+      "id": "kalm-move-studio-bottle",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Bottle",
+      "title": "KALM Move Studio Bottle",
+      "slug": "kalm-move-studio-bottle",
+      "price": 329,
+      "compareAtPrice": null,
+      "colors": [
+        "Stone",
+        "Sand",
+        "Lavender Grey",
+        "Soft Olive"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "women",
+      "moveCategory": "accessories",
+      "stockLabel": "Available for order",
+      "image": "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp",
+      "description": "A studio-ready bottle for Pilates, yoga and everyday movement.",
+      "shortDescription": "A studio-ready bottle for Pilates, yoga and everyday movement.",
+      "longDescription": "The Studio Bottle is designed for calm movement spaces and daily routines. It has a clean shape, muted studio colours and a small buffalo mark that feels intentional without becoming loud.",
+      "detailBullets": [
+        "Studio-ready bottle shape",
+        "Muted movement colours",
+        "Small buffalo logo",
+        "Pilates and yoga friendly",
+        "Premium add-on accessory"
+      ],
+      "features": [
+        "Studio-ready bottle shape",
+        "Muted movement colours",
+        "Small buffalo logo",
+        "Pilates and yoga friendly",
+        "Premium add-on accessory"
+      ],
+      "fitNotes": "Accessory item. Designed for studio and everyday use.",
+      "fabric": "Premium performance fabric with a refined matte finish.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "women",
+        "accessories",
+        "bottle",
+        "studio"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Soft Olive": "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move Studio Bottle | KALM Move",
+      "metaDescription": "A studio-ready bottle for Pilates, yoga and everyday movement."
     },
     {
       "id": "kalm-outdoor-ember-16-gas-pizza-oven",
@@ -684,13 +1624,13 @@
       "inventoryQuantity": 24,
       "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp",
       "description": "A compact 16-inch gas pizza oven for fast patio dinners, open-air hosting and crisp high-heat cooking.",
-      "shortDescription": "Original buffalo-branded 16-inch outdoor gas pizza oven.",
+      "shortDescription": "Original 16-inch outdoor gas pizza oven with a refined KALM finish.",
       "longDescription": "The Ember 16 is designed for weekend pizza nights and compact outdoor kitchens. A dark faceted shell, stone-style cooking deck and simple gas control give it a premium KALM Outdoor profile for patios, garden counters and relaxed hosting.",
       "detailBullets": [
         "16-inch stone-style cooking deck",
         "Single side gas control with visible rear flame path",
         "Compact freestanding body for patio counters",
-        "Matte black buffalo-branded exterior",
+        "Matte black exterior with a subtle KALM buffalo mark",
         "Designed for pizzas, flatbreads and high-heat roasting"
       ],
       "features": [
@@ -757,7 +1697,7 @@
         "kalm-outdoor-insulated-carafe-and-tumbler"
       ],
       "metaTitle": "Ember 16 Gas Pizza Oven | KALM Outdoor",
-      "metaDescription": "Shop the KALM Outdoor Ember 16, an original 16-inch buffalo-branded gas pizza oven for patio cooking and open-air hosting."
+      "metaDescription": "Shop the KALM Outdoor Ember 16, an original 16-inch gas pizza oven for patio cooking and open-air hosting."
     },
     {
       "id": "kalm-outdoor-forge-2-portable-gas-griddle",
@@ -782,14 +1722,14 @@
       "inventoryQuantity": 18,
       "image": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp",
       "description": "A two-burner flat-top gas griddle on a rolling frame for breakfasts, burgers and relaxed outdoor cooking.",
-      "shortDescription": "Original buffalo-branded two-burner portable flat-top gas griddle.",
+      "shortDescription": "Original two-burner portable flat-top gas griddle with a refined KALM finish.",
       "longDescription": "The Forge 2 brings flat-top cooking into the KALM Outdoor range with a clean black frame, stainless cooking plate and folding-friendly silhouette. It is built for breakfasts, burgers, vegetables and casual meals around the patio.",
       "detailBullets": [
         "Two independent gas controls",
         "Raised-edge stainless flat-top cooking plate",
         "Rolling frame with lower shelf",
         "Side shelf for prep and plating",
-        "Buffalo-branded front apron and lid detail"
+        "Subtle KALM buffalo mark on the front apron and lid detail"
       ],
       "features": [
         "Twin-burner control for split-zone cooking",
@@ -855,7 +1795,7 @@
         "kalm-outdoor-matte-camp-lantern"
       ],
       "metaTitle": "Forge 2 Portable Gas Griddle | KALM Outdoor",
-      "metaDescription": "Shop the KALM Outdoor Forge 2, an original two-burner buffalo-branded flat-top gas griddle for patio cooking."
+      "metaDescription": "Shop the KALM Outdoor Forge 2, an original two-burner flat-top gas griddle for patio cooking."
     },
     {
       "id": "kalm-outdoor-ridge-4-stainless-gas-braai",
@@ -880,14 +1820,14 @@
       "inventoryQuantity": 12,
       "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp",
       "description": "A four-burner stainless cart gas braai for polished outdoor kitchens, family grilling and weekend hosting.",
-      "shortDescription": "Original buffalo-branded stainless four-burner cart gas braai.",
+      "shortDescription": "Original stainless four-burner cart gas braai with a refined KALM finish.",
       "longDescription": "The Ridge 4 anchors the KALM Outdoor Cooking range with a stainless hood, black cart frame and open-air hosting presence. It gives larger patios a polished braai setup for family grilling, weekend prep and outdoor meals.",
       "detailBullets": [
         "Four front gas controls",
         "Stainless hood with integrated thermometer",
         "Side shelves for prep and serving",
         "Cart cabinet storage with rolling base",
-        "Buffalo-branded stainless and black finish"
+        "Stainless and black finish with a subtle KALM buffalo mark"
       ],
       "features": [
         "Four-burner cooking surface for full outdoor meals",
@@ -953,7 +1893,7 @@
         "kalm-outdoor-insulated-carafe-and-tumbler"
       ],
       "metaTitle": "Ridge 4 Stainless Gas Braai | KALM Outdoor",
-      "metaDescription": "Shop the KALM Outdoor Ridge 4, an original buffalo-branded stainless four-burner gas braai for premium outdoor hosting."
+      "metaDescription": "Shop the KALM Outdoor Ridge 4, an original stainless four-burner gas braai for premium outdoor hosting."
     },
     {
       "id": "kalm-outdoor-canvas-utility-tote",

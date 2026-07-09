@@ -6,12 +6,21 @@ Product images live in brand folders under:
 assets/images/products/
 assets/images/products/ks-active/
 assets/images/products/kalm-move/
+assets/images/products/kalm-move/men/
+assets/images/products/kalm-move/women/
 assets/images/products/kalm-home/
 assets/images/products/kalm-wellness/
 assets/images/products/kalm-outdoor/
 ```
 
 Use `.webp` where possible. Keep product photos portrait shaped, ideally `4:5` ratio, around `1200 x 1500px` or larger before compression.
+
+For KALM Move, keep men and women products split by audience and product name:
+
+```text
+assets/images/products/kalm-move/men/flow-training-short/black-hero.webp
+assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp
+```
 
 ## Naming
 

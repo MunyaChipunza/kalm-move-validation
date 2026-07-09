@@ -21,6 +21,17 @@ const currency = new Intl.NumberFormat("en-ZA", {
   maximumFractionDigits: 0
 });
 const transparentPixel = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20'%3E%3C/svg%3E";
+const moveAudiences = [
+  { id: "women", name: "Women" },
+  { id: "men", name: "Men" }
+];
+const moveCategories = [
+  { id: "shorts", name: "Shorts" },
+  { id: "tops", name: "Tops" },
+  { id: "bottoms", name: "Bottoms" },
+  { id: "layers", name: "Layers" },
+  { id: "accessories", name: "Accessories" }
+];
 let deferredImageObserver = null;
 
 init();
@@ -127,6 +138,7 @@ function renderRoute() {
   closeBag();
   nav?.classList.remove("open");
   navToggle?.setAttribute("aria-expanded", "false");
+  if (!(route.path === "/policies" && route.anchor)) window.scrollTo(0, 0);
 
   if (isHomeRoute) return renderHome({
     preserveHero: isFirstRoute && Boolean(app.querySelector(".hero-shell"))
@@ -421,7 +433,7 @@ function renderOutdoorCookingFeature(products) {
       </a>
       <div class="outdoor-cooking-copy">
         <p class="eyebrow">KALM Outdoor Cooking</p>
-        <h2>Buffalo-branded pieces for open-air meals.</h2>
+        <h2>Original pieces for open-air meals.</h2>
         <p>Original gas pizza, flat-top and braai products designed for patio counters, weekend hosting and premium outdoor routines.</p>
         <a class="button primary" href="#/shop?category=outdoor">Shop outdoor cooking</a>
       </div>
@@ -441,10 +453,12 @@ function renderOutdoorCookingFeature(products) {
 function renderShop(params = new URLSearchParams()) {
   const brand = params.get("brand") || "all";
   const category = params.get("category") || "all";
+  const audience = params.get("audience") || "all";
+  const moveCategory = params.get("moveCategory") || "all";
   const sort = params.get("sort") || "featured";
   const search = params.get("search") || "";
-  const products = sortProducts(filterProducts({ brand, category, search }), sort);
-  const heading = shopHeading({ brand, category, search });
+  const products = sortProducts(filterProducts({ brand, category, audience, moveCategory, search }), sort);
+  const heading = shopHeading({ brand, category, audience, moveCategory, search });
   setDocumentMeta(
     `${heading} | KALM Collective`,
     "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear."
@@ -472,6 +486,20 @@ function renderShop(params = new URLSearchParams()) {
               ${state.data.categories.map((item) => `<option value="${item.id}" ${category === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
             </select>
           </label>
+          ${brand === "kalm-move" ? `
+            <label>KALM Move
+              <select name="audience">
+                <option value="all">Women and men</option>
+                ${moveAudiences.map((item) => `<option value="${item.id}" ${audience === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
+              </select>
+            </label>
+            <label>Move category
+              <select name="moveCategory">
+                <option value="all">All KALM Move</option>
+                ${moveCategories.map((item) => `<option value="${item.id}" ${moveCategory === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
+              </select>
+            </label>
+          ` : ""}
           <label>Sort
             <select name="sort">
               <option value="featured" ${sort === "featured" ? "selected" : ""}>Featured</option>
@@ -491,7 +519,7 @@ function renderShop(params = new URLSearchParams()) {
           <a href="#/shop">Clear filters</a>
         </div>
         <div class="product-grid">
-          ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 8 })).join("") : renderEmptyState("No products match those filters.")}
+          ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 12 })).join("") : renderEmptyState("No products match those filters.")}
         </div>
       </div>
     </section>
@@ -525,7 +553,6 @@ function renderBrands() {
           <a href="#/brand/${brand.id}">
             <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
             <div class="brand-content">
-              <img class="brand-card-logo" ${index < 2 ? `src="${escapeHtml(getBrandLogo(brand))}"` : `src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}"`} alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
               <p>${escapeHtml(brand.role)}</p>
               <h2>${escapeHtml(brand.name)}</h2>
               <span class="text-link">Shop brand</span>
@@ -557,6 +584,8 @@ function renderBrand(brandId) {
       <img src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} edit" width="1200" height="900">
     </section>
 
+    ${brand.id === "kalm-move" ? renderKalmMoveSubcategories() : ""}
+
     <section class="section-block">
       <div class="section-head">
         <div>
@@ -565,13 +594,43 @@ function renderBrand(brandId) {
         </div>
       </div>
       <div class="product-grid">
-        ${products.map((product, index) => renderProductCard(product, { eager: index < 4 })).join("")}
+        ${products.map((product, index) => renderProductCard(product, { eager: index < 20 })).join("")}
       </div>
     </section>
 
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+}
+
+function renderKalmMoveSubcategories() {
+  const menCategoryLinks = moveCategories.map((category) => `
+    <a href="#/shop?brand=kalm-move&audience=men&moveCategory=${category.id}">${escapeHtml(category.name)}</a>
+  `).join("");
+  return `
+    <section class="section-block move-subcategories">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">KALM Move</p>
+          <h2>Choose your fit</h2>
+        </div>
+      </div>
+      <div class="move-audience-grid">
+        <a class="move-audience-card" href="#/shop?brand=kalm-move&audience=women">
+          <span>Women</span>
+          <p>Studio layers, active sets and everyday movement accessories.</p>
+        </a>
+        <a class="move-audience-card" href="#/shop?brand=kalm-move&audience=men">
+          <span>Men</span>
+          <p>Clean performance staples across shorts, tops, layers and accessories.</p>
+        </a>
+      </div>
+      <div class="move-category-links" aria-label="KALM Move men categories">
+        ${menCategoryLinks}
+        <a href="#/shop?brand=kalm-move&audience=women&moveCategory=accessories">Women Accessories</a>
+      </div>
+    </section>
+  `;
 }
 
 function renderProduct(slug) {
@@ -877,7 +936,7 @@ function renderBrandLogoCard(brand) {
   return `
     <a class="brand-logo-card" href="#/brand/${brand.id}">
       <img class="brand-logo" src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async" fetchpriority="low">
-      <span>${escapeHtml(brand.name)}</span>
+      <span class="sr-only">Shop ${escapeHtml(brand.name)}</span>
     </a>
   `;
 }
@@ -1127,7 +1186,7 @@ function closeSearch() {
   searchPanel.hidden = true;
 }
 
-function filterProducts({ brand = "all", category = "all", search = "" }) {
+function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", search = "" }) {
   const term = search.trim().toLowerCase();
   return state.data.products.filter((product) => {
     const brandMatch = brand === "all" || product.brandId === brand;
@@ -1136,6 +1195,10 @@ function filterProducts({ brand = "all", category = "all", search = "" }) {
       || product.tags.includes(category)
       || (category === "sale" && product.compareAtPrice)
       || (category === "new-in" && product.tags.includes("new-in"));
+    const audienceMatch = audience === "all" || product.audience === audience;
+    const moveCategoryMatch = moveCategory === "all"
+      || product.moveCategory === moveCategory
+      || product.tags.includes(moveCategory);
     const searchMatch = !term || [
       product.title,
       product.brand,
@@ -1149,7 +1212,7 @@ function filterProducts({ brand = "all", category = "all", search = "" }) {
       (product.specifications || []).map((item) => `${item.label} ${item.value}`).join(" "),
       product.tags.join(" ")
     ].join(" ").toLowerCase().includes(term);
-    return brandMatch && categoryMatch && searchMatch;
+    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && searchMatch;
   });
 }
 
@@ -1165,18 +1228,31 @@ function updateShopFromForm(event) {
   const form = event.currentTarget.closest("form") || event.currentTarget;
   const values = new FormData(form);
   const params = new URLSearchParams();
-  for (const key of ["brand", "category", "sort", "search"]) {
+  for (const key of ["brand", "category", "audience", "moveCategory", "sort", "search"]) {
     const value = values.get(key);
     if (value && value !== "all" && value !== "featured") params.set(key, value);
   }
   window.location.hash = `#/shop${params.toString() ? "?" + params.toString() : ""}`;
 }
 
-function shopHeading({ brand, category, search }) {
+function shopHeading({ brand, category, audience, moveCategory, search }) {
   if (search) return `Search results for "${search}"`;
+  if (brand === "kalm-move" && audience !== "all" && moveCategory !== "all") {
+    return `KALM Move ${moveAudienceName(audience)} ${moveCategoryName(moveCategory)}`.trim();
+  }
+  if (brand === "kalm-move" && audience !== "all") return `KALM Move ${moveAudienceName(audience)}`;
+  if (brand === "kalm-move" && moveCategory !== "all") return `KALM Move ${moveCategoryName(moveCategory)}`;
   if (brand && brand !== "all") return state.data.brands.find((item) => item.id === brand)?.name || "Shop";
   if (category && category !== "all") return state.data.categories.find((item) => item.id === category)?.name || "Shop";
   return "Shop All";
+}
+
+function moveAudienceName(id) {
+  return moveAudiences.find((item) => item.id === id)?.name || "";
+}
+
+function moveCategoryName(id) {
+  return moveCategories.find((item) => item.id === id)?.name || "";
 }
 
 function bindNetlifyForms(root = document) {

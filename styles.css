@@ -369,7 +369,6 @@ button {
 .brand-logo-card img {
   width: min(150px, 100%);
   height: 112px;
-  margin-bottom: 12px;
   object-fit: contain;
 }
 
@@ -534,6 +533,55 @@ button {
 
 .category-tile span {
   padding: 14px;
+}
+
+.move-subcategories {
+  background: #fff;
+}
+
+.move-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.move-audience-card {
+  min-height: 180px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+  display: grid;
+  align-content: end;
+  gap: 12px;
+}
+
+.move-audience-card span {
+  font-family: var(--display);
+  font-size: clamp(34px, 4vw, 52px);
+}
+
+.move-audience-card p {
+  max-width: 430px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.move-category-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.move-category-links a {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .edit-grid {
@@ -1586,6 +1634,10 @@ button {
   .brand-ribbon {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 24px 18px 10px;
+  }
+
+  .move-audience-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-block,

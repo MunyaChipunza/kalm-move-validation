@@ -19,7 +19,7 @@ The products were inspired by user-supplied outdoor cooking reference archetypes
 | Internal reference | Inspiration used | Original KALM decision |
 |---|---|---|
 | 16-inch gas pizza oven reference | General category, compact outdoor counter format, gas cooking use case | Original faceted graphite body, KALM buffalo mark, new Ember 16 name, original copy and specifications |
-| Portable two-burner flat-top griddle reference | General category, flat-top gas cooking use case, rolling outdoor format | Original Forge 2 naming, KALM black frame, buffalo-branded apron/lid, new retail copy and spec structure |
+| Portable two-burner flat-top griddle reference | General category, flat-top gas cooking use case, rolling outdoor format | Original Forge 2 naming, KALM black frame, subtle KALM buffalo mark on the apron/lid, new retail copy and spec structure |
 | Stainless cart gas braai reference | General category, four-burner stainless cart format, patio hosting use case | Original Ridge 4 naming, KALM stainless/black profile, buffalo branding, original feature and care language |
 
 ## IP / Copycat Controls
