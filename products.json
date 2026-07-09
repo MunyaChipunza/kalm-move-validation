@@ -162,9 +162,15 @@
       "badge": "Best seller",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp",
-        "Wine": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine-01.webp",
-        "Deep Plum": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum-01.webp"
+        "Black": [
+          "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp"
+        ],
+        "Wine": [
+          "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine-01.webp"
+        ],
+        "Deep Plum": [
+          "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum-01.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp",
@@ -214,8 +220,12 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp",
-        "Charcoal": "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal-01.webp"
+        "Black": [
+          "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal-01.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp",
@@ -262,7 +272,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp"
+        "Black": [
+          "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp",
@@ -310,9 +322,15 @@
       "badge": "Sale",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp",
-        "Wine": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine-01.webp",
-        "Deep Plum": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum-01.webp"
+        "Black": [
+          "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp"
+        ],
+        "Wine": [
+          "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine-01.webp"
+        ],
+        "Deep Plum": [
+          "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum-01.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp",
@@ -363,9 +381,15 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Blue": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp",
-        "Black": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black-01.webp",
-        "Purple": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple-01.webp"
+        "Blue": [
+          "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp"
+        ],
+        "Black": [
+          "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black-01.webp"
+        ],
+        "Purple": [
+          "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple-01.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp",
@@ -416,9 +440,15 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp",
-        "Stone": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone-01.webp",
-        "Taupe": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe-01.webp"
+        "Black": [
+          "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp"
+        ],
+        "Stone": [
+          "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone-01.webp"
+        ],
+        "Taupe": [
+          "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe-01.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp",
@@ -470,7 +500,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-black.webp"
+        "Black": [
+          "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-black.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-everyday-movement-legging-main.webp",
@@ -519,7 +551,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Olive": "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-olive.webp"
+        "Olive": [
+          "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-olive.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-main.webp",
@@ -569,7 +603,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Oat": "assets/images/products/kalm-move/kalm-move-modest-performance-tee-oat.webp"
+        "Oat": [
+          "assets/images/products/kalm-move/kalm-move-modest-performance-tee-oat.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-modest-performance-tee-main.webp",
@@ -618,7 +654,9 @@
       "badge": "Set value",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Olive / Oat": "assets/images/products/kalm-move/kalm-move-studio-starter-set-black-olive-oat.webp"
+        "Black / Olive / Oat": [
+          "assets/images/products/kalm-move/kalm-move-studio-starter-set-black-olive-oat.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-studio-starter-set-main.webp",
@@ -662,7 +700,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Natural": "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp"
+        "Black / Natural": [
+          "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-main.webp",
@@ -730,10 +770,24 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/flow-training-short/charcoal-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/flow-training-short/navy-hero.webp"
+        ],
+        "Olive": [
+          "assets/images/products/kalm-move/men/flow-training-short/olive-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp"
+        "assets/images/products/kalm-move/men/flow-training-short/black-hero.webp",
+        "assets/images/products/kalm-move/men/flow-training-short/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/flow-training-short/navy-hero.webp",
+        "assets/images/products/kalm-move/men/flow-training-short/olive-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Flow Training Short | KALM Move",
@@ -766,7 +820,7 @@
       "audience": "men",
       "moveCategory": "shorts",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp",
+      "image": "assets/images/products/kalm-move/men/sprint-running-short/black-hero.webp",
       "description": "A lightweight running short with a clean, fast feel and a refined KALM finish.",
       "shortDescription": "A lightweight running short with a clean, fast feel and a refined KALM finish.",
       "longDescription": "The Sprint Running Short is made for lighter, faster sessions. The shorter profile gives better freedom of movement, while the clean design keeps it wearable beyond the run. A small buffalo mark near the hem gives the piece a quiet KALM identity without overpowering the look.",
@@ -798,10 +852,24 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Navy": "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/sprint-running-short/black-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp"
+        ],
+        "Cobalt": [
+          "assets/images/products/kalm-move/men/sprint-running-short/cobalt-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/sprint-running-short/charcoal-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp"
+        "assets/images/products/kalm-move/men/sprint-running-short/black-hero.webp",
+        "assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp",
+        "assets/images/products/kalm-move/men/sprint-running-short/cobalt-hero.webp",
+        "assets/images/products/kalm-move/men/sprint-running-short/charcoal-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Sprint Running Short | KALM Move",
@@ -835,7 +903,7 @@
       "audience": "men",
       "moveCategory": "tops",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp",
+      "image": "assets/images/products/kalm-move/men/core-performance-tee/black-hero.webp",
       "description": "A refined performance tee for training, layering and everyday movement.",
       "shortDescription": "A refined performance tee for training, layering and everyday movement.",
       "longDescription": "The Core Performance Tee is the foundation piece of the men's KALM Move range. It is cut to sit cleanly across the shoulders and chest without feeling tight, making it useful for training, commuting and casual wear. The design stays minimal, with only a small buffalo mark for a premium finish.",
@@ -867,9 +935,27 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Olive": "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/core-performance-tee/black-hero.webp"
+        ],
+        "White": [
+          "assets/images/products/kalm-move/men/core-performance-tee/white-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/core-performance-tee/charcoal-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/core-performance-tee/navy-hero.webp"
+        ],
+        "Olive": [
+          "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp"
+        ]
       },
       "gallery": [
+        "assets/images/products/kalm-move/men/core-performance-tee/black-hero.webp",
+        "assets/images/products/kalm-move/men/core-performance-tee/white-hero.webp",
+        "assets/images/products/kalm-move/men/core-performance-tee/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/core-performance-tee/navy-hero.webp",
         "assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp"
       ],
       "relatedProducts": [],
@@ -935,10 +1021,24 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-move/men/lift-tank/black-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/lift-tank/black-hero.webp"
+        ],
+        "White": [
+          "assets/images/products/kalm-move/men/lift-tank/white-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/lift-tank/charcoal-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/lift-tank/navy-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/lift-tank/black-hero.webp"
+        "assets/images/products/kalm-move/men/lift-tank/black-hero.webp",
+        "assets/images/products/kalm-move/men/lift-tank/white-hero.webp",
+        "assets/images/products/kalm-move/men/lift-tank/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/lift-tank/navy-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Lift Tank | KALM Move",
@@ -972,7 +1072,7 @@
       "audience": "men",
       "moveCategory": "bottoms",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp",
+      "image": "assets/images/products/kalm-move/men/pace-jogger/black-hero.webp",
       "description": "A tapered athletic jogger for movement, travel and everyday wear.",
       "shortDescription": "A tapered athletic jogger for movement, travel and everyday wear.",
       "longDescription": "The Pace Jogger is designed to bridge training and lifestyle. It has a tapered shape, a comfortable waistband and a clean finish that works with tees, hoodies and tanks. The fit should feel athletic without being too tight, making it suitable for different male body types.",
@@ -1004,10 +1104,28 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Charcoal": "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/pace-jogger/black-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp"
+        ],
+        "Stone": [
+          "assets/images/products/kalm-move/men/pace-jogger/stone-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/pace-jogger/navy-hero.webp"
+        ],
+        "Olive": [
+          "assets/images/products/kalm-move/men/pace-jogger/olive-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp"
+        "assets/images/products/kalm-move/men/pace-jogger/black-hero.webp",
+        "assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/pace-jogger/stone-hero.webp",
+        "assets/images/products/kalm-move/men/pace-jogger/navy-hero.webp",
+        "assets/images/products/kalm-move/men/pace-jogger/olive-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Pace Jogger | KALM Move",
@@ -1041,7 +1159,7 @@
       "audience": "men",
       "moveCategory": "layers",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp",
+      "image": "assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp",
       "description": "A clean training hoodie with a premium off-duty feel.",
       "shortDescription": "A clean training hoodie with a premium off-duty feel.",
       "longDescription": "The Motion Hoodie is the everyday layer in the KALM Move men's range. It should feel comfortable enough for recovery days, sharp enough for casual wear, and practical enough for warmups or travel. The branding is quiet and placed with restraint so the hoodie remains versatile.",
@@ -1073,10 +1191,28 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Stone": "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/motion-hoodie/charcoal-hero.webp"
+        ],
+        "Stone": [
+          "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp"
+        ],
+        "Olive": [
+          "assets/images/products/kalm-move/men/motion-hoodie/olive-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/motion-hoodie/navy-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp"
+        "assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp",
+        "assets/images/products/kalm-move/men/motion-hoodie/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp",
+        "assets/images/products/kalm-move/men/motion-hoodie/olive-hero.webp",
+        "assets/images/products/kalm-move/men/motion-hoodie/navy-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Motion Hoodie | KALM Move",
@@ -1140,10 +1276,20 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/base-compression-short/charcoal-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/base-compression-short/navy-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp"
+        "assets/images/products/kalm-move/men/base-compression-short/black-hero.webp",
+        "assets/images/products/kalm-move/men/base-compression-short/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/base-compression-short/navy-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Base Compression Short | KALM Move",
@@ -1205,10 +1351,28 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-move/men/move-cap/black-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/move-cap/black-hero.webp"
+        ],
+        "White": [
+          "assets/images/products/kalm-move/men/move-cap/white-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/move-cap/navy-hero.webp"
+        ],
+        "Olive": [
+          "assets/images/products/kalm-move/men/move-cap/olive-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/move-cap/charcoal-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/move-cap/black-hero.webp"
+        "assets/images/products/kalm-move/men/move-cap/black-hero.webp",
+        "assets/images/products/kalm-move/men/move-cap/white-hero.webp",
+        "assets/images/products/kalm-move/men/move-cap/navy-hero.webp",
+        "assets/images/products/kalm-move/men/move-cap/olive-hero.webp",
+        "assets/images/products/kalm-move/men/move-cap/charcoal-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Cap | KALM Move",
@@ -1237,7 +1401,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp",
+      "image": "assets/images/products/kalm-move/men/training-sock-3-pack/black-pack-hero.webp",
       "description": "A clean 3-pack of training socks for everyday movement.",
       "shortDescription": "A clean 3-pack of training socks for everyday movement.",
       "longDescription": "The Training Sock 3-Pack is designed as a simple repeat-buy essential. Keep the branding minimal, with a small buffalo mark near the cuff. The socks should work across gym sessions, walks, travel and casual outfits.",
@@ -1269,9 +1433,19 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Mixed Neutral Pack": "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp"
+        "Black Pack": [
+          "assets/images/products/kalm-move/men/training-sock-3-pack/black-pack-hero.webp"
+        ],
+        "White Pack": [
+          "assets/images/products/kalm-move/men/training-sock-3-pack/white-pack-hero.webp"
+        ],
+        "Mixed Neutral Pack": [
+          "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp"
+        ]
       },
       "gallery": [
+        "assets/images/products/kalm-move/men/training-sock-3-pack/black-pack-hero.webp",
+        "assets/images/products/kalm-move/men/training-sock-3-pack/white-pack-hero.webp",
         "assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp"
       ],
       "relatedProducts": [],
@@ -1333,10 +1507,24 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/utility-gym-bag/charcoal-hero.webp"
+        ],
+        "Olive": [
+          "assets/images/products/kalm-move/men/utility-gym-bag/olive-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/utility-gym-bag/navy-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp"
+        "assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp",
+        "assets/images/products/kalm-move/men/utility-gym-bag/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/utility-gym-bag/olive-hero.webp",
+        "assets/images/products/kalm-move/men/utility-gym-bag/navy-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Utility Gym Bag | KALM Move",
@@ -1365,7 +1553,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp",
+      "image": "assets/images/products/kalm-move/men/protein-shaker-bottle/black-hero.webp",
       "description": "A clean shaker bottle for training days and post-session routines.",
       "shortDescription": "A clean shaker bottle for training days and post-session routines.",
       "longDescription": "The Protein Shaker Bottle is designed as a practical gym essential with a premium KALM Move finish. It should feel strong, simple and easy to carry, with a small buffalo mark that keeps the branding refined.",
@@ -1398,9 +1586,23 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Smoke Grey": "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp"
+        "Black": [
+          "assets/images/products/kalm-move/men/protein-shaker-bottle/black-hero.webp"
+        ],
+        "Charcoal": [
+          "assets/images/products/kalm-move/men/protein-shaker-bottle/charcoal-hero.webp"
+        ],
+        "Navy": [
+          "assets/images/products/kalm-move/men/protein-shaker-bottle/navy-hero.webp"
+        ],
+        "Smoke Grey": [
+          "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp"
+        ]
       },
       "gallery": [
+        "assets/images/products/kalm-move/men/protein-shaker-bottle/black-hero.webp",
+        "assets/images/products/kalm-move/men/protein-shaker-bottle/charcoal-hero.webp",
+        "assets/images/products/kalm-move/men/protein-shaker-bottle/navy-hero.webp",
         "assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp"
       ],
       "relatedProducts": [],
@@ -1463,10 +1665,28 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Cream": "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp"
+        "Cream": [
+          "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp"
+        ],
+        "Blush": [
+          "assets/images/products/kalm-move/women/everyday-bottle/blush-hero.webp"
+        ],
+        "Sage": [
+          "assets/images/products/kalm-move/women/everyday-bottle/sage-hero.webp"
+        ],
+        "Stone": [
+          "assets/images/products/kalm-move/women/everyday-bottle/stone-hero.webp"
+        ],
+        "White": [
+          "assets/images/products/kalm-move/women/everyday-bottle/white-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp"
+        "assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp",
+        "assets/images/products/kalm-move/women/everyday-bottle/blush-hero.webp",
+        "assets/images/products/kalm-move/women/everyday-bottle/sage-hero.webp",
+        "assets/images/products/kalm-move/women/everyday-bottle/stone-hero.webp",
+        "assets/images/products/kalm-move/women/everyday-bottle/white-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Everyday Bottle | KALM Move",
@@ -1527,10 +1747,24 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Matte White": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp"
+        "Matte White": [
+          "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp"
+        ],
+        "Soft Beige": [
+          "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige-hero.webp"
+        ],
+        "Dusty Pink": [
+          "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink-hero.webp"
+        ],
+        "Sage Green": [
+          "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green-hero.webp"
+        ]
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp"
+        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp",
+        "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige-hero.webp",
+        "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink-hero.webp",
+        "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green-hero.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Slim Wellness Bottle | KALM Move",
@@ -1559,7 +1793,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp",
+      "image": "assets/images/products/kalm-move/women/studio-bottle/stone-hero.webp",
       "description": "A studio-ready bottle for Pilates, yoga and everyday movement.",
       "shortDescription": "A studio-ready bottle for Pilates, yoga and everyday movement.",
       "longDescription": "The Studio Bottle is designed for calm movement spaces and daily routines. It has a clean shape, muted studio colours and a small buffalo mark that feels intentional without becoming loud.",
@@ -1592,9 +1826,23 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Soft Olive": "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp"
+        "Stone": [
+          "assets/images/products/kalm-move/women/studio-bottle/stone-hero.webp"
+        ],
+        "Sand": [
+          "assets/images/products/kalm-move/women/studio-bottle/sand-hero.webp"
+        ],
+        "Lavender Grey": [
+          "assets/images/products/kalm-move/women/studio-bottle/lavender-grey-hero.webp"
+        ],
+        "Soft Olive": [
+          "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp"
+        ]
       },
       "gallery": [
+        "assets/images/products/kalm-move/women/studio-bottle/stone-hero.webp",
+        "assets/images/products/kalm-move/women/studio-bottle/sand-hero.webp",
+        "assets/images/products/kalm-move/women/studio-bottle/lavender-grey-hero.webp",
         "assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp"
       ],
       "relatedProducts": [],
@@ -1680,7 +1928,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Matte Black": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp"
+        "Matte Black": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp",
@@ -1778,7 +2028,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Matte Black": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp"
+        "Matte Black": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp",
@@ -1876,7 +2128,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Stainless / Black": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp"
+        "Stainless / Black": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp",
@@ -1931,7 +2185,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Natural": "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp"
+        "Black / Natural": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp",
@@ -1973,7 +2229,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Charcoal": "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
+        "Charcoal": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp",
@@ -2015,7 +2273,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Ivory / Black": "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp"
+        "Ivory / Black": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-main.webp",
@@ -2057,7 +2317,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp"
+        "Black": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-main.webp",
@@ -2099,7 +2361,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Smoke / Steel": "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp"
+        "Smoke / Steel": [
+          "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-main.webp",
@@ -2142,7 +2406,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black": "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp"
+        "Black": [
+          "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp",
@@ -2185,7 +2451,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Charcoal": "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp"
+        "Black / Charcoal": [
+          "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp",
@@ -2227,7 +2495,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Olive": "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp"
+        "Olive": [
+          "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp",
@@ -2269,7 +2539,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Amber / Black": "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp"
+        "Amber / Black": [
+          "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp",
@@ -2311,7 +2583,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Cork": "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp"
+        "Black / Cork": [
+          "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp",
@@ -2356,7 +2630,9 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "White": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
+        "White": [
+          "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp",
@@ -2398,7 +2674,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Charcoal": "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
+        "Charcoal": [
+          "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp",
@@ -2440,7 +2718,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Black / Ivory": "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp"
+        "Black / Ivory": [
+          "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp",
@@ -2482,7 +2762,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Natural": "assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp"
+        "Natural": [
+          "assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-home/kalm-home-woven-storage-basket-main.webp",
@@ -2524,7 +2806,9 @@
       "badge": null,
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Smoke black": "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+        "Smoke black": [
+          "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+        ]
       },
       "gallery": [
         "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp",

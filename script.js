@@ -12,7 +12,9 @@ const state = {
   data: null,
   bag: loadBag(),
   hasRenderedRoute: false,
-  homeSectionsTimer: null
+  homeSectionsTimer: null,
+  currentRouteKey: "",
+  scrollPositions: new Map()
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -39,6 +41,7 @@ init();
 async function init() {
   bindChrome();
   try {
+    if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
     const response = await fetch("products.json", { cache: "no-cache" });
     state.data = await response.json();
     window.addEventListener("hashchange", renderRoute);
@@ -130,15 +133,18 @@ function bindChrome() {
 
 function renderRoute() {
   if (!state.data) return;
+  if (state.currentRouteKey) state.scrollPositions.set(state.currentRouteKey, window.scrollY);
   const route = getRoute();
+  const routeKey = window.location.hash || "#/";
   const isFirstRoute = !state.hasRenderedRoute;
   const isHomeRoute = route.path === "/" || route.path === "";
   state.hasRenderedRoute = true;
+  state.currentRouteKey = routeKey;
   if (!isHomeRoute) clearHomeSectionSchedule();
   closeBag();
   nav?.classList.remove("open");
   navToggle?.setAttribute("aria-expanded", "false");
-  if (!(route.path === "/policies" && route.anchor)) window.scrollTo(0, 0);
+  restoreRouteScroll(route, routeKey);
 
   if (isHomeRoute) return renderHome({
     preserveHero: isFirstRoute && Boolean(app.querySelector(".hero-shell"))
@@ -157,6 +163,18 @@ function renderRoute() {
   }
   if (route.path === "/account") return renderAccount();
   renderNotFound();
+}
+
+function restoreRouteScroll(route, routeKey) {
+  if (route.path === "/policies" && route.anchor) return;
+  const targetY = route.path.startsWith("/product/")
+    ? 0
+    : state.scrollPositions.get(routeKey) || 0;
+  window.scrollTo(0, targetY);
+  window.requestAnimationFrame(() => {
+    window.scrollTo(0, targetY);
+    window.requestAnimationFrame(() => window.scrollTo(0, targetY));
+  });
 }
 
 function getRoute() {
@@ -655,9 +673,6 @@ function renderProduct(slug) {
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h1>${escapeHtml(product.title)}</h1>
         <div class="price-line">${renderPrice(product)}</div>
-        <p class="stock-line">${escapeHtml(product.stockLabel)}</p>
-        ${product.sku ? `<p class="sku-line">SKU: ${escapeHtml(product.sku)}</p>` : ""}
-        <p>${escapeHtml(product.longDescription || product.description)}</p>
 
         <div class="selector-row">
           <label>Colour
@@ -677,6 +692,10 @@ function renderProduct(slug) {
         <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
 
         <button class="button primary full" type="button" data-add-to-bag="${product.id}">${escapeHtml(product.ctaLabel)}</button>
+
+        <p class="stock-line">${escapeHtml(product.stockLabel)}</p>
+        ${product.sku ? `<p class="sku-line">SKU: ${escapeHtml(product.sku)}</p>` : ""}
+        <p>${escapeHtml(product.longDescription || product.description)}</p>
 
         <div class="accordion-list">
           <details open>
@@ -968,12 +987,12 @@ function renderVariantPreviews(product) {
 }
 
 function renderProductGallery(product) {
-  const images = Array.from(new Set(product.gallery || [product.image])).filter(Boolean);
+  const images = getProductGalleryImages(product);
   if (images.length <= 1) return "";
   return `
     <div class="gallery-thumbs" aria-label="Product images">
       ${images.map((image, index) => `
-        <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}">
+        <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}" ${index === 0 ? 'aria-current="true"' : ""}>
           <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
         </button>
       `).join("")}
@@ -1046,6 +1065,7 @@ function updateVariantImage(scope, color) {
   const imagePath = color ? getVariantImage(product, color) : product.image;
   const altText = color ? `${product.title} in ${color}` : product.title;
   setProductImage(image, imagePath, altText);
+  setActiveGalleryImage(scope, imagePath);
 }
 
 function updateGalleryImage(scope, imagePath) {
@@ -1053,6 +1073,7 @@ function updateGalleryImage(scope, imagePath) {
   const image = scope?.querySelector("[data-product-image]");
   if (!product || !image || !imagePath) return;
   setProductImage(image, imagePath, product.title);
+  setActiveGalleryImage(scope, imagePath);
 }
 
 function setProductImage(image, imagePath, altText) {
@@ -1069,11 +1090,38 @@ function clearVariantError(scope) {
 }
 
 function getVariantImage(product, color) {
-  if (!product) return "";
+  return getVariantImages(product, color)[0] || product?.image || "";
+}
+
+function getVariantImages(product, color) {
+  if (!product) return [];
   const fromMap = color && product.variantImages?.[color];
-  if (fromMap) return fromMap;
+  if (fromMap) return normalizeImageList(fromMap);
   const fromVariant = product.variants?.find((variant) => variant.colour === color || variant.color === color)?.image;
-  return fromVariant || product.image;
+  return normalizeImageList(fromVariant || product.image);
+}
+
+function getProductGalleryImages(product) {
+  const images = [
+    product?.image,
+    ...(product?.gallery || []),
+    ...Object.values(product?.variantImages || {}).flatMap(normalizeImageList)
+  ];
+  return Array.from(new Set(images)).filter(Boolean);
+}
+
+function normalizeImageList(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.filter(Boolean);
+  return [value].filter(Boolean);
+}
+
+function setActiveGalleryImage(scope, imagePath) {
+  if (!scope || !imagePath) return;
+  scope.querySelectorAll("[data-gallery-image]").forEach((button) => {
+    if (button.getAttribute("data-gallery-image") === imagePath) button.setAttribute("aria-current", "true");
+    else button.removeAttribute("aria-current");
+  });
 }
 
 function renderBagLine(item) {
