@@ -61,16 +61,16 @@
       "id": "kalm-wellness",
       "name": "KALM Wellness",
       "role": "Wellness accessories",
-      "summary": "Simple recovery, hydration and studio essentials for balanced routines.",
-      "heroImage": "assets/images/generated/brand-tiles/kalm-wellness-tile.webp",
-      "tileImage": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp",
-      "logo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
+      "summary": "Premium studio, recovery and ritual essentials with the plain KALM buffalo mark.",
+      "heroImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
+      "tileImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
+      "logo": "branding/source-kalm-nyati-transparent.png",
       "slug": "kalm-wellness",
-      "approvedLogo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
-      "logoAlt": "KALM Wellness logo",
-      "description": "Wellness accessories and self-care essentials from KALM Collective.",
+      "approvedLogo": "branding/source-kalm-nyati-transparent.png",
+      "logoAlt": "Plain KALM buffalo mark",
+      "description": "Studio, recovery and ritual essentials from KALM Wellness.",
       "categoryLink": "#/shop?category=wellness",
-      "homepageTileImage": "assets/images/generated/kalm-wellness/studio-mat-and-towel.webp"
+      "homepageTileImage": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp"
     },
     {
       "id": "kalm-home",
@@ -102,7 +102,7 @@
     {
       "id": "wellness",
       "name": "Wellness",
-      "image": "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp"
+      "image": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp"
     },
     {
       "id": "home",
@@ -3284,228 +3284,6 @@
       ]
     },
     {
-      "id": "kalm-wellness-matte-steel-water-bottle",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Bottle",
-      "title": "Matte Steel Water Bottle",
-      "slug": "kalm-wellness-matte-steel-water-bottle",
-      "price": 329,
-      "compareAtPrice": null,
-      "colors": [
-        "Black"
-      ],
-      "sizes": [
-        "750ml"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp",
-      "description": "A matte black stainless-steel bottle for studio bags, desks and daily hydration.",
-      "detailBullets": [
-        "750ml capacity",
-        "Leak-resistant carry loop",
-        "Matte black finish"
-      ],
-      "fitNotes": "750ml.",
-      "fabric": "Stainless steel body with powder-coated finish.",
-      "care": "Hand wash recommended.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "hydration"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Black": [
-          "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp",
-        "assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp"
-      ]
-    },
-    {
-      "id": "kalm-wellness-studio-mat-and-towel",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Mat set",
-      "title": "Studio Mat and Towel Set",
-      "slug": "kalm-wellness-studio-mat-and-towel",
-      "price": 799,
-      "compareAtPrice": null,
-      "colors": [
-        "Black / Charcoal"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp",
-      "description": "A studio-ready mat and towel set for stretching, Pilates and quiet recovery work.",
-      "detailBullets": [
-        "Textured mat surface",
-        "Soft charcoal towel",
-        "Easy roll-and-carry format"
-      ],
-      "fitNotes": "One size.",
-      "fabric": "Textured exercise mat with cotton-blend towel.",
-      "care": "Wipe mat after use; wash towel cold.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "studio"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Black / Charcoal": [
-          "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp",
-        "assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp"
-      ]
-    },
-    {
-      "id": "kalm-wellness-olive-resistance-band-set",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Bands",
-      "title": "Olive Resistance Band Set",
-      "slug": "kalm-wellness-olive-resistance-band-set",
-      "price": 299,
-      "compareAtPrice": null,
-      "colors": [
-        "Olive"
-      ],
-      "sizes": [
-        "Set of 4"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp",
-      "description": "A compact resistance band set for warmups, travel workouts and glute activation.",
-      "detailBullets": [
-        "Four resistance levels",
-        "Drawstring pouch",
-        "Compact travel format"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "wellness",
-        "studio"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Olive": [
-          "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp",
-        "assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp"
-      ]
-    },
-    {
-      "id": "kalm-wellness-calm-roller-and-balm",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Body care",
-      "title": "Calm Roller and Balm Set",
-      "slug": "kalm-wellness-calm-roller-and-balm",
-      "price": 259,
-      "compareAtPrice": null,
-      "colors": [
-        "Amber / Black"
-      ],
-      "sizes": [
-        "Set"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp",
-      "description": "A small-format roller and balm set for desk drawers, gym bags and evening routines.",
-      "detailBullets": [
-        "Roller bottle",
-        "Travel balm pot",
-        "Soft aromatic profile"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "wellness",
-        "body-care"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Amber / Black": [
-          "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp",
-        "assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp"
-      ]
-    },
-    {
-      "id": "kalm-wellness-recovery-strap-and-cork-ball",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Recovery",
-      "title": "Recovery Strap and Cork Ball",
-      "slug": "kalm-wellness-recovery-strap-and-cork-ball",
-      "price": 349,
-      "compareAtPrice": null,
-      "colors": [
-        "Black / Cork"
-      ],
-      "sizes": [
-        "Set"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp",
-      "description": "A simple recovery pair for stretching, shoulder mobility and foot release.",
-      "detailBullets": [
-        "Stretch strap",
-        "Cork massage ball",
-        "Compact recovery kit"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "wellness",
-        "recovery"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Black / Cork": [
-          "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp",
-        "assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp"
-      ]
-    },
-    {
       "id": "kalm-home-white-cotton-bedding-set",
       "brand": "KALM Home",
       "brandId": "kalm-home",
@@ -3726,6 +3504,468 @@
       "gallery": [
         "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp",
         "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-breathe-mat",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Yoga mat",
+      "title": "Breathe Mat",
+      "slug": "kalm-wellness-breathe-mat",
+      "price": 649,
+      "compareAtPrice": null,
+      "colors": [
+        "Sand",
+        "Stone",
+        "Sage"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
+      "description": "A softly textured mat for stretching, Pilates and steady daily movement rituals.",
+      "detailBullets": [
+        "Embedded plain buffalo mark",
+        "Soft-grip textured surface",
+        "Rollable studio-ready format"
+      ],
+      "fitNotes": "One size studio mat.",
+      "fabric": "Textured performance mat surface with a soft-touch finish.",
+      "care": "Wipe clean after use and air dry before rolling.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "studio",
+        "mat"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Sand": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
+        "Stone": "assets/images/products/kalm-wellness/breathe-mat-v2/stone/front.webp",
+        "Sage": "assets/images/products/kalm-wellness/breathe-mat-v2/sage/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/angle.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/detail.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/front.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/angle.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/detail.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/lifestyle.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/front.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/angle.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/detail.webp",
+        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-restore-towel",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Towel",
+      "title": "Restore Towel",
+      "slug": "kalm-wellness-restore-towel",
+      "price": 349,
+      "compareAtPrice": null,
+      "colors": [
+        "Oat",
+        "Charcoal",
+        "Dusty Rose"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp",
+      "description": "A soft wellness towel for studio sessions, recovery routines and calm daily use.",
+      "detailBullets": [
+        "Embedded plain buffalo mark",
+        "Soft absorbent hand feel",
+        "Foldable studio and travel format"
+      ],
+      "fitNotes": "One size wellness towel.",
+      "fabric": "Soft absorbent towel weave with tonal embedded mark.",
+      "care": "Cold gentle wash, dry in shade, do not bleach.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "studio",
+        "towel"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Oat": "assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp",
+        "Charcoal": "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/front.webp",
+        "Dusty Rose": "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/oat/angle.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/oat/detail.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/oat/lifestyle.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/front.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/angle.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/detail.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/lifestyle.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/angle.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/detail.webp",
+        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-ground-bottle",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Bottle",
+      "title": "Ground Bottle",
+      "slug": "kalm-wellness-ground-bottle",
+      "price": 329,
+      "compareAtPrice": null,
+      "colors": [
+        "Soft White",
+        "Olive",
+        "Black"
+      ],
+      "sizes": [
+        "750ml"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp",
+      "description": "A matte hydration bottle with a calm studio profile and subtle buffalo mark.",
+      "detailBullets": [
+        "Embedded plain buffalo mark",
+        "Matte finish",
+        "Daily 750ml carry size"
+      ],
+      "fitNotes": "750ml bottle.",
+      "fabric": "Stainless steel body with a matte powder-coated finish.",
+      "care": "Hand wash recommended.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "hydration"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Soft White": "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp",
+        "Olive": "assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp",
+        "Black": "assets/images/products/kalm-wellness/ground-bottle-v2/black/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/angle.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/detail.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/lifestyle.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/angle.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/detail.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/lifestyle.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/black/front.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/black/angle.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/black/detail.webp",
+        "assets/images/products/kalm-wellness/ground-bottle-v2/black/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-pause-journal",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Journal",
+      "title": "Pause Journal",
+      "slug": "kalm-wellness-pause-journal",
+      "price": 189,
+      "compareAtPrice": null,
+      "colors": [
+        "Oat",
+        "Charcoal",
+        "Blush"
+      ],
+      "sizes": [
+        "A5"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp",
+      "description": "A simple wellness journal for reflection, planning and slower daily rituals.",
+      "detailBullets": [
+        "Debossed plain buffalo mark",
+        "Soft-touch cover",
+        "Compact A5 format"
+      ],
+      "fitNotes": "A5 journal.",
+      "fabric": "Soft-touch cover with paper pages.",
+      "care": "Keep dry and store flat.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "journal"
+      ],
+      "badge": null,
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Oat": "assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp",
+        "Charcoal": "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/front.webp",
+        "Blush": "assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/oat/angle.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/oat/detail.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/oat/lifestyle.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/front.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/angle.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/detail.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/lifestyle.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/blush/angle.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/blush/detail.webp",
+        "assets/images/products/kalm-wellness/pause-journal-v2/blush/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-ritual-set",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Wellness set",
+      "title": "Ritual Set",
+      "slug": "kalm-wellness-ritual-set",
+      "price": 699,
+      "compareAtPrice": null,
+      "colors": [
+        "Natural Oat",
+        "Sage",
+        "Charcoal"
+      ],
+      "sizes": [
+        "Set"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
+      "description": "A compact ritual set for quiet resets, travel routines and considered self-care moments.",
+      "detailBullets": [
+        "Embedded plain buffalo mark",
+        "Coordinated pouch-led set",
+        "Neutral premium wellness finish"
+      ],
+      "fitNotes": "Wellness set.",
+      "fabric": "Mixed wellness accessories in soft textile, matte bottle and natural-feel components.",
+      "care": "Spot clean textile pieces; wipe hard components with a soft cloth.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "ritual",
+        "set"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Natural Oat": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
+        "Sage": "assets/images/products/kalm-wellness/ritual-set-v2/sage/front.webp",
+        "Charcoal": "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/angle.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/detail.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/lifestyle.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/sage/front.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/sage/angle.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/sage/detail.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/sage/lifestyle.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/front.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/angle.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/detail.webp",
+        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-align-block-set",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Yoga blocks",
+      "title": "Align Block Set",
+      "slug": "kalm-wellness-align-block-set",
+      "price": 429,
+      "compareAtPrice": null,
+      "colors": [
+        "Natural Cork",
+        "Sage",
+        "Charcoal"
+      ],
+      "sizes": [
+        "Set of 2"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
+      "description": "A pair of bevelled alignment blocks for stretching, support and steady studio work.",
+      "detailBullets": [
+        "Embedded plain buffalo mark",
+        "Set of two support blocks",
+        "Bevelled edges for comfortable grip"
+      ],
+      "fitNotes": "Set of 2 blocks.",
+      "fabric": "Natural cork or dense matte foam depending on colour.",
+      "care": "Wipe clean with a damp cloth and dry fully before storing.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "studio",
+        "blocks"
+      ],
+      "badge": null,
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Natural Cork": "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
+        "Sage": "assets/images/products/kalm-wellness/align-block-set-v2/sage/front.webp",
+        "Charcoal": "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/angle.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/detail.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/lifestyle.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/sage/front.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/sage/angle.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/sage/detail.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/sage/lifestyle.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/front.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/angle.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/detail.webp",
+        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-ease-strap",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Yoga strap",
+      "title": "Ease Strap",
+      "slug": "kalm-wellness-ease-strap",
+      "price": 249,
+      "compareAtPrice": null,
+      "colors": [
+        "Oat",
+        "Sage",
+        "Charcoal"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp",
+      "description": "A woven stretch strap with D-ring hardware for mobility, stretching and alignment work.",
+      "detailBullets": [
+        "Woven plain buffalo mark",
+        "Brushed metal D-rings",
+        "Long strap for assisted stretches"
+      ],
+      "fitNotes": "One size stretch strap.",
+      "fabric": "Thick woven cotton webbing with metal D-ring hardware.",
+      "care": "Spot clean and air dry.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "studio",
+        "strap"
+      ],
+      "badge": null,
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Oat": "assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp",
+        "Sage": "assets/images/products/kalm-wellness/ease-strap-v2/sage/front.webp",
+        "Charcoal": "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/oat/angle.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/oat/detail.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/oat/lifestyle.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/sage/front.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/sage/angle.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/sage/detail.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/sage/lifestyle.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/front.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/angle.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/detail.webp",
+        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/lifestyle.webp"
+      ]
+    },
+    {
+      "id": "kalm-wellness-centre-pouch",
+      "brand": "KALM Wellness",
+      "brandId": "kalm-wellness",
+      "collection": "KALM Wellness Core",
+      "category": "wellness",
+      "type": "Pouch",
+      "title": "Centre Pouch",
+      "slug": "kalm-wellness-centre-pouch",
+      "price": 229,
+      "compareAtPrice": null,
+      "colors": [
+        "Oat",
+        "Sage",
+        "Charcoal"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "stockLabel": "Selected colours available",
+      "image": "assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp",
+      "description": "A softly structured pouch for carrying small wellness pieces, studio accessories and daily essentials.",
+      "detailBullets": [
+        "Embroidered plain buffalo mark",
+        "Structured zip pouch",
+        "Compact wellness carry size"
+      ],
+      "fitNotes": "One size pouch.",
+      "fabric": "Woven canvas with zip closure and fabric pull tab.",
+      "care": "Spot clean only and air dry.",
+      "tags": [
+        "new-in",
+        "wellness",
+        "pouch",
+        "accessory"
+      ],
+      "badge": null,
+      "ctaLabel": "Add to bag",
+      "variantImages": {
+        "Oat": "assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp",
+        "Sage": "assets/images/products/kalm-wellness/centre-pouch-v2/sage/front.webp",
+        "Charcoal": "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/front.webp"
+      },
+      "gallery": [
+        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/angle.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/detail.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/lifestyle.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/front.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/angle.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/detail.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/lifestyle.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/front.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/angle.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/detail.webp",
+        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/lifestyle.webp"
       ]
     }
   ]

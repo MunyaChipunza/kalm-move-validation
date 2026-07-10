@@ -1414,6 +1414,9 @@ function swatch(color) {
   if (value.includes("wine") || value.includes("plum")) return "#5b254b";
   if (value.includes("blue")) return "#244f9e";
   if (value.includes("espresso") || value.includes("brown")) return "#3b2b23";
+  if (value.includes("blush")) return "#d8aeb0";
+  if (value.includes("rose")) return "#c48783";
+  if (value.includes("sand")) return "#d8c6a8";
   if (value.includes("oat") || value.includes("natural") || value.includes("stone") || value.includes("taupe")) return "#c8b99f";
   if (value.includes("cork")) return "#b98d57";
   return "#d8d2c7";
