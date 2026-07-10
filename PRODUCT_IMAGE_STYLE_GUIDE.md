@@ -146,6 +146,32 @@ Before shipping replacement imagery:
 - no obvious pasted-on garment effect,
 - no visible placeholder or “image coming soon” text.
 
+## Failed Render Correction Standard
+
+When a product render fails because the garment shape, straps, colour, model body, diversity, logo placement or realism is wrong, regenerate the image from scratch using the supplier references and this style guide. Do not keep patching the already-generated image.
+
+Allowed after a render passes QA:
+
+- crop,
+- resize,
+- convert format,
+- compress,
+- create contact sheets,
+- move approved files into a versioned product folder.
+
+Not allowed as the primary fix after QA failure:
+
+- moving logos around on an already-generated render,
+- repainting garments,
+- changing straps or necklines,
+- recolouring a garment into a sold colour,
+- repairing anatomy,
+- adding diversity by editing the same model image.
+
+The logo placement must be specified in the generation prompt. If the logo comes out oversized, missing, floating, on skin, misaligned or cheap-looking, reject that render and regenerate it from scratch.
+
+When a failed product is rebuilt, create a new versioned product image folder and point product data at the new paths. Do not keep serving old failed assets under the same filenames, because browser and CDN caching can make a corrected product look unchanged.
+
 ## Rollout Completed After Motion Hoodie Benchmark
 
 Implementation notes for the completed rollout:
