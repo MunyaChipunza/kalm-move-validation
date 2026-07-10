@@ -635,7 +635,16 @@
       "price": 449,
       "compareAtPrice": 519,
       "colors": [
-        "White"
+        "White",
+        "Brown",
+        "Khaki",
+        "Dark Purple",
+        "Sky Blue",
+        "Yellow",
+        "Black",
+        "Pink",
+        "Orange",
+        "Dark Red"
       ],
       "sizes": [
         "S",
@@ -646,23 +655,23 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/form-short-set/white/front.webp",
-      "description": "A clean sports bra and fitted short set based on the supplier halter-short reference.",
-      "shortDescription": "A clean sports bra and fitted short set based on the supplier halter-short reference.",
-      "longDescription": "The Form Short Set follows the supplied bra-and-short silhouette: a supportive front, defined straps and a fitted short shape for studio sessions and warm-weather movement. The product uses only approved supplier-reference imagery for the live colour.",
+      "image": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+      "description": "A clean halter bra and fitted short set for studio sessions, light training and warm-weather movement.",
+      "shortDescription": "A clean halter bra and fitted short set for studio sessions, light training and warm-weather movement.",
+      "longDescription": "The Form Short Set pairs a V-front halter sports bra with high-waist fitted shorts for a compact studio-to-training silhouette. The open back uses a simple neck-tie strap and straight back band, keeping the set light, clean and easy to wear in warmer sessions.",
       "features": [
-        "Bra and short set",
-        "Fitted active short",
-        "Supportive strap shape",
+        "V-front halter sports bra",
+        "Straight-band open back",
+        "High-waist fitted shorts",
         "Clean studio silhouette",
-        "Supplier-reference white colourway"
+        "Matching set finish"
       ],
       "detailBullets": [
-        "Bra and short set",
-        "Fitted active short",
-        "Supportive strap shape",
+        "V-front halter sports bra",
+        "Straight-band open back",
+        "High-waist fitted shorts",
         "Clean studio silhouette",
-        "Supplier-reference white colourway"
+        "Matching set finish"
       ],
       "fitNotes": "Close studio fit. Size up if you prefer more room through the short.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
@@ -684,21 +693,93 @@
       ],
       "variantImages": {
         "White": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set/white/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set/white/front.webp",
-            "assets/images/products/kalm-move/women/form-short-set/white/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set/white/movement.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp"
+          ]
+        },
+        "Brown": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp"
+          ]
+        },
+        "Khaki": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp"
+          ]
+        },
+        "Dark Purple": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp"
+          ]
+        },
+        "Sky Blue": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp"
+          ]
+        },
+        "Yellow": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp"
+          ]
+        },
+        "Black": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp"
+          ]
+        },
+        "Pink": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp"
+          ]
+        },
+        "Orange": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp"
+          ]
+        },
+        "Dark Red": {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/form-short-set/white/front.webp",
-        "assets/images/products/kalm-move/women/form-short-set/white/angle.webp",
-        "assets/images/products/kalm-move/women/form-short-set/white/movement.webp"
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp",
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp"
       ],
       "metaTitle": "KALM Move Form Short Set | KALM Move",
-      "metaDescription": "A clean sports bra and fitted short set based on the supplier halter-short reference."
+      "metaDescription": "A clean halter bra and fitted short set for studio sessions, light training and warm-weather movement."
     },
     {
       "id": "kalm-move-pulse-crop-short-set",
