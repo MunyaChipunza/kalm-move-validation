@@ -1100,7 +1100,11 @@ function getVariantImage(product, color) {
 function getVariantImages(product, color) {
   if (!product) return [];
   const fromMap = color && product.variantImages?.[color];
-  if (fromMap) return normalizeImageList(fromMap);
+  if (fromMap) {
+    const images = normalizeImageList(fromMap);
+    if (images.length === 1) return getSiblingGalleryImages(product, images[0]);
+    return images;
+  }
   const fromVariant = product.variants?.find((variant) => variant.colour === color || variant.color === color)?.image;
   return normalizeImageList(fromVariant || product.image);
 }
@@ -1124,6 +1128,13 @@ function normalizeImageList(value) {
     ].filter(Boolean)));
   }
   return [value].filter(Boolean);
+}
+
+function getSiblingGalleryImages(product, imagePath) {
+  if (!imagePath || !product?.gallery?.length) return [imagePath].filter(Boolean);
+  const directory = imagePath.slice(0, imagePath.lastIndexOf("/") + 1);
+  const siblingImages = product.gallery.filter((image) => directory && image.startsWith(directory));
+  return Array.from(new Set([imagePath, ...siblingImages])).filter(Boolean);
 }
 
 function setActiveGalleryImage(scope, imagePath) {
