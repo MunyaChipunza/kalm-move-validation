@@ -523,13 +523,16 @@
       "brandId": "kalm-move",
       "collection": "KALM Move Women",
       "category": "activewear",
-      "type": "Jumpsuit",
-      "title": "KALM Move Align Strappy Jumpsuit",
-      "slug": "kalm-move-align-strappy-jumpsuit",
+      "type": "Set",
+      "title": "KALM Move Align Halter Legging Set",
+      "slug": "kalm-move-align-halter-legging-set",
       "price": 599,
       "compareAtPrice": 669,
       "colors": [
+        "Black",
+        "Pink Drink",
         "Grayish Blue",
+        "Delicate Red",
         "Date Brown"
       ],
       "sizes": [
@@ -541,23 +544,23 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp",
-      "description": "A strappy full-length movement jumpsuit with a clean square neckline and open cross-back detail.",
-      "shortDescription": "A strappy full-length movement jumpsuit with a clean square neckline and open cross-back detail.",
-      "longDescription": "The Align Strappy Jumpsuit is rebuilt from Munya supplier references with the same open cross-back line, smooth full-length leg and fitted one-piece shape. It is designed for low-impact studio movement, light training and everyday active styling without loud branding.",
+      "image": "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp",
+      "description": "A supplier-backed halter active tank and full-length legging set with an open back line.",
+      "shortDescription": "A supplier-backed halter active tank and full-length legging set with an open back line.",
+      "longDescription": "The Align Halter Legging Set is rebuilt from Munya supplier references `IMG-20260709-WA0079` to `IMG-20260709-WA0081`. The product keeps the V-front halter tank, open-back strap structure, high-waist fitted leggings and supplier-backed colour range. The customer-facing images are source-derived from the supplier model photos to preserve the exact top and back construction.",
       "features": [
-        "Square neckline",
-        "Cross-back strap detail",
-        "Full-length fitted leg",
-        "Smooth waist-to-leg line",
-        "Source-backed supplier reference cut"
+        "V-front halter active tank",
+        "Open-back strap structure",
+        "High-waist full-length leggings",
+        "Supplier-backed colour range",
+        "Source-derived model imagery"
       ],
       "detailBullets": [
-        "Square neckline",
-        "Cross-back strap detail",
-        "Full-length fitted leg",
-        "Smooth waist-to-leg line",
-        "Source-backed supplier reference cut"
+        "V-front halter active tank",
+        "Open-back strap structure",
+        "High-waist full-length leggings",
+        "Supplier-backed colour range",
+        "Source-derived model imagery"
       ],
       "fitNotes": "Close active fit. Choose your usual size for a held-in feel or size up for more ease through the body.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
@@ -568,24 +571,47 @@
         "women",
         "new-in",
         "bottoms",
-        "supplier-reference"
+        "supplier-reference",
+        "set"
       ],
       "audience": "women",
       "moveCategory": "bottoms",
       "sourceReferences": [
-        "IMG-20260709-WA0077",
-        "IMG-20260709-WA0078",
         "IMG-20260709-WA0079",
         "IMG-20260709-WA0080",
         "IMG-20260709-WA0081"
       ],
       "variantImages": {
+        "Black": {
+          "hero": "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp",
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/angle.webp",
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/movement.webp"
+          ]
+        },
+        "Pink Drink": {
+          "hero": "assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/front.webp",
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/angle.webp",
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/movement.webp"
+          ]
+        },
         "Grayish Blue": {
           "hero": "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp",
           "gallery": [
             "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp",
             "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp",
             "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/movement.webp"
+          ]
+        },
+        "Delicate Red": {
+          "hero": "assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/front.webp",
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/angle.webp",
+            "assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/movement.webp"
           ]
         },
         "Date Brown": {
@@ -598,12 +624,12 @@
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp",
-        "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp",
-        "assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/movement.webp"
+        "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp",
+        "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/angle.webp",
+        "assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/movement.webp"
       ],
-      "metaTitle": "KALM Move Align Strappy Jumpsuit | KALM Move",
-      "metaDescription": "A strappy full-length movement jumpsuit with a clean square neckline and open cross-back detail."
+      "metaTitle": "KALM Move Align Halter Legging Set | KALM Move",
+      "metaDescription": "A supplier-backed halter active tank and full-length legging set with an open back line."
     },
     {
       "id": "kalm-move-form-short-set",

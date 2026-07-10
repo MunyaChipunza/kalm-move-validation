@@ -21,7 +21,7 @@ Benchmark: KALM Move Motion Hoodie. A benchmark-compliant product has variant-sp
 
 | New product direction | Reference files | Classification | Notes |
 |---|---|---|---|
-| KALM Move Align Strappy Jumpsuit | `IMG-20260709-WA0077` to `WA0081` | REBUILD | Full-length crisscross-back one-piece |
+| KALM Move Align Halter Legging Set | `IMG-20260709-WA0079` to `WA0081` | REBUILD | V-front halter/tank top with open back and high-waist full-length leggings |
 | KALM Move Form Short Set | `IMG-20260709-WA0082` to `WA0085` | REBUILD | Bra and fitted short set |
 | KALM Move Pulse Crop Short Set | `IMG-20260709-WA0086` to `WA0088` | REBUILD | High-neck crop and layered short silhouette |
 | KALM Move Ease Flare Legging | `IMG-20260709-WA0089` to `WA0091` | REBUILD | Relaxed flare / wide-leg legging |
@@ -67,7 +67,7 @@ Current live-ready women clothing products:
 
 | Product | Live colours | Sizes | Image structure |
 |---|---|---|---|
-| KALM Move Align Strappy Jumpsuit | Grayish Blue, Date Brown | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` per colour |
+| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Source-derived `front.webp`, `angle.webp`, `movement.webp` per colour |
 | KALM Move Form Short Set | White | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Pulse Crop Short Set | Black | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Ease Flare Legging | Gray Blue | XS, S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |

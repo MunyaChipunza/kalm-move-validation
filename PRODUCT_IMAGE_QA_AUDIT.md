@@ -111,7 +111,7 @@ The current KALM Move women clothing range is rebuilt from Munya's supplied supp
 
 | Product | Live colours | Sizes | Image count per live colour | Source status | QA status |
 |---|---|---|---|---|---|
-| KALM Move Align Strappy Jumpsuit | Grayish Blue, Date Brown | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0077` to `WA0081` | Complete for source-backed reset |
+| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | 3 | Source-derived model images cropped/recoloured from `IMG-20260709-WA0079` to `WA0081` to preserve the supplier halter/open-back top and legging construction | Complete for first-product source lock |
 | KALM Move Form Short Set | White | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0082` to `WA0084` | Complete for source-backed reset |
 | KALM Move Pulse Crop Short Set | Black | S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0085` to `WA0087` | Complete for source-backed reset |
 | KALM Move Ease Flare Legging | Gray Blue | XS, S, M, L, XL | 3 | Generated model-on-body images matched to `IMG-20260709-WA0088` to `WA0091` | Complete for source-backed reset |

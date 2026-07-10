@@ -112,7 +112,7 @@ Current new women products and live source-backed coverage:
 
 | Product | Live colours | Model/body note | Status |
 |---|---|---|---|
-| KALM Move Align Strappy Jumpsuit | Grayish Blue, Date Brown | Generated adult model imagery matched to supplier one-piece/cross-back reference; Black and mixed-race/Coloured representation | Complete for supplied-reference reset |
+| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | Source-derived supplier model imagery. Diversity is intentionally not expanded for this first product because preserving the exact supplier halter/open-back construction took priority over model variety. | Complete for first-product source lock |
 | KALM Move Form Short Set | White | Generated adult South Asian/Indian model imagery matched to supplier fitted short-set reference | Complete for supplied-reference reset |
 | KALM Move Pulse Crop Short Set | Black | Generated adult White model imagery matched to supplier high-neck crop and short-set reference | Complete for supplied-reference reset |
 | KALM Move Ease Flare Legging | Gray Blue | Generated adult Black model imagery matched to supplier flare-legging reference | Complete for supplied-reference reset |

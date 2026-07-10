@@ -8,7 +8,8 @@ Extraction note: Windows `Expand-Archive` reported a corrupt local file header, 
 
 | Reference files | Interpreted product style | Visible colours | Visible sizes | Status |
 |---|---|---|---|---|
-| `IMG-20260709-WA0077` to `IMG-20260709-WA0081` | Strappy full-length jumpsuit / one-piece | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Use as new women product |
+| `IMG-20260709-WA0077` to `IMG-20260709-WA0078` | Cross-back tank with flare-leg active bottom | Colours visible as swatches only; full variation panel not supplied | Size panel not supplied | Reference-only until colour/size panel is provided |
+| `IMG-20260709-WA0079` to `IMG-20260709-WA0081` | Halter/tank top with open back and full-length fitted leggings | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Use as first corrected women product |
 | `IMG-20260709-WA0082` to `IMG-20260709-WA0085` | Sports bra and short suit | Brown, Khaki, Dark Purple, Sky Blue, Yellow, Black, Pink, Orange, Dark Red, White | S, M, L, XL | Use as new women product |
 | `IMG-20260709-WA0086` to `IMG-20260709-WA0088` | High-neck crop top and layered short set | Goose Yellow, Cherry Blossom, Phantom Blue, Flaxen, Black, Indigo Blue | S, M, L, XL | Use as new women product |
 | `IMG-20260709-WA0089` to `IMG-20260709-WA0091` | Flared / relaxed legging | Light Blue, Gray, Cream Yellow, Gray Blue, Pink, Dark Purple, Black, Burgundy Red, Brown, Rose Red, Light Grey, Blue | XS, S, M, L, XL | Use as new women product |
