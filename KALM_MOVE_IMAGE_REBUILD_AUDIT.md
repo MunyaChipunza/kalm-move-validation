@@ -70,7 +70,7 @@ Current live-ready women clothing products:
 | KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier V-front halter and straight-band back reference |
 | KALM Move Form Short Set | White | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Pulse Crop Short Set | Black | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
-| KALM Move Ease Flare Set | Sage, Black, Taupe, Espresso, Cream | XS, S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier square-neck tank, X-back strap and flare-leg reference |
+| KALM Move Ease Flare Set | Sage, Black, Taupe, Espresso, Cream | XS, S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier square-neck tank, X-back strap and flare-leg reference; approved buffalo mark added only to upper hip/thigh on front and angle views |
 | KALM Move Balance Strappy Set | Blossom Pink | One Size, 4, 6, 8, 10 | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Rise Long Sleeve Set | Apricot, Rose Red, Green | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` per colour |
 | KALM Move Core Seamless Tank | Charcoal, Black | XS, S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` per colour |

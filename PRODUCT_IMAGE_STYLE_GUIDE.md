@@ -67,6 +67,24 @@ Minimum acceptable for the current sprint:
 - Small logo placement only: left chest, sleeve edge, back neck, lower hem, upper thigh, cap front/side, sock cuff, bag corner or bottle side.
 - Logos must follow fabric perspective and lighting. If the logo cannot be applied naturally, omit it rather than adding a fake-looking mark.
 
+### Buffalo Mark Placement Rule
+
+- Use only the approved plain buffalo source asset. Do not invent, redraw, regenerate or substitute the buffalo mark.
+- Treat the buffalo mark as part of KALM Move product construction on every render unless the supplier design clearly cannot carry it.
+- The mark must be subtle, premium and small. It should read like refined activewear branding, not a graphic print.
+- No giant centre-chest logo.
+- No "Buffalo-branded" wording.
+- Preferred placement by product type:
+  - women's sets/leggings: upper left hip or upper thigh on front and side/angle views; keep back views clean unless the supplier reference already shows back branding.
+  - sports bras, tanks and tees: left chest, lower hem or side seam only if it does not disrupt the supplier strap, neckline or back construction.
+  - layers: sleeve edge, back neck, lower hem or small left chest.
+  - caps: front or side.
+  - socks: cuff.
+  - bags: corner, side panel or strap detail.
+  - bottles: side or front, small and clean.
+- Light garments use a subtle dark mark. Dark garments use a subtle light or tone-on-tone mark.
+- If the mark floats off the garment, distorts the fabric, covers a strap detail or looks pasted on, the image fails QA.
+
 ## File Structure Standard
 
 Use product-specific folders and colour folders for richer galleries:
