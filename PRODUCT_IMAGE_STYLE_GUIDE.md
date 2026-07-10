@@ -75,7 +75,8 @@ Minimum acceptable for the current sprint:
 - No giant centre-chest logo.
 - No "Buffalo-branded" wording.
 - Preferred placement by product type:
-  - women's sets/leggings: upper left hip or upper thigh on front and side/angle views; keep back views clean unless the supplier reference already shows back branding.
+  - women's two-piece sets: front views should carry one small mark on the top and one small mark on the bottom. Angle views should carry the top mark only when the garment is unobstructed; if hands or arms block the top, use the bottom mark only. Keep back views clean unless the supplier reference already shows back branding.
+  - leggings and bottoms: upper left hip or upper thigh on front and side/angle views.
   - sports bras, tanks and tees: left chest, lower hem or side seam only if it does not disrupt the supplier strap, neckline or back construction.
   - layers: sleeve edge, back neck, lower hem or small left chest.
   - caps: front or side.
@@ -83,7 +84,7 @@ Minimum acceptable for the current sprint:
   - bags: corner, side panel or strap detail.
   - bottles: side or front, small and clean.
 - Light garments use a subtle dark mark. Dark garments use a subtle light or tone-on-tone mark.
-- If the mark floats off the garment, distorts the fabric, covers a strap detail or looks pasted on, the image fails QA.
+- If the mark floats off the garment, lands on skin, distorts the fabric, covers a strap detail or looks pasted on, the image fails QA.
 
 ## File Structure Standard
 
