@@ -67,7 +67,7 @@ Current live-ready women clothing products:
 
 | Product | Live colours | Sizes | Image structure |
 |---|---|---|---|
-| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Generated human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier V-front halter and straight-band back reference |
+| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier V-front halter and straight-band back reference |
 | KALM Move Form Short Set | White | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Pulse Crop Short Set | Black | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Ease Flare Legging | Gray Blue | XS, S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |

@@ -112,7 +112,7 @@ Current new women products and live source-backed coverage:
 
 | Product | Live colours | Model/body note | Status |
 |---|---|---|---|
-| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | Generated adult human ecommerce model imagery across the five supplier colours. Includes Black and Asian/mixed-representation while preserving the supplier V-front halter and straight-band back construction. | Complete for first-product human-model reset |
+| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | Generated adult human ecommerce model imagery across the five supplier colours. Includes Black fuller/XL fit, White size-L fit, Coloured/mixed-race medium fit, South Asian/Indian medium fit and Black medium fit while preserving the supplier V-front halter and straight-band back construction. | Complete for first-product diverse human-model reset |
 | KALM Move Form Short Set | White | Generated adult South Asian/Indian model imagery matched to supplier fitted short-set reference | Complete for supplied-reference reset |
 | KALM Move Pulse Crop Short Set | Black | Generated adult White model imagery matched to supplier high-neck crop and short-set reference | Complete for supplied-reference reset |
 | KALM Move Ease Flare Legging | Gray Blue | Generated adult Black model imagery matched to supplier flare-legging reference | Complete for supplied-reference reset |
