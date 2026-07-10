@@ -18,6 +18,7 @@ Extraction note: Windows `Expand-Archive` reported a corrupt local file header, 
 | `IMG-20260709-WA0099` to `IMG-20260709-WA0102` | Lightweight windbreaker / jacket set | Light Blue visible; other colours not shown in supplied panel | Size panel not supplied | Reference-only until colour/size panel is provided |
 | `IMG-20260709-WA0103` to `IMG-20260709-WA0106` | Seamless tank / bodysuit active piece | Black, White, Charcoal, Pine, Peony, Coco, Berry Red, Wine Red, Pink, Yellow | XS, S, M, L, XL | Use as new women product |
 | `IMG-20260709-WA0107` to `IMG-20260709-WA0108` | Ruched biker short | Black, Red, Blue, Pink, Purple, Brown, Charcoal Gray, White | XS, S, M, L | Use as new women product |
+| `WhatsApp Image 2026-07-10 at 10.13.44 (1).jpeg` and `WhatsApp Image 2026-07-10 at 10.13.44.jpeg` | Stand-collar hollow-back short romper | Black, Pink, Blue, Army Green, Navy, Apricot | S, M, L, XL | Rebuilt as `KALM Move Open Back Short Romper` with scratch-generated inclusive human model imagery |
 
 ## Source Limits
 

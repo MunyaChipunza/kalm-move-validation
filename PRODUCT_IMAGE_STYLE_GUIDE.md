@@ -172,6 +172,17 @@ The logo placement must be specified in the generation prompt. If the logo comes
 
 When a failed product is rebuilt, create a new versioned product image folder and point product data at the new paths. Do not keep serving old failed assets under the same filenames, because browser and CDN caching can make a corrected product look unchanged.
 
+## Inclusive Casting And Logo Consistency Rule
+
+This rule is mandatory for every future KALM Move apparel upload or regeneration:
+
+- Every product batch must include intentional model diversity across the colour set: different adult races, skin tones, hairstyles and body types. Do not default to one repeated model type.
+- Diversity must not change the supplier garment construction. Neckline, collar, straps, back opening, inseam, leg shape, waistband, colour and silhouette must still match Munya's supplier references.
+- Pick one logo location per product only. Do not put marks on both top and bottoms unless Munya explicitly approves that product-specific rule.
+- Keep the logo colour consistent inside each colourway. If the front uses a light logo, any visible side/back view for that same physical logo spot must also use a light logo. If the chosen spot is not visible from the back, omit the logo rather than moving it.
+- Generate the logo into the image from the first prompt. If the logo is wrong, regenerate from scratch instead of editing the failed render.
+- Reject any render with colour bleeding, smudging, mismatched front/back colour, wrong back construction, wrong garment type, distorted anatomy or weak pasted-on fabric.
+
 ## Rollout Completed After Motion Hoodie Benchmark
 
 Implementation notes for the completed rollout:
@@ -180,4 +191,4 @@ Implementation notes for the completed rollout:
 - The current KALM Move and KS Active rollout now uses three gallery files per sold colour variant.
 - KS Active colour galleries are derived from colour-specific model-shot sources only, so Black, Wine, Deep Plum, Blue, Purple, Stone and Taupe variants do not borrow mismatched source colours.
 - Existing KALM Move men and bottle imagery was expanded into gallery-ready `front`, `angle` and `movement` files without changing product design, logos, copy, checkout, domains or routing.
-- The original KALM Move women apparel flatlay/source assets remain usable for variant switching, but still need approved model photography before final production merchandising.
+- KALM Move customer-facing apparel paths should use model-led product imagery only. Supplier crops, flat product-only KALM Move clothing assets and failed generated renders may remain in reference/audit folders, but should not be wired into the live storefront.

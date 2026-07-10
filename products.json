@@ -1,7 +1,7 @@
 {
   "meta": {
     "store": "KALM Collective",
-    "updated": "2026-07-09",
+    "updated": "2026-07-10",
     "currency": "ZAR",
     "publicDomain": "kalmcollective.co.za",
     "heroImage": "assets/images/home-hero-shop.webp",
@@ -32,15 +32,15 @@
       "name": "KALM Move",
       "role": "Movement essentials",
       "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
-      "heroImage": "assets/images/generated/brand-tiles/kalm-move-tile.webp",
-      "tileImage": "assets/images/products/kalm-move/women/rise-long-sleeve-set/green/front.webp",
+      "heroImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+      "tileImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
       "logo": "assets/branding/kalm-move/kalm-move-logo.png",
       "slug": "kalm-move",
       "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
       "logoAlt": "KALM Move logo",
       "description": "Movement and activewear essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
-      "homepageTileImage": "assets/images/products/kalm-move/women/rise-long-sleeve-set/green/front.webp"
+      "homepageTileImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp"
     },
     {
       "id": "kalm-outdoor",
@@ -97,7 +97,7 @@
     {
       "id": "activewear",
       "name": "Activewear",
-      "image": "assets/images/products/kalm-move/women/rise-long-sleeve-set/green/front.webp"
+      "image": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp"
     },
     {
       "id": "wellness",
@@ -681,16 +681,10 @@
         "kalm-move",
         "women",
         "new-in",
-        "shorts",
-        "supplier-reference"
+        "shorts"
       ],
       "audience": "women",
       "moveCategory": "shorts",
-      "sourceReferences": [
-        "IMG-20260709-WA0082",
-        "IMG-20260709-WA0083",
-        "IMG-20260709-WA0084"
-      ],
       "variantImages": {
         "White": {
           "hero": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
@@ -782,6 +776,124 @@
       "metaDescription": "A clean halter bra and fitted short set for studio sessions, light training and warm-weather movement."
     },
     {
+      "id": "kalm-move-open-back-short-romper",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Women",
+      "category": "activewear",
+      "type": "Short Romper",
+      "title": "KALM Move Open Back Short Romper",
+      "slug": "kalm-move-open-back-short-romper",
+      "price": 499,
+      "compareAtPrice": 569,
+      "colors": [
+        "Black",
+        "Pink",
+        "Blue",
+        "Army Green",
+        "Navy",
+        "Apricot"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+      "description": "A stand-collar short romper with a clean open back for studio sessions and warm-weather movement.",
+      "shortDescription": "A stand-collar short romper with a clean open back for studio sessions and warm-weather movement.",
+      "longDescription": "The Open Back Short Romper is a fitted one-piece active silhouette with a stand collar, sleeveless front and hollow open-back detail. It gives the range a polished studio-to-summer training option with a clean short shape and a subtle buffalo mark at the hem.",
+      "features": [
+        "One-piece short romper shape",
+        "Stand-collar sleeveless front",
+        "Hollow open-back cutout",
+        "Rear ruched seam detail",
+        "Single subtle buffalo mark at the short hem"
+      ],
+      "detailBullets": [
+        "One-piece short romper shape",
+        "Stand-collar sleeveless front",
+        "Hollow open-back cutout",
+        "Rear ruched seam detail",
+        "Single subtle buffalo mark at the short hem"
+      ],
+      "fitNotes": "Close one-piece active fit. Size up if you prefer more room through the body.",
+      "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
+      "sku": "KM-W-OPEN-BACK-SHORT-ROMPER",
+      "tags": [
+        "activewear",
+        "kalm-move",
+        "women",
+        "new-in",
+        "shorts",
+        "romper",
+        "one-piece"
+      ],
+      "audience": "women",
+      "moveCategory": "shorts",
+      "variantImages": {
+        "Black": {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp"
+          ]
+        },
+        "Pink": {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp"
+          ]
+        },
+        "Blue": {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp"
+          ]
+        },
+        "Army Green": {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp"
+          ]
+        },
+        "Navy": {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp"
+          ]
+        },
+        "Apricot": {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp"
+          ]
+        }
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp",
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp"
+      ],
+      "metaTitle": "KALM Move Open Back Short Romper | KALM Move",
+      "metaDescription": "A stand-collar short romper with a clean hollow open back and studio-ready fit."
+    },
+    {
       "id": "kalm-move-pulse-crop-short-set",
       "brand": "KALM Move",
       "brandId": "kalm-move",
@@ -807,20 +919,20 @@
       "image": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
       "description": "A high-neck crop and short set with a clean, compact training silhouette.",
       "shortDescription": "A high-neck crop and short set with a clean, compact training silhouette.",
-      "longDescription": "The Pulse Crop Short Set is based on the supplied high-neck crop and short reference. The shape is direct and practical: a cropped high-neck top, fitted short and simple studio-ready line.",
+      "longDescription": "The Pulse Crop Short Set pairs a cropped high-neck top with a fitted short for a direct, practical studio-ready line.",
       "features": [
         "High-neck cropped top",
         "Fitted short",
         "Clean active silhouette",
         "Low-distraction design",
-        "Supplier-reference black colourway"
+        "Clean black colourway"
       ],
       "detailBullets": [
         "High-neck cropped top",
         "Fitted short",
         "Clean active silhouette",
         "Low-distraction design",
-        "Supplier-reference black colourway"
+        "Clean black colourway"
       ],
       "fitNotes": "Close active fit. Choose your usual size for a fitted studio shape.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
@@ -830,16 +942,10 @@
         "kalm-move",
         "women",
         "new-in",
-        "shorts",
-        "supplier-reference"
+        "shorts"
       ],
       "audience": "women",
       "moveCategory": "shorts",
-      "sourceReferences": [
-        "IMG-20260709-WA0085",
-        "IMG-20260709-WA0086",
-        "IMG-20260709-WA0087"
-      ],
       "variantImages": {
         "Black": {
           "hero": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
@@ -913,15 +1019,10 @@
         "women",
         "new-in",
         "bottoms",
-        "sets",
-        "supplier-reference"
+        "sets"
       ],
       "audience": "women",
       "moveCategory": "bottoms",
-      "sourceReferences": [
-        "IMG-20260709-WA0077",
-        "IMG-20260709-WA0078"
-      ],
       "variantImages": {
         "Sage": {
           "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
@@ -999,22 +1100,22 @@
       "image": "assets/images/products/kalm-move/women/balance-strappy-set/blossom-pink/front.webp",
       "description": "A strappy active set with a clean back detail and soft studio colour.",
       "shortDescription": "A strappy active set with a clean back detail and soft studio colour.",
-      "longDescription": "The Balance Strappy Set is built from the supplied strappy tank reference, keeping the open back line and compact active-set shape. The live colour and size mapping follow the visible supplier panel.",
+      "longDescription": "The Balance Strappy Set keeps a compact active-set shape with a clean open-back line and soft studio colour. The result is a simple, easy studio piece for light movement and everyday active styling.",
       "features": [
         "Strappy back detail",
         "Compact studio set",
         "Soft pink tone",
         "Clean active profile",
-        "Supplier-reference silhouette"
+        "Clean active silhouette"
       ],
       "detailBullets": [
         "Strappy back detail",
         "Compact studio set",
         "Soft pink tone",
         "Clean active profile",
-        "Supplier-reference silhouette"
+        "Clean active silhouette"
       ],
-      "fitNotes": "Supplier size mapping shown as One Size, 4, 6, 8 and 10. Fit confirmation still needs physical sample testing.",
+      "fitNotes": "Close studio fit. Choose your usual size if you prefer a fitted active shape.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
       "sku": "KM-W-BALANCE-STRAPPY-SET",
       "tags": [
@@ -1022,17 +1123,10 @@
         "kalm-move",
         "women",
         "new-in",
-        "tops",
-        "supplier-reference"
+        "tops"
       ],
       "audience": "women",
       "moveCategory": "tops",
-      "sourceReferences": [
-        "IMG-20260709-WA0091",
-        "IMG-20260709-WA0092",
-        "IMG-20260709-WA0093",
-        "IMG-20260709-WA0094"
-      ],
       "variantImages": {
         "Blossom Pink": {
           "hero": "assets/images/products/kalm-move/women/balance-strappy-set/blossom-pink/front.webp",
@@ -1079,20 +1173,20 @@
       "image": "assets/images/products/kalm-move/women/rise-long-sleeve-set/apricot/front.webp",
       "description": "A long-sleeve studio set with a cropped layer, matching top and legging base.",
       "shortDescription": "A long-sleeve studio set with a cropped layer, matching top and legging base.",
-      "longDescription": "The Rise Long Sleeve Set is based on the supplied long-sleeve three-piece reference. It keeps the cropped layer, matching underlayer and fitted bottom structure for a polished studio set.",
+      "longDescription": "The Rise Long Sleeve Set pairs a cropped long-sleeve layer with a matching active base for a polished studio look. It is designed for light movement, layering and coordinated off-duty wear.",
       "features": [
         "Three-piece studio set",
         "Long-sleeve cropped layer",
         "Matching active base",
         "Clean coordinated look",
-        "Supplier-reference colours"
+        "Coordinated colour options"
       ],
       "detailBullets": [
         "Three-piece studio set",
         "Long-sleeve cropped layer",
         "Matching active base",
         "Clean coordinated look",
-        "Supplier-reference colours"
+        "Coordinated colour options"
       ],
       "fitNotes": "Close active fit through the base layer with a light cropped outer layer.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
@@ -1102,17 +1196,10 @@
         "kalm-move",
         "women",
         "new-in",
-        "layers",
-        "supplier-reference"
+        "layers"
       ],
       "audience": "women",
       "moveCategory": "layers",
-      "sourceReferences": [
-        "IMG-20260709-WA0095",
-        "IMG-20260709-WA0096",
-        "IMG-20260709-WA0097",
-        "IMG-20260709-WA0098"
-      ],
       "variantImages": {
         "Apricot": {
           "hero": "assets/images/products/kalm-move/women/rise-long-sleeve-set/apricot/front.webp",
@@ -1175,20 +1262,20 @@
       "image": "assets/images/products/kalm-move/women/core-seamless-tank/charcoal/front.webp",
       "description": "A smooth seamless tank silhouette for training, errands and everyday movement.",
       "shortDescription": "A smooth seamless tank silhouette for training, errands and everyday movement.",
-      "longDescription": "The Core Seamless Tank follows the supplied seamless tank/body reference with a clean scoop front and simple back strap line. Live colours are limited to source-backed supplier images.",
+      "longDescription": "The Core Seamless Tank has a smooth tank/body shape with a clean scoop front and simple back strap line. It is an easy active layer for training, errands and everyday movement.",
       "features": [
         "Seamless tank profile",
         "Scoop front",
         "Open back strap line",
         "Smooth active fabric look",
-        "Source-backed colours"
+        "Core neutral colours"
       ],
       "detailBullets": [
         "Seamless tank profile",
         "Scoop front",
         "Open back strap line",
         "Smooth active fabric look",
-        "Source-backed colours"
+        "Core neutral colours"
       ],
       "fitNotes": "Close active fit. Choose your usual size for a held-in tank shape.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
@@ -1198,17 +1285,10 @@
         "kalm-move",
         "women",
         "new-in",
-        "tops",
-        "supplier-reference"
+        "tops"
       ],
       "audience": "women",
       "moveCategory": "tops",
-      "sourceReferences": [
-        "IMG-20260709-WA0103",
-        "IMG-20260709-WA0104",
-        "IMG-20260709-WA0105",
-        "IMG-20260709-WA0106"
-      ],
       "variantImages": {
         "Charcoal": {
           "hero": "assets/images/products/kalm-move/women/core-seamless-tank/charcoal/front.webp",
@@ -1262,20 +1342,20 @@
       "image": "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp",
       "description": "A ruched biker short for studio movement, warm-weather training and layering.",
       "shortDescription": "A ruched biker short for studio movement, warm-weather training and layering.",
-      "longDescription": "The Align Ruched Short is based on the supplied ruched short reference, keeping the fitted waist, short active length and gathered back detail visible in the source images.",
+      "longDescription": "The Align Ruched Short has a fitted waist, short active length and gathered back detail for studio movement, warm-weather training and easy layering.",
       "features": [
         "Fitted biker-short length",
         "Ruched back detail",
         "Smooth waistband",
         "Studio-ready active shape",
-        "Supplier-reference colours"
+        "Clean colour options"
       ],
       "detailBullets": [
         "Fitted biker-short length",
         "Ruched back detail",
         "Smooth waistband",
         "Studio-ready active shape",
-        "Supplier-reference colours"
+        "Clean colour options"
       ],
       "fitNotes": "Close active fit. Choose your usual size for a fitted short.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
@@ -1285,16 +1365,10 @@
         "kalm-move",
         "women",
         "new-in",
-        "shorts",
-        "supplier-reference"
+        "shorts"
       ],
       "audience": "women",
       "moveCategory": "shorts",
-      "sourceReferences": [
-        "IMG-20260709-WA0106",
-        "IMG-20260709-WA0107",
-        "IMG-20260709-WA0108"
-      ],
       "variantImages": {
         "Purple": {
           "hero": "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp",

@@ -375,7 +375,7 @@ function renderEditorialEdits() {
     {
       title: "Everyday movement",
       copy: "Soft active staples for school runs, studio sessions and slow weekend plans.",
-      image: "assets/images/generated/brand-tiles/kalm-move-tile.webp",
+      image: "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
       href: "#/shop?category=activewear"
     },
     {
@@ -568,12 +568,11 @@ function renderBrands() {
     <section class="brand-grid">
       ${state.data.brands.map((brand, index) => `
         <article class="brand-card-large">
-          <a href="#/brand/${brand.id}">
+          <a href="#/brand/${brand.id}" aria-label="Shop ${escapeAttribute(brand.name)}">
             <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
             <div class="brand-content">
-              <p>${escapeHtml(brand.role)}</p>
-              <h2>${escapeHtml(brand.name)}</h2>
-              <span class="text-link">Shop brand</span>
+              <img class="brand-card-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async">
+              <span class="sr-only">Shop ${escapeHtml(brand.name)}</span>
             </div>
           </a>
         </article>
@@ -594,10 +593,9 @@ function renderBrand(brandId) {
     <section class="brand-hero">
       <div>
         <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
-        <p class="eyebrow">${escapeHtml(brand.role)}</p>
-        <h1>${escapeHtml(brand.name)}</h1>
+        <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
-        <a class="button primary" href="#/shop?brand=${brand.id}">Shop ${escapeHtml(brand.name)}</a>
+        <a class="button primary" href="#/shop?brand=${brand.id}">Shop now</a>
       </div>
       <img src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} edit" width="1200" height="900">
     </section>
@@ -979,7 +977,7 @@ function renderVariantPreviews(product) {
     <div class="variant-previews" aria-label="Colour previews">
       ${product.colors.map((color) => `
         <button type="button" data-variant-preview="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}">
-          <img src="${transparentPixel}" data-src="${escapeHtml(getVariantImage(product, color))}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(color)}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
+          <img src="${escapeHtml(getVariantImage(product, color))}" alt="${escapeAttribute(product.title)} in ${escapeAttribute(color)}" width="116" height="136" decoding="async">
         </button>
       `).join("")}
     </div>
@@ -999,7 +997,7 @@ function renderProductGallery(product) {
 function renderGalleryThumbs(product, images) {
   return images.map((image, index) => `
     <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}" ${index === 0 ? 'aria-current="true"' : ""}>
-      <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" loading="lazy" decoding="async" fetchpriority="low">
+      <img src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" decoding="async">
     </button>
   `).join("");
 }
@@ -1020,7 +1018,7 @@ function renderSpecifications(specifications) {
 function renderProductCard(product, options = {}) {
   const imageMarkup = options.eager
     ? `src="${escapeHtml(product.image)}" decoding="async"`
-    : `src="${transparentPixel}" data-src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
+    : `src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">

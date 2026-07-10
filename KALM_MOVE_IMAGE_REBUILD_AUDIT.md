@@ -29,6 +29,7 @@ Benchmark: KALM Move Motion Hoodie. A benchmark-compliant product has variant-sp
 | KALM Move Rise Long Sleeve Set | `IMG-20260709-WA0095` to `WA0098` | REBUILD | Long-sleeve three-piece set |
 | KALM Move Core Seamless Tank | `IMG-20260709-WA0103` to `WA0106` | REBUILD | Seamless tank/bodysuit active piece |
 | KALM Move Align Ruched Short | `IMG-20260709-WA0107` to `WA0108` | REBUILD | Ruched biker short |
+| KALM Move Open Back Short Romper | `WhatsApp Image 2026-07-10 at 10.13.44 (1).jpeg` and `WhatsApp Image 2026-07-10 at 10.13.44.jpeg` | REBUILD | Stand-collar sleeveless short romper with hollow open back and rear ruched seam |
 | Lightweight windbreaker / jacket set | `IMG-20260709-WA0099` to `WA0102` | HOLD | Colour and size panel missing from supplied screenshots |
 
 ## Current Men Products
@@ -69,6 +70,7 @@ Current live-ready women clothing products:
 |---|---|---|---|
 | KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier V-front halter and straight-band back reference |
 | KALM Move Form Short Set | White, Brown, Khaki, Dark Purple, Sky Blue, Yellow, Black, Pink, Orange, Dark Red | S, M, L, XL | Regenerated from scratch in `form-short-set-v2` with `front.webp`, `angle.webp`, `back.webp` per supplier-visible suit colour; checked against V-front halter bra, straight-band open back and high-waist fitted short reference |
+| KALM Move Open Back Short Romper | Black, Pink, Blue, Army Green, Navy, Apricot | S, M, L, XL | Generated from scratch in `open-back-short-romper-v1` with diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against stand-collar one-piece romper, hollow open back, rear ruched seam and one-logo-location rule |
 | KALM Move Pulse Crop Short Set | Black | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Ease Flare Set | Sage, Black, Taupe, Espresso, Cream | XS, S, M, L, XL | Regenerated from scratch in `ease-flare-set-v4` with diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier square-neck tank, low X-back strap and flare-leg reference; small buffalo marks were generated into top and pants in front/angle views |
 | KALM Move Balance Strappy Set | Blossom Pink | One Size, 4, 6, 8, 10 | `front.webp`, `angle.webp`, `movement.webp` |
