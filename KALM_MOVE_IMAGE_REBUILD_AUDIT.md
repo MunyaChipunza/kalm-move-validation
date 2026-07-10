@@ -24,7 +24,7 @@ Benchmark: KALM Move Motion Hoodie. A benchmark-compliant product has variant-sp
 | KALM Move Align Halter Legging Set | `IMG-20260709-WA0079` to `WA0081` | REBUILD | V-front halter/tank top with open back and high-waist full-length leggings |
 | KALM Move Form Short Set | `IMG-20260709-WA0082` to `WA0085` | REBUILD | Bra and fitted short set |
 | KALM Move Pulse Crop Short Set | `IMG-20260709-WA0086` to `WA0088` | REBUILD | High-neck crop and layered short silhouette |
-| KALM Move Ease Flare Legging | `IMG-20260709-WA0089` to `WA0091` | REBUILD | Relaxed flare / wide-leg legging |
+| KALM Move Ease Flare Set | `IMG-20260709-WA0077` to `WA0078` | REBUILD | Square-neck thin-strap tank with simple X-back and high-waist flare leggings |
 | KALM Move Balance Strappy Set | `IMG-20260709-WA0092` to `WA0094` | REBUILD | Strappy tank/bra set |
 | KALM Move Rise Long Sleeve Set | `IMG-20260709-WA0095` to `WA0098` | REBUILD | Long-sleeve three-piece set |
 | KALM Move Core Seamless Tank | `IMG-20260709-WA0103` to `WA0106` | REBUILD | Seamless tank/bodysuit active piece |
@@ -70,7 +70,7 @@ Current live-ready women clothing products:
 | KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier V-front halter and straight-band back reference |
 | KALM Move Form Short Set | White | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Pulse Crop Short Set | Black | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
-| KALM Move Ease Flare Legging | Gray Blue | XS, S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` |
+| KALM Move Ease Flare Set | Sage, Black, Taupe, Espresso, Cream | XS, S, M, L, XL | Generated diverse human ecommerce model `front.webp`, `angle.webp`, `back.webp` per colour; checked against supplier square-neck tank, X-back strap and flare-leg reference |
 | KALM Move Balance Strappy Set | Blossom Pink | One Size, 4, 6, 8, 10 | `front.webp`, `angle.webp`, `movement.webp` |
 | KALM Move Rise Long Sleeve Set | Apricot, Rose Red, Green | S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` per colour |
 | KALM Move Core Seamless Tank | Charcoal, Black | XS, S, M, L, XL | `front.webp`, `angle.webp`, `movement.webp` per colour |

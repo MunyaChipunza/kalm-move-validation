@@ -778,18 +778,22 @@
       "metaDescription": "A high-neck crop and short set with a clean, compact training silhouette."
     },
     {
-      "id": "kalm-move-ease-flare-legging",
+      "id": "kalm-move-ease-flare-set",
       "brand": "KALM Move",
       "brandId": "kalm-move",
       "collection": "KALM Move Women",
       "category": "activewear",
-      "type": "Legging",
-      "title": "KALM Move Ease Flare Legging",
-      "slug": "kalm-move-ease-flare-legging",
+      "type": "Set",
+      "title": "KALM Move Ease Flare Set",
+      "slug": "kalm-move-ease-flare-set",
       "price": 499,
       "compareAtPrice": 569,
       "colors": [
-        "Gray Blue"
+        "Sage",
+        "Black",
+        "Taupe",
+        "Espresso",
+        "Cream"
       ],
       "sizes": [
         "XS",
@@ -801,60 +805,91 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/front.webp",
-      "description": "A soft flare legging shape for low-impact movement and relaxed active styling.",
-      "shortDescription": "A soft flare legging shape for low-impact movement and relaxed active styling.",
-      "longDescription": "The Ease Flare Legging follows the supplier reference for a relaxed flare leg with a high waistband and easy drape through the lower leg. It is meant to feel more studio-to-everyday than compression-heavy.",
+      "image": "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp",
+      "description": "A square-neck strappy tank and flare legging set for studio days and relaxed active styling.",
+      "shortDescription": "A square-neck strappy tank and flare legging set for studio days and relaxed active styling.",
+      "longDescription": "The Ease Flare Set pairs a clean square-neck tank with thin cross-back straps and high-waist flare leggings. The silhouette is fitted through the body and thigh, then opens into a soft flare for studio sessions, light movement and everyday activewear styling.",
       "features": [
-        "High waist",
-        "Relaxed flare leg",
-        "Soft movement profile",
-        "Studio-to-everyday styling",
-        "Supplier-reference gray blue colourway"
+        "Square-neck strappy tank",
+        "Clean cross-back detail",
+        "High-waist flare leggings",
+        "Soft studio-to-everyday profile",
+        "Matching set finish"
       ],
       "detailBullets": [
-        "High waist",
-        "Relaxed flare leg",
-        "Soft movement profile",
-        "Studio-to-everyday styling",
-        "Supplier-reference gray blue colourway"
+        "Square-neck strappy tank",
+        "Clean cross-back detail",
+        "High-waist flare leggings",
+        "Soft studio-to-everyday profile",
+        "Matching set finish"
       ],
-      "fitNotes": "Regular close waist with relaxed flare leg. Choose your usual size.",
+      "fitNotes": "Close active fit through the tank, waist and thigh with a relaxed flare from below the knee. Choose your usual size.",
       "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
-      "sku": "KM-W-EASE-FLARE-LEGGING",
+      "sku": "KM-W-EASE-FLARE-SET",
       "tags": [
         "activewear",
         "kalm-move",
         "women",
         "new-in",
         "bottoms",
+        "sets",
         "supplier-reference"
       ],
       "audience": "women",
       "moveCategory": "bottoms",
       "sourceReferences": [
-        "IMG-20260709-WA0088",
-        "IMG-20260709-WA0089",
-        "IMG-20260709-WA0090",
-        "IMG-20260709-WA0091"
+        "IMG-20260709-WA0077",
+        "IMG-20260709-WA0078"
       ],
       "variantImages": {
-        "Gray Blue": {
-          "hero": "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/front.webp",
+        "Sage": {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/front.webp",
-            "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/angle.webp",
-            "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/movement.webp"
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/back.webp"
+          ]
+        },
+        "Black": {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v2/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/black/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/black/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/black/back.webp"
+          ]
+        },
+        "Taupe": {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/back.webp"
+          ]
+        },
+        "Espresso": {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/back.webp"
+          ]
+        },
+        "Cream": {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v2/cream/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/cream/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/cream/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v2/cream/back.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/front.webp",
-        "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/angle.webp",
-        "assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/movement.webp"
+        "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp",
+        "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/angle.webp",
+        "assets/images/products/kalm-move/women/ease-flare-set-v2/sage/back.webp"
       ],
-      "metaTitle": "KALM Move Ease Flare Legging | KALM Move",
-      "metaDescription": "A soft flare legging shape for low-impact movement and relaxed active styling."
+      "metaTitle": "KALM Move Ease Flare Set | KALM Move",
+      "metaDescription": "A square-neck strappy tank and flare legging set for studio days and relaxed active styling."
     },
     {
       "id": "kalm-move-balance-strappy-set",

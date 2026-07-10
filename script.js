@@ -1410,11 +1410,12 @@ function formatPrice(value) {
 function swatch(color) {
   const value = color.toLowerCase();
   if (value.includes("black")) return "#111111";
-  if (value.includes("white") || value.includes("ivory")) return "#f8f5ef";
-  if (value.includes("olive")) return "#596044";
+  if (value.includes("white") || value.includes("ivory") || value.includes("cream")) return "#f8f5ef";
+  if (value.includes("olive") || value.includes("sage")) return "#9a9d84";
   if (value.includes("grey") || value.includes("charcoal") || value.includes("smoke")) return "#5c5c5c";
   if (value.includes("wine") || value.includes("plum")) return "#5b254b";
   if (value.includes("blue")) return "#244f9e";
+  if (value.includes("espresso") || value.includes("brown")) return "#3b2b23";
   if (value.includes("oat") || value.includes("natural") || value.includes("stone") || value.includes("taupe")) return "#c8b99f";
   if (value.includes("cork")) return "#b98d57";
   return "#d8d2c7";
