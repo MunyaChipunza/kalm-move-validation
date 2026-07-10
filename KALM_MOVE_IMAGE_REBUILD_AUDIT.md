@@ -79,3 +79,36 @@ Current live-ready women clothing products:
 | KALM Move Align Ruched Short | Purple, Pink | XS, S, M, L | `front.webp`, `angle.webp`, `movement.webp` per colour |
 
 Known source limitation: the supplied screenshots include additional variation-panel colours that do not have enough clean product evidence for faithful model imagery. Those colours are documented in `KALM_MOVE_SUPPLIER_REFERENCE_NOTES.md` but are not exposed as live colour choices until matching supplier evidence is available.
+
+## Approved 15-Folder Upload Status
+
+Date: 2026-07-10
+
+Munya approved the generated model imagery for the 15 KALM Move women supplier folders. The storefront product data has been updated so the KALM Move women clothing range is now based on those approved folders only.
+
+Live KALM Move women clothing products after approval:
+
+| Folder | Live product | Live colour count | Image status |
+|---:|---|---:|---|
+| 1 | KALM Move Align Halter Legging Set | 5 | Approved one-by-one model assets retained |
+| 2 | KALM Move Ease Flare Set | 5 | Approved one-by-one model assets retained |
+| 3 | KALM Move Form Short Set | 10 | Approved one-by-one model assets retained |
+| 4 | KALM Move Pulse Crop Short Set | 1 | Clean individual black model assets retained; multi-colour approval sheet was not used as product imagery because it is not a full-size product asset |
+| 5 | KALM Move Wide-Leg Yoga Pant | 12 | Approved API images converted to storefront WebP assets |
+| 6 | KALM Move Balance X-Back Legging Set | 10 | Approved API images converted to storefront WebP assets |
+| 7 | KALM Move Halter Biker Short Set | 7 | Approved API images converted to storefront WebP assets |
+| 8 | KALM Move Rise Zip Jacket Set | 11 | Approved API images converted to storefront WebP assets |
+| 9 | KALM Move Lightweight Windbreaker Set | 1 | Approved API images converted to storefront WebP assets |
+| 10 | KALM Move Cropped Zip Yoga Jacket | 1 | Approved API images converted to storefront WebP assets |
+| 11 | KALM Move Core Short Unitard | 10 | Approved API images converted to storefront WebP assets |
+| 12 | KALM Move Align Ruched Short | 8 | Approved API images converted to storefront WebP assets |
+| 13 | KALM Move Loose Split Running Short | 3 | Approved API images converted to storefront WebP assets |
+| 14 | KALM Move Split Running Skort | 3 | Approved API images converted to storefront WebP assets |
+| 15 | KALM Move Open Back Short Romper | 6 | Approved one-by-one model assets retained |
+
+Customer-facing impact:
+
+- Old KALM Move women product concepts are no longer referenced by `products.json`.
+- KALM Move women clothing now shows 15 supplier-folder products plus the existing KALM Move women bottle accessories.
+- Variant image paths were checked locally; no missing referenced image paths were found.
+- Local browser QA confirmed the KALM Move women shop renders 18 women items, variant image switching works, and selected colour/size carries into the bag.
