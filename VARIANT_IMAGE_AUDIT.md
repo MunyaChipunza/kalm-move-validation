@@ -54,7 +54,7 @@ The previous KALM Move women clothing rows for Everyday Movement Legging, Medium
 
 | Product | Colour variants | Images exist per colour? | Missing images | Fallback used? | Fixed? |
 |---|---|---|---|---|---|
-| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | Yes, 3 source-derived images per live colour | None for live colours | No | Yes |
+| KALM Move Align Halter Legging Set | Black, Pink Drink, Grayish Blue, Delicate Red, Date Brown | Yes, 3 human-model images per live colour: front, angle, back | None for live colours | No | Yes |
 | KALM Move Form Short Set | White | Yes, 3 per live colour | None for live colours | No | Yes |
 | KALM Move Pulse Crop Short Set | Black | Yes, 3 per live colour | None for live colours | No | Yes |
 | KALM Move Ease Flare Legging | Gray Blue | Yes, 3 per live colour | None for live colours | No | Yes |
