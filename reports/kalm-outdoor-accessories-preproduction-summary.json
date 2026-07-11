@@ -1,0 +1,12 @@
+{
+  "schema": "kalm.outdoor.preproductionSummary.v1",
+  "generatedAt": "2026-07-11T18:20:39.109Z",
+  "accessoryCount": 9,
+  "bundleCount": 4,
+  "imageCount": 63,
+  "paidImageApiUsed": false,
+  "productsJsonModified": false,
+  "netlifyDeploymentInitiated": false,
+  "recoveryWorkspaceTouched": false,
+  "nextPhase": "Wait for storefront recovery release, then rebase and integrate semantically."
+}

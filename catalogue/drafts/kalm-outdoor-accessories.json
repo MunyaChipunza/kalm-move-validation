@@ -1,0 +1,629 @@
+{
+  "schema": "kalm.outdoor.accessories.draft.v1",
+  "generatedAt": "2026-07-11T18:20:39.109Z",
+  "sourceBranchPurpose": "Phase A preproduction only. Do not merge into live products.json during storefront recovery.",
+  "applianceAnchors": [
+    {
+      "id": "kalm-outdoor-ember-16-gas-pizza-oven",
+      "shortId": "ember-16",
+      "title": "Ember 16 Gas Pizza Oven",
+      "slug": "kalm-outdoor-ember-16-gas-pizza-oven"
+    },
+    {
+      "id": "kalm-outdoor-forge-2-portable-gas-griddle",
+      "shortId": "forge-2",
+      "title": "Forge 2 Portable Gas Griddle",
+      "slug": "kalm-outdoor-forge-2-portable-gas-griddle"
+    },
+    {
+      "id": "kalm-outdoor-ridge-4-stainless-gas-braai",
+      "shortId": "ridge-4",
+      "title": "Ridge 4 Stainless Gas Braai",
+      "slug": "kalm-outdoor-ridge-4-stainless-gas-braai"
+    }
+  ],
+  "accessories": [
+    {
+      "id": "kalm-outdoor-ember-16-pizza-peel",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Pizza Peel",
+      "title": "Ember 16 Pizza Peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-EMBER16-PEEL",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/compatibility.svg"
+      ],
+      "description": "A coming-soon pizza peel planned for launching and retrieving pizzas from the Ember 16.",
+      "shortDescription": "Helps move pizza cleanly in and out of the oven.",
+      "longDescription": "A coming-soon pizza peel planned for launching and retrieving pizzas from the Ember 16. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "primary",
+        "forge-2": "not_applicable",
+        "ridge-4": "not_applicable"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-ember-16-gas-pizza-oven"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "ember-16",
+        "pizza-launch-tool",
+        "ember-16-accessory",
+        "supplier-dimensions-pending"
+      ],
+      "metaTitle": "Ember 16 Pizza Peel | KALM Outdoor Accessories",
+      "metaDescription": "Ember 16 Pizza Peel is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-ember-16-turning-peel",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Turning Peel",
+      "title": "Ember 16 Turning Peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-EMBER16-TURNPEEL",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/compatibility.svg"
+      ],
+      "description": "A coming-soon turning peel planned for rotating pizzas during high-heat Ember 16 cooking.",
+      "shortDescription": "Makes it easier to turn pizza without removing it fully from the oven.",
+      "longDescription": "A coming-soon turning peel planned for rotating pizzas during high-heat Ember 16 cooking. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "primary",
+        "forge-2": "not_applicable",
+        "ridge-4": "not_applicable"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-ember-16-gas-pizza-oven"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "ember-16",
+        "pizza-turn-tool",
+        "ember-16-accessory",
+        "supplier-dimensions-pending"
+      ],
+      "metaTitle": "Ember 16 Turning Peel | KALM Outdoor Accessories",
+      "metaDescription": "Ember 16 Turning Peel is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-ember-16-insulated-cover",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Oven Cover",
+      "title": "Ember 16 Insulated Cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-EMBER16-COVER",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/compatibility.svg"
+      ],
+      "description": "A coming-soon protective cover planned for storing the Ember 16 between outdoor cooking sessions.",
+      "shortDescription": "Keeps the oven covered when not in use.",
+      "longDescription": "A coming-soon protective cover planned for storing the Ember 16 between outdoor cooking sessions. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "primary",
+        "forge-2": "not_applicable",
+        "ridge-4": "not_applicable"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-ember-16-gas-pizza-oven"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "ember-16",
+        "protective-cover",
+        "ember-16-accessory",
+        "material-spec-pending"
+      ],
+      "metaTitle": "Ember 16 Insulated Cover | KALM Outdoor Accessories",
+      "metaDescription": "Ember 16 Insulated Cover is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-forge-2-melting-dome",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Griddle Dome",
+      "title": "Forge 2 Melting Dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-FORGE2-DOME",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/compatibility.svg"
+      ],
+      "description": "A coming-soon griddle dome planned for melting, steaming and finishing food on the Forge 2.",
+      "shortDescription": "Supports burgers, eggs, vegetables and covered griddle cooking.",
+      "longDescription": "A coming-soon griddle dome planned for melting, steaming and finishing food on the Forge 2. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "not_applicable",
+        "forge-2": "primary",
+        "ridge-4": "review_required"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-forge-2-portable-gas-griddle"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "forge-2",
+        "flat-top-dome",
+        "forge-2-accessory",
+        "supplier-dimensions-pending"
+      ],
+      "metaTitle": "Forge 2 Melting Dome | KALM Outdoor Accessories",
+      "metaDescription": "Forge 2 Melting Dome is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-forge-2-griddle-tool-set",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Griddle Tools",
+      "title": "Forge 2 Griddle Tool Set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-FORGE2-TOOLS",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/compatibility.svg"
+      ],
+      "description": "A coming-soon griddle tool set planned for turning, scraping and serving from the Forge 2.",
+      "shortDescription": "Gives the flat-top station the core tools needed for everyday outdoor cooking.",
+      "longDescription": "A coming-soon griddle tool set planned for turning, scraping and serving from the Forge 2. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "not_applicable",
+        "forge-2": "primary",
+        "ridge-4": "general_use"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-forge-2-portable-gas-griddle",
+        "kalm-outdoor-ridge-4-stainless-gas-braai"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "forge-2",
+        "spatulas",
+        "scraper",
+        "forge-2-accessory",
+        "set-contents-pending"
+      ],
+      "metaTitle": "Forge 2 Griddle Tool Set | KALM Outdoor Accessories",
+      "metaDescription": "Forge 2 Griddle Tool Set is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-forge-2-grease-liner-pack",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Grease Liners",
+      "title": "Forge 2 Grease Liner Pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-FORGE2-LINERS",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/compatibility.svg"
+      ],
+      "description": "A coming-soon liner pack planned to simplify Forge 2 grease-cup clean-up.",
+      "shortDescription": "Makes post-cook clean-up easier when the final tray spec is confirmed.",
+      "longDescription": "A coming-soon liner pack planned to simplify Forge 2 grease-cup clean-up. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "not_applicable",
+        "forge-2": "primary",
+        "ridge-4": "not_applicable"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-forge-2-portable-gas-griddle"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "forge-2",
+        "liner-pack",
+        "forge-2-accessory",
+        "fit-confirmation-pending"
+      ],
+      "metaTitle": "Forge 2 Grease Liner Pack | KALM Outdoor Accessories",
+      "metaDescription": "Forge 2 Grease Liner Pack is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-ridge-4-braai-tool-set",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Braai Tools",
+      "title": "Ridge 4 Braai Tool Set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-RIDGE4-TOOLS",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/compatibility.svg"
+      ],
+      "description": "A coming-soon braai tool set planned for turning, lifting and serving from the Ridge 4.",
+      "shortDescription": "Keeps the main braai tools together for weekend hosting.",
+      "longDescription": "A coming-soon braai tool set planned for turning, lifting and serving from the Ridge 4. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "not_applicable",
+        "forge-2": "general_use",
+        "ridge-4": "primary"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-forge-2-portable-gas-griddle",
+        "kalm-outdoor-ridge-4-stainless-gas-braai"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "ridge-4",
+        "tongs",
+        "spatula",
+        "fork",
+        "ridge-4-accessory",
+        "set-contents-pending"
+      ],
+      "metaTitle": "Ridge 4 Braai Tool Set | KALM Outdoor Accessories",
+      "metaDescription": "Ridge 4 Braai Tool Set is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-ridge-4-smoker-box",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Smoker Box",
+      "title": "Ridge 4 Smoker Box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-RIDGE4-SMOKER",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/compatibility.svg"
+      ],
+      "description": "A coming-soon smoker box planned for adding wood-chip flavour during Ridge 4 braai sessions.",
+      "shortDescription": "Adds a simple smoke option to covered braai cooking.",
+      "longDescription": "A coming-soon smoker box planned for adding wood-chip flavour during Ridge 4 braai sessions. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "not_applicable",
+        "forge-2": "not_applicable",
+        "ridge-4": "primary"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-ridge-4-stainless-gas-braai"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "ridge-4",
+        "smoker-box",
+        "ridge-4-accessory",
+        "supplier-dimensions-pending"
+      ],
+      "metaTitle": "Ridge 4 Smoker Box | KALM Outdoor Accessories",
+      "metaDescription": "Ridge 4 Smoker Box is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    },
+    {
+      "id": "kalm-outdoor-universal-prep-tray",
+      "brand": "KALM Outdoor",
+      "brandId": "kalm-outdoor",
+      "collection": "KALM Outdoor Accessories",
+      "category": "outdoor",
+      "subcategory": "accessories",
+      "type": "Prep Tray",
+      "title": "KALM Outdoor Prep Tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "status": "draft_coming_soon",
+      "visibility": "preproduction_only",
+      "skuRoot": "KO-ACC-UNIV-PREPTRAY",
+      "price": null,
+      "priceStatus": "pending_supplier_costs",
+      "stockStatus": "not_live",
+      "sourceTruth": "Draft accessory definition. Supplier, fit, dimensions and landed costs still pending.",
+      "image": "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/hero.svg",
+      "gallery": [
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/hero.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/side.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/contents.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/detail.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/lifestyle.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/scene.svg",
+        "assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/compatibility.svg"
+      ],
+      "description": "A coming-soon prep and serving tray planned for moving ingredients between the kitchen, patio and outdoor cooking station.",
+      "shortDescription": "Creates one clean surface for prep, carry-out and serving.",
+      "longDescription": "A coming-soon prep and serving tray planned for moving ingredients between the kitchen, patio and outdoor cooking station. This draft record must not be added to the live catalogue until supplier specifications, landed cost, packaging, warranty and compatibility are confirmed.",
+      "highlights": [
+        "Coming soon",
+        "Accessory fit requires supplier confirmation before launch",
+        "No live price yet"
+      ],
+      "compatibility": {
+        "ember-16": "compatible",
+        "forge-2": "compatible",
+        "ridge-4": "compatible"
+      },
+      "compatibleWith": [
+        "kalm-outdoor-ember-16-gas-pizza-oven",
+        "kalm-outdoor-forge-2-portable-gas-griddle",
+        "kalm-outdoor-ridge-4-stainless-gas-braai"
+      ],
+      "tags": [
+        "outdoor",
+        "outdoor-accessories",
+        "universal",
+        "prep-tray",
+        "serving-tray",
+        "universal-outdoor-accessory",
+        "material-spec-pending"
+      ],
+      "metaTitle": "KALM Outdoor Prep Tray | KALM Outdoor Accessories",
+      "metaDescription": "KALM Outdoor Prep Tray is a planned KALM Outdoor accessory. Coming-soon details require supplier confirmation before launch.",
+      "launchBlockers": [
+        "Supplier source and MOQ",
+        "Landed cost and retail price",
+        "Verified dimensions and packaging",
+        "Compatibility test against listed appliance",
+        "Final approved product photography"
+      ],
+      "qaStatus": {
+        "copy": "draft_truthful",
+        "imagery": "preproduction_mockup",
+        "liveReady": false
+      }
+    }
+  ]
+}

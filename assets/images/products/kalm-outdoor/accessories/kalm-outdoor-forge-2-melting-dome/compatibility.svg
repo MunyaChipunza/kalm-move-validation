@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000" role="img" aria-label="Forge 2 Melting Dome compatibility preproduction image">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4f2eb"/>
+      <stop offset="1" stop-color="#e5e0d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="2000" fill="url(#bg)"/>
+  <circle cx="160" cy="200" r="115" fill="#fff" opacity="0.52"/>
+  <circle cx="1440" cy="1725" r="160" fill="#fff" opacity="0.42"/>
+  <g transform="translate(1255 220)" opacity="0.82"><circle cx="0" cy="0" r="42" fill="none" stroke="#22241f" stroke-width="4"/><text x="0" y="8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#22241f" font-weight="700">KO</text></g>
+  <text x="800" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" letter-spacing="7" fill="#3a3a35">KALM OUTDOOR ACCESSORIES</text>
+  <line x1="380" y1="1570" x2="1220" y2="1570" stroke="#d7c8a8" stroke-width="3" opacity="0.65"/>
+  <g transform="translate(800 1080)"><ellipse cx="800" cy="1450" rx="420" ry="70" fill="#000" opacity="0.10"/><path d="M-430,260 L430,260 Q375,-275 0,-350 Q-375,-275 -430,260Z" fill="#c6c6bd" stroke="#22241f" stroke-width="12"/><rect x="-130" y="-430" width="260" height="65" rx="32" fill="#22241f"/><path d="M-285,-40 Q0,-180 285,-40" stroke="#fff" stroke-width="20" opacity="0.35" fill="none"/><rect x="-455" y="230" width="910" height="70" rx="35" fill="#22241f"/></g><g transform="translate(405 560)"><rect x="0" y="0" width="790" height="80" rx="40" fill="#fff" opacity="0.78"/><circle cx="55" cy="40" r="24" fill="#b9b8ae"/><text x="105" y="49" font-family="Arial, sans-serif" font-size="28" fill="#111411">Ember 16 Gas Pizza Oven - not applicable</text></g><g transform="translate(405 680)"><rect x="0" y="0" width="790" height="80" rx="40" fill="#fff" opacity="0.78"/><circle cx="55" cy="40" r="24" fill="#66715b"/><text x="105" y="49" font-family="Arial, sans-serif" font-size="28" fill="#111411">Forge 2 Portable Gas Griddle - primary</text></g><g transform="translate(405 800)"><rect x="0" y="0" width="790" height="80" rx="40" fill="#fff" opacity="0.78"/><circle cx="55" cy="40" r="24" fill="#b99a43"/><text x="105" y="49" font-family="Arial, sans-serif" font-size="28" fill="#111411">Ridge 4 Stainless Gas Braai - review required</text></g>
+  <text x="800" y="1805" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="2" fill="#111411">Forge 2 Melting Dome</text><text x="800" y="1865" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" letter-spacing="5" fill="#3a3a35">KALM OUTDOOR / PREPRODUCTION</text><text x="800" y="1914" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#3a3a35">Griddle Dome - supplier specification pending</text>
+</svg>

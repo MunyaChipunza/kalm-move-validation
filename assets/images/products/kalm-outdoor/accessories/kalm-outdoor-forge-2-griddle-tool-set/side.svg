@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000" role="img" aria-label="Forge 2 Griddle Tool Set side preproduction image">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4f2eb"/>
+      <stop offset="1" stop-color="#e5e0d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="2000" fill="url(#bg)"/>
+  <circle cx="160" cy="200" r="115" fill="#fff" opacity="0.52"/>
+  <circle cx="1440" cy="1725" r="160" fill="#fff" opacity="0.42"/>
+  <g transform="translate(1255 220)" opacity="0.82"><circle cx="0" cy="0" r="42" fill="none" stroke="#22241f" stroke-width="4"/><text x="0" y="8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#22241f" font-weight="700">KO</text></g>
+  <text x="800" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" letter-spacing="7" fill="#3a3a35">KALM OUTDOOR ACCESSORIES</text>
+  <line x1="380" y1="1570" x2="1220" y2="1570" stroke="#d7c8a8" stroke-width="3" opacity="0.65"/>
+  <g transform="translate(800 990)"><ellipse cx="800" cy="1450" rx="420" ry="70" fill="#000" opacity="0.10"/><g transform="rotate(-18)"><rect x="-270" y="-475" width="70" height="950" rx="35" fill="#22241f"/><path d="M-330,-605 h190 l-22,165 h-146z" fill="#c6c6bd" stroke="#22241f" stroke-width="8"/></g><g transform="rotate(18)"><rect x="200" y="-475" width="70" height="950" rx="35" fill="#22241f"/><path d="M155,-610 h160 l45,185 h-250z" fill="#c6c6bd" stroke="#22241f" stroke-width="8"/></g><rect x="-210" y="520" width="420" height="105" rx="52" fill="#3a3a35"/></g><path d="M380,1325 H1220" stroke="#22241f" stroke-width="18" opacity="0.75"/><text x="800" y="1378" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#3a3a35">side profile draft</text>
+  <text x="800" y="1805" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="2" fill="#111411">Forge 2 Griddle Tool Set</text><text x="800" y="1865" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" letter-spacing="5" fill="#3a3a35">KALM OUTDOOR / PREPRODUCTION</text><text x="800" y="1914" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#3a3a35">Griddle Tools - supplier specification pending</text>
+</svg>

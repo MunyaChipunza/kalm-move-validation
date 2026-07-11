@@ -1,0 +1,63 @@
+{
+  "schema": "kalm.outdoor.bundles.draft.v1",
+  "generatedAt": "2026-07-11T18:20:39.109Z",
+  "sourceBranchPurpose": "Phase A preproduction bundle definitions only.",
+  "bundles": [
+    {
+      "id": "kalm-outdoor-ember-16-launch-kit",
+      "title": "Ember 16 Launch Kit",
+      "slug": "kalm-outdoor-ember-16-launch-kit",
+      "status": "draft_coming_soon",
+      "primaryAppliance": "ember-16",
+      "includedAccessoryIds": [
+        "kalm-outdoor-ember-16-pizza-peel",
+        "kalm-outdoor-ember-16-turning-peel",
+        "kalm-outdoor-ember-16-insulated-cover"
+      ],
+      "customerUseCase": "Pizza-night setup for launch, turn and storage.",
+      "pricingStatus": "pending_supplier_costs"
+    },
+    {
+      "id": "kalm-outdoor-forge-2-breakfast-kit",
+      "title": "Forge 2 Breakfast Kit",
+      "slug": "kalm-outdoor-forge-2-breakfast-kit",
+      "status": "draft_coming_soon",
+      "primaryAppliance": "forge-2",
+      "includedAccessoryIds": [
+        "kalm-outdoor-forge-2-melting-dome",
+        "kalm-outdoor-forge-2-griddle-tool-set",
+        "kalm-outdoor-forge-2-grease-liner-pack"
+      ],
+      "customerUseCase": "Flat-top breakfast, burger and clean-up essentials.",
+      "pricingStatus": "pending_supplier_costs"
+    },
+    {
+      "id": "kalm-outdoor-ridge-4-weekend-braai-kit",
+      "title": "Ridge 4 Weekend Braai Kit",
+      "slug": "kalm-outdoor-ridge-4-weekend-braai-kit",
+      "status": "draft_coming_soon",
+      "primaryAppliance": "ridge-4",
+      "includedAccessoryIds": [
+        "kalm-outdoor-ridge-4-braai-tool-set",
+        "kalm-outdoor-ridge-4-smoker-box",
+        "kalm-outdoor-universal-prep-tray"
+      ],
+      "customerUseCase": "Weekend braai tools, smoke option and serving prep.",
+      "pricingStatus": "pending_supplier_costs"
+    },
+    {
+      "id": "kalm-outdoor-hosting-starter-bundle",
+      "title": "KALM Outdoor Hosting Starter Bundle",
+      "slug": "kalm-outdoor-hosting-starter-bundle",
+      "status": "draft_coming_soon",
+      "primaryAppliance": "multi-appliance",
+      "includedAccessoryIds": [
+        "kalm-outdoor-universal-prep-tray",
+        "kalm-outdoor-forge-2-griddle-tool-set",
+        "kalm-outdoor-ridge-4-braai-tool-set"
+      ],
+      "customerUseCase": "A shared tool-and-prep set for households using more than one Outdoor appliance.",
+      "pricingStatus": "pending_supplier_costs"
+    }
+  ]
+}

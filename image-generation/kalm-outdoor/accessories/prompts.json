@@ -1,0 +1,390 @@
+{
+  "schema": "kalm.outdoor.imagePrompts.v1",
+  "generatedAt": "2026-07-11T18:20:39.109Z",
+  "paidImageGenerationStatus": "not_started",
+  "coordination": {
+    "processInspectionCompleted": true,
+    "concurrencyUsed": 0,
+    "reason": "No paid image API calls were launched in Phase A; local deterministic SVG mockups were generated instead."
+  },
+  "prompts": [
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-pizza-peel",
+      "slug": "kalm-outdoor-ember-16-pizza-peel",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Ember 16 Pizza Peel, a KALM Outdoor Pizza Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-turning-peel",
+      "slug": "kalm-outdoor-ember-16-turning-peel",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Ember 16 Turning Peel, a KALM Outdoor Turning Peel. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ember-16-insulated-cover",
+      "slug": "kalm-outdoor-ember-16-insulated-cover",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Ember 16 Insulated Cover, a KALM Outdoor Oven Cover. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:primary, forge-2:not_applicable, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-melting-dome",
+      "slug": "kalm-outdoor-forge-2-melting-dome",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Forge 2 Melting Dome, a KALM Outdoor Griddle Dome. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:review_required. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-griddle-tool-set",
+      "slug": "kalm-outdoor-forge-2-griddle-tool-set",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Forge 2 Griddle Tool Set, a KALM Outdoor Griddle Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:general_use. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-forge-2-grease-liner-pack",
+      "slug": "kalm-outdoor-forge-2-grease-liner-pack",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Forge 2 Grease Liner Pack, a KALM Outdoor Grease Liners. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:primary, ridge-4:not_applicable. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-braai-tool-set",
+      "slug": "kalm-outdoor-ridge-4-braai-tool-set",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Ridge 4 Braai Tool Set, a KALM Outdoor Braai Tools. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:general_use, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-ridge-4-smoker-box",
+      "slug": "kalm-outdoor-ridge-4-smoker-box",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for Ridge 4 Smoker Box, a KALM Outdoor Smoker Box. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:not_applicable, forge-2:not_applicable, ridge-4:primary. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "hero",
+      "prompt": "Premium ecommerce hero image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "side",
+      "prompt": "Premium ecommerce side image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "contents",
+      "prompt": "Premium ecommerce contents image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "detail",
+      "prompt": "Premium ecommerce detail image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "lifestyle",
+      "prompt": "Premium ecommerce lifestyle image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "scene",
+      "prompt": "Premium ecommerce scene image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    },
+    {
+      "productId": "kalm-outdoor-universal-prep-tray",
+      "slug": "kalm-outdoor-universal-prep-tray",
+      "view": "compatibility",
+      "prompt": "Premium ecommerce compatibility image for KALM Outdoor Prep Tray, a KALM Outdoor Prep Tray. Outdoor cooking accessory only; do not include KALM Move apparel, existing appliance product files, unrelated brands or unverified measurements. Compatibility context: ember-16:compatible, forge-2:compatible, ridge-4:compatible. Use refined South African patio/outdoor hosting mood, matte black, brushed steel, acacia/sand accents where relevant. No fake certifications, no VAT wording, no supplier claims, no exaggerated scale, no text overlays except subtle KALM Outdoor mark if the final logo asset is supplied."
+    }
+  ]
+}
