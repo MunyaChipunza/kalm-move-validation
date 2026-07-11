@@ -16,7 +16,7 @@ Production was not redeployed from this branch because the branch is report-only
 - Base commit: `a5b459d4c8b65836e6775d9040729ba6f16d0e80`
 - Local recovery commit: `2cc06f2df035968bb44055ba1f1037856c8a9a13`
 - GitHub recovery branch: `kalm-storefront-recovery-20260711`
-- Last GitHub connector commit on branch: `0a443ca19eb70e93d70a8552b42d9df22e29edd2`
+- Branch head: use the current GitHub branch HEAD for the latest connector-created commit.
 - Production URL: `https://kalmcollective.co.za`
 - Netlify site ID: `06334c13-7d82-45f1-b983-4a7295de88d8`
 
