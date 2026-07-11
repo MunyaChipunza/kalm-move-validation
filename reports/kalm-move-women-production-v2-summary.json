@@ -1,0 +1,12 @@
+{
+  "jobs": 88,
+  "counts": {
+    "complete": 25,
+    "failed": 0,
+    "skipped_exists": 0,
+    "skipped_blocked": 62,
+    "blocked_billing_limit": 1
+  },
+  "seconds": 1076.5,
+  "status_path": "reports\\kalm-move-women-production-v2-status.jsonl"
+}

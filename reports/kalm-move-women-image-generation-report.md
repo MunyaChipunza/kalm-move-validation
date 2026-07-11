@@ -37,6 +37,43 @@ The smoke test wrote only to `reports/api-smoke/` and did not overwrite storefro
 
 This confirms the blocker is still on the OpenAI account/project billing limit, not the local browser login or missing connector access.
 
+## V2 Resume Attempt
+
+After Munya reported billing was sorted again, a second smoke test completed successfully. The production manifest was rebuilt as:
+
+`reports/kalm-move-women-production-jobs-v2.jsonl`
+
+The v2 manifest tightened the bottle prompts so front shots are product-only, human bottle shots use adult women only, and no conflicting model language is present.
+
+The v2 production run then completed 25 of 88 jobs before the OpenAI API again returned:
+
+`billing_hard_limit_reached`
+
+The runner stopped immediately and skipped the remaining queued jobs to avoid a broken partial catalogue.
+
+V2 outcome:
+
+| Workstream | Jobs | Status |
+|---|---:|---|
+| KALM Move Everyday Bottle | 15 | 15 generated |
+| KALM Move Slim Wellness Bottle | 12 | 10 generated, 1 blocked by billing limit, 1 skipped |
+| KALM Move Studio Bottle | 12 | Skipped after billing limit |
+| KALM Move Pocket Racerback Crop Bra | 7 | Skipped after billing limit |
+| KALM Move Contrast Flare Set | 13 | Skipped after billing limit |
+| KALM Move Crossline Legging | 13 | Skipped after billing limit |
+| KALM Move Drift Crop Wide Pant | 16 | Skipped after billing limit |
+| Total | 88 | 25 generated, 63 remaining |
+
+V2 audit files:
+
+- `reports/kalm-move-women-production-v2-status.jsonl`
+- `reports/kalm-move-women-production-v2-blocker-summary.json`
+- `reports/kalm-move-women-production-v2-remaining-jobs.jsonl`
+- `reports/contact-sheets/v2-everyday-bottle-completed.jpg`
+- `reports/contact-sheets/v2-slim-wellness-bottle-completed.jpg`
+
+The v2 Everyday Bottle outputs visually pass the corrected bottle direction at contact-sheet level. The full image task still remains incomplete because Studio Bottle and the four new apparel products were not generated.
+
 ## Manifest
 
 Original planning manifest:

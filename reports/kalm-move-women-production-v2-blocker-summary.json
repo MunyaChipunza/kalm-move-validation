@@ -1,0 +1,43 @@
+{
+  "total_jobs": 88,
+  "run": "v2",
+  "counts": {
+    "complete": 25,
+    "blocked_billing_limit": 1,
+    "skipped_blocked": 62
+  },
+  "completed": 25,
+  "remaining": 63,
+  "blocker": "OpenAI API returned billing_hard_limit_reached after 25 completed v2 generations",
+  "blocked_job": "kalm-move-slim-wellness-bottle__sage-green__angle",
+  "by_product": {
+    "KALM Move Everyday Bottle": {
+      "complete": 15
+    },
+    "KALM Move Slim Wellness Bottle": {
+      "complete": 10,
+      "blocked_billing_limit": 1,
+      "skipped_blocked": 1
+    },
+    "KALM Move Studio Bottle": {
+      "skipped_blocked": 12
+    },
+    "KALM Move Pocket Racerback Crop Bra": {
+      "skipped_blocked": 7
+    },
+    "KALM Move Contrast Flare Set": {
+      "skipped_blocked": 13
+    },
+    "KALM Move Crossline Legging": {
+      "skipped_blocked": 13
+    },
+    "KALM Move Drift Crop Wide Pant": {
+      "skipped_blocked": 16
+    }
+  },
+  "remaining_jobs_path": "reports/kalm-move-women-production-v2-remaining-jobs.jsonl",
+  "completed_contact_sheets": [
+    "reports/contact-sheets/v2-everyday-bottle-completed.jpg",
+    "reports/contact-sheets/v2-slim-wellness-bottle-completed.jpg"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "total_jobs": 88,
+  "counts_by_product": {
+    "KALM Move Everyday Bottle": 15,
+    "KALM Move Slim Wellness Bottle": 12,
+    "KALM Move Studio Bottle": 12,
+    "KALM Move Pocket Racerback Crop Bra": 7,
+    "KALM Move Contrast Flare Set": 13,
+    "KALM Move Crossline Legging": 13,
+    "KALM Move Drift Crop Wide Pant": 16
+  },
+  "manifest": "reports/kalm-move-women-production-jobs-v2.jsonl"
+}
