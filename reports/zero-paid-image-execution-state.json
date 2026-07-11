@@ -1,7 +1,7 @@
 {
   "project": "KALM zero-paid-image completion",
-  "status": "local_generation_integration_and_qa_complete_pending_production_release",
-  "updatedAt": "2026-07-12T02:15:00+02:00",
+  "status": "complete",
+  "updatedAt": "2026-07-12T03:25:00+02:00",
   "startingSha": "07258b3a6f2960718750a78b57a01f9537d4ce34",
   "branch": "feature/kalm-zero-paid-imagery-v1",
   "productionUrl": "https://kalmcollective.co.za",
@@ -18,10 +18,11 @@
     "bottle_image_preservation",
     "catalogue_integration",
     "local_storefront_qa",
-    "zero_paid_image_assertion"
+    "zero_paid_image_assertion",
+    "production_release",
+    "production_live_verification",
+    "ncc_update",
+    "final_reporting_commit"
   ],
-  "pending": [
-    "production_release_and_live_verification",
-    "ncc_update_or_fallback_record"
-  ]
+  "pending": []
 }

@@ -14,6 +14,8 @@ The pre-release storefront screenshots are retained in `reports/multi-ai-review/
 
 `storefront/` contains desktop evidence for all nine required Outdoor product routes, plus Outdoor brand/grid, KALM Move collection/product, and the 375 px Outdoor product view. The product-route captures show the six-image concept gallery and exact disclosure. The mobile capture shows the same gallery without price or add-to-bag controls.
 
+The post-deployment captures are `production-outdoor-accessory-desktop.png`, `production-outdoor-accessory-mobile.png`, and `production-move-product-desktop.png`. They were captured from `https://kalmcollective.co.za` after deploy `6a52cf678ede622c9112c7c3` went live.
+
 ## Image-specific KALM Move QA
 
 - `move-contact-sheets/` contains per-product contact sheets for the 294 approved garment corrections.

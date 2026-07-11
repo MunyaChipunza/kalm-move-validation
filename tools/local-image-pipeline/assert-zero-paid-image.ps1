@@ -51,7 +51,9 @@ $result = [ordered]@{
   legacyQuarantineNote = 'Historical tools/kalm-image-api files are read-only legacy evidence and are not part of this local pipeline. Their presence is reported, not executed or approved.'
   checkedPaths = @('tools/local-image-pipeline', 'reports/zero-paid-image-execution-log.md', 'reports/zero-paid-image-assertion.json')
 }
-$result | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath $reportPath -Encoding utf8
+$json = $result | ConvertTo-Json -Depth 6
+$json = $json.Replace("`r`n", "`n")
+[System.IO.File]::WriteAllText($reportPath, "$json`n", [System.Text.UTF8Encoding]::new($false))
 if ($result.status -ne 'passed') {
   throw 'Zero-paid-image assertion failed: prohibited paid-image references were found in the active pipeline or current-run logs.'
 }

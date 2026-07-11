@@ -17,3 +17,11 @@
 - Re-encoded the 348 approved outputs as metadata-stripped RGB WebP at quality 92. The local environment did not expose ImageMagick or FFmpeg on `PATH`, so image structure was checked with Pillow and a native WebP dimension parser instead; no external image-processing service was used.
 - Integrated only approved Outdoor v2 and garment v3 asset paths into the catalogue. Local desktop and 375 px mobile storefront checks confirmed the nine Outdoor product galleries, disclosure, waitlist-only state, and KALM Move v3 gallery references with no browser console errors.
 - Re-ran the zero-paid-image assertion: passed, paid image usage 0.
+
+## 2026-07-12 - Production release and NCC record
+
+- Merged the reviewed feature commit into `master` as `709403ba6198329300c33a5cf07f53100c251738` and pushed it to `origin/master`.
+- Deployed the exact release to the approved `kalm-collective-storefront` Netlify site. Production deploy: `6a52cf678ede622c9112c7c3`; production URL: `https://kalmcollective.co.za`.
+- Verified all nine Outdoor product routes in production: six unique gallery images, exact disclosure, no product price, no add-to-bag control, and waitlist controls present. The 375 x 812 mobile product view passed the same checks.
+- Verified the KALM Move Align Halter Legging Set production route serves v3 gallery assets and retains its normal purchasable state.
+- Updated and re-fetched NCC page `33014308-1ff0-81da-9dbe-e11111561c0b`; the release SHA, deploy ID, 294 approved garment corrections, and final-report references were confirmed present.

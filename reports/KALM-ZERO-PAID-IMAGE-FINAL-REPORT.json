@@ -1,0 +1,52 @@
+{
+  "status": "production_release_verified",
+  "productionUrl": "https://kalmcollective.co.za",
+  "productionReleaseMasterSha": "709403ba6198329300c33a5cf07f53100c251738",
+  "productionDeployId": "6a52cf678ede622c9112c7c3",
+  "uniqueDeployUrl": "https://6a52cf678ede622c9112c7c3--kalm-collective-storefront.netlify.app",
+  "rollbackSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "paidImageUsage": 0,
+  "outdoor": {
+    "approvedImages": 54,
+    "products": 9,
+    "imagesPerProduct": 6,
+    "disclosure": "Pre-production concept imagery. Final sourced product may vary.",
+    "waitlistOnly": true
+  },
+  "kalmMoveWomen": {
+    "approvedGarmentImages": 294,
+    "garmentProducts": 19,
+    "preservedBottleImages": 26,
+    "bottleProducts": 3,
+    "rejectedCandidateImages": 614,
+    "candidateBatches": 2
+  },
+  "validation": {
+    "netlifyBuild": "passed",
+    "catalogue": {
+      "status": "passed",
+      "products": 69,
+      "variants": 713,
+      "warnings": 0,
+      "errors": 0
+    },
+    "outdoor": "passed",
+    "kalmMoveWomen": "passed",
+    "zeroPaidImage": "passed",
+    "gitDiffCheck": "passed"
+  },
+  "liveVerification": {
+    "status": "passed",
+    "outdoorProductRoutes": 9,
+    "outdoorImagesPerRoute": 6,
+    "mobileViewport": "375x812",
+    "outdoorPriceControls": 0,
+    "outdoorAddToBagControls": 0,
+    "moveV3GalleryPathsServed": true,
+    "moveV3GalleryImagesLoaded": 6
+  },
+  "ncc": {
+    "pageId": "33014308-1ff0-81da-9dbe-e11111561c0b",
+    "status": "updated_and_refetched_verified"
+  }
+}
