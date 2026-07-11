@@ -35,3 +35,10 @@
 - Result: Approved local repairs: 0. Every one of the 320 audited records is explicitly preserved in the manifest (294 garment repair records deferred; 26 bottle-accessory records retained outside the garment scope). No v3 image is present or referenced by the live catalogue.
 - Validation: `node tools/validate-kalm-move-women-branding.mjs` passed with paid image usage `0`, 320 audited records, zero approved repairs, and zero live v3 references.
 - Next safe action: Complete catalogue/browser QA and the recovery report/checkpoint; the unresolved image work is documented but does not block unrelated recovery or Outdoor branch-audit work.
+
+## 2026-07-11 23:03 SAST - Outdoor Preproduction Branch Audit
+
+- Action: Fetched and inspected `origin/feature/kalm-outdoor-accessories-preproduction` at the required checkpoint `acefc51abb541722cdbff099afa07c28fdadb187` without switching to, merging, rebasing, or copying the branch wholesale.
+- Result: `reports/KALM-OUTDOOR-BRANCH-AUDIT.md` classifies every checkpoint file. The nine accessory names, IDs, SKU roots, draft descriptions, compatibility relationships, and coming-soon bundle ideas may be adapted.
+- Safety decision: Rejected all 63 generated SVG assets, image-generation prompts/scripts/manifests, and mockup screenshots for live use. They are preproduction concepts, not approved product photography. Rejected all stale-base deletions that would remove recovery evidence.
+- Next safe action: Fetch the current `origin/master`, create `feature/kalm-outdoor-premium-accessories-v2` from that master, then implement a photo-honest, unpriced, non-purchasable accessory waitlist experience.
