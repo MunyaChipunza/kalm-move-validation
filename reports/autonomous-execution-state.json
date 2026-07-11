@@ -2,7 +2,7 @@
   "project": "KALM Collective storefront recovery",
   "status": "in_progress_safe_nonimage_recovery_continuing",
   "startedAt": "2026-07-11T20:55:00+02:00",
-  "updatedAt": "2026-07-11T23:03:01+02:00",
+  "updatedAt": "2026-07-11T23:07:00+02:00",
   "startingSha": "601faa5443f2b193cce6f92c6ee31b5c3d839c72",
   "originalVerifiedCheckpointSha": "3391bf119b577eb2bfbf12237068c9eef2538aec",
   "workingBranch": "agent/kalm-storefront-recovery-checkpoint-20260711",
@@ -45,6 +45,6 @@
     "The current local manifest covers all 320 audited images. It records 294 garment repair records, 26 preserved bottle records, zero approved v3 images, and paid-image usage of zero.",
     "The billing-hard-limit observation is historical only. No paid image API, metered image service, or billing retry will be used in this run.",
     "Commit a7896d3b3052914fa390fed732214342a36f5dea is pushed and verified on the recovery branch; safe non-image work continues.",
-    "The fetched Outdoor preproduction checkpoint acefc51abb541722cdbff099afa07c28fdadb187 was audited without merge. Nine product-planning records can be adapted, but all 63 SVG mockups and generator inputs are rejected for live use."
+    "The fetched Outdoor preproduction checkpoint acefc51abb541722cdbff099afa07c28fdadb187 was audited without merge. Its product identities conflict with the exact V2 mandate and are report-only; all 63 SVG mockups and generator inputs are rejected for live use."
   ]
 }

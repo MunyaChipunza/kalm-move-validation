@@ -42,3 +42,8 @@
 - Result: `reports/KALM-OUTDOOR-BRANCH-AUDIT.md` classifies every checkpoint file. The nine accessory names, IDs, SKU roots, draft descriptions, compatibility relationships, and coming-soon bundle ideas may be adapted.
 - Safety decision: Rejected all 63 generated SVG assets, image-generation prompts/scripts/manifests, and mockup screenshots for live use. They are preproduction concepts, not approved product photography. Rejected all stale-base deletions that would remove recovery evidence.
 - Next safe action: Fetch the current `origin/master`, create `feature/kalm-outdoor-premium-accessories-v2` from that master, then implement a photo-honest, unpriced, non-purchasable accessory waitlist experience.
+
+## 2026-07-11 23:07 SAST - Outdoor Audit Correction
+
+- Action: Re-read the authoritative mandate before starting V2 implementation and identified that the preproduction branch's nine accessories conflict with the exact required V2 product list.
+- Correction: Updated the branch audit so all preproduction product names, identifiers, SKU roots, descriptions, and bundle identities are report-only and discarded. Only generic safety lessons (no paid image use, no live SVG concepts, truthful coming-soon status, and supplier-confirmed compatibility) remain usable.
