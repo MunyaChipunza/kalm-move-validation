@@ -53,7 +53,10 @@ for (const product of data.products || []) {
   if (comingSoon) {
     comingSoonProducts.push(product);
     if (product.availability !== "coming_soon") fail(`${product.id} must use coming_soon availability.`);
-    if (product.image || imageList(product.gallery).length || Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} coming-soon record must not include product imagery or variants.`);
+    const hasConceptImages = Boolean(product.image) || imageList(product.gallery).length > 0;
+    if (Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} coming-soon record must not include variants.`);
+    if (hasConceptImages && !product.conceptImageDisclosure) fail(`${product.id} concept imagery requires a disclosure.`);
+    if (product.brandId === "kalm-outdoor" && !hasConceptImages) fail(`${product.id} Outdoor coming-soon record must include its approved concept gallery.`);
     if (product.photographyStatus !== "Photography in production") fail(`${product.id} must state Photography in production.`);
     if (!Array.isArray(product.compatibleAppliances) || !product.compatibleAppliances.length) fail(`${product.id} missing compatible appliance mapping.`);
   } else if (!exists(product.image)) {

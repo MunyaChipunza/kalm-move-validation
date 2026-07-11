@@ -1,0 +1,16 @@
+{
+  "attempts": [
+    {
+      "attempt": "candidate-1",
+      "rejectedImageCount": 320,
+      "reason": "Visual review found inconsistent lower-body placements, including crotch-adjacent positions. It also incorrectly treated 26 preserved bottle images as garment candidates.",
+      "nextMethod": "Use product-category panel rules, smaller mark scale, fixed cross-view garment regions, and limit correction to the 294 garment images."
+    },
+    {
+      "attempt": "candidate-2",
+      "rejectedImageCount": 294,
+      "reason": "Visual review found that a universal outer-thigh panel can land on exposed skin for short-set products such as the Lightweight Windbreaker Set.",
+      "nextMethod": "Use separate full-length, short-bottom, and upper-garment panel families before renewed visual QA."
+    }
+  ]
+}

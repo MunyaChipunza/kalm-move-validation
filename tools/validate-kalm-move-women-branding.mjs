@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Validate the KALM Move women branding audit and local-repair decision without
- * touching source images or the live catalogue.
+ * Validate the historical KALM Move audit plus the current zero-paid local
+ * branding outputs without touching any source image.
  */
 
 import fs from 'node:fs';
@@ -19,6 +19,8 @@ const assert = (condition, message) => {
 const audit = readJson('reports/kalm-move-women-branding-audit.json');
 const manifest = readJson('reports/kalm-move-women-local-repair-manifest.json');
 const catalogue = readJson('products.json');
+const zeroPaidManifest = readJson('reports/kalm-zero-paid-image-manifest.json');
+const placement = readJson('reports/kalm-move-women-buffalo-placement.json');
 const expectedFields = [
   'product_id',
   'colour',
@@ -69,15 +71,25 @@ for (const record of manifest.records) {
   assert(record.blend_method === 'not_attempted', `Unapproved image must not be marked as composited: ${record.source_path}.`);
 }
 
-for (const product of catalogue.products.filter((product) => product.collection === 'KALM Move')) {
-  const imageText = JSON.stringify(product.images ?? product);
-  assert(!imageText.includes('-v3/'), `Live catalogue references an unapproved v3 image for ${product.id}.`);
+const activeMove = zeroPaidManifest.entries.filter((entry) => entry.workstream === 'kalm_move_women_buffalo_correction');
+const preservedBottles = zeroPaidManifest.entries.filter((entry) => entry.workstream === 'kalm_move_women_bottle_preservation');
+assert(activeMove.length === 294, 'Expected 294 garment correction records in the active zero-paid manifest.');
+assert(preservedBottles.length === 26, 'Expected 26 preserved bottle records in the active zero-paid manifest.');
+assert(activeMove.every((entry) => entry.qaResult === 'approved' && entry.finalHash), 'Every active garment image must be locally approved and hashed.');
+assert(preservedBottles.every((entry) => entry.qaResult === 'preserved_existing'), 'Bottle images must remain preserved, not composited.');
+assert(placement.records.length === 294 && placement.records.every((record) => record.qaResult === 'approved'), 'Placement review must approve exactly the garment-image set.');
+for (const entry of activeMove) assert(fs.existsSync(path.join(root, entry.proposedImagePath)), `Missing approved v3 output: ${entry.proposedImagePath}.`);
+for (const product of catalogue.products.filter((product) => product.brand === 'KALM Move' && product.audience === 'women')) {
+  const imageText = JSON.stringify(product);
+  if (product.title.toLowerCase().includes('bottle')) assert(!imageText.includes('-v3/'), `Bottle product must not reference v3: ${product.id}.`);
+  else assert(imageText.includes('-v3/'), `Garment product is missing approved v3 imagery: ${product.id}.`);
 }
 
 console.log(JSON.stringify({
   status: 'passed',
   paid_image_usage: manifest.paid_image_usage,
   audited_records: manifest.records.length,
-  approved_local_repairs: manifest.summary.approved_local_repairs,
-  live_catalogue_v3_references: 0,
+  approved_local_repairs: activeMove.length,
+  preserved_bottle_records: preservedBottles.length,
+  live_catalogue_v3_references: activeMove.length,
 }, null, 2));

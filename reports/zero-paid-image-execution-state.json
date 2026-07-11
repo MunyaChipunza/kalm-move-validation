@@ -1,0 +1,27 @@
+{
+  "project": "KALM zero-paid-image completion",
+  "status": "local_generation_integration_and_qa_complete_pending_production_release",
+  "updatedAt": "2026-07-12T02:15:00+02:00",
+  "startingSha": "07258b3a6f2960718750a78b57a01f9537d4ce34",
+  "branch": "feature/kalm-zero-paid-imagery-v1",
+  "productionUrl": "https://kalmcollective.co.za",
+  "baselineProductionDeployId": "6a52b608d813d38d4986c54e",
+  "rollbackSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "paidImageUsage": 0,
+  "completed": [
+    "protected_master_baseline",
+    "empty_remote_feature_branch",
+    "official_blender_foundation_install",
+    "isolated_local_python_environment",
+    "local_outdoor_concept_renders",
+    "kalm_move_women_garment_logo_corrections",
+    "bottle_image_preservation",
+    "catalogue_integration",
+    "local_storefront_qa",
+    "zero_paid_image_assertion"
+  ],
+  "pending": [
+    "production_release_and_live_verification",
+    "ncc_update_or_fallback_record"
+  ]
+}

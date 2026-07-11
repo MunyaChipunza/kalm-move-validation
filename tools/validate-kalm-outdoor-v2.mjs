@@ -39,7 +39,12 @@ for (const product of accessories) {
   if (product.price !== null && product.price !== undefined) fail(`${product.id} must not expose a price.`);
   if (product.compareAtPrice !== null && product.compareAtPrice !== undefined) fail(`${product.id} must not expose a comparison price.`);
   if (product.availability !== "coming_soon" || product.publicationStatus !== "published" || product.visibility !== "visible") fail(`${product.id} has an invalid coming-soon publication state.`);
-  if (product.image || (product.gallery || []).length || Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} must not reference product imagery or variants.`);
+  if (!product.image || !Array.isArray(product.gallery) || product.gallery.length !== 6) fail(`${product.id} must reference six approved concept images.`);
+  if (Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} must not reference variants.`);
+  for (const image of product.gallery || []) {
+    if (!image.startsWith(`assets/images/products/kalm-outdoor/accessories/${product.id.replace("kalm-outdoor-", "")}-v2/`) || !fs.existsSync(path.join(root, image))) fail(`${product.id} has an invalid or missing concept image: ${image}.`);
+  }
+  if (product.conceptImageDisclosure !== "Pre-production concept imagery. Final sourced product may vary.") fail(`${product.id} is missing the required concept-image disclosure.`);
   if (product.photographyStatus !== "Photography in production") fail(`${product.id} must expose the Photography in production status.`);
   if (product.ctaLabel !== "Join waitlist") fail(`${product.id} must use Join waitlist as its CTA.`);
   if (!Array.isArray(product.compatibleAppliances) || product.compatibleAppliances.length !== 1 || !anchorIds.has(product.compatibleAppliances[0])) fail(`${product.id} has an invalid appliance compatibility mapping.`);
@@ -68,7 +73,7 @@ const serialisedCatalogue = JSON.stringify(data);
 if (/\.svg/i.test(serialisedCatalogue)) fail("Live product data must not reference SVG concept assets.");
 const script = read("script.js");
 const index = read("index.html");
-for (const requiredText of ["data-waitlist-form", "Photography in production", "isComingSoonProduct", "renderOutdoorApplianceFilter"]) {
+for (const requiredText of ["data-waitlist-form", "Photography in production", "isComingSoonProduct", "renderOutdoorApplianceFilter", "conceptImageDisclosure"]) {
   if (!script.includes(requiredText)) fail(`script.js is missing ${requiredText}.`);
 }
 for (const field of ["name=\"name\"", "name=\"email\"", "name=\"phone\"", "name=\"accessory_or_bundle\"", "name=\"compatible_appliance\"", "name=\"owns_compatible_appliance\"", "name=\"consent\"", "name=\"source\""]) {

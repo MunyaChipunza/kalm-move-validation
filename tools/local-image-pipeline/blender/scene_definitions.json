@@ -1,0 +1,13 @@
+{
+  "resolution": [1200, 1500],
+  "webpQuality": 92,
+  "views": [
+    "hero-three-quarter",
+    "opposite-side",
+    "component-layout",
+    "material-detail",
+    "lifestyle-use",
+    "compatible-appliance"
+  ],
+  "palette": {"warmGrey": [0.18, 0.15, 0.12, 1], "sand": [0.35, 0.29, 0.21, 1], "charcoal": [0.018, 0.02, 0.022, 1]}
+}
