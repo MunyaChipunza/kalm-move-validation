@@ -1,0 +1,17 @@
+{
+  "total_jobs": 88,
+  "completed": 12,
+  "remaining": 76,
+  "run_status_counts": {
+    "complete": 12,
+    "failed": 21
+  },
+  "blocker": "OpenAI API billing_hard_limit_reached after 12 completed generations",
+  "remaining_jobs_path": "reports\\kalm-move-women-production-remaining-jobs.jsonl",
+  "latest_smoke_test": {
+    "path": "reports/api-smoke/status.jsonl",
+    "status": "blocked_billing_limit",
+    "blocker": "OpenAI API returned billing_hard_limit_reached again after secure connector target check"
+  },
+  "connector_target": "Personal / Default project"
+}

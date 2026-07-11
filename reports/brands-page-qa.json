@@ -1,0 +1,138 @@
+{
+  "desktop": {
+    "cards": 5,
+    "marks": 5,
+    "names": [
+      "KS Active",
+      "KALM Move",
+      "KALM Outdoor",
+      "KALM Wellness",
+      "KALM Home"
+    ],
+    "markInfo": [
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KS Active",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Move",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Outdoor",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Wellness",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Home",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      }
+    ]
+  },
+  "mobile": {
+    "cards": 5,
+    "marks": 5,
+    "names": [
+      "KS Active",
+      "KALM Move",
+      "KALM Outdoor",
+      "KALM Wellness",
+      "KALM Home"
+    ],
+    "markInfo": [
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KS Active",
+        "rect": {
+          "w": 102.046875,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Move",
+        "rect": {
+          "w": 99,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Outdoor",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Wellness",
+        "rect": {
+          "w": 132,
+          "h": 132
+        }
+      },
+      {
+        "src": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
+        "naturalWidth": 684,
+        "naturalHeight": 684,
+        "complete": true,
+        "alt": "KALM buffalo mark for KALM Home",
+        "rect": {
+          "w": 99,
+          "h": 132
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "job_id": "kalm-move-everyday-bottle__cream__front",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 118632
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__cream__movement",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/cream/movement.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 85866
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__cream__angle",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/cream/angle.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 126472
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__blush__angle",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/blush/angle.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 98634
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__blush__front",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 103682
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__blush__movement",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/blush/movement.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 101568
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__sage__front",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 78292
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__sage__angle",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/sage/angle.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 139052
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__sage__movement",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/sage/movement.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 120866
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__stone__front",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 134214
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__stone__angle",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/stone/angle.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 89636
+  },
+  {
+    "job_id": "kalm-move-everyday-bottle__stone__movement",
+    "path": "assets/images/products/kalm-move/women/everyday-bottle/stone/movement.webp",
+    "exists": true,
+    "format": "WEBP",
+    "size": [
+      1216,
+      1520
+    ],
+    "ratio": 0.8,
+    "bytes": 165532
+  }
+]

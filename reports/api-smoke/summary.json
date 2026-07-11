@@ -1,0 +1,12 @@
+{
+  "jobs": 1,
+  "counts": {
+    "complete": 0,
+    "failed": 0,
+    "skipped_exists": 0,
+    "skipped_blocked": 0,
+    "blocked_billing_limit": 1
+  },
+  "seconds": 5.2,
+  "status_path": "reports\\api-smoke\\status.jsonl"
+}

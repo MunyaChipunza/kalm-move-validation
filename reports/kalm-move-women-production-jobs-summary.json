@@ -1,0 +1,16 @@
+{
+  "job_count": 88,
+  "products": {
+    "KALM Move Everyday Bottle": 15,
+    "KALM Move Slim Wellness Bottle": 12,
+    "KALM Move Studio Bottle": 12,
+    "KALM Move Pocket Racerback Crop Bra": 7,
+    "KALM Move Contrast Flare Set": 13,
+    "KALM Move Crossline Legging": 13,
+    "KALM Move Drift Crop Wide Pant": 16
+  },
+  "size": "1216x1520",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "format": "webp"
+}
