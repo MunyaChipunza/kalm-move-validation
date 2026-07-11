@@ -1,0 +1,14 @@
+{
+  "seed": 20260712,
+  "products": [
+    {"id":"kalm-outdoor-ember-launch-pro-perforated-peel","slug":"ember-launch-pro-perforated-peel","title":"Ember Launch Pro Perforated Peel","kind":"launch_peel","family":"ember","compatibility":"Ember 16"},
+    {"id":"kalm-outdoor-ember-turn-pro-turning-peel","slug":"ember-turn-pro-turning-peel","title":"Ember Turn Pro Turning Peel","kind":"turning_peel","family":"ember","compatibility":"Ember 16"},
+    {"id":"kalm-outdoor-ember-dough-and-heat-kit","slug":"ember-dough-and-heat-kit","title":"Ember Dough & Heat Kit","kind":"dough_heat","family":"ember","compatibility":"Ember 16"},
+    {"id":"kalm-outdoor-ridge-smart-temperature-system","slug":"ridge-smart-temperature-system","title":"Ridge Smart Temperature System","kind":"temperature","family":"ridge","compatibility":"Ridge 4"},
+    {"id":"kalm-outdoor-ridge-pro-rotisserie-kit","slug":"ridge-pro-rotisserie-kit","title":"Ridge Pro Rotisserie Kit","kind":"rotisserie","family":"ridge","compatibility":"Ridge 4"},
+    {"id":"kalm-outdoor-ridge-cast-iron-sear-system","slug":"ridge-cast-iron-sear-system","title":"Ridge Cast-Iron Sear System","kind":"sear_plate","family":"ridge","compatibility":"Ridge 4"},
+    {"id":"kalm-outdoor-forge-pro-griddle-tool-roll","slug":"forge-pro-griddle-tool-roll","title":"Forge Pro Griddle Tool Roll","kind":"tool_roll","family":"forge","compatibility":"Forge 2"},
+    {"id":"kalm-outdoor-forge-smash-and-steam-kit","slug":"forge-smash-and-steam-kit","title":"Forge Smash & Steam Kit","kind":"smash_steam","family":"forge","compatibility":"Forge 2"},
+    {"id":"kalm-outdoor-forge-season-and-care-kit","slug":"forge-season-and-care-kit","title":"Forge Season & Care Kit","kind":"season_care","family":"forge","compatibility":"Forge 2"}
+  ]
+}

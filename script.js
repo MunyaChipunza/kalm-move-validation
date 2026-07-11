@@ -947,7 +947,7 @@ function renderProduct(slug) {
   if (!product || !isProductPublic(product)) return renderNotFound();
   const comingSoon = isComingSoonProduct(product);
   const defaultColor = comingSoon ? "" : getDefaultColor(product);
-  const defaultImages = comingSoon ? [] : (defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product));
+  const defaultImages = comingSoon ? getProductGalleryImages(product) : (defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product));
   const productAvailability = getProductAvailability(product);
   const manualRelated = (product.relatedProducts || [])
     .map((productId) => findProduct(productId))
@@ -960,7 +960,7 @@ function renderProduct(slug) {
 
   app.innerHTML = `
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
-      ${comingSoon ? renderPhotographyInProduction(product, "product-photography-placeholder") : renderProductGallery(product, defaultImages)}
+      ${comingSoon && !defaultImages.length ? renderPhotographyInProduction(product, "product-photography-placeholder") : renderProductGallery(product, defaultImages)}
       <div class="product-info">
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h1>${escapeHtml(product.title)}</h1>
@@ -968,6 +968,7 @@ function renderProduct(slug) {
           <div class="coming-soon-detail-status">
             <strong>Coming soon</strong>
             <p>${escapeHtml(product.photographyStatus || "Photography in production")}</p>
+            ${product.conceptImageDisclosure ? `<p class="concept-image-disclosure">${escapeHtml(product.conceptImageDisclosure)}</p>` : ""}
             <p>${escapeHtml(product.compatibilityNote || "Compatibility confirmation is pending.")}</p>
           </div>
         ` : `<div class="price-line">${renderPrice(product)}</div>`}
@@ -1580,13 +1581,13 @@ function renderProductCard(product, options = {}) {
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
         ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        ${comingSoon ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
+        ${comingSoon && !product.image ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h3><a href="#/product/${product.slug}">${escapeHtml(product.title)}</a></h3>
         ${comingSoon ? `
-          <p class="card-photo-status">${escapeHtml(product.photographyStatus || "Photography in production")}</p>
+          <p class="card-photo-status">${escapeHtml(product.conceptImageDisclosure || product.photographyStatus || "Photography in production")}</p>
           <p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances?.[0]))}</p>
           <a class="button secondary full card-view-link" href="#/product/${product.slug}">Join waitlist</a>
         ` : `

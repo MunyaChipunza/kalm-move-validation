@@ -1349,6 +1349,11 @@ button {
   color: var(--muted);
 }
 
+.concept-image-disclosure {
+  font-weight: 700;
+  color: var(--ink) !important;
+}
+
 .outdoor-waitlist-form {
   display: grid;
   gap: 14px;

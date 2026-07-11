@@ -5,3 +5,5 @@
 !.env.example
 .DS_Store
 Thumbs.db
+tools/local-image-pipeline/.venv/
+__pycache__/
