@@ -1,8 +1,8 @@
 {
   "project": "KALM Outdoor premium accessories V2",
-  "status": "qa_complete_release_candidate",
-  "updatedAt": "2026-07-11T23:27:17+02:00",
-  "branch": "feature/kalm-outdoor-premium-accessories-v2",
+  "status": "deployed_and_live_verified",
+  "updatedAt": "2026-07-11T23:35:00+02:00",
+  "branch": "master",
   "safeMasterSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
   "rollbackPoint": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
   "paidImageUsage": 0,
@@ -12,7 +12,10 @@
     "outdoor_experience_and_waitlist",
     "product_data_validation",
     "desktop_mobile_accessibility_and_cart_qa",
-    "multi_ai_review_package"
+    "multi_ai_review_package",
+    "master_integration_and_push",
+    "approved_netlify_production_deployment",
+    "live_production_verification"
   ],
   "releaseGates": {
     "exactAccessoryCount": 9,
@@ -24,11 +27,16 @@
     "liveSvgProductReferences": 0,
     "waitlistSuccessErrorDuplicateTested": true,
     "browserConsoleErrors": 0,
-    "deployment": "pending approved-target verification"
+    "deployment": "passed: Netlify production deploy 6a52b608d813d38d4986c54e on the approved target"
+  },
+  "production": {
+    "deployedMasterSha": "e244f825552f89c900474524cef81c730ac1647f",
+    "deployId": "6a52b608d813d38d4986c54e",
+    "url": "https://kalmcollective.co.za",
+    "uniqueDeployUrl": "https://6a52b608d813d38d4986c54e--kalm-collective-storefront.netlify.app"
   },
   "remainingWork": [
-    "Commit and push the V2 branch.",
-    "Merge to master and deploy only if the approved Netlify target remains verified.",
-    "Obtain approved accessory photography and final supplier specifications before converting any item to purchasable."
+    "Obtain approved accessory photography and final supplier specifications before converting any item to purchasable.",
+    "Retain the deferred KALM Move women imagery work until an image-specific correction passes visual QA."
   ]
 }

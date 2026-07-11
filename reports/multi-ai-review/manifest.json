@@ -1,12 +1,19 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-07-11T23:27:17+02:00",
+  "updatedAt": "2026-07-11T23:35:00+02:00",
   "scope": "KALM no-paid-image recovery and KALM Outdoor V2",
   "paidImageUsage": 0,
   "recoveryBranch": "agent/kalm-storefront-recovery-checkpoint-20260711",
   "recoverySha": "ace2b3f4c0cf158500185087fa54b1742b29318c",
   "outdoorBranch": "feature/kalm-outdoor-premium-accessories-v2",
   "safeMasterSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "production": {
+    "deployedMasterSha": "e244f825552f89c900474524cef81c730ac1647f",
+    "deployId": "6a52b608d813d38d4986c54e",
+    "url": "https://kalmcollective.co.za",
+    "liveVerified": true
+  },
   "screenshots": [
     {
       "path": "screenshots/home-desktop.png",

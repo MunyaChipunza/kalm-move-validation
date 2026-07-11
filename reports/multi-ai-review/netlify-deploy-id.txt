@@ -1,1 +1,3 @@
-Pending: no Outdoor V2 deployment has been executed yet.
+6a52b608d813d38d4986c54e
+Production deploy completed on the approved Netlify target.
+Unique deploy URL: https://6a52b608d813d38d4986c54e--kalm-collective-storefront.netlify.app

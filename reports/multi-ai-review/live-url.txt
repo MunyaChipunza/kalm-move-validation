@@ -1,2 +1,2 @@
 https://kalmcollective.co.za
-Current production target; V2 deployment pending release gate.
+Approved production target; Outdoor V2 is live and was verified after deployment.

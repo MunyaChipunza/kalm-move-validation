@@ -47,3 +47,11 @@
 
 - Action: Re-read the authoritative mandate before starting V2 implementation and identified that the preproduction branch's nine accessories conflict with the exact required V2 product list.
 - Correction: Updated the branch audit so all preproduction product names, identifiers, SKU roots, descriptions, and bundle identities are report-only and discarded. Only generic safety lessons (no paid image use, no live SVG concepts, truthful coming-soon status, and supplier-confirmed compatibility) remain usable.
+
+## 2026-07-11 23:35 SAST - Outdoor V2 Production Release and Live Verification
+
+- Action: Built the exact nine-item KALM Outdoor V2 catalogue and six bundle roadmap on `feature/kalm-outdoor-premium-accessories-v2`, using approved appliance photography only and non-photographic “Photography in production” status treatments for every accessory.
+- Action: Merged the recovery checkpoint and Outdoor V2 into `master`; production code was released from `e244f825552f89c900474524cef81c730ac1647f` after all local validators, browser QA, and Netlify build checks passed.
+- Deployment: Published only to the approved Netlify project `kalm-collective-storefront` at `https://kalmcollective.co.za` (deploy `6a52b608d813d38d4986c54e`). The prohibited legacy Netlify target was not used.
+- Live result: Verified home, KALM Move Women (22 cards and no missing image alt), Forge compatibility filtering (three exact coming-soon accessories with no price or Add to Bag), accessory detail state, Ridge appliance cross-sells, waitlist availability, and the 375px Outdoor route. Production browser console errors: 0.
+- Recovery decision: No KALM Move garment source image was changed or deployed. All 294 deferred garment-image records retain their production imagery because zero local corrections passed the visual-quality gate. Paid image usage remains 0.

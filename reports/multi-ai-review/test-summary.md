@@ -17,3 +17,5 @@
 | KALM Move regression | Passed: Women edit renders 22 cards, with no missing image alt attributes |
 | All-brand navigation | Passed: five brand routes visible, with no missing image alt attributes |
 | Browser console errors | 0 |
+| Live production verification | Passed on `https://kalmcollective.co.za`: home, 22-card KALM Move women edit, Forge compatibility filter (3 coming-soon accessories; no prices or Add to Bag), accessory photography-in-production/waitlist state, Ridge cross-sells, and the mobile Outdoor route |
+| Production browser console errors | 0 |
