@@ -1,18 +1,18 @@
 {
   "project": "KALM Collective storefront recovery",
-  "status": "in_progress",
+  "status": "blocked",
   "startedAt": "2026-07-11T20:55:00+02:00",
-  "updatedAt": "2026-07-11T21:05:00+02:00",
-  "startingSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "updatedAt": "2026-07-11T22:33:27.9404403+02:00",
+  "startingSha": "3391bf119b577eb2bfbf12237068c9eef2538aec",
   "workingBranch": "agent/kalm-storefront-recovery-checkpoint-20260711",
-  "currentPhase": "paused_for_system_restart_checkpoint",
+  "currentPhase": "blocked_confirmed_image_api_billing_hard_limit_after_visual_qa",
   "completedPhases": [
     "writable_workspace_created",
     "real_git_metadata_attached",
-    "index_state_normalized"
+    "index_state_normalized",
+    "kalm_move_women_source_inventory_and_visual_audit"
   ],
   "activeWork": [
-    "kalm_move_women_garment_buffalo_branding_audit",
     "versioned_corrected_asset_generation",
     "products_json_catalogue_update",
     "branding_validation",
@@ -20,13 +20,13 @@
   ],
   "blockedWork": [
     {
-      "blocker": "implementation paused by user for system restart",
-      "scope": "all post-checkpoint recovery implementation",
-      "resumeAfterRestart": true
+      "blocker": "The connected OpenAI image API returned billing_hard_limit_reached; deterministic replacement attempts failed visual QA because they could not safely remove legacy marks across variable model poses.",
+      "scope": "KALM Move women garment imagery correction",
+      "resolutionRequired": "Restore image-generation API billing/credits or provide approved corrected assets for every garment colour and gallery view."
     }
   ],
   "pendingTests": [
-    "products_json_parse",
+    "corrected-asset visual QA",
     "image_path_validation",
     "kalm_move_women_branding_validation",
     "catalogue_validation",
@@ -35,13 +35,13 @@
   ],
   "pendingDeployment": false,
   "productionDeployId": "",
-  "lastSafeCommit": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
-  "resumeCommand": "cd \"C:\\Users\\Dell\\.codex\\visualizations\\2026\\07\\07\\019f3c5b-22c3-72f2-8099-c6dc427b2539\\kalm-move-branding-correction-work\"; git status --short; Get-Content reports\\KALM-RECOVERY-RESTART-HANDOFF.md",
+  "lastSafeCommit": "3391bf119b577eb2bfbf12237068c9eef2538aec",
+  "resumeCommand": "cd \"C:\\CodexWork\\kalm-recovery\"; git.exe status --short --branch; Get-Content reports\\kalm-move-women-branding-audit.json",
   "notes": [
-    "User added verified defect: KALM Move women's activewear garment imagery is missing the approved buffalo mark or using the wrong mark.",
-    "Correct website logo remains assets/branding/kalm-move/kalm-move-logo.png.",
-    "Correct garment mark is assets/branding/kalm-buffalo/kalm-buffalo-mark.png.",
-    "Do not overwrite existing approved images; use versioned corrected asset paths.",
-    "Robocopy recovery copy failed earlier; recovery workspace was recreated through git archive and real .git metadata copy."
+    "The website and brand-page logo remains assets/branding/kalm-move/kalm-move-logo.png.",
+    "The required garment mark remains assets/branding/kalm-buffalo/kalm-buffalo-mark.png.",
+    "The source audit contains 22 women products and 320 colour-image records: 19 garment products and 3 bottle accessories.",
+    "Two unapproved deterministic correction attempts were removed after visual QA; products.json has been restored to the verified checkpoint and no new asset path is live.",
+    "No commit, push, deploy, merge, or Outdoor Phase A change was made."
   ]
 }
