@@ -26,3 +26,12 @@
 - Action: Ran two non-destructive, versioned deterministic compositing experiments. Both were rejected during visual QA because they produced duplicate, misplaced, or residual legacy marks.
 - Safety action: Removed both unapproved generated asset trees and restored `products.json` to the verified checkpoint. No source image binary, catalogue reference, approved website logo, commit, push, merge, or deploy was changed.
 - Blocker: `reports/kalm-move-women-production-v2-blocker-summary.json` records `billing_hard_limit_reached` for the connected OpenAI image API. A controlled model-assisted image-edit pass (or user-supplied approved replacements) is required before the corrective assets, catalogue update, validators, QA, commit, push, or deployment can proceed.
+
+## 2026-07-11 22:56 SAST - No-Paid Local Repair Inventory and Contact-Sheet Review
+
+- Authority update: The no-paid-image mandate supersedes the earlier billing-based pause. No OpenAI Images API, paid image service, billing retry, source-image deletion, or live catalogue asset substitution was used.
+- Action: Used local OpenCV and Pillow only to create the image-specific manifest `reports/kalm-move-women-local-repair-manifest.json`, three reviewer-only candidate masks, and 19 product contact sheets. The process never writes into `assets/images/products` and never changes `products.json`.
+- Action: Visually inspected all 19 product contact sheets. The 294 garment records exhibit inconsistent legacy animal marks, mark locations, poses, colours, and gallery views. Several candidate crops are hands, seams, or plain fabric rather than a reliably isolatable mark.
+- Result: Approved local repairs: 0. Every one of the 320 audited records is explicitly preserved in the manifest (294 garment repair records deferred; 26 bottle-accessory records retained outside the garment scope). No v3 image is present or referenced by the live catalogue.
+- Validation: `node tools/validate-kalm-move-women-branding.mjs` passed with paid image usage `0`, 320 audited records, zero approved repairs, and zero live v3 references.
+- Next safe action: Complete catalogue/browser QA and the recovery report/checkpoint; the unresolved image work is documented but does not block unrelated recovery or Outdoor branch-audit work.
