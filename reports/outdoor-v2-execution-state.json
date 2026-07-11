@@ -1,0 +1,34 @@
+{
+  "project": "KALM Outdoor premium accessories V2",
+  "status": "qa_complete_release_candidate",
+  "updatedAt": "2026-07-11T23:27:17+02:00",
+  "branch": "feature/kalm-outdoor-premium-accessories-v2",
+  "safeMasterSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "rollbackPoint": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "paidImageUsage": 0,
+  "sourceImagePolicy": "No generated concept or SVG asset is referenced by live accessory records. Approved anchor-appliance photography is preserved.",
+  "completedPhases": [
+    "outdoor_v2_catalogue_model",
+    "outdoor_experience_and_waitlist",
+    "product_data_validation",
+    "desktop_mobile_accessibility_and_cart_qa",
+    "multi_ai_review_package"
+  ],
+  "releaseGates": {
+    "exactAccessoryCount": 9,
+    "exactBundleCount": 6,
+    "allAccessoriesComingSoon": true,
+    "accessoryPricesAbsent": true,
+    "accessoryStockAbsent": true,
+    "accessoryAddToBagAbsent": true,
+    "liveSvgProductReferences": 0,
+    "waitlistSuccessErrorDuplicateTested": true,
+    "browserConsoleErrors": 0,
+    "deployment": "pending approved-target verification"
+  },
+  "remainingWork": [
+    "Commit and push the V2 branch.",
+    "Merge to master and deploy only if the approved Netlify target remains verified.",
+    "Obtain approved accessory photography and final supplier specifications before converting any item to purchasable."
+  ]
+}
