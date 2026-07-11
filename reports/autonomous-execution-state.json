@@ -1,0 +1,76 @@
+{
+  "project": "KALM Collective storefront recovery",
+  "status": "in_progress",
+  "startedAt": "2026-07-11T19:45:16.6405549+02:00",
+  "updatedAt": "2026-07-11T20:35:00+02:00",
+  "startingSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "workingBranch": "kalm-storefront-recovery-20260711",
+  "currentPhase": "phase-8-push-limited",
+  "completedPhases": [
+    "recovery-workspace-established",
+    "phase-0-audit",
+    "phase-1-protect",
+    "phase-2-recover",
+    "phase-5-local-validation",
+    "phase-7-commit"
+  ],
+  "activeWork": [
+    "Recovery audit committed locally",
+    "GitHub recovery branch created through connector",
+    "Deployment pending because this recovery pass contains reports only and browser/live verification is environment-limited"
+  ],
+  "blockedWork": [
+    {
+      "blocker": "G:\\My Drive write denied for ordinary files and .git entries",
+      "completedWork": "Partial destination preserved as kalm-variant-fix-work.partial; recovery repo created in temp",
+      "exactMissingItem": "Writable persistent repository path under G:\\My Drive",
+      "userActionRequired": "None during current run; continuing in temp workspace",
+      "resumeCommand": "powershell -ExecutionPolicy Bypass -File scripts/resume-kalm-recovery.ps1",
+      "risk": "Temp workspace is less durable than Drive"
+    },
+    {
+      "blocker": "Bundled Playwright Chromium launch blocked by Windows spawn EPERM",
+      "completedWork": "Playwright module resolution fixed; static server script prepared",
+      "exactMissingItem": "Permission to launch browser binary or alternative browser-control endpoint",
+      "userActionRequired": "None until final escalation; non-browser QA completed",
+      "resumeCommand": "powershell -ExecutionPolicy Bypass -File scripts/resume-kalm-recovery.ps1",
+      "risk": "Screenshot/browser evidence cannot be produced in this environment"
+    },
+    {
+      "blocker": "Shell HTTPS fetch to live Netlify endpoints fails with TLS receive error",
+      "completedWork": "Web tool confirms KALM homepage content; shell local validation completed",
+      "exactMissingItem": "Reliable local network/TLS path for production asset verification",
+      "userActionRequired": "None until final escalation; live verification remains limited",
+      "resumeCommand": "powershell -ExecutionPolicy Bypass -File scripts/resume-kalm-recovery.ps1",
+      "risk": "Cannot prove live products.json through shell"
+    },
+    {
+      "blocker": "Local Git HTTPS push blocked by missing bundled remote-https helper and system Git proxy failure",
+      "completedWork": "Recovery branch created and report files uploaded through GitHub connector",
+      "exactMissingItem": "Working local Git HTTPS network path or accepted connector-based PR workflow",
+      "userActionRequired": "None during current report-only recovery branch upload",
+      "resumeCommand": "powershell -ExecutionPolicy Bypass -File scripts/resume-kalm-recovery.ps1",
+      "risk": "Local commit SHA differs from connector-created GitHub commits"
+    }
+  ],
+  "pendingTests": [
+    "live production browser verification",
+    "Netlify deployment verification"
+  ],
+  "pendingDeployment": true,
+  "productionDeployId": "",
+  "lastSafeCommit": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "resumeCommand": "powershell -ExecutionPolicy Bypass -File scripts/resume-kalm-recovery.ps1",
+  "notes": [
+    "Robocopy failed due repeated access denied changing attributes on G:\\My Drive\\kalm-variant-fix-work.",
+    "Git clone into G:\\My Drive failed because .git file/directory creation is denied.",
+    "Checkout into G:\\My Drive failed because ordinary file creation is denied.",
+    "Continuing from temp recovery workspace with GitHub remote restored.",
+    "Phase 0 audit report created.",
+    "Storefront catalogue validation passed: 60 products, 713 variants, 0 warnings, 0 errors.",
+    "KALM Move women gallery wiring report created: 22 products, no missing image paths.",
+    "Intranet TypeScript no-emit check passed.",
+    "Intranet VAT compliance test passed.",
+    "GitHub branch was created via connector because local Git HTTPS was blocked."
+  ]
+}
