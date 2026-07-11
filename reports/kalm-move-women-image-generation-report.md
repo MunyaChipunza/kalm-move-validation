@@ -180,3 +180,28 @@ Bottle product records were not changed for the image rebuild.
 No new products were added to `products.json` because the required generated assets do not yet exist. This avoids broken paths, placeholder images and unsupported live products.
 
 The Brands page metadata change is separate from the image rebuild and is tracked in `BRAND_ASSET_MAP.md`.
+
+## Basic Live Coverage Pass
+
+Date: 2026-07-11
+
+After the full API/CLI workflow again returned `billing_hard_limit_reached`, Munya approved switching to a lower-cost basic image generation path for the remainder.
+
+Outcome:
+
+| Area | Result |
+|---|---|
+| KALM Move Everyday Bottle | Completed API/CLI review outputs copied into storefront assets for all five colours, three images per colour |
+| KALM Move Slim Wellness Bottle | Completed API/CLI review outputs copied where available; basic fallback heroes added for Dusty Pink and Sage Green |
+| KALM Move Studio Bottle | Basic front hero images added for Stone, Sand, Lavender Grey and Soft Olive |
+| KALM Move Pocket Racerback Crop Bra | Added as a new live product with Red and Brown basic hero images |
+| KALM Move Contrast Flare Set | Added as a new live product with Gray, Pink, Purple and Green basic hero images |
+| KALM Move Crossline Legging | Added as a new live product with Red, Blue, Black and Pink basic hero images |
+| KALM Move Drift Crop Wide Pant | Added as a new live product with Cream White, Sunny Orange, Millennial Pink, Wine Red and Black basic hero images |
+
+This pass intentionally uses single-image galleries for fallback-generated colours. The goal is complete live variant coverage without broken paths, supplier screenshots or incomplete product records. A future premium pass can add angle, back and movement views when image generation budget allows.
+
+Basic QA reference:
+
+- `reports/kalm-women-basic-live-coverage-20260711.md`
+- `reports/contact-sheets/kalm-women-basic-live-coverage-20260711.jpg`

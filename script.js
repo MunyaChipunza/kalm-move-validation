@@ -572,8 +572,6 @@ function renderBrands() {
             <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
             <div class="brand-content">
               <img class="brand-card-logo brand-card-mark" src="${escapeHtml(getBrandsPageMark())}" alt="${escapeAttribute(`KALM buffalo mark for ${brand.name}`)}" width="1254" height="1254" loading="eager" decoding="async">
-              <h2>${escapeHtml(brand.name)}</h2>
-              <p>${escapeHtml(brand.summary)}</p>
             </div>
           </a>
         </article>

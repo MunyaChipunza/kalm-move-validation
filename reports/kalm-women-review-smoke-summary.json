@@ -1,0 +1,12 @@
+{
+  "jobs": 1,
+  "counts": {
+    "complete": 1,
+    "failed": 0,
+    "skipped_exists": 0,
+    "skipped_blocked": 0,
+    "blocked_billing_limit": 0
+  },
+  "seconds": 127.7,
+  "status_path": "reports\\kalm-women-review-smoke-status.jsonl"
+}

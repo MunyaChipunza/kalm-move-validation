@@ -1,0 +1,12 @@
+{
+  "jobs": 23,
+  "counts": {
+    "complete": 0,
+    "failed": 0,
+    "skipped_exists": 2,
+    "skipped_blocked": 19,
+    "blocked_billing_limit": 2
+  },
+  "seconds": 4.8,
+  "status_path": "reports\\kalm-women-basic-hero-status.jsonl"
+}

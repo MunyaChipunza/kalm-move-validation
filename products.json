@@ -1,7 +1,7 @@
 {
   "meta": {
     "store": "KALM Collective",
-    "updated": "2026-07-10",
+    "updated": "2026-07-11",
     "currency": "ZAR",
     "publicDomain": "kalmcollective.co.za",
     "heroImage": "assets/images/home-hero-shop.webp",
@@ -3336,6 +3336,345 @@
       "metaDescription": "A clean shaker bottle for training days and post-session routines."
     },
     {
+      "id": "kalm-move-pocket-racerback-crop-bra",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Women",
+      "category": "activewear",
+      "type": "Top",
+      "title": "KALM Move Pocket Racerback Crop Bra",
+      "slug": "kalm-move-pocket-racerback-crop-bra",
+      "price": 399,
+      "compareAtPrice": 459,
+      "colors": [
+        "Red",
+        "Brown"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp",
+      "description": "A longline racerback crop bra with clean storage details.",
+      "shortDescription": "A longline racerback crop bra with clean storage details.",
+      "longDescription": "The Pocket Racerback Crop Bra is a fitted active crop with high arm openings, a supportive longline shape and practical pocket details for studio days, walks and light training.",
+      "features": [
+        "Longline crop fit",
+        "Racerback-inspired active shape",
+        "Side phone pocket detail",
+        "Clean high arm opening"
+      ],
+      "detailBullets": [
+        "Longline crop fit",
+        "Racerback-inspired active shape",
+        "Side phone pocket detail",
+        "Clean high arm opening"
+      ],
+      "fitNotes": "Close active fit. Choose your usual size for a held-in feel.",
+      "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
+      "sku": "KM-W-POCKET-RACERBACK-CROP-BRA",
+      "tags": [
+        "activewear",
+        "kalm-move",
+        "women",
+        "new-in",
+        "tops"
+      ],
+      "audience": "women",
+      "moveCategory": "tops",
+      "variantImages": {
+        "Red": {
+          "hero": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp"
+          ]
+        },
+        "Brown": {
+          "hero": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp"
+          ]
+        }
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp"
+      ],
+      "metaTitle": "KALM Move Pocket Racerback Crop Bra | KALM Move",
+      "metaDescription": "A longline racerback crop bra with clean storage details."
+    },
+    {
+      "id": "kalm-move-contrast-flare-set",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Women",
+      "category": "activewear",
+      "type": "Set",
+      "title": "KALM Move Contrast Flare Set",
+      "slug": "kalm-move-contrast-flare-set",
+      "price": 699,
+      "compareAtPrice": 799,
+      "colors": [
+        "Gray",
+        "Pink",
+        "Purple",
+        "Green"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp",
+      "description": "A contrast-trim crop and flare-leg set for studio-to-everyday wear.",
+      "shortDescription": "A contrast-trim crop and flare-leg set for studio-to-everyday wear.",
+      "longDescription": "The Contrast Flare Set pairs a V-neck crop top with high-waist flare leggings and crisp contrast trim through the neckline, waistband and leg line.",
+      "features": [
+        "V-neck crop top",
+        "Contrast binding detail",
+        "Crossover waistband trim",
+        "Flare-leg active pant"
+      ],
+      "detailBullets": [
+        "V-neck crop top",
+        "Contrast binding detail",
+        "Crossover waistband trim",
+        "Flare-leg active pant"
+      ],
+      "fitNotes": "Close active fit. Choose your usual size for a held-in feel.",
+      "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
+      "sku": "KM-W-CONTRAST-FLARE-SET",
+      "tags": [
+        "activewear",
+        "kalm-move",
+        "women",
+        "new-in",
+        "bottoms"
+      ],
+      "audience": "women",
+      "moveCategory": "bottoms",
+      "variantImages": {
+        "Gray": {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp"
+          ]
+        },
+        "Pink": {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp"
+          ]
+        },
+        "Purple": {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp"
+          ]
+        },
+        "Green": {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp"
+          ]
+        }
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp"
+      ],
+      "metaTitle": "KALM Move Contrast Flare Set | KALM Move",
+      "metaDescription": "A contrast-trim crop and flare-leg set for studio-to-everyday wear."
+    },
+    {
+      "id": "kalm-move-crossline-legging",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Women",
+      "category": "activewear",
+      "type": "Legging",
+      "title": "KALM Move Crossline Legging",
+      "slug": "kalm-move-crossline-legging",
+      "price": 429,
+      "compareAtPrice": 499,
+      "colors": [
+        "Red",
+        "Blue",
+        "Black",
+        "Pink"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/women/crossline-legging/red/front.webp",
+      "description": "A high-waist legging with crossover trim and a clean active line.",
+      "shortDescription": "A high-waist legging with crossover trim and a clean active line.",
+      "longDescription": "The Crossline Legging keeps the focus on a held-in high waist, contrast crossover detail and a slim active profile for movement and everyday styling.",
+      "features": [
+        "High-waist active fit",
+        "Crossover waistband trim",
+        "Contrast side piping",
+        "Full-length legging profile"
+      ],
+      "detailBullets": [
+        "High-waist active fit",
+        "Crossover waistband trim",
+        "Contrast side piping",
+        "Full-length legging profile"
+      ],
+      "fitNotes": "Close active fit. Choose your usual size for a held-in feel.",
+      "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
+      "sku": "KM-W-CROSSLINE-LEGGING",
+      "tags": [
+        "activewear",
+        "kalm-move",
+        "women",
+        "new-in",
+        "bottoms"
+      ],
+      "audience": "women",
+      "moveCategory": "bottoms",
+      "variantImages": {
+        "Red": {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/red/front.webp"
+          ]
+        },
+        "Blue": {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp"
+          ]
+        },
+        "Black": {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/black/front.webp"
+          ]
+        },
+        "Pink": {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp"
+          ]
+        }
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/crossline-legging/red/front.webp"
+      ],
+      "metaTitle": "KALM Move Crossline Legging | KALM Move",
+      "metaDescription": "A high-waist legging with crossover trim and a clean active line."
+    },
+    {
+      "id": "kalm-move-drift-crop-wide-pant",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Women",
+      "category": "activewear",
+      "type": "Pant",
+      "title": "KALM Move Drift Crop Wide Pant",
+      "slug": "kalm-move-drift-crop-wide-pant",
+      "price": 499,
+      "compareAtPrice": 579,
+      "colors": [
+        "Cream White",
+        "Sunny Orange",
+        "Millennial Pink",
+        "Wine Red",
+        "Black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "badge": "New in",
+      "ctaLabel": "Add to bag",
+      "stockLabel": "Selected sizes available",
+      "image": "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp",
+      "description": "A cropped wide-leg active pant with an easy studio shape.",
+      "shortDescription": "A cropped wide-leg active pant with an easy studio shape.",
+      "longDescription": "The Drift Crop Wide Pant has a smooth pull-on waist and cropped wide leg that works for studio days, errands and relaxed movement.",
+      "features": [
+        "Smooth pull-on waistband",
+        "Cropped wide-leg shape",
+        "Soft active drape",
+        "Easy everyday styling"
+      ],
+      "detailBullets": [
+        "Smooth pull-on waistband",
+        "Cropped wide-leg shape",
+        "Soft active drape",
+        "Easy everyday styling"
+      ],
+      "fitNotes": "Close active fit. Choose your usual size for a held-in feel.",
+      "care": "Cold gentle wash. Dry flat in shade. Do not bleach or tumble dry.",
+      "sku": "KM-W-DRIFT-CROP-WIDE-PANT",
+      "tags": [
+        "activewear",
+        "kalm-move",
+        "women",
+        "new-in",
+        "bottoms"
+      ],
+      "audience": "women",
+      "moveCategory": "bottoms",
+      "variantImages": {
+        "Cream White": {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp"
+          ]
+        },
+        "Sunny Orange": {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp"
+          ]
+        },
+        "Millennial Pink": {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp"
+          ]
+        },
+        "Wine Red": {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp"
+          ]
+        },
+        "Black": {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp"
+          ]
+        }
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp"
+      ],
+      "metaTitle": "KALM Move Drift Crop Wide Pant | KALM Move",
+      "metaDescription": "A cropped wide-leg active pant with an easy studio shape."
+    },
+    {
       "id": "kalm-move-everyday-bottle",
       "brand": "KALM Move",
       "brandId": "kalm-move",
@@ -3508,24 +3847,19 @@
           "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
           "gallery": [
             "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/angle.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/movement.webp"
+            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/angle.webp"
           ]
         },
         "Dusty Pink": {
           "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/angle.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/movement.webp"
+            "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp"
           ]
         },
         "Sage Green": {
           "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/angle.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/movement.webp"
+            "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp"
           ]
         }
       },
@@ -3597,40 +3931,30 @@
         "Stone": {
           "hero": "assets/images/products/kalm-move/women/studio-bottle/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle/stone/front.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/stone/angle.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/stone/movement.webp"
+            "assets/images/products/kalm-move/women/studio-bottle/stone/front.webp"
           ]
         },
         "Sand": {
           "hero": "assets/images/products/kalm-move/women/studio-bottle/sand/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle/sand/front.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/sand/angle.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/sand/movement.webp"
+            "assets/images/products/kalm-move/women/studio-bottle/sand/front.webp"
           ]
         },
         "Lavender Grey": {
           "hero": "assets/images/products/kalm-move/women/studio-bottle/lavender-grey/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle/lavender-grey/front.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/lavender-grey/angle.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/lavender-grey/movement.webp"
+            "assets/images/products/kalm-move/women/studio-bottle/lavender-grey/front.webp"
           ]
         },
         "Soft Olive": {
           "hero": "assets/images/products/kalm-move/women/studio-bottle/soft-olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle/soft-olive/front.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/soft-olive/angle.webp",
-            "assets/images/products/kalm-move/women/studio-bottle/soft-olive/movement.webp"
+            "assets/images/products/kalm-move/women/studio-bottle/soft-olive/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/studio-bottle/stone/front.webp",
-        "assets/images/products/kalm-move/women/studio-bottle/stone/angle.webp",
-        "assets/images/products/kalm-move/women/studio-bottle/stone/movement.webp"
+        "assets/images/products/kalm-move/women/studio-bottle/stone/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Studio Bottle | KALM Move",

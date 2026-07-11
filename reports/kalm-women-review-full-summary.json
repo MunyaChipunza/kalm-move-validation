@@ -1,0 +1,12 @@
+{
+  "jobs": 88,
+  "counts": {
+    "complete": 19,
+    "failed": 0,
+    "skipped_exists": 1,
+    "skipped_blocked": 67,
+    "blocked_billing_limit": 1
+  },
+  "seconds": 1219.4,
+  "status_path": "reports\\kalm-women-review-full-status.jsonl"
+}
