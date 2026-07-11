@@ -14,7 +14,8 @@ const state = {
   hasRenderedRoute: false,
   homeSectionsTimer: null,
   currentRouteKey: "",
-  scrollPositions: new Map()
+  scrollPositions: new Map(),
+  activeLightbox: null
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -28,10 +29,15 @@ const moveAudiences = [
   { id: "men", name: "Men" }
 ];
 const moveCategories = [
+  { id: "new-in", name: "New In" },
+  { id: "sets", name: "Sets" },
+  { id: "leggings", name: "Leggings" },
+  { id: "sports-bras", name: "Sports Bras" },
   { id: "shorts", name: "Shorts" },
   { id: "tops", name: "Tops" },
   { id: "bottoms", name: "Bottoms" },
-  { id: "layers", name: "Layers" },
+  { id: "layers", name: "Jackets & Layers" },
+  { id: "jumpsuits-rompers", name: "Jumpsuits & Rompers" },
   { id: "accessories", name: "Accessories" }
 ];
 let deferredImageObserver = null;
@@ -73,7 +79,11 @@ function bindChrome() {
         card?.querySelectorAll("[data-size-select], [data-color-select]").forEach((field) => field.setAttribute("aria-invalid", "true"));
         return;
       }
-      addToBag(productId, size, color);
+      const result = addToBag(productId, size, color);
+      if (!result.ok) {
+        if (error) error.textContent = result.message;
+        return;
+      }
       addButton.textContent = "Added";
       window.setTimeout(() => {
         const product = findProduct(productId);
@@ -111,6 +121,33 @@ function bindChrome() {
       const scope = galleryButton.closest("[data-product-scope]");
       updateGalleryImage(scope, galleryButton.getAttribute("data-gallery-image"));
     }
+
+    const galleryDot = event.target.closest("[data-gallery-index]");
+    if (galleryDot) {
+      const scope = galleryDot.closest("[data-product-scope]");
+      updateGalleryByIndex(scope, Number(galleryDot.getAttribute("data-gallery-index")));
+    }
+
+    if (event.target.closest("[data-filter-toggle]")) {
+      document.querySelector("[data-filter-shell]")?.classList.toggle("filters-open");
+    }
+
+    if (event.target.closest("[data-filter-close]")) {
+      document.querySelector("[data-filter-shell]")?.classList.remove("filters-open");
+    }
+
+    const lightboxOpen = event.target.closest("[data-lightbox-open]");
+    if (lightboxOpen) {
+      const scope = lightboxOpen.closest("[data-product-scope]");
+      openLightbox(scope, getActiveGalleryIndex(scope));
+    }
+
+    if (event.target.closest("[data-lightbox-close]")) closeLightbox();
+
+    const lightboxNav = event.target.closest("[data-lightbox-nav]");
+    if (lightboxNav) {
+      moveLightbox(Number(lightboxNav.getAttribute("data-lightbox-nav")));
+    }
   });
 
   document.addEventListener("change", (event) => {
@@ -119,6 +156,26 @@ function bindChrome() {
     const scope = field.closest("[data-product-scope]");
     clearVariantError(scope);
     if (field.matches("[data-color-select]")) updateVariantImage(scope, field.value);
+    updateProductAvailabilityState(scope);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (state.activeLightbox) {
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowRight") moveLightbox(1);
+      if (event.key === "ArrowLeft") moveLightbox(-1);
+      return;
+    }
+    const track = event.target.closest?.("[data-product-gallery-track]");
+    if (!track) return;
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      updateGalleryByIndex(track.closest("[data-product-scope]"), getActiveGalleryIndex(track.closest("[data-product-scope]")) + 1);
+    }
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      updateGalleryByIndex(track.closest("[data-product-scope]"), getActiveGalleryIndex(track.closest("[data-product-scope]")) - 1);
+    }
   });
 
   searchPanel?.addEventListener("submit", (event) => event.preventDefault());
@@ -255,7 +312,8 @@ function scheduleHomeSections(sections) {
 }
 
 function renderHome({ preserveHero = false } = {}) {
-  const { meta, brands, categories, products } = state.data;
+  const { meta, brands, categories } = state.data;
+  const products = getPublicProducts();
   setDocumentMeta(
     "KALM Collective | Premium Movement, Outdoor, Wellness and Home",
     "Shop KALM Collective across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home."
@@ -473,10 +531,17 @@ function renderShop(params = new URLSearchParams()) {
   const category = params.get("category") || "all";
   const audience = params.get("audience") || "all";
   const moveCategory = params.get("moveCategory") || "all";
+  const size = params.get("size") || "all";
+  const color = params.get("color") || "all";
+  const availability = params.get("availability") || "all";
   const sort = params.get("sort") || "featured";
   const search = params.get("search") || "";
-  const products = sortProducts(filterProducts({ brand, category, audience, moveCategory, search }), sort);
+  const filterState = { brand, category, audience, moveCategory, size, color, availability, search };
+  const products = sortProducts(filterProducts(filterState), sort);
   const heading = shopHeading({ brand, category, audience, moveCategory, search });
+  const relevantProducts = filterProducts({ brand, category, audience, moveCategory, size: "all", color: "all", availability: "all", search });
+  const moveAudience = brand === "kalm-move" ? audience : "all";
+  const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, sort, search });
   setDocumentMeta(
     `${heading} | KALM Collective`,
     "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear."
@@ -489,8 +554,18 @@ function renderShop(params = new URLSearchParams()) {
       <p>Curated essentials for movement, wellness, home and outdoor living.</p>
     </section>
 
-    <section class="shop-layout">
+    ${brand === "kalm-move" ? renderMoveShoppingHeader(moveAudience, moveCategory) : ""}
+
+    <section class="shop-layout" data-filter-shell>
+      <div class="mobile-filter-bar">
+        <button class="button secondary" type="button" data-filter-toggle>Filter and sort</button>
+        <span>${products.length} styles</span>
+      </div>
       <aside class="filter-panel" aria-label="Shop filters">
+        <div class="filter-panel-head">
+          <strong>Filter</strong>
+          <button type="button" data-filter-close aria-label="Close filters">Close</button>
+        </div>
         <form data-filter-form>
           <label>Brand
             <select name="brand">
@@ -514,10 +589,21 @@ function renderShop(params = new URLSearchParams()) {
             <label>Move category
               <select name="moveCategory">
                 <option value="all">All KALM Move</option>
-                ${moveCategories.map((item) => `<option value="${item.id}" ${moveCategory === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
+                ${getMoveCategoryOptions(audience).map((item) => `<option value="${item.id}" ${moveCategory === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
               </select>
             </label>
           ` : ""}
+          ${renderFilterSelect("size", "Size", size, getAvailableSizes(relevantProducts), "All sizes")}
+          ${renderFilterSelect("color", "Colour", color, getAvailableColors(relevantProducts), "All colours")}
+          <label>Availability
+            <select name="availability">
+              <option value="all">All availability</option>
+              <option value="in_stock" ${availability === "in_stock" ? "selected" : ""}>In stock</option>
+              <option value="low_stock" ${availability === "low_stock" ? "selected" : ""}>Low stock</option>
+              <option value="out_of_stock" ${availability === "out_of_stock" ? "selected" : ""}>Sold out</option>
+              <option value="preorder" ${availability === "preorder" ? "selected" : ""}>Preorder</option>
+            </select>
+          </label>
           <label>Sort
             <select name="sort">
               <option value="featured" ${sort === "featured" ? "selected" : ""}>Featured</option>
@@ -536,6 +622,7 @@ function renderShop(params = new URLSearchParams()) {
           <span>${products.length} styles</span>
           <a href="#/shop">Clear filters</a>
         </div>
+        ${activeFilters.length ? `<div class="active-filter-row">${activeFilters.map((item) => `<a href="${item.href}">${escapeHtml(item.label)} x</a>`).join("")}</div>` : ""}
         <div class="product-grid">
           ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 12 })).join("") : renderEmptyState("No products match those filters.")}
         </div>
@@ -586,7 +673,7 @@ function renderBrands() {
 function renderBrand(brandId) {
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
-  const products = state.data.products.filter((product) => product.brandId === brand.id);
+  const products = getPublicProducts().filter((product) => product.brandId === brand.id);
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
     <section class="brand-hero">
@@ -619,30 +706,39 @@ function renderBrand(brandId) {
 }
 
 function renderKalmMoveSubcategories() {
-  const menCategoryLinks = moveCategories.map((category) => `
-    <a href="#/shop?brand=kalm-move&audience=men&moveCategory=${category.id}">${escapeHtml(category.name)}</a>
-  `).join("");
+  const women = getPublicProducts().find((product) => product.brandId === "kalm-move" && product.audience === "women");
+  const men = getPublicProducts().find((product) => product.brandId === "kalm-move" && product.audience === "men");
+  const links = [
+    ...getMoveCategoryOptions("women").map((category) => ({ ...category, audience: "women" })),
+    ...getMoveCategoryOptions("men").map((category) => ({ ...category, audience: "men" }))
+  ];
   return `
     <section class="section-block move-subcategories">
       <div class="section-head">
         <div>
           <p class="eyebrow">KALM Move</p>
-          <h2>Choose your fit</h2>
+          <h2>Choose your edit</h2>
+          <p class="section-copy">Activewear and accessories arranged by audience, then by the categories that currently exist in the catalogue.</p>
         </div>
       </div>
       <div class="move-audience-grid">
-        <a class="move-audience-card" href="#/shop?brand=kalm-move&audience=women">
+        <a class="move-audience-card visual" href="#/shop?brand=kalm-move&audience=women">
+          <img src="${escapeHtml(women?.image || "assets/images/kalm-move-brand-tile.webp")}" alt="KALM Move women edit" width="760" height="950" loading="lazy" decoding="async">
           <span>Women</span>
           <p>Studio layers, active sets and everyday movement accessories.</p>
         </a>
-        <a class="move-audience-card" href="#/shop?brand=kalm-move&audience=men">
+        <a class="move-audience-card visual" href="#/shop?brand=kalm-move&audience=men">
+          <img src="${escapeHtml(men?.image || "assets/images/kalm-move-brand-tile.webp")}" alt="KALM Move men edit" width="760" height="950" loading="lazy" decoding="async">
           <span>Men</span>
           <p>Clean performance staples across shorts, tops, layers and accessories.</p>
         </a>
       </div>
-      <div class="move-category-links" aria-label="KALM Move men categories">
-        ${menCategoryLinks}
-        <a href="#/shop?brand=kalm-move&audience=women&moveCategory=accessories">Women Accessories</a>
+      <div class="move-category-links" aria-label="KALM Move categories">
+        <a href="#/shop?brand=kalm-move&category=new-in">New In</a>
+        <a href="#/shop?brand=kalm-move">Shop All</a>
+        ${links.map((category) => `
+          <a href="#/shop?brand=kalm-move&audience=${category.audience}&moveCategory=${category.id}">${escapeHtml(moveAudienceName(category.audience))} ${escapeHtml(category.name)}</a>
+        `).join("")}
       </div>
     </section>
   `;
@@ -650,22 +746,22 @@ function renderKalmMoveSubcategories() {
 
 function renderProduct(slug) {
   const product = state.data.products.find((item) => item.slug === slug);
-  if (!product) return renderNotFound();
+  if (!product || !isProductPublic(product)) return renderNotFound();
+  const defaultColor = getDefaultColor(product);
+  const defaultImages = defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product);
+  const productAvailability = getProductAvailability(product);
   const manualRelated = (product.relatedProducts || [])
     .map((productId) => findProduct(productId))
-    .filter(Boolean);
+    .filter((item) => item && isProductPublic(item));
   const related = (manualRelated.length ? manualRelated : state.data.products
-    .filter((item) => item.brandId === product.brandId && item.id !== product.id))
+    .filter((item) => item.brandId === product.brandId && item.id !== product.id && isProductPublic(item)))
     .slice(0, 4);
   const details = product.features || product.detailBullets || [];
   setDocumentMeta(product.metaTitle || `${product.title} | ${product.brand}`, product.metaDescription || product.description);
 
   app.innerHTML = `
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
-      <div class="product-gallery">
-        <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="900" height="1125" data-product-image>
-        ${renderProductGallery(product)}
-      </div>
+      ${renderProductGallery(product, defaultImages)}
       <div class="product-info">
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h1>${escapeHtml(product.title)}</h1>
@@ -674,23 +770,22 @@ function renderProduct(slug) {
         <div class="selector-row">
           <label>Colour
             <select data-color-select>
-              <option value="">Choose colour</option>
-              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}">${escapeHtml(color)}</option>`).join("")}
+              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}" ${color === defaultColor ? "selected" : ""} ${isColorUnavailable(product, color) ? "disabled" : ""}>${escapeHtml(color)}${isColorUnavailable(product, color) ? " - sold out" : ""}</option>`).join("")}
             </select>
           </label>
           <label>Size
             <select data-size-select>
               <option value="">Choose size</option>
-              ${product.sizes.map((size) => `<option value="${escapeAttribute(size)}">${escapeHtml(size)}</option>`).join("")}
+              ${renderSizeOptions(product, defaultColor)}
             </select>
           </label>
         </div>
         ${renderVariantPreviews(product)}
         <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
 
-        <button class="button primary full" type="button" data-add-to-bag="${product.id}">${escapeHtml(product.ctaLabel)}</button>
+        <button class="button primary full" type="button" data-add-to-bag="${product.id}" ${productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "disabled" : ""}>${escapeHtml(productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "Sold out" : product.ctaLabel)}</button>
 
-        <p class="stock-line">${escapeHtml(product.stockLabel)}</p>
+        <p class="stock-line" data-stock-status>${escapeHtml(getStockMessage(product, defaultColor))}</p>
         ${product.sku ? `<p class="sku-line">SKU: ${escapeHtml(product.sku)}</p>` : ""}
         <p>${escapeHtml(product.longDescription || product.description)}</p>
 
@@ -737,6 +832,9 @@ function renderProduct(slug) {
   `;
   bindNetlifyForms(app);
   hydrateDeferredImages(app);
+  const scope = app.querySelector("[data-product-scope]");
+  bindProductGallery(scope);
+  updateProductAvailabilityState(scope);
 }
 
 function renderCartPage() {
@@ -965,6 +1063,204 @@ function getBrandsPageMark() {
   return state.data?.meta?.brandsPageMark || "assets/branding/kalm-buffalo/kalm-buffalo-mark.png";
 }
 
+function getPublicProducts() {
+  return (state.data?.products || []).filter(isProductPublic);
+}
+
+function isProductPublic(product) {
+  if (!product) return false;
+  const status = product.publicationStatus || "published";
+  const visibility = product.visibility || "visible";
+  return status === "published" && visibility === "visible";
+}
+
+function getDefaultColor(product) {
+  return (product?.colors || []).find((color) => !isColorUnavailable(product, color)) || product?.colors?.[0] || "";
+}
+
+function normalizeGalleryImages(images, product) {
+  const normalized = normalizeImageList(images);
+  return normalized.length ? normalized : [product?.image].filter(Boolean);
+}
+
+function getMoveCategoryOptions(audience = "all") {
+  const categories = new Set();
+  getPublicProducts()
+    .filter((product) => product.brandId === "kalm-move")
+    .filter((product) => audience === "all" || product.audience === audience)
+    .forEach((product) => categories.add(getMoveCategoryId(product)));
+  return moveCategories.filter((category) => categories.has(category.id));
+}
+
+function getMoveCategoryId(product) {
+  const tags = product?.tags || [];
+  if (tags.includes("new-in")) return product.moveCategory || "new-in";
+  const text = [product?.moveCategory, product?.type, product?.title, ...tags].join(" ").toLowerCase();
+  if (text.includes("bottle") || text.includes("bag") || text.includes("cap") || text.includes("sock") || text.includes("accessor")) return "accessories";
+  if (text.includes("romper") || text.includes("unitard") || text.includes("jumpsuit")) return "jumpsuits-rompers";
+  if (text.includes("sports bra") || text.includes("bra")) return "sports-bras";
+  if (text.includes("legging")) return "leggings";
+  if (text.includes("short") || text.includes("skort")) return "shorts";
+  if (text.includes("hoodie") || text.includes("jacket") || text.includes("layer")) return "layers";
+  if (text.includes("pant") || text.includes("jogger") || text.includes("bottom")) return "bottoms";
+  if (text.includes("set")) return "sets";
+  if (text.includes("tee") || text.includes("tank") || text.includes("top") || text.includes("crop")) return "tops";
+  return product?.moveCategory || "accessories";
+}
+
+function renderMoveShoppingHeader(audience, moveCategory) {
+  const base = "#/shop?brand=kalm-move";
+  const activeAudience = audience === "men" || audience === "women" ? audience : "all";
+  const categoryAudience = activeAudience === "all" ? "women" : activeAudience;
+  const categories = getMoveCategoryOptions(categoryAudience);
+  return `
+    <section class="move-shop-header">
+      <div>
+        <p class="eyebrow">KALM Move</p>
+        <h2>${activeAudience === "all" ? "Shop movement essentials" : `Shop ${moveAudienceName(activeAudience)}`}</h2>
+        <p>Choose women or men, then narrow the edit with real catalogue categories.</p>
+      </div>
+      <div class="audience-tabs" aria-label="KALM Move audience">
+        <a href="${base}" ${activeAudience === "all" ? 'aria-current="true"' : ""}>All</a>
+        ${moveAudiences.map((item) => `<a href="${base}&audience=${item.id}" ${activeAudience === item.id ? 'aria-current="true"' : ""}>${escapeHtml(item.name)}</a>`).join("")}
+      </div>
+      ${categories.length ? `
+        <div class="move-category-links compact" aria-label="KALM Move categories">
+          ${categories.map((category) => `<a href="${base}&audience=${categoryAudience}&moveCategory=${category.id}" ${moveCategory === category.id ? 'aria-current="true"' : ""}>${escapeHtml(category.name)}</a>`).join("")}
+        </div>
+      ` : ""}
+    </section>
+  `;
+}
+
+function renderFilterSelect(name, label, selected, options, emptyLabel) {
+  if (!options.length) return "";
+  return `
+    <label>${escapeHtml(label)}
+      <select name="${escapeAttribute(name)}">
+        <option value="all">${escapeHtml(emptyLabel)}</option>
+        ${options.map((option) => `<option value="${escapeAttribute(option)}" ${selected === option ? "selected" : ""}>${escapeHtml(option)}</option>`).join("")}
+      </select>
+    </label>
+  `;
+}
+
+function getAvailableSizes(products) {
+  return [...new Set(products.flatMap((product) => product.sizes || []))].filter(Boolean);
+}
+
+function getAvailableColors(products) {
+  return [...new Set(products.flatMap((product) => product.colors || []))].filter(Boolean);
+}
+
+function buildActiveFilters(filterState) {
+  const labels = {
+    brand: (value) => state.data.brands.find((item) => item.id === value)?.name || value,
+    category: (value) => state.data.categories.find((item) => item.id === value)?.name || value,
+    audience: moveAudienceName,
+    moveCategory: moveCategoryName,
+    size: (value) => `Size ${value}`,
+    color: (value) => value,
+    availability: (value) => value.replaceAll("_", " "),
+    sort: (value) => `Sort ${value.replace("-", " ")}`,
+    search: (value) => `Search ${value}`
+  };
+  return Object.entries(filterState)
+    .filter(([key, value]) => value && value !== "all" && value !== "featured" && !(key === "search" && !String(value).trim()))
+    .map(([key, value]) => {
+      const params = new URLSearchParams();
+      Object.entries(filterState).forEach(([entryKey, entryValue]) => {
+        if (entryKey === key) return;
+        if (entryValue && entryValue !== "all" && entryValue !== "featured") params.set(entryKey, entryValue);
+      });
+      return {
+        label: labels[key]?.(value) || value,
+        href: `#/shop${params.toString() ? "?" + params.toString() : ""}`
+      };
+    });
+}
+
+function getProductAvailability(product) {
+  if (!isProductPublic(product)) return "discontinued";
+  const variants = (product.variants || []).filter((variant) => variant.enabled !== false);
+  if (!variants.length) return product.availability || "in_stock";
+  const availableVariants = variants.filter(isInventoryEntryAvailable);
+  if (!availableVariants.length) return "out_of_stock";
+  if (availableVariants.some((variant) => variant.availability === "in_stock")) return "in_stock";
+  if (availableVariants.some((variant) => variant.availability === "preorder")) return "preorder";
+  if (availableVariants.some((variant) => variant.availability === "low_stock")) return "low_stock";
+  return product.availability || "in_stock";
+}
+
+function getStockMessage(product, color = "", size = "") {
+  const variant = color || size ? findVariant(product, color, size) : null;
+  const availability = variant?.availability || getProductAvailability(product);
+  const quantity = variant?.quantity;
+  if (availability === "out_of_stock" || availability === "discontinued") return "Sold out";
+  if (availability === "preorder") return "Preorder interest";
+  if (availability === "low_stock" || (Number.isFinite(quantity) && quantity <= (product.lowStockThreshold || 3))) return "Low stock";
+  return product.stockLabel || "In stock";
+}
+
+function findVariant(product, color = "", size = "") {
+  const variants = product?.variants || [];
+  if (!variants.length) return null;
+  return variants.find((variant) => {
+    const colorMatch = !color || variant.colour === color || variant.color === color;
+    const sizeMatch = !size || variant.size === size;
+    return variant.enabled !== false && colorMatch && sizeMatch;
+  }) || null;
+}
+
+function isInventoryEntryAvailable(variant) {
+  if (!variant || variant.enabled === false) return false;
+  if (["out_of_stock", "discontinued"].includes(variant.availability)) return false;
+  if (Number.isFinite(variant.quantity) && variant.quantity <= 0) return false;
+  return true;
+}
+
+function isVariantAvailable(product, color, size) {
+  const variants = product?.variants || [];
+  if (!variants.length) return !["out_of_stock", "discontinued"].includes(product?.availability || "in_stock");
+  const variant = findVariant(product, color, size);
+  return isInventoryEntryAvailable(variant);
+}
+
+function isColorUnavailable(product, color) {
+  const variants = product?.variants || [];
+  if (!variants.length) return false;
+  const colorVariants = variants.filter((variant) => variant.enabled !== false && (variant.colour === color || variant.color === color));
+  return Boolean(colorVariants.length) && colorVariants.every((variant) => !isInventoryEntryAvailable(variant));
+}
+
+function renderSizeOptions(product, color = "") {
+  return (product?.sizes || []).map((size) => {
+    const disabled = !isVariantAvailable(product, color || getDefaultColor(product), size);
+    return `<option value="${escapeAttribute(size)}" ${disabled ? "disabled" : ""}>${escapeHtml(size)}${disabled ? " - sold out" : ""}</option>`;
+  }).join("");
+}
+
+function updateProductAvailabilityState(scope) {
+  const product = findProduct(scope?.getAttribute("data-product-id"));
+  if (!product || !scope) return;
+  const color = scope.querySelector("[data-color-select]")?.value || getDefaultColor(product);
+  const size = scope.querySelector("[data-size-select]")?.value || "";
+  const sizeSelect = scope.querySelector("[data-size-select]");
+  if (sizeSelect && document.activeElement !== sizeSelect) {
+    const current = sizeSelect.value;
+    sizeSelect.innerHTML = `<option value="">Choose size</option>${renderSizeOptions(product, color)}`;
+    if ([...sizeSelect.options].some((option) => option.value === current && !option.disabled)) sizeSelect.value = current;
+  }
+  const button = scope.querySelector("[data-add-to-bag]");
+  const status = scope.querySelector("[data-stock-status]");
+  const available = size ? isVariantAvailable(product, color, size) : !["out_of_stock", "discontinued"].includes(getProductAvailability(product));
+  if (button) {
+    button.disabled = !available;
+    button.textContent = available ? product.ctaLabel : "Sold out";
+  }
+  if (status) status.textContent = getStockMessage(product, color, size);
+}
+
 function renderCategoryTile(category) {
   return `
     <a class="category-tile" href="#/shop?category=${category.id}">
@@ -987,14 +1283,40 @@ function renderVariantPreviews(product) {
   `;
 }
 
-function renderProductGallery(product) {
-  const images = getProductGalleryImages(product);
-  if (images.length <= 1) return "";
+function renderProductGallery(product, inputImages = getProductGalleryImages(product)) {
+  const images = normalizeGalleryImages(inputImages, product);
+  const count = images.length || 1;
   return `
-    <div class="gallery-thumbs" data-product-gallery-thumbs aria-label="Product images">
-      ${renderGalleryThumbs(product, images)}
+    <div class="product-gallery" data-product-gallery data-gallery-current="0">
+      <div class="product-gallery-frame">
+        <div class="gallery-track" data-product-gallery-track tabindex="0" aria-label="Swipe product images for ${escapeAttribute(product.title)}">
+          ${renderGallerySlides(product, images)}
+        </div>
+        ${count > 1 ? `<button class="gallery-open" type="button" data-lightbox-open aria-label="Open image viewer">Expand</button>` : ""}
+        <span class="gallery-count" data-gallery-count>1 / ${count}</span>
+      </div>
+      ${count > 1 ? `<div class="gallery-dots" data-gallery-dots>${renderGalleryDots(images)}</div>` : ""}
+      ${count > 1 ? `
+        <div class="gallery-thumbs" data-product-gallery-thumbs aria-label="Product images">
+          ${renderGalleryThumbs(product, images)}
+        </div>
+      ` : ""}
     </div>
   `;
+}
+
+function renderGallerySlides(product, images) {
+  return images.map((image, index) => `
+    <figure class="gallery-slide" data-gallery-slide data-gallery-image="${escapeAttribute(image)}" aria-label="Image ${index + 1} of ${images.length}">
+      <img ${index === 0 ? `src="${escapeHtml(image)}" fetchpriority="high"` : `src="${escapeHtml(image)}" loading="lazy" fetchpriority="low"`} alt="${escapeAttribute(product.title)} image ${index + 1}" width="1200" height="1500" decoding="async" data-product-image>
+    </figure>
+  `).join("");
+}
+
+function renderGalleryDots(images) {
+  return images.map((_, index) => `
+    <button type="button" data-gallery-index="${index}" aria-label="Show image ${index + 1}" ${index === 0 ? 'aria-current="true"' : ""}></button>
+  `).join("");
 }
 
 function renderGalleryThumbs(product, images) {
@@ -1019,13 +1341,15 @@ function renderSpecifications(specifications) {
 }
 
 function renderProductCard(product, options = {}) {
+  const availability = getProductAvailability(product);
+  const isUnavailable = availability === "out_of_stock" || availability === "discontinued";
   const imageMarkup = options.eager
     ? `src="${escapeHtml(product.image)}" decoding="async"`
     : `src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
-        ${product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
+        ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
         <img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>
       </a>
       <div class="product-card-body">
@@ -1035,22 +1359,8 @@ function renderProductCard(product, options = {}) {
         <div class="swatches" aria-label="Available colours">
           ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
         </div>
-        <div class="quick-selectors">
-          <label><span class="sr-only">Colour</span>
-            <select data-color-select aria-label="Choose colour for ${escapeAttribute(product.title)}">
-              <option value="">Colour</option>
-              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}">${escapeHtml(color)}</option>`).join("")}
-            </select>
-          </label>
-          <label><span class="sr-only">Size</span>
-            <select data-size-select aria-label="Choose size for ${escapeAttribute(product.title)}">
-              <option value="">Size</option>
-              ${product.sizes.map((size) => `<option value="${escapeAttribute(size)}">${escapeHtml(size)}</option>`).join("")}
-            </select>
-          </label>
-        </div>
-        <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
-        <button class="button secondary full" type="button" data-add-to-bag="${product.id}">${escapeHtml(product.ctaLabel)}</button>
+        <p class="card-stock ${isUnavailable ? "is-sold-out" : ""}">${escapeHtml(getStockMessage(product))}</p>
+        <a class="button secondary full card-view-link" href="#/product/${product.slug}">View product</a>
       </div>
     </article>
   `;
@@ -1065,22 +1375,33 @@ function renderPrice(product) {
 
 function updateVariantImage(scope, color) {
   const product = findProduct(scope?.getAttribute("data-product-id"));
-  const image = scope?.querySelector("[data-product-image]");
-  if (!product || !image) return;
+  if (!product || !scope) return;
   const images = color ? getVariantImages(product, color) : getProductGalleryImages(product);
   const imagePath = images[0] || product.image;
   const altText = color ? `${product.title} in ${color}` : product.title;
-  updateGalleryThumbnails(scope, product, images);
-  setProductImage(image, imagePath, altText);
-  setActiveGalleryImage(scope, imagePath);
+  const gallery = scope.querySelector("[data-product-gallery]");
+  if (gallery) {
+    gallery.outerHTML = renderProductGallery(product, images);
+    bindProductGallery(scope);
+    updateGalleryByIndex(scope, 0);
+  } else {
+    const image = scope.querySelector("[data-product-image]");
+    if (image) setProductImage(image, imagePath, altText);
+  }
+  updateProductAvailabilityState(scope);
 }
 
 function updateGalleryImage(scope, imagePath) {
   const product = findProduct(scope?.getAttribute("data-product-id"));
-  const image = scope?.querySelector("[data-product-image]");
-  if (!product || !image || !imagePath) return;
-  setProductImage(image, imagePath, product.title);
-  setActiveGalleryImage(scope, imagePath);
+  if (!product || !scope || !imagePath) return;
+  const index = [...scope.querySelectorAll("[data-gallery-slide]")].findIndex((slide) => slide.getAttribute("data-gallery-image") === imagePath);
+  if (index >= 0) {
+    updateGalleryByIndex(scope, index);
+    return;
+  }
+  const image = scope.querySelector("[data-product-image]");
+  if (image) setProductImage(image, imagePath, product.title);
+  setActiveGalleryImage(scope, imagePath, index);
 }
 
 function setProductImage(image, imagePath, altText) {
@@ -1142,10 +1463,13 @@ function getSiblingGalleryImages(product, imagePath) {
 
 function setActiveGalleryImage(scope, imagePath) {
   if (!scope || !imagePath) return;
+  const slides = [...scope.querySelectorAll("[data-gallery-slide]")];
+  const activeIndex = slides.findIndex((slide) => slide.getAttribute("data-gallery-image") === imagePath);
   scope.querySelectorAll("[data-gallery-image]").forEach((button) => {
     if (button.getAttribute("data-gallery-image") === imagePath) button.setAttribute("aria-current", "true");
     else button.removeAttribute("aria-current");
   });
+  updateGalleryCount(scope, activeIndex >= 0 ? activeIndex : 0);
 }
 
 function updateGalleryThumbnails(scope, product, images) {
@@ -1153,6 +1477,92 @@ function updateGalleryThumbnails(scope, product, images) {
   if (!gallery || !images?.length) return;
   gallery.innerHTML = renderGalleryThumbs(product, images);
   hydrateDeferredImages(gallery);
+}
+
+function bindProductGallery(scope) {
+  const track = scope?.querySelector("[data-product-gallery-track]");
+  if (!track || track.dataset.galleryBound === "true") return;
+  track.dataset.galleryBound = "true";
+  let frame = 0;
+  track.addEventListener("scroll", () => {
+    window.cancelAnimationFrame(frame);
+    frame = window.requestAnimationFrame(() => {
+      const width = track.clientWidth || 1;
+      updateGalleryByIndex(scope, Math.round(track.scrollLeft / width), { noScroll: true });
+    });
+  }, { passive: true });
+}
+
+function getActiveGalleryIndex(scope) {
+  return Number(scope?.querySelector("[data-product-gallery]")?.getAttribute("data-gallery-current") || 0);
+}
+
+function updateGalleryByIndex(scope, rawIndex, options = {}) {
+  const gallery = scope?.querySelector("[data-product-gallery]");
+  const track = scope?.querySelector("[data-product-gallery-track]");
+  const slides = [...(scope?.querySelectorAll("[data-gallery-slide]") || [])];
+  if (!gallery || !track || !slides.length) return;
+  const index = Math.max(0, Math.min(slides.length - 1, Number.isFinite(rawIndex) ? rawIndex : 0));
+  gallery.setAttribute("data-gallery-current", String(index));
+  const imagePath = slides[index].getAttribute("data-gallery-image");
+  if (!options.noScroll) slides[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+  scope.querySelectorAll("[data-gallery-image]").forEach((item) => {
+    if (item.getAttribute("data-gallery-image") === imagePath) item.setAttribute("aria-current", "true");
+    else item.removeAttribute("aria-current");
+  });
+  scope.querySelectorAll("[data-gallery-index]").forEach((item, itemIndex) => {
+    if (itemIndex === index) item.setAttribute("aria-current", "true");
+    else item.removeAttribute("aria-current");
+  });
+  updateGalleryCount(scope, index);
+}
+
+function updateGalleryCount(scope, index) {
+  const count = scope?.querySelector("[data-gallery-count]");
+  const total = scope?.querySelectorAll("[data-gallery-slide]").length || 1;
+  if (count) count.textContent = `${Math.min(index + 1, total)} / ${total}`;
+}
+
+function openLightbox(scope, index = 0) {
+  const images = [...(scope?.querySelectorAll("[data-gallery-slide]") || [])].map((slide) => ({
+    src: slide.getAttribute("data-gallery-image"),
+    alt: slide.querySelector("img")?.alt || "Product image"
+  })).filter((item) => item.src);
+  if (!images.length) return;
+  state.activeLightbox = { images, index: Math.max(0, Math.min(images.length - 1, index)), previousFocus: document.activeElement };
+  document.body.insertAdjacentHTML("beforeend", renderLightbox());
+  document.body.classList.add("lightbox-open");
+  document.querySelector("[data-lightbox-close]")?.focus();
+}
+
+function closeLightbox() {
+  if (!state.activeLightbox) return;
+  document.querySelector("[data-gallery-lightbox]")?.remove();
+  document.body.classList.remove("lightbox-open");
+  state.activeLightbox.previousFocus?.focus?.();
+  state.activeLightbox = null;
+}
+
+function moveLightbox(delta) {
+  if (!state.activeLightbox) return;
+  const total = state.activeLightbox.images.length;
+  state.activeLightbox.index = (state.activeLightbox.index + delta + total) % total;
+  const shell = document.querySelector("[data-gallery-lightbox]");
+  if (shell) shell.outerHTML = renderLightbox();
+}
+
+function renderLightbox() {
+  const lightbox = state.activeLightbox;
+  const current = lightbox.images[lightbox.index];
+  return `
+    <div class="gallery-lightbox" data-gallery-lightbox role="dialog" aria-modal="true" aria-label="Product image viewer">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image viewer">Close</button>
+      ${lightbox.images.length > 1 ? `<button class="lightbox-nav prev" type="button" data-lightbox-nav="-1" aria-label="Previous image">Previous</button>` : ""}
+      <img src="${escapeHtml(current.src)}" alt="${escapeAttribute(current.alt)}" width="1200" height="1500">
+      ${lightbox.images.length > 1 ? `<button class="lightbox-nav next" type="button" data-lightbox-nav="1" aria-label="Next image">Next</button>` : ""}
+      <span>${lightbox.index + 1} / ${lightbox.images.length}</span>
+    </div>
+  `;
 }
 
 function renderBagLine(item) {
@@ -1205,27 +1615,41 @@ function renderBag() {
 
 function addToBag(productId, selectedSize, selectedColor) {
   const product = findProduct(productId);
-  if (!product) return;
-  if (!selectedSize || !selectedColor) return;
+  if (!product || !isProductPublic(product)) return { ok: false, message: "This product is not available." };
+  if (!selectedSize || !selectedColor) return { ok: false, message: "Please choose size and colour." };
+  if (!isVariantAvailable(product, selectedColor, selectedSize)) {
+    return { ok: false, message: "That colour and size is not available." };
+  }
+  const variant = findVariant(product, selectedColor, selectedSize);
+  const key = `${productId}::${selectedSize}::${selectedColor}`;
+  const item = state.bag.find((entry) => entry.key === key);
+  if (variant && Number.isFinite(variant.quantity) && item && item.qty >= variant.quantity) {
+    return { ok: false, message: "No more stock is available for that variant." };
+  }
   const size = selectedSize;
   const color = selectedColor;
   const image = getVariantImage(product, color);
-  const key = `${productId}::${size}::${color}`;
-  const item = state.bag.find((entry) => entry.key === key);
   if (item) {
     item.qty += 1;
     item.image = image;
+    item.sku = variant?.sku || item.sku;
   } else {
-    state.bag.push({ key, productId, size, color, image, qty: 1 });
+    state.bag.push({ key, productId, size, color, image, sku: variant?.sku || product.sku || "", qty: 1 });
   }
   saveBag();
   renderBag();
   openBag();
+  return { ok: true };
 }
 
 function updateQty(key, delta) {
   const item = state.bag.find((entry) => entry.key === key);
   if (!item) return;
+  if (delta > 0) {
+    const product = findProduct(item.productId);
+    const variant = product ? findVariant(product, item.color, item.size) : null;
+    if (variant && Number.isFinite(variant.quantity) && item.qty >= variant.quantity) return;
+  }
   item.qty += delta;
   if (item.qty <= 0) removeFromBag(key);
   else {
@@ -1265,19 +1689,23 @@ function closeSearch() {
   searchPanel.hidden = true;
 }
 
-function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", search = "" }) {
+function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", size = "all", color = "all", availability = "all", search = "" }) {
   const term = search.trim().toLowerCase();
-  return state.data.products.filter((product) => {
+  return getPublicProducts().filter((product) => {
+    const tags = product.tags || [];
     const brandMatch = brand === "all" || product.brandId === brand;
     const categoryMatch = category === "all"
       || product.category === category
-      || product.tags.includes(category)
+      || tags.includes(category)
       || (category === "sale" && product.compareAtPrice)
-      || (category === "new-in" && product.tags.includes("new-in"));
+      || (category === "new-in" && tags.includes("new-in"));
     const audienceMatch = audience === "all" || product.audience === audience;
     const moveCategoryMatch = moveCategory === "all"
-      || product.moveCategory === moveCategory
-      || product.tags.includes(moveCategory);
+      || getMoveCategoryId(product) === moveCategory
+      || tags.includes(moveCategory);
+    const sizeMatch = size === "all" || (product.sizes || []).includes(size);
+    const colorMatch = color === "all" || (product.colors || []).includes(color);
+    const availabilityMatch = availability === "all" || getProductAvailability(product) === availability;
     const searchMatch = !term || [
       product.title,
       product.brand,
@@ -1289,9 +1717,9 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
       product.sku,
       (product.features || []).join(" "),
       (product.specifications || []).map((item) => `${item.label} ${item.value}`).join(" "),
-      product.tags.join(" ")
+      tags.join(" ")
     ].join(" ").toLowerCase().includes(term);
-    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && searchMatch;
+    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && sizeMatch && colorMatch && availabilityMatch && searchMatch;
   });
 }
 
@@ -1307,7 +1735,7 @@ function updateShopFromForm(event) {
   const form = event.currentTarget.closest("form") || event.currentTarget;
   const values = new FormData(form);
   const params = new URLSearchParams();
-  for (const key of ["brand", "category", "audience", "moveCategory", "sort", "search"]) {
+  for (const key of ["brand", "category", "audience", "moveCategory", "size", "color", "availability", "sort", "search"]) {
     const value = values.get(key);
     if (value && value !== "all" && value !== "featured") params.set(key, value);
   }
