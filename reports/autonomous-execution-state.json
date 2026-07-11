@@ -1,0 +1,50 @@
+{
+  "project": "KALM Collective storefront recovery",
+  "status": "in_progress_safe_nonimage_recovery_continuing",
+  "startedAt": "2026-07-11T20:55:00+02:00",
+  "updatedAt": "2026-07-11T23:07:00+02:00",
+  "startingSha": "601faa5443f2b193cce6f92c6ee31b5c3d839c72",
+  "originalVerifiedCheckpointSha": "3391bf119b577eb2bfbf12237068c9eef2538aec",
+  "workingBranch": "agent/kalm-storefront-recovery-checkpoint-20260711",
+  "currentPhase": "outdoor_preproduction_branch_audit_complete",
+  "completedPhases": [
+    "writable_workspace_created",
+    "real_git_metadata_attached",
+    "index_state_normalized",
+    "kalm_move_women_source_inventory_and_visual_audit",
+    "kalm_move_women_local_repair_manifest_and_contact_sheet_review",
+    "kalm_outdoor_preproduction_branch_audit"
+  ],
+  "activeWork": [
+    "create_outdoor_v2_from_latest_safe_master",
+    "outdoor_catalogue_and_waitlist_implementation",
+    "outdoor_qa_review_and_release_gate"
+  ],
+  "blockedWork": [
+    {
+      "blocker": "No locally generated garment correction passed 100% visual QA. The source set has image-specific legacy-mark positions and false candidate detections, so publishing a v3 correction would risk visual or product-truth defects.",
+      "scope": "KALM Move women garment imagery correction",
+      "resolutionRequired": "Provide approved corrected garment images or complete a future per-image local edit and visual review. Paid image APIs are prohibited and are not a resolution path."
+    }
+  ],
+  "pendingTests": [
+    "kalm_move_women_branding_validation (complete)",
+    "catalogue_validation",
+    "browser_or_static_visual_qa",
+    "live_production_verification"
+  ],
+  "pendingDeployment": false,
+  "productionDeployId": "",
+  "lastSafeCommit": "a7896d3b3052914fa390fed732214342a36f5dea",
+  "resumeCommand": "cd \"C:\\CodexWork\\kalm-recovery\"; git.exe status --short --branch; Get-Content reports\\kalm-move-women-branding-audit.json",
+  "notes": [
+    "The website and brand-page logo remains assets/branding/kalm-move/kalm-move-logo.png.",
+    "The required garment mark remains assets/branding/kalm-buffalo/kalm-buffalo-mark.png.",
+    "The source audit contains 22 women products and 320 colour-image records: 19 garment products and 3 bottle accessories.",
+    "Two unapproved deterministic correction attempts were removed after visual QA; products.json has been restored to the verified checkpoint and no new asset path is live.",
+    "The current local manifest covers all 320 audited images. It records 294 garment repair records, 26 preserved bottle records, zero approved v3 images, and paid-image usage of zero.",
+    "The billing-hard-limit observation is historical only. No paid image API, metered image service, or billing retry will be used in this run.",
+    "Commit a7896d3b3052914fa390fed732214342a36f5dea is pushed and verified on the recovery branch; safe non-image work continues.",
+    "The fetched Outdoor preproduction checkpoint acefc51abb541722cdbff099afa07c28fdadb187 was audited without merge. Its product identities conflict with the exact V2 mandate and are report-only; all 63 SVG mockups and generator inputs are rejected for live use."
+  ]
+}
