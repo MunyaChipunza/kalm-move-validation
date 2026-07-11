@@ -434,6 +434,54 @@ button {
   transform: scale(1.025);
 }
 
+.photography-placeholder {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 100%;
+  padding: 28px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.62), transparent 46%),
+    linear-gradient(145deg, #25302b, #788073 62%, #c9b99c);
+  color: #fff;
+  text-align: center;
+}
+
+.photography-placeholder .eyebrow,
+.photography-placeholder small {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.photography-placeholder strong {
+  margin: 12px 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 3vw, 42px);
+  line-height: 1.04;
+}
+
+.card-photography-placeholder {
+  height: 100%;
+}
+
+.card-photography-placeholder strong {
+  font-size: 25px;
+}
+
+.card-photo-status,
+.card-compatibility,
+.coming-soon-copy,
+.waitlist-interest {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.card-photo-status {
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .product-badge {
   position: absolute;
   top: 12px;
@@ -1135,11 +1183,228 @@ button {
   object-fit: contain;
 }
 
+.outdoor-hero {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.82fr) minmax(420px, 1.18fr);
+  min-height: 560px;
+  border-bottom: 1px solid var(--line);
+  background: #eeece5;
+}
+
+.outdoor-hero > div {
+  align-self: center;
+  padding: 54px 7vw;
+}
+
+.outdoor-hero h1 {
+  max-width: 560px;
+  margin: 0 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 0.98;
+}
+
+.outdoor-hero p:not(.eyebrow) {
+  max-width: 560px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.outdoor-hero > img {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+}
+
+.outdoor-anchor-grid,
+.bundle-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.outdoor-anchor-card,
+.bundle-roadmap-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.outdoor-anchor-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.outdoor-anchor-card > div,
+.bundle-roadmap-card {
+  padding: 20px;
+}
+
+.outdoor-anchor-card h3,
+.bundle-roadmap-card h3 {
+  margin: 8px 0;
+  font-size: 21px;
+}
+
+.outdoor-anchor-card p,
+.bundle-roadmap-card p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.outdoor-appliance-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.outdoor-appliance-links a {
+  display: grid;
+  min-height: 120px;
+  align-content: space-between;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+  font-weight: 700;
+}
+
+.outdoor-appliance-links span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.outdoor-care-band,
+.outdoor-waitlist-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1.2fr);
+  gap: 32px;
+  margin: 42px;
+  padding: 38px;
+  border-radius: var(--radius);
+}
+
+.outdoor-care-band {
+  background: var(--olive);
+  color: #fff;
+}
+
+.outdoor-care-band h2,
+.outdoor-waitlist-panel h2 {
+  margin: 6px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 46px);
+  line-height: 1.05;
+}
+
+.outdoor-care-band p {
+  align-self: end;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+}
+
+.outdoor-waitlist-panel {
+  align-items: start;
+  border: 1px solid var(--line);
+  background: #f2efe7;
+}
+
+.outdoor-waitlist-panel > div > p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .product-detail {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
   gap: 42px;
   padding: 42px;
+}
+
+.product-photography-placeholder {
+  min-height: 520px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.coming-soon-detail-status {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--olive);
+  background: var(--soft);
+}
+
+.coming-soon-detail-status strong {
+  font-size: 15px;
+}
+
+.coming-soon-detail-status p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.outdoor-waitlist-form {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.outdoor-waitlist-form label,
+.outdoor-waitlist-form fieldset {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.outdoor-waitlist-form input,
+.outdoor-waitlist-form select {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.outdoor-waitlist-form .optional {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.waitlist-ownership {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+}
+
+.waitlist-ownership legend {
+  padding: 0 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.waitlist-ownership label,
+.outdoor-waitlist-form .consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.waitlist-ownership input,
+.outdoor-waitlist-form .consent input {
+  min-height: 0;
+  margin: 3px 0 0;
 }
 
 .product-gallery {
@@ -1850,6 +2115,7 @@ body.lightbox-open {
 
   .hero-shell,
   .brand-hero,
+  .outdoor-hero,
   .product-detail,
   .feature-band,
   .outdoor-cooking-band,
@@ -1874,8 +2140,27 @@ body.lightbox-open {
   }
 
   .hero-media,
-  .brand-hero > img {
+  .brand-hero > img,
+  .outdoor-hero > img {
     min-height: 360px;
+  }
+
+  .outdoor-hero > div {
+    padding: 46px 24px 28px;
+  }
+
+  .outdoor-anchor-grid,
+  .bundle-roadmap-grid,
+  .outdoor-appliance-links,
+  .outdoor-care-band,
+  .outdoor-waitlist-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .outdoor-care-band,
+  .outdoor-waitlist-panel {
+    margin: 24px 18px;
+    padding: 28px 22px;
   }
 
   .brand-ribbon {

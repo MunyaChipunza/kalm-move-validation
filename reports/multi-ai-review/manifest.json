@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-07-11T23:27:17+02:00",
+  "scope": "KALM no-paid-image recovery and KALM Outdoor V2",
+  "paidImageUsage": 0,
+  "recoveryBranch": "agent/kalm-storefront-recovery-checkpoint-20260711",
+  "recoverySha": "ace2b3f4c0cf158500185087fa54b1742b29318c",
+  "outdoorBranch": "feature/kalm-outdoor-premium-accessories-v2",
+  "safeMasterSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "screenshots": [
+    {
+      "path": "screenshots/home-desktop.png",
+      "viewport": "desktop",
+      "route": "#/",
+      "imageStatus": "approved live photography and existing catalogue imagery"
+    },
+    {
+      "path": "screenshots/home-mobile.png",
+      "viewport": "mobile",
+      "route": "#/",
+      "imageStatus": "approved live photography and existing catalogue imagery"
+    },
+    {
+      "path": "screenshots/kalm-move-desktop.png",
+      "viewport": "desktop",
+      "route": "#/shop?brand=kalm-move&audience=women",
+      "imageStatus": "unchanged legacy imagery pending replacement; no local correction is live"
+    },
+    {
+      "path": "screenshots/kalm-move-product-desktop.png",
+      "viewport": "desktop",
+      "route": "#/product/kalm-move-rise-zip-jacket-set",
+      "imageStatus": "unchanged legacy imagery pending replacement; no local correction is live"
+    },
+    {
+      "path": "screenshots/kalm-outdoor-desktop.png",
+      "viewport": "desktop",
+      "route": "#/brand/kalm-outdoor",
+      "imageStatus": "approved appliance photography plus non-photographic accessory status treatments"
+    },
+    {
+      "path": "screenshots/kalm-outdoor-mobile.png",
+      "viewport": "mobile",
+      "route": "#/brand/kalm-outdoor",
+      "imageStatus": "approved appliance photography plus non-photographic accessory status treatments"
+    },
+    {
+      "path": "screenshots/outdoor-appliance-desktop.png",
+      "viewport": "desktop",
+      "route": "#/product/kalm-outdoor-ember-16-gas-pizza-oven",
+      "imageStatus": "approved live appliance photography"
+    },
+    {
+      "path": "screenshots/outdoor-accessory-waitlist-desktop.png",
+      "viewport": "desktop",
+      "route": "#/product/kalm-outdoor-ember-launch-pro-perforated-peel",
+      "imageStatus": "Photography in production; no product image, price, stock, or Add to Bag"
+    },
+    {
+      "path": "screenshots/outdoor-accessory-waitlist-mobile.png",
+      "viewport": "mobile",
+      "route": "#/product/kalm-outdoor-ember-launch-pro-perforated-peel",
+      "imageStatus": "Photography in production; no product image, price, stock, or Add to Bag"
+    },
+    {
+      "path": "screenshots/outdoor-waitlist-mobile.png",
+      "viewport": "mobile",
+      "route": "#/brand/kalm-outdoor#outdoor-waitlist",
+      "imageStatus": "waitlist form; no product imagery"
+    },
+    {
+      "path": "screenshots/cart-desktop.png",
+      "viewport": "desktop",
+      "route": "#/product/kalm-outdoor-ember-16-gas-pizza-oven",
+      "imageStatus": "approved live appliance photography; cart regression evidence"
+    },
+    {
+      "path": "screenshots/cart-mobile.png",
+      "viewport": "mobile",
+      "route": "#/product/kalm-outdoor-ember-16-gas-pizza-oven",
+      "imageStatus": "approved live appliance photography; cart regression evidence"
+    }
+  ]
+}

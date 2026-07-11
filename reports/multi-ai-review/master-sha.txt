@@ -1,0 +1,2 @@
+a5b459d4c8b65836e6775d9040729ba6f16d0e80
+Safe master and rollback point before Outdoor V2 integration.

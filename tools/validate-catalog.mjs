@@ -31,6 +31,7 @@ function imageList(value) {
 const ids = new Set();
 const slugs = new Set();
 const skus = new Set();
+const comingSoonProducts = [];
 
 if (!Array.isArray(data.products)) fail("products.json must contain a products array.");
 
@@ -42,11 +43,22 @@ for (const product of data.products || []) {
   ids.add(product.id);
   slugs.add(product.slug);
 
-  if (typeof product.price !== "number" || product.price < 0) fail(`${product.id} has invalid price.`);
+  const comingSoon = Boolean(product.comingSoon) || product.availability === "coming_soon";
+  if (comingSoon ? product.price !== null && product.price !== undefined : (typeof product.price !== "number" || product.price < 0)) {
+    fail(`${product.id} has invalid price.`);
+  }
   if (!["draft", "published", "archived"].includes(product.publicationStatus || "published")) fail(`${product.id} has invalid publicationStatus.`);
   if (!["visible", "hidden"].includes(product.visibility || "visible")) fail(`${product.id} has invalid visibility.`);
-  if (!["in_stock", "low_stock", "out_of_stock", "preorder", "discontinued"].includes(product.availability || "in_stock")) fail(`${product.id} has invalid availability.`);
-  if (!exists(product.image)) fail(`${product.id} hero image does not exist: ${product.image}`);
+  if (!["in_stock", "low_stock", "out_of_stock", "preorder", "discontinued", "coming_soon"].includes(product.availability || "in_stock")) fail(`${product.id} has invalid availability.`);
+  if (comingSoon) {
+    comingSoonProducts.push(product);
+    if (product.availability !== "coming_soon") fail(`${product.id} must use coming_soon availability.`);
+    if (product.image || imageList(product.gallery).length || Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} coming-soon record must not include product imagery or variants.`);
+    if (product.photographyStatus !== "Photography in production") fail(`${product.id} must state Photography in production.`);
+    if (!Array.isArray(product.compatibleAppliances) || !product.compatibleAppliances.length) fail(`${product.id} missing compatible appliance mapping.`);
+  } else if (!exists(product.image)) {
+    fail(`${product.id} hero image does not exist: ${product.image}`);
+  }
 
   const gallery = imageList(product.gallery);
   const gallerySet = new Set();
@@ -75,6 +87,30 @@ for (const product of data.products || []) {
       fail(`${product.id} variant ${variant.sku} has invalid quantity.`);
     }
   }
+}
+
+for (const product of comingSoonProducts) {
+  for (const applianceId of product.compatibleAppliances) {
+    if (!ids.has(applianceId)) fail(`${product.id} references missing compatible appliance ${applianceId}.`);
+  }
+}
+
+if (data.outdoorBundles !== undefined) {
+  if (!Array.isArray(data.outdoorBundles)) fail("outdoorBundles must be an array.");
+  const expectedBundleNames = new Set(["Ember Essential", "Pizza Night", "Ridge Precision", "Ridge Host", "Forge Essential", "Forge Burger"]);
+  const bundleIds = new Set();
+  for (const bundle of data.outdoorBundles || []) {
+    if (!bundle.id || bundleIds.has(bundle.id)) fail(`Invalid or duplicate outdoor bundle id: ${bundle.id || "unknown"}.`);
+    bundleIds.add(bundle.id);
+    if (!expectedBundleNames.has(bundle.title)) fail(`Unexpected outdoor bundle title: ${bundle.title}.`);
+    if (bundle.status !== "coming_soon") fail(`${bundle.id} must be coming soon.`);
+    if ("price" in bundle || "stock" in bundle || "availability" in bundle) fail(`${bundle.id} must not state price, stock, or availability.`);
+    if (!ids.has(bundle.compatibleAppliance)) fail(`${bundle.id} references missing compatible appliance.`);
+    for (const accessoryId of bundle.accessoryIds || []) {
+      if (!comingSoonProducts.some((product) => product.id === accessoryId)) fail(`${bundle.id} references a non-coming-soon accessory: ${accessoryId}.`);
+    }
+  }
+  if ((data.outdoorBundles || []).length !== expectedBundleNames.size) fail("Expected six Outdoor coming-soon bundle roadmaps.");
 }
 
 const summary = {

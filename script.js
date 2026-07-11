@@ -15,7 +15,8 @@ const state = {
   homeSectionsTimer: null,
   currentRouteKey: "",
   scrollPositions: new Map(),
-  activeLightbox: null
+  activeLightbox: null,
+  waitlistSubmissions: new Set()
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -208,7 +209,11 @@ function renderRoute() {
   });
   if (route.path === "/shop") return renderShop(route.params);
   if (route.path === "/brands") return renderBrands();
-  if (route.path.startsWith("/brand/")) return renderBrand(route.path.split("/").pop());
+  if (route.path.startsWith("/brand/")) {
+    renderBrand(route.path.split("/").pop());
+    scrollToAnchor(route.anchor);
+    return;
+  }
   if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop());
   if (route.path === "/cart") return renderCartPage();
   if (route.path === "/checkout") return renderCheckout();
@@ -247,9 +252,11 @@ function getRoute() {
 
 function scrollToAnchor(anchor) {
   if (!anchor) return;
-  window.setTimeout(() => {
-    document.getElementById(anchor)?.scrollIntoView({ block: "start" });
-  }, 0);
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => {
+      document.getElementById(anchor)?.scrollIntoView({ block: "start" });
+    });
+  });
 }
 
 function setDocumentMeta(title, description) {
@@ -534,14 +541,15 @@ function renderShop(params = new URLSearchParams()) {
   const size = params.get("size") || "all";
   const color = params.get("color") || "all";
   const availability = params.get("availability") || "all";
+  const appliance = params.get("appliance") || "all";
   const sort = params.get("sort") || "featured";
   const search = params.get("search") || "";
-  const filterState = { brand, category, audience, moveCategory, size, color, availability, search };
+  const filterState = { brand, category, audience, moveCategory, size, color, availability, appliance, search };
   const products = sortProducts(filterProducts(filterState), sort);
   const heading = shopHeading({ brand, category, audience, moveCategory, search });
-  const relevantProducts = filterProducts({ brand, category, audience, moveCategory, size: "all", color: "all", availability: "all", search });
+  const relevantProducts = filterProducts({ brand, category, audience, moveCategory, size: "all", color: "all", availability: "all", appliance, search });
   const moveAudience = brand === "kalm-move" ? audience : "all";
-  const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, sort, search });
+  const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, appliance, sort, search });
   setDocumentMeta(
     `${heading} | KALM Collective`,
     "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear."
@@ -593,6 +601,7 @@ function renderShop(params = new URLSearchParams()) {
               </select>
             </label>
           ` : ""}
+          ${brand === "kalm-outdoor" ? renderOutdoorApplianceFilter(appliance) : ""}
           ${renderFilterSelect("size", "Size", size, getAvailableSizes(relevantProducts), "All sizes")}
           ${renderFilterSelect("color", "Colour", color, getAvailableColors(relevantProducts), "All colours")}
           <label>Availability
@@ -602,6 +611,7 @@ function renderShop(params = new URLSearchParams()) {
               <option value="low_stock" ${availability === "low_stock" ? "selected" : ""}>Low stock</option>
               <option value="out_of_stock" ${availability === "out_of_stock" ? "selected" : ""}>Sold out</option>
               <option value="preorder" ${availability === "preorder" ? "selected" : ""}>Preorder</option>
+              <option value="coming_soon" ${availability === "coming_soon" ? "selected" : ""}>Coming soon</option>
             </select>
           </label>
           <label>Sort
@@ -673,6 +683,7 @@ function renderBrands() {
 function renderBrand(brandId) {
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
+  if (brand.id === "kalm-outdoor") return renderKalmOutdoorExperience(brand);
   const products = getPublicProducts().filter((product) => product.brandId === brand.id);
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
@@ -703,6 +714,193 @@ function renderBrand(brandId) {
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+}
+
+function getOutdoorAnchorProducts() {
+  const anchorIds = [
+    "kalm-outdoor-ember-16-gas-pizza-oven",
+    "kalm-outdoor-forge-2-portable-gas-griddle",
+    "kalm-outdoor-ridge-4-stainless-gas-braai"
+  ];
+  return anchorIds.map((id) => findProduct(id)).filter((product) => product && isProductPublic(product));
+}
+
+function getOutdoorComingSoonProducts() {
+  return getPublicProducts().filter((product) => product.brandId === "kalm-outdoor" && isComingSoonProduct(product));
+}
+
+function applianceName(applianceId) {
+  return findProduct(applianceId)?.title || "Compatible appliance to be confirmed";
+}
+
+function renderKalmOutdoorExperience(brand) {
+  const anchors = getOutdoorAnchorProducts();
+  const accessories = getOutdoorComingSoonProducts();
+  const bundles = state.data.outdoorBundles || [];
+  setDocumentMeta(
+    "KALM Outdoor | Appliances, setup roadmaps and coming-soon accessories",
+    "Explore KALM Outdoor appliances and join the waitlist for upcoming accessory roadmaps. Photography and final specifications are in production."
+  );
+  app.innerHTML = `
+    <section class="outdoor-hero">
+      <div>
+        <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
+        <p class="eyebrow">KALM Outdoor</p>
+        <h1>Build your open-air cooking routine.</h1>
+        <p>Start with an original KALM Outdoor appliance, then map the accessories you want next. Accessory photography and final supplier details are in production.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#/shop?brand=kalm-outdoor">Shop appliances</a>
+          <a class="button secondary" href="#/brand/kalm-outdoor#outdoor-waitlist">Join the accessory waitlist</a>
+        </div>
+      </div>
+      <img src="${escapeHtml(brand.heroImage)}" alt="KALM Outdoor Ridge 4 cooking setting" width="1200" height="900">
+    </section>
+
+    <section class="section-block" aria-labelledby="outdoor-anchors-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Anchor appliances</p>
+          <h2 id="outdoor-anchors-title">Start with your cooking station.</h2>
+          <p class="section-copy">Approved appliance photography is shown below. Upcoming accessories are clearly marked as photography in production.</p>
+        </div>
+      </div>
+      <div class="outdoor-anchor-grid">
+        ${anchors.map((product) => `
+          <article class="outdoor-anchor-card">
+            <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="760" height="560" loading="lazy" decoding="async">
+            <div>
+              <p class="eyebrow">Approved appliance photography</p>
+              <h3>${escapeHtml(product.title)}</h3>
+              <p>${escapeHtml(product.shortDescription || product.description)}</p>
+              <a class="button secondary" href="#/product/${product.slug}">View appliance</a>
+            </div>
+          </article>
+        `).join("")}
+      </div>
+    </section>
+
+    <section class="section-block outdoor-setup" aria-labelledby="outdoor-setup-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Complete your setup</p>
+          <h2 id="outdoor-setup-title">Nine accessories in development.</h2>
+          <p class="section-copy">No accessory is for sale yet. Each card carries no price, stock, or Add to Bag control.</p>
+        </div>
+        <a class="text-link" href="#/shop?brand=kalm-outdoor&availability=coming_soon">View all coming soon</a>
+      </div>
+      <div class="product-grid">
+        ${accessories.map((product) => renderProductCard(product)).join("")}
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="outdoor-appliance-filter-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop by appliance</p>
+          <h2 id="outdoor-appliance-filter-title">Find a roadmap for your station.</h2>
+        </div>
+      </div>
+      <div class="outdoor-appliance-links" aria-label="Outdoor appliance compatibility filters">
+        ${anchors.map((anchor) => `<a href="#/shop?brand=kalm-outdoor&appliance=${escapeAttribute(anchor.id)}">${escapeHtml(anchor.title)} <span>View planned setup</span></a>`).join("")}
+      </div>
+    </section>
+
+    <section class="section-block outdoor-roadmap" aria-labelledby="outdoor-bundles-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Bundle roadmap</p>
+          <h2 id="outdoor-bundles-title">Plan the next cook without a premature price.</h2>
+          <p class="section-copy">These are unpriced, non-purchasable setup roadmaps. Final contents, availability, and photography remain pending.</p>
+        </div>
+      </div>
+      <div class="bundle-roadmap-grid">
+        ${bundles.map((bundle) => `
+          <article class="bundle-roadmap-card">
+            <p class="eyebrow">${escapeHtml(applianceName(bundle.compatibleAppliance))}</p>
+            <h3>${escapeHtml(bundle.title)}</h3>
+            <p>${escapeHtml(bundle.description)}</p>
+            <p class="coming-soon-copy">Coming soon · no price or availability announced</p>
+            <a class="text-link" href="#/brand/kalm-outdoor#outdoor-waitlist">Join waitlist</a>
+          </article>
+        `).join("")}
+      </div>
+    </section>
+
+    <section class="outdoor-care-band">
+      <div>
+        <p class="eyebrow">Care and protection</p>
+        <h2>Keep your appliance routine considered.</h2>
+      </div>
+      <p>Use the approved appliance care guidance today. Dedicated covers, care kits, and accessory specifications will be published only after supplier confirmation and approved photography.</p>
+    </section>
+
+    <section id="outdoor-waitlist" class="outdoor-waitlist-panel" aria-labelledby="outdoor-waitlist-title">
+      <div>
+        <p class="eyebrow">Launch updates</p>
+        <h2 id="outdoor-waitlist-title">Join the Outdoor accessory waitlist.</h2>
+        <p>Tell us which accessory or roadmap interests you. We will only use these details for KALM Outdoor launch updates and compatibility information.</p>
+      </div>
+      ${renderOutdoorWaitlistForm()}
+    </section>
+
+    ${renderFooter()}
+  `;
+  bindNetlifyForms(app);
+  hydrateDeferredImages(app);
+}
+
+function getOutdoorWaitlistChoices() {
+  return [
+    ...getOutdoorComingSoonProducts().map((product) => ({ label: product.title, applianceId: product.compatibleAppliances?.[0] || "" })),
+    ...(state.data.outdoorBundles || []).map((bundle) => ({ label: bundle.title, applianceId: bundle.compatibleAppliance || "" }))
+  ];
+}
+
+function renderOutdoorWaitlistForm({ interest = "", applianceId = "", source = "outdoor-brand-page" } = {}) {
+  const choices = getOutdoorWaitlistChoices();
+  const anchors = getOutdoorAnchorProducts();
+  const selectedInterest = interest || choices[0]?.label || "";
+  const selectedAppliance = applianceId || choices.find((choice) => choice.label === selectedInterest)?.applianceId || anchors[0]?.id || "";
+  const fieldId = `outdoor-waitlist-${source.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}`;
+  const interestField = interest
+    ? `<input type="hidden" name="accessory_or_bundle" value="${escapeAttribute(selectedInterest)}"><p class="waitlist-interest">Interest: <strong>${escapeHtml(selectedInterest)}</strong></p>`
+    : `<label for="${fieldId}-interest">Accessory or bundle<select id="${fieldId}-interest" name="accessory_or_bundle" data-waitlist-interest-select required>${choices.map((choice) => `<option value="${escapeAttribute(choice.label)}" data-appliance-id="${escapeAttribute(choice.applianceId)}" ${choice.label === selectedInterest ? "selected" : ""}>${escapeHtml(choice.label)}</option>`).join("")}</select></label>`;
+  const applianceField = applianceId
+    ? `<input type="hidden" name="compatible_appliance" value="${escapeAttribute(applianceName(selectedAppliance))}"><input type="hidden" name="compatible_appliance_id" value="${escapeAttribute(selectedAppliance)}"><p class="waitlist-interest">Compatible appliance: <strong>${escapeHtml(applianceName(selectedAppliance))}</strong></p>`
+    : `<label for="${fieldId}-appliance">Compatible appliance<select id="${fieldId}-appliance" name="compatible_appliance" data-waitlist-appliance-select required>${anchors.map((anchor) => `<option value="${escapeAttribute(anchor.title)}" data-appliance-id="${escapeAttribute(anchor.id)}" ${anchor.id === selectedAppliance ? "selected" : ""}>${escapeHtml(anchor.title)}</option>`).join("")}</select></label>`;
+  return `
+    <form class="outdoor-waitlist-form" name="kalm-outdoor-accessory-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-waitlist-form data-success-message="You are on the KALM Outdoor waitlist. We will share launch and compatibility updates when they are confirmed.">
+      <input type="hidden" name="form-name" value="kalm-outdoor-accessory-waitlist">
+      <input type="hidden" name="bot-field">
+      <input type="hidden" name="source" value="${escapeAttribute(source)}">
+      <div class="form-grid two">
+        <label for="${fieldId}-name">Name<input id="${fieldId}-name" name="name" autocomplete="name" required></label>
+        <label for="${fieldId}-email">Email<input id="${fieldId}-email" name="email" type="email" autocomplete="email" required></label>
+        <label for="${fieldId}-phone">Phone <span class="optional">(optional)</span><input id="${fieldId}-phone" name="phone" type="tel" autocomplete="tel"></label>
+        ${interestField}
+        ${applianceField}
+      </div>
+      <fieldset class="waitlist-ownership">
+        <legend>Do you already own the compatible appliance?</legend>
+        <label><input type="radio" name="owns_compatible_appliance" value="yes" required> Yes</label>
+        <label><input type="radio" name="owns_compatible_appliance" value="no"> No</label>
+        <label><input type="radio" name="owns_compatible_appliance" value="planning"> I am planning my setup</label>
+      </fieldset>
+      <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>I consent to KALM Collective using my details for KALM Outdoor launch and compatibility updates.</span></label>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <button class="button primary full" type="submit">Join waitlist</button>
+    </form>
+  `;
+}
+
+function renderPhotographyInProduction(product, className = "") {
+  return `
+    <div class="photography-placeholder ${className}" role="img" aria-label="Photography in production for ${escapeAttribute(product.title)}">
+      <span class="eyebrow">KALM Outdoor</span>
+      <strong>Photography<br>in production</strong>
+      <small>Coming soon</small>
+    </div>
+  `;
 }
 
 function renderKalmMoveSubcategories() {
@@ -747,8 +945,9 @@ function renderKalmMoveSubcategories() {
 function renderProduct(slug) {
   const product = state.data.products.find((item) => item.slug === slug);
   if (!product || !isProductPublic(product)) return renderNotFound();
-  const defaultColor = getDefaultColor(product);
-  const defaultImages = defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product);
+  const comingSoon = isComingSoonProduct(product);
+  const defaultColor = comingSoon ? "" : getDefaultColor(product);
+  const defaultImages = comingSoon ? [] : (defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product));
   const productAvailability = getProductAvailability(product);
   const manualRelated = (product.relatedProducts || [])
     .map((productId) => findProduct(productId))
@@ -761,31 +960,41 @@ function renderProduct(slug) {
 
   app.innerHTML = `
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
-      ${renderProductGallery(product, defaultImages)}
+      ${comingSoon ? renderPhotographyInProduction(product, "product-photography-placeholder") : renderProductGallery(product, defaultImages)}
       <div class="product-info">
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h1>${escapeHtml(product.title)}</h1>
-        <div class="price-line">${renderPrice(product)}</div>
+        ${comingSoon ? `
+          <div class="coming-soon-detail-status">
+            <strong>Coming soon</strong>
+            <p>${escapeHtml(product.photographyStatus || "Photography in production")}</p>
+            <p>${escapeHtml(product.compatibilityNote || "Compatibility confirmation is pending.")}</p>
+          </div>
+        ` : `<div class="price-line">${renderPrice(product)}</div>`}
 
-        <div class="selector-row">
-          <label>Colour
-            <select data-color-select>
-              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}" ${color === defaultColor ? "selected" : ""} ${isColorUnavailable(product, color) ? "disabled" : ""}>${escapeHtml(color)}${isColorUnavailable(product, color) ? " - sold out" : ""}</option>`).join("")}
-            </select>
-          </label>
-          <label>Size
-            <select data-size-select>
-              <option value="">Choose size</option>
-              ${renderSizeOptions(product, defaultColor)}
-            </select>
-          </label>
-        </div>
-        ${renderVariantPreviews(product)}
-        <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
-
-        <button class="button primary full" type="button" data-add-to-bag="${product.id}" ${productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "disabled" : ""}>${escapeHtml(productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "Sold out" : product.ctaLabel)}</button>
-
-        <p class="stock-line" data-stock-status>${escapeHtml(getStockMessage(product, defaultColor))}</p>
+        ${comingSoon ? renderOutdoorWaitlistForm({
+          interest: product.title,
+          applianceId: product.compatibleAppliances?.[0] || "",
+          source: `outdoor-product-${product.slug}`
+        }) : `
+          <div class="selector-row">
+            <label>Colour
+              <select data-color-select>
+                ${product.colors.map((color) => `<option value="${escapeAttribute(color)}" ${color === defaultColor ? "selected" : ""} ${isColorUnavailable(product, color) ? "disabled" : ""}>${escapeHtml(color)}${isColorUnavailable(product, color) ? " - sold out" : ""}</option>`).join("")}
+              </select>
+            </label>
+            <label>Size
+              <select data-size-select>
+                <option value="">Choose size</option>
+                ${renderSizeOptions(product, defaultColor)}
+              </select>
+            </label>
+          </div>
+          ${renderVariantPreviews(product)}
+          <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
+          <button class="button primary full" type="button" data-add-to-bag="${product.id}" ${productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "disabled" : ""}>${escapeHtml(productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "Sold out" : product.ctaLabel)}</button>
+          <p class="stock-line" data-stock-status>${escapeHtml(getStockMessage(product, defaultColor))}</p>
+        `}
         ${product.sku ? `<p class="sku-line">SKU: ${escapeHtml(product.sku)}</p>` : ""}
         <p>${escapeHtml(product.longDescription || product.description)}</p>
 
@@ -834,7 +1043,7 @@ function renderProduct(slug) {
   hydrateDeferredImages(app);
   const scope = app.querySelector("[data-product-scope]");
   bindProductGallery(scope);
-  updateProductAvailabilityState(scope);
+  if (!comingSoon) updateProductAvailabilityState(scope);
 }
 
 function renderCartPage() {
@@ -1067,6 +1276,10 @@ function getPublicProducts() {
   return (state.data?.products || []).filter(isProductPublic);
 }
 
+function isComingSoonProduct(product) {
+  return Boolean(product?.comingSoon) || product?.availability === "coming_soon";
+}
+
 function isProductPublic(product) {
   if (!product) return false;
   const status = product.publicationStatus || "published";
@@ -1133,6 +1346,18 @@ function renderMoveShoppingHeader(audience, moveCategory) {
   `;
 }
 
+function renderOutdoorApplianceFilter(appliance) {
+  const anchors = getOutdoorAnchorProducts();
+  return `
+    <label>Compatible appliance
+      <select name="appliance">
+        <option value="all">All Outdoor products</option>
+        ${anchors.map((anchor) => `<option value="${escapeAttribute(anchor.id)}" ${appliance === anchor.id ? "selected" : ""}>${escapeHtml(anchor.title)}</option>`).join("")}
+      </select>
+    </label>
+  `;
+}
+
 function renderFilterSelect(name, label, selected, options, emptyLabel) {
   if (!options.length) return "";
   return `
@@ -1159,6 +1384,7 @@ function buildActiveFilters(filterState) {
     category: (value) => state.data.categories.find((item) => item.id === value)?.name || value,
     audience: moveAudienceName,
     moveCategory: moveCategoryName,
+    appliance: applianceName,
     size: (value) => `Size ${value}`,
     color: (value) => value,
     availability: (value) => value.replaceAll("_", " "),
@@ -1182,6 +1408,7 @@ function buildActiveFilters(filterState) {
 
 function getProductAvailability(product) {
   if (!isProductPublic(product)) return "discontinued";
+  if (isComingSoonProduct(product)) return "coming_soon";
   const variants = (product.variants || []).filter((variant) => variant.enabled !== false);
   if (!variants.length) return product.availability || "in_stock";
   const availableVariants = variants.filter(isInventoryEntryAvailable);
@@ -1195,6 +1422,7 @@ function getProductAvailability(product) {
 function getStockMessage(product, color = "", size = "") {
   const variant = color || size ? findVariant(product, color, size) : null;
   const availability = variant?.availability || getProductAvailability(product);
+  if (availability === "coming_soon") return "Coming soon";
   const quantity = variant?.quantity;
   if (availability === "out_of_stock" || availability === "discontinued") return "Sold out";
   if (availability === "preorder") return "Preorder interest";
@@ -1220,6 +1448,7 @@ function isInventoryEntryAvailable(variant) {
 }
 
 function isVariantAvailable(product, color, size) {
+  if (isComingSoonProduct(product)) return false;
   const variants = product?.variants || [];
   if (!variants.length) return !["out_of_stock", "discontinued"].includes(product?.availability || "in_stock");
   const variant = findVariant(product, color, size);
@@ -1341,6 +1570,7 @@ function renderSpecifications(specifications) {
 }
 
 function renderProductCard(product, options = {}) {
+  const comingSoon = isComingSoonProduct(product);
   const availability = getProductAvailability(product);
   const isUnavailable = availability === "out_of_stock" || availability === "discontinued";
   const imageMarkup = options.eager
@@ -1350,23 +1580,30 @@ function renderProductCard(product, options = {}) {
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
         ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        <img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>
+        ${comingSoon ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h3><a href="#/product/${product.slug}">${escapeHtml(product.title)}</a></h3>
-        <div class="price-line">${renderPrice(product)}</div>
-        <div class="swatches" aria-label="Available colours">
-          ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
-        </div>
-        <p class="card-stock ${isUnavailable ? "is-sold-out" : ""}">${escapeHtml(getStockMessage(product))}</p>
-        <a class="button secondary full card-view-link" href="#/product/${product.slug}">View product</a>
+        ${comingSoon ? `
+          <p class="card-photo-status">${escapeHtml(product.photographyStatus || "Photography in production")}</p>
+          <p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances?.[0]))}</p>
+          <a class="button secondary full card-view-link" href="#/product/${product.slug}">Join waitlist</a>
+        ` : `
+          <div class="price-line">${renderPrice(product)}</div>
+          <div class="swatches" aria-label="Available colours">
+            ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
+          </div>
+          <p class="card-stock ${isUnavailable ? "is-sold-out" : ""}">${escapeHtml(getStockMessage(product))}</p>
+          <a class="button secondary full card-view-link" href="#/product/${product.slug}">View product</a>
+        `}
       </div>
     </article>
   `;
 }
 
 function renderPrice(product) {
+  if (isComingSoonProduct(product) || typeof product.price !== "number") return "";
   return `
     <strong>${formatPrice(product.price)}</strong>
     ${product.compareAtPrice ? `<s>${formatPrice(product.compareAtPrice)}</s>` : ""}
@@ -1616,6 +1853,7 @@ function renderBag() {
 function addToBag(productId, selectedSize, selectedColor) {
   const product = findProduct(productId);
   if (!product || !isProductPublic(product)) return { ok: false, message: "This product is not available." };
+  if (isComingSoonProduct(product)) return { ok: false, message: "This product is coming soon. Join the waitlist for launch information." };
   if (!selectedSize || !selectedColor) return { ok: false, message: "Please choose size and colour." };
   if (!isVariantAvailable(product, selectedColor, selectedSize)) {
     return { ok: false, message: "That colour and size is not available." };
@@ -1689,7 +1927,7 @@ function closeSearch() {
   searchPanel.hidden = true;
 }
 
-function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", size = "all", color = "all", availability = "all", search = "" }) {
+function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", size = "all", color = "all", availability = "all", appliance = "all", search = "" }) {
   const term = search.trim().toLowerCase();
   return getPublicProducts().filter((product) => {
     const tags = product.tags || [];
@@ -1706,6 +1944,7 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
     const sizeMatch = size === "all" || (product.sizes || []).includes(size);
     const colorMatch = color === "all" || (product.colors || []).includes(color);
     const availabilityMatch = availability === "all" || getProductAvailability(product) === availability;
+    const applianceMatch = appliance === "all" || (product.compatibleAppliances || []).includes(appliance) || product.id === appliance;
     const searchMatch = !term || [
       product.title,
       product.brand,
@@ -1719,14 +1958,14 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
       (product.specifications || []).map((item) => `${item.label} ${item.value}`).join(" "),
       tags.join(" ")
     ].join(" ").toLowerCase().includes(term);
-    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && sizeMatch && colorMatch && availabilityMatch && searchMatch;
+    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && sizeMatch && colorMatch && availabilityMatch && applianceMatch && searchMatch;
   });
 }
 
 function sortProducts(products, sort) {
   const items = [...products];
-  if (sort === "price-asc") return items.sort((a, b) => a.price - b.price);
-  if (sort === "price-desc") return items.sort((a, b) => b.price - a.price);
+  if (sort === "price-asc") return items.sort((a, b) => (Number.isFinite(a.price) ? a.price : Number.POSITIVE_INFINITY) - (Number.isFinite(b.price) ? b.price : Number.POSITIVE_INFINITY));
+  if (sort === "price-desc") return items.sort((a, b) => (Number.isFinite(b.price) ? b.price : Number.NEGATIVE_INFINITY) - (Number.isFinite(a.price) ? a.price : Number.NEGATIVE_INFINITY));
   if (sort === "newest") return items.sort((a, b) => Number(b.tags.includes("new-in")) - Number(a.tags.includes("new-in")));
   return items;
 }
@@ -1735,7 +1974,7 @@ function updateShopFromForm(event) {
   const form = event.currentTarget.closest("form") || event.currentTarget;
   const values = new FormData(form);
   const params = new URLSearchParams();
-  for (const key of ["brand", "category", "audience", "moveCategory", "size", "color", "availability", "sort", "search"]) {
+  for (const key of ["brand", "category", "audience", "moveCategory", "size", "color", "availability", "appliance", "sort", "search"]) {
     const value = values.get(key);
     if (value && value !== "all" && value !== "featured") params.set(key, value);
   }
@@ -1767,7 +2006,24 @@ function bindNetlifyForms(root = document) {
     if (form.dataset.netlifyBound === "true") return;
     form.dataset.netlifyBound = "true";
     form.addEventListener("submit", submitNetlifyForm);
+    const interest = form.querySelector("[data-waitlist-interest-select]");
+    const appliance = form.querySelector("[data-waitlist-appliance-select]");
+    if (interest && appliance) {
+      interest.addEventListener("change", () => {
+        const applianceId = interest.selectedOptions[0]?.dataset.applianceId;
+        const matchingOption = [...appliance.options].find((option) => option.dataset.applianceId === applianceId);
+        if (matchingOption) appliance.value = matchingOption.value;
+      });
+    }
   });
+}
+
+function getWaitlistSubmissionKey(form) {
+  if (!form?.matches("[data-waitlist-form]")) return "";
+  const data = new FormData(form);
+  const email = String(data.get("email") || "").trim().toLowerCase();
+  const interest = String(data.get("accessory_or_bundle") || "").trim().toLowerCase();
+  return email && interest ? `${email}::${interest}` : "";
 }
 
 async function submitNetlifyForm(event) {
@@ -1778,6 +2034,12 @@ async function submitNetlifyForm(event) {
   const button = form.querySelector("button[type='submit']");
   const originalLabel = button?.textContent || "";
   const successMessage = form.dataset.successMessage || "Thanks. Your message has been received.";
+  const waitlistSubmissionKey = getWaitlistSubmissionKey(form);
+
+  if (waitlistSubmissionKey && state.waitlistSubmissions.has(waitlistSubmissionKey)) {
+    if (status) status.textContent = "You are already on this waitlist in this browser session.";
+    return;
+  }
 
   if (status) status.textContent = "Sending...";
   if (button) {
@@ -1794,6 +2056,7 @@ async function submitNetlifyForm(event) {
     });
     if (!response.ok) throw new Error(`Form post failed with ${response.status}`);
     if (status) status.textContent = successMessage;
+    if (waitlistSubmissionKey) state.waitlistSubmissions.add(waitlistSubmissionKey);
     if (form.dataset.clearBag === "true") {
       state.bag = [];
       saveBag();
@@ -1803,8 +2066,12 @@ async function submitNetlifyForm(event) {
     if (form.dataset.redirect) window.location.href = form.dataset.redirect;
   } catch (error) {
     console.warn(error);
-    if (status) status.textContent = "The form could not send in this browser session. Opening the standard form submission.";
-    HTMLFormElement.prototype.submit.call(form);
+    if (form.matches("[data-waitlist-form]")) {
+      if (status) status.textContent = "We could not add you to the waitlist right now. Please check your connection and try again.";
+    } else {
+      if (status) status.textContent = "The form could not send in this browser session. Opening the standard form submission.";
+      HTMLFormElement.prototype.submit.call(form);
+    }
   } finally {
     if (button) {
       button.disabled = false;
