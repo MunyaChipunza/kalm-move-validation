@@ -5,6 +5,8 @@ import path from 'node:path';
 const BASE_URL = process.env.AUDIT_BASE_URL || 'https://kalmcollective.co.za';
 const OUTPUT_DIR = process.env.AUDIT_OUTPUT_DIR || 'audit-output';
 const RUN_ID = new Date().toISOString().replace(/[:.]/g, '-');
+const BATCH_INDEX = Math.max(0, Number(process.env.AUDIT_BATCH_INDEX || 0));
+const BATCH_COUNT = Math.max(1, Number(process.env.AUDIT_BATCH_COUNT || 1));
 
 const viewports = [
   { name: 'mobile', width: 390, height: 844 },
@@ -57,33 +59,42 @@ async function buildRoutes() {
     addRoute(routes, `KALM Move ${audience}`, `/#/shop?brand=kalm-move&audience=${audience}`);
   }
 
-  const moveCategories = new Set();
+  const approvedMoveCategories = [
+    'new-in',
+    'sets',
+    'leggings',
+    'sports-bras',
+    'shorts',
+    'tops',
+    'bottoms',
+    'layers',
+    'jumpsuits-rompers',
+    'accessories'
+  ];
+
   for (const product of products) {
     if (product?.slug) addRoute(routes, `Product ${product.title || product.slug}`, `/#/product/${product.slug}`);
-    if (product?.brandId === 'kalm-move') {
-      const candidates = [product.moveCategory, product.productType, product.type, ...(product.tags || [])];
-      for (const candidate of candidates) {
-        if (typeof candidate === 'string' && candidate.trim()) moveCategories.add(candidate.trim().toLowerCase().replace(/\s+/g, '-'));
-      }
-    }
   }
 
   for (const audience of ['women', 'men']) {
-    for (const category of moveCategories) {
-      addRoute(routes, `${audience} ${category}`, `/#/shop?brand=kalm-move&audience=${audience}&moveCategory=${encodeURIComponent(category)}`);
+    for (const category of approvedMoveCategories) {
+      addRoute(routes, `${audience} ${category}`, `/#/shop?brand=kalm-move&audience=${audience}&moveCategory=${category}`);
     }
   }
 
-  return { routes: [...routes.values()], catalogueSummary: { brands: brands.length, products: products.length } };
+  return {
+    routes: [...routes.values()],
+    catalogueSummary: { brands: brands.length, products: products.length }
+  };
 }
 
 async function scrollForLazyImages(page) {
   await page.evaluate(async () => {
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-    const step = Math.max(500, Math.floor(window.innerHeight * 0.8));
+    const step = Math.max(600, Math.floor(window.innerHeight * 0.9));
     for (let y = 0; y < document.documentElement.scrollHeight; y += step) {
       window.scrollTo(0, y);
-      await delay(90);
+      await delay(55);
     }
     window.scrollTo(0, 0);
   });
@@ -100,7 +111,6 @@ async function inspectPage(page) {
       if (src) acc[src] = (acc[src] || 0) + 1;
       return acc;
     }, {})).filter(([, count]) => count > 1).map(([src, count]) => ({ src, count }));
-    const visibleText = document.body.innerText;
     const headings = [...document.querySelectorAll('h1,h2,h3')]
       .filter((element) => element.offsetParent !== null)
       .map((element) => ({ tag: element.tagName, text: element.textContent.trim() }));
@@ -113,10 +123,11 @@ async function inspectPage(page) {
     return {
       title: document.title,
       url: location.href,
-      bodyTextSample: visibleText.slice(0, 2500),
+      bodyTextSample: document.body.innerText.slice(0, 2500),
       headings,
       buttons: buttons.slice(0, 120),
       imageCount: images.length,
+      imageSources: images.map((image) => image.currentSrc || image.src).filter(Boolean),
       brokenImages,
       duplicateImageSources: duplicateImageSources.slice(0, 100),
       horizontalOverflow: documentWidth > viewportWidth + 2,
@@ -132,13 +143,17 @@ async function inspectPage(page) {
 
 async function run() {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
-  const { routes, catalogueSummary } = await buildRoutes();
+  const { routes: allRoutes, catalogueSummary } = await buildRoutes();
+  const routes = allRoutes.filter((_, index) => index % BATCH_COUNT === BATCH_INDEX);
   const browser = await chromium.launch({ headless: true });
   const report = {
     runId: RUN_ID,
     baseUrl: BASE_URL,
     startedAt: new Date().toISOString(),
     catalogueSummary,
+    totalRouteCount: allRoutes.length,
+    batchIndex: BATCH_INDEX,
+    batchCount: BATCH_COUNT,
     routeCount: routes.length,
     results: []
   };
@@ -172,10 +187,10 @@ async function run() {
       const started = Date.now();
       let navigationError = null;
       try {
-        await page.goto(route.url, { waitUntil: 'domcontentloaded', timeout: 45000 });
-        await page.waitForTimeout(1800);
+        await page.goto(route.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await page.waitForTimeout(900);
         await scrollForLazyImages(page);
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(500);
       } catch (error) {
         navigationError = String(error);
       }
@@ -210,7 +225,8 @@ async function run() {
   report.finishedAt = new Date().toISOString();
   await fs.writeFile(path.join(OUTPUT_DIR, 'audit-report.json'), JSON.stringify(report, null, 2));
   await fs.writeFile(path.join(OUTPUT_DIR, 'routes.json'), JSON.stringify(routes, null, 2));
-  console.log(`Captured ${report.results.length} route/viewport combinations.`);
+  console.log(`Batch ${BATCH_INDEX + 1}/${BATCH_COUNT}: captured ${report.results.length} route/viewport combinations.`);
+  await browser.close();
 }
 
 run().catch((error) => {
