@@ -1,0 +1,47 @@
+{
+  "project": "KALM Collective storefront recovery",
+  "status": "in_progress",
+  "startedAt": "2026-07-11T20:55:00+02:00",
+  "updatedAt": "2026-07-11T21:05:00+02:00",
+  "startingSha": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "workingBranch": "agent/kalm-storefront-recovery-checkpoint-20260711",
+  "currentPhase": "paused_for_system_restart_checkpoint",
+  "completedPhases": [
+    "writable_workspace_created",
+    "real_git_metadata_attached",
+    "index_state_normalized"
+  ],
+  "activeWork": [
+    "kalm_move_women_garment_buffalo_branding_audit",
+    "versioned_corrected_asset_generation",
+    "products_json_catalogue_update",
+    "branding_validation",
+    "qa_commit_deploy_verify"
+  ],
+  "blockedWork": [
+    {
+      "blocker": "implementation paused by user for system restart",
+      "scope": "all post-checkpoint recovery implementation",
+      "resumeAfterRestart": true
+    }
+  ],
+  "pendingTests": [
+    "products_json_parse",
+    "image_path_validation",
+    "kalm_move_women_branding_validation",
+    "catalogue_validation",
+    "browser_or_static_visual_qa",
+    "live_production_verification"
+  ],
+  "pendingDeployment": false,
+  "productionDeployId": "",
+  "lastSafeCommit": "a5b459d4c8b65836e6775d9040729ba6f16d0e80",
+  "resumeCommand": "cd \"C:\\Users\\Dell\\.codex\\visualizations\\2026\\07\\07\\019f3c5b-22c3-72f2-8099-c6dc427b2539\\kalm-move-branding-correction-work\"; git status --short; Get-Content reports\\KALM-RECOVERY-RESTART-HANDOFF.md",
+  "notes": [
+    "User added verified defect: KALM Move women's activewear garment imagery is missing the approved buffalo mark or using the wrong mark.",
+    "Correct website logo remains assets/branding/kalm-move/kalm-move-logo.png.",
+    "Correct garment mark is assets/branding/kalm-buffalo/kalm-buffalo-mark.png.",
+    "Do not overwrite existing approved images; use versioned corrected asset paths.",
+    "Robocopy recovery copy failed earlier; recovery workspace was recreated through git archive and real .git metadata copy."
+  ]
+}
