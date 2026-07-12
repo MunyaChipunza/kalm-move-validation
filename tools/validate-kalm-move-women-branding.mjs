@@ -41,7 +41,7 @@ const bottle = womenById.get("kalm-move-studio-bottle");
 assert(bottle, "Studio Bottle record is missing.");
 const bottleImages = Array.from(new Set(allImages({ image: bottle.image, gallery: bottle.gallery, variantImages: bottle.variantImages })));
 assert(bottleImages.length === 12, "Studio Bottle must retain the twelve approved Stage 2 photography views.");
-assert(bottleImages.every((image) => image.startsWith("assets/images/products/kalm-move/bottles-v2/studio-bottle/")), "Studio Bottle must use versioned Stage 2 bottle paths only.");
+assert(bottleImages.every((image) => image.startsWith("assets/images/products/kalm-move/bottles-v3/studio-bottle/")), "Studio Bottle must use final immutable bottle paths only.");
 assert(bottleImages.every((image) => fs.existsSync(path.join(root, image))), "Studio Bottle Stage 2 image is missing.");
 assert(JSON.stringify(bottle.colors) === JSON.stringify(["Black", "Stone", "Lilac", "Sky Blue"]), "Studio Bottle must expose only the approved Stage 2 colours.");
 

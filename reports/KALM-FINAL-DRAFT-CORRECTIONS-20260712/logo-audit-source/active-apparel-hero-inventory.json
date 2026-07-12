@@ -1,0 +1,762 @@
+[
+  {
+    "name": "KALM Move Align Halter Legging Set",
+    "slug": "kalm-move-align-halter-legging-set",
+    "id": "kalm-move-align-strappy-jumpsuit",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp"
+      },
+      {
+        "colour": "Pink Drink",
+        "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp"
+      },
+      {
+        "colour": "Grayish Blue",
+        "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp"
+      },
+      {
+        "colour": "Delicate Red",
+        "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp"
+      },
+      {
+        "colour": "Date Brown",
+        "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-align-halter-legging-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Ease Flare Set",
+    "slug": "kalm-move-ease-flare-set",
+    "id": "kalm-move-ease-flare-set",
+    "variants": [
+      {
+        "colour": "Sage",
+        "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp"
+      },
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp"
+      },
+      {
+        "colour": "Taupe",
+        "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp"
+      },
+      {
+        "colour": "Espresso",
+        "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp"
+      },
+      {
+        "colour": "Cream",
+        "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-ease-flare-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Form Short Set",
+    "slug": "kalm-move-form-short-set",
+    "id": "kalm-move-form-short-set",
+    "variants": [
+      {
+        "colour": "White",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp"
+      },
+      {
+        "colour": "Brown",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp"
+      },
+      {
+        "colour": "Khaki",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp"
+      },
+      {
+        "colour": "Dark Purple",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp"
+      },
+      {
+        "colour": "Sky Blue",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp"
+      },
+      {
+        "colour": "Yellow",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp"
+      },
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp"
+      },
+      {
+        "colour": "Orange",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp"
+      },
+      {
+        "colour": "Dark Red",
+        "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-form-short-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Pulse Crop Short Set",
+    "slug": "kalm-move-pulse-crop-short-set",
+    "id": "kalm-move-pulse-crop-short-set",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-pulse-crop-short-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Wide-Leg Yoga Pant",
+    "slug": "kalm-move-wide-leg-yoga-pant",
+    "id": "kalm-move-wide-leg-yoga-pant",
+    "variants": [
+      {
+        "colour": "Light Blue",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp"
+      },
+      {
+        "colour": "Gray",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp"
+      },
+      {
+        "colour": "Cream Yellow",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/front.webp"
+      },
+      {
+        "colour": "Gray Blue",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/front.webp"
+      },
+      {
+        "colour": "Dark Purple",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/front.webp"
+      },
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/front.webp"
+      },
+      {
+        "colour": "Burgundy Red",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp"
+      },
+      {
+        "colour": "Brown",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/front.webp"
+      },
+      {
+        "colour": "Rose Red",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/front.webp"
+      },
+      {
+        "colour": "Light Grey",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/front.webp"
+      },
+      {
+        "colour": "Blue",
+        "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-wide-leg-yoga-pant-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Balance X-Back Legging Set",
+    "slug": "kalm-move-balance-x-back-legging-set",
+    "id": "kalm-move-balance-strappy-set",
+    "variants": [
+      {
+        "colour": "Van Dyke Brown",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp"
+      },
+      {
+        "colour": "Dress Blues",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp"
+      },
+      {
+        "colour": "Fawn",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp"
+      },
+      {
+        "colour": "Crushed Limestone",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp"
+      },
+      {
+        "colour": "Magic Forest Green",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp"
+      },
+      {
+        "colour": "Lemon Yellow",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp"
+      },
+      {
+        "colour": "Coffee Brown",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp"
+      },
+      {
+        "colour": "Bluebird",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp"
+      },
+      {
+        "colour": "Blossom Pink",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp"
+      },
+      {
+        "colour": "Pomegranate Red",
+        "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-balance-x-back-legging-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Halter Biker Short Set",
+    "slug": "kalm-move-halter-biker-short-set",
+    "id": "kalm-move-halter-biker-short-set",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp"
+      },
+      {
+        "colour": "White",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp"
+      },
+      {
+        "colour": "Red",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp"
+      },
+      {
+        "colour": "Blue",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp"
+      },
+      {
+        "colour": "Brown",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp"
+      },
+      {
+        "colour": "Grey",
+        "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-halter-biker-short-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Rise Zip Jacket Set",
+    "slug": "kalm-move-rise-zip-jacket-set",
+    "id": "kalm-move-rise-long-sleeve-set",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp"
+      },
+      {
+        "colour": "Apricot",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp"
+      },
+      {
+        "colour": "Blue",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/front.webp"
+      },
+      {
+        "colour": "Rose Red",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/front.webp"
+      },
+      {
+        "colour": "Light Blue",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/front.webp"
+      },
+      {
+        "colour": "Coffee",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp"
+      },
+      {
+        "colour": "Green",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/front.webp"
+      },
+      {
+        "colour": "Grey",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/front.webp"
+      },
+      {
+        "colour": "Magenta",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/front.webp"
+      },
+      {
+        "colour": "Light Grey",
+        "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-rise-zip-jacket-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Lightweight Windbreaker Set",
+    "slug": "kalm-move-lightweight-windbreaker-set",
+    "id": "kalm-move-lightweight-windbreaker-set",
+    "variants": [
+      {
+        "colour": "Light Blue",
+        "hero": "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-lightweight-windbreaker-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Cropped Zip Yoga Jacket",
+    "slug": "kalm-move-cropped-zip-yoga-jacket",
+    "id": "kalm-move-cropped-zip-yoga-jacket",
+    "variants": [
+      {
+        "colour": "Dark Green",
+        "hero": "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-cropped-zip-yoga-jacket-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Core Short Unitard",
+    "slug": "kalm-move-core-short-unitard",
+    "id": "kalm-move-core-seamless-tank",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp"
+      },
+      {
+        "colour": "White",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp"
+      },
+      {
+        "colour": "Pine",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp"
+      },
+      {
+        "colour": "Peony",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp"
+      },
+      {
+        "colour": "Coco",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp"
+      },
+      {
+        "colour": "Berry Red",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp"
+      },
+      {
+        "colour": "Wine Red",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp"
+      },
+      {
+        "colour": "Yellow",
+        "hero": "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-core-short-unitard-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Align Ruched Short",
+    "slug": "kalm-move-align-ruched-short",
+    "id": "kalm-move-align-ruched-short",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp"
+      },
+      {
+        "colour": "Red",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp"
+      },
+      {
+        "colour": "Blue",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp"
+      },
+      {
+        "colour": "Purple",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp"
+      },
+      {
+        "colour": "Brown",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp"
+      },
+      {
+        "colour": "Charcoal Gray",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp"
+      },
+      {
+        "colour": "White",
+        "hero": "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-align-ruched-short-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Loose Split Running Short",
+    "slug": "kalm-move-loose-split-running-short",
+    "id": "kalm-move-loose-split-running-short",
+    "variants": [
+      {
+        "colour": "Brown",
+        "hero": "assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp"
+      },
+      {
+        "colour": "Olive Taupe",
+        "hero": "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/loose-split-running-short/pink/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-loose-split-running-short-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Split Running Skort",
+    "slug": "kalm-move-split-running-skort",
+    "id": "kalm-move-split-running-skort",
+    "variants": [
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/split-running-skort/pink/front.webp"
+      },
+      {
+        "colour": "Coral Orange",
+        "hero": "assets/images/products/kalm-move/women/split-running-skort/coral-orange/front.webp"
+      },
+      {
+        "colour": "Neon Green",
+        "hero": "assets/images/products/kalm-move/women/split-running-skort/neon-green/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-split-running-skort-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Open Back Short Romper",
+    "slug": "kalm-move-open-back-short-romper",
+    "id": "kalm-move-open-back-short-romper",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp"
+      },
+      {
+        "colour": "Blue",
+        "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp"
+      },
+      {
+        "colour": "Army Green",
+        "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp"
+      },
+      {
+        "colour": "Apricot",
+        "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-open-back-short-romper-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Flow Training Short",
+    "slug": "kalm-move-flow-training-short",
+    "id": "kalm-move-flow-training-short",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp"
+      },
+      {
+        "colour": "Olive",
+        "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-flow-training-short-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Sprint Running Short",
+    "slug": "kalm-move-sprint-running-short",
+    "id": "kalm-move-sprint-running-short",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp"
+      },
+      {
+        "colour": "Cobalt",
+        "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-sprint-running-short-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Core Performance Tee",
+    "slug": "kalm-move-core-performance-tee",
+    "id": "kalm-move-core-performance-tee",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp"
+      },
+      {
+        "colour": "White",
+        "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp"
+      },
+      {
+        "colour": "Olive",
+        "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-core-performance-tee-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Lift Tank",
+    "slug": "kalm-move-lift-tank",
+    "id": "kalm-move-lift-tank",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp"
+      },
+      {
+        "colour": "White",
+        "hero": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-lift-tank-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Pace Jogger",
+    "slug": "kalm-move-pace-jogger",
+    "id": "kalm-move-pace-jogger",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp"
+      },
+      {
+        "colour": "Stone",
+        "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp"
+      },
+      {
+        "colour": "Olive",
+        "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-pace-jogger-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Motion Hoodie",
+    "slug": "kalm-move-motion-hoodie",
+    "id": "kalm-move-motion-hoodie",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp"
+      },
+      {
+        "colour": "Stone",
+        "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp"
+      },
+      {
+        "colour": "Olive",
+        "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-motion-hoodie-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Base Compression Short",
+    "slug": "kalm-move-base-compression-short",
+    "id": "kalm-move-base-compression-short",
+    "variants": [
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp"
+      },
+      {
+        "colour": "Charcoal",
+        "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp"
+      },
+      {
+        "colour": "Navy",
+        "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-base-compression-short-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Pocket Racerback Crop Bra",
+    "slug": "kalm-move-pocket-racerback-crop-bra",
+    "id": "kalm-move-pocket-racerback-crop-bra",
+    "variants": [
+      {
+        "colour": "Red",
+        "hero": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp"
+      },
+      {
+        "colour": "Brown",
+        "hero": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-pocket-racerback-crop-bra-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Contrast Flare Set",
+    "slug": "kalm-move-contrast-flare-set",
+    "id": "kalm-move-contrast-flare-set",
+    "variants": [
+      {
+        "colour": "Gray",
+        "hero": "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp"
+      },
+      {
+        "colour": "Purple",
+        "hero": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp"
+      },
+      {
+        "colour": "Green",
+        "hero": "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-contrast-flare-set-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Crossline Legging",
+    "slug": "kalm-move-crossline-legging",
+    "id": "kalm-move-crossline-legging",
+    "variants": [
+      {
+        "colour": "Red",
+        "hero": "assets/images/products/kalm-move/women/crossline-legging/red/front.webp"
+      },
+      {
+        "colour": "Blue",
+        "hero": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp"
+      },
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/crossline-legging/black/front.webp"
+      },
+      {
+        "colour": "Pink",
+        "hero": "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-crossline-legging-source-audit.jpg"
+  },
+  {
+    "name": "KALM Move Drift Crop Wide Pant",
+    "slug": "kalm-move-drift-crop-wide-pant",
+    "id": "kalm-move-drift-crop-wide-pant",
+    "variants": [
+      {
+        "colour": "Cream White",
+        "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp"
+      },
+      {
+        "colour": "Sunny Orange",
+        "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp"
+      },
+      {
+        "colour": "Millennial Pink",
+        "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp"
+      },
+      {
+        "colour": "Wine Red",
+        "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp"
+      },
+      {
+        "colour": "Black",
+        "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp"
+      }
+    ],
+    "contactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/logo-audit-source/kalm-move-drift-crop-wide-pant-source-audit.jpg"
+  }
+]

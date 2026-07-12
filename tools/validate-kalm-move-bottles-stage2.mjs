@@ -25,18 +25,21 @@ for (const asset of manifest.assets) {
   assert(fs.existsSync(path.join(root, asset.publicPath)), `Missing copied public asset: ${asset.publicPath}`);
   assert(hash(asset.publicPath) === asset.publicSha256, `Public asset hash drift: ${asset.publicPath}`);
   assert(asset.reviewSha256 === asset.publicSha256, `Source hash mismatch: ${asset.publicPath}`);
+  const correctedPath = asset.publicPath.replace("bottles-v2", "bottles-v3");
+  assert(fs.existsSync(path.join(root, correctedPath)), `Missing final immutable asset: ${correctedPath}`);
+  assert(hash(correctedPath) === asset.reviewSha256, `Final immutable asset hash drift: ${correctedPath}`);
 }
 
 for (const id of bottleIds) {
   const product = catalog.products.find((item) => item.id === id);
   assert(product, `Missing scoped bottle product: ${id}`);
   assert(product.publicationStatus === "published" && product.visibility === "visible", `${id} must be visibly published.`);
-  assert(product.image.startsWith("assets/images/products/kalm-move/bottles-v2/"), `${id} does not use a Stage 2 asset.`);
+  assert(product.image.startsWith("assets/images/products/kalm-move/bottles-v3/"), `${id} does not use the final immutable bottle asset.`);
   for (const colour of product.colors) {
     const imageSet = product.variantImages?.[colour];
     assert(imageSet?.gallery?.length === 3, `${id} ${colour} does not expose front, angle and detail imagery.`);
     for (const image of imageSet.gallery) {
-      assert(manifest.assets.some((asset) => asset.publicPath === image), `${id} ${colour} references an unmanifested image: ${image}`);
+      assert(manifest.assets.some((asset) => asset.publicPath.replace("bottles-v2", "bottles-v3") === image), `${id} ${colour} references an unmanifested final image: ${image}`);
     }
   }
 }

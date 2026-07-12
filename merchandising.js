@@ -3,14 +3,14 @@ window.KALM_MERCHANDISING = {
   version: "2026-07-12",
   campaigns: {
     homeHero: {
-      desktop: "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-desktop.webp",
-      tablet: "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-tablet.webp",
-      mobile: "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-mobile-v2.webp",
+      desktop: "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-desktop.webp",
+      tablet: "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-tablet.webp",
+      mobile: "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-mobile.webp",
       alt: "Six adults in varied KALM Move training looks sharing a relaxed movement moment outdoors"
     },
     featuredCollection: {
-      desktop: "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-desktop.webp",
-      mobile: "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-mobile.webp",
+      desktop: "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-desktop.webp",
+      mobile: "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-mobile.webp",
       alt: "KALM Move performance essentials in a calm outdoor training setting"
     }
   },
