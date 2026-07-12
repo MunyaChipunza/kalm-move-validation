@@ -25,7 +25,7 @@ Awaiting Munya visual approval. This branch is a draft-only recovery; no product
 
 - Central source of truth: `merchandising.js`.
 - Allocated cards: 49, with one product-colour key per requested merchandising surface.
-- Comprehensive validator: 172 checks passed.
+- Comprehensive validator: 173 checks passed.
 - Existing catalogue, recovery, KALM Move men/women, bottle, Outdoor, rejected-asset, mobile-first and image-dimension validators passed.
 - See `MERCHANDISING-MAP.json`, `MERCHANDISING-UNIQUENESS.md` and `VALIDATION.json`.
 

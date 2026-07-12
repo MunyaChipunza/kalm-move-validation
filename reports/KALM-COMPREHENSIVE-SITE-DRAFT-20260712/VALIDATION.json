@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T18:25:44.848Z",
+  "generatedAt": "2026-07-12T18:31:55.943Z",
   "status": "pass",
   "checks": [
     {
@@ -819,6 +819,11 @@
     },
     {
       "name": "Public product routes are implemented",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Direct public routes resolve shared assets from the site root",
       "status": "pass",
       "detail": ""
     },

@@ -99,6 +99,7 @@ check("Approved KALM Collective logo is used", indexHtml.includes("assets/brandi
 check("KALM Collective logo blends without a white box", styles.includes("mix-blend-mode: multiply"));
 check("Find Your Edit cards are square", /\.category-tile\s*\{[\s\S]*?aspect-ratio:\s*1\s*\/\s*1/.test(styles));
 check("Public product routes are implemented", script.includes("/products/") && read("netlify.toml").includes('from = "/products/*"'));
+check("Direct public routes resolve shared assets from the site root", indexHtml.includes('<base href="/">'));
 check("Product pages honor intended display colour", script.includes("params.get(\"colour\")") && script.includes("productRoute(product, defaultColour)"));
 check("Product, Organization, WebSite and Collection structured data are implemented", script.includes('"@type": "Product"') && script.includes('"@type": "Organization"') && script.includes('"@type": "WebSite"') && script.includes('"@type": "CollectionPage"'));
 check("Coming-soon or unavailable products do not publish offers", script.includes("const purchasable = !comingSoon"));
