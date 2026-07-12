@@ -57,20 +57,32 @@ assert(new Set(logoPaths).size === catalog.brands.length, "No two brands may sha
 assert(!JSON.stringify(catalog).includes("brandsPageMark"), "The generic Brands-page buffalo override must be absent.");
 
 const bottleRules = new Map([
-  ["kalm-move-everyday-bottle", ["Cream"]],
-  ["kalm-move-slim-wellness-bottle", ["Matte White"]],
-  ["kalm-move-studio-bottle", ["Stone"]],
-  ["kalm-move-protein-shaker-bottle", ["Black", "Charcoal", "Navy", "Smoke Grey"]]
+  ["kalm-move-everyday-bottle", ["Black", "Cream", "Lilac", "Sky Blue"]],
+  ["kalm-move-slim-wellness-bottle", ["Matte White", "Stone", "Soft Pink", "Sage"]],
+  ["kalm-move-studio-bottle", ["Black", "Stone", "Lilac", "Sky Blue"]],
+  ["kalm-move-protein-shaker-bottle", ["Black", "Charcoal", "Navy", "Smoke Grey"]],
+  ["kalm-move-all-day-straw-tumbler", ["Black", "Cream", "Lilac", "Sky Blue"]]
 ]);
 for (const product of catalog.products.filter((item) => bottleRules.has(item.id))) {
   const expectedColours = bottleRules.get(product.id);
   assert(JSON.stringify(product.colors) === JSON.stringify(expectedColours), `${product.id} has unsupported public bottle colours.`);
-  assert(product.gallery.length === 1 && product.gallery[0] === product.image, `${product.id} must have one default image.`);
+  assert(product.image.startsWith("assets/images/products/kalm-move/bottles-v2/"), `${product.id} must use fresh versioned bottle imagery.`);
+  assert(product.gallery.length === 3 && product.gallery[0] === product.image, `${product.id} must have a three-view default gallery.`);
   for (const [colour, images] of Object.entries(product.variantImages)) {
     assert(expectedColours.includes(colour), `${product.id} exposes an unsupported colour.`);
-    assert(images.gallery.length === 1 && images.gallery[0] === images.hero, `${product.id} ${colour} must have one image.`);
+    assert(images.hero.startsWith("assets/images/products/kalm-move/bottles-v2/"), `${product.id} ${colour} must use fresh versioned bottle imagery.`);
+    assert(images.gallery.length === 3 && images.gallery[0] === images.hero, `${product.id} ${colour} must have a three-view gallery.`);
+    assert(new Set(images.gallery).size === 3, `${product.id} ${colour} gallery must contain distinct approved views.`);
   }
 }
+assert(catalog.products.filter((item) => bottleRules.has(item.id)).length === 5, "Exactly five Stage 2 bottle products must be public.");
+const allDay = catalog.products.find((item) => item.id === "kalm-move-all-day-straw-tumbler");
+assert(allDay?.comingSoon && allDay?.availability === "coming_soon", "All-Day Straw Tumbler must remain coming soon.");
+assert(allDay?.price === null && allDay?.compareAtPrice === null, "All-Day Straw Tumbler must not expose a price.");
+assert(allDay?.trackInventory === false && allDay?.inventoryPolicy === "deny", "All-Day Straw Tumbler must not expose inventory.");
+assert(allDay?.comingSoonCallToAction === false, "All-Day Straw Tumbler must not expose a waitlist or purchase CTA.");
+assert(allDay?.variants?.every((variant) => variant.enabled === false && variant.availability === "coming_soon" && !("quantity" in variant)), "All-Day Straw Tumbler variants must be disabled and stockless.");
+assert(script.includes("function productMatchesAudience") && script.includes("product.comingSoonCallToAction !== false"), "Bottle audience support and coming-soon purchase guard are required.");
 const galleryRenderer = script.slice(script.indexOf("function renderProductGallery"), script.indexOf("function renderGallerySlides"));
 assert(galleryRenderer.includes('count > 1 ? `<span class="gallery-count"'), "Single-image galleries must not render a counter.");
 

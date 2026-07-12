@@ -39,9 +39,9 @@ const bottleIds = new Set([
   "kalm-move-studio-bottle"
 ]);
 for (const product of catalog.products.filter((item) => bottleIds.has(item.id))) {
-  assert(product.gallery?.length === 1 && product.gallery[0] === product.image, `${product.id} must use one default gallery image.`);
+  assert(product.gallery?.length === 3 && product.gallery[0] === product.image, `${product.id} must use its approved front, angle and detail gallery.`);
   for (const [colour, value] of Object.entries(product.variantImages || {})) {
-    assert(value?.hero && value.gallery?.length === 1 && value.gallery[0] === value.hero, `${product.id} ${colour} must use one consistent gallery image.`);
+    assert(value?.hero && value.gallery?.length === 3 && value.gallery[0] === value.hero, `${product.id} ${colour} must use its approved front, angle and detail gallery.`);
   }
 }
 

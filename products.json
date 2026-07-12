@@ -9037,7 +9037,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+      "image": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/front.jpg",
       "description": "A clean shaker bottle for training days and post-session routines.",
       "shortDescription": "A clean shaker bottle for training days and post-session routines.",
       "longDescription": "The Protein Shaker Bottle is designed as a practical gym essential with a premium KALM Move finish. It should feel strong, simple and easy to carry, with a small buffalo mark that keeps the branding refined.",
@@ -9066,38 +9066,50 @@
         "accessories",
         "bottle",
         "shaker",
-        "men-v4-preview"
+        "men-v4-preview",
+        "women",
+        "bottles-v2"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/detail.jpg"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/detail.jpg"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/detail.jpg"
           ]
         },
         "Smoke Grey": {
-          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/detail.jpg"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp"
+        "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/front.jpg",
+        "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/angle.jpg",
+        "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/detail.jpg"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Protein Shaker Bottle | KALM Move",
@@ -9108,8 +9120,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-12T10:00:00.000+02:00",
-      "updatedBy": "kalm-mobile-first-v4",
+      "updatedAt": "2026-07-12T19:00:00.000+02:00",
+      "updatedBy": "kalm-move-bottles-stage2",
       "skuRoot": "KALM-MOVE-PROTEIN-SHAKER-BOTTLE",
       "variants": [
         {
@@ -9215,7 +9227,11 @@
             }
           ]
         }
-      }
+      },
+      "audiences": [
+        "men",
+        "women"
+      ]
     },
     {
       "id": "kalm-move-pocket-racerback-crop-bra",
@@ -10124,7 +10140,10 @@
       "price": 279,
       "compareAtPrice": null,
       "colors": [
-        "Cream"
+        "Black",
+        "Cream",
+        "Lilac",
+        "Sky Blue"
       ],
       "sizes": [
         "One size"
@@ -10132,7 +10151,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+      "image": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/front.jpg",
       "description": "A clean everyday bottle for movement, errands and studio days.",
       "shortDescription": "A clean everyday bottle for movement, errands and studio days.",
       "longDescription": "The Everyday Bottle is designed as an easy carry piece for daily movement. It should feel stylish enough for errands and studio sessions, while still fitting naturally into the KALM Move accessories range.",
@@ -10159,20 +10178,50 @@
         "kalm-move",
         "women",
         "accessories",
-        "bottle"
+        "bottle",
+        "men",
+        "bottles-v2"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Cream": {
-          "hero": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+        "Black": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/detail.jpg"
+          ]
+        },
+        "Cream": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/detail.jpg"
+          ]
+        },
+        "Lilac": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/detail.jpg"
+          ]
+        },
+        "Sky Blue": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/detail.jpg"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp"
+        "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/front.jpg",
+        "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/angle.jpg",
+        "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/detail.jpg"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Everyday Bottle | KALM Move",
@@ -10183,10 +10232,18 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
+      "updatedAt": "2026-07-12T19:00:00.000+02:00",
+      "updatedBy": "kalm-move-bottles-stage2",
       "skuRoot": "KALM-MOVE-EVERYDAY-BOTTLE",
       "variants": [
+        {
+          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-BLK-ONE-SIZE",
+          "colour": "Black",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
         {
           "sku": "KALM-MOVE-EVERYDAY-BOTTLE-CREAM-ONE-SIZE",
           "colour": "Cream",
@@ -10194,8 +10251,39 @@
           "quantity": null,
           "availability": "in_stock",
           "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-LIL-ONE-SIZE",
+          "colour": "Lilac",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-SKY-ONE-SIZE",
+          "colour": "Sky Blue",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
         }
-      ]
+      ],
+      "audiences": [
+        "women",
+        "men"
+      ],
+      "mediaPresentation": {
+        "cardFit": "contain",
+        "cardPosition": "50% 50%",
+        "mobileCardFit": "contain",
+        "mobileCardPosition": "50% 50%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      }
     },
     {
       "id": "kalm-move-slim-wellness-bottle",
@@ -10209,7 +10297,10 @@
       "price": 299,
       "compareAtPrice": null,
       "colors": [
-        "Matte White"
+        "Matte White",
+        "Stone",
+        "Soft Pink",
+        "Sage"
       ],
       "sizes": [
         "One size"
@@ -10217,7 +10308,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
+      "image": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/front.jpg",
       "description": "A sleek wellness bottle with a slim profile and calm studio finish.",
       "shortDescription": "A sleek wellness bottle with a slim profile and calm studio finish.",
       "longDescription": "The Slim Wellness Bottle is a refined accessory for studio sessions, walks and daily routines. Its slim profile keeps the look elegant, while the small buffalo mark keeps the KALM Move identity subtle and premium.",
@@ -10244,20 +10335,49 @@
         "kalm-move",
         "women",
         "accessories",
-        "bottle"
+        "bottle",
+        "bottles-v2"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Matte White": {
-          "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/detail.jpg"
+          ]
+        },
+        "Stone": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/detail.jpg"
+          ]
+        },
+        "Soft Pink": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/detail.jpg"
+          ]
+        },
+        "Sage": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/detail.jpg"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp"
+        "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/front.jpg",
+        "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/angle.jpg",
+        "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/detail.jpg"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Slim Wellness Bottle | KALM Move",
@@ -10268,8 +10388,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
+      "updatedAt": "2026-07-12T19:00:00.000+02:00",
+      "updatedBy": "kalm-move-bottles-stage2",
       "skuRoot": "KALM-MOVE-SLIM-WELLNESS-BOTTLE",
       "variants": [
         {
@@ -10279,8 +10399,46 @@
           "quantity": null,
           "availability": "in_stock",
           "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-STONE-ONE-SIZE",
+          "colour": "Stone",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-SOFT-PINK-ONE-SIZE",
+          "colour": "Soft Pink",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-SAGE-ONE-SIZE",
+          "colour": "Sage",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
         }
-      ]
+      ],
+      "audiences": [
+        "women"
+      ],
+      "mediaPresentation": {
+        "cardFit": "contain",
+        "cardPosition": "50% 50%",
+        "mobileCardFit": "contain",
+        "mobileCardPosition": "50% 50%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      }
     },
     {
       "id": "kalm-move-studio-bottle",
@@ -10294,7 +10452,10 @@
       "price": 329,
       "compareAtPrice": null,
       "colors": [
-        "Stone"
+        "Black",
+        "Stone",
+        "Lilac",
+        "Sky Blue"
       ],
       "sizes": [
         "One size"
@@ -10302,7 +10463,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp",
+      "image": "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/front.jpg",
       "description": "A studio-ready bottle for Pilates, yoga and everyday movement.",
       "shortDescription": "A studio-ready bottle for Pilates, yoga and everyday movement.",
       "longDescription": "The Studio Bottle is designed for calm movement spaces and daily routines. It has a clean shape, muted studio colours and a small buffalo mark that feels intentional without becoming loud.",
@@ -10330,20 +10491,49 @@
         "women",
         "accessories",
         "bottle",
-        "studio"
+        "studio",
+        "bottles-v2"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
-        "Stone": {
-          "hero": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp",
+        "Black": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/front.jpg",
           "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp"
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/detail.jpg"
+          ]
+        },
+        "Stone": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/detail.jpg"
+          ]
+        },
+        "Lilac": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/detail.jpg"
+          ]
+        },
+        "Sky Blue": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/detail.jpg"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp"
+        "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/front.jpg",
+        "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/angle.jpg",
+        "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/detail.jpg"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Studio Bottle | KALM Move",
@@ -10354,10 +10544,18 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
+      "updatedAt": "2026-07-12T19:00:00.000+02:00",
+      "updatedBy": "kalm-move-bottles-stage2",
       "skuRoot": "KALM-MOVE-STUDIO-BOTTLE",
       "variants": [
+        {
+          "sku": "KALM-MOVE-STUDIO-BOTTLE-BLK-ONE-SIZE",
+          "colour": "Black",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
         {
           "sku": "KALM-MOVE-STUDIO-BOTTLE-STONE-ONE-SIZE",
           "colour": "Stone",
@@ -10365,8 +10563,38 @@
           "quantity": null,
           "availability": "in_stock",
           "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-STUDIO-BOTTLE-LIL-ONE-SIZE",
+          "colour": "Lilac",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-MOVE-STUDIO-BOTTLE-SKY-ONE-SIZE",
+          "colour": "Sky Blue",
+          "size": "One size",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
         }
-      ]
+      ],
+      "audiences": [
+        "women"
+      ],
+      "mediaPresentation": {
+        "cardFit": "contain",
+        "cardPosition": "50% 50%",
+        "mobileCardFit": "contain",
+        "mobileCardPosition": "50% 50%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      }
     },
     {
       "id": "kalm-outdoor-ember-16-gas-pizza-oven",
@@ -12530,6 +12758,159 @@
       "updatedAt": "2026-07-12T11:00:00.000+02:00",
       "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
+    },
+    {
+      "id": "kalm-move-all-day-straw-tumbler",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "collection": "KALM Move Accessories",
+      "category": "activewear",
+      "type": "Straw tumbler",
+      "title": "KALM Move All-Day Straw Tumbler",
+      "slug": "kalm-move-all-day-straw-tumbler",
+      "price": null,
+      "compareAtPrice": null,
+      "colors": [
+        "Black",
+        "Cream",
+        "Lilac",
+        "Sky Blue"
+      ],
+      "sizes": [
+        "One size"
+      ],
+      "audience": "women",
+      "audiences": [
+        "women",
+        "men"
+      ],
+      "moveCategory": "accessories",
+      "stockLabel": "Coming soon",
+      "image": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/front.jpg",
+      "description": "A larger straw tumbler for desks, commutes and all-day hydration.",
+      "shortDescription": "A larger straw tumbler for desks, commutes and all-day hydration.",
+      "longDescription": "A larger straw tumbler for desks, commutes and all-day hydration.",
+      "detailBullets": [
+        "Larger all-day straw format",
+        "Integrated handle",
+        "Clean KALM Move finish"
+      ],
+      "features": [
+        "Larger all-day straw format",
+        "Integrated handle",
+        "Clean KALM Move finish"
+      ],
+      "fitNotes": "Accessory item for desks, commutes and all-day hydration.",
+      "fabric": "Premium tumbler body with a straw lid.",
+      "care": "Hand wash recommended.",
+      "tags": [
+        "new-in",
+        "activewear",
+        "kalm-move",
+        "men",
+        "women",
+        "accessories",
+        "bottle",
+        "tumbler",
+        "coming-soon",
+        "bottles-v2"
+      ],
+      "badge": "Coming soon",
+      "ctaLabel": "Coming soon",
+      "variantImages": {
+        "Black": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/detail.jpg"
+          ]
+        },
+        "Cream": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/detail.jpg"
+          ]
+        },
+        "Lilac": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/detail.jpg"
+          ]
+        },
+        "Sky Blue": {
+          "hero": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/front.jpg",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/front.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/angle.jpg",
+            "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/detail.jpg"
+          ]
+        }
+      },
+      "gallery": [
+        "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/front.jpg",
+        "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/angle.jpg",
+        "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/detail.jpg"
+      ],
+      "relatedProducts": [],
+      "metaTitle": "KALM Move All-Day Straw Tumbler | KALM Move",
+      "metaDescription": "A larger straw tumbler for desks, commutes and all-day hydration.",
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "trackInventory": false,
+      "inventoryPolicy": "deny",
+      "availability": "coming_soon",
+      "comingSoon": true,
+      "comingSoonMessage": "A larger straw tumbler for desks, commutes and all-day hydration.",
+      "comingSoonCallToAction": false,
+      "updatedAt": "2026-07-12T19:00:00.000+02:00",
+      "updatedBy": "kalm-move-bottles-stage2",
+      "skuRoot": "KM-HYDR-ADT",
+      "variants": [
+        {
+          "sku": "KM-HYDR-ADT-BLK",
+          "colour": "Black",
+          "size": "One size",
+          "availability": "coming_soon",
+          "enabled": false
+        },
+        {
+          "sku": "KM-HYDR-ADT-CRM",
+          "colour": "Cream",
+          "size": "One size",
+          "availability": "coming_soon",
+          "enabled": false
+        },
+        {
+          "sku": "KM-HYDR-ADT-LIL",
+          "colour": "Lilac",
+          "size": "One size",
+          "availability": "coming_soon",
+          "enabled": false
+        },
+        {
+          "sku": "KM-HYDR-ADT-SKY",
+          "colour": "Sky Blue",
+          "size": "One size",
+          "availability": "coming_soon",
+          "enabled": false
+        }
+      ],
+      "mediaPresentation": {
+        "cardFit": "contain",
+        "cardPosition": "50% 50%",
+        "mobileCardFit": "contain",
+        "mobileCardPosition": "50% 50%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      }
     }
   ],
   "outdoorBundles": [

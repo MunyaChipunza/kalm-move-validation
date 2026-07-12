@@ -1,0 +1,429 @@
+{
+  "generatedAt": "2026-07-12T17:11:14.388643+00:00",
+  "stage1ReviewCommit": "7dcab8867be78ff133e1debf5518736120ca6472",
+  "sourceReviewRoot": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated",
+  "publicRoot": "assets/images/products/kalm-move/bottles-v2",
+  "assetCount": 60,
+  "assets": [
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/black/front.jpg",
+      "reviewSha256": "15327dfc2f8446570b62510ef3dd0e864db3c0daa10865c454163ed65c01ef5b",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/front.jpg",
+      "publicSha256": "15327dfc2f8446570b62510ef3dd0e864db3c0daa10865c454163ed65c01ef5b",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/black/angle.jpg",
+      "reviewSha256": "574673d63fdf8534c80b4ae55e548c40c62e36d49a523bd348254a3a17315c32",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/angle.jpg",
+      "publicSha256": "574673d63fdf8534c80b4ae55e548c40c62e36d49a523bd348254a3a17315c32",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/black/detail.jpg",
+      "reviewSha256": "faaff19c1ffad28c4c4d1b6d6635ddb23b5e3597cc32c38af92a207800abba3d",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/black/detail.jpg",
+      "publicSha256": "faaff19c1ffad28c4c4d1b6d6635ddb23b5e3597cc32c38af92a207800abba3d",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/cream/front.jpg",
+      "reviewSha256": "14d84f07183b7213d7a18865a243b9c9971d27024b3e582904d538eeae0b966a",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/front.jpg",
+      "publicSha256": "14d84f07183b7213d7a18865a243b9c9971d27024b3e582904d538eeae0b966a",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/cream/angle.jpg",
+      "reviewSha256": "7255729cb6a31994f8dc3352febc16f15d1795a090106164c74eebb2764de40a",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/angle.jpg",
+      "publicSha256": "7255729cb6a31994f8dc3352febc16f15d1795a090106164c74eebb2764de40a",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/cream/detail.jpg",
+      "reviewSha256": "968b1c4149fab66541e870511b41446226acc31dbbc2085b8c2ead3cb9d74d07",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/cream/detail.jpg",
+      "publicSha256": "968b1c4149fab66541e870511b41446226acc31dbbc2085b8c2ead3cb9d74d07",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/lilac/front.jpg",
+      "reviewSha256": "929dbec82fbf7fc909a3991e30b6c38a84d271f967995cbf875d0401d10896fe",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/front.jpg",
+      "publicSha256": "929dbec82fbf7fc909a3991e30b6c38a84d271f967995cbf875d0401d10896fe",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/lilac/angle.jpg",
+      "reviewSha256": "fcf0edd220a6bcd00fce0044ed1dfa63b52a683c7051093f599d3b41dd19b4db",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/angle.jpg",
+      "publicSha256": "fcf0edd220a6bcd00fce0044ed1dfa63b52a683c7051093f599d3b41dd19b4db",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/lilac/detail.jpg",
+      "reviewSha256": "50dd5a76f434bb4e9c2bc0e2b51cd9b023308d56832835fb77d5a5c6221700f0",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/detail.jpg",
+      "publicSha256": "50dd5a76f434bb4e9c2bc0e2b51cd9b023308d56832835fb77d5a5c6221700f0",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/sky-blue/front.jpg",
+      "reviewSha256": "18f11551bf578b9c0d322302d61b2e6e01b222a68a6d227a95db0049d8e58e56",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/front.jpg",
+      "publicSha256": "18f11551bf578b9c0d322302d61b2e6e01b222a68a6d227a95db0049d8e58e56",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/sky-blue/angle.jpg",
+      "reviewSha256": "148a1338c7348078769d3eee481ee4f9c56e0b00f182a078ac20679cccfeba7a",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/angle.jpg",
+      "publicSha256": "148a1338c7348078769d3eee481ee4f9c56e0b00f182a078ac20679cccfeba7a",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/everyday-bottle/sky-blue/detail.jpg",
+      "reviewSha256": "20fbc5d491a4fde430cd7f3b0a04884ecaf002c6038c3890f26e67e7f7d97a26",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/sky-blue/detail.jpg",
+      "publicSha256": "20fbc5d491a4fde430cd7f3b0a04884ecaf002c6038c3890f26e67e7f7d97a26",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/matte-white/front.jpg",
+      "reviewSha256": "17868ac6584f2dba376df6d08fb5140da4fee4f56d44bee59a1ded481adfe559",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/front.jpg",
+      "publicSha256": "17868ac6584f2dba376df6d08fb5140da4fee4f56d44bee59a1ded481adfe559",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/matte-white/angle.jpg",
+      "reviewSha256": "082f2165d6779851f5e29ddb07b21dd1b270e251407c91ac7e04dfdb907efa0b",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/angle.jpg",
+      "publicSha256": "082f2165d6779851f5e29ddb07b21dd1b270e251407c91ac7e04dfdb907efa0b",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/matte-white/detail.jpg",
+      "reviewSha256": "774359d82cca885bf5591f301f50eb6f53c0bd31c8d7741770213a9ebd5aa7f4",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/matte-white/detail.jpg",
+      "publicSha256": "774359d82cca885bf5591f301f50eb6f53c0bd31c8d7741770213a9ebd5aa7f4",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/stone/front.jpg",
+      "reviewSha256": "948cdef443c82b4d0bfe79f1609cb31b4d310ab15b04e29aa541dc160e1125a7",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/front.jpg",
+      "publicSha256": "948cdef443c82b4d0bfe79f1609cb31b4d310ab15b04e29aa541dc160e1125a7",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/stone/angle.jpg",
+      "reviewSha256": "9c9ea0aef3868ddc2645c35c5d3c6599d5c96046db70acbc007b3f33a137513a",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/angle.jpg",
+      "publicSha256": "9c9ea0aef3868ddc2645c35c5d3c6599d5c96046db70acbc007b3f33a137513a",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/stone/detail.jpg",
+      "reviewSha256": "197ac271ff7f377448d97f3dcaf065537d30e8729de27ffe1cc0c94a17ee4eb1",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/stone/detail.jpg",
+      "publicSha256": "197ac271ff7f377448d97f3dcaf065537d30e8729de27ffe1cc0c94a17ee4eb1",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/soft-pink/front.jpg",
+      "reviewSha256": "cd00a0f58807662a91cca6a97e6bc4bb1fbd5ad135e58c9a03c2751bbab90f0e",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/front.jpg",
+      "publicSha256": "cd00a0f58807662a91cca6a97e6bc4bb1fbd5ad135e58c9a03c2751bbab90f0e",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/soft-pink/angle.jpg",
+      "reviewSha256": "e581401e7694540113b49677edb1f0ab4902dc1a9b8b77bcda8a9dee49bd4cf3",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/angle.jpg",
+      "publicSha256": "e581401e7694540113b49677edb1f0ab4902dc1a9b8b77bcda8a9dee49bd4cf3",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/soft-pink/detail.jpg",
+      "reviewSha256": "c7ec50b8469c57269557a944f2cd2c32e608ddf825df02d47a90bfd74596c6c0",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/detail.jpg",
+      "publicSha256": "c7ec50b8469c57269557a944f2cd2c32e608ddf825df02d47a90bfd74596c6c0",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/sage/front.jpg",
+      "reviewSha256": "4941a735cd90a99489f5322825daa8e048ca7d4ec4c15789527184600609c2ee",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/front.jpg",
+      "publicSha256": "4941a735cd90a99489f5322825daa8e048ca7d4ec4c15789527184600609c2ee",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/sage/angle.jpg",
+      "reviewSha256": "aae82612f50dbcebfd8f4f79460b71f89bab65c20af2febf2c6538f7783115e0",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/angle.jpg",
+      "publicSha256": "aae82612f50dbcebfd8f4f79460b71f89bab65c20af2febf2c6538f7783115e0",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/slim-wellness-bottle/sage/detail.jpg",
+      "reviewSha256": "61504ccc7c2c7d1822bf5ae41049bee95cc05b6328cb9224c8a1225cf2731cb0",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/sage/detail.jpg",
+      "publicSha256": "61504ccc7c2c7d1822bf5ae41049bee95cc05b6328cb9224c8a1225cf2731cb0",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/black/front.jpg",
+      "reviewSha256": "7722855b088b9645fb5eda36438ad5bfc008e56266ea1bed2cfdd7549c4804cc",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/front.jpg",
+      "publicSha256": "7722855b088b9645fb5eda36438ad5bfc008e56266ea1bed2cfdd7549c4804cc",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/black/angle.jpg",
+      "reviewSha256": "e6762c2b5074d093bc2d571a8c61c05fb6adfbf6a0a55e7be473cd13c0c5bdaa",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/angle.jpg",
+      "publicSha256": "e6762c2b5074d093bc2d571a8c61c05fb6adfbf6a0a55e7be473cd13c0c5bdaa",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/black/detail.jpg",
+      "reviewSha256": "3343e11b8e30720fbc3da6bc9b3f0f4f5fe0fe1cba7a8aade995813f2d42bd0f",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/black/detail.jpg",
+      "publicSha256": "3343e11b8e30720fbc3da6bc9b3f0f4f5fe0fe1cba7a8aade995813f2d42bd0f",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/stone/front.jpg",
+      "reviewSha256": "d5d555954cc15750fd86cf8bbaf5b879ae4a293ba32610cb5aaee2e7fb38d81b",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/front.jpg",
+      "publicSha256": "d5d555954cc15750fd86cf8bbaf5b879ae4a293ba32610cb5aaee2e7fb38d81b",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/stone/angle.jpg",
+      "reviewSha256": "e1da5239b721687ccb3fd7ca0131a11879a3119499cd100903e82644c5d7188e",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/angle.jpg",
+      "publicSha256": "e1da5239b721687ccb3fd7ca0131a11879a3119499cd100903e82644c5d7188e",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/stone/detail.jpg",
+      "reviewSha256": "f51b394a651b65d8d8d519799f0dae325d9dfecb2412469152c50b3c6062105b",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/stone/detail.jpg",
+      "publicSha256": "f51b394a651b65d8d8d519799f0dae325d9dfecb2412469152c50b3c6062105b",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/lilac/front.jpg",
+      "reviewSha256": "afe161a7f98b3a4bb3d11dd4710380c1eeb5bd09ee70cb421a4a270335d05fff",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/front.jpg",
+      "publicSha256": "afe161a7f98b3a4bb3d11dd4710380c1eeb5bd09ee70cb421a4a270335d05fff",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/lilac/angle.jpg",
+      "reviewSha256": "39224dc3f58015c3593b34b09559a24264f21fe097b3556da306ec926d7b1c9c",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/angle.jpg",
+      "publicSha256": "39224dc3f58015c3593b34b09559a24264f21fe097b3556da306ec926d7b1c9c",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/lilac/detail.jpg",
+      "reviewSha256": "0295575d6349cc92f17735441126c86e024e07f90c24d19de3b474a361250282",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/lilac/detail.jpg",
+      "publicSha256": "0295575d6349cc92f17735441126c86e024e07f90c24d19de3b474a361250282",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/sky-blue/front.jpg",
+      "reviewSha256": "721dd41cf86332bf045ceb81c97a933bfe0a0c071de5d6b09e9ae1ff79ffddcb",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/front.jpg",
+      "publicSha256": "721dd41cf86332bf045ceb81c97a933bfe0a0c071de5d6b09e9ae1ff79ffddcb",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/sky-blue/angle.jpg",
+      "reviewSha256": "332bbd6e01f74888b9990b92632102d57877ba1a7264aa5d30e3ca1baef153d7",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/angle.jpg",
+      "publicSha256": "332bbd6e01f74888b9990b92632102d57877ba1a7264aa5d30e3ca1baef153d7",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/studio-bottle/sky-blue/detail.jpg",
+      "reviewSha256": "fdace30e42d26db8d108f6bf5916bf3f8c77870ae8b0ac4f163eb21f4fe33ecb",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/detail.jpg",
+      "publicSha256": "fdace30e42d26db8d108f6bf5916bf3f8c77870ae8b0ac4f163eb21f4fe33ecb",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/black/front.jpg",
+      "reviewSha256": "4a5ba2f07324a5c21c276201d12da8bb10acafb2d93b17c4cc8fd9e54abbb89f",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/front.jpg",
+      "publicSha256": "4a5ba2f07324a5c21c276201d12da8bb10acafb2d93b17c4cc8fd9e54abbb89f",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/black/angle.jpg",
+      "reviewSha256": "617071ee447ccc154d32e3c8a9f62e95b0132ae07bac38835b089fda78557ea7",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/angle.jpg",
+      "publicSha256": "617071ee447ccc154d32e3c8a9f62e95b0132ae07bac38835b089fda78557ea7",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/black/detail.jpg",
+      "reviewSha256": "ed07314b15c9edf6cc1f309c99d58d8c9e8638a3c7e5e4e571b2f6aa1bc1b783",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/black/detail.jpg",
+      "publicSha256": "ed07314b15c9edf6cc1f309c99d58d8c9e8638a3c7e5e4e571b2f6aa1bc1b783",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/charcoal/front.jpg",
+      "reviewSha256": "387f72bcc7fdf273908cba6cc2227da3cfc3f482e8fe41c402249ddcde02c1bc",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/front.jpg",
+      "publicSha256": "387f72bcc7fdf273908cba6cc2227da3cfc3f482e8fe41c402249ddcde02c1bc",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/charcoal/angle.jpg",
+      "reviewSha256": "1c6d7bf45c6aba01245fea74d17631c79b8a83c1ee59ebff73d51ba56101f441",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/angle.jpg",
+      "publicSha256": "1c6d7bf45c6aba01245fea74d17631c79b8a83c1ee59ebff73d51ba56101f441",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/charcoal/detail.jpg",
+      "reviewSha256": "82bc4ab923fc3b7c76c5498abbc9afc5d8b93c8082518c1543d373d63b5dc210",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/charcoal/detail.jpg",
+      "publicSha256": "82bc4ab923fc3b7c76c5498abbc9afc5d8b93c8082518c1543d373d63b5dc210",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/navy/front.jpg",
+      "reviewSha256": "b300ce018a6dbbb25cf77b5c4659c9e141b933382ad9cd850dd886d289b11e5b",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/front.jpg",
+      "publicSha256": "b300ce018a6dbbb25cf77b5c4659c9e141b933382ad9cd850dd886d289b11e5b",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/navy/angle.jpg",
+      "reviewSha256": "9a96038cd0774691d893b441fe9f908a9d61ea4cf0de3c65df6921c6fe9660ba",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/angle.jpg",
+      "publicSha256": "9a96038cd0774691d893b441fe9f908a9d61ea4cf0de3c65df6921c6fe9660ba",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/navy/detail.jpg",
+      "reviewSha256": "5a9396e62113b2e4c20945634d29fba08111c48fb9cb2a6de510ca9f78368890",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/navy/detail.jpg",
+      "publicSha256": "5a9396e62113b2e4c20945634d29fba08111c48fb9cb2a6de510ca9f78368890",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/smoke-grey/front.jpg",
+      "reviewSha256": "1c9f69939be4b553fcb80740e8c757529936c0e076295dfb1d10752cab222503",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/front.jpg",
+      "publicSha256": "1c9f69939be4b553fcb80740e8c757529936c0e076295dfb1d10752cab222503",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/smoke-grey/angle.jpg",
+      "reviewSha256": "911977698e12abe2c75f3ba7e084b25cf5fbe8dff29047df7d3bd051fff2185f",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/angle.jpg",
+      "publicSha256": "911977698e12abe2c75f3ba7e084b25cf5fbe8dff29047df7d3bd051fff2185f",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/protein-shaker-bottle/smoke-grey/detail.jpg",
+      "reviewSha256": "984eed29fec53ce74debb0e96342af1f3198567a47c695155b0a5f362bd63c42",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/detail.jpg",
+      "publicSha256": "984eed29fec53ce74debb0e96342af1f3198567a47c695155b0a5f362bd63c42",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/black/front.jpg",
+      "reviewSha256": "ced0a2c318e4fbf156876a53c5857b8c3c83f3466e6bf477b5f14cd7aab6546b",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/front.jpg",
+      "publicSha256": "ced0a2c318e4fbf156876a53c5857b8c3c83f3466e6bf477b5f14cd7aab6546b",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/black/angle.jpg",
+      "reviewSha256": "1d4b2fafdcdd5a22f213eb68f6e44e4a38ebe6d0551e1b0b7d40903d7ccc5acf",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/angle.jpg",
+      "publicSha256": "1d4b2fafdcdd5a22f213eb68f6e44e4a38ebe6d0551e1b0b7d40903d7ccc5acf",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/black/detail.jpg",
+      "reviewSha256": "5ae86dcdcf992c22fcfd4fee7ec989af7b5783adf464c4e770932e52fbc67a05",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/black/detail.jpg",
+      "publicSha256": "5ae86dcdcf992c22fcfd4fee7ec989af7b5783adf464c4e770932e52fbc67a05",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/cream/front.jpg",
+      "reviewSha256": "bb27218e67c169d5ac024c1282f5dfcf3f767929c3bcd5a76cda5dc6a0d9d305",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/front.jpg",
+      "publicSha256": "bb27218e67c169d5ac024c1282f5dfcf3f767929c3bcd5a76cda5dc6a0d9d305",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/cream/angle.jpg",
+      "reviewSha256": "d863f18916d3eec91c74ae80a7457e623437f70fa3ea391a1b97d7505b4c4536",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/angle.jpg",
+      "publicSha256": "d863f18916d3eec91c74ae80a7457e623437f70fa3ea391a1b97d7505b4c4536",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/cream/detail.jpg",
+      "reviewSha256": "b04af3097ecfe4f094a5ea3d9e041b0f0ed488786f88b398f27c281dc548268f",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/cream/detail.jpg",
+      "publicSha256": "b04af3097ecfe4f094a5ea3d9e041b0f0ed488786f88b398f27c281dc548268f",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/lilac/front.jpg",
+      "reviewSha256": "1ac30693ff3a5e5e78b36b44cee852af3bddeab5f29181681a3c53c8c0d8c1aa",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/front.jpg",
+      "publicSha256": "1ac30693ff3a5e5e78b36b44cee852af3bddeab5f29181681a3c53c8c0d8c1aa",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/lilac/angle.jpg",
+      "reviewSha256": "577559cb4d0602039a873fbcc504a5a49cfbace343cb534a8f01688d9cabe412",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/angle.jpg",
+      "publicSha256": "577559cb4d0602039a873fbcc504a5a49cfbace343cb534a8f01688d9cabe412",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/lilac/detail.jpg",
+      "reviewSha256": "cb8487f1a2396f3a2e5b79c4d4d5e91b755765667d2d5afac143a5fc334cafbc",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/lilac/detail.jpg",
+      "publicSha256": "cb8487f1a2396f3a2e5b79c4d4d5e91b755765667d2d5afac143a5fc334cafbc",
+      "view": "detail"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/sky-blue/front.jpg",
+      "reviewSha256": "b27f4e1201e24f9ce3370275e803d894a663302d5ebff789d5604c5fbe2ebf58",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/front.jpg",
+      "publicSha256": "b27f4e1201e24f9ce3370275e803d894a663302d5ebff789d5604c5fbe2ebf58",
+      "view": "front"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/sky-blue/angle.jpg",
+      "reviewSha256": "33b800cdb1062751af72185c04a553208fdd1b260ab9a3e79e566d7f9e41edfd",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/angle.jpg",
+      "publicSha256": "33b800cdb1062751af72185c04a553208fdd1b260ab9a3e79e566d7f9e41edfd",
+      "view": "angle"
+    },
+    {
+      "reviewSource": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated/all-day-straw-tumbler/sky-blue/detail.jpg",
+      "reviewSha256": "f4a8e274dbc265cecb0fef7cf6ab7cd80a280a0f1f9b363144d2358e81827ff4",
+      "publicPath": "assets/images/products/kalm-move/bottles-v2/all-day-straw-tumbler/sky-blue/detail.jpg",
+      "publicSha256": "f4a8e274dbc265cecb0fef7cf6ab7cd80a280a0f1f9b363144d2358e81827ff4",
+      "view": "detail"
+    }
+  ]
+}

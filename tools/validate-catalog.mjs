@@ -44,6 +44,7 @@ for (const product of data.products || []) {
   slugs.add(product.slug);
 
   const comingSoon = Boolean(product.comingSoon) || product.availability === "coming_soon";
+  const isComingSoonBottlePreview = comingSoon && product.brandId === "kalm-move" && product.comingSoonCallToAction === false;
   if (comingSoon ? product.price !== null && product.price !== undefined : (typeof product.price !== "number" || product.price < 0)) {
     fail(`${product.id} has invalid price.`);
   }
@@ -54,16 +55,23 @@ for (const product of data.products || []) {
     comingSoonProducts.push(product);
     if (product.availability !== "coming_soon") fail(`${product.id} must use coming_soon availability.`);
     const hasConceptImages = Boolean(product.image) || imageList(product.gallery).length > 0;
-    if (Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} coming-soon record must not include variants.`);
-    if (hasConceptImages && !product.conceptImageDisclosure) fail(`${product.id} concept imagery requires a disclosure.`);
+    if (isComingSoonBottlePreview) {
+      if (typeof product.comingSoonMessage !== "string" || !product.comingSoonMessage) fail(`${product.id} must include a customer-facing coming-soon message.`);
+      if (product.price !== null || product.compareAtPrice !== null || product.trackInventory !== false) fail(`${product.id} must not expose price or stock.`);
+      if (!Object.keys(product.variantImages || {}).length || !(product.variants || []).length) fail(`${product.id} must retain its approved review gallery.`);
+      if (!(product.variants || []).every((variant) => variant.enabled === false && variant.availability === "coming_soon" && !("quantity" in variant))) fail(`${product.id} variants must remain disabled and stockless.`);
+    } else {
+      if (Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} coming-soon record must not include variants.`);
+      if (hasConceptImages && !product.conceptImageDisclosure) fail(`${product.id} concept imagery requires a disclosure.`);
+    }
     if (product.brandId === "kalm-outdoor") {
       if (hasConceptImages) fail(`${product.id} Outdoor coming-soon record must not expose unapproved concept imagery.`);
       if (product.conceptImageDisclosure) fail(`${product.id} Outdoor coming-soon record must not expose a concept-image disclosure without imagery.`);
       if (product.photographyStatus !== "Photography in production. Product images will be published after supplier approval.") fail(`${product.id} must state the approved photography status.`);
-    } else if (product.photographyStatus !== "Photography in production") {
+    } else if (!isComingSoonBottlePreview && product.photographyStatus !== "Photography in production") {
       fail(`${product.id} must state Photography in production.`);
     }
-    if (!Array.isArray(product.compatibleAppliances) || !product.compatibleAppliances.length) fail(`${product.id} missing compatible appliance mapping.`);
+    if (!isComingSoonBottlePreview && (!Array.isArray(product.compatibleAppliances) || !product.compatibleAppliances.length)) fail(`${product.id} missing compatible appliance mapping.`);
   } else if (!exists(product.image)) {
     fail(`${product.id} hero image does not exist: ${product.image}`);
   }
@@ -90,7 +98,7 @@ for (const product of data.products || []) {
     skus.add(variant.sku);
     if (!variant.colour) fail(`${product.id} variant ${variant.sku} missing colour.`);
     if (!variant.size) fail(`${product.id} variant ${variant.sku} missing size.`);
-    if (!["in_stock", "low_stock", "out_of_stock", "preorder", "discontinued"].includes(variant.availability || "in_stock")) fail(`${product.id} variant ${variant.sku} has invalid availability.`);
+    if (!["in_stock", "low_stock", "out_of_stock", "preorder", "discontinued", "coming_soon"].includes(variant.availability || "in_stock")) fail(`${product.id} variant ${variant.sku} has invalid availability.`);
     if (variant.quantity !== null && variant.quantity !== undefined && (!Number.isFinite(variant.quantity) || variant.quantity < 0)) {
       fail(`${product.id} variant ${variant.sku} has invalid quantity.`);
     }
@@ -98,7 +106,7 @@ for (const product of data.products || []) {
 }
 
 for (const product of comingSoonProducts) {
-  for (const applianceId of product.compatibleAppliances) {
+  for (const applianceId of product.compatibleAppliances || []) {
     if (!ids.has(applianceId)) fail(`${product.id} references missing compatible appliance ${applianceId}.`);
   }
 }

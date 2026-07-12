@@ -12,14 +12,17 @@ const catalog = readJson('products.json');
 const manifest = readJson('reports/kalm-move-men-v4-active-manifest.json');
 const productMap = readJson('reports/kalm-move-men-v3-product-map.json');
 const responsive = readJson('reports/kalm-responsive-image-manifest.json');
-const men = catalog.products.filter(product => product.brandId === 'kalm-move' && product.audience === 'men');
-if (men.length !== 11) fail(`Expected 11 public men products, found ${men.length}.`);
+const stage2BottleOverrides = new Set(['kalm-move-protein-shaker-bottle']);
+const men = catalog.products.filter(product => product.brandId === 'kalm-move' && product.audience === 'men' && !stage2BottleOverrides.has(product.id));
+if (men.length !== 10) fail(`Expected 10 non-bottle Men V4 products, found ${men.length}.`);
 if (manifest.records.length !== 46 || productMap.records.length !== 46) fail('Men V4 records are incomplete.');
 if (manifest.summary.activeV3Assets !== 46 || productMap.summary.approvedForV4Preview !== 46) fail('Men V4 approval counts do not equal the full audited set.');
 if (productMap.records.some(record => record.selection !== 'approved_for_v4_preview')) fail('A V3 record lacks an explicit preview selection decision.');
 if (responsive.records.length !== 92) fail('Expected 92 responsive derivatives for 46 Men V4 assets.');
 
-const activeByPair = new Map(manifest.records.map(record => [`${record.productId}::${record.colour}`, record]));
+const activeByPair = new Map(manifest.records
+  .filter(record => !stage2BottleOverrides.has(record.productId))
+  .map(record => [`${record.productId}::${record.colour}`, record]));
 const sourceUse = new Map();
 let productColourCount = 0;
 for (const product of men) {
@@ -47,13 +50,14 @@ for (const product of men) {
     sourceUse.set(record.sourceHash, `${product.id}::${colour}`);
   }
 }
-if (productColourCount !== 46 || sourceUse.size !== 46) fail(`Expected 46 unique active product-colour sources, found ${productColourCount} records / ${sourceUse.size} sources.`);
+if (productColourCount !== 42 || sourceUse.size !== 42) fail(`Expected 42 active Men V4 product-colour sources after the approved bottle override, found ${productColourCount} records / ${sourceUse.size} sources.`);
 
 console.log(JSON.stringify({
   status: 'passed',
   menProducts: men.length,
   activeProductColours: productColourCount,
-  activeV3Assets: manifest.records.length,
+  historicalV3Assets: manifest.records.length,
+  activeV3AssetsExcludingBottleOverride: productColourCount,
   responsiveDerivatives: responsive.records.length,
   uniqueV3SourceHashes: sourceUse.size
 }, null, 2));

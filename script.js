@@ -857,6 +857,7 @@ function renderProduct(slug) {
   const product = state.data.products.find((item) => item.slug === slug);
   if (!product || !isProductPublic(product)) return renderNotFound();
   const comingSoon = isComingSoonProduct(product);
+  const comingSoonMessage = product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.";
   const defaultColor = comingSoon ? "" : getDefaultColor(product);
   const defaultImages = comingSoon ? getProductGalleryImages(product) : (defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product));
   const productAvailability = getProductAvailability(product);
@@ -878,17 +879,16 @@ function renderProduct(slug) {
         ${comingSoon ? `
           <div class="coming-soon-detail-status">
             <strong>Coming soon</strong>
-            <p>${escapeHtml(product.photographyStatus || "Supplier approval pending.")}</p>
-            ${product.conceptImageDisclosure ? `<p class="concept-image-disclosure">${escapeHtml(product.conceptImageDisclosure)}</p>` : ""}
-            <p>${escapeHtml(product.compatibilityNote || "Compatibility confirmation is pending.")}</p>
+            <p>${escapeHtml(comingSoonMessage)}</p>
+            ${product.compatibilityNote ? `<p>${escapeHtml(product.compatibilityNote)}</p>` : ""}
           </div>
         ` : `<div class="price-line">${renderPrice(product)}</div>`}
 
-        ${comingSoon ? renderOutdoorWaitlistForm({
+        ${comingSoon && product.comingSoonCallToAction !== false ? renderOutdoorWaitlistForm({
           interest: product.title,
           applianceId: product.compatibleAppliances?.[0] || "",
           source: `outdoor-product-${product.slug}`
-        }) : `
+        }) : !comingSoon ? `
           <div class="selector-row">
             <label>Colour
               <select data-color-select>
@@ -906,7 +906,7 @@ function renderProduct(slug) {
           <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
           <button class="button primary full" type="button" data-add-to-bag="${product.id}" ${productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "disabled" : ""}>${escapeHtml(productAvailability === "out_of_stock" || productAvailability === "discontinued" ? "Sold out" : product.ctaLabel)}</button>
           <p class="stock-line" data-stock-status>${escapeHtml(getStockMessage(product, defaultColor))}</p>
-        `}
+        ` : ""}
         ${product.sku ? `<p class="sku-line">SKU: ${escapeHtml(product.sku)}</p>` : ""}
         <p>${escapeHtml(product.longDescription || product.description)}</p>
 
@@ -1184,6 +1184,12 @@ function getPublicProducts() {
   return (state.data?.products || []).filter(isProductPublic);
 }
 
+function productMatchesAudience(product, audience = "all") {
+  return audience === "all"
+    || product?.audience === audience
+    || (Array.isArray(product?.audiences) && product.audiences.includes(audience));
+}
+
 function isComingSoonProduct(product) {
   return Boolean(product?.comingSoon) || product?.availability === "coming_soon";
 }
@@ -1208,7 +1214,7 @@ function getMoveCategoryOptions(audience = "all") {
   const categories = new Set();
   getPublicProducts()
     .filter((product) => product.brandId === "kalm-move")
-    .filter((product) => audience === "all" || product.audience === audience)
+    .filter((product) => productMatchesAudience(product, audience))
     .forEach((product) => categories.add(getMoveCategoryId(product)));
   return moveCategories.filter((category) => categories.has(category.id));
 }
@@ -1496,9 +1502,9 @@ function renderProductCard(product, options = {}) {
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h3><a href="#/product/${product.slug}">${escapeHtml(product.title)}</a></h3>
         ${comingSoon ? `
-          <p class="card-photo-status">${escapeHtml(product.conceptImageDisclosure || product.photographyStatus || "Supplier approval pending.")}</p>
-          <p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances?.[0]))}</p>
-          <a class="button secondary full card-view-link" href="#/product/${product.slug}">Join waitlist</a>
+          <p class="card-photo-status">${escapeHtml(product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.")}</p>
+          ${product.compatibleAppliances?.[0] ? `<p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances[0]))}</p>` : ""}
+          ${product.comingSoonCallToAction !== false ? `<a class="button secondary full card-view-link" href="#/product/${product.slug}">Join waitlist</a>` : `<a class="button secondary full card-view-link" href="#/product/${product.slug}">View product</a>`}
         ` : `
           <div class="price-line">${renderPrice(product)}</div>
           <div class="swatches" aria-label="Available colours">
@@ -1901,7 +1907,7 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
       || tags.includes(category)
       || (category === "sale" && product.compareAtPrice)
       || (category === "new-in" && tags.includes("new-in"));
-    const audienceMatch = audience === "all" || product.audience === audience;
+    const audienceMatch = productMatchesAudience(product, audience);
     const moveCategoryMatch = moveCategory === "all"
       || getMoveCategoryId(product) === moveCategory
       || tags.includes(moveCategory);
