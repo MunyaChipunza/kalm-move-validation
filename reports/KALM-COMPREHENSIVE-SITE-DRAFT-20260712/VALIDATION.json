@@ -1,0 +1,895 @@
+{
+  "generatedAt": "2026-07-12T18:25:44.848Z",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "Homepage Find Your Edit product exists: kalm-move-form-short-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit colour exists: kalm-move-form-short-set / Khaki",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit hero image exists: kalm-move-form-short-set / Khaki",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp"
+    },
+    {
+      "name": "Homepage Find Your Edit product exists: kalm-wellness-breathe-mat",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit colour exists: kalm-wellness-breathe-mat / Sand",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit hero image exists: kalm-wellness-breathe-mat / Sand",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp"
+    },
+    {
+      "name": "Homepage Find Your Edit product exists: kalm-home-white-cotton-bedding-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit colour exists: kalm-home-white-cotton-bedding-set / White",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit hero image exists: kalm-home-white-cotton-bedding-set / White",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
+    },
+    {
+      "name": "Homepage Find Your Edit product exists: kalm-outdoor-weather-ready-picnic-blanket",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit colour exists: kalm-outdoor-weather-ready-picnic-blanket / Charcoal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Find Your Edit hero image exists: kalm-outdoor-weather-ready-picnic-blanket / Charcoal",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
+    },
+    {
+      "name": "Homepage Featured Edit product exists: kalm-move-open-back-short-romper",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Featured Edit colour exists: kalm-move-open-back-short-romper / Navy",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Featured Edit hero image exists: kalm-move-open-back-short-romper / Navy",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp"
+    },
+    {
+      "name": "Homepage Featured Edit product exists: kalm-wellness-ground-bottle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Featured Edit colour exists: kalm-wellness-ground-bottle / Olive",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Featured Edit hero image exists: kalm-wellness-ground-bottle / Olive",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp"
+    },
+    {
+      "name": "Homepage Featured Edit product exists: kalm-home-black-reed-diffuser",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Featured Edit colour exists: kalm-home-black-reed-diffuser / Smoke black",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Featured Edit hero image exists: kalm-home-black-reed-diffuser / Smoke black",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+    },
+    {
+      "name": "Homepage Archive Sale product exists: ks-high-waist-seamless-leggings",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Archive Sale colour exists: ks-high-waist-seamless-leggings / Wine",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Archive Sale hero image exists: ks-high-waist-seamless-leggings / Wine",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine/front.webp"
+    },
+    {
+      "name": "Homepage Archive Sale product exists: ks-high-waist-seamless-shorts",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Archive Sale colour exists: ks-high-waist-seamless-shorts / Deep Plum",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Archive Sale hero image exists: ks-high-waist-seamless-shorts / Deep Plum",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum/front.webp"
+    },
+    {
+      "name": "Homepage Most Wanted product exists: kalm-move-flow-training-short",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted colour exists: kalm-move-flow-training-short / Olive",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted hero image exists: kalm-move-flow-training-short / Olive",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp"
+    },
+    {
+      "name": "Homepage Most Wanted product exists: kalm-move-rise-zip-jacket-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted colour exists: kalm-move-rise-zip-jacket-set / Apricot",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted hero image exists: kalm-move-rise-zip-jacket-set / Apricot",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp"
+    },
+    {
+      "name": "Homepage Most Wanted product exists: kalm-wellness-restore-towel",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted colour exists: kalm-wellness-restore-towel / Dusty Rose",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted hero image exists: kalm-wellness-restore-towel / Dusty Rose",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp"
+    },
+    {
+      "name": "Homepage Most Wanted product exists: kalm-home-charcoal-bath-towel-stack",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted colour exists: kalm-home-charcoal-bath-towel-stack / Charcoal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Most Wanted hero image exists: kalm-home-charcoal-bath-towel-stack / Charcoal",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
+    },
+    {
+      "name": "New In product exists: kalm-move-align-halter-legging-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-align-halter-legging-set / Pink Drink",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-align-halter-legging-set / Pink Drink",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp"
+    },
+    {
+      "name": "New In product exists: kalm-move-ease-flare-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-ease-flare-set / Taupe",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-ease-flare-set / Taupe",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp"
+    },
+    {
+      "name": "New In product exists: kalm-move-wide-leg-yoga-pant",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-wide-leg-yoga-pant / Burgundy Red",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-wide-leg-yoga-pant / Burgundy Red",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp"
+    },
+    {
+      "name": "New In product exists: kalm-move-motion-hoodie",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-motion-hoodie / Stone",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-motion-hoodie / Stone",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp"
+    },
+    {
+      "name": "New In product exists: kalm-move-everyday-bottle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-everyday-bottle / Lilac",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-everyday-bottle / Lilac",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/bottles-v2/everyday-bottle/lilac/front.jpg"
+    },
+    {
+      "name": "New In product exists: kalm-move-slim-wellness-bottle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-slim-wellness-bottle / Soft Pink",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-slim-wellness-bottle / Soft Pink",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/bottles-v2/slim-wellness-bottle/soft-pink/front.jpg"
+    },
+    {
+      "name": "New In product exists: kalm-wellness-ritual-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-wellness-ritual-set / Natural Oat",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-wellness-ritual-set / Natural Oat",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp"
+    },
+    {
+      "name": "New In product exists: kalm-wellness-pause-journal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-wellness-pause-journal / Blush",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-wellness-pause-journal / Blush",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp"
+    },
+    {
+      "name": "New In product exists: kalm-move-open-back-short-romper",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In colour exists: kalm-move-open-back-short-romper / Apricot",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In hero image exists: kalm-move-open-back-short-romper / Apricot",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-form-short-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-form-short-set / Dark Purple",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-form-short-set / Dark Purple",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-pulse-crop-short-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-pulse-crop-short-set / Black",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-pulse-crop-short-set / Black",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-balance-x-back-legging-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-balance-x-back-legging-set / Magic Forest Green",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-balance-x-back-legging-set / Magic Forest Green",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-halter-biker-short-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-halter-biker-short-set / Blue",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-halter-biker-short-set / Blue",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-core-performance-tee",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-core-performance-tee / White",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-core-performance-tee / White",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-sprint-running-short",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-sprint-running-short / Cobalt",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-sprint-running-short / Cobalt",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-lift-tank",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-lift-tank / Charcoal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-lift-tank / Charcoal",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-pace-jogger",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-pace-jogger / Navy",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-pace-jogger / Navy",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-protein-shaker-bottle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-protein-shaker-bottle / Smoke Grey",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-protein-shaker-bottle / Smoke Grey",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/bottles-v2/protein-shaker-bottle/smoke-grey/front.jpg"
+    },
+    {
+      "name": "Activewear product exists: kalm-move-studio-bottle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: kalm-move-studio-bottle / Sky Blue",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: kalm-move-studio-bottle / Sky Blue",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/bottles-v2/studio-bottle/sky-blue/front.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-high-waist-seamless-leggings",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-high-waist-seamless-leggings / Deep Plum",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-high-waist-seamless-leggings / Deep Plum",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum/front.webp"
+    },
+    {
+      "name": "Sale product exists: ks-high-waist-seamless-shorts",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-high-waist-seamless-shorts / Wine",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-high-waist-seamless-shorts / Wine",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-align-halter-legging-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-align-halter-legging-set / Date Brown",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-align-halter-legging-set / Date Brown",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-ease-flare-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-ease-flare-set / Espresso",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-ease-flare-set / Espresso",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-form-short-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-form-short-set / Orange",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-form-short-set / Orange",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-wide-leg-yoga-pant",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-wide-leg-yoga-pant / Gray",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-wide-leg-yoga-pant / Gray",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-balance-x-back-legging-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-balance-x-back-legging-set / Bluebird",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-balance-x-back-legging-set / Bluebird",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-halter-biker-short-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-halter-biker-short-set / Red",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-halter-biker-short-set / Red",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-rise-zip-jacket-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-rise-zip-jacket-set / Coffee",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-rise-zip-jacket-set / Coffee",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-open-back-short-romper",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-open-back-short-romper / Army Green",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-open-back-short-romper / Army Green",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-pocket-racerback-crop-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-pocket-racerback-crop-bra / Brown",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-pocket-racerback-crop-bra / Brown",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-contrast-flare-set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-contrast-flare-set / Purple",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-contrast-flare-set / Purple",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-crossline-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-crossline-legging / Blue",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-crossline-legging / Blue",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp"
+    },
+    {
+      "name": "Sale product exists: kalm-move-drift-crop-wide-pant",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: kalm-move-drift-crop-wide-pant / Wine Red",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: kalm-move-drift-crop-wide-pant / Wine Red",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp"
+    },
+    {
+      "name": "Outdoor product exists: kalm-outdoor-ember-16-gas-pizza-oven",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Outdoor colour exists: kalm-outdoor-ember-16-gas-pizza-oven / Matte Black",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Outdoor hero image exists: kalm-outdoor-ember-16-gas-pizza-oven / Matte Black",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp"
+    },
+    {
+      "name": "Outdoor product exists: kalm-outdoor-forge-2-portable-gas-griddle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Outdoor colour exists: kalm-outdoor-forge-2-portable-gas-griddle / Matte Black",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Outdoor hero image exists: kalm-outdoor-forge-2-portable-gas-griddle / Matte Black",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp"
+    },
+    {
+      "name": "Outdoor product exists: kalm-outdoor-ridge-4-stainless-gas-braai",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Outdoor colour exists: kalm-outdoor-ridge-4-stainless-gas-braai / Stainless / Black",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Outdoor hero image exists: kalm-outdoor-ridge-4-stainless-gas-braai / Stainless / Black",
+      "status": "pass",
+      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp"
+    },
+    {
+      "name": "Every allocated product-colour key is unique across requested surfaces",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Find Your Edit and Featured Edit do not reuse an image path",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Find Your Edit and Featured Edit do not reuse an image hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Homepage Archive Sale is KS Active only",
+      "status": "pass",
+      "detail": "ks-active, ks-active"
+    },
+    {
+      "name": "Homepage Archive Sale contains genuine sale products",
+      "status": "pass",
+      "detail": "compare-at price must exceed sale price"
+    },
+    {
+      "name": "New In excludes KS Active",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "New In only contains catalogue new-in products",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale page contains genuine sale products",
+      "status": "pass",
+      "detail": "compare-at price must exceed sale price"
+    },
+    {
+      "name": "Outdoor collection contains exactly three appliances",
+      "status": "pass",
+      "detail": "kalm-outdoor-ember-16-gas-pizza-oven, kalm-outdoor-forge-2-portable-gas-griddle, kalm-outdoor-ridge-4-stainless-gas-braai"
+    },
+    {
+      "name": "All public campaign derivatives exist",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Campaign derivatives are unique",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "No rejected campaign crop is publicly referenced",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Rejected campaign evidence is outside public assets",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Approved KALM Collective logo is used",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "KALM Collective logo blends without a white box",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Find Your Edit cards are square",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Public product routes are implemented",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Product pages honor intended display colour",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Product, Organization, WebSite and Collection structured data are implemented",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Coming-soon or unavailable products do not publish offers",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "robots.txt permits standard crawling and points to the sitemap",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sitemap includes all public products",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sitemap includes collection routes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "llms.txt contains factual discovery guidance without credentials",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "No Drive path is exposed in public source",
+      "status": "pass",
+      "detail": ""
+    }
+  ],
+  "allocationCount": 49,
+  "campaignFiles": [
+    {
+      "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-desktop.webp",
+      "bytes": 340688,
+      "sha256": "5146736df64543a7c43b0d7eb8fb26d3e79f971c40592879f94b65ea6b6e7377"
+    },
+    {
+      "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-tablet.webp",
+      "bytes": 246022,
+      "sha256": "5bbab31aeffab66ffad495e58758dbcab1c2b24750119723098eca79b76e4ab9"
+    },
+    {
+      "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-mobile-v2.webp",
+      "bytes": 321414,
+      "sha256": "e04259773941e39f30f9798d57d0e004f8475366237490c9763324846ba6d35b"
+    },
+    {
+      "path": "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-desktop.webp",
+      "bytes": 196842,
+      "sha256": "31478e443147a0beedb487030f4b06e7bd907c58f5960ed6c6bccb020529e9cc"
+    },
+    {
+      "path": "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-mobile.webp",
+      "bytes": 129550,
+      "sha256": "774353a327de5b222c97b55b9672aa77c5157f7b82ad6a75967ccd33329c1588"
+    }
+  ],
+  "failures": []
+}

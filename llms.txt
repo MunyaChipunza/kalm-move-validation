@@ -1,0 +1,22 @@
+# KALM Collective
+
+KALM Collective is a South African retail storefront for KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.
+
+## Primary pages
+
+- https://kalmcollective.co.za/
+- https://kalmcollective.co.za/brands
+- https://kalmcollective.co.za/collections/new-in
+- https://kalmcollective.co.za/collections/activewear
+- https://kalmcollective.co.za/collections/wellness
+- https://kalmcollective.co.za/collections/home
+- https://kalmcollective.co.za/collections/outdoor
+- https://kalmcollective.co.za/collections/sale
+
+## Product information
+
+Product pages provide current descriptions, colour options, pricing and availability. KALM Outdoor accessory concepts marked coming soon are not purchasable. Product availability and prices may change.
+
+## Crawling
+
+Machine-readable discovery files are available at /robots.txt and /sitemap.xml. Access is subject to the crawler's own robots policy and does not guarantee indexing or AI inclusion.

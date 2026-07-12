@@ -52,6 +52,7 @@ async function init() {
     const response = await fetch("products.json", { cache: "no-cache" });
     state.data = await response.json();
     window.addEventListener("hashchange", renderRoute);
+    window.addEventListener("popstate", renderRoute);
     renderRoute();
     renderBag();
   } catch (error) {
@@ -194,7 +195,7 @@ function renderRoute() {
   if (!state.data) return;
   if (state.currentRouteKey) state.scrollPositions.set(state.currentRouteKey, window.scrollY);
   const route = getRoute();
-  const routeKey = window.location.hash || "#/";
+  const routeKey = window.location.hash || `${window.location.pathname}${window.location.search}` || "/";
   const isFirstRoute = !state.hasRenderedRoute;
   const isHomeRoute = route.path === "/" || route.path === "";
   state.hasRenderedRoute = true;
@@ -215,7 +216,7 @@ function renderRoute() {
     scrollToAnchor(route.anchor);
     return;
   }
-  if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop());
+  if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop(), route.params);
   if (route.path === "/cart") return renderCartPage();
   if (route.path === "/checkout") return renderCheckout();
   if (route.path === "/contact") return renderContact();
@@ -241,7 +242,15 @@ function restoreRouteScroll(route, routeKey) {
 }
 
 function getRoute() {
-  const raw = window.location.hash.replace(/^#/, "") || "/";
+  const hash = window.location.hash.replace(/^#/, "");
+  if (!hash) {
+    const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
+    const params = new URLSearchParams(window.location.search);
+    if (pathname.startsWith("/products/")) return { path: `/product/${pathname.split("/").pop()}`, params, anchor: "" };
+    if (pathname.startsWith("/collections/")) return { path: "/shop", params: new URLSearchParams(`category=${encodeURIComponent(pathname.split("/").pop())}&${params}`), anchor: "" };
+    return { path: pathname, params, anchor: "" };
+  }
+  const raw = hash || "/";
   const [pathPart, query = ""] = raw.split("?");
   const [path, anchor = ""] = pathPart.split("#");
   return {
@@ -260,10 +269,112 @@ function scrollToAnchor(anchor) {
   });
 }
 
-function setDocumentMeta(title, description) {
+function setDocumentMeta(title, description, path = window.location.pathname || "/") {
   document.title = title;
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription && description) metaDescription.setAttribute("content", description);
+  const canonicalPath = path.startsWith("/") ? path : `/${path}`;
+  const canonical = `https://kalmcollective.co.za${canonicalPath}`;
+  document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonical);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", title);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", description || "");
+  document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical);
+}
+
+function absoluteUrl(path = "/") {
+  return path.startsWith("http") ? path : `https://kalmcollective.co.za/${path.replace(/^\//, "")}`;
+}
+
+function replaceStructuredData(items) {
+  let node = document.querySelector("#kalm-structured-data");
+  if (!node) {
+    node = document.createElement("script");
+    node.id = "kalm-structured-data";
+    node.type = "application/ld+json";
+    document.head.append(node);
+  }
+  node.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": items });
+}
+
+function setStructuredData({ type = "website", product = null, color = "", title = "", entries = [] } = {}) {
+  const graph = [
+    {
+      "@type": "Organization",
+      "@id": "https://kalmcollective.co.za/#organization",
+      name: "KALM Collective",
+      url: "https://kalmcollective.co.za/",
+      logo: absoluteUrl("assets/branding/kalm-collective/kalm-collective-logo.png")
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kalmcollective.co.za/#website",
+      name: "KALM Collective",
+      url: "https://kalmcollective.co.za/"
+    }
+  ];
+  if (type === "product" && product) {
+    const comingSoon = isComingSoonProduct(product);
+    const status = getProductAvailability(product);
+    const purchasable = !comingSoon && ["in_stock", "low_stock", "preorder"].includes(status) && typeof product.price === "number";
+    const item = {
+      "@type": "Product",
+      "@id": absoluteUrl(productRoute(product)),
+      name: product.title,
+      description: product.metaDescription || product.description || product.longDescription || "",
+      image: absoluteUrl(getVariantImage(product, color || getDefaultColor(product))),
+      brand: { "@type": "Brand", name: product.brand }
+    };
+    if (purchasable) {
+      item.offers = {
+        "@type": "Offer",
+        priceCurrency: "ZAR",
+        price: product.price.toFixed(2),
+        availability: `https://schema.org/${status === "preorder" ? "PreOrder" : "InStock"}`,
+        url: absoluteUrl(productRoute(product, color || getDefaultColor(product)))
+      };
+    }
+    graph.push(item);
+  }
+  if (type === "collection") {
+    graph.push({
+      "@type": "CollectionPage",
+      "@id": absoluteUrl(window.location.pathname || "/shop"),
+      name: title,
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: entries.map(({ product, color }, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: absoluteUrl(productRoute(product, color))
+        }))
+      }
+    });
+  }
+  replaceStructuredData(graph);
+}
+
+function productRoute(product, color = "") {
+  const query = color ? `?colour=${encodeURIComponent(color)}` : "";
+  return `/products/${encodeURIComponent(product.slug)}${query}`;
+}
+
+function collectionRoute(category) {
+  return `/collections/${encodeURIComponent(category)}`;
+}
+
+function hashShopRoute(params = {}) {
+  return `#/shop?${new URLSearchParams(params).toString()}`;
+}
+
+function merchandising() {
+  return window.KALM_MERCHANDISING || { homepage: {}, collections: {}, campaigns: {} };
+}
+
+function getMerchandisingEntries(entries = []) {
+  return entries.map((entry) => {
+    const product = state.data.products.find((item) => item.id === entry.productId || item.slug === entry.productSlug);
+    return product ? { ...entry, color: entry.color || entry.colour || entry.displayColour || "", product } : null;
+  }).filter(Boolean);
 }
 
 function hydrateDeferredImages(root = document) {
@@ -320,26 +431,21 @@ function scheduleHomeSections(sections) {
 }
 
 function renderHome({ preserveHero = false } = {}) {
-  const { meta, brands, categories } = state.data;
-  const products = getPublicProducts();
+  const { meta, brands } = state.data;
+  const config = merchandising();
+  const home = config.homepage || {};
   setDocumentMeta(
     "KALM Collective | Premium Movement, Outdoor, Wellness and Home",
-    "Shop KALM Collective across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home."
+    "Shop KALM Collective across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.",
+    "/"
   );
-  const arrivals = products.filter((product) => product.tags.includes("new-in")).slice(0, 8);
-  const outdoorCooking = products.filter((product) => product.tags.includes("outdoor-cooking")).slice(0, 3);
-  const bestSellers = [
-    products.find((product) => product.id === "ks-high-waist-seamless-leggings"),
-    products.find((product) => product.id === "kalm-move-rise-long-sleeve-set"),
-    products.find((product) => product.id === "kalm-outdoor-ember-16-gas-pizza-oven"),
-    products.find((product) => product.id === "kalm-home-white-cotton-bedding-set")
-  ].filter(Boolean);
-  const saleEdit = products.filter((product) => product.compareAtPrice).slice(0, 4);
-  const featured = [
-    products.find((product) => product.id === "kalm-move-align-strappy-jumpsuit"),
-    products.find((product) => product.id === "kalm-home-white-cotton-bedding-set"),
-    products.find((product) => product.id === "kalm-outdoor-weather-ready-picnic-blanket")
-  ].filter(Boolean);
+  setStructuredData({ type: "website" });
+  const findYourEdit = getMerchandisingEntries(home.findYourEdit);
+  const featuredEdit = getMerchandisingEntries(home.featuredEdit);
+  const archiveSale = getMerchandisingEntries(home.archiveSale);
+  const mostWanted = getMerchandisingEntries(home.mostWanted);
+  const heroCampaign = config.campaigns?.homeHero || {};
+  const collectionCampaign = config.campaigns?.featuredCollection || {};
 
   const hero = `
     <section class="hero-shell">
@@ -348,12 +454,16 @@ function renderHome({ preserveHero = false } = {}) {
         <h1>Premium essentials for movement, outdoor routines and everyday living.</h1>
         <p>Shop activewear, outdoor staples, wellness accessories and home essentials from the KALM brand family.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#/shop?category=new-in">Shop new arrivals</a>
-          <a class="button secondary" href="#/brands">Explore brands</a>
+          <a class="button primary" href="${collectionRoute("new-in")}">Shop new arrivals</a>
+          <a class="button secondary" href="/brands">Explore brands</a>
         </div>
       </div>
-      <a class="hero-media" href="#/shop" aria-label="Shop KALM Collective">
-        <img src="${escapeHtml(meta.heroImage)}" alt="KALM Move man and woman wearing KALM apparel together" width="1448" height="1086" fetchpriority="high" decoding="async">
+      <a class="hero-media" href="${collectionRoute("activewear")}" aria-label="Shop KALM Move activewear">
+        <picture>
+          <source media="(max-width: 640px)" srcset="${escapeHtml(heroCampaign.mobile)}">
+          <source media="(max-width: 1100px)" srcset="${escapeHtml(heroCampaign.tablet)}">
+          <img src="${escapeHtml(heroCampaign.desktop)}" alt="${escapeAttribute(heroCampaign.alt || "KALM Move adults enjoying a relaxed movement moment")}" width="1920" height="1080" fetchpriority="high" decoding="async">
+        </picture>
       </a>
     </section>`;
 
@@ -364,10 +474,10 @@ function renderHome({ preserveHero = false } = {}) {
           <p class="eyebrow">Shop by category</p>
           <h2>Find your edit</h2>
         </div>
-        <a class="text-link" href="#/shop">Shop all</a>
+        <a class="text-link" href="/collections/new-in">Shop all</a>
       </div>
       <div class="category-grid">
-        ${categories.filter((category) => ["activewear", "wellness", "home", "outdoor"].includes(category.id)).map(renderCategoryTile).join("")}
+        ${findYourEdit.map(renderCategoryTile).join("")}
       </div>
     </section>
 
@@ -375,24 +485,23 @@ function renderHome({ preserveHero = false } = {}) {
       ${brands.map(renderBrandLogoCard).join("")}
     </section>
 
-    ${renderProductRail("New Arrivals", arrivals, "#/shop?category=new-in")}
-    ${renderOutdoorCookingFeature(outdoorCooking)}
-
-    ${renderEditorialEdits()}
+    ${renderEditorialEdits(featuredEdit)}
 
     <section class="feature-band">
       <div>
         <p class="eyebrow">Featured collection</p>
-        <h2>Core pieces for calm routines.</h2>
-        <p>Build a clean everyday rotation across training, outdoor plans, recovery and home essentials.</p>
-        <a class="button primary" href="#/shop">Shop the edit</a>
+        <h2>KALM Move Performance Essentials.</h2>
+        <p>Core performance layers and training shorts selected from the current KALM Move men’s collection.</p>
+        <a class="button primary" href="${hashShopRoute({ brand: "kalm-move", audience: "men", moveCategory: "tops" })}">Shop performance essentials</a>
       </div>
-      <img src="${transparentPixel}" data-src="${escapeHtml(meta.featureImage)}" alt="KALM Collective featured products" width="1200" height="760" loading="lazy" decoding="async" fetchpriority="low">
+      <picture>
+        <source media="(max-width: 760px)" srcset="${escapeHtml(collectionCampaign.mobile)}">
+        <img src="${transparentPixel}" data-src="${escapeHtml(collectionCampaign.desktop)}" alt="${escapeAttribute(collectionCampaign.alt || "KALM Move performance essentials")}" width="1920" height="1080" loading="lazy" decoding="async" fetchpriority="low">
+      </picture>
     </section>
 
-    ${renderProductRail("Best Sellers", bestSellers, "#/shop")}
-    ${renderProductRail("Archive Sale", saleEdit, "#/shop?category=sale")}
-    ${renderProductRail("Most Wanted", featured, "#/shop")}
+    ${renderProductRail("KS Active Archive Sale", archiveSale, collectionRoute("sale"), "KS Active archive stock")}
+    ${renderProductRail("Most Wanted", mostWanted, collectionRoute("new-in"))}
 
     ${renderTrustStrip()}
 
@@ -433,27 +542,15 @@ function renderHome({ preserveHero = false } = {}) {
   }
 }
 
-function renderEditorialEdits() {
-  const edits = [
-    {
-      title: "Everyday movement",
-      copy: "Soft active staples for school runs, studio sessions and slow weekend plans.",
-      image: "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
-      href: "#/shop?category=activewear"
-    },
-    {
-      title: "Calm home essentials",
-      copy: "Clean bedding, towels, ceramics and storage for a quieter daily rhythm.",
-      image: "assets/images/generated/brand-tiles/kalm-home-tile.webp",
-      href: "#/shop?category=home"
-    },
-    {
-      title: "Outdoor living, simplified",
-      copy: "Patio, picnic and day-trip pieces with a polished monochrome feel.",
-      image: "assets/images/generated/brand-tiles/kalm-outdoor-tile.webp",
-      href: "#/shop?category=outdoor"
-    }
-  ];
+function renderEditorialEdits(entries = []) {
+  const edits = entries.map(({ product, color, title, copy }) => ({
+    title,
+    copy,
+    image: getVariantImage(product, color),
+    href: productRoute(product, color),
+    product,
+    color
+  }));
   return `
     <section class="section-block">
       <div class="section-head">
@@ -464,7 +561,7 @@ function renderEditorialEdits() {
       </div>
       <div class="edit-grid">
         ${edits.map((edit) => `
-          <a class="edit-card" href="${edit.href}">
+          <a class="edit-card" href="${edit.href}" data-product-colour="${escapeAttribute(`${edit.product.id}|${edit.color}`)}">
             <img src="${transparentPixel}" data-src="${escapeHtml(edit.image)}" alt="${escapeAttribute(edit.title)}" width="900" height="1040" loading="lazy" decoding="async" fetchpriority="low">
             <span>${escapeHtml(edit.title)}</span>
             <p>${escapeHtml(edit.copy)}</p>
@@ -486,19 +583,19 @@ function renderTrustStrip() {
   `;
 }
 
-function renderProductRail(title, products, href) {
-  if (!products.length) return "";
+function renderProductRail(title, entries, href, eyebrow = "KALM Collective") {
+  if (!entries.length) return "";
   return `
     <section class="section-block">
       <div class="section-head">
         <div>
-          <p class="eyebrow">KALM Collective</p>
+          <p class="eyebrow">${escapeHtml(eyebrow)}</p>
           <h2>${escapeHtml(title)}</h2>
         </div>
         <a class="text-link" href="${href}">View all</a>
       </div>
       <div class="product-grid rail-grid">
-        ${products.map((product, index) => renderProductCard(product, { eager: index < 4 })).join("")}
+        ${entries.map((entry, index) => renderProductCard(entry.product || entry, { eager: index < 4, displayColour: entry.color || entry.colour || "" })).join("")}
       </div>
     </section>
   `;
@@ -543,15 +640,26 @@ function renderShop(params = new URLSearchParams()) {
   const sort = params.get("sort") || "featured";
   const search = params.get("search") || "";
   const filterState = { brand, category, audience, moveCategory, size, color, availability, appliance, search };
-  const products = sortProducts(filterProducts(filterState), sort);
+  const configuredEntries = getMerchandisingEntries(merchandising().collections?.[category]);
+  const collectionFilterState = configuredEntries.length ? { ...filterState, category: "all" } : filterState;
+  const filteredProducts = filterProducts(collectionFilterState);
+  let displayEntries = configuredEntries.length
+    ? configuredEntries.filter(({ product, color: displayColour }) => filteredProducts.some((item) => item.id === product.id) && (color === "all" || color === displayColour))
+    : filteredProducts.map((product) => ({ product, color: getDefaultColor(product) }));
+  if (sort !== "featured") {
+    const byProduct = new Map(displayEntries.map((entry) => [entry.product.id, entry]));
+    displayEntries = sortProducts(displayEntries.map((entry) => entry.product), sort).map((product) => byProduct.get(product.id)).filter(Boolean);
+  }
   const heading = shopHeading({ brand, category, audience, moveCategory, search });
   const relevantProducts = filterProducts({ brand, category, audience, moveCategory, size: "all", color: "all", availability: "all", appliance, search });
   const moveAudience = brand === "kalm-move" ? audience : "all";
   const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, appliance, sort, search });
   setDocumentMeta(
     `${heading} | KALM Collective`,
-    "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear."
+    "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear.",
+    category !== "all" ? collectionRoute(category) : "/shop"
   );
+  setStructuredData({ type: "collection", title: heading, entries: displayEntries });
 
   app.innerHTML = `
     <section class="page-hero compact">
@@ -565,7 +673,7 @@ function renderShop(params = new URLSearchParams()) {
     <section class="shop-layout" data-filter-shell>
       <div class="mobile-filter-bar">
         <button class="button secondary" type="button" data-filter-toggle aria-expanded="false" aria-controls="shop-filters">Filter and sort</button>
-        <span>${products.length} styles</span>
+        <span>${displayEntries.length} styles</span>
       </div>
       <aside id="shop-filters" class="filter-panel" aria-label="Shop filters">
         <div class="filter-panel-head">
@@ -627,12 +735,12 @@ function renderShop(params = new URLSearchParams()) {
       </aside>
       <div>
         <div class="shop-toolbar">
-          <span>${products.length} styles</span>
+          <span>${displayEntries.length} styles</span>
           <a href="#/shop">Clear filters</a>
         </div>
         ${activeFilters.length ? `<div class="active-filter-row">${activeFilters.map((item) => `<a href="${item.href}">${escapeHtml(item.label)} x</a>`).join("")}</div>` : ""}
         <div class="product-grid">
-          ${products.length ? products.map((product, index) => renderProductCard(product, { eager: index < 12 })).join("") : renderEmptyState("No products match those filters.")}
+          ${displayEntries.length ? displayEntries.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("") : renderEmptyState("No products match those filters.")}
         </div>
       </div>
     </section>
@@ -853,12 +961,15 @@ function renderKalmMoveSubcategories() {
   `;
 }
 
-function renderProduct(slug) {
+function renderProduct(slug, params = new URLSearchParams()) {
   const product = state.data.products.find((item) => item.slug === slug);
   if (!product || !isProductPublic(product)) return renderNotFound();
   const comingSoon = isComingSoonProduct(product);
   const comingSoonMessage = product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.";
-  const defaultColor = comingSoon ? "" : getDefaultColor(product);
+  const requestedColor = params.get("colour") || params.get("color") || "";
+  const defaultColor = comingSoon
+    ? ""
+    : (product.colors.includes(requestedColor) && !isColorUnavailable(product, requestedColor) ? requestedColor : getDefaultColor(product));
   const defaultImages = comingSoon ? getProductGalleryImages(product) : (defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product));
   const productAvailability = getProductAvailability(product);
   const manualRelated = (product.relatedProducts || [])
@@ -868,7 +979,12 @@ function renderProduct(slug) {
     .filter((item) => item.brandId === product.brandId && item.id !== product.id && isProductPublic(item)))
     .slice(0, 4);
   const details = product.features || product.detailBullets || [];
-  setDocumentMeta(product.metaTitle || `${product.title} | ${product.brand}`, product.metaDescription || product.description);
+  setDocumentMeta(
+    product.metaTitle || `${product.title} | ${product.brand}`,
+    product.metaDescription || product.description,
+    productRoute(product)
+  );
+  setStructuredData({ type: "product", product, color: defaultColor });
 
   app.innerHTML = `
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
@@ -1404,11 +1520,14 @@ function updateProductAvailabilityState(scope) {
   if (status) status.textContent = getStockMessage(product, color, size);
 }
 
-function renderCategoryTile(category) {
+function renderCategoryTile(entry) {
+  const product = entry.product || entry;
+  const color = entry.color || entry.colour || getDefaultColor(product);
+  const title = entry.title || product.category || product.title;
   return `
-    <a class="category-tile" href="#/shop?category=${category.id}">
-      <img src="${transparentPixel}" data-src="${escapeHtml(category.image)}" alt="${escapeAttribute(category.name)}" width="640" height="736" loading="lazy" decoding="async" fetchpriority="low">
-      <span>${escapeHtml(category.name)}</span>
+    <a class="category-tile" href="${productRoute(product, color)}" data-product-colour="${escapeAttribute(`${product.id}|${color}`)}">
+      <img src="${transparentPixel}" data-src="${escapeHtml(getVariantImage(product, color))}" alt="${escapeAttribute(`${title}: ${product.title} in ${color}`)}" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low">
+      <span><strong>${escapeHtml(title)}</strong><small>Shop ${escapeHtml(product.title)}</small></span>
     </a>
   `;
 }
@@ -1487,31 +1606,36 @@ function renderProductCard(product, options = {}) {
   const comingSoon = isComingSoonProduct(product);
   const availability = getProductAvailability(product);
   const isUnavailable = availability === "out_of_stock" || availability === "discontinued";
-  const defaultColour = getDefaultColor(product);
+  const defaultColour = options.displayColour && product.colors.includes(options.displayColour)
+    ? options.displayColour
+    : getDefaultColor(product);
+  const productHref = productRoute(product, defaultColour);
+  const displayImage = getVariantImage(product, defaultColour) || product.image;
   const imageMarkup = options.eager
-    ? `src="${escapeHtml(product.image)}" decoding="async"`
-    : `src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
+    ? `src="${escapeHtml(displayImage)}" decoding="async"`
+    : `src="${escapeHtml(displayImage)}" loading="lazy" decoding="async" fetchpriority="low"`;
   const responsiveAttributes = renderResponsiveCardAttributes(product, defaultColour);
   return `
-    <article class="product-card" data-product-scope data-product-id="${product.id}">
-      <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
+    <article class="product-card" data-product-scope data-product-id="${product.id}" data-display-colour="${escapeAttribute(defaultColour)}">
+      <a class="product-media" href="${productHref}" aria-label="${escapeAttribute(`${product.title} in ${defaultColour}`)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
         ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
         ${!product.image ? renderComingSoonMedia("card-coming-soon-media") : `<img ${imageMarkup} ${responsiveAttributes} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
-        <h3><a href="#/product/${product.slug}">${escapeHtml(product.title)}</a></h3>
+        <h3><a href="${productHref}">${escapeHtml(product.title)}</a></h3>
         ${comingSoon ? `
           <p class="card-photo-status">${escapeHtml(product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.")}</p>
           ${product.compatibleAppliances?.[0] ? `<p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances[0]))}</p>` : ""}
-          ${product.comingSoonCallToAction !== false ? `<a class="button secondary full card-view-link" href="#/product/${product.slug}">Join waitlist</a>` : `<a class="button secondary full card-view-link" href="#/product/${product.slug}">View product</a>`}
+          ${product.comingSoonCallToAction !== false ? `<a class="button secondary full card-view-link" href="${productHref}">Join waitlist</a>` : `<a class="button secondary full card-view-link" href="${productHref}">View product</a>`}
         ` : `
           <div class="price-line">${renderPrice(product)}</div>
+          <p class="card-display-colour">Colour: ${escapeHtml(defaultColour)}</p>
           <div class="swatches" aria-label="Available colours">
             ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
           </div>
-          <p class="card-stock ${isUnavailable ? "is-sold-out" : ""}">${escapeHtml(getStockMessage(product))}</p>
-          <a class="button secondary full card-view-link" href="#/product/${product.slug}">View product</a>
+          <p class="card-stock ${isUnavailable ? "is-sold-out" : ""}">${escapeHtml(getStockMessage(product, defaultColour))}</p>
+          <a class="button secondary full card-view-link" href="${productHref}">View product</a>
         `}
       </div>
     </article>

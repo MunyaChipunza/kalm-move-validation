@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://kalmcollective.co.za/sitemap.xml

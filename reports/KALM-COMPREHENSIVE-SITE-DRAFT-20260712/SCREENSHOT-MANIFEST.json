@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-07-12T00:00:00.000Z",
+  "status": "local visual QA complete; Netlify draft capture pending",
+  "evidence": [
+    { "path": "evidence/production-homepage-before-1440x1100.png", "surface": "production baseline homepage", "viewport": "1440 x 1100" },
+    { "path": "evidence/local-homepage-after-desktop-1280x720.png", "surface": "draft homepage", "viewport": "1280 x 720" },
+    { "path": "evidence/local-homepage-desktop-full.png", "surface": "draft homepage full page", "viewport": "1280 x 720" },
+    { "path": "evidence/local-homepage-mobile-375x812-inclusive.png", "surface": "draft homepage", "viewport": "375 x 812" },
+    { "path": "evidence/local-new-in-desktop-1280x720.png", "surface": "New In", "viewport": "1280 x 720" },
+    { "path": "evidence/local-activewear-desktop-1280x720.png", "surface": "Activewear", "viewport": "1280 x 720" },
+    { "path": "evidence/local-sale-desktop-1280x720.png", "surface": "Sale", "viewport": "1280 x 720" },
+    { "path": "evidence/local-outdoor-desktop-1280x720.png", "surface": "Outdoor", "viewport": "1280 x 720" },
+    { "path": "evidence/local-new-in-mobile-375x812.png", "surface": "New In", "viewport": "375 x 812" },
+    { "path": "evidence/local-outdoor-mobile-375x812.png", "surface": "Outdoor", "viewport": "375 x 812" },
+    { "path": "evidence/local-product-everyday-bottle-lilac-desktop-1280x720.png", "surface": "selected-colour product", "viewport": "1280 x 720" },
+    { "path": "evidence/local-product-align-pink-drink-desktop-1280x720.png", "surface": "selected-colour product", "viewport": "1280 x 720" }
+  ],
+  "visualAssertions": {
+    "desktopHeroShowsAllSixPeople": true,
+    "mobileHeroShowsAllSixPeople": true,
+    "mobileHorizontalOverflow": false,
+    "outdoorCardCount": 3,
+    "newInCardCount": 9,
+    "activewearCardCount": 10,
+    "saleCardCount": 14
+  }
+}

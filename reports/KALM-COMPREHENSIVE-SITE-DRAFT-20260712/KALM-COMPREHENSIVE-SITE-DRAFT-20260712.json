@@ -1,0 +1,28 @@
+{
+  "status": "awaiting_munya_visual_approval",
+  "branch": "codex/kalm-comprehensive-site-draft-20260712",
+  "deployment": {
+    "type": "draft_only",
+    "netlifyDraftUrl": "pending",
+    "productionChanged": false,
+    "masterMerged": false
+  },
+  "campaignAssets": {
+    "authorisedAssetClasses": ["homepage hero", "featured collection"],
+    "generationCalls": 3,
+    "reviewStatus": "awaiting_munya_visual_approval"
+  },
+  "merchandising": {
+    "allocationCount": 49,
+    "newIn": 9,
+    "activewear": 10,
+    "sale": 14,
+    "outdoor": 3,
+    "archiveSale": 2
+  },
+  "validation": {
+    "comprehensiveChecks": 172,
+    "status": "pass"
+  },
+  "taskApplicationChanged": false
+}

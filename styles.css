@@ -114,6 +114,7 @@ button {
   height: 150px;
   object-fit: contain;
   transform: scale(1.35);
+  mix-blend-mode: multiply;
 }
 
 .header-actions {
@@ -298,15 +299,15 @@ button {
 
 .hero-shell {
   display: grid;
-  grid-template-columns: minmax(320px, 0.86fr) minmax(520px, 1.25fr);
-  min-height: 620px;
+  grid-template-columns: minmax(330px, 0.75fr) minmax(620px, 1.25fr);
+  min-height: 520px;
   border-bottom: 1px solid var(--line);
   background: #f8f7f4;
 }
 
 .hero-copy {
   align-self: center;
-  padding: 72px 7vw;
+  padding: 50px 5vw;
 }
 
 .hero-copy h1 {
@@ -326,10 +327,11 @@ button {
 
 .hero-brand-logo {
   display: block;
-  width: min(176px, 100%);
+  width: min(228px, 100%);
   height: auto;
   object-fit: contain;
   object-position: left center;
+  mix-blend-mode: multiply;
 }
 
 .hero-actions {
@@ -340,8 +342,11 @@ button {
 }
 
 .hero-media {
-  min-height: 620px;
+  align-self: center;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  background: #ebe8df;
 }
 
 .hero-media picture {
@@ -353,7 +358,7 @@ button {
 .hero-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .brand-ribbon {
@@ -543,6 +548,12 @@ button {
   font-weight: 700;
 }
 
+.card-display-colour {
+  margin: -2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .card-stock.is-sold-out {
   color: var(--danger);
 }
@@ -597,7 +608,9 @@ button {
 }
 
 .category-tile {
-  display: grid;
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
@@ -607,13 +620,25 @@ button {
 
 .category-tile img {
   width: 100%;
-  aspect-ratio: 1 / 1.15;
+  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   background: var(--soft);
 }
 
 .category-tile span {
-  padding: 14px;
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  gap: 3px;
+  padding: 32px 15px 14px;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.72));
+}
+
+.category-tile small {
+  font-size: 11px;
+  font-weight: 500;
 }
 
 .move-subcategories {
@@ -2116,9 +2141,10 @@ body.lightbox-open {
 
 .footer-grid img {
   width: 120px;
-  height: 120px;
+  height: auto;
   margin-bottom: 12px;
   object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .footer-grid h3 {
@@ -2271,6 +2297,10 @@ body.lightbox-open {
     min-height: 0;
   }
 
+  .hero-media {
+    order: -1;
+  }
+
   .hero-copy {
     padding: 46px 24px 28px;
   }
@@ -2283,6 +2313,15 @@ body.lightbox-open {
   .brand-hero > img,
   .outdoor-hero > img {
     min-height: 360px;
+  }
+
+  .hero-media {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero-media img {
+    object-fit: cover;
   }
 
   .outdoor-hero > div {
@@ -2434,7 +2473,7 @@ body.lightbox-open {
 
   .footer-grid img {
     width: 126px;
-    height: 31px;
+    height: 96px;
     margin-bottom: 6px;
   }
 

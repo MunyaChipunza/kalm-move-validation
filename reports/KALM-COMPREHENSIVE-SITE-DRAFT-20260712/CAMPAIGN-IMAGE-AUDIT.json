@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-07-12T18:14:24.584Z",
+  "exception": "KALM comprehensive-site draft-only photorealistic campaign exception, 12 July 2026",
+  "authorisedAssetClasses": [
+    "Homepage hero",
+    "Featured Collection campaign image"
+  ],
+  "imageGenerationSystem": "OpenAI image generation tool",
+  "generationCalls": 3,
+  "acceptedMasters": 3,
+  "acceptedAssetClasses": 2,
+  "rejectedOrNotUsedDerivatives": [
+    {
+      "path": "reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/audit/rejected/kalm-comprehensive-home-hero-v1-mobile-rejected-crop.webp",
+      "reason": "The centre crop excluded people from the required six-person inclusive hero cast."
+    },
+    {
+      "path": "reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/audit/rejected/kalm-comprehensive-home-hero-v1-mobile-v2-wide-crop-not-used.webp",
+      "reason": "Non-public derivative generated solely during responsive processing; not used because it is not an approved mobile art direction."
+    }
+  ],
+  "cost": "Not available from the generation runtime.",
+  "reviewStatus": "Awaiting Munya visual approval; draft only; production use is not authorised.",
+  "sourceLocks": [
+    "reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/HERO-REFERENCE-LOCK.md",
+    "reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/FEATURED-COLLECTION-REFERENCE-LOCK.md"
+  ],
+  "files": {
+    "homeHero": [
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-master.png",
+        "bytes": 2442909,
+        "sha256": "4f1e786fb8abfe9b94d8d94b20a0ea2396ffc95a3fe53599754b254e00535f8f"
+      },
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-desktop.webp",
+        "bytes": 340688,
+        "sha256": "5146736df64543a7c43b0d7eb8fb26d3e79f971c40592879f94b65ea6b6e7377"
+      },
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-tablet.webp",
+        "bytes": 246022,
+        "sha256": "5bbab31aeffab66ffad495e58758dbcab1c2b24750119723098eca79b76e4ab9"
+      },
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-comprehensive-home-hero-v1-mobile-v2.webp",
+        "bytes": 321414,
+        "sha256": "e04259773941e39f30f9798d57d0e004f8475366237490c9763324846ba6d35b"
+      }
+    ],
+    "featuredCollection": [
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-master.png",
+        "bytes": 2167455,
+        "sha256": "c04830243a4b35ee315ae00c1d65b89c282bbc53bc55149aaa4c716e519d8b31"
+      },
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-desktop.webp",
+        "bytes": 196842,
+        "sha256": "31478e443147a0beedb487030f4b06e7bd907c58f5960ed6c6bccb020529e9cc"
+      },
+      {
+        "path": "assets/images/recovered/campaigns-v1/kalm-move-performance-collection-v1-mobile.webp",
+        "bytes": 129550,
+        "sha256": "774353a327de5b222c97b55b9672aa77c5157f7b82ad6a75967ccd33329c1588"
+      }
+    ]
+  }
+}

@@ -1,6 +1,51 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/products/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/collections/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/brands"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/brand/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/policies"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/account"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cart"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/checkout"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
