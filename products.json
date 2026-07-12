@@ -6,7 +6,7 @@
     "publicDomain": "kalmcollective.co.za",
     "heroImage": "assets/images/home-hero-shop.webp",
     "featureImage": "assets/images/campaign-hero.webp",
-    "logo": "assets/branding/kalm-collective/kalm-collective-logo.png",
+    "logo": "branding/kalm-collective-logo.svg",
     "logoAlt": "KALM Collective logo",
     "brandsPageMark": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
     "favicon": "assets/branding/kalm-collective/kalm-collective-logo.png",
@@ -6145,6 +6145,7 @@
       "compareAtPrice": null,
       "colors": [
         "Black",
+        "Charcoal",
         "Navy",
         "Olive"
       ],
@@ -6158,7 +6159,7 @@
       "audience": "men",
       "moveCategory": "shorts",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
       "description": "A clean everyday training short built for gym sessions, movement work and off-duty wear.",
       "shortDescription": "A clean everyday training short built for gym sessions, movement work and off-duty wear.",
       "longDescription": "The Flow Training Short is designed as the go-to short in the KALM Move men's range. It has a clean above-knee cut, a comfortable athletic waistband, and a streamlined shape that works for training, walking, travel and everyday movement. Finished with a subtle buffalo mark, it is made to feel premium without looking over-branded.",
@@ -6186,48 +6187,38 @@
         "men",
         "shorts",
         "training",
-        "men-image-trimmed"
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/movement.webp"
+            "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/movement.webp"
+            "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp"
           ]
         },
         "Olive": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/front.webp",
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/movement.webp"
+            "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/movement.webp"
+        "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Flow Training Short | KALM Move",
@@ -6238,8 +6229,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-FLOW-TRAINING-SHORT",
       "variants": [
         {
@@ -6362,7 +6353,78 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
+              "width": 1200
+            }
+          ],
+          "Olive": [
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-sprint-running-short",
@@ -6378,7 +6440,8 @@
       "colors": [
         "Black",
         "Navy",
-        "Cobalt"
+        "Cobalt",
+        "Charcoal"
       ],
       "sizes": [
         "S",
@@ -6390,7 +6453,7 @@
       "audience": "men",
       "moveCategory": "shorts",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
       "description": "A lightweight running short with a clean, fast feel and a refined KALM finish.",
       "shortDescription": "A lightweight running short with a clean, fast feel and a refined KALM finish.",
       "longDescription": "The Sprint Running Short is made for lighter, faster sessions. The shorter profile gives better freedom of movement, while the clean design keeps it wearable beyond the run. A small buffalo mark near the hem gives the piece a quiet KALM identity without overpowering the look.",
@@ -6418,48 +6481,38 @@
         "men",
         "shorts",
         "running",
-        "men-image-trimmed"
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/movement.webp"
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/movement.webp"
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp"
           ]
         },
         "Cobalt": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/front.webp",
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/movement.webp"
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/movement.webp"
+        "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Sprint Running Short | KALM Move",
@@ -6470,8 +6523,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-SPRINT-RUNNING-SHORT",
       "variants": [
         {
@@ -6594,7 +6647,78 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
+              "width": 1200
+            }
+          ],
+          "Cobalt": [
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-core-performance-tee",
@@ -6611,7 +6735,8 @@
         "Black",
         "White",
         "Charcoal",
-        "Navy"
+        "Navy",
+        "Olive"
       ],
       "sizes": [
         "S",
@@ -6623,7 +6748,7 @@
       "audience": "men",
       "moveCategory": "tops",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
       "description": "A refined performance tee for training, layering and everyday movement.",
       "shortDescription": "A refined performance tee for training, layering and everyday movement.",
       "longDescription": "The Core Performance Tee is the foundation piece of the men's KALM Move range. It is cut to sit cleanly across the shoulders and chest without feeling tight, making it useful for training, commuting and casual wear. The design stays minimal, with only a small buffalo mark for a premium finish.",
@@ -6651,56 +6776,44 @@
         "men",
         "tops",
         "tee",
-        "men-image-trimmed"
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/movement.webp"
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp"
           ]
         },
         "White": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/front.webp",
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/movement.webp"
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/movement.webp"
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp"
           ]
         },
         "Olive": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/front.webp",
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/movement.webp"
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/movement.webp"
+        "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Core Performance Tee | KALM Move",
@@ -6711,8 +6824,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-CORE-PERFORMANCE-TEE",
       "variants": [
         {
@@ -6875,7 +6988,92 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "White": [
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
+              "width": 1200
+            }
+          ],
+          "Olive": [
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-lift-tank",
@@ -6904,7 +7102,7 @@
       "audience": "men",
       "moveCategory": "tops",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
       "description": "A premium training tank shaped for lifting, warm-weather sessions and confident movement.",
       "shortDescription": "A premium training tank shaped for lifting, warm-weather sessions and confident movement.",
       "longDescription": "The Lift Tank is built for men who want freedom through the shoulders without losing a clean, premium look. The cut is open enough for training and movement, but still controlled enough to feel refined. The buffalo mark is kept small and intentional so the product feels elevated, not loud.",
@@ -6931,48 +7129,39 @@
         "kalm-move",
         "men",
         "tops",
-        "tank"
+        "tank",
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/movement.webp"
+            "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp"
           ]
         },
         "White": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/front.webp",
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/movement.webp"
+            "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/movement.webp"
+            "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/movement.webp"
+        "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Lift Tank | KALM Move",
@@ -6983,8 +7172,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-LIFT-TANK",
       "variants": [
         {
@@ -7147,7 +7336,78 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "White": [
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/white/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/white/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-pace-jogger",
@@ -7162,7 +7422,9 @@
       "compareAtPrice": null,
       "colors": [
         "Black",
+        "Charcoal",
         "Stone",
+        "Navy",
         "Olive"
       ],
       "sizes": [
@@ -7175,7 +7437,7 @@
       "audience": "men",
       "moveCategory": "bottoms",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
       "description": "A tapered athletic jogger for movement, travel and everyday wear.",
       "shortDescription": "A tapered athletic jogger for movement, travel and everyday wear.",
       "longDescription": "The Pace Jogger is designed to bridge training and lifestyle. It has a tapered shape, a comfortable waistband and a clean finish that works with tees, hoodies and tanks. The fit should feel athletic without being too tight, making it suitable for different male body types.",
@@ -7203,56 +7465,44 @@
         "men",
         "bottoms",
         "joggers",
-        "men-image-trimmed"
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/movement.webp"
+            "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp"
           ]
         },
         "Stone": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/front.webp",
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/movement.webp"
+            "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/movement.webp"
+            "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp"
           ]
         },
         "Olive": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/front.webp",
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/movement.webp"
+            "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/movement.webp"
+        "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Pace Jogger | KALM Move",
@@ -7263,8 +7513,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-PACE-JOGGER",
       "variants": [
         {
@@ -7387,7 +7637,92 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Stone": [
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
+              "width": 1200
+            }
+          ],
+          "Olive": [
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-motion-hoodie",
@@ -7417,7 +7752,7 @@
       "audience": "men",
       "moveCategory": "layers",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
       "description": "A clean training hoodie with a premium off-duty feel.",
       "shortDescription": "A clean training hoodie with a premium off-duty feel.",
       "longDescription": "The Motion Hoodie is the everyday layer in the KALM Move men's range. It should feel comfortable enough for recovery days, sharp enough for casual wear, and practical enough for warmups or travel. The branding is quiet and placed with restraint so the hoodie remains versatile.",
@@ -7444,56 +7779,45 @@
         "kalm-move",
         "men",
         "layers",
-        "hoodie"
+        "hoodie",
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/movement.webp"
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp"
           ]
         },
         "Stone": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/front.webp",
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/movement.webp"
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp"
           ]
         },
         "Olive": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/front.webp",
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/movement.webp"
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/movement.webp"
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/movement.webp"
+        "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Motion Hoodie | KALM Move",
@@ -7504,8 +7828,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-MOTION-HOODIE",
       "variants": [
         {
@@ -7708,7 +8032,92 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Stone": [
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
+              "width": 1200
+            }
+          ],
+          "Olive": [
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-base-compression-short",
@@ -7736,7 +8145,7 @@
       "audience": "men",
       "moveCategory": "shorts",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
       "description": "A supportive base layer for training, running and high-movement sessions.",
       "shortDescription": "A supportive base layer for training, running and high-movement sessions.",
       "longDescription": "The Base Compression Short is designed as a practical foundation layer for movement. It should feel supportive, smooth and secure under training shorts or on its own in appropriate training settings. Keep the look clean and premium, with a small buffalo mark on the lower thigh.",
@@ -7763,40 +8172,33 @@
         "kalm-move",
         "men",
         "shorts",
-        "compression"
+        "compression",
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/movement.webp"
+            "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/movement.webp"
+            "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/movement.webp"
+        "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Base Compression Short | KALM Move",
@@ -7807,8 +8209,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-BASE-COMPRESSION-SHORT",
       "variants": [
         {
@@ -7931,7 +8333,64 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 42%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 37%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-cap",
@@ -7957,7 +8416,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
       "description": "A minimal sports cap finished with the KALM buffalo mark.",
       "shortDescription": "A minimal sports cap finished with the KALM buffalo mark.",
       "longDescription": "The KALM Move Cap is a simple finishing piece for training, travel and everyday wear. It keeps the silhouette clean and the branding subtle, using the buffalo mark as a quiet identity detail rather than a loud graphic.",
@@ -7984,56 +8443,45 @@
         "kalm-move",
         "men",
         "accessories",
-        "cap"
+        "cap",
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/movement.webp"
+            "assets/images/products/kalm-move/men/cap-v4/black/front.webp"
           ]
         },
         "White": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/move-cap/white/front.webp",
+          "hero": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/white/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/white/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/white/movement.webp"
+            "assets/images/products/kalm-move/men/cap-v4/white/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/movement.webp"
+            "assets/images/products/kalm-move/men/cap-v4/navy/front.webp"
           ]
         },
         "Olive": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/front.webp",
+          "hero": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/movement.webp"
+            "assets/images/products/kalm-move/men/cap-v4/olive/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/movement.webp"
+        "assets/images/products/kalm-move/men/cap-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Cap | KALM Move",
@@ -8044,8 +8492,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-CAP",
       "variants": [
         {
@@ -8088,7 +8536,92 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 30%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 26%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 34%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "White": [
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/white/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/white/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
+              "width": 1200
+            }
+          ],
+          "Olive": [
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/olive/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/olive/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-training-sock-3-pack",
@@ -8113,7 +8646,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp",
+      "image": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
       "description": "A clean 3-pack of training socks for everyday movement.",
       "shortDescription": "A clean 3-pack of training socks for everyday movement.",
       "longDescription": "The Training Sock 3-Pack is designed as a simple repeat-buy essential. Keep the branding minimal, with a small buffalo mark near the cuff. The socks should work across gym sessions, walks, travel and casual outfits.",
@@ -8140,40 +8673,33 @@
         "kalm-move",
         "men",
         "accessories",
-        "socks"
+        "socks",
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black Pack": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp",
+          "hero": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/movement.webp"
+            "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp"
           ]
         },
         "White Pack": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/front.webp",
+          "hero": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/movement.webp"
+            "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp"
           ]
         },
         "Mixed Neutral Pack": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/front.webp",
+          "hero": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/movement.webp"
+            "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/movement.webp"
+        "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Training Sock 3-Pack | KALM Move",
@@ -8184,8 +8710,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-TRAINING-SOCK-3-PACK",
       "variants": [
         {
@@ -8236,7 +8762,64 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "contain",
+        "cardPosition": "50% 50%",
+        "mobileCardFit": "contain",
+        "mobileCardPosition": "50% 50%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black Pack": [
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+              "width": 1200
+            }
+          ],
+          "White Pack": [
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
+              "width": 1200
+            }
+          ],
+          "Mixed Neutral Pack": [
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-utility-gym-bag",
@@ -8251,6 +8834,7 @@
       "compareAtPrice": null,
       "colors": [
         "Black",
+        "Charcoal",
         "Olive",
         "Navy"
       ],
@@ -8260,7 +8844,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
       "description": "A clean utility gym bag for training days, workdays and short trips.",
       "shortDescription": "A clean utility gym bag for training days, workdays and short trips.",
       "longDescription": "The Utility Gym Bag is the carry-all piece for the KALM Move men's range. It should feel premium, practical and understated, with enough structure to look sharp and enough softness to use daily. The buffalo logo should be small and placed in a refined position such as the corner, side panel or strap detail.",
@@ -8288,48 +8872,38 @@
         "men",
         "accessories",
         "bag",
-        "men-image-trimmed"
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/movement.webp"
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp"
           ]
         },
         "Olive": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/front.webp",
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/movement.webp"
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/movement.webp"
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/movement.webp"
+        "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Utility Gym Bag | KALM Move",
@@ -8340,8 +8914,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-UTILITY-GYM-BAG",
       "variants": [
         {
@@ -8368,7 +8942,78 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "cover",
+        "cardPosition": "50% 45%",
+        "mobileCardFit": "cover",
+        "mobileCardPosition": "50% 42%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Olive": [
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-protein-shaker-bottle",
@@ -8393,7 +9038,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp",
+      "image": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
       "description": "A clean shaker bottle for training days and post-session routines.",
       "shortDescription": "A clean shaker bottle for training days and post-session routines.",
       "longDescription": "The Protein Shaker Bottle is designed as a practical gym essential with a premium KALM Move finish. It should feel strong, simple and easy to carry, with a small buffalo mark that keeps the branding refined.",
@@ -8421,48 +9066,39 @@
         "men",
         "accessories",
         "bottle",
-        "shaker"
+        "shaker",
+        "men-v4-preview"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp",
+          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/movement.webp"
+            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/movement.webp"
+            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/movement.webp"
+            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp"
           ]
         },
         "Smoke Grey": {
-          "hero": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/front.webp",
+          "hero": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/front.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/angle.webp",
-            "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/movement.webp"
+            "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/angle.webp",
-        "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/movement.webp"
+        "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Protein Shaker Bottle | KALM Move",
@@ -8473,8 +9109,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T10:00:00.000+02:00",
+      "updatedBy": "kalm-mobile-first-v4",
       "skuRoot": "KALM-MOVE-PROTEIN-SHAKER-BOTTLE",
       "variants": [
         {
@@ -8509,7 +9145,78 @@
           "availability": "in_stock",
           "enabled": true
         }
-      ]
+      ],
+      "mediaPresentation": {
+        "cardFit": "contain",
+        "cardPosition": "50% 50%",
+        "mobileCardFit": "contain",
+        "mobileCardPosition": "50% 50%",
+        "cardAspectRatio": "4 / 5",
+        "mobileCardAspectRatio": "4 / 5",
+        "galleryFit": "contain",
+        "galleryPosition": "50% 50%",
+        "background": "#f6f5f2"
+      },
+      "responsiveImages": {
+        "card": {
+          "Black": [
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+              "width": 1200
+            }
+          ],
+          "Charcoal": [
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+              "width": 1200
+            }
+          ],
+          "Navy": [
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+              "width": 1200
+            }
+          ],
+          "Smoke Grey": [
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front-800w.webp",
+              "width": 800
+            },
+            {
+              "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+              "width": 1200
+            }
+          ]
+        }
+      }
     },
     {
       "id": "kalm-move-pocket-racerback-crop-bra",

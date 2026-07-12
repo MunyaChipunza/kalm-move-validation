@@ -1,0 +1,926 @@
+{
+  "generatedAt": "2026-07-12T09:29:36.664601+00:00",
+  "scope": "KALM Move Men V4 responsive card derivatives",
+  "records": [
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+      "sourceHash": "C28EC2D445F720A10C69161E4C39BDA69C836FA0DC447E0A592A2B5CB2424154",
+      "derivativePath": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front-480w.webp",
+      "derivativeHash": "661E120D0B6551FD47F4D0ACB0E95CD3223E312A2123652842B90ECE4D9A96C8",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10532,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+      "sourceHash": "C28EC2D445F720A10C69161E4C39BDA69C836FA0DC447E0A592A2B5CB2424154",
+      "derivativePath": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front-800w.webp",
+      "derivativeHash": "A6475E0377008BD136127F98AEF6176EC42066E6BA6A67E357A832C230147760",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 22110,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
+      "sourceHash": "8BA198C391C41965BDC85CB1B53A89784954C0DA04C85B2E65BA08CFF60E49B4",
+      "derivativePath": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front-480w.webp",
+      "derivativeHash": "D6D8F234803F2016C2B9EBDC29938C321A41C6F572D970E04034FFF4D164651B",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 11306,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
+      "sourceHash": "8BA198C391C41965BDC85CB1B53A89784954C0DA04C85B2E65BA08CFF60E49B4",
+      "derivativePath": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front-800w.webp",
+      "derivativeHash": "D1222EC8F0505B25E454837DDD5D4C289B9CD63FC89D4D8124F170516B078BDE",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 23830,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
+      "sourceHash": "041FA0E5731E2341505A0074660709E9AAA4FE6D28FC216D105909EFD2BCBAFE",
+      "derivativePath": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front-480w.webp",
+      "derivativeHash": "31107D7190252E47D0A00B7EE46D5F38F80B2D63922F812373FD83653A286B9F",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10344,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
+      "sourceHash": "041FA0E5731E2341505A0074660709E9AAA4FE6D28FC216D105909EFD2BCBAFE",
+      "derivativePath": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front-800w.webp",
+      "derivativeHash": "52456BC281E1F5444C46EE7F0458E173DE87FD873616959C8BD9931E6CB7F860",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 22598,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+      "sourceHash": "8BEE8B6AB46C62643A120402569B46F66E354589B4D10A37CDE3B32CF69EEA09",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/black/front-480w.webp",
+      "derivativeHash": "3CFF4BC77AF32E98DE496E7C7428059629A4A5FBFE263AB5AA3723F0CEF648D3",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10964,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+      "sourceHash": "8BEE8B6AB46C62643A120402569B46F66E354589B4D10A37CDE3B32CF69EEA09",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/black/front-800w.webp",
+      "derivativeHash": "3E819DD582950833C35771DDE2D7504835B2615C28EF85C04CE9A323D37D041E",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 25212,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
+      "sourceHash": "E2A01F64EC02099C42581962AC22CB2228F68D138EB64DC84A4E3D54A672B414",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/charcoal/front-480w.webp",
+      "derivativeHash": "A643A7541F9D647FE10BE6506E303A0D6DA1925F085C9D8A40FB5CDB383FE7EA",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9076,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
+      "sourceHash": "E2A01F64EC02099C42581962AC22CB2228F68D138EB64DC84A4E3D54A672B414",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/charcoal/front-800w.webp",
+      "derivativeHash": "56E2E8568D43A3AAF30947150D44A0FC23567D3B27BB8DBB025CC55BD393EED0",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 22168,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
+      "sourceHash": "C8FBD794309CCBE5204267F8D4E0AAE88484D8947129FC3A68D88BD3E6E35CD2",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/navy/front-480w.webp",
+      "derivativeHash": "96351CB17A263EDC3D6EDE74A712C7A64822D70F87D40734049F46268433DAF5",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 12770,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
+      "sourceHash": "C8FBD794309CCBE5204267F8D4E0AAE88484D8947129FC3A68D88BD3E6E35CD2",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/navy/front-800w.webp",
+      "derivativeHash": "17E029FF01617D4DCCFCE03D41DAE1076BB9C4FAAABE6FBAEE23E69A6F13322E",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 33080,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
+      "sourceHash": "6FD72FEBD529ADB867A2C3C534F8384A8168F67CF52D5B02207D6347FAF01C57",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/olive/front-480w.webp",
+      "derivativeHash": "2D9472E8818800A11B47877326E0A8DEAD6824A6477847BD7C1B404B3476FDD4",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10642,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
+      "sourceHash": "6FD72FEBD529ADB867A2C3C534F8384A8168F67CF52D5B02207D6347FAF01C57",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/olive/front-800w.webp",
+      "derivativeHash": "740464F0F38024BB91644D853D0AAF7826F3DB298C3CF35A23F80DA5FA1013A3",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 26612,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
+      "sourceHash": "BFF2AB2DE2904243B14AA4ABA9B179DFF3EBB1C2414ED22CEC6C42F8DAEF6F96",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/white/front-480w.webp",
+      "derivativeHash": "280551F1B901C644F68CF7C402669FD17D2BEAD594CD13A21414997A645C786B",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 11052,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
+      "sourceHash": "BFF2AB2DE2904243B14AA4ABA9B179DFF3EBB1C2414ED22CEC6C42F8DAEF6F96",
+      "derivativePath": "assets/images/products/kalm-move/men/cap-v4/white/front-800w.webp",
+      "derivativeHash": "9067BC9C4791754E4375B902968B319AF0B35825D4F06E347A626DAAA27579EB",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 33930,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+      "sourceHash": "B82B721F6B5D4778A144EBA86D611CB80A4349AECD6FC2E8F5AA0BB8B920FEB7",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front-480w.webp",
+      "derivativeHash": "7F2C66E98B1C0D939315B457878835365A64D9B26F510E872270FD7C3A26610C",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9686,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+      "sourceHash": "B82B721F6B5D4778A144EBA86D611CB80A4349AECD6FC2E8F5AA0BB8B920FEB7",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front-800w.webp",
+      "derivativeHash": "43824A0BEC938CC92AF4392A70904886247D0FA79D0AB8376BC8CCE0787816BF",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 20346,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
+      "sourceHash": "E409CF0D9EDBDECA1D7165CA99EE834A0605FD3C35C2C427C5829E5EE9750766",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front-480w.webp",
+      "derivativeHash": "E509E181C0D89337226284F8B99FA25B7D5406F991117AF32D98160965861EE1",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9166,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
+      "sourceHash": "E409CF0D9EDBDECA1D7165CA99EE834A0605FD3C35C2C427C5829E5EE9750766",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front-800w.webp",
+      "derivativeHash": "6CC521DF98A34D19A6486E502A4C9DB1DF7FD3EDDB2A6B2AF21F980E26D98F38",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19454,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
+      "sourceHash": "1C3D81A646FB70D0C7E02413F63F1763F9A2540383383B8C28CE8FFED1FC6A29",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front-480w.webp",
+      "derivativeHash": "9FC9B8BFBC007BEE80061030ABFE90530AAB38AAB555A33AD19D46FFCB35099F",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8740,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
+      "sourceHash": "1C3D81A646FB70D0C7E02413F63F1763F9A2540383383B8C28CE8FFED1FC6A29",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front-800w.webp",
+      "derivativeHash": "412200F8AEB3568C5014952F38C07556EE9645663589E43D169ED2F69170388A",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18468,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
+      "sourceHash": "E9948701FF1B68B6E5DBA5061EF1B6B68E29633C3EBA1EEAF7E34BD8AED9AAB9",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front-480w.webp",
+      "derivativeHash": "712188670D41C19EDB749AF85B22516C5B7ABDBCCF76DE54E4756B342AF354AE",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8800,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
+      "sourceHash": "E9948701FF1B68B6E5DBA5061EF1B6B68E29633C3EBA1EEAF7E34BD8AED9AAB9",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front-800w.webp",
+      "derivativeHash": "23A4E6268D2DB6F50917F1C87C7AB17156032DC16AEFE58EF9A8844D0C0F90A9",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18690,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+      "sourceHash": "97CACF2F1BC35D59458A745E9BB5A64728F68255D42933222991F1996CEFE229",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front-480w.webp",
+      "derivativeHash": "88EA32DAC606CCAF1B3F0DCE3848BA1C1F23B6566AE12F666EEFD3CE2F6DC56A",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8134,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+      "sourceHash": "97CACF2F1BC35D59458A745E9BB5A64728F68255D42933222991F1996CEFE229",
+      "derivativePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front-800w.webp",
+      "derivativeHash": "D910933EBA6880F8B5469BD94CCCFC8B223439586D0F48DFE2220FAC394C6660",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 17304,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+      "sourceHash": "E168770074C73F88D5068AC00B3ED1154F7641CEFB47854F6E06561096E6E78A",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front-480w.webp",
+      "derivativeHash": "9F38E75AB1BAE96E52AF9705E76A7CD0B75CCFB994B746078F86852665DA2F7B",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8578,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+      "sourceHash": "E168770074C73F88D5068AC00B3ED1154F7641CEFB47854F6E06561096E6E78A",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front-800w.webp",
+      "derivativeHash": "4C69C58614DAC4BD18E4191DE07DCD6B1FF130579EFC53EE2E0335ACC300EF00",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 17682,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
+      "sourceHash": "E0FAC4D4777EFD9A966AB553F556418F7FC11D6F8722EF640B8B16156FBA79B9",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front-480w.webp",
+      "derivativeHash": "96CB189751B3CCB1CFF652993CC7B3942AA8ADEC1E17DD568A0400F905AFC804",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8796,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
+      "sourceHash": "E0FAC4D4777EFD9A966AB553F556418F7FC11D6F8722EF640B8B16156FBA79B9",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front-800w.webp",
+      "derivativeHash": "D7B7C03D635F45942282C6A23FB96274B73B89F038A0954AE826F1B9C56560FB",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19254,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
+      "sourceHash": "129D8BE03A7B6BD216E45878A0C157903CA0072A73924B97CFFD1EE95E52006C",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front-480w.webp",
+      "derivativeHash": "2906D56B161F456753B264AA221D4468C1670A996C0FF2619F6A593EF6503F0B",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9158,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
+      "sourceHash": "129D8BE03A7B6BD216E45878A0C157903CA0072A73924B97CFFD1EE95E52006C",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front-800w.webp",
+      "derivativeHash": "69BD78E3B66B811E3F6E21F58FF11F90981929F9D20E5856D35117DDB4A6AB18",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19836,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
+      "sourceHash": "5CD5CFE4223376353FFBCA18F68D42C68366A13E0EB751AF95EAF318493FF18F",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front-480w.webp",
+      "derivativeHash": "11668B6BC2FEB728AB1B90A3EB6CD216CD09938FF69936DCD00DDF8CAD4863C5",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8510,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
+      "sourceHash": "5CD5CFE4223376353FFBCA18F68D42C68366A13E0EB751AF95EAF318493FF18F",
+      "derivativePath": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front-800w.webp",
+      "derivativeHash": "87B33C7DFAE279E0E17822ABFA90F3CC64D8C29BB6122140D9A105ED8F004D5E",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 17668,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+      "sourceHash": "C6EFC31151C8032374DDE241C8EF83E664ACF272A57626B105554DC26547310E",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/black/front-480w.webp",
+      "derivativeHash": "F373B4A85FF62BF04ED05BAE104E0DC7200A0137D08ACCBAA2F14166AB8EF753",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10696,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+      "sourceHash": "C6EFC31151C8032374DDE241C8EF83E664ACF272A57626B105554DC26547310E",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/black/front-800w.webp",
+      "derivativeHash": "6C605596894A5F7C46F27CBBD7207D1A7F1B2A9ED9881D72B2A484A78C98FCD1",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 22436,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
+      "sourceHash": "5CBB6EE1CAE7B63AAD70FB82F47BACF1CD1D9486EF53B9B3D4A87A90E3756BB2",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front-480w.webp",
+      "derivativeHash": "3A3779A98E84E4FC7A23FC2C90166689DF4DCA373A0D3FD6FC28381A021DAC8C",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 11074,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
+      "sourceHash": "5CBB6EE1CAE7B63AAD70FB82F47BACF1CD1D9486EF53B9B3D4A87A90E3756BB2",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front-800w.webp",
+      "derivativeHash": "FEB99AEC9FF76D175C35499658BCACA80DCB82C1EB433A6EF4502B6552AB7FF0",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 23154,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
+      "sourceHash": "431225EB63347BA3190942876E6DFE775A954054E7C320EA2E4B8682D6F6F497",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front-480w.webp",
+      "derivativeHash": "985EA33085FFE57F93AB31FDAC8E7974B0E47089FF002D190B8F7E2D0A79D9E4",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10254,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
+      "sourceHash": "431225EB63347BA3190942876E6DFE775A954054E7C320EA2E4B8682D6F6F497",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front-800w.webp",
+      "derivativeHash": "D28A7C1392338412CD6C72E6E10C13D934BEDDA52DDB7BF4FFEC0DD55735E0B5",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 21856,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
+      "sourceHash": "D30B09078CA1B1C218CDAB32F6BDCA27A0A2992D373F621291222481EDCCAD92",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/white/front-480w.webp",
+      "derivativeHash": "D56FA7F27A992D8F4DB754857504B18693291A10ED475E69F60D87626E11C348",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9166,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
+      "sourceHash": "D30B09078CA1B1C218CDAB32F6BDCA27A0A2992D373F621291222481EDCCAD92",
+      "derivativePath": "assets/images/products/kalm-move/men/lift-tank-v4/white/front-800w.webp",
+      "derivativeHash": "58B19EC0FA8A4049BA4BC44544523CB90B9944CD9D558089EDD13EE3DF48F5EC",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 20058,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+      "sourceHash": "3CF354600C67A036B47E0C9159304C3E5CE6371697A1FA930D1A39007F513551",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front-480w.webp",
+      "derivativeHash": "E7A3E33E219D8F006D3BDA5C39C9524825FC58DBF202F097EF0603781B75BCFF",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8972,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+      "sourceHash": "3CF354600C67A036B47E0C9159304C3E5CE6371697A1FA930D1A39007F513551",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front-800w.webp",
+      "derivativeHash": "AF1C6E4AEEF8385DDAB8DED07DF67A24247BAF40D3221A690B14E8592FA36824",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18914,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
+      "sourceHash": "F3E3F0B4D52EE50D9A4CC8091B5775A8245C795AFF26766B30A3D7431FEE3302",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front-480w.webp",
+      "derivativeHash": "50424942831C3EADB540ED5794E4801B8924F29B380F69BCB9DFF9143DBBCF8C",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9696,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
+      "sourceHash": "F3E3F0B4D52EE50D9A4CC8091B5775A8245C795AFF26766B30A3D7431FEE3302",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front-800w.webp",
+      "derivativeHash": "EAD53E5C972A258240049C493C7E52D88CEF39E6A888C42BF5A9B505081546FF",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 20384,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
+      "sourceHash": "9E5BE2AF411B6B4C757271E99D433FD7ADB2842017A275C75FBD74D2A80E0499",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front-480w.webp",
+      "derivativeHash": "1EA0D98C8A75352FD87209F0BF29993DB37E24DE6F0F53BE5AF4089C5E7D8DB7",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9590,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
+      "sourceHash": "9E5BE2AF411B6B4C757271E99D433FD7ADB2842017A275C75FBD74D2A80E0499",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front-800w.webp",
+      "derivativeHash": "7FC84D45A4552B817D51FE2EDC63A60AAC0FB80157D9402484DC9C3CE6698227",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 20544,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
+      "sourceHash": "65A570285DDC0728E603261D558F006453A5A7973FE86BB90B80321F466CA924",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front-480w.webp",
+      "derivativeHash": "CE451AFB05EC7E1CC034C8F84E94185FD8913CEDEB584497CA7055570C377648",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9158,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
+      "sourceHash": "65A570285DDC0728E603261D558F006453A5A7973FE86BB90B80321F466CA924",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front-800w.webp",
+      "derivativeHash": "D6E87BC776E61EB8BAB3D3A59736EA3A78179E2EF1C2E821F0CC30EF792F3011",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19814,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
+      "sourceHash": "2A239B539A70587ACA03F705112AF77F686CB0F89E53ED46EE84E85665106249",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front-480w.webp",
+      "derivativeHash": "877599C41D375C5653DFCEF985635D6DBF1D334A565E5011F88B23FC47EE2B20",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8326,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
+      "sourceHash": "2A239B539A70587ACA03F705112AF77F686CB0F89E53ED46EE84E85665106249",
+      "derivativePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front-800w.webp",
+      "derivativeHash": "F4C0FC773A7BC49910564625ED210665F3AFEB96036F93F2B7A89D9B230346A7",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 16964,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+      "sourceHash": "31B2AD533D2E18CBC65CCBD2B13F3F1A88E305CB936A4AC2E03E2175D87DC428",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front-480w.webp",
+      "derivativeHash": "87302CBF9649ABC91F07DF3E880F96A3B792D35BF5A849CC547ABE99A1A18EAB",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8500,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+      "sourceHash": "31B2AD533D2E18CBC65CCBD2B13F3F1A88E305CB936A4AC2E03E2175D87DC428",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front-800w.webp",
+      "derivativeHash": "8E24001147B09BE8E818F581A24C09193F63FC241D60FC8FF588B4C70BAEFC2D",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 16818,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
+      "sourceHash": "02000B5A8067AFD1DC560AF1F11E0250E8ABF89432D02028390E2C22C280B5E5",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front-480w.webp",
+      "derivativeHash": "5A8707FEAB6A6BFADFF449574989E547CC64DD27E9C3A6A443CDA420C64997C9",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8598,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
+      "sourceHash": "02000B5A8067AFD1DC560AF1F11E0250E8ABF89432D02028390E2C22C280B5E5",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front-800w.webp",
+      "derivativeHash": "053811EA5608F3770009719CEA6AC307FAC048C2D9351E14FA5E998ABB3E9E08",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 17918,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
+      "sourceHash": "F8B3114F5A99620C2817958CE343BD2D46B2B97AFA0C69F48841B9FFCC52F426",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front-480w.webp",
+      "derivativeHash": "AFE55352E514F3B985D59E9B5782BB8A79261F4A4E052726D40617398BFD4DEF",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8834,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
+      "sourceHash": "F8B3114F5A99620C2817958CE343BD2D46B2B97AFA0C69F48841B9FFCC52F426",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front-800w.webp",
+      "derivativeHash": "D431877A60E2FA454BC44BF142E1D61CDE0CB8AD29F5E31FBDCA1EAD90A295BA",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18606,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
+      "sourceHash": "80497490DF5409B0FE12FD58640AB7D7836336510786819EA47FF3E251ECC0FF",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front-480w.webp",
+      "derivativeHash": "86BE7F83565127BD6608D9AD0833332D9DE67CE568ABB413F9233FDDE47EF067",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9012,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
+      "sourceHash": "80497490DF5409B0FE12FD58640AB7D7836336510786819EA47FF3E251ECC0FF",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front-800w.webp",
+      "derivativeHash": "0ED478913523CBF4F253105EB730F93AFB41502BADEDBA16DC3428ABFFB86514",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18068,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
+      "sourceHash": "601A795C67A80D4445B15447DD777182923CB8053B69CDEF75F8C96003B0C521",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front-480w.webp",
+      "derivativeHash": "786D7832C1D1F6F8A8165396D6DB62117311169D66047DF241DC9D5ACBFA86CA",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9222,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
+      "sourceHash": "601A795C67A80D4445B15447DD777182923CB8053B69CDEF75F8C96003B0C521",
+      "derivativePath": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front-800w.webp",
+      "derivativeHash": "990646B0712BB29E50EF337CFDDEB17FEB0AAD9031A4C638A547AC1C043116AA",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18804,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+      "sourceHash": "025652015E4B26F50196FB3CA1B9B58C58CE9F60CDE260877696933F1D30143F",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front-480w.webp",
+      "derivativeHash": "299E9732E96B66606B4E9D9F1191F392CA2E3ACAEDF12B9DF53F3906CF813F9B",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 6182,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+      "sourceHash": "025652015E4B26F50196FB3CA1B9B58C58CE9F60CDE260877696933F1D30143F",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front-800w.webp",
+      "derivativeHash": "6B056774DC0EEE85B517DC8F1D72E3D829E64D2A8567467C6170DF19D984E1B9",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 14278,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+      "sourceHash": "9A0C850589C5E0AA4A8821787308F1DE55193DF45B91C546D73E613A7BBF7AB4",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front-480w.webp",
+      "derivativeHash": "895E84B7C8CC01E5003244EB79CFFEE393F6FDFF272C7173E3F69955DF07FD1C",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 5574,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+      "sourceHash": "9A0C850589C5E0AA4A8821787308F1DE55193DF45B91C546D73E613A7BBF7AB4",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front-800w.webp",
+      "derivativeHash": "BDD0D5D1A28C865785F4F952E5BFD1DA7F94B6F519EC4444CF65441908A3B8A2",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 13046,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+      "sourceHash": "0FB7DEF79E10C0DF850C892542D21F70DEA58DE914E9C1A0854B37869F818D51",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front-480w.webp",
+      "derivativeHash": "5D250B9976A5BB5F94373D2410220767CDD4904CCFFBEB2E05D69E0413409277",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 6422,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+      "sourceHash": "0FB7DEF79E10C0DF850C892542D21F70DEA58DE914E9C1A0854B37869F818D51",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front-800w.webp",
+      "derivativeHash": "CC3C9F382B78A9202C2F28587CFB91FFD7FA2D0FCE6593A527B64ED9BDC706B6",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 15690,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+      "sourceHash": "51294B6468F4355AE96ACC12F17482D429E2309B1E31B45B2D1F081987A78BDC",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front-480w.webp",
+      "derivativeHash": "A29C47EE2A3B53F7CD00F68FB5126AD3E560457328786249C0F5FA754821ED1E",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 6054,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+      "sourceHash": "51294B6468F4355AE96ACC12F17482D429E2309B1E31B45B2D1F081987A78BDC",
+      "derivativePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front-800w.webp",
+      "derivativeHash": "28B265280AA7365734EACB05AAFD1A20B5CAA3217C682F8E918B9D832B9AB902",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 13560,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+      "sourceHash": "8D822D7FDFB91553DD4BE8EC6BF3406EFBC2547D868FD5F80363AAF6D85BAF78",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front-480w.webp",
+      "derivativeHash": "D797DD00D37B7EB20844360615ADB4B2CC2B0BB35100DBF1B852C6A5274EAC50",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8506,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+      "sourceHash": "8D822D7FDFB91553DD4BE8EC6BF3406EFBC2547D868FD5F80363AAF6D85BAF78",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front-800w.webp",
+      "derivativeHash": "D61AFE7BB02722EE8EBF670249225CBD1AA9586E06372F7D300C1798CE70B335",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18590,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
+      "sourceHash": "B9D005BC71F06B554F697954CD90FD392FC6C8FAEA09B012D5C8613B8CEB14E8",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front-480w.webp",
+      "derivativeHash": "CC241C7E7F5B2E7230FB28D3EDA7D9F48A3A45251FB572F6E528A182A576B595",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9632,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
+      "sourceHash": "B9D005BC71F06B554F697954CD90FD392FC6C8FAEA09B012D5C8613B8CEB14E8",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front-800w.webp",
+      "derivativeHash": "B0D508289DDD6271626D87A4F5F2F24237F19B59E6797AE0A5C5F38222D641CD",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19958,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
+      "sourceHash": "B08D6D5A1E335AE082DC10E4B09D9531C40A3EE65EF2B5F7B056EC358FC54336",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front-480w.webp",
+      "derivativeHash": "EC5B5DFA057BB033F57DEA9F2F2F60A71913D8AA7A7156FCF0E041CF24A0B825",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9034,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
+      "sourceHash": "B08D6D5A1E335AE082DC10E4B09D9531C40A3EE65EF2B5F7B056EC358FC54336",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front-800w.webp",
+      "derivativeHash": "0BF8B6F009615669FDD07005DCDD0EEF48AEAEA7CE3116534CF82EC2419F9223",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19664,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
+      "sourceHash": "E5033E97428B1393C4A0EFAD1C668D8E0B18A7F93D763A3E9B1CEFB4246A2132",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front-480w.webp",
+      "derivativeHash": "EBBE8E799658D782610FD202C09B3A9253CD2E65BDB856F6068F2A2940B8168C",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8728,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
+      "sourceHash": "E5033E97428B1393C4A0EFAD1C668D8E0B18A7F93D763A3E9B1CEFB4246A2132",
+      "derivativePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front-800w.webp",
+      "derivativeHash": "06041AAC5A6EC03CA3895175136DE3BB893ABC4D2FEC5B3BCA13F72A6ACBF9B4",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18378,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+      "sourceHash": "A08C49A30DC0FE86DFC1FBFC0619F09A2A58C12CA60D455789C041D69CBABF29",
+      "derivativePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front-480w.webp",
+      "derivativeHash": "CFA4FB85C8AFA425DA24CCD5B15CC98EF5BBA89CB2671B45C179C741E820A92E",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 18200,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+      "sourceHash": "A08C49A30DC0FE86DFC1FBFC0619F09A2A58C12CA60D455789C041D69CBABF29",
+      "derivativePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front-800w.webp",
+      "derivativeHash": "018EB021E663A5AD4FEDEC823A31D7411ED5EDAB679EC6CBD8A565A42240A197",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 56160,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
+      "sourceHash": "ED461E1EF0CDA604CA6F6DFA95A0FC8A6111AB49CF883BAB704159323BF5A7EF",
+      "derivativePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front-480w.webp",
+      "derivativeHash": "A7B8DA57D1A527142D132B08DC5BE521FA0543C19CD2FE8219B0B9E140893094",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 13916,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
+      "sourceHash": "ED461E1EF0CDA604CA6F6DFA95A0FC8A6111AB49CF883BAB704159323BF5A7EF",
+      "derivativePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front-800w.webp",
+      "derivativeHash": "58F467731BD2366878EA04AA81CDF82F9935BC9B89918ABC9C1C4537467495EC",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 43616,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
+      "sourceHash": "D8F46F7F006B860D00D8F69B67107D9ED647E20D8FB0FEC1FA995305CD54815E",
+      "derivativePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front-480w.webp",
+      "derivativeHash": "957F9A2679C3BCBB6E76E26A49BF6D1553747B98F61B203E04F3B982D57E7C72",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 12688,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
+      "sourceHash": "D8F46F7F006B860D00D8F69B67107D9ED647E20D8FB0FEC1FA995305CD54815E",
+      "derivativePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front-800w.webp",
+      "derivativeHash": "E4F683196A5CBD8BDB8895CD730973AF26A927B23629211CDCFDEB0D3EB53A43",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 36986,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+      "sourceHash": "41BA2216681862AF7CA765C120BEF30C658845CCBAA1277BB696DBAC1C27BBFE",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front-480w.webp",
+      "derivativeHash": "54D4C7A2784FAD4952E13E9BD06EADFBB7888E18DA0AB4DB5A294654E0E4A94A",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9414,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+      "sourceHash": "41BA2216681862AF7CA765C120BEF30C658845CCBAA1277BB696DBAC1C27BBFE",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front-800w.webp",
+      "derivativeHash": "530079BE6DB19294B93D2AF6D9052FFEDE153074B68028B966D688754C28952F",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19254,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
+      "sourceHash": "718B0D5A2BC5D3FF25918A30E155E3F97D54D096BAD8BF5367E91D101F3732F6",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front-480w.webp",
+      "derivativeHash": "FF341D437C9CA37E4DFD068CB6ACD72C653EA68CECB2EC3C7EC5A6F392FAA62E",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 8940,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
+      "sourceHash": "718B0D5A2BC5D3FF25918A30E155E3F97D54D096BAD8BF5367E91D101F3732F6",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front-800w.webp",
+      "derivativeHash": "3F5CEFBEF0FD26FE8573B56A5455519920753CBCD935D1C713FD03C2AC2BAABC",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 18280,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
+      "sourceHash": "62265B640D34F36A4E30AB3D2AE73C07FE74C41B9B9024D6A37B78AC228CC3F9",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front-480w.webp",
+      "derivativeHash": "ABC5F73277B9635DACFF7C46B60F5E1BE5F6B8167E5CFBAAEE77AF44A3D26A9A",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 9402,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
+      "sourceHash": "62265B640D34F36A4E30AB3D2AE73C07FE74C41B9B9024D6A37B78AC228CC3F9",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front-800w.webp",
+      "derivativeHash": "AF8C5805FCE36CDB69F076035A4934ABEBB75A90B317B4C9C0FFCED17B0EFD2C",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 19926,
+      "use": "tablet_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
+      "sourceHash": "34BEACFC5ED34A4064539D4B59D5271E7F111B7B7A31974AB341A120320B63C3",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front-480w.webp",
+      "derivativeHash": "988397EA38FE9AAD87DC4368EFB03136A566BD3FA5FF766BD3AB6BCFA427DBF1",
+      "dimensions": "480x600",
+      "webpQuality": 82,
+      "fileSizeBytes": 10266,
+      "use": "mobile_card"
+    },
+    {
+      "sourcePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
+      "sourceHash": "34BEACFC5ED34A4064539D4B59D5271E7F111B7B7A31974AB341A120320B63C3",
+      "derivativePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front-800w.webp",
+      "derivativeHash": "C2C417E37BD2548BA4EF98BA2E4D4E86DCB86FDAF4F5B0EA0A158C5E50472EE4",
+      "dimensions": "800x1000",
+      "webpQuality": 82,
+      "fileSizeBytes": 21376,
+      "use": "tablet_card"
+    }
+  ]
+}

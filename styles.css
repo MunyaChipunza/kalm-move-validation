@@ -107,8 +107,8 @@ button {
 }
 
 .brand img {
-  width: 132px;
-  height: 132px;
+  width: 172px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -418,20 +418,23 @@ button {
 .product-media {
   position: relative;
   display: block;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: var(--card-aspect, 4 / 5);
   overflow: hidden;
-  background: #f7f6f3;
+  background: var(--media-background, #f7f6f3);
 }
 
 .product-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: var(--card-fit, cover);
+  object-position: var(--card-position, 50% 50%);
   transition: transform 220ms ease;
 }
 
-.product-card:hover .product-media img {
-  transform: scale(1.025);
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover .product-media img {
+    transform: scale(1.025);
+  }
 }
 
 .photography-placeholder {
@@ -1474,7 +1477,7 @@ button {
   flex: 0 0 100%;
   margin: 0;
   scroll-snap-align: start;
-  background: var(--soft);
+  background: var(--media-background, var(--soft));
 }
 
 .gallery-slide img {
@@ -1482,8 +1485,9 @@ button {
   aspect-ratio: 4 / 5;
   height: auto;
   max-height: min(820px, 82vh);
-  object-fit: contain;
-  background: var(--soft);
+  object-fit: var(--gallery-fit, contain);
+  object-position: var(--gallery-position, 50% 50%);
+  background: var(--media-background, var(--soft));
 }
 
 .gallery-open,
@@ -1562,8 +1566,8 @@ button {
   width: 100%;
   height: 100%;
   min-height: 0;
-  object-fit: cover;
-  object-position: center;
+  object-fit: var(--gallery-fit, cover);
+  object-position: var(--gallery-position, center);
 }
 
 .gallery-lightbox {
@@ -1789,17 +1793,13 @@ body.lightbox-open {
   position: fixed;
   inset: 0;
   z-index: 50;
-  display: grid;
+  display: none;
   justify-content: end;
   background: rgba(0, 0, 0, 0.36);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 180ms ease;
 }
 
 .cart-drawer[aria-hidden="false"] {
-  opacity: 1;
-  pointer-events: auto;
+  display: grid;
 }
 
 .cart-panel {
@@ -2056,9 +2056,9 @@ body.lightbox-open {
 }
 
 .footer-grid img {
-  width: 170px;
-  height: 170px;
-  margin-bottom: 16px;
+  width: 180px;
+  height: 44px;
+  margin-bottom: 12px;
   object-fit: contain;
 }
 
@@ -2074,6 +2074,39 @@ body.lightbox-open {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.5;
+}
+
+.footer-section summary {
+  margin: 0 0 14px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.footer-section summary::after {
+  content: "+";
+  float: right;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-section[open] summary::after {
+  content: "−";
+}
+
+.footer-section > div {
+  padding-top: 2px;
+}
+
+@media (min-width: 901px) {
+  .footer-section summary::after {
+    display: none;
+  }
 }
 
 .copyright {
@@ -2109,19 +2142,22 @@ body.lightbox-open {
 
   .site-header {
     grid-template-columns: auto 1fr auto;
-    min-height: 72px;
-    padding: 7px 14px;
+    min-height: 64px;
+    padding: 6px 14px;
   }
 
   .brand img {
-    width: 72px;
-    height: 72px;
-    transform: scale(1.55);
+    width: 132px;
+    height: 31px;
+    transform: scale(1.45);
   }
 
-  .account-link,
-  .header-actions.left {
+  .account-link {
     display: none;
+  }
+
+  .header-actions.left {
+    display: flex;
   }
 
   .nav-toggle {
@@ -2149,7 +2185,7 @@ body.lightbox-open {
   }
 
   .search-panel {
-    top: 73px;
+    top: 65px;
     padding: 12px 18px;
   }
 
@@ -2233,13 +2269,18 @@ body.lightbox-open {
 
   .product-grid,
   .rail-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
   .product-card h3 {
-    min-height: 56px;
+    min-height: 36px;
     font-size: 14px;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .category-grid {
@@ -2313,14 +2354,14 @@ body.lightbox-open {
   }
 
   .footer-grid {
-    gap: 22px;
-    padding: 26px 18px 20px;
+    gap: 0;
+    padding: 20px 18px 14px;
   }
 
   .footer-grid img {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 8px;
+    width: 126px;
+    height: 31px;
+    margin-bottom: 6px;
   }
 
   .copyright {
@@ -2347,7 +2388,7 @@ body.lightbox-open {
 
   .mobile-filter-bar {
     position: sticky;
-    top: 74px;
+    top: 65px;
     z-index: 12;
     display: flex;
     align-items: center;
@@ -2383,6 +2424,22 @@ body.lightbox-open {
 
   .shop-layout.filters-open .filter-panel {
     transform: translateY(0);
+  }
+
+  .active-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: -6px 0 14px;
+  }
+
+  .active-filter-row a {
+    min-height: 32px;
+    padding: 7px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--soft);
+    font-size: 12px;
   }
 
   .brand-card-large a {
@@ -2427,12 +2484,76 @@ body.lightbox-open {
   .product-info {
     gap: 14px;
   }
+
+  .product-card-body {
+    gap: 6px;
+    padding: 11px;
+  }
+
+  .product-brand {
+    font-size: 10px;
+  }
+
+  .price-line {
+    min-height: 20px;
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  .price-line s {
+    font-size: 11px;
+  }
+
+  .swatches {
+    gap: 5px;
+    min-height: 14px;
+  }
+
+  .swatches span,
+  .swatches button {
+    width: 11px;
+    height: 11px;
+  }
+
+  .card-stock,
+  .card-view-link {
+    display: none;
+  }
+
+  .product-media {
+    aspect-ratio: var(--mobile-card-aspect, var(--card-aspect, 4 / 5));
+  }
+
+  .product-media img {
+    object-fit: var(--mobile-card-fit, var(--card-fit, cover));
+    object-position: var(--mobile-card-position, var(--card-position, 50% 50%));
+  }
+
+  .gallery-slide img {
+    max-height: min(74vh, 620px);
+  }
+
+  .footer-section {
+    border-top: 1px solid var(--line);
+    padding: 13px 0;
+  }
+
+  .footer-section summary {
+    min-height: 28px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .footer-section > div {
+    padding-top: 8px;
+  }
 }
 
 @media (max-width: 520px) {
   .brand img {
-    width: 66px;
-    height: 66px;
+    width: 118px;
+    height: 28px;
+    transform: scale(1.5);
   }
 
   .cart-button span {
@@ -2444,7 +2565,7 @@ body.lightbox-open {
   }
 
   .product-card-body {
-    padding: 16px;
+    padding: 10px;
   }
 
   .outdoor-cooking-media {
@@ -2499,5 +2620,12 @@ body.lightbox-open {
 
   .cart-panel {
     width: 100vw;
+  }
+}
+
+@media (max-width: 359px) {
+  .product-grid,
+  .rail-grid {
+    grid-template-columns: 1fr;
   }
 }

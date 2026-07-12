@@ -22,7 +22,8 @@ for (const product of catalogue.products.filter((item) => item.brandId === "kalm
 }
 for (const product of catalogue.products.filter((item) => item.brandId === "kalm-move" && item.audience === "men")) {
   const images = JSON.stringify({ image: product.image, gallery: product.gallery, variantImages: product.variantImages });
-  if (!images.includes("assets/images/products/kalm-move/men-recovery-v2/")) fail(`Men recovery path is not active: ${product.id}`);
+  if (/men-recovery-v2|men-embedded-logo-v3/.test(images)) fail(`Old or unapproved staged Men path remains active: ${product.id}`);
+  if (!images.includes("assets/images/products/kalm-move/men/") || !images.includes("-v4/")) fail(`Men V4 recovery path is not active: ${product.id}`);
 }
 const bottle = catalogue.products.find((item) => item.id === "kalm-move-studio-bottle");
 if (!JSON.stringify(bottle).includes("studio-bottle-recovery-v2")) fail("Studio Bottle recovery path is not active.");
@@ -33,5 +34,6 @@ console.log(JSON.stringify({
   paidImageUsage: 0,
   womenV3ActiveReferences: 0,
   outdoorGeneratedActiveReferences: 0,
-  menRecoveryProducts: recovery.recoveredMen.length
+  menRecoveryProducts: recovery.recoveredMen.length,
+  menV4Products: catalogue.products.filter((item) => item.brandId === "kalm-move" && item.audience === "men").length
 }, null, 2));

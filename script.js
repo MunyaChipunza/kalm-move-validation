@@ -130,11 +130,12 @@ function bindChrome() {
     }
 
     if (event.target.closest("[data-filter-toggle]")) {
-      document.querySelector("[data-filter-shell]")?.classList.toggle("filters-open");
+      const shell = document.querySelector("[data-filter-shell]");
+      setFilterSheetOpen(!shell?.classList.contains("filters-open"));
     }
 
     if (event.target.closest("[data-filter-close]")) {
-      document.querySelector("[data-filter-shell]")?.classList.remove("filters-open");
+      setFilterSheetOpen(false);
     }
 
     const lightboxOpen = event.target.closest("[data-lightbox-open]");
@@ -566,10 +567,10 @@ function renderShop(params = new URLSearchParams()) {
 
     <section class="shop-layout" data-filter-shell>
       <div class="mobile-filter-bar">
-        <button class="button secondary" type="button" data-filter-toggle>Filter and sort</button>
+        <button class="button secondary" type="button" data-filter-toggle aria-expanded="false" aria-controls="shop-filters">Filter and sort</button>
         <span>${products.length} styles</span>
       </div>
-      <aside class="filter-panel" aria-label="Shop filters">
+      <aside id="shop-filters" class="filter-panel" aria-label="Shop filters">
         <div class="filter-panel-head">
           <strong>Filter</strong>
           <button type="button" data-filter-close aria-label="Close filters">Close</button>
@@ -1524,7 +1525,7 @@ function renderProductGallery(product, inputImages = getProductGalleryImages(pro
   const images = normalizeGalleryImages(inputImages, product);
   const count = images.length || 1;
   return `
-    <div class="product-gallery" data-product-gallery data-gallery-current="0">
+    <div class="product-gallery" data-product-gallery data-gallery-current="0" ${mediaPresentationStyle(product, "gallery")}>
       <div class="product-gallery-frame">
         <div class="gallery-track" data-product-gallery-track tabindex="0" aria-label="Swipe product images for ${escapeAttribute(product.title)}">
           ${renderGallerySlides(product, images)}
@@ -1581,14 +1582,16 @@ function renderProductCard(product, options = {}) {
   const comingSoon = isComingSoonProduct(product);
   const availability = getProductAvailability(product);
   const isUnavailable = availability === "out_of_stock" || availability === "discontinued";
+  const defaultColour = getDefaultColor(product);
   const imageMarkup = options.eager
     ? `src="${escapeHtml(product.image)}" decoding="async"`
     : `src="${escapeHtml(product.image)}" loading="lazy" decoding="async" fetchpriority="low"`;
+  const responsiveAttributes = renderResponsiveCardAttributes(product, defaultColour);
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}">
-      <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
+      <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
         ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        ${!product.image ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
+        ${!product.image ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} ${responsiveAttributes} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
@@ -1631,9 +1634,16 @@ function updateVariantImage(scope, color) {
     updateGalleryByIndex(scope, 0);
   } else {
     const image = scope.querySelector("[data-product-image]");
-    if (image) setProductImage(image, imagePath, altText);
+    if (image) setProductImage(image, imagePath, altText, product, color);
   }
   updateProductAvailabilityState(scope);
+}
+
+function setFilterSheetOpen(open) {
+  const shell = document.querySelector("[data-filter-shell]");
+  const toggle = document.querySelector("[data-filter-toggle]");
+  shell?.classList.toggle("filters-open", Boolean(open));
+  toggle?.setAttribute("aria-expanded", String(Boolean(open)));
 }
 
 function updateGalleryImage(scope, imagePath) {
@@ -1649,10 +1659,19 @@ function updateGalleryImage(scope, imagePath) {
   setActiveGalleryImage(scope, imagePath, index);
 }
 
-function setProductImage(image, imagePath, altText) {
+function setProductImage(image, imagePath, altText, product = null, color = "") {
   image.src = imagePath;
   image.removeAttribute("data-src");
   image.alt = altText;
+  const responsive = getResponsiveCardSources(product, color);
+  if (responsive.length) {
+    image.srcset = responsive.map((source) => `${source.path} ${source.width}w`).join(", ");
+    image.sizes = "(max-width: 520px) 50vw, (max-width: 900px) 33vw, 25vw";
+  } else {
+    image.removeAttribute("srcset");
+    image.removeAttribute("sizes");
+  }
+  image.closest("[data-card-colour]")?.setAttribute("data-card-colour", color || getDefaultColor(product));
 }
 
 function clearVariantError(scope) {
@@ -1685,6 +1704,44 @@ function getProductGalleryImages(product) {
     ...Object.values(product?.variantImages || {}).flatMap(normalizeImageList)
   ];
   return Array.from(new Set(images)).filter(Boolean);
+}
+
+function getMediaPresentation(product) {
+  const source = product?.mediaPresentation || {};
+  const fit = (value, fallback) => ["cover", "contain"].includes(value) ? value : fallback;
+  const position = (value, fallback) => /^[\d.]+%\s+[\d.]+%$/.test(value || "") ? value : fallback;
+  const aspect = (value, fallback) => /^[\d.]+\s*\/\s*[\d.]+$/.test(value || "") ? value : fallback;
+  return {
+    cardFit: fit(source.cardFit, "cover"),
+    cardPosition: position(source.cardPosition, "50% 50%"),
+    mobileCardFit: fit(source.mobileCardFit, fit(source.cardFit, "cover")),
+    mobileCardPosition: position(source.mobileCardPosition, position(source.cardPosition, "50% 50%")),
+    cardAspectRatio: aspect(source.cardAspectRatio, "4 / 5"),
+    mobileCardAspectRatio: aspect(source.mobileCardAspectRatio, aspect(source.cardAspectRatio, "4 / 5")),
+    galleryFit: fit(source.galleryFit, "contain"),
+    galleryPosition: position(source.galleryPosition, "50% 50%"),
+    background: /^#[0-9a-f]{3,8}$/i.test(source.background || "") ? source.background : "#f6f5f2"
+  };
+}
+
+function mediaPresentationStyle(product, surface) {
+  const presentation = getMediaPresentation(product);
+  if (surface === "gallery") {
+    return `style="--gallery-fit:${presentation.galleryFit};--gallery-position:${presentation.galleryPosition};--media-background:${presentation.background}"`;
+  }
+  return `style="--card-fit:${presentation.cardFit};--card-position:${presentation.cardPosition};--mobile-card-fit:${presentation.mobileCardFit};--mobile-card-position:${presentation.mobileCardPosition};--card-aspect:${presentation.cardAspectRatio};--mobile-card-aspect:${presentation.mobileCardAspectRatio};--media-background:${presentation.background}"`;
+}
+
+function getResponsiveCardSources(product, colour) {
+  const map = product?.responsiveImages?.card || {};
+  const sources = map[colour] || map[getDefaultColor(product)] || [];
+  return Array.isArray(sources) ? sources.filter((source) => source?.path && Number(source?.width) > 0) : [];
+}
+
+function renderResponsiveCardAttributes(product, colour) {
+  const sources = getResponsiveCardSources(product, colour);
+  if (!sources.length) return "";
+  return `srcset="${escapeAttribute(sources.map((source) => `${source.path} ${source.width}w`).join(", "))}" sizes="(max-width: 520px) 50vw, (max-width: 900px) 33vw, 25vw"`;
 }
 
 function normalizeImageList(value) {
@@ -2142,6 +2199,12 @@ function swatch(color) {
 function renderFooter() {
   const logo = state.data.meta.logo || "assets/branding/kalm-collective/kalm-collective-logo.png";
   const logoAlt = state.data.meta.logoAlt || "KALM Collective logo";
+  const footerSection = (title, content) => `
+    <details class="footer-section" ${window.matchMedia("(min-width: 901px)").matches ? "open" : ""}>
+      <summary>${escapeHtml(title)}</summary>
+      <div>${content}</div>
+    </details>
+  `;
   return `
     <footer class="site-footer">
       <div class="footer-service">
@@ -2152,34 +2215,30 @@ function renderFooter() {
       </div>
       <div class="footer-grid">
         <div>
-          <img src="${transparentPixel}" data-src="${escapeHtml(logo)}" alt="${escapeAttribute(logoAlt)}" width="1563" height="1563" loading="lazy" decoding="async" fetchpriority="low">
+          <img src="${escapeHtml(logo)}" alt="${escapeAttribute(logoAlt)}" width="1120" height="260" decoding="async">
           <p>Premium essentials for movement, outdoor routines and everyday living.</p>
         </div>
-        <div>
-          <h3>Shop</h3>
+        ${footerSection("Shop", `
           <a href="#/shop?category=new-in">New In</a>
           <a href="#/shop?category=activewear">Activewear</a>
           <a href="#/shop?category=wellness">Wellness</a>
           <a href="#/shop?category=home">Home</a>
           <a href="#/shop?category=outdoor">Outdoor</a>
           <a href="#/shop?category=sale">Sale</a>
-        </div>
-        <div>
-          <h3>Brands</h3>
+        `)}
+        ${footerSection("Brands", `
           ${state.data.brands.map((brand) => `<a href="#/brand/${brand.id}">${escapeHtml(brand.name)}</a>`).join("")}
-        </div>
-        <div>
-          <h3>Customer care</h3>
+        `)}
+        ${footerSection("Customer care", `
           <a href="#/contact">Help</a>
           <a href="#/policies#delivery">Delivery</a>
           <a href="#/policies#returns">Returns</a>
           <a href="#/policies">Privacy</a>
-        </div>
-        <div>
-          <h3>Follow</h3>
+        `)}
+        ${footerSection("Follow", `
           <p>@kalmcollective</p>
           <p>kalmcollective.co.za</p>
-        </div>
+        `)}
       </div>
       <p class="copyright">© 2026 KALM Collective. All rights reserved.</p>
     </footer>

@@ -1,0 +1,1300 @@
+{
+  "generatedAt": "2026-07-12T09:29:36.663279+00:00",
+  "approvalState": "preview_candidate_pending_munya_visual_approval",
+  "summary": {
+    "activeMenProducts": 11,
+    "activeProductColourRecords": 46,
+    "activeV3Assets": 46,
+    "rejected": 0
+  },
+  "records": [
+    {
+      "productId": "kalm-move-base-compression-short",
+      "product": "KALM Move Base Compression Short",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\base-compression-short-v3\\black\\front.webp",
+      "sourceHash": "C28EC2D445F720A10C69161E4C39BDA69C836FA0DC447E0A592A2B5CB2424154",
+      "localHash": "C28EC2D445F720A10C69161E4C39BDA69C836FA0DC447E0A592A2B5CB2424154",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-base-compression-short",
+      "product": "KALM Move Base Compression Short",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\base-compression-short-v3\\charcoal\\front.webp",
+      "sourceHash": "8BA198C391C41965BDC85CB1B53A89784954C0DA04C85B2E65BA08CFF60E49B4",
+      "localHash": "8BA198C391C41965BDC85CB1B53A89784954C0DA04C85B2E65BA08CFF60E49B4",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-base-compression-short",
+      "product": "KALM Move Base Compression Short",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\base-compression-short-v3\\navy\\front.webp",
+      "sourceHash": "041FA0E5731E2341505A0074660709E9AAA4FE6D28FC216D105909EFD2BCBAFE",
+      "localHash": "041FA0E5731E2341505A0074660709E9AAA4FE6D28FC216D105909EFD2BCBAFE",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-cap",
+      "product": "KALM Move Cap",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\black\\front.webp",
+      "sourceHash": "8BEE8B6AB46C62643A120402569B46F66E354589B4D10A37CDE3B32CF69EEA09",
+      "localHash": "8BEE8B6AB46C62643A120402569B46F66E354589B4D10A37CDE3B32CF69EEA09",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-cap",
+      "product": "KALM Move Cap",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\charcoal\\front.webp",
+      "sourceHash": "E2A01F64EC02099C42581962AC22CB2228F68D138EB64DC84A4E3D54A672B414",
+      "localHash": "E2A01F64EC02099C42581962AC22CB2228F68D138EB64DC84A4E3D54A672B414",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-cap",
+      "product": "KALM Move Cap",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\navy\\front.webp",
+      "sourceHash": "C8FBD794309CCBE5204267F8D4E0AAE88484D8947129FC3A68D88BD3E6E35CD2",
+      "localHash": "C8FBD794309CCBE5204267F8D4E0AAE88484D8947129FC3A68D88BD3E6E35CD2",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-cap",
+      "product": "KALM Move Cap",
+      "colour": "Olive",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\olive\\front.webp",
+      "sourceHash": "6FD72FEBD529ADB867A2C3C534F8384A8168F67CF52D5B02207D6347FAF01C57",
+      "localHash": "6FD72FEBD529ADB867A2C3C534F8384A8168F67CF52D5B02207D6347FAF01C57",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/olive/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/olive/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-cap",
+      "product": "KALM Move Cap",
+      "colour": "White",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\white\\front.webp",
+      "sourceHash": "BFF2AB2DE2904243B14AA4ABA9B179DFF3EBB1C2414ED22CEC6C42F8DAEF6F96",
+      "localHash": "BFF2AB2DE2904243B14AA4ABA9B179DFF3EBB1C2414ED22CEC6C42F8DAEF6F96",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/white/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/white/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/white/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-core-performance-tee",
+      "product": "KALM Move Core Performance Tee",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\black\\front.webp",
+      "sourceHash": "B82B721F6B5D4778A144EBA86D611CB80A4349AECD6FC2E8F5AA0BB8B920FEB7",
+      "localHash": "B82B721F6B5D4778A144EBA86D611CB80A4349AECD6FC2E8F5AA0BB8B920FEB7",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-core-performance-tee",
+      "product": "KALM Move Core Performance Tee",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\charcoal\\front.webp",
+      "sourceHash": "E409CF0D9EDBDECA1D7165CA99EE834A0605FD3C35C2C427C5829E5EE9750766",
+      "localHash": "E409CF0D9EDBDECA1D7165CA99EE834A0605FD3C35C2C427C5829E5EE9750766",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-core-performance-tee",
+      "product": "KALM Move Core Performance Tee",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\navy\\front.webp",
+      "sourceHash": "1C3D81A646FB70D0C7E02413F63F1763F9A2540383383B8C28CE8FFED1FC6A29",
+      "localHash": "1C3D81A646FB70D0C7E02413F63F1763F9A2540383383B8C28CE8FFED1FC6A29",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-core-performance-tee",
+      "product": "KALM Move Core Performance Tee",
+      "colour": "Olive",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\olive\\front.webp",
+      "sourceHash": "E9948701FF1B68B6E5DBA5061EF1B6B68E29633C3EBA1EEAF7E34BD8AED9AAB9",
+      "localHash": "E9948701FF1B68B6E5DBA5061EF1B6B68E29633C3EBA1EEAF7E34BD8AED9AAB9",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-core-performance-tee",
+      "product": "KALM Move Core Performance Tee",
+      "colour": "White",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\white\\front.webp",
+      "sourceHash": "97CACF2F1BC35D59458A745E9BB5A64728F68255D42933222991F1996CEFE229",
+      "localHash": "97CACF2F1BC35D59458A745E9BB5A64728F68255D42933222991F1996CEFE229",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-flow-training-short",
+      "product": "KALM Move Flow Training Short",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\black\\front.webp",
+      "sourceHash": "E168770074C73F88D5068AC00B3ED1154F7641CEFB47854F6E06561096E6E78A",
+      "localHash": "E168770074C73F88D5068AC00B3ED1154F7641CEFB47854F6E06561096E6E78A",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-flow-training-short",
+      "product": "KALM Move Flow Training Short",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\charcoal\\front.webp",
+      "sourceHash": "E0FAC4D4777EFD9A966AB553F556418F7FC11D6F8722EF640B8B16156FBA79B9",
+      "localHash": "E0FAC4D4777EFD9A966AB553F556418F7FC11D6F8722EF640B8B16156FBA79B9",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-flow-training-short",
+      "product": "KALM Move Flow Training Short",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\navy\\front.webp",
+      "sourceHash": "129D8BE03A7B6BD216E45878A0C157903CA0072A73924B97CFFD1EE95E52006C",
+      "localHash": "129D8BE03A7B6BD216E45878A0C157903CA0072A73924B97CFFD1EE95E52006C",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-flow-training-short",
+      "product": "KALM Move Flow Training Short",
+      "colour": "Olive",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\olive\\front.webp",
+      "sourceHash": "5CD5CFE4223376353FFBCA18F68D42C68366A13E0EB751AF95EAF318493FF18F",
+      "localHash": "5CD5CFE4223376353FFBCA18F68D42C68366A13E0EB751AF95EAF318493FF18F",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-lift-tank",
+      "product": "KALM Move Lift Tank",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\black\\front.webp",
+      "sourceHash": "C6EFC31151C8032374DDE241C8EF83E664ACF272A57626B105554DC26547310E",
+      "localHash": "C6EFC31151C8032374DDE241C8EF83E664ACF272A57626B105554DC26547310E",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-lift-tank",
+      "product": "KALM Move Lift Tank",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\charcoal\\front.webp",
+      "sourceHash": "5CBB6EE1CAE7B63AAD70FB82F47BACF1CD1D9486EF53B9B3D4A87A90E3756BB2",
+      "localHash": "5CBB6EE1CAE7B63AAD70FB82F47BACF1CD1D9486EF53B9B3D4A87A90E3756BB2",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-lift-tank",
+      "product": "KALM Move Lift Tank",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\navy\\front.webp",
+      "sourceHash": "431225EB63347BA3190942876E6DFE775A954054E7C320EA2E4B8682D6F6F497",
+      "localHash": "431225EB63347BA3190942876E6DFE775A954054E7C320EA2E4B8682D6F6F497",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-lift-tank",
+      "product": "KALM Move Lift Tank",
+      "colour": "White",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\white\\front.webp",
+      "sourceHash": "D30B09078CA1B1C218CDAB32F6BDCA27A0A2992D373F621291222481EDCCAD92",
+      "localHash": "D30B09078CA1B1C218CDAB32F6BDCA27A0A2992D373F621291222481EDCCAD92",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/white/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/white/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-motion-hoodie",
+      "product": "KALM Move Motion Hoodie",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\black\\front.webp",
+      "sourceHash": "3CF354600C67A036B47E0C9159304C3E5CE6371697A1FA930D1A39007F513551",
+      "localHash": "3CF354600C67A036B47E0C9159304C3E5CE6371697A1FA930D1A39007F513551",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-motion-hoodie",
+      "product": "KALM Move Motion Hoodie",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\charcoal\\front.webp",
+      "sourceHash": "F3E3F0B4D52EE50D9A4CC8091B5775A8245C795AFF26766B30A3D7431FEE3302",
+      "localHash": "F3E3F0B4D52EE50D9A4CC8091B5775A8245C795AFF26766B30A3D7431FEE3302",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-motion-hoodie",
+      "product": "KALM Move Motion Hoodie",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\navy\\front.webp",
+      "sourceHash": "9E5BE2AF411B6B4C757271E99D433FD7ADB2842017A275C75FBD74D2A80E0499",
+      "localHash": "9E5BE2AF411B6B4C757271E99D433FD7ADB2842017A275C75FBD74D2A80E0499",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-motion-hoodie",
+      "product": "KALM Move Motion Hoodie",
+      "colour": "Olive",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\olive\\front.webp",
+      "sourceHash": "65A570285DDC0728E603261D558F006453A5A7973FE86BB90B80321F466CA924",
+      "localHash": "65A570285DDC0728E603261D558F006453A5A7973FE86BB90B80321F466CA924",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-motion-hoodie",
+      "product": "KALM Move Motion Hoodie",
+      "colour": "Stone",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\stone\\front.webp",
+      "sourceHash": "2A239B539A70587ACA03F705112AF77F686CB0F89E53ED46EE84E85665106249",
+      "localHash": "2A239B539A70587ACA03F705112AF77F686CB0F89E53ED46EE84E85665106249",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-pace-jogger",
+      "product": "KALM Move Pace Jogger",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\black\\front.webp",
+      "sourceHash": "31B2AD533D2E18CBC65CCBD2B13F3F1A88E305CB936A4AC2E03E2175D87DC428",
+      "localHash": "31B2AD533D2E18CBC65CCBD2B13F3F1A88E305CB936A4AC2E03E2175D87DC428",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-pace-jogger",
+      "product": "KALM Move Pace Jogger",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\charcoal\\front.webp",
+      "sourceHash": "02000B5A8067AFD1DC560AF1F11E0250E8ABF89432D02028390E2C22C280B5E5",
+      "localHash": "02000B5A8067AFD1DC560AF1F11E0250E8ABF89432D02028390E2C22C280B5E5",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-pace-jogger",
+      "product": "KALM Move Pace Jogger",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\navy\\front.webp",
+      "sourceHash": "F8B3114F5A99620C2817958CE343BD2D46B2B97AFA0C69F48841B9FFCC52F426",
+      "localHash": "F8B3114F5A99620C2817958CE343BD2D46B2B97AFA0C69F48841B9FFCC52F426",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-pace-jogger",
+      "product": "KALM Move Pace Jogger",
+      "colour": "Olive",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\olive\\front.webp",
+      "sourceHash": "80497490DF5409B0FE12FD58640AB7D7836336510786819EA47FF3E251ECC0FF",
+      "localHash": "80497490DF5409B0FE12FD58640AB7D7836336510786819EA47FF3E251ECC0FF",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-pace-jogger",
+      "product": "KALM Move Pace Jogger",
+      "colour": "Stone",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\stone\\front.webp",
+      "sourceHash": "601A795C67A80D4445B15447DD777182923CB8053B69CDEF75F8C96003B0C521",
+      "localHash": "601A795C67A80D4445B15447DD777182923CB8053B69CDEF75F8C96003B0C521",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-protein-shaker-bottle",
+      "product": "KALM Move Protein Shaker Bottle",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\black\\front.webp",
+      "sourceHash": "025652015E4B26F50196FB3CA1B9B58C58CE9F60CDE260877696933F1D30143F",
+      "localHash": "025652015E4B26F50196FB3CA1B9B58C58CE9F60CDE260877696933F1D30143F",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-protein-shaker-bottle",
+      "product": "KALM Move Protein Shaker Bottle",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\charcoal\\front.webp",
+      "sourceHash": "9A0C850589C5E0AA4A8821787308F1DE55193DF45B91C546D73E613A7BBF7AB4",
+      "localHash": "9A0C850589C5E0AA4A8821787308F1DE55193DF45B91C546D73E613A7BBF7AB4",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-protein-shaker-bottle",
+      "product": "KALM Move Protein Shaker Bottle",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\navy\\front.webp",
+      "sourceHash": "0FB7DEF79E10C0DF850C892542D21F70DEA58DE914E9C1A0854B37869F818D51",
+      "localHash": "0FB7DEF79E10C0DF850C892542D21F70DEA58DE914E9C1A0854B37869F818D51",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-protein-shaker-bottle",
+      "product": "KALM Move Protein Shaker Bottle",
+      "colour": "Smoke Grey",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\smoke-grey\\front.webp",
+      "sourceHash": "51294B6468F4355AE96ACC12F17482D429E2309B1E31B45B2D1F081987A78BDC",
+      "localHash": "51294B6468F4355AE96ACC12F17482D429E2309B1E31B45B2D1F081987A78BDC",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-sprint-running-short",
+      "product": "KALM Move Sprint Running Short",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\black\\front.webp",
+      "sourceHash": "8D822D7FDFB91553DD4BE8EC6BF3406EFBC2547D868FD5F80363AAF6D85BAF78",
+      "localHash": "8D822D7FDFB91553DD4BE8EC6BF3406EFBC2547D868FD5F80363AAF6D85BAF78",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-sprint-running-short",
+      "product": "KALM Move Sprint Running Short",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\charcoal\\front.webp",
+      "sourceHash": "B9D005BC71F06B554F697954CD90FD392FC6C8FAEA09B012D5C8613B8CEB14E8",
+      "localHash": "B9D005BC71F06B554F697954CD90FD392FC6C8FAEA09B012D5C8613B8CEB14E8",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-sprint-running-short",
+      "product": "KALM Move Sprint Running Short",
+      "colour": "Cobalt",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\cobalt\\front.webp",
+      "sourceHash": "B08D6D5A1E335AE082DC10E4B09D9531C40A3EE65EF2B5F7B056EC358FC54336",
+      "localHash": "B08D6D5A1E335AE082DC10E4B09D9531C40A3EE65EF2B5F7B056EC358FC54336",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-sprint-running-short",
+      "product": "KALM Move Sprint Running Short",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\navy\\front.webp",
+      "sourceHash": "E5033E97428B1393C4A0EFAD1C668D8E0B18A7F93D763A3E9B1CEFB4246A2132",
+      "localHash": "E5033E97428B1393C4A0EFAD1C668D8E0B18A7F93D763A3E9B1CEFB4246A2132",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-training-sock-3-pack",
+      "product": "KALM Move Training Sock 3-Pack",
+      "colour": "Black Pack",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\training-sock-3-pack-v3\\black-pack\\front.webp",
+      "sourceHash": "A08C49A30DC0FE86DFC1FBFC0619F09A2A58C12CA60D455789C041D69CBABF29",
+      "localHash": "A08C49A30DC0FE86DFC1FBFC0619F09A2A58C12CA60D455789C041D69CBABF29",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-training-sock-3-pack",
+      "product": "KALM Move Training Sock 3-Pack",
+      "colour": "Mixed Neutral Pack",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\training-sock-3-pack-v3\\mixed-neutral-pack\\front.webp",
+      "sourceHash": "ED461E1EF0CDA604CA6F6DFA95A0FC8A6111AB49CF883BAB704159323BF5A7EF",
+      "localHash": "ED461E1EF0CDA604CA6F6DFA95A0FC8A6111AB49CF883BAB704159323BF5A7EF",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-training-sock-3-pack",
+      "product": "KALM Move Training Sock 3-Pack",
+      "colour": "White Pack",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\training-sock-3-pack-v3\\white-pack\\front.webp",
+      "sourceHash": "D8F46F7F006B860D00D8F69B67107D9ED647E20D8FB0FEC1FA995305CD54815E",
+      "localHash": "D8F46F7F006B860D00D8F69B67107D9ED647E20D8FB0FEC1FA995305CD54815E",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-utility-gym-bag",
+      "product": "KALM Move Utility Gym Bag",
+      "colour": "Black",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\black\\front.webp",
+      "sourceHash": "41BA2216681862AF7CA765C120BEF30C658845CCBAA1277BB696DBAC1C27BBFE",
+      "localHash": "41BA2216681862AF7CA765C120BEF30C658845CCBAA1277BB696DBAC1C27BBFE",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-utility-gym-bag",
+      "product": "KALM Move Utility Gym Bag",
+      "colour": "Charcoal",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\charcoal\\front.webp",
+      "sourceHash": "718B0D5A2BC5D3FF25918A30E155E3F97D54D096BAD8BF5367E91D101F3732F6",
+      "localHash": "718B0D5A2BC5D3FF25918A30E155E3F97D54D096BAD8BF5367E91D101F3732F6",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-utility-gym-bag",
+      "product": "KALM Move Utility Gym Bag",
+      "colour": "Navy",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\navy\\front.webp",
+      "sourceHash": "62265B640D34F36A4E30AB3D2AE73C07FE74C41B9B9024D6A37B78AC228CC3F9",
+      "localHash": "62265B640D34F36A4E30AB3D2AE73C07FE74C41B9B9024D6A37B78AC228CC3F9",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
+          "width": 1200
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-utility-gym-bag",
+      "product": "KALM Move Utility Gym Bag",
+      "colour": "Olive",
+      "view": "front",
+      "activePath": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
+      "sourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\olive\\front.webp",
+      "sourceHash": "34BEACFC5ED34A4064539D4B59D5271E7F111B7B7A31974AB341A120320B63C3",
+      "localHash": "34BEACFC5ED34A4064539D4B59D5271E7F111B7B7A31974AB341A120320B63C3",
+      "dimensions": "1200x1500",
+      "previousPath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/front.webp",
+      "reasonSelected": "Exact product-and-colour staging folder, coherent visual garment/product, credible proportions and embedded branding. Approved for preview only, pending Munya visual approval.",
+      "approvalState": "preview_candidate_pending_munya_visual_approval",
+      "responsiveCardSources": [
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front-800w.webp",
+          "width": 800
+        },
+        {
+          "path": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
+          "width": 1200
+        }
+      ]
+    }
+  ]
+}
