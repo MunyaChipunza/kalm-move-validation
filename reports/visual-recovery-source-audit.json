@@ -64,5 +64,13 @@
   "unresolvedApprovedLifestyleAssets": [
     "No approved KALM Move man-and-woman natural-movement image was found in Git history, branches, LFS, reports, backups, or unreachable commits.",
     "No approved KALM Outdoor adults-at-a-premium-gathering image was found in Git history, branches, LFS, reports, backups, or unreachable commits."
-  ]
+  ],
+  "reviewEvidence": {
+    "mobileFooter": {
+      "viewportCss": "375x812",
+      "reviewCopy": "reports/visual-recovery-preview-evidence/mobile-footer-375x812.png",
+      "rawBrowserCapture": "reports/visual-recovery-preview-evidence/mobile-footer-viewport-capture-360x779.png",
+      "note": "The review copy is a proportional 375x812 resample of the raw browser footer capture; no page or photographic content was altered."
+    }
+  }
 }
