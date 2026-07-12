@@ -967,10 +967,10 @@ function renderProduct(slug, params = new URLSearchParams()) {
   const comingSoon = isComingSoonProduct(product);
   const comingSoonMessage = product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.";
   const requestedColor = params.get("colour") || params.get("color") || "";
-  const defaultColor = comingSoon
-    ? ""
-    : (product.colors.includes(requestedColor) && !isColorUnavailable(product, requestedColor) ? requestedColor : getDefaultColor(product));
-  const defaultImages = comingSoon ? getProductGalleryImages(product) : (defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product));
+  const defaultColor = product.colors.includes(requestedColor) && !isColorUnavailable(product, requestedColor)
+    ? requestedColor
+    : getDefaultColor(product);
+  const defaultImages = defaultColor ? getVariantImages(product, defaultColor) : getProductGalleryImages(product);
   const productAvailability = getProductAvailability(product);
   const manualRelated = (product.relatedProducts || [])
     .map((productId) => findProduct(productId))
@@ -997,6 +997,13 @@ function renderProduct(slug, params = new URLSearchParams()) {
             <strong>Coming soon</strong>
             <p>${escapeHtml(comingSoonMessage)}</p>
             ${product.compatibilityNote ? `<p>${escapeHtml(product.compatibilityNote)}</p>` : ""}
+            ${product.brandId === "kalm-move" && product.colors.length ? `
+              <label>Colour
+                <select data-color-select>
+                  ${product.colors.map((color) => `<option value="${escapeAttribute(color)}" ${color === defaultColor ? "selected" : ""}>${escapeHtml(color)}</option>`).join("")}
+                </select>
+              </label>
+            ` : ""}
           </div>
         ` : `<div class="price-line">${renderPrice(product)}</div>`}
 
