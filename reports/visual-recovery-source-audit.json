@@ -1,0 +1,68 @@
+{
+  "generatedFor": "preview-only visual recovery",
+  "sourceCommits": {
+    "women": "07258b3a6f2960718750a78b57a01f9537d4ce34",
+    "men": "5c0fff2da19269ff0f4ddd769c100d680c2b5f45",
+    "studioBottle": "5d33e4b415ee0834a08d5cc7cbcebdd3bfa5d5ee"
+  },
+  "cacheBustingPaths": {
+    "men": "assets/images/products/kalm-move/men-recovery-v2/",
+    "studioBottle": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/"
+  },
+  "recoveredWomen": [
+    "kalm-move-align-strappy-jumpsuit",
+    "kalm-move-ease-flare-set",
+    "kalm-move-form-short-set",
+    "kalm-move-pulse-crop-short-set",
+    "kalm-move-wide-leg-yoga-pant",
+    "kalm-move-balance-strappy-set",
+    "kalm-move-halter-biker-short-set",
+    "kalm-move-rise-long-sleeve-set",
+    "kalm-move-lightweight-windbreaker-set",
+    "kalm-move-cropped-zip-yoga-jacket",
+    "kalm-move-core-seamless-tank",
+    "kalm-move-align-ruched-short",
+    "kalm-move-loose-split-running-short",
+    "kalm-move-split-running-skort",
+    "kalm-move-open-back-short-romper",
+    "kalm-move-pocket-racerback-crop-bra",
+    "kalm-move-contrast-flare-set",
+    "kalm-move-crossline-legging",
+    "kalm-move-drift-crop-wide-pant"
+  ],
+  "recoveredMen": [
+    "kalm-move-flow-training-short",
+    "kalm-move-sprint-running-short",
+    "kalm-move-core-performance-tee",
+    "kalm-move-lift-tank",
+    "kalm-move-pace-jogger",
+    "kalm-move-motion-hoodie",
+    "kalm-move-base-compression-short",
+    "kalm-move-cap",
+    "kalm-move-training-sock-3-pack",
+    "kalm-move-utility-gym-bag",
+    "kalm-move-protein-shaker-bottle"
+  ],
+  "removedOutdoorReferences": [
+    "kalm-outdoor-ember-launch-pro-perforated-peel",
+    "kalm-outdoor-ember-turn-pro-turning-peel",
+    "kalm-outdoor-ember-dough-and-heat-kit",
+    "kalm-outdoor-ridge-smart-temperature-system",
+    "kalm-outdoor-ridge-pro-rotisserie-kit",
+    "kalm-outdoor-ridge-cast-iron-sear-system",
+    "kalm-outdoor-forge-pro-griddle-tool-roll",
+    "kalm-outdoor-forge-smash-and-steam-kit",
+    "kalm-outdoor-forge-season-and-care-kit"
+  ],
+  "recoveredBrandLifestyleAssets": {
+    "kalmMove": [
+      "assets/images/campaign-hero.webp",
+      "assets/images/full-outfit-lifestyle-shop.webp"
+    ],
+    "kalmOutdoor": []
+  },
+  "unresolvedApprovedLifestyleAssets": [
+    "No approved KALM Move man-and-woman natural-movement image was found in Git history, branches, LFS, reports, backups, or unreachable commits.",
+    "No approved KALM Outdoor adults-at-a-premium-gathering image was found in Git history, branches, LFS, reports, backups, or unreachable commits."
+  ]
+}

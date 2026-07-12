@@ -663,16 +663,25 @@ function renderBrands() {
     </section>
 
     <section class="brand-grid">
-      ${state.data.brands.map((brand, index) => `
-        <article class="brand-card-large">
-          <a href="#/brand/${brand.id}" aria-label="Shop ${escapeAttribute(brand.name)}">
-            <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} products" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
-            <div class="brand-content">
-              <img class="brand-card-logo brand-card-mark" src="${escapeHtml(getBrandsPageMark())}" alt="${escapeAttribute(`KALM buffalo mark for ${brand.name}`)}" width="1254" height="1254" loading="eager" decoding="async">
-            </div>
-          </a>
-        </article>
-      `).join("")}
+      ${state.data.brands.map((brand, index) => {
+        const isTextLed = brand.visualMode === "text-led";
+        const content = `
+          <div class="brand-content">
+            <img class="brand-card-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || `${brand.name} logo`)}" width="1254" height="1254" loading="eager" decoding="async">
+            <h2>${escapeHtml(brand.name)}</h2>
+            <p>${escapeHtml(brand.summary || brand.description || "Explore the collection.")}</p>
+            ${isTextLed ? '<span class="brand-card-status">Photography in production</span>' : ""}
+          </div>`;
+        return `
+          <article class="brand-card-large ${isTextLed ? "brand-card-large--text" : ""}">
+            <a href="#/brand/${brand.id}" aria-label="Shop ${escapeAttribute(brand.name)}">
+              ${isTextLed ? content : `
+                <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} lifestyle" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
+                ${content}
+              `}
+            </a>
+          </article>`;
+      }).join("")}
     </section>
 
     ${renderFooter()}
@@ -742,18 +751,17 @@ function renderKalmOutdoorExperience(brand) {
     "Explore KALM Outdoor appliances and join the waitlist for upcoming accessory roadmaps. Photography and final specifications are in production."
   );
   app.innerHTML = `
-    <section class="outdoor-hero">
+    <section class="outdoor-hero outdoor-hero--text">
       <div>
         <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <p class="eyebrow">KALM Outdoor</p>
         <h1>Build your open-air cooking routine.</h1>
-        <p>Start with an original KALM Outdoor appliance, then map the accessories you want next. Accessory photography and final supplier details are in production.</p>
+        <p>Start with the appliance that suits your cooking routine, then register interest in the accessory roadmap you want next. We will publish product photography only after supplier approval.</p>
         <div class="hero-actions">
           <a class="button primary" href="#/shop?brand=kalm-outdoor">Shop appliances</a>
           <a class="button secondary" href="#/brand/kalm-outdoor#outdoor-waitlist">Join the accessory waitlist</a>
         </div>
       </div>
-      <img src="${escapeHtml(brand.heroImage)}" alt="KALM Outdoor Ridge 4 cooking setting" width="1200" height="900">
     </section>
 
     <section class="section-block" aria-labelledby="outdoor-anchors-title">
@@ -761,15 +769,14 @@ function renderKalmOutdoorExperience(brand) {
         <div>
           <p class="eyebrow">Anchor appliances</p>
           <h2 id="outdoor-anchors-title">Start with your cooking station.</h2>
-          <p class="section-copy">Approved appliance photography is shown below. Upcoming accessories are clearly marked as photography in production.</p>
+          <p class="section-copy">Compare appliance formats and register for accessory compatibility updates. No illustrative product renders are shown in this preview.</p>
         </div>
       </div>
       <div class="outdoor-anchor-grid">
         ${anchors.map((product) => `
           <article class="outdoor-anchor-card">
-            <img src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="760" height="560" loading="lazy" decoding="async">
             <div>
-              <p class="eyebrow">Approved appliance photography</p>
+              <p class="eyebrow">Cooking station</p>
               <h3>${escapeHtml(product.title)}</h3>
               <p>${escapeHtml(product.shortDescription || product.description)}</p>
               <a class="button secondary" href="#/product/${product.slug}">View appliance</a>
@@ -916,7 +923,7 @@ function renderKalmMoveSubcategories() {
         <div>
           <p class="eyebrow">KALM Move</p>
           <h2>Choose your edit</h2>
-          <p class="section-copy">Activewear and accessories arranged by audience, then by the categories that currently exist in the catalogue.</p>
+          <p class="section-copy">Purposeful pieces for the way you train, recover and move through the day.</p>
         </div>
       </div>
       <div class="move-audience-grid">
@@ -1581,7 +1588,7 @@ function renderProductCard(product, options = {}) {
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}">
         ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        ${comingSoon && !product.image ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
+        ${!product.image ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>

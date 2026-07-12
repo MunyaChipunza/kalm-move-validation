@@ -56,8 +56,13 @@ for (const product of data.products || []) {
     const hasConceptImages = Boolean(product.image) || imageList(product.gallery).length > 0;
     if (Object.keys(product.variantImages || {}).length || (product.variants || []).length) fail(`${product.id} coming-soon record must not include variants.`);
     if (hasConceptImages && !product.conceptImageDisclosure) fail(`${product.id} concept imagery requires a disclosure.`);
-    if (product.brandId === "kalm-outdoor" && !hasConceptImages) fail(`${product.id} Outdoor coming-soon record must include its approved concept gallery.`);
-    if (product.photographyStatus !== "Photography in production") fail(`${product.id} must state Photography in production.`);
+    if (product.brandId === "kalm-outdoor") {
+      if (hasConceptImages) fail(`${product.id} Outdoor coming-soon record must not expose unapproved concept imagery.`);
+      if (product.conceptImageDisclosure) fail(`${product.id} Outdoor coming-soon record must not expose a concept-image disclosure without imagery.`);
+      if (product.photographyStatus !== "Photography in production. Product images will be published after supplier approval.") fail(`${product.id} must state the approved photography status.`);
+    } else if (product.photographyStatus !== "Photography in production") {
+      fail(`${product.id} must state Photography in production.`);
+    }
     if (!Array.isArray(product.compatibleAppliances) || !product.compatibleAppliances.length) fail(`${product.id} missing compatible appliance mapping.`);
   } else if (!exists(product.image)) {
     fail(`${product.id} hero image does not exist: ${product.image}`);
