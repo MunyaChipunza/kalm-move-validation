@@ -77,7 +77,7 @@
   "rollback": {
     "gitTag": "checkpoint/pre-a0b919a-production-20260712",
     "netlifyDeployId": "6a52cf678ede622c9112c7c3",
-    "netlifyRollbackCommand": "netlify.cmd api rollbackSiteDeploy --data '{\"site_id\":\"06334c13-7d82-45f1-b983-4a7295de88d8\",\"deploy_id\":\"6a52cf678ede622c9112c7c3\"}'"
+    "netlifyRollbackCommand": "$PSNativeCommandArgumentPassing='Standard'; $payload='{\"site_id\":\"06334c13-7d82-45f1-b983-4a7295de88d8\",\"deploy_id\":\"6a52cf678ede622c9112c7c3\"}'; & netlify.cmd api rollbackSiteDeploy --data $payload"
   },
   "operatingState": {
     "temporaryWorkingBaseline": true,
@@ -85,5 +85,10 @@
     "futureWorkflow": "brand-by-brand",
     "futureProductionApprovalRequired": true,
     "newBrandWorkStarted": false
+  },
+  "ncc": {
+    "pageId": "33014308-1ff0-81da-9dbe-e11111561c0b",
+    "sectionTitle": "KALM Temporary Production Working Baseline - 12 July 2026",
+    "updateAndRefetch": "passed"
   }
 }

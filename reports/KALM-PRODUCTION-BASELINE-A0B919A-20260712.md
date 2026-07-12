@@ -65,9 +65,13 @@ Known visual-evidence limitation: the browser backend intermittently imposed a f
 
 - Git baseline: `checkpoint/pre-a0b919a-production-20260712`
 - Previous Netlify production deploy reference: `6a52cf678ede622c9112c7c3` / https://6a52cf678ede622c9112c7c3--kalm-collective-storefront.netlify.app
-- Netlify rollback command (only with explicit production rollback authority): `netlify.cmd api rollbackSiteDeploy --data '{"site_id":"06334c13-7d82-45f1-b983-4a7295de88d8","deploy_id":"6a52cf678ede622c9112c7c3"}'`
+- Netlify rollback command (only with explicit production rollback authority): `$PSNativeCommandArgumentPassing='Standard'; $payload='{"site_id":"06334c13-7d82-45f1-b983-4a7295de88d8","deploy_id":"6a52cf678ede622c9112c7c3"}'; & netlify.cmd api rollbackSiteDeploy --data $payload`
 - Git inspection command: `git show checkpoint/pre-a0b919a-production-20260712`
 
 ## Operating state
 
 This is a temporary working baseline. Future work is brand-by-brand under [KALM-BRAND-BY-BRAND-RELEASE-WORKFLOW.md](../docs/KALM-BRAND-BY-BRAND-RELEASE-WORKFLOW.md). No new brand work was started in this release task. Each future increment requires its own draft, evidence, Munya visual approval, rollback point, and only then production authority.
+
+## NCC
+
+The NCC page `33014308-1ff0-81da-9dbe-e11111561c0b` was updated and re-fetched successfully. The appended section is titled `KALM Temporary Production Working Baseline - 12 July 2026` and records the authorisation, deployed commit, deploy ID, rollback point, safety tag, logo and bottle status, Outdoor state, temporary-baseline status, and the future one-brand-at-a-time approval gate.
