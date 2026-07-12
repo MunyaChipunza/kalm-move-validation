@@ -1,0 +1,33 @@
+{
+  "previousMasterSha": "699c571f9a5462688a935482ec88f2af38f7e2d2",
+  "integrationBranch": "codex/kalm-move-bottles-stage2-20260712",
+  "stage1ReviewCommit": "7dcab8867be78ff133e1debf5518736120ca6472",
+  "implementationCommit": "92b3216d2feba18e282b289db95c56509f9d0140",
+  "productionMasterSha": "cde8186d1490a42e86fcc9759111f4a0318b6332",
+  "draft": {
+    "deployId": "6a53ccb972c185e4420af41d",
+    "url": "https://6a53ccb972c185e4420af41d--kalm-collective-storefront.netlify.app"
+  },
+  "production": {
+    "deployId": "6a53ce7fb63d08e5a8f70e8a",
+    "url": "https://kalmcollective.co.za",
+    "siteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+    "rollbackTag": "checkpoint/pre-kalm-bottles-stage2-20260712",
+    "rollbackCommit": "699c571f9a5462688a935482ec88f2af38f7e2d2"
+  },
+  "approvedImageAssets": {
+    "count": 60,
+    "publicRoot": "assets/images/products/kalm-move/bottles-v2",
+    "hashManifest": "reports/KALM-MOVE-BOTTLES-STAGE2-20260712/product-image-manifest.json",
+    "hashesMatch": true
+  },
+  "allDayStrawTumbler": {
+    "status": "coming_soon_non_purchasable",
+    "supplierLock": "provisional pending exact supplier and physical sample lock"
+  },
+  "scope": {
+    "otherBrandsChanged": false,
+    "taskApplicationChanged": false,
+    "hydrationNavigationDeferred": true
+  }
+}

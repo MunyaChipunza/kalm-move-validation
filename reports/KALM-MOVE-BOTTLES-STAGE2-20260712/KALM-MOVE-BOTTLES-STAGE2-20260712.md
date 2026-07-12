@@ -69,4 +69,6 @@ No rejected V1/CAD-style bottle asset, historical mixed-silhouette bottle asset,
 
 ## Release state
 
-At the time this evidence pack was assembled, the Netlify draft above is live and production is intentionally still on the previous deploy `6a5399df38d1843624b586fb`. This report accompanies the authorised promotion sequence; the exact production deploy ID and health verification will be recorded in NCC only after the production deploy is live.
+Production is live on the authorised KALM storefront site. The production master SHA is `cde8186d1490a42e86fcc9759111f4a0318b6332`; the production deploy is `6a53ce7fb63d08e5a8f70e8a` at [https://kalmcollective.co.za](https://kalmcollective.co.za). Netlify reports it current and ready. The custom-domain `products.json` returned the five scoped records, the All-Day state (`comingSoon: true`, `price: null`), and the versioned Lilac Everyday Bottle JPEG with HTTP 200.
+
+NCC was updated and re-fetched after the production check. The release did not change the Munya task application or any non-KALM Move bottle scope.
