@@ -344,7 +344,7 @@ function renderHome({ preserveHero = false } = {}) {
   const hero = `
     <section class="hero-shell">
       <div class="hero-copy">
-        <p class="eyebrow">KALM Collective</p>
+        <img class="hero-brand-logo" src="${escapeHtml(meta.logo)}" alt="${escapeAttribute(meta.logoAlt || "KALM Collective")}" width="1120" height="260" decoding="async">
         <h1>Premium essentials for movement, outdoor routines and everyday living.</h1>
         <p>Shop activewear, outdoor staples, wellness accessories and home essentials from the KALM brand family.</p>
         <div class="hero-actions">
@@ -353,10 +353,7 @@ function renderHome({ preserveHero = false } = {}) {
         </div>
       </div>
       <a class="hero-media" href="#/shop" aria-label="Shop KALM Collective">
-        <picture>
-          <source media="(max-width: 760px)" srcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w" sizes="100vw">
-          <img src="assets/images/home-hero-shop-1200.webp" srcset="assets/images/home-hero-shop-760.webp 760w, assets/images/home-hero-shop-900.webp 900w, assets/images/home-hero-shop-1200.webp 1200w, ${escapeHtml(meta.heroImage)} 1800w" sizes="(max-width: 760px) 100vw, 63vw" alt="KALM Collective activewear and lifestyle products" width="1200" height="900" fetchpriority="high" decoding="async">
-        </picture>
+        <img src="${escapeHtml(meta.heroImage)}" alt="KALM Move man and woman wearing KALM apparel together" width="1448" height="1086" fetchpriority="high" decoding="async">
       </a>
     </section>`;
 
@@ -666,12 +663,12 @@ function renderBrands() {
     <section class="brand-grid">
       ${state.data.brands.map((brand, index) => {
         const isTextLed = brand.visualMode === "text-led";
+        const lightLogoClass = brand.id === "ks-active" ? " brand-logo--light" : "";
         const content = `
           <div class="brand-content">
-            <img class="brand-card-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || `${brand.name} logo`)}" width="1254" height="1254" loading="eager" decoding="async">
-            <h2>${escapeHtml(brand.name)}</h2>
+            <img class="brand-card-logo${lightLogoClass}" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || `${brand.name} logo`)}" width="1254" height="1254" loading="eager" decoding="async">
             <p>${escapeHtml(brand.summary || brand.description || "Explore the collection.")}</p>
-            ${isTextLed ? '<span class="brand-card-status">Photography in production</span>' : ""}
+            ${isTextLed ? '<span class="brand-card-status">Details coming soon</span>' : ""}
           </div>`;
         return `
           <article class="brand-card-large ${isTextLed ? "brand-card-large--text" : ""}">
@@ -693,13 +690,14 @@ function renderBrands() {
 function renderBrand(brandId) {
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
+  const lightLogoClass = brand.id === "ks-active" ? " brand-logo--light" : "";
   if (brand.id === "kalm-outdoor") return renderKalmOutdoorExperience(brand);
   const products = getPublicProducts().filter((product) => product.brandId === brand.id);
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
     <section class="brand-hero">
       <div>
-        <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
+        <img class="brand-hero-logo${lightLogoClass}" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
         <a class="button primary" href="#/shop?brand=${brand.id}">Shop now</a>
@@ -901,12 +899,10 @@ function renderOutdoorWaitlistForm({ interest = "", applianceId = "", source = "
   `;
 }
 
-function renderPhotographyInProduction(product, className = "") {
+function renderComingSoonMedia(className = "") {
   return `
-    <div class="photography-placeholder ${className}" role="img" aria-label="Photography in production for ${escapeAttribute(product.title)}">
-      <span class="eyebrow">KALM Outdoor</span>
-      <strong>Photography<br>in production</strong>
-      <small>Coming soon</small>
+    <div class="coming-soon-media ${className}" aria-hidden="true">
+      <span>Coming soon</span>
     </div>
   `;
 }
@@ -929,12 +925,12 @@ function renderKalmMoveSubcategories() {
       </div>
       <div class="move-audience-grid">
         <a class="move-audience-card visual" href="#/shop?brand=kalm-move&audience=women">
-          <img src="${escapeHtml(women?.image || "assets/images/kalm-move-brand-tile.webp")}" alt="KALM Move women edit" width="760" height="950" loading="lazy" decoding="async">
+          <img src="${escapeHtml(women?.image || "assets/images/kalm-move-brand-tile.webp")}" alt="KALM Move women edit" width="900" height="1350" loading="lazy" decoding="async">
           <span>Women</span>
           <p>Studio layers, active sets and everyday movement accessories.</p>
         </a>
         <a class="move-audience-card visual" href="#/shop?brand=kalm-move&audience=men">
-          <img src="${escapeHtml(men?.image || "assets/images/kalm-move-brand-tile.webp")}" alt="KALM Move men edit" width="760" height="950" loading="lazy" decoding="async">
+          <img src="${escapeHtml(men?.image || "assets/images/kalm-move-brand-tile.webp")}" alt="KALM Move men edit" width="1200" height="1500" loading="lazy" decoding="async">
           <span>Men</span>
           <p>Clean performance staples across shorts, tops, layers and accessories.</p>
         </a>
@@ -968,14 +964,14 @@ function renderProduct(slug) {
 
   app.innerHTML = `
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
-      ${comingSoon && !defaultImages.length ? renderPhotographyInProduction(product, "product-photography-placeholder") : renderProductGallery(product, defaultImages)}
+      ${comingSoon && !defaultImages.length ? renderComingSoonMedia("product-coming-soon-media") : renderProductGallery(product, defaultImages)}
       <div class="product-info">
         <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h1>${escapeHtml(product.title)}</h1>
         ${comingSoon ? `
           <div class="coming-soon-detail-status">
             <strong>Coming soon</strong>
-            <p>${escapeHtml(product.photographyStatus || "Photography in production")}</p>
+            <p>${escapeHtml(product.photographyStatus || "Supplier approval pending.")}</p>
             ${product.conceptImageDisclosure ? `<p class="concept-image-disclosure">${escapeHtml(product.conceptImageDisclosure)}</p>` : ""}
             <p>${escapeHtml(product.compatibilityNote || "Compatibility confirmation is pending.")}</p>
           </div>
@@ -1265,9 +1261,10 @@ function renderNotFound() {
 }
 
 function renderBrandLogoCard(brand) {
+  const isLightLogo = brand.id === "ks-active";
   return `
-    <a class="brand-logo-card" href="#/brand/${brand.id}">
-      <img class="brand-logo" src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async" fetchpriority="low">
+    <a class="brand-logo-card${isLightLogo ? " brand-logo-card--dark" : ""}" href="#/brand/${brand.id}">
+      <img class="brand-logo${isLightLogo ? " brand-logo--light" : ""}" src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async" fetchpriority="low">
       <span class="sr-only">Shop ${escapeHtml(brand.name)}</span>
     </a>
   `;
@@ -1591,13 +1588,13 @@ function renderProductCard(product, options = {}) {
     <article class="product-card" data-product-scope data-product-id="${product.id}">
       <a class="product-media" href="#/product/${product.slug}" aria-label="${escapeAttribute(product.title)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
         ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-        ${!product.image ? renderPhotographyInProduction(product, "card-photography-placeholder") : `<img ${imageMarkup} ${responsiveAttributes} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
+        ${!product.image ? renderComingSoonMedia("card-coming-soon-media") : `<img ${imageMarkup} ${responsiveAttributes} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
         <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
         <h3><a href="#/product/${product.slug}">${escapeHtml(product.title)}</a></h3>
         ${comingSoon ? `
-          <p class="card-photo-status">${escapeHtml(product.conceptImageDisclosure || product.photographyStatus || "Photography in production")}</p>
+          <p class="card-photo-status">${escapeHtml(product.conceptImageDisclosure || product.photographyStatus || "Supplier approval pending.")}</p>
           <p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances?.[0]))}</p>
           <a class="button secondary full card-view-link" href="#/product/${product.slug}">Join waitlist</a>
         ` : `

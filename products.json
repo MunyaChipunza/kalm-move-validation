@@ -1,10 +1,10 @@
 {
   "meta": {
     "store": "KALM Collective",
-    "updated": "2026-07-11",
+    "updated": "2026-07-12",
     "currency": "ZAR",
     "publicDomain": "kalmcollective.co.za",
-    "heroImage": "assets/images/home-hero-shop.webp",
+    "heroImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
     "featureImage": "assets/images/campaign-hero.webp",
     "logo": "branding/kalm-collective-logo.svg",
     "logoAlt": "KALM Collective logo",
@@ -20,9 +20,9 @@
       "summary": "Supportive stretch staples for training, errands and everyday movement.",
       "heroImage": "assets/images/ks-active-hero.webp",
       "tileImage": "assets/images/ks-active-brand-tile.webp",
-      "logo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
+      "logo": "branding/ks-active-logo-transparent.png",
       "slug": "ks-active",
-      "approvedLogo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
+      "approvedLogo": "branding/ks-active-logo-transparent.png",
       "logoAlt": "KS Active logo",
       "description": "Archive activewear and performance essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
@@ -35,9 +35,9 @@
       "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
       "heroImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
       "tileImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
-      "logo": "assets/branding/kalm-move/kalm-move-logo.png",
+      "logo": "branding/kalm-move-display-logo-a-transparent.png",
       "slug": "kalm-move",
-      "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
+      "approvedLogo": "branding/kalm-move-display-logo-a-transparent.png",
       "logoAlt": "KALM Move logo",
       "description": "Movement and activewear essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
@@ -50,9 +50,9 @@
       "summary": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "heroImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
       "tileImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
-      "logo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
+      "logo": "branding/kalm-outdoor-display-logo-transparent.png",
       "slug": "kalm-outdoor",
-      "approvedLogo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
+      "approvedLogo": "branding/kalm-outdoor-display-logo-transparent.png",
       "logoAlt": "KALM Outdoor logo",
       "description": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "categoryLink": "#/shop?category=outdoor",
@@ -65,9 +65,9 @@
       "summary": "Premium studio, recovery and ritual essentials with the plain KALM buffalo mark.",
       "heroImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
       "tileImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-      "logo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
+      "logo": "branding/kalm-wellness-display-logo-b-transparent.png",
       "slug": "kalm-wellness",
-      "approvedLogo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
+      "approvedLogo": "branding/kalm-wellness-display-logo-b-transparent.png",
       "logoAlt": "KALM Wellness logo",
       "description": "Studio, recovery and ritual essentials from KALM Wellness.",
       "categoryLink": "#/shop?category=wellness",
@@ -80,9 +80,9 @@
       "summary": "Clean, tactile pieces for bedrooms, bathrooms and calm daily rituals.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-home-tile.webp",
       "tileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp",
-      "logo": "assets/branding/kalm-home/kalm-home-logo.png",
+      "logo": "branding/kalm-home-display-logo-transparent.png",
       "slug": "kalm-home",
-      "approvedLogo": "assets/branding/kalm-home/kalm-home-logo.png",
+      "approvedLogo": "branding/kalm-home-display-logo-transparent.png",
       "logoAlt": "KALM Home logo",
       "description": "Home decor, bedding, storage and living essentials from KALM Collective.",
       "categoryLink": "#/shop?category=home",
@@ -10172,48 +10172,36 @@
         "Cream": {
           "hero": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/cream/angle.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/cream/movement.webp"
+            "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp"
           ]
         },
         "Blush": {
           "hero": "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/blush/angle.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/blush/movement.webp"
+            "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp"
           ]
         },
         "Sage": {
           "hero": "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/sage/angle.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/sage/movement.webp"
+            "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp"
           ]
         },
         "Stone": {
           "hero": "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/stone/angle.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/stone/movement.webp"
+            "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp"
           ]
         },
         "White": {
           "hero": "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/white/angle.webp",
-            "assets/images/products/kalm-move/women/everyday-bottle/white/movement.webp"
+            "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
-        "assets/images/products/kalm-move/women/everyday-bottle/cream/angle.webp",
-        "assets/images/products/kalm-move/women/everyday-bottle/cream/movement.webp"
+        "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Everyday Bottle | KALM Move",
@@ -10224,8 +10212,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "skuRoot": "KALM-MOVE-EVERYDAY-BOTTLE",
       "variants": [
         {
@@ -10328,16 +10316,13 @@
         "Matte White": {
           "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/angle.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/movement.webp"
+            "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp"
           ]
         },
         "Soft Beige": {
           "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/angle.webp"
+            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp"
           ]
         },
         "Dusty Pink": {
@@ -10354,9 +10339,7 @@
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
-        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/angle.webp",
-        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/movement.webp"
+        "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Slim Wellness Bottle | KALM Move",
@@ -10367,8 +10350,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "skuRoot": "KALM-MOVE-SLIM-WELLNESS-BOTTLE",
       "variants": [
         {
@@ -10498,8 +10481,8 @@
       "inventoryPolicy": "deny",
       "lowStockThreshold": 3,
       "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "skuRoot": "KALM-MOVE-STUDIO-BOTTLE",
       "variants": [
         {
@@ -12298,10 +12281,10 @@
       "compareAtPrice": null,
       "colors": [],
       "sizes": [],
-      "description": "A coming-soon Ember 16 accessory planned for pizza launch preparation. Final product details and photography are in production.",
-      "longDescription": "Photography and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
+      "description": "A coming-soon Ember 16 accessory planned for pizza launch preparation. Final product details are pending supplier approval.",
+      "longDescription": "Supplier specifications are being confirmed. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Supplier specifications pending",
         "Join the waitlist for launch information"
       ],
@@ -12327,8 +12310,8 @@
         "kalm-outdoor-ember-16-gas-pizza-oven"
       ],
       "compatibilityNote": "Planned for the Ember 16 Gas Pizza Oven; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12344,10 +12327,10 @@
       "compareAtPrice": null,
       "colors": [],
       "sizes": [],
-      "description": "A coming-soon Ember 16 accessory planned for pizza turning. Final product details and photography are in production.",
-      "longDescription": "Photography and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
+      "description": "A coming-soon Ember 16 accessory planned for pizza turning. Final product details are pending supplier approval.",
+      "longDescription": "Supplier specifications are being confirmed. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Supplier specifications pending",
         "Join the waitlist for launch information"
       ],
@@ -12373,8 +12356,8 @@
         "kalm-outdoor-ember-16-gas-pizza-oven"
       ],
       "compatibilityNote": "Planned for the Ember 16 Gas Pizza Oven; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12393,7 +12376,7 @@
       "description": "A coming-soon Ember 16 accessory kit for pizza preparation and high-heat cooking routines. Final contents and photography are in production.",
       "longDescription": "Photography, contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final kit contents pending",
         "Join the waitlist for launch information"
       ],
@@ -12419,8 +12402,8 @@
         "kalm-outdoor-ember-16-gas-pizza-oven"
       ],
       "compatibilityNote": "Planned for the Ember 16 Gas Pizza Oven; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12437,9 +12420,9 @@
       "colors": [],
       "sizes": [],
       "description": "A coming-soon Ridge 4 temperature-management accessory. Final functionality, specifications, and photography are in production.",
-      "longDescription": "Photography and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
+      "longDescription": "Supplier specifications are being confirmed. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final functionality pending",
         "Join the waitlist for launch information"
       ],
@@ -12465,8 +12448,8 @@
         "kalm-outdoor-ridge-4-stainless-gas-braai"
       ],
       "compatibilityNote": "Planned for the Ridge 4 Stainless Gas Braai; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12485,7 +12468,7 @@
       "description": "A coming-soon Ridge 4 rotisserie accessory kit. Final contents, specifications, and photography are in production.",
       "longDescription": "Photography, kit contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final kit contents pending",
         "Join the waitlist for launch information"
       ],
@@ -12511,8 +12494,8 @@
         "kalm-outdoor-ridge-4-stainless-gas-braai"
       ],
       "compatibilityNote": "Planned for the Ridge 4 Stainless Gas Braai; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12531,7 +12514,7 @@
       "description": "A coming-soon Ridge 4 sear accessory system. Final components, specifications, and photography are in production.",
       "longDescription": "Photography, components, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final components pending",
         "Join the waitlist for launch information"
       ],
@@ -12557,8 +12540,8 @@
         "kalm-outdoor-ridge-4-stainless-gas-braai"
       ],
       "compatibilityNote": "Planned for the Ridge 4 Stainless Gas Braai; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12577,7 +12560,7 @@
       "description": "A coming-soon Forge 2 tool roll for outdoor griddle routines. Final contents and photography are in production.",
       "longDescription": "Photography, contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Forge 2 Portable Gas Griddle.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final tool contents pending",
         "Join the waitlist for launch information"
       ],
@@ -12603,8 +12586,8 @@
         "kalm-outdoor-forge-2-portable-gas-griddle"
       ],
       "compatibilityNote": "Planned for the Forge 2 Portable Gas Griddle; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12623,7 +12606,7 @@
       "description": "A coming-soon Forge 2 accessory kit for griddle cooking routines. Final contents and photography are in production.",
       "longDescription": "Photography, kit contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Forge 2 Portable Gas Griddle.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final kit contents pending",
         "Join the waitlist for launch information"
       ],
@@ -12649,8 +12632,8 @@
         "kalm-outdoor-forge-2-portable-gas-griddle"
       ],
       "compatibilityNote": "Planned for the Forge 2 Portable Gas Griddle; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
@@ -12669,7 +12652,7 @@
       "description": "A coming-soon Forge 2 care accessory kit. Final contents, care guidance, and photography are in production.",
       "longDescription": "Photography, kit contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Forge 2 Portable Gas Griddle.",
       "features": [
-        "Photography in production",
+        "Supplier approval pending",
         "Final kit contents pending",
         "Join the waitlist for launch information"
       ],
@@ -12695,8 +12678,8 @@
         "kalm-outdoor-forge-2-portable-gas-griddle"
       ],
       "compatibilityNote": "Planned for the Forge 2 Portable Gas Griddle; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-11T23:10:00.000+02:00",
-      "updatedBy": "outdoor-v2",
+      "updatedAt": "2026-07-12T11:00:00.000+02:00",
+      "updatedBy": "kalm-draft-correction",
       "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     }
   ],

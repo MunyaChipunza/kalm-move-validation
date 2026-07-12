@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Validate the text-led, no-render KALM Outdoor coming-soon recovery state. */
+/** Validate the neutral-card, no-render KALM Outdoor coming-soon recovery state. */
 
 import fs from "node:fs";
 import path from "node:path";
@@ -45,7 +45,7 @@ for (const product of accessories) {
 const serialisedCatalogue = JSON.stringify(data);
 if (serialisedCatalogue.includes("assets/images/products/kalm-outdoor/accessories/")) fail("Live product data must not reference generated Outdoor accessory renders.");
 const script = read("script.js");
-for (const requiredText of ["renderPhotographyInProduction", "card-compatibility", "data-waitlist-form", "outdoor-hero--text", "No illustrative product renders are shown in this preview."]) {
+for (const requiredText of ["renderComingSoonMedia", "coming-soon-media", "card-compatibility", "data-waitlist-form", "outdoor-hero--text", "No illustrative product renders are shown in this preview."]) {
   if (!script.includes(requiredText)) fail(`script.js is missing ${requiredText}.`);
 }
 
@@ -57,7 +57,7 @@ if (errors.length) {
 console.log(JSON.stringify({
   status: "passed",
   accessories: accessories.length,
-  presentation: "text-led",
+  presentation: "neutral-card",
   paidImageUsage: 0,
   activeGeneratedAccessoryReferences: 0
 }, null, 2));

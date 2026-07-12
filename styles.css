@@ -320,6 +320,15 @@ button {
   line-height: 1.6;
 }
 
+.hero-brand-logo {
+  display: block;
+  width: min(220px, 100%);
+  height: auto;
+  max-height: 52px;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -360,10 +369,15 @@ button {
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--soft);
   text-align: center;
   font-weight: 700;
   font-size: 13px;
+}
+
+.brand-logo-card--dark {
+  background: #1f2924;
+  border-color: #1f2924;
 }
 
 .brand-logo-card img {
@@ -437,37 +451,31 @@ button {
   }
 }
 
-.photography-placeholder {
+.coming-soon-media {
   display: grid;
-  align-content: center;
-  justify-items: center;
+  place-items: start end;
   min-height: 100%;
-  padding: 28px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.62), transparent 46%),
-    linear-gradient(145deg, #25302b, #788073 62%, #c9b99c);
-  color: #fff;
-  text-align: center;
+  padding: 14px;
+  background: var(--soft);
 }
 
-.photography-placeholder .eyebrow,
-.photography-placeholder small {
-  color: rgba(255, 255, 255, 0.82);
+.coming-soon-media span {
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
 }
 
-.photography-placeholder strong {
-  margin: 12px 0 8px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(24px, 3vw, 42px);
-  line-height: 1.04;
-}
-
-.card-photography-placeholder {
+.card-coming-soon-media {
   height: 100%;
 }
 
-.card-photography-placeholder strong {
-  font-size: 25px;
+.product-coming-soon-media {
+  min-height: 520px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
 }
 
 .card-photo-status,
@@ -644,6 +652,43 @@ button {
   margin: 0;
   color: var(--muted);
   line-height: 1.55;
+}
+
+.move-audience-card.visual {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  background: #2b2927;
+}
+
+.move-audience-card.visual::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background: linear-gradient(180deg, transparent 32%, rgba(17, 17, 17, 0.78) 100%);
+}
+
+.move-audience-card.visual > img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.move-audience-card.visual > span,
+.move-audience-card.visual > p {
+  position: relative;
+  z-index: 2;
+}
+
+.move-audience-card.visual p {
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .move-category-links {
@@ -1097,7 +1142,7 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
-  background: #fff;
+  background: var(--soft);
 }
 
 .brand-card-large a {
@@ -1129,11 +1174,7 @@ button {
   gap: 12px;
   padding: 32px;
   text-align: center;
-}
-
-.brand-content h2 {
-  margin: 0;
-  font-size: 34px;
+  background: var(--soft);
 }
 
 .brand-content p {
@@ -1142,9 +1183,14 @@ button {
 }
 
 .brand-card-logo {
-  width: min(220px, 82%);
+  width: min(260px, 88%);
   height: 118px;
   object-fit: contain;
+}
+
+.brand-card-logo.brand-logo--light,
+.brand-hero-logo.brand-logo--light {
+  filter: invert(1);
 }
 
 .brand-card-status {
@@ -1160,10 +1206,6 @@ button {
 .brand-card-large--text .brand-content p,
 .brand-card-large--text .brand-card-status {
   color: rgba(255, 255, 255, 0.82);
-}
-
-.brand-card-large--text .brand-content h2 {
-  color: #fff;
 }
 
 .brand-hero {
@@ -1197,10 +1239,16 @@ button {
 }
 
 .brand-hero-logo {
-  width: 230px;
-  height: 230px;
+  width: min(300px, 100%);
+  height: 130px;
   margin-bottom: 26px;
   object-fit: contain;
+  object-position: left center;
+}
+
+.brand-hero-logo.brand-logo--light {
+  width: 168px;
+  height: 168px;
 }
 
 .outdoor-hero {
@@ -1360,12 +1408,6 @@ button {
   grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
   gap: 42px;
   padding: 42px;
-}
-
-.product-photography-placeholder {
-  min-height: 520px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
 }
 
 .coming-soon-detail-status {
