@@ -65,14 +65,12 @@
       "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-home-mobile-375x812-exact.jpg",
       "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-search-mobile-375x812.jpg",
       "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-home-mobile-390x844.jpg",
-      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-protein-shaker-black-mobile-430x932.jpg",
-      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-home-desktop-1440x1000.jpg"
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-protein-shaker-black-mobile-430x932.jpg"
     ],
     "contactSheets": [
-      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-mobile-evidence-contact-sheet.jpg",
-      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-desktop-evidence-contact-sheet.jpg"
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-mobile-evidence-contact-sheet.jpg"
     ],
-    "limitation": "Intermittent five-second browser screenshot cap prevented a fresh full image capture for every required route; live DOM and interaction checks cover those remaining surfaces."
+    "limitation": "Intermittent five-second browser screenshot cap prevented a fresh full image capture for every required route. A tiled desktop attempt was rejected because one tile contained a browser-extension artifact; live DOM and interaction checks cover the remaining surfaces."
   },
   "rollback": {
     "gitTag": "checkpoint/pre-a0b919a-production-20260712",

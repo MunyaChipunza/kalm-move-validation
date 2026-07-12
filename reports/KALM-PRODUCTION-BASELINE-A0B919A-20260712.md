@@ -55,11 +55,9 @@ Fresh production evidence is in [screenshots](KALM-PRODUCTION-BASELINE-A0B919A-2
 - `production-search-mobile-375x812.jpg`
 - `production-home-mobile-390x844.jpg`
 - `production-protein-shaker-black-mobile-430x932.jpg`
-- `production-home-desktop-1440x1000.jpg` — assembled from four exact browser tiles from one 1440×1000 viewport; no page content was altered
 - `production-mobile-evidence-contact-sheet.jpg`
-- `production-desktop-evidence-contact-sheet.jpg`
 
-Known visual-evidence limitation: the browser backend intermittently imposed a five-second screenshot cap. It was overcome for the listed exact mobile captures and tiled desktop homepage. DOM/live-route checks were completed for the remaining required surfaces, but a full fresh image for every requested route was not reliably capturable in this backend. This does not change the deployed storefront and is a remaining review-pack limitation, not an assertion of final visual approval.
+Known visual-evidence limitation: the browser backend intermittently imposed a five-second screenshot cap. The listed exact mobile captures are valid. A tiled 1440×1000 desktop attempt was rejected because its lower-right tile contained a browser-extension artifact, so it is deliberately excluded from the review pack. DOM/live-route checks were completed for the remaining required surfaces, but a fresh full desktop image and a full fresh image for every requested route were not reliably capturable in this backend. This does not change the deployed storefront and is a remaining review-pack limitation, not an assertion of final visual approval.
 
 ## Rollback
 
