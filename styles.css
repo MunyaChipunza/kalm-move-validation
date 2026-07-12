@@ -2116,7 +2116,7 @@ body.lightbox-open {
   .brand img {
     width: 72px;
     height: 72px;
-    transform: scale(1.14);
+    transform: scale(1.32);
   }
 
   .account-link,
@@ -2224,6 +2224,11 @@ body.lightbox-open {
   .policy-grid {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .product-grid,
