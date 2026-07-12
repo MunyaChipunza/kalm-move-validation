@@ -1,0 +1,17 @@
+{
+  "createdAt": "2026-07-12T09:30:00+02:00",
+  "fourthDraftBranch": "codex/kalm-mobile-first-men-v4-preview-20260712",
+  "baseCommit": "310d74082cb88c1e16d92c6b0e021359ef45ae00",
+  "thirdDraftStorefrontCommit": "e13a18b9f7ebb97ab1d46fbbf3c1fb492d0053dd",
+  "preservedCheckpoint": "dc423b9686509a90c81de5fef25e9d9eeb1d8fc9",
+  "productionBranch": "master",
+  "productionBranchShaAtIsolation": "f48695998fe9ae89b594ea92859f2606f54433ed",
+  "productionChangedByV4": false,
+  "thirdDraftPreview": "https://6a53527f6508f473fab94dff--kalm-collective-storefront.netlify.app",
+  "fourthDraftPreview": "https://6a53638bbbb3f8a3fbf40378--kalm-collective-storefront.netlify.app",
+  "workingTreeCleanAtIsolation": true,
+  "mergeInProgressAtIsolation": false,
+  "rebaseInProgressAtIsolation": false,
+  "status": "draft_ready_pending_munya_visual_approval",
+  "previewCodeCommit": "39b65299007d45d7cd28ae1670e120d8f94b045c"
+}

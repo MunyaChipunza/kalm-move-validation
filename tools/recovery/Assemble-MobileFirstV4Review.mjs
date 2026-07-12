@@ -39,7 +39,6 @@ const review = {
   draftUrl,
   branch,
   previewCodeCommit: head,
-  evidencePackCommit: 'pending_commit',
   productionChanged: false,
   checkpoint: state.preservedCheckpoint,
   menV3: {
@@ -60,11 +59,14 @@ const review = {
   unresolved: [
     'All Men V3 selections are preview candidates and require Munya visual approval before production action.',
     'The recovered Men V3 lane provides one vetted front image per product colour, not a multi-angle gallery.',
-    'Focused viewport screenshots are included for fixed overlays; full-page captures are not used to judge the fixed mobile filter sheet.'
+    'Focused viewport screenshots cover the filter sheet. The automated browser did not yield a stable raster capture of the fixed cart overlay, so runtime QA records its viewport width, solid background and close control instead.'
   ]
 };
 writeJson('reports/KALM-MOBILE-FIRST-V4-REVIEW.json', review);
 
 const markdown = `# KALM Mobile-First Fourth Draft Review\n\n- Draft preview: ${draftUrl}\n- Branch: \`${branch}\`\n- Preview code commit: \`${head}\`\n- Production: unchanged\n\n## Men V3 decision\n\n- Reviewed: ${map.summary.v3CandidatesReviewed}/46\n- Approved for this preview: ${map.summary.approvedForV4Preview}\n- Rejected: ${map.summary.rejected}\n- Active men products: ${active.summary.activeMenProducts}\n- Active men product colours: ${active.summary.activeProductColourRecords}\n- Active V3 files: ${active.summary.activeV3Assets}\n\nEvery active colour uses a new versioned \`-v4\` front-image path. The gallery deliberately contains that one correctly labelled front view only, rather than mixing historical angle or movement assets.\n\n## Mobile QA\n\n- Viewports: ${runtime.viewportResults.map(item => item.name).join(', ')}\n- Every viewport: no horizontal overflow recorded.\n- 320px: one-column cards. 360px and above: two-column cards.\n- Colour switching: ${runtime.colourSwitches.tested} selections tested; ${runtime.colourSwitches.failed.length} failed.\n- Product detail: 11/11 first gallery images use the V4 path, \`contain\` fit and natural 1200 × 1500 proportions.\n- Filter sheet: opens and closes with accessible state.\n- Cart drawer: constrained to the viewport width.\n- Footer: compact accordion treatment; the small KALM Collective lock-up loads directly.\n\n## Included evidence\n\n- Four Men V3 contact sheets: current lane, all candidates, old-versus-V3 comparison, final selections\n- All 11 Men V4 product-detail first-image captures\n- Responsive catalogue captures for the requested viewport matrix\n- Mobile header, filters, cart and footer captures\n- Product/colour audit, active manifest, responsive-image manifest and runtime QA JSON\n\n## Remaining visual limitation\n\nThe recovered Men V3 source set contains one vetted front image per colour. This fourth draft does not claim a multi-angle gallery where no corresponding V3 angle/back assets were recovered. Munya approval remains required.\n`;
-fs.writeFileSync(path.join(root, 'reports', 'KALM-MOBILE-FIRST-V4-REVIEW.md'), markdown);
+const reviewMarkdown = markdown
+  .replace('Mobile header, filters, cart and footer captures', 'Mobile header, filter and footer captures, plus cart drawer runtime evidence')
+  .replace('Focused viewport screenshots are included for fixed overlays; full-page captures are not used to judge the fixed mobile filter sheet.', 'Focused viewport screenshots are included for the filter sheet. The automated browser did not yield a stable raster capture of the fixed cart overlay, so its viewport width, solid background and close control are recorded in runtime QA instead.');
+fs.writeFileSync(path.join(root, 'reports', 'KALM-MOBILE-FIRST-V4-REVIEW.md'), reviewMarkdown);
 console.log(JSON.stringify({ reviewRoot: path.relative(root, reviewRoot), previewCodeCommit: head, screenshotCount: review.evidence.screenshots.length }, null, 2));

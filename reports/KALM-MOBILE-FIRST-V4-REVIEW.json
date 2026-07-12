@@ -1,0 +1,435 @@
+{
+  "generatedAt": "2026-07-12T09:57:10.428Z",
+  "draftUrl": "https://6a53638bbbb3f8a3fbf40378--kalm-collective-storefront.netlify.app",
+  "branch": "codex/kalm-mobile-first-men-v4-preview-20260712",
+  "previewCodeCommit": "39b65299007d45d7cd28ae1670e120d8f94b045c",
+  "productionChanged": false,
+  "checkpoint": "dc423b9686509a90c81de5fef25e9d9eeb1d8fc9",
+  "menV3": {
+    "reviewed": 46,
+    "approvedForV4Preview": 46,
+    "rejected": 0,
+    "activeProducts": 11,
+    "activeProductColours": 46,
+    "activeV3Assets": 46,
+    "note": "Every active Men V4 colour uses one selected V3 front image only. No historical angle/back image is mixed into a V4 gallery."
+  },
+  "responsiveImages": {
+    "derivativeCount": 92,
+    "sources": "480w and 800w WebP derivatives plus preserved 1200x1500 V4 originals"
+  },
+  "mobileQa": {
+    "generatedAt": "2026-07-12T09:52:37.666Z",
+    "draftUrl": "https://6a53638bbbb3f8a3fbf40378--kalm-collective-storefront.netlify.app",
+    "viewportResults": [
+      {
+        "width": 320,
+        "height": 568,
+        "name": "320x568",
+        "cards": 11,
+        "clientWidth": 305,
+        "firstCard": {
+          "height": 455.2000122070313,
+          "width": 268.8000183105469
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 334,
+          "renderedWidth": 267.20001220703125
+        },
+        "gridColumns": 1,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 568,
+        "reportedWidth": 320,
+        "scrollWidth": 305
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "name": "360x800",
+        "cards": 11,
+        "clientWidth": 345,
+        "firstCard": {
+          "height": 305.1000061035156,
+          "width": 148.40000915527344
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 183.5,
+          "renderedWidth": 146.8000030517578
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 800,
+        "reportedWidth": 360,
+        "scrollWidth": 345
+      },
+      {
+        "width": 375,
+        "height": 812,
+        "name": "375x812",
+        "cards": 11,
+        "clientWidth": 360,
+        "firstCard": {
+          "height": 314.6000061035156,
+          "width": 156
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 193,
+          "renderedWidth": 154.40000915527344
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 812,
+        "reportedWidth": 375,
+        "scrollWidth": 360
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "name": "390x844",
+        "cards": 11,
+        "clientWidth": 375,
+        "firstCard": {
+          "height": 323.8500061035156,
+          "width": 163.40000915527344
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 202.25,
+          "renderedWidth": 161.8000030517578
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 844,
+        "reportedWidth": 390,
+        "scrollWidth": 375
+      },
+      {
+        "width": 412,
+        "height": 915,
+        "name": "412x915",
+        "cards": 11,
+        "clientWidth": 397,
+        "firstCard": {
+          "height": 337.6000061035156,
+          "width": 174.40000915527344
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 216,
+          "renderedWidth": 172.8000030517578
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 915,
+        "reportedWidth": 412,
+        "scrollWidth": 397
+      },
+      {
+        "width": 430,
+        "height": 932,
+        "name": "430x932",
+        "cards": 11,
+        "clientWidth": 415,
+        "firstCard": {
+          "height": 348.8500061035156,
+          "width": 183.40000915527344
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 227.25,
+          "renderedWidth": 181.8000030517578
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 932,
+        "reportedWidth": 430,
+        "scrollWidth": 415
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "name": "768x1024",
+        "cards": 11,
+        "clientWidth": 753,
+        "firstCard": {
+          "height": 561.7000122070312,
+          "width": 352.3999938964844
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 438.5,
+          "renderedWidth": 350.8000183105469
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 1024,
+        "reportedWidth": 768,
+        "scrollWidth": 753
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "name": "844x390-landscape",
+        "cards": 11,
+        "clientWidth": 829,
+        "firstCard": {
+          "height": 609.2000122070312,
+          "width": 390.3999938964844
+        },
+        "firstImage": {
+          "fit": "cover",
+          "position": "50% 37%",
+          "renderedHeight": 486,
+          "renderedWidth": 388.8000183105469
+        },
+        "gridColumns": 2,
+        "missingNaturalDimensions": 0,
+        "reportedHeight": 390,
+        "reportedWidth": 844,
+        "scrollWidth": 829
+      }
+    ],
+    "menProductDetailChecks": [
+      {
+        "title": "KALM Move Flow Training Short",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Sprint Running Short",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Core Performance Tee",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Lift Tank",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Pace Jogger",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Motion Hoodie",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Base Compression Short",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Cap",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 34%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/cap-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Training Sock 3-Pack",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Utility Gym Bag",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "title": "KALM Move Protein Shaker Bottle",
+        "gallery": [
+          {
+            "fit": "contain",
+            "naturalHeight": 1500,
+            "naturalWidth": 1200,
+            "position": "50% 50%",
+            "src": "https://6a535fec785c30943420a1df--kalm-collective-storefront.netlify.app/assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp"
+          }
+        ],
+        "overflow": false
+      }
+    ],
+    "colourSwitches": {
+      "tested": 46,
+      "failed": []
+    },
+    "filterSheet": {
+      "openVerified": true,
+      "closeVerified": true
+    },
+    "cartDrawer": {
+      "ariaHiddenWhenOpen": "false",
+      "panelWidth": 375.2000122070313,
+      "viewportWidth": 375,
+      "background": "rgb(255, 255, 255)"
+    },
+    "footer": {
+      "logoSource": "https://6a5362958400b99a27fdf98a--kalm-collective-storefront.netlify.app/branding/kalm-collective-logo.svg",
+      "logoNaturalWidth": 300
+    },
+    "console": {
+      "finalDraftStorefrontErrors": 0,
+      "extensionMessagingWarningsFromEarlierDrafts": 5
+    },
+    "screenshots": [
+      "catalogue-320x568.png",
+      "catalogue-360x800.png",
+      "catalogue-375x812.png",
+      "catalogue-390x844.png",
+      "catalogue-412x915.png",
+      "catalogue-430x932.png",
+      "catalogue-768x1024.png",
+      "catalogue-844x390-landscape.png",
+      "flow-training-short-final-full-375x812.png",
+      "men-catalogue-loaded-top-375x812.png",
+      "men-detail-base-compression-short-375x812.png",
+      "men-detail-cap-375x812.png",
+      "men-detail-core-performance-tee-375x812.png",
+      "men-detail-flow-training-short-375x812.png",
+      "men-detail-lift-tank-375x812.png",
+      "men-detail-motion-hoodie-375x812.png",
+      "men-detail-pace-jogger-375x812.png",
+      "men-detail-protein-shaker-bottle-375x812.png",
+      "men-detail-sprint-running-short-375x812.png",
+      "men-detail-training-sock-3-pack-375x812.png",
+      "men-detail-utility-gym-bag-375x812.png",
+      "mobile-filters-open-stable-375x812.png",
+      "mobile-footer-final-375x812.png",
+      "mobile-header-catalogue-final-375x812.png"
+    ]
+  },
+  "evidence": {
+    "menContactSheets": [
+      "all-current-old-men-images.webp",
+      "all-men-v3-candidates.webp",
+      "final-selected-v3-set-by-product.webp",
+      "old-versus-v3-by-product.webp"
+    ],
+    "screenshots": [
+      "catalogue-320x568.png",
+      "catalogue-360x800.png",
+      "catalogue-375x812.png",
+      "catalogue-390x844.png",
+      "catalogue-412x915.png",
+      "catalogue-430x932.png",
+      "catalogue-768x1024.png",
+      "catalogue-844x390-landscape.png",
+      "flow-training-short-final-full-375x812.png",
+      "men-catalogue-loaded-top-375x812.png",
+      "men-detail-base-compression-short-375x812.png",
+      "men-detail-cap-375x812.png",
+      "men-detail-core-performance-tee-375x812.png",
+      "men-detail-flow-training-short-375x812.png",
+      "men-detail-lift-tank-375x812.png",
+      "men-detail-motion-hoodie-375x812.png",
+      "men-detail-pace-jogger-375x812.png",
+      "men-detail-protein-shaker-bottle-375x812.png",
+      "men-detail-sprint-running-short-375x812.png",
+      "men-detail-training-sock-3-pack-375x812.png",
+      "men-detail-utility-gym-bag-375x812.png",
+      "mobile-filters-open-stable-375x812.png",
+      "mobile-footer-final-375x812.png",
+      "mobile-header-catalogue-final-375x812.png"
+    ]
+  },
+  "unresolved": [
+    "All Men V3 selections are preview candidates and require Munya visual approval before production action.",
+    "The recovered Men V3 lane provides one vetted front image per product colour, not a multi-angle gallery.",
+    "Focused viewport screenshots cover the filter sheet. The automated browser did not yield a stable raster capture of the fixed cart overlay, so runtime QA records its viewport width, solid background and close control instead."
+  ]
+}
