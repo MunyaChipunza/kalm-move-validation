@@ -1,0 +1,51 @@
+{
+  "selectInfo": [
+    {
+      "value": "Sky Blue",
+      "options": [
+        {
+          "text": "Black",
+          "value": "Black"
+        },
+        {
+          "text": "Stone",
+          "value": "Stone"
+        },
+        {
+          "text": "Lilac",
+          "value": "Lilac"
+        },
+        {
+          "text": "Sky Blue",
+          "value": "Sky Blue"
+        }
+      ]
+    },
+    {
+      "value": "",
+      "options": [
+        {
+          "text": "Choose size",
+          "value": ""
+        },
+        {
+          "text": "One size",
+          "value": "One size"
+        }
+      ]
+    },
+    {
+      "value": "Customer care",
+      "options": [
+        {
+          "text": "Customer care",
+          "value": "Customer care"
+        }
+      ]
+    }
+  ],
+  "cartHasProduct": true,
+  "cartHasSkyBlue": true,
+  "checkoutHasProduct": true,
+  "checkoutHasSkyBlue": true
+}

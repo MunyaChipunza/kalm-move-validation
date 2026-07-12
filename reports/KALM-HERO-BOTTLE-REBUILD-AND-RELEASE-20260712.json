@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-12",
+  "branch": "codex/kalm-hero-bottle-rebuild-and-release-20260712",
+  "draftDeploy": {
+    "id": "6a540ac0d1158cb5eb707566",
+    "url": "https://6a540ac0d1158cb5eb707566--kalm-collective-storefront.netlify.app"
+  },
+  "production": {
+    "status": "pending_release_verification"
+  },
+  "hero": {
+    "activeDirectory": "assets/images/recovered/campaigns-v3",
+    "desktop": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp",
+    "tablet": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp",
+    "mobile": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp",
+    "cast": {
+      "adultMen": 3,
+      "adultWomen": 3
+    }
+  },
+  "bottles": {
+    "activeDirectory": "assets/images/products/kalm-move/bottles-v4",
+    "families": 5,
+    "coloursPerFamily": 4,
+    "publicAssets": 40,
+    "viewsPerColour": 2,
+    "dimensions": [1122, 1402],
+    "allDayStrawTumbler": "coming_soon_non_purchasable"
+  },
+  "womenApparelImageFilesChanged": false,
+  "taskApplicationChanged": false,
+  "evidence": [
+    "HERO-REVIEW-SHEET.jpg",
+    "BOTTLE-SHARPNESS-AND-BRANDING-CROPS.jpg",
+    "BEFORE-AND-AFTER-COMPARISON.jpg",
+    "bottle-contact-sheets/complete-bottle-range-v4.jpg",
+    "draft-screenshots/draft-bag-checkout-proof.json"
+  ]
+}

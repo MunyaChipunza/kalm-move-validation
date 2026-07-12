@@ -11,9 +11,9 @@ const catalog = JSON.parse(read("products.json"));
 const script = read("script.js");
 const styles = read("styles.css");
 const index = read("index.html");
-const hero = "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp";
+const hero = "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp";
 
-assert(catalog.meta.heroImage === hero, "Homepage hero must use the verified KALM Move lifestyle asset.");
+assert(catalog.meta.heroImage === hero, "Homepage hero must use the regenerated campaigns-v3 desktop asset.");
 assert(fs.existsSync(path.join(root, hero)), "Homepage hero asset is missing.");
 const collectiveLogo = "assets/branding/kalm-collective/kalm-collective-logo.png";
 assert(index.includes(`src="${collectiveLogo}"`), "Static homepage must use the approved KALM Collective image logo.");
@@ -36,12 +36,17 @@ assert(styles.includes(".move-audience-card.visual > img") && styles.includes("o
 const bottleIds = new Set([
   "kalm-move-everyday-bottle",
   "kalm-move-slim-wellness-bottle",
-  "kalm-move-studio-bottle"
+  "kalm-move-studio-bottle",
+  "kalm-move-protein-shaker-bottle",
+  "kalm-move-all-day-straw-tumbler"
 ]);
 for (const product of catalog.products.filter((item) => bottleIds.has(item.id))) {
-  assert(product.gallery?.length === 3 && product.gallery[0] === product.image, `${product.id} must use its approved front, angle and detail gallery.`);
+  assert(product.image.includes("/bottles-v4/"), `${product.id} must use a bottles-v4 hero.`);
+  assert(product.gallery?.length === 2 && product.gallery[0] === product.image, `${product.id} must use its approved V4 front and angle gallery.`);
   for (const [colour, value] of Object.entries(product.variantImages || {})) {
-    assert(value?.hero && value.gallery?.length === 3 && value.gallery[0] === value.hero, `${product.id} ${colour} must use its approved front, angle and detail gallery.`);
+    assert(value?.hero?.includes("/bottles-v4/"), `${product.id} ${colour} must use a bottles-v4 hero.`);
+    assert(value.gallery?.length === 2 && value.gallery[0] === value.hero, `${product.id} ${colour} must use its approved V4 front and angle gallery.`);
+    assert(value.gallery.every((entry) => entry.includes("/bottles-v4/") && !entry.includes("detail")), `${product.id} ${colour} must not restore a rejected detail crop.`);
   }
 }
 

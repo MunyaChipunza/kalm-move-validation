@@ -1,0 +1,108 @@
+[
+  {
+    "name": "homepage-desktop-1440x1000",
+    "title": "KALM Collective | Premium Movement, Outdoor, Wellness and Home",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "hero": "",
+    "selected": "",
+    "gallery": [],
+    "comingSoon": false,
+    "addToBag": false
+  },
+  {
+    "name": "homepage-mobile-375x812",
+    "title": "KALM Collective | Premium Movement, Outdoor, Wellness and Home",
+    "viewport": [
+      375,
+      812
+    ],
+    "hero": "",
+    "selected": "",
+    "gallery": [],
+    "comingSoon": false,
+    "addToBag": false
+  },
+  {
+    "name": "everyday-lilac-desktop-1440x1000",
+    "title": "KALM Move Everyday Bottle | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "hero": "",
+    "selected": "Lilac",
+    "gallery": [
+      "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp",
+      "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/angle.webp"
+    ],
+    "comingSoon": false,
+    "addToBag": true
+  },
+  {
+    "name": "slim-sage-desktop-1440x1000",
+    "title": "KALM Move Slim Wellness Bottle | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "hero": "",
+    "selected": "Sage",
+    "gallery": [
+      "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
+      "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/angle.webp"
+    ],
+    "comingSoon": false,
+    "addToBag": true
+  },
+  {
+    "name": "studio-sky-blue-desktop-1440x1000",
+    "title": "KALM Move Studio Bottle | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "hero": "",
+    "selected": "Sky Blue",
+    "gallery": [
+      "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp",
+      "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/angle.webp"
+    ],
+    "comingSoon": false,
+    "addToBag": true
+  },
+  {
+    "name": "protein-navy-desktop-1440x1000",
+    "title": "KALM Move Protein Shaker Bottle | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "hero": "",
+    "selected": "Navy",
+    "gallery": [
+      "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp",
+      "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/angle.webp"
+    ],
+    "comingSoon": false,
+    "addToBag": true
+  },
+  {
+    "name": "tumbler-cream-mobile-390x844",
+    "title": "KALM Move All-Day Straw Tumbler | KALM Move",
+    "viewport": [
+      390,
+      844
+    ],
+    "hero": "",
+    "selected": "Cream",
+    "gallery": [
+      "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp",
+      "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/angle.webp"
+    ],
+    "comingSoon": true,
+    "addToBag": false
+  }
+]

@@ -114,6 +114,70 @@ def build_contact_sheets() -> None:
     sheet(all_items, contact / "complete-bottle-range-v4.jpg", "KALM Move bottles V4 — all twenty colourways, front and alternate view", 4)
 
 
+def build_review_evidence() -> None:
+    """Create review-only proof sheets without altering any public asset."""
+    REPORT.mkdir(parents=True, exist_ok=True)
+
+    hero_canvas = Image.new("RGB", (1800, 1420), "#f4f1ea")
+    hero_draw = ImageDraw.Draw(hero_canvas)
+    hero_draw.text((36, 28), "KALM campaigns V3 — regenerated six-person hero review", font=font(34, True), fill="#171a18")
+    hero_entries = [
+        ("Desktop — 1920 × 1080", ROOT / "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp"),
+        ("Tablet — original responsive composition", ROOT / "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp"),
+        ("Mobile — all six retained", ROOT / "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp"),
+    ]
+    for index, (label, source) in enumerate(hero_entries):
+        width = 560
+        height = 620
+        x = 24 + index * 590
+        y = 96
+        hero_canvas.paste(contain(source, width, height), (x, y))
+        hero_draw.text((x + 10, y + height + 8), label, font=font(19, True), fill="#171a18")
+    desktop = Image.open(hero_entries[0][1]).convert("RGB")
+    mark_centres = [(335, 340), (558, 420), (840, 395), (1128, 330), (1416, 420), (1630, 362)]
+    hero_draw.text((36, 780), "100% garment-branding crops — generated into fabric", font=font(28, True), fill="#171a18")
+    for index, (cx, cy) in enumerate(mark_centres):
+        crop = desktop.crop((cx - 100, cy - 100, cx + 100, cy + 100))
+        x = 36 + index * 292
+        y = 850
+        hero_canvas.paste(crop, (x, y))
+        hero_draw.text((x + 6, y + 214), f"Look {index + 1}", font=font(17, True), fill="#171a18")
+    hero_canvas.save(REPORT / "HERO-REVIEW-SHEET.jpg", quality=95, subsampling=0)
+
+    comparison = Image.new("RGB", (1800, 760), "#f4f1ea")
+    comparison_draw = ImageDraw.Draw(comparison)
+    comparison_draw.text((36, 28), "Replacement comparison — rejected historical assets retained for audit only", font=font(29, True), fill="#171a18")
+    comparisons = [
+        ("Rejected campaign V2 — inactive", ROOT / "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-desktop.webp"),
+        ("Regenerated campaign V3 — active", ROOT / "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp"),
+        ("Rejected bottle V3 — inactive", ROOT / "assets/images/products/kalm-move/bottles-v3/everyday-bottle/lilac/front.jpg"),
+        ("Regenerated bottle V4 — active", ROOT / "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp"),
+    ]
+    for index, (label, source) in enumerate(comparisons):
+        x = 24 + index * 445
+        comparison.paste(contain(source, 410, 590), (x, 102))
+        comparison_draw.text((x + 8, 704), label, font=font(16, True), fill="#171a18")
+    comparison.save(REPORT / "BEFORE-AND-AFTER-COMPARISON.jpg", quality=95, subsampling=0)
+
+    crop_canvas = Image.new("RGB", (1800, 520), "#f4f1ea")
+    crop_draw = ImageDraw.Draw(crop_canvas)
+    crop_draw.text((36, 28), "V4 bottle 100% logo and edge crops — front masters", font=font(30, True), fill="#171a18")
+    representatives = [
+        ("Everyday / Lilac", ROOT / "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp"),
+        ("Slim / Sage", ROOT / "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp"),
+        ("Studio / Sky Blue", ROOT / "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp"),
+        ("Protein / Navy", ROOT / "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp"),
+        ("Tumbler / Cream", ROOT / "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp"),
+    ]
+    for index, (label, source) in enumerate(representatives):
+        image = Image.open(source).convert("RGB")
+        crop = image.crop((361, 900, 761, 1300))
+        x = 32 + index * 354
+        crop_canvas.paste(crop, (x, 88))
+        crop_draw.text((x + 5, 458), label, font=font(16, True), fill="#171a18")
+    crop_canvas.save(REPORT / "BOTTLE-SHARPNESS-AND-BRANDING-CROPS.jpg", quality=95, subsampling=0)
+
+
 def sheet(entries: list[tuple[str, Path]], target: Path, title: str, columns: int) -> None:
     width, image_height, label_height, heading = 350, 420, 42, 76
     rows = (len(entries) + columns - 1) // columns
@@ -140,6 +204,7 @@ def prepare() -> dict:
             assets.append(save_webp(GEN / front, folder / "front.webp"))
             assets.append(save_webp(GEN / angle, folder / "angle.webp"))
     build_contact_sheets()
+    build_review_evidence()
     REPORT.mkdir(parents=True, exist_ok=True)
     manifest = {
         "generationSystem": "OpenAI built-in image generation",
