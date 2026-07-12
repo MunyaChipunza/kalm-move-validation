@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-12T00:00:00.000Z",
-  "status": "local visual QA complete; Netlify draft capture pending",
+  "status": "local visual QA and Netlify draft capture complete",
   "evidence": [
     { "path": "evidence/production-homepage-before-1440x1100.png", "surface": "production baseline homepage", "viewport": "1440 x 1100" },
     { "path": "evidence/local-homepage-after-desktop-1280x720.png", "surface": "draft homepage", "viewport": "1280 x 720" },
@@ -13,7 +13,11 @@
     { "path": "evidence/local-new-in-mobile-375x812.png", "surface": "New In", "viewport": "375 x 812" },
     { "path": "evidence/local-outdoor-mobile-375x812.png", "surface": "Outdoor", "viewport": "375 x 812" },
     { "path": "evidence/local-product-everyday-bottle-lilac-desktop-1280x720.png", "surface": "selected-colour product", "viewport": "1280 x 720" },
-    { "path": "evidence/local-product-align-pink-drink-desktop-1280x720.png", "surface": "selected-colour product", "viewport": "1280 x 720" }
+    { "path": "evidence/local-product-align-pink-drink-desktop-1280x720.png", "surface": "selected-colour product", "viewport": "1280 x 720" },
+    { "path": "evidence/netlify-draft-homepage-desktop-1280x720.png", "surface": "Netlify draft homepage", "viewport": "1280 x 720" },
+    { "path": "evidence/netlify-draft-homepage-mobile-375x812.png", "surface": "Netlify draft homepage", "viewport": "375 x 812" },
+    { "path": "evidence/netlify-draft-new-in-desktop-1280x720.png", "surface": "Netlify draft New In", "viewport": "1280 x 720" },
+    { "path": "evidence/netlify-draft-outdoor-desktop-1280x720.png", "surface": "Netlify draft Outdoor", "viewport": "1280 x 720" }
   ],
   "visualAssertions": {
     "desktopHeroShowsAllSixPeople": true,
@@ -22,6 +26,8 @@
     "outdoorCardCount": 3,
     "newInCardCount": 9,
     "activewearCardCount": 10,
-    "saleCardCount": 14
+    "saleCardCount": 14,
+    "netlifyDirectOutdoorRoute": true,
+    "netlifySelectedColourRoute": true
   }
 }

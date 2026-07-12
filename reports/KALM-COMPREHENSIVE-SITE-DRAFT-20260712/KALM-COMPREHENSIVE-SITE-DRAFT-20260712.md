@@ -43,6 +43,8 @@ The draft exposes stable, crawlable public paths and machine-readable discovery 
 
 ## Deployment control
 
-Netlify draft URL: pending final draft deployment.
+Netlify draft URL: [https://6a53dde0bbb3f85835f404b8--kalm-collective-storefront.netlify.app](https://6a53dde0bbb3f85835f404b8--kalm-collective-storefront.netlify.app) (`6a53dde0bbb3f85835f404b8`). The deployed storefront commit is `09bead2`.
+
+Direct preview checks passed for `/collections/outdoor` (three appliance cards) and `/products/kalm-move-everyday-bottle?colour=Lilac` (Lilac selected, canonical and product JSON-LD present).
 
 Production baseline remains the previously verified KALM Storefront Site production deployment `6a53ce7fb63d08e5a8f70e8a`. The Munya task application has not been changed.

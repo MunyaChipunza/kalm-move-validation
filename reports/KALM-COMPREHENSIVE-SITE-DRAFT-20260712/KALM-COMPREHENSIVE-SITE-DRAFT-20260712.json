@@ -3,7 +3,9 @@
   "branch": "codex/kalm-comprehensive-site-draft-20260712",
   "deployment": {
     "type": "draft_only",
-    "netlifyDraftUrl": "pending",
+    "netlifyDraftUrl": "https://6a53dde0bbb3f85835f404b8--kalm-collective-storefront.netlify.app",
+    "netlifyDraftDeployId": "6a53dde0bbb3f85835f404b8",
+    "storefrontDraftCommit": "09bead2",
     "productionChanged": false,
     "masterMerged": false
   },
