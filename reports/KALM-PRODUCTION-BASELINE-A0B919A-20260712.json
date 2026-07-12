@@ -1,0 +1,89 @@
+{
+  "title": "KALM temporary production working baseline",
+  "date": "2026-07-12",
+  "release": {
+    "previousMasterSha": "f48695998fe9ae89b594ea92859f2606f54433ed",
+    "previousProductionSha": "709403ba6198329300c33a5cf07f53100c251738",
+    "previousProductionDeployId": "6a52cf678ede622c9112c7c3",
+    "previousProductionDeployUrl": "https://6a52cf678ede622c9112c7c3--kalm-collective-storefront.netlify.app",
+    "safetyTag": "checkpoint/pre-a0b919a-production-20260712",
+    "promotedSha": "a0b919a00e956200f3d7e11ff06f8ff0c0600ee2",
+    "productionDeployId": "6a5399df38d1843624b586fb",
+    "productionPublishedAt": "2026-07-12T13:43:00.194Z",
+    "productionUrl": "https://kalmcollective.co.za",
+    "immutableDeployUrl": "https://6a5399df38d1843624b586fb--kalm-collective-storefront.netlify.app",
+    "siteName": "kalm-collective-storefront",
+    "siteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+    "promotion": "fast-forward only"
+  },
+  "validation": {
+    "npmCi": "not applicable: no package.json or package lockfile; command executed and reported the expected missing-manifest error",
+    "npmRunBuild": "not applicable: no package.json; command executed and reported the expected missing-manifest error",
+    "nodeCheck": "passed",
+    "catalog": "passed",
+    "draftCorrections": "passed",
+    "rejectedAssets": "passed",
+    "outdoor": "passed",
+    "womenBranding": "passed",
+    "menV4": "passed",
+    "mobileFirst": "passed",
+    "driveRecovery": "passed",
+    "zeroPaidImages": "passed",
+    "productImageDimensions": "passed",
+    "productsJson": "passed",
+    "gitDiffCheck": "passed",
+    "netlifyBuild": "passed",
+    "publicSourceDrivePaths": "none",
+    "publicRejectedReferences": "none"
+  },
+  "liveVerification": {
+    "customDomainMatchesImmutableDeployHtmlSha256": "25CC0448F2E0D873D36EA11C946D1B28D3AE275507B3BA8B30365953476A6222",
+    "products": 69,
+    "brandPanels": 5,
+    "outdoorVisibleAppliances": [
+      "Ember 16 Gas Pizza Oven",
+      "Forge 2 Portable Gas Griddle",
+      "Ridge 4 Stainless Gas Braai"
+    ],
+    "outdoorHiddenAccessories": 9,
+    "bottles": {
+      "everyday": ["Cream"],
+      "slimWellness": ["Matte White"],
+      "studio": ["Stone"],
+      "proteinShaker": ["Black", "Charcoal", "Navy", "Smoke Grey"]
+    },
+    "search": "passed",
+    "bagAndSelectedNavyProteinImage": "passed",
+    "checkoutRoute": "passed without order submission",
+    "contactAndPolicyRoutes": "passed",
+    "brokenLoadedImages": 0,
+    "horizontalOverflow": "not detected at verified mobile viewports",
+    "taskApplication": "separate; title is Munya App"
+  },
+  "evidence": {
+    "screenshots": [
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-home-mobile-375x812-exact.jpg",
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-search-mobile-375x812.jpg",
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-home-mobile-390x844.jpg",
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-protein-shaker-black-mobile-430x932.jpg",
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-home-desktop-1440x1000.jpg"
+    ],
+    "contactSheets": [
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-mobile-evidence-contact-sheet.jpg",
+      "reports/KALM-PRODUCTION-BASELINE-A0B919A-20260712/screenshots/production-desktop-evidence-contact-sheet.jpg"
+    ],
+    "limitation": "Intermittent five-second browser screenshot cap prevented a fresh full image capture for every required route; live DOM and interaction checks cover those remaining surfaces."
+  },
+  "rollback": {
+    "gitTag": "checkpoint/pre-a0b919a-production-20260712",
+    "netlifyDeployId": "6a52cf678ede622c9112c7c3",
+    "netlifyRollbackCommand": "netlify.cmd api rollbackSiteDeploy --data '{\"site_id\":\"06334c13-7d82-45f1-b983-4a7295de88d8\",\"deploy_id\":\"6a52cf678ede622c9112c7c3\"}'"
+  },
+  "operatingState": {
+    "temporaryWorkingBaseline": true,
+    "visuallyFinal": false,
+    "futureWorkflow": "brand-by-brand",
+    "futureProductionApprovalRequired": true,
+    "newBrandWorkStarted": false
+  }
+}
