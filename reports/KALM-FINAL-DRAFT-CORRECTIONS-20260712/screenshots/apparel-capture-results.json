@@ -1,0 +1,119 @@
+[
+  {
+    "name": "apparel-ease-flare-taupe-corrected-1440x1000",
+    "title": "KALM Move Ease Flare Set | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp",
+      "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/angle.webp",
+      "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp"
+    ],
+    "selectedColour": "Taupe",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  },
+  {
+    "name": "apparel-form-short-dark-purple-corrected-1440x1000",
+    "title": "KALM Move Form Short Set | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+      "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/angle.webp",
+      "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp"
+    ],
+    "selectedColour": "Dark Purple",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  },
+  {
+    "name": "apparel-wide-leg-burgundy-red-corrected-1440x1000",
+    "title": "KALM Move Wide-Leg Yoga Pant | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp",
+      "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/angle.webp",
+      "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/back.webp"
+    ],
+    "selectedColour": "Burgundy Red",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  },
+  {
+    "name": "apparel-balance-magic-forest-corrected-1440x1000",
+    "title": "KALM Move Balance X-Back Legging Set | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp",
+      "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/angle.webp",
+      "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp"
+    ],
+    "selectedColour": "Magic Forest Green",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  },
+  {
+    "name": "apparel-halter-blue-corrected-1440x1000",
+    "title": "KALM Move Halter Biker Short Set | KALM Move",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp",
+      "assets/images/products/kalm-move/women/halter-biker-short-set/blue/angle.webp",
+      "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp"
+    ],
+    "selectedColour": "Blue",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  },
+  {
+    "name": "apparel-open-back-navy-corrected-390x844",
+    "title": "KALM Move Open Back Short Romper | KALM Move",
+    "viewport": [
+      390,
+      844
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+      "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/angle.webp",
+      "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp"
+    ],
+    "selectedColour": "Navy",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  },
+  {
+    "name": "apparel-core-tee-white-corrected-390x844",
+    "title": "KALM Move Core Performance Tee | KALM Move",
+    "viewport": [
+      390,
+      844
+    ],
+    "galleryImages": [
+      "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp"
+    ],
+    "selectedColour": "White",
+    "comingSoon": false,
+    "addToBag": true,
+    "bottles": []
+  }
+]

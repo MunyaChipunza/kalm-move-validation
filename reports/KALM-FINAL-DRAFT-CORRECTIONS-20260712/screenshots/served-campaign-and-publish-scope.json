@@ -1,0 +1,26 @@
+{
+  "servedCampaignEvidence": [
+    {
+      "name": "served-featured-collection-campaign-desktop-1440x1000",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "contentType": "image/webp",
+      "title": "kalm-final-move-performance-v2-desktop.webp (1920×1080)"
+    },
+    {
+      "name": "served-featured-collection-campaign-mobile-390x844",
+      "viewport": [
+        390,
+        844
+      ],
+      "contentType": "image/webp",
+      "title": "kalm-final-move-performance-v2-mobile.webp (960×1280)"
+    }
+  ],
+  "reportExposure": {
+    "status": 404,
+    "contentType": "text/html; charset=utf-8"
+  }
+}

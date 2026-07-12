@@ -44,6 +44,24 @@ def labelled_row(target: Path, title: str, items: list[tuple[str, Path]], width:
     canvas.save(target, quality=94, subsampling=0)
 
 
+def labelled_grid(target: Path, title: str, items: list[tuple[str, Path]], columns: int = 3, width: int = 440, image_height: int = 360) -> None:
+    """Create a concise contact sheet from unmodified preview screenshots."""
+    heading = 84
+    label_height = 52
+    rows = (len(items) + columns - 1) // columns
+    canvas = Image.new("RGB", (width * columns, heading + rows * (image_height + label_height)), "#f4f2ed")
+    draw = ImageDraw.Draw(canvas)
+    draw.text((24, 20), title, font=f(28, True), fill="#171a18")
+    for index, (label, path) in enumerate(items):
+        row, column = divmod(index, columns)
+        x = column * width
+        y = heading + row * (image_height + label_height)
+        item = contain(Image.open(path), width - 20, image_height - 18)
+        canvas.paste(item, (x + 10, y + 8))
+        draw.multiline_text((x + 16, y + image_height + 2), label, font=f(14, True), fill="#171a18", spacing=2)
+    canvas.save(target, quality=94, subsampling=0)
+
+
 def crop(source: Path, box: tuple[int, int, int, int], target: Path) -> Path:
     target.parent.mkdir(parents=True, exist_ok=True)
     Image.open(source).convert("RGB").crop(box).save(target, quality=94, subsampling=0)
@@ -127,6 +145,33 @@ def main() -> None:
         width=420,
         image_height=590,
     )
+    shots = OUT / "screenshots"
+    desktop = [
+        ("Homepage / six-person hero", shots / "homepage-desktop-hero-final-1440x1000.png"),
+        ("Everyday Bottle / Lilac", shots / "bottle-everyday-lilac-corrected-1440x1000.png"),
+        ("Slim Wellness / Sage", shots / "bottle-slim-sage-corrected-1440x1000.png"),
+        ("Studio Bottle / Sky Blue", shots / "bottle-studio-sky-blue-corrected-1440x1000.png"),
+        ("Protein Shaker / Navy", shots / "bottle-protein-navy-corrected-1440x1000.png"),
+        ("All-Day Tumbler / Cream / Coming soon", shots / "bottle-all-day-cream-final-desktop-1440x1000.png"),
+        ("Women accessories collection", shots / "bottles-women-accessories-corrected-1440x1000.png"),
+        ("Ease Flare / Taupe", shots / "apparel-ease-flare-taupe-corrected-1440x1000.png"),
+        ("Form Short / Dark Purple", shots / "apparel-form-short-dark-purple-corrected-1440x1000.png"),
+        ("Wide-Leg Yoga Pant / Burgundy Red", shots / "apparel-wide-leg-burgundy-red-corrected-1440x1000.png"),
+        ("Balance X-Back / Magic Forest", shots / "apparel-balance-magic-forest-corrected-1440x1000.png"),
+        ("Halter Biker / Blue", shots / "apparel-halter-blue-corrected-1440x1000.png"),
+    ]
+    mobile = [
+        ("Homepage / six-person hero / 375 x 812", shots / "homepage-mobile-hero-final-375x812.png"),
+        ("All-Day Tumbler / Cream / 375 x 812", shots / "bottle-all-day-cream-final-mobile-375x812.png"),
+        ("Open Back Romper / Navy / 390 x 844", shots / "apparel-open-back-navy-corrected-loaded-390x844.png"),
+        ("Core Performance Tee / White / 390 x 844", shots / "apparel-core-tee-white-corrected-loaded-390x844.png"),
+        ("Men accessories / 430 x 932", shots / "bottles-men-accessories-corrected-430x932.png"),
+        ("Homepage footer / 375 x 812", shots / "homepage-mobile-footer-final-375x812.png"),
+    ]
+    if all(path.exists() for _, path in desktop):
+        labelled_grid(OUT / "DESKTOP-SCREENSHOT-CONTACT-SHEET.jpg", "Final correction draft: desktop review evidence", desktop)
+    if all(path.exists() for _, path in mobile):
+        labelled_grid(OUT / "MOBILE-SCREENSHOT-CONTACT-SHEET.jpg", "Final correction draft: mobile review evidence", mobile, columns=2, width=480, image_height=520)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "title": "KALM Final Draft Corrections",
+  "date": "2026-07-12",
+  "release": {
+    "mode": "draft_only",
+    "branch": "codex/kalm-final-draft-corrections-20260712",
+    "comprehensiveBaseCommit": "09bead28592a9c23c44967284b4a6305980a4ebb",
+    "comprehensiveEvidenceHead": "17d8789aee159810a1ab3bebd0095a97627bfb08",
+    "mainCorrectionCommit": "94108bdf485687e58264cad22a26f1a424ff0f66",
+    "runtimeCorrectionCommit": "1023eccc9c4c1f1791401ac3b0dc78701b7deb07",
+    "stage1BottleCommit": "7dcab8867be78ff133e1debf5518736120ca6472",
+    "netlify": {
+      "site": "kalm-collective-storefront",
+      "deployId": "6a53f4d72226c77cbea93ce2",
+      "url": "https://6a53f4d72226c77cbea93ce2--kalm-collective-storefront.netlify.app",
+      "production": false,
+      "reportPathsPublished": false
+    },
+    "production": {
+      "changed": false,
+      "deployId": "6a53ce7fb63d08e5a8f70e8a",
+      "master": "cde8186d1490a42e86fcc9759111f4a0318b6332"
+    },
+    "taskApplicationChanged": false
+  },
+  "bottles": {
+    "rootCause": "Stage 1 masters were byte-identical to bottles-v2. The defect was integration freshness: reused public paths and fixed runtime query strings could retain earlier mappings.",
+    "publicRoot": "assets/images/products/kalm-move/bottles-v3",
+    "approvedSourceRoot": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/generated",
+    "copiedAssets": 60,
+    "sourceHashMatches": 60,
+    "products": 5,
+    "allDay": {
+      "status": "coming_soon_not_purchasable",
+      "colourPreviewEnabled": true,
+      "verifiedColour": "Cream"
+    },
+    "bagProof": {
+      "product": "KALM Move Studio Bottle",
+      "colour": "Sky Blue",
+      "image": "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/front.jpg"
+    }
+  },
+  "branding": {
+    "approvedBuffalo": {
+      "path": "assets/branding/kalm-buffalo/kalm-buffalo-mark.png",
+      "sha256": "994b2e455cb441eaa1b04b26899a13ebb096fc389d59c64718bc5140ecda7ea2"
+    },
+    "apparelAudit": {
+      "activeProductFamilies": 26,
+      "activeColourHeroes": 138,
+      "result": "all_active_kalm_move_imagery_uses_approved_buffalo_treatment"
+    },
+    "campaigns": {
+      "hero": "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-{desktop,tablet,mobile}.webp",
+      "featuredCollection": "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-{desktop,mobile}.webp",
+      "method": "direct composition from exact approved buffalo alpha source after visual artefact QA"
+    }
+  },
+  "validation": {
+    "finalCorrectionChecks": 15,
+    "comprehensiveChecks": 173,
+    "catalogue": { "products": 70, "variants": 716, "errors": 0, "warnings": 0 },
+    "status": "passed"
+  },
+  "evidence": {
+    "pack": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712",
+    "desktopContactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/DESKTOP-SCREENSHOT-CONTACT-SHEET.jpg",
+    "mobileContactSheet": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/MOBILE-SCREENSHOT-CONTACT-SHEET.jpg",
+    "screenshots": "reports/KALM-FINAL-DRAFT-CORRECTIONS-20260712/screenshots"
+  },
+  "approval": {
+    "status": "awaiting_munya_visual_approval",
+    "productionDeploymentAuthorized": false
+  }
+}

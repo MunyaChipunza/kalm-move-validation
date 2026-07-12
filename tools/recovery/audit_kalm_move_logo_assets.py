@@ -105,7 +105,7 @@ def main():
         "The six-person homepage hero and Featured Collection campaign are handled separately under `assets/images/recovered/campaigns-v2/`, using the exact approved buffalo alpha source. Their before-and-after evidence is included in the final correction pack.",
         "",
     ])
-    (OUT / "LOGO-AUDIT.md").write_text("\n".join(lines), encoding="utf-8")
+    (OUT.parent / "LOGO-AUDIT.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")
     print(json.dumps({"products": len(products), "variants": sum(len(p['variants']) for p in products)}, indent=2))
 
 

@@ -1,0 +1,41 @@
+{
+  "finalStudioCounts": {
+    "color": 1,
+    "size": 1,
+    "add": 1
+  },
+  "finalCartProof": {
+    "text": "YOUR BAG\n\nShopping Bag\nKALM Move Studio Bottle\n\nKALM Move\n\nColour: Sky Blue / Size: One size\n\nR329\n-\n1\n+\nRemove\nSubtotal\nR329\nCheckout",
+    "images": [
+      "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/front.jpg"
+    ]
+  },
+  "finalMobileLoaded": {
+    "core": {
+      "title": "KALM Move Core Performance Tee | KALM Move",
+      "images": [
+        {
+          "src": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+          "loaded": true
+        }
+      ]
+    },
+    "openback": {
+      "title": "KALM Move Open Back Short Romper | KALM Move",
+      "images": [
+        {
+          "src": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+          "loaded": true
+        },
+        {
+          "src": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/angle.webp",
+          "loaded": true
+        },
+        {
+          "src": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp",
+          "loaded": true
+        }
+      ]
+    }
+  }
+}
