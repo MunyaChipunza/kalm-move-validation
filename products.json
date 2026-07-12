@@ -66,10 +66,10 @@
       "summary": "Premium studio, recovery and ritual essentials with the plain KALM buffalo mark.",
       "heroImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
       "tileImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-      "logo": "branding/source-kalm-nyati-transparent.png",
+      "logo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
       "slug": "kalm-wellness",
-      "approvedLogo": "branding/source-kalm-nyati-transparent.png",
-      "logoAlt": "Plain KALM buffalo mark",
+      "approvedLogo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
+      "logoAlt": "KALM Wellness logo",
       "description": "Studio, recovery and ritual essentials from KALM Wellness.",
       "categoryLink": "#/shop?category=wellness",
       "homepageTileImage": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp"

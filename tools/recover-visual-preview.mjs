@@ -9,6 +9,27 @@ const MEN_RECOVERY_PATH = "assets/images/products/kalm-move/men-recovery-v2/";
 const BOTTLE_SOURCE_PATH = "assets/images/products/kalm-move/women/studio-bottle/";
 const BOTTLE_RECOVERY_PATH = "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/";
 const VISUAL_FIELDS = ["image", "gallery", "variantImages"];
+const RECOVERED_WOMEN_IDS = new Set([
+  "kalm-move-align-strappy-jumpsuit",
+  "kalm-move-ease-flare-set",
+  "kalm-move-form-short-set",
+  "kalm-move-pulse-crop-short-set",
+  "kalm-move-wide-leg-yoga-pant",
+  "kalm-move-balance-strappy-set",
+  "kalm-move-halter-biker-short-set",
+  "kalm-move-rise-long-sleeve-set",
+  "kalm-move-lightweight-windbreaker-set",
+  "kalm-move-cropped-zip-yoga-jacket",
+  "kalm-move-core-seamless-tank",
+  "kalm-move-align-ruched-short",
+  "kalm-move-loose-split-running-short",
+  "kalm-move-split-running-skort",
+  "kalm-move-open-back-short-romper",
+  "kalm-move-pocket-racerback-crop-bra",
+  "kalm-move-contrast-flare-set",
+  "kalm-move-crossline-legging",
+  "kalm-move-drift-crop-wide-pant"
+]);
 
 function readCatalog(revision) {
   if (revision === "HEAD") return JSON.parse(readFileSync("products.json", "utf8"));
@@ -49,9 +70,8 @@ const recoveredMen = [];
 const removedOutdoorReferences = [];
 
 for (const product of catalog.products) {
-  const currentVisuals = JSON.stringify(Object.fromEntries(VISUAL_FIELDS.map((field) => [field, product[field]])));
   const womenSourceProduct = womenById.get(product.id);
-  if (product.brandId === "kalm-move" && product.audience === "women" && womenSourceProduct && currentVisuals.includes("-v3/")) {
+  if (RECOVERED_WOMEN_IDS.has(product.id) && womenSourceProduct) {
     replaceVisualFields(product, womenSourceProduct);
     recoveredWomen.push(product.id);
   }
@@ -88,6 +108,12 @@ if (outdoorBrand) {
   outdoorBrand.visualMode = "text-led";
   outdoorBrand.heroImage = "";
   outdoorBrand.tileImage = "";
+}
+const wellnessBrand = catalog.brands.find((brand) => brand.id === "kalm-wellness");
+if (wellnessBrand) {
+  wellnessBrand.logo = "assets/branding/kalm-wellness/kalm-wellness-logo.png";
+  wellnessBrand.approvedLogo = "assets/branding/kalm-wellness/kalm-wellness-logo.png";
+  wellnessBrand.logoAlt = "KALM Wellness logo";
 }
 
 writeFileSync("products.json", `${JSON.stringify(catalog, null, 2)}\n`);
