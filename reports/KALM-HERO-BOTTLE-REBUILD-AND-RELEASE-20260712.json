@@ -6,7 +6,15 @@
     "url": "https://6a540ac0d1158cb5eb707566--kalm-collective-storefront.netlify.app"
   },
   "production": {
-    "status": "pending_release_verification"
+    "status": "verified_live",
+    "commit": "882d8f84b84ba8d25ced1d0975dcf24b4c233762",
+    "siteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+    "siteName": "kalm-collective-storefront",
+    "deployId": "6a540dc418f635bbf3009367",
+    "immutableUrl": "https://6a540dc418f635bbf3009367--kalm-collective-storefront.netlify.app",
+    "url": "https://kalmcollective.co.za",
+    "rollbackTag": "rollback/kalm-before-hero-bottle-rebuild-20260712",
+    "rollbackSha": "cde8186d1490a42e86fcc9759111f4a0318b6332"
   },
   "hero": {
     "activeDirectory": "assets/images/recovered/campaigns-v3",
@@ -34,6 +42,9 @@
     "BOTTLE-SHARPNESS-AND-BRANDING-CROPS.jpg",
     "BEFORE-AND-AFTER-COMPARISON.jpg",
     "bottle-contact-sheets/complete-bottle-range-v4.jpg",
-    "draft-screenshots/draft-bag-checkout-proof.json"
+    "draft-screenshots/draft-bag-checkout-proof.json",
+    "production-screenshots/production-browser-proof.json",
+    "production-screenshots/production-gallery-proof.json",
+    "production-screenshots/production-collection-proof.json"
   ]
 }

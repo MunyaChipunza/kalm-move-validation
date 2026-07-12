@@ -5,7 +5,12 @@
 - Branch: `codex/kalm-hero-bottle-rebuild-and-release-20260712`
 - Draft deploy: `6a540ac0d1158cb5eb707566`
 - Draft URL: <https://6a540ac0d1158cb5eb707566--kalm-collective-storefront.netlify.app>
-- Production status at this record: pending release verification.
+- Production commit: `882d8f84b84ba8d25ced1d0975dcf24b4c233762`
+- Production deploy: `6a540dc418f635bbf3009367`
+- Immutable production URL: <https://6a540dc418f635bbf3009367--kalm-collective-storefront.netlify.app>
+- Production URL: <https://kalmcollective.co.za>
+- Rollback tag: `rollback/kalm-before-hero-bottle-rebuild-20260712` → `cde8186d1490a42e86fcc9759111f4a0318b6332`
+- Production status at this record: verified live.
 
 ## Replacement scope
 
@@ -27,6 +32,9 @@ The rejected campaigns-V2 six-person hero and bottles-V2/V3 families have been r
 - Each colour gallery has a full front and alternate view. No enlarged crop is active as a gallery image.
 - Draft screenshots confirm desktop/mobile rendering, the two accessories collections, selected-colour bag imagery and selected-colour checkout imagery.
 - Existing KALM Move women’s apparel image files were unchanged from `e24be9936317898b07d6ccf4dd357abe9cf8eb93`.
+- The production domain returns the campaigns-V3 desktop and mobile paths, maps each bottle record exclusively to bottles-V4, and returns two decoded 1122 × 1402 gallery images for every reviewed colour.
+- The production bag and checkout both show the selected Sky Blue Studio Bottle image. The All-Day Straw Tumbler page shows Coming soon with no add-to-bag control.
+- The production payload targeted Netlify site `kalm-collective-storefront` (`06334c13-7d82-45f1-b983-4a7295de88d8`) only; the separate Munya task application was not altered.
 
 ## Evidence index
 
@@ -35,6 +43,11 @@ The rejected campaigns-V2 six-person hero and bottles-V2/V3 families have been r
 - `BEFORE-AND-AFTER-COMPARISON.jpg` — historical inactive V2/V3 references against active V3/V4 replacements.
 - `bottle-contact-sheets/` — one sheet per bottle family and complete range sheet.
 - `draft-screenshots/` — customer-facing draft pages and interaction proof.
+- `production-screenshots/homepage-desktop-1440x1000.png` and `homepage-mobile-375x812.png` — live responsive homepage.
+- `production-screenshots/*-loaded-desktop-1440x1000.png` — live, decode-gated product galleries for all five bottle families.
+- `production-screenshots/men-accessories-loaded-desktop-1440x1000.png` and `women-accessories-loaded-desktop-1440x1000.png` — live accessories placement.
+- `production-screenshots/studio-sky-blue-bag-desktop-1440x1000.png` and `studio-sky-blue-checkout-desktop-1440x1000.png` — selected-colour bag and checkout evidence.
+- `production-screenshots/tumbler-coming-soon-loaded-mobile-375x812.png` — live non-purchasable tumbler state.
 - `final-asset-manifest.json` — source and public SHA-256 values.
 - `validation.json` — final-rebuild validation result.
 
