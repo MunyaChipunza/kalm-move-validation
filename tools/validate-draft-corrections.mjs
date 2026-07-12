@@ -15,14 +15,15 @@ const hero = "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v
 
 assert(catalog.meta.heroImage === hero, "Homepage hero must use the verified KALM Move lifestyle asset.");
 assert(fs.existsSync(path.join(root, hero)), "Homepage hero asset is missing.");
-assert(index.includes('src="branding/kalm-collective-logo.svg"'), "Static homepage must use the KALM Collective logo.");
+const collectiveLogo = "assets/branding/kalm-collective/kalm-collective-logo.png";
+assert(index.includes(`src="${collectiveLogo}"`), "Static homepage must use the approved KALM Collective image logo.");
 assert(script.includes('class="hero-brand-logo"'), "Rendered homepage must use the KALM Collective logo.");
 assert(!index.includes("<span>kalmcollective.co.za</span>"), "Utility strip must not show the domain.");
 
 const approvedLogos = catalog.brands.map((brand) => brand.approvedLogo);
 assert(new Set(approvedLogos).size === catalog.brands.length, "Each brand must retain a unique approved logo.");
 for (const logo of approvedLogos) {
-  assert(logo.startsWith("branding/"), `Brand logo must use the transparent display asset: ${logo}`);
+  assert(logo.startsWith("assets/branding/"), `Brand logo must use an approved local target: ${logo}`);
   assert(fs.existsSync(path.join(root, logo)), `Brand logo is missing: ${logo}`);
 }
 
@@ -44,10 +45,11 @@ for (const product of catalog.products.filter((item) => bottleIds.has(item.id)))
   }
 }
 
-const outdoorComingSoon = catalog.products.filter((product) => product.brandId === "kalm-outdoor" && (product.comingSoon || product.availability === "coming_soon"));
-assert(outdoorComingSoon.length > 0, "Expected KALM Outdoor coming-soon products.");
+const outdoorComingSoon = catalog.products.filter((product) => product.brandId === "kalm-outdoor" && product.availability === "coming_soon");
+assert(outdoorComingSoon.length === 9, "Expected nine quarantined KALM Outdoor accessories.");
 for (const product of outdoorComingSoon) {
   assert(!product.image, `${product.id} must not restore an unapproved render.`);
+  assert(product.publicationStatus === "draft" && product.visibility === "hidden", `${product.id} must stay hidden from public routes.`);
 }
 assert(!script.includes("renderPhotographyInProduction"), "Legacy Outdoor placeholder renderer must be absent.");
 assert(!script.includes("<strong>Photography<br>in production</strong>"), "Outdoor cards must not render photography placeholder art.");
@@ -60,6 +62,6 @@ console.log(JSON.stringify({
   status: "passed",
   brands: catalog.brands.length,
   bottles: bottleIds.size,
-  outdoorComingSoon: outdoorComingSoon.length,
+  hiddenOutdoorAccessories: outdoorComingSoon.length,
   homeHero: catalog.meta.heroImage
 }, null, 2));

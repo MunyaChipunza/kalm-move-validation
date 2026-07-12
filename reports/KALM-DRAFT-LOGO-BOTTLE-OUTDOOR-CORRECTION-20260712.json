@@ -1,0 +1,25 @@
+{
+  "title": "KALM draft logo, bottle and Outdoor correction",
+  "rejectedCommit": "8c2be408671d4fe55aa08d9f8443d4b2c4997c55",
+  "checkpointTag": "checkpoint/rejected-draft-8c2be408-20260712",
+  "correctionCommit": "Recorded in the final handoff and NCC after this review pack is committed",
+  "branch": "codex/kalm-mobile-first-men-v4-preview-20260712",
+  "draftUrl": "https://6a53909af2cb280d611fe4da--kalm-collective-storefront.netlify.app",
+  "deployment": {
+    "type": "netlify_draft",
+    "productionChanged": false
+  },
+  "verifiedLogos": [
+    {"brand":"KALM Collective","local":"assets/branding/kalm-collective/kalm-collective-logo.png","drive":"G:\\My Drive\\Master Folder\\08 Business Documents\\KALM Holdings\\Kalm Collective Logo.png","localSha256":"58F57D30760B06579A279761175B12B174876DD31BA17E5397EE31CCBEC868E6","sourceSha256":"58F57D30760B06579A279761175B12B174876DD31BA17E5397EE31CCBEC868E6"},
+    {"brand":"KS Active","local":"assets/branding/ks-active/ks-active-logo-transparent-mono.png","drive":"G:\\My Drive\\Master Folder\\08 Business Documents\\KS active\\Documents\\KS active logo transparent.png","localSha256":"DFC02154DD626DCF88C008CC7ABBC2245069D9E0B14E664B56AA4D25559F8567","sourceSha256":"0E3EB483B780E6BD551175959964B7838C7D0A4E5BD1D493B6CDC07D53832ACF","note":"Approved black-on-transparent mono derivative documented in BRAND_ASSET_MAP.md."},
+    {"brand":"KALM Move","local":"assets/branding/kalm-move/kalm-move-logo.png","drive":"G:\\My Drive\\Master Folder\\08 Business Documents\\KALM Holdings\\Kalm Move.png","localSha256":"897C51E3C121F21279014B1DD7BF497898A20EDD6CCDA59CD2E071D0B95458B8","sourceSha256":"897C51E3C121F21279014B1DD7BF497898A20EDD6CCDA59CD2E071D0B95458B8"},
+    {"brand":"KALM Outdoor","local":"assets/branding/kalm-outdoor/kalm-outdoor-logo.png","drive":"G:\\My Drive\\Master Folder\\08 Business Documents\\KALM Holdings\\Kalm Outdoor.png","localSha256":"D28485F5D137D14240D7AF531D810AF3FCEB1F39DE4FBFF899C430B04E50B9E1","sourceSha256":"D28485F5D137D14240D7AF531D810AF3FCEB1F39DE4FBFF899C430B04E50B9E1"},
+    {"brand":"KALM Wellness","local":"assets/branding/kalm-wellness/kalm-wellness-logo.png","drive":"G:\\My Drive\\Master Folder\\08 Business Documents\\KALM Holdings\\Kalm Wellness.png","localSha256":"A163136A550C21A9C853F4193DEEA44239B34CE348957D8499E21ACFE2ED0558","sourceSha256":"A163136A550C21A9C853F4193DEEA44239B34CE348957D8499E21ACFE2ED0558"},
+    {"brand":"KALM Home","local":"assets/branding/kalm-home/kalm-home-logo.png","drive":"G:\\My Drive\\Master Folder\\08 Business Documents\\KALM Holdings\\Kalm Home.png","localSha256":"B38A216529C46A31412169AFCC9FE77D3323477C78FBE532D96DD30EF8B532CC","sourceSha256":"B38A216529C46A31412169AFCC9FE77D3323477C78FBE532D96DD30EF8B532CC"}
+  ],
+  "rejectedAssets": {"removed":46,"manifest":"reports/KALM-DRAFT-REJECTION-20260712/rejected-assets.json","denylist":"reports/KALM-DRAFT-REJECTION-20260712/rejected-asset-denylist.json","zeroReferenceValidation":"passed"},
+  "bottles": {"everyday":"Cream; one image","slimWellness":"Matte White; one image","studio":"Stone; one image","proteinShaker":"Black, Charcoal, Navy and Smoke Grey; one consistent silhouette and one image per colour"},
+  "outdoor": {"visibleAppliances":["Ember 16 Gas Pizza Oven","Forge 2 Portable Gas Griddle","Ridge 4 Stainless Gas Braai"],"hiddenAccessories":9,"publicDevelopmentCopy":false},
+  "evidence": {"desktop":["desktop-homepage-top.jpg","desktop-brands-page.jpg","desktop-outdoor-collection.jpg","desktop-everyday-bottle.jpg","desktop-slim-wellness-bottle.jpg","desktop-studio-bottle.jpg"],"comparisonSheets":["comparison-rejected-versus-verified-logo.webp","comparison-typed-logo-versus-approved.webp","comparison-bottle-silhouettes.webp","comparison-outdoor-retail.webp"],"mobile":"The current responsive validator covers 375 × 812, but the browser capture backend did not apply its requested viewport and then blocked local framing. No desktop capture is represented as mobile evidence."},
+  "approval": "awaiting Munya visual approval"
+}

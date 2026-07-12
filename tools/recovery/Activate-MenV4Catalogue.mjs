@@ -8,7 +8,7 @@ const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8').replace(/^\uFEFF
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8').replace(/^\uFEFF/, ''));
 const active = new Map(manifest.records.map(record => [`${record.productId}::${record.colour}`, record]));
 
-catalog.meta.logo = 'branding/kalm-collective-logo.svg';
+catalog.meta.logo = 'assets/branding/kalm-collective/kalm-collective-logo.png';
 catalog.meta.logoAlt = 'KALM Collective logo';
 
 function presentationFor(product) {

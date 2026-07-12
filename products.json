@@ -6,9 +6,8 @@
     "publicDomain": "kalmcollective.co.za",
     "heroImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
     "featureImage": "assets/images/campaign-hero.webp",
-    "logo": "branding/kalm-collective-logo.svg",
+    "logo": "assets/branding/kalm-collective/kalm-collective-logo.png",
     "logoAlt": "KALM Collective logo",
-    "brandsPageMark": "assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png",
     "favicon": "assets/branding/kalm-collective/kalm-collective-logo.png",
     "socialPreview": "assets/branding/kalm-collective/kalm-collective-logo.png"
   },
@@ -20,9 +19,9 @@
       "summary": "Supportive stretch staples for training, errands and everyday movement.",
       "heroImage": "assets/images/ks-active-hero.webp",
       "tileImage": "assets/images/ks-active-brand-tile.webp",
-      "logo": "branding/ks-active-logo-transparent.png",
+      "logo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
       "slug": "ks-active",
-      "approvedLogo": "branding/ks-active-logo-transparent.png",
+      "approvedLogo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
       "logoAlt": "KS Active logo",
       "description": "Archive activewear and performance essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
@@ -35,9 +34,9 @@
       "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
       "heroImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
       "tileImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
-      "logo": "branding/kalm-move-display-logo-a-transparent.png",
+      "logo": "assets/branding/kalm-move/kalm-move-logo.png",
       "slug": "kalm-move",
-      "approvedLogo": "branding/kalm-move-display-logo-a-transparent.png",
+      "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
       "logoAlt": "KALM Move logo",
       "description": "Movement and activewear essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
@@ -50,9 +49,9 @@
       "summary": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "heroImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
       "tileImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
-      "logo": "branding/kalm-outdoor-display-logo-transparent.png",
+      "logo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
       "slug": "kalm-outdoor",
-      "approvedLogo": "branding/kalm-outdoor-display-logo-transparent.png",
+      "approvedLogo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
       "logoAlt": "KALM Outdoor logo",
       "description": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "categoryLink": "#/shop?category=outdoor",
@@ -65,9 +64,9 @@
       "summary": "Premium studio, recovery and ritual essentials with the plain KALM buffalo mark.",
       "heroImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
       "tileImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-      "logo": "branding/kalm-wellness-display-logo-b-transparent.png",
+      "logo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
       "slug": "kalm-wellness",
-      "approvedLogo": "branding/kalm-wellness-display-logo-b-transparent.png",
+      "approvedLogo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
       "logoAlt": "KALM Wellness logo",
       "description": "Studio, recovery and ritual essentials from KALM Wellness.",
       "categoryLink": "#/shop?category=wellness",
@@ -80,9 +79,9 @@
       "summary": "Clean, tactile pieces for bedrooms, bathrooms and calm daily rituals.",
       "heroImage": "assets/images/generated/brand-tiles/kalm-home-tile.webp",
       "tileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp",
-      "logo": "branding/kalm-home-display-logo-transparent.png",
+      "logo": "assets/branding/kalm-home/kalm-home-logo.png",
       "slug": "kalm-home",
-      "approvedLogo": "branding/kalm-home-display-logo-transparent.png",
+      "approvedLogo": "assets/branding/kalm-home/kalm-home-logo.png",
       "logoAlt": "KALM Home logo",
       "description": "Home decor, bedding, storage and living essentials from KALM Collective.",
       "categoryLink": "#/shop?category=home",
@@ -10125,11 +10124,7 @@
       "price": 279,
       "compareAtPrice": null,
       "colors": [
-        "Cream",
-        "Blush",
-        "Sage",
-        "Stone",
-        "White"
+        "Cream"
       ],
       "sizes": [
         "One size"
@@ -10174,30 +10169,6 @@
           "gallery": [
             "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp"
           ]
-        },
-        "Blush": {
-          "hero": "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp"
-          ]
-        },
-        "Sage": {
-          "hero": "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp"
-          ]
-        },
-        "Stone": {
-          "hero": "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp"
-          ]
-        },
-        "White": {
-          "hero": "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp"
-          ]
         }
       },
       "gallery": [
@@ -10223,38 +10194,6 @@
           "quantity": null,
           "availability": "in_stock",
           "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-BLUSH-ONE-SIZE",
-          "colour": "Blush",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-SAGE-ONE-SIZE",
-          "colour": "Sage",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-STONE-ONE-SIZE",
-          "colour": "Stone",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-EVERYDAY-BOTTLE-WHITE-ONE-SIZE",
-          "colour": "White",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
         }
       ]
     },
@@ -10270,10 +10209,7 @@
       "price": 299,
       "compareAtPrice": null,
       "colors": [
-        "Matte White",
-        "Soft Beige",
-        "Dusty Pink",
-        "Sage Green"
+        "Matte White"
       ],
       "sizes": [
         "One size"
@@ -10318,24 +10254,6 @@
           "gallery": [
             "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp"
           ]
-        },
-        "Soft Beige": {
-          "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp"
-          ]
-        },
-        "Dusty Pink": {
-          "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp"
-          ]
-        },
-        "Sage Green": {
-          "hero": "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp"
-          ]
         }
       },
       "gallery": [
@@ -10361,30 +10279,6 @@
           "quantity": null,
           "availability": "in_stock",
           "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-SOFT-BEIGE-ONE-SIZE",
-          "colour": "Soft Beige",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-DUSTY-PINK-ONE-SIZE",
-          "colour": "Dusty Pink",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-SAGE-GREEN-ONE-SIZE",
-          "colour": "Sage Green",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
         }
       ]
     },
@@ -10400,10 +10294,7 @@
       "price": 329,
       "compareAtPrice": null,
       "colors": [
-        "Stone",
-        "Sand",
-        "Lavender Grey",
-        "Soft Olive"
+        "Stone"
       ],
       "sizes": [
         "One size"
@@ -10449,24 +10340,6 @@
           "gallery": [
             "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp"
           ]
-        },
-        "Sand": {
-          "hero": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/sand/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/sand/front.webp"
-          ]
-        },
-        "Lavender Grey": {
-          "hero": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/lavender-grey/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/lavender-grey/front.webp"
-          ]
-        },
-        "Soft Olive": {
-          "hero": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/soft-olive/front.webp",
-          "gallery": [
-            "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/soft-olive/front.webp"
-          ]
         }
       },
       "gallery": [
@@ -10488,30 +10361,6 @@
         {
           "sku": "KALM-MOVE-STUDIO-BOTTLE-STONE-ONE-SIZE",
           "colour": "Stone",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-STUDIO-BOTTLE-SAND-ONE-SIZE",
-          "colour": "Sand",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-STUDIO-BOTTLE-LAVENDER-GREY-ONE-SIZE",
-          "colour": "Lavender Grey",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-MOVE-STUDIO-BOTTLE-SOFT-OLIVE-ONE-SIZE",
-          "colour": "Soft Olive",
           "size": "One size",
           "quantity": null,
           "availability": "in_stock",
@@ -12299,8 +12148,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12345,8 +12194,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12391,8 +12240,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12437,8 +12286,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12483,8 +12332,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12529,8 +12378,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12575,8 +12424,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12621,8 +12470,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",
@@ -12667,8 +12516,8 @@
       ],
       "badge": "Coming soon",
       "ctaLabel": "Join waitlist",
-      "publicationStatus": "published",
-      "visibility": "visible",
+      "publicationStatus": "draft",
+      "visibility": "hidden",
       "trackInventory": false,
       "inventoryPolicy": "deny",
       "availability": "coming_soon",

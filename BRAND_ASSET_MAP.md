@@ -13,19 +13,14 @@ The approved selected files in Google Drive are the source of truth. The storefr
 | KALM Wellness | `Kalm Wellness.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Wellness.png` | `assets/branding/kalm-wellness/kalm-wellness-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
 | KALM Outdoor | `Kalm Outdoor.png` | `G:\My Drive\Master Folder\08 Business Documents\KALM Holdings\Kalm Outdoor.png` | `assets/branding/kalm-outdoor/kalm-outdoor-logo.png` | Brand page logo, brand cards, homepage brand strip | Copied from Drive, hash verified, referenced in `products.json` |
 
-## Brands Page Buffalo Override
+## Brands Page Logo Direction
 
-Munya's current Brands page direction is to use the same approved plain KALM buffalo mark on every brand card while keeping each written brand name visible as text. This is a page-specific presentation rule only; it does not delete or replace the approved individual brand logos listed above.
-
-| Surface | Approved mark file | Source path | Local repo path | Where used | Status |
-|---|---|---|---|---|---|
-| Brands page cards | `source-kalm-nyati-transparent.png` | `branding/source-kalm-nyati-transparent.png` | `assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png` | `#/brands` card mark for KS Active, KALM Move, KALM Home, KALM Wellness and KALM Outdoor | Cropped transparent derivative made from the exact copied approved buffalo source so the mark remains visible at card scale; referenced through `products.json` `meta.brandsPageMark` and `script.js` `renderBrands()` |
+The rejected common-buffalo card override is superseded. Every Brands page card must use the verified, unique approved logo from the table above; it must not substitute a generic buffalo mark or duplicate the written brand name below the logo.
 
 ## Source Of Truth
 
 - `products.json` is the source of truth for sub-brand logo paths through `approvedLogo`, `logo`, `logoAlt`, `slug`, `description`, `categoryLink` and `homepageTileImage`.
 - `products.json` also stores the KALM Collective site logo paths through `meta.logo`, `meta.logoAlt`, `meta.favicon` and `meta.socialPreview`.
-- `products.json` stores the Brands page common buffalo mark through `meta.brandsPageMark`; this field affects only the Brands page card rendering.
 - KALM Outdoor is the only outdoor brand name in public data, navigation, filters, routes, metadata and brand pages.
 
 ## Removed From Active Use

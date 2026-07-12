@@ -40,9 +40,10 @@ for (const id of audit.recoveredWomen) {
 const bottle = womenById.get("kalm-move-studio-bottle");
 assert(bottle, "Studio Bottle record is missing.");
 const bottleImages = Array.from(new Set(allImages({ image: bottle.image, gallery: bottle.gallery, variantImages: bottle.variantImages })));
-assert(bottleImages.length === 4, "Studio Bottle must retain its four clean colour records.");
+assert(bottleImages.length === 1, "Studio Bottle must retain only its one verified clean silhouette.");
 assert(bottleImages.every((image) => image.startsWith("assets/images/products/kalm-move/women/studio-bottle-recovery-v2/")), "Studio Bottle must use versioned clean recovery paths only.");
 assert(bottleImages.every((image) => fs.existsSync(path.join(root, image))), "Studio Bottle recovery image is missing.");
+assert(JSON.stringify(bottle.colors) === JSON.stringify(["Stone"]), "Studio Bottle must not expose inconsistent colour variants.");
 
 console.log(JSON.stringify({
   status: "passed",

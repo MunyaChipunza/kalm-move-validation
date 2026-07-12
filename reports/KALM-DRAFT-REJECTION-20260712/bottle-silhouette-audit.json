@@ -1,0 +1,207 @@
+{
+  "generatedAt": "2026-07-12T12:40:51.128327+00:00",
+  "decision": "When a complete matching colour set did not exist, the public product was reduced to one verified colour. Protein Shaker retains its four visually consistent colour variants.",
+  "contactSheet": "reports/KALM-DRAFT-REJECTION-20260712/bottle-contact-sheet.webp",
+  "products": [
+    {
+      "productId": "kalm-move-everyday-bottle",
+      "product": "KALM Move Everyday Bottle",
+      "retainedColours": [
+        "Cream"
+      ],
+      "silhouetteSource": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+      "imageCountPerColour": 1,
+      "candidates": [
+        {
+          "colour": "Cream",
+          "path": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+          "sha256": "243E56E0393C0150F292931621B73B6D64B3BF57DF8A5F7EC82E4A4F4F0644AF",
+          "dimensions": "1216x1520",
+          "status": "retained",
+          "reason": "verified single carry-loop silhouette",
+          "fileStatus": "present"
+        },
+        {
+          "colour": "Blush",
+          "path": "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
+          "sha256": "54C6B5FECE86679282259C593833DFBD6377198992016EA69AD35FF6CDF1146B",
+          "dimensions": "1216x1520",
+          "status": "rejected",
+          "reason": "different lid and handle construction",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "Sage",
+          "path": "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
+          "sha256": "68CB87874632E4DCD54C12A1807195278CD85212957956529FD42CB60BE03348",
+          "dimensions": "1216x1520",
+          "status": "rejected",
+          "reason": "different rectangular-handle lid",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "Stone",
+          "path": "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
+          "sha256": "CEBFC7A30BF988D1A44B2552EF9B124FDE0946D3495EC4B1D4468A21F2B1BC62",
+          "dimensions": "1216x1520",
+          "status": "rejected",
+          "reason": "different arched handle and neck",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "White",
+          "path": "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp",
+          "sha256": "A770AE9703E7BB4EC8E9BB92FEA5621EA392022B52312D0D329D007D62302138",
+          "dimensions": "1216x1520",
+          "status": "rejected",
+          "reason": "different arched handle and bottle proportion",
+          "fileStatus": "removed_from_active_assets"
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-slim-wellness-bottle",
+      "product": "KALM Move Slim Wellness Bottle",
+      "retainedColours": [
+        "Matte White"
+      ],
+      "silhouetteSource": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
+      "imageCountPerColour": 1,
+      "candidates": [
+        {
+          "colour": "Matte White",
+          "path": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
+          "sha256": "A63C1E491DC3B5B49D2F99AD8AF25CFE9AB19C3061FC26B307D0967CCAE81FC2",
+          "dimensions": "1216x1520",
+          "status": "retained",
+          "reason": "verified single slim screw-cap silhouette",
+          "fileStatus": "present"
+        },
+        {
+          "colour": "Soft Beige",
+          "path": "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
+          "sha256": "30A5390F3DF802AD8924284682B3392FEA737C1864F304B4BA629DE25FD16722",
+          "dimensions": "1216x1520",
+          "status": "rejected",
+          "reason": "carry-handle lid is a different product",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "Dusty Pink",
+          "path": "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp",
+          "sha256": "00B6464871F8BC359A78F2201A6C32FE3C46C46D86B2D97938E7B05A26552F00",
+          "dimensions": "1200x1500",
+          "status": "rejected",
+          "reason": "arched handle lid is a different product",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "Sage Green",
+          "path": "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp",
+          "sha256": "72E7CB79DD3F1DE5B7EF6DB62E3FF0576781A40B4EA6469A96DBDF2DAFF2E768",
+          "dimensions": "1200x1500",
+          "status": "rejected",
+          "reason": "different cap and body proportion",
+          "fileStatus": "removed_from_active_assets"
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-studio-bottle",
+      "product": "KALM Move Studio Bottle",
+      "retainedColours": [
+        "Stone"
+      ],
+      "silhouetteSource": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp",
+      "imageCountPerColour": 1,
+      "candidates": [
+        {
+          "colour": "Stone",
+          "path": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp",
+          "sha256": "D82868C23F5DFE959622565B2308112C694403CE7FF3189AEC5A644482022FC8",
+          "dimensions": "1200x1500",
+          "status": "retained",
+          "reason": "clean recovered historical front source; corrupted Studio Bottle excluded",
+          "fileStatus": "present"
+        },
+        {
+          "colour": "Sand",
+          "path": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/sand/front.webp",
+          "sha256": "A2C31312C60E8D81008C1080C2F085E1C9E94E6D9C9CB9CFDC5B72D26044D170",
+          "dimensions": "1200x1500",
+          "status": "rejected",
+          "reason": "different rectangular-handle lid",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "Lavender Grey",
+          "path": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/lavender-grey/front.webp",
+          "sha256": "349C4E01977F966DC5280B0FFB07119B20CF3BE9DDC52D6C8C3716D15BA1F6A0",
+          "dimensions": "1200x1500",
+          "status": "rejected",
+          "reason": "different plain-cap silhouette",
+          "fileStatus": "removed_from_active_assets"
+        },
+        {
+          "colour": "Soft Olive",
+          "path": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/soft-olive/front.webp",
+          "sha256": "11B587354EB2668624412B319B6B25CE62E05501629FBA0DCF86389FA09A0FA8",
+          "dimensions": "1200x1500",
+          "status": "rejected",
+          "reason": "different rectangular-handle lid",
+          "fileStatus": "removed_from_active_assets"
+        }
+      ]
+    },
+    {
+      "productId": "kalm-move-protein-shaker-bottle",
+      "product": "KALM Move Protein Shaker Bottle",
+      "retainedColours": [
+        "Black",
+        "Charcoal",
+        "Navy",
+        "Smoke Grey"
+      ],
+      "silhouetteSource": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+      "imageCountPerColour": 1,
+      "candidates": [
+        {
+          "colour": "Black",
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/black/front.webp",
+          "sha256": "025652015E4B26F50196FB3CA1B9B58C58CE9F60CDE260877696933F1D30143F",
+          "dimensions": "1200x1500",
+          "status": "retained",
+          "reason": "same shaker body, lid, carry loop, crop and lighting",
+          "fileStatus": "present"
+        },
+        {
+          "colour": "Charcoal",
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/charcoal/front.webp",
+          "sha256": "9A0C850589C5E0AA4A8821787308F1DE55193DF45B91C546D73E613A7BBF7AB4",
+          "dimensions": "1200x1500",
+          "status": "retained",
+          "reason": "same shaker body, lid, carry loop, crop and lighting",
+          "fileStatus": "present"
+        },
+        {
+          "colour": "Navy",
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/navy/front.webp",
+          "sha256": "0FB7DEF79E10C0DF850C892542D21F70DEA58DE914E9C1A0854B37869F818D51",
+          "dimensions": "1200x1500",
+          "status": "retained",
+          "reason": "same shaker body, lid, carry loop, crop and lighting",
+          "fileStatus": "present"
+        },
+        {
+          "colour": "Smoke Grey",
+          "path": "assets/images/products/kalm-move/men/protein-shaker-bottle-v4/smoke-grey/front.webp",
+          "sha256": "51294B6468F4355AE96ACC12F17482D429E2309B1E31B45B2D1F081987A78BDC",
+          "dimensions": "1200x1500",
+          "status": "retained",
+          "reason": "same shaker body, lid, carry loop, crop and lighting",
+          "fileStatus": "present"
+        }
+      ]
+    }
+  ]
+}

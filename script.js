@@ -661,22 +661,17 @@ function renderBrands() {
     </section>
 
     <section class="brand-grid">
-      ${state.data.brands.map((brand, index) => {
-        const isTextLed = brand.visualMode === "text-led";
-        const lightLogoClass = brand.id === "ks-active" ? " brand-logo--light" : "";
+      ${state.data.brands.map((brand) => {
         const content = `
           <div class="brand-content">
-            <img class="brand-card-logo${lightLogoClass}" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || `${brand.name} logo`)}" width="1254" height="1254" loading="eager" decoding="async">
+            <img class="brand-card-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || `${brand.name} logo`)}" width="1254" height="1254" loading="eager" decoding="async">
             <p>${escapeHtml(brand.summary || brand.description || "Explore the collection.")}</p>
-            ${isTextLed ? '<span class="brand-card-status">Details coming soon</span>' : ""}
           </div>`;
         return `
-          <article class="brand-card-large ${isTextLed ? "brand-card-large--text" : ""}">
+          <article class="brand-card-large">
             <a href="#/brand/${brand.id}" aria-label="Shop ${escapeAttribute(brand.name)}">
-              ${isTextLed ? content : `
-                <img class="brand-image" ${index < 2 ? `src="${escapeHtml(brand.heroImage)}"` : `src="${transparentPixel}" data-src="${escapeHtml(brand.heroImage)}"`} alt="${escapeAttribute(brand.name)} lifestyle" width="900" height="660" ${index < 2 ? 'decoding="async"' : 'loading="lazy" decoding="async" fetchpriority="low"'}>
-                ${content}
-              `}
+              <img class="brand-image" src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} lifestyle" width="900" height="660" loading="eager" decoding="async" fetchpriority="high">
+              ${content}
             </a>
           </article>`;
       }).join("")}
@@ -690,14 +685,13 @@ function renderBrands() {
 function renderBrand(brandId) {
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
-  const lightLogoClass = brand.id === "ks-active" ? " brand-logo--light" : "";
   if (brand.id === "kalm-outdoor") return renderKalmOutdoorExperience(brand);
   const products = getPublicProducts().filter((product) => product.brandId === brand.id);
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
     <section class="brand-hero">
       <div>
-        <img class="brand-hero-logo${lightLogoClass}" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
+        <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
         <a class="button primary" href="#/shop?brand=${brand.id}">Shop now</a>
@@ -733,131 +727,44 @@ function getOutdoorAnchorProducts() {
   return anchorIds.map((id) => findProduct(id)).filter((product) => product && isProductPublic(product));
 }
 
-function getOutdoorComingSoonProducts() {
-  return getPublicProducts().filter((product) => product.brandId === "kalm-outdoor" && isComingSoonProduct(product));
-}
-
 function applianceName(applianceId) {
   return findProduct(applianceId)?.title || "Compatible appliance to be confirmed";
 }
 
 function renderKalmOutdoorExperience(brand) {
   const anchors = getOutdoorAnchorProducts();
-  const accessories = getOutdoorComingSoonProducts();
-  const bundles = state.data.outdoorBundles || [];
   setDocumentMeta(
-    "KALM Outdoor | Appliances, setup roadmaps and coming-soon accessories",
-    "Explore KALM Outdoor appliances and join the waitlist for upcoming accessory roadmaps. Photography and final specifications are in production."
+    "KALM Outdoor | Premium outdoor cooking appliances",
+    "Discover KALM Outdoor appliances for considered cooking and open-air gatherings."
   );
   app.innerHTML = `
-    <section class="outdoor-hero outdoor-hero--text">
+    <section class="outdoor-collection-intro">
+      <img class="outdoor-collection-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
       <div>
-        <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
-        <p class="eyebrow">KALM Outdoor</p>
-        <h1>Build your open-air cooking routine.</h1>
-        <p>Start with the appliance that suits your cooking routine, then register interest in the accessory roadmap you want next. We will publish product photography only after supplier approval.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#/shop?brand=kalm-outdoor">Shop appliances</a>
-          <a class="button secondary" href="#/brand/kalm-outdoor#outdoor-waitlist">Join the accessory waitlist</a>
-        </div>
+        <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
+        <p>Considered appliances for pizza nights, everyday grilling and open-air hosting.</p>
       </div>
     </section>
 
-    <section class="section-block" aria-labelledby="outdoor-anchors-title">
+    <section class="section-block outdoor-appliance-collection" aria-labelledby="outdoor-appliances-title">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Anchor appliances</p>
-          <h2 id="outdoor-anchors-title">Start with your cooking station.</h2>
-          <p class="section-copy">Compare appliance formats and register for accessory compatibility updates. No illustrative product renders are shown in this preview.</p>
+          <p class="eyebrow">Outdoor cooking</p>
+          <h2 id="outdoor-appliances-title">Appliances</h2>
         </div>
-      </div>
-      <div class="outdoor-anchor-grid">
-        ${anchors.map((product) => `
-          <article class="outdoor-anchor-card">
-            <div>
-              <p class="eyebrow">Cooking station</p>
-              <h3>${escapeHtml(product.title)}</h3>
-              <p>${escapeHtml(product.shortDescription || product.description)}</p>
-              <a class="button secondary" href="#/product/${product.slug}">View appliance</a>
-            </div>
-          </article>
-        `).join("")}
-      </div>
-    </section>
-
-    <section class="section-block outdoor-setup" aria-labelledby="outdoor-setup-title">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Complete your setup</p>
-          <h2 id="outdoor-setup-title">Nine accessories in development.</h2>
-          <p class="section-copy">No accessory is for sale yet. Each card carries no price, stock, or Add to Bag control.</p>
-        </div>
-        <a class="text-link" href="#/shop?brand=kalm-outdoor&availability=coming_soon">View all coming soon</a>
       </div>
       <div class="product-grid">
-        ${accessories.map((product) => renderProductCard(product)).join("")}
+        ${anchors.map((product, index) => renderProductCard(product, { eager: index < 3 })).join("")}
       </div>
-    </section>
-
-    <section class="section-block" aria-labelledby="outdoor-appliance-filter-title">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Shop by appliance</p>
-          <h2 id="outdoor-appliance-filter-title">Find a roadmap for your station.</h2>
-        </div>
-      </div>
-      <div class="outdoor-appliance-links" aria-label="Outdoor appliance compatibility filters">
-        ${anchors.map((anchor) => `<a href="#/shop?brand=kalm-outdoor&appliance=${escapeAttribute(anchor.id)}">${escapeHtml(anchor.title)} <span>View planned setup</span></a>`).join("")}
-      </div>
-    </section>
-
-    <section class="section-block outdoor-roadmap" aria-labelledby="outdoor-bundles-title">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Bundle roadmap</p>
-          <h2 id="outdoor-bundles-title">Plan the next cook without a premature price.</h2>
-          <p class="section-copy">These are unpriced, non-purchasable setup roadmaps. Final contents, availability, and photography remain pending.</p>
-        </div>
-      </div>
-      <div class="bundle-roadmap-grid">
-        ${bundles.map((bundle) => `
-          <article class="bundle-roadmap-card">
-            <p class="eyebrow">${escapeHtml(applianceName(bundle.compatibleAppliance))}</p>
-            <h3>${escapeHtml(bundle.title)}</h3>
-            <p>${escapeHtml(bundle.description)}</p>
-            <p class="coming-soon-copy">Coming soon · no price or availability announced</p>
-            <a class="text-link" href="#/brand/kalm-outdoor#outdoor-waitlist">Join waitlist</a>
-          </article>
-        `).join("")}
-      </div>
-    </section>
-
-    <section class="outdoor-care-band">
-      <div>
-        <p class="eyebrow">Care and protection</p>
-        <h2>Keep your appliance routine considered.</h2>
-      </div>
-      <p>Use the approved appliance care guidance today. Dedicated covers, care kits, and accessory specifications will be published only after supplier confirmation and approved photography.</p>
-    </section>
-
-    <section id="outdoor-waitlist" class="outdoor-waitlist-panel" aria-labelledby="outdoor-waitlist-title">
-      <div>
-        <p class="eyebrow">Launch updates</p>
-        <h2 id="outdoor-waitlist-title">Join the Outdoor accessory waitlist.</h2>
-        <p>Tell us which accessory or roadmap interests you. We will only use these details for KALM Outdoor launch updates and compatibility information.</p>
-      </div>
-      ${renderOutdoorWaitlistForm()}
     </section>
 
     ${renderFooter()}
   `;
-  bindNetlifyForms(app);
   hydrateDeferredImages(app);
 }
 
 function getOutdoorWaitlistChoices() {
   return [
-    ...getOutdoorComingSoonProducts().map((product) => ({ label: product.title, applianceId: product.compatibleAppliances?.[0] || "" })),
     ...(state.data.outdoorBundles || []).map((bundle) => ({ label: bundle.title, applianceId: bundle.compatibleAppliance || "" }))
   ];
 }
@@ -1261,10 +1168,9 @@ function renderNotFound() {
 }
 
 function renderBrandLogoCard(brand) {
-  const isLightLogo = brand.id === "ks-active";
   return `
-    <a class="brand-logo-card${isLightLogo ? " brand-logo-card--dark" : ""}" href="#/brand/${brand.id}">
-      <img class="brand-logo${isLightLogo ? " brand-logo--light" : ""}" src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async" fetchpriority="low">
+    <a class="brand-logo-card" href="#/brand/${brand.id}">
+      <img class="brand-logo" src="${transparentPixel}" data-src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254" loading="lazy" decoding="async" fetchpriority="low">
       <span class="sr-only">Shop ${escapeHtml(brand.name)}</span>
     </a>
   `;
@@ -1272,10 +1178,6 @@ function renderBrandLogoCard(brand) {
 
 function getBrandLogo(brand) {
   return brand?.approvedLogo || brand?.logo || "";
-}
-
-function getBrandsPageMark() {
-  return state.data?.meta?.brandsPageMark || "assets/branding/kalm-buffalo/kalm-buffalo-mark.png";
 }
 
 function getPublicProducts() {
@@ -1528,7 +1430,7 @@ function renderProductGallery(product, inputImages = getProductGalleryImages(pro
           ${renderGallerySlides(product, images)}
         </div>
         ${count > 1 ? `<button class="gallery-open" type="button" data-lightbox-open aria-label="Open image viewer">Expand</button>` : ""}
-        <span class="gallery-count" data-gallery-count>1 / ${count}</span>
+        ${count > 1 ? `<span class="gallery-count" data-gallery-count>1 / ${count}</span>` : ""}
       </div>
       ${count > 1 ? `<div class="gallery-dots" data-gallery-dots>${renderGalleryDots(images)}</div>` : ""}
       ${count > 1 ? `
@@ -2212,7 +2114,7 @@ function renderFooter() {
       </div>
       <div class="footer-grid">
         <div>
-          <img src="${escapeHtml(logo)}" alt="${escapeAttribute(logoAlt)}" width="1120" height="260" decoding="async">
+          <img src="${escapeHtml(logo)}" alt="${escapeAttribute(logoAlt)}" width="1563" height="1563" decoding="async">
           <p>Premium essentials for movement, outdoor routines and everyday living.</p>
         </div>
         ${footerSection("Shop", `

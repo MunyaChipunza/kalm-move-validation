@@ -4,17 +4,12 @@
 
 | File | Use |
 | --- | --- |
-| `branding/kalm-collective-display-logo.webp` | Header and footer live storefront logo. |
-| `branding/kalm-collective-logo.png` | Approved KALM Collective source logo. |
-| `branding/ks-active-logo-black.webp` | KS Active brand card/page. |
-| `branding/ks-active-logo-transparent.png` | Source KS Active logo asset. |
-| `branding/kalm-move-display-logo-a.webp` | KALM Move brand card/page. |
-| `branding/approved-kalm-move-source.png` | Approved source image for KALM Move. |
-| `branding/kalm-outdoor-display-logo.webp` | KALM Outdoor brand card/page. |
-| `branding/kalm-wellness-display-logo-b.webp` | KALM Wellness brand card/page. |
-| `branding/kalm-home-display-logo.webp` | KALM Home brand card/page using the selected house-logo direction. |
-| `branding/source-kalm-nyati-transparent.png` | Source buffalo device used for the KALM family logos. |
-| `branding/approved-kalm-nyati-source.png` | Locked copy of the approved buffalo source used for selected sub-brand logo rebuilds. |
+| `assets/branding/kalm-collective/kalm-collective-logo.png` | Approved KALM Collective image logo for header, hero, footer and metadata. |
+| `assets/branding/ks-active/ks-active-logo-transparent-mono.png` | Approved KS Active logo. |
+| `assets/branding/kalm-move/kalm-move-logo.png` | Approved KALM Move logo. |
+| `assets/branding/kalm-outdoor/kalm-outdoor-logo.png` | Approved KALM Outdoor logo. |
+| `assets/branding/kalm-wellness/kalm-wellness-logo.png` | Approved KALM Wellness logo. |
+| `assets/branding/kalm-home/kalm-home-logo.png` | Approved KALM Home logo. |
 
 ## Storefront Images
 
@@ -27,6 +22,6 @@
 | `assets/images/generated/kalm-outdoor/` | KALM Outdoor product cards and product pages. |
 | `assets/images/generated/kalm-wellness/` | KALM Wellness product cards and product pages. |
 | `assets/images/generated/kalm-home/` | KALM Home product cards and product pages. |
-| `assets/images/generated/brand-tiles/` | Brand page hero/tile imagery for new KALM sub-brands. |
+| `assets/images/recovered/brands-v1/` | Verified historical brand lifestyle imagery. |
 
 Verdict remains unchanged: KALM Move is validation-ready, not bank-ready or production-ready.

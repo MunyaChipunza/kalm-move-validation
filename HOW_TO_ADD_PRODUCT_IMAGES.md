@@ -19,7 +19,7 @@ For KALM Move, keep men and women products split by audience and product name:
 
 ```text
 assets/images/products/kalm-move/men/flow-training-short/black-hero.webp
-assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp
+assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp
 ```
 
 ## Naming
