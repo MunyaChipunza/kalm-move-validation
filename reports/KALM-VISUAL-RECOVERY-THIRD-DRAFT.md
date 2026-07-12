@@ -3,7 +3,7 @@
 - Incident branch: `codex/kalm-visual-recovery-preview-20260712`
 - Checkpoint preserved: `dc423b9686509a90c81de5fef25e9d9eeb1d8fc9`
 - Production: unchanged
-- Draft preview: pending deployment
+- Draft preview: https://6a53527f6508f473fab94dff--kalm-collective-storefront.netlify.app
 
 ## Recovered lifestyle candidates
 
@@ -25,7 +25,7 @@
 - Five branded candidate contact sheets
 - Men, women, bottle and Outdoor recovery reports
 - Second-draft Brands and mobile-footer reference screenshots
-- Third-draft screenshots are added after the Netlify draft is captured
+- Third-draft screenshots are captured from the deployed draft
 
 ## Comparison: second draft to third draft
 

@@ -9,6 +9,7 @@ const readJson = relative => JSON.parse(read(relative).replace(/^\uFEFF/, ''));
 const catalog = readJson('products.json');
 const selected = readJson('reports/drive-recovery/selected-recovery-files.json');
 const menManifest = readJson('reports/drive-recovery/men-v3-recovery-manifest.json');
+const checkpoint = 'dc423b9686509a90c81de5fef25e9d9eeb1d8fc9';
 const sha256 = relative => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, relative))).digest('hex').toUpperCase();
 const fail = message => { throw new Error(message); };
 
@@ -33,8 +34,8 @@ for (const record of selected) {
   if (!record.LocalDestination.startsWith('assets/images/recovered/')) fail(`Recovery file is not versioned under a recovered directory: ${record.LocalDestination}`);
   if (!fs.existsSync(path.join(root, record.LocalDestination))) fail(`Selected recovery file is missing: ${record.LocalDestination}`);
   if (record.SourceSha256 !== record.LocalSha256 || sha256(record.LocalDestination) !== record.SourceSha256) fail(`Hash verification failed for ${record.LocalDestination}`);
-  const trackedAtHead = execFileSync('git.exe', ['ls-tree', '-r', '--name-only', 'HEAD', '--', record.LocalDestination], { cwd: root, encoding: 'utf8' }).trim();
-  if (trackedAtHead) fail(`Recovery file overwrote an existing public path: ${record.LocalDestination}`);
+  const trackedAtCheckpoint = execFileSync('git.exe', ['ls-tree', '-r', '--name-only', checkpoint, '--', record.LocalDestination], { cwd: root, encoding: 'utf8' }).trim();
+  if (trackedAtCheckpoint) fail(`Recovery file overwrote an existing public path from the preserved checkpoint: ${record.LocalDestination}`);
 }
 
 if (menManifest.usedInPreviewCount !== 0) fail('The men V3 manifest reports an unapproved staged image in preview use.');

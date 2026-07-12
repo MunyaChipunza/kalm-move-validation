@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-12T08:34:37.239Z",
+  "generatedAt": "2026-07-12T08:48:33.729Z",
   "checkpoint": "dc423b9686509a90c81de5fef25e9d9eeb1d8fc9",
   "branch": "codex/kalm-visual-recovery-preview-20260712",
-  "headAtAssembly": "dc423b9686509a90c81de5fef25e9d9eeb1d8fc9",
+  "headAtAssembly": "e13a18b9f7ebb97ab1d46fbbf3c1fb492d0053dd",
   "productionChanged": false,
-  "draftPreview": "pending_deploy",
+  "draftPreview": "https://6a53527f6508f473fab94dff--kalm-collective-storefront.netlify.app",
   "selectedDriveFiles": [
     {
       "DriveSourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\brand-heroes\\kalm-move-brand-hero-lifestyle-v1.webp",
@@ -64,7 +64,23 @@
   "screenshots": {
     "secondDraftBrandsReference": "visual-recovery-preview-evidence/brands-desktop.png",
     "secondDraftMobileFooterReference": "visual-recovery-preview-evidence/mobile-footer-375x812.png",
-    "thirdDraft": []
+    "thirdDraft": [
+      "second-vs-third-brands-comparison.png",
+      "third-draft-brands-desktop.png",
+      "third-draft-brands-mobile-375x812.png",
+      "third-draft-everyday-bottle-product.png",
+      "third-draft-kalm-move-men-catalogue.png",
+      "third-draft-kalm-move-panel-desktop.png",
+      "third-draft-kalm-move-women-catalogue.png",
+      "third-draft-kalm-outdoor-panel-desktop.png",
+      "third-draft-mobile-footer-375x812-raw-360x779.png",
+      "third-draft-mobile-footer-375x812.png",
+      "third-draft-mobile-header-375x812-raw-360x779.png",
+      "third-draft-mobile-header-375x812.png",
+      "third-draft-outdoor-catalogue.png",
+      "third-draft-slim-wellness-bottle-product.png",
+      "third-draft-studio-bottle-product.png"
+    ]
   },
   "unresolved": [
     "Munya visual approval is required before any production action.",
