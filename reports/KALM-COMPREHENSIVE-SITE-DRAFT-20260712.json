@@ -1,0 +1,46 @@
+{
+  "status": "awaiting_munya_visual_approval",
+  "scope": "comprehensive KALM storefront merchandising and homepage recovery draft only",
+  "control": {
+    "baseMasterSha": "cde8186d1490a42e86fcc9759111f4a0318b6332",
+    "bottleReleaseSha": "cde8186d1490a42e86fcc9759111f4a0318b6332",
+    "branch": "codex/kalm-comprehensive-site-draft-20260712",
+    "storefrontImplementationCommit": "09bead2",
+    "evidenceCommit": "70b39b6c635e5a62e262726a869b4847032490be",
+    "safetyTag": "checkpoint/pre-comprehensive-site-draft-20260712"
+  },
+  "draftDeploy": {
+    "id": "6a53dde0bbb3f85835f404b8",
+    "url": "https://6a53dde0bbb3f85835f404b8--kalm-collective-storefront.netlify.app",
+    "productionChanged": false,
+    "masterMerged": false
+  },
+  "productionBaseline": {
+    "deployId": "6a53ce7fb63d08e5a8f70e8a",
+    "masterSha": "cde8186d1490a42e86fcc9759111f4a0318b6332"
+  },
+  "merchandising": {
+    "allocationCount": 49,
+    "archiveSaleKsActiveOnly": true,
+    "newInExcludesKsActive": true,
+    "outdoorProductCount": 3,
+    "directRoutesVerified": true
+  },
+  "campaignImageProvenance": {
+    "authorisedAssetClasses": ["homepage hero", "featured collection"],
+    "generationCalls": 3,
+    "reviewStatus": "awaiting_munya_visual_approval",
+    "rejectedOutputsQuarantined": true
+  },
+  "validation": {
+    "comprehensiveChecks": 173,
+    "allExistingValidatorsPassed": true
+  },
+  "reviewPack": "reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/",
+  "nccStatus": "draft entry updated and re-fetched",
+  "taskApplicationChanged": false,
+  "knownLimitations": [
+    "Crawler and AI inclusion are not guaranteed by access files.",
+    "Homepage hero and Featured Collection campaign await Munya visual approval."
+  ]
+}
