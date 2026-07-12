@@ -33,31 +33,30 @@
       "name": "KALM Move",
       "role": "Movement essentials",
       "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
-      "heroImage": "assets/images/campaign-hero.webp",
-      "tileImage": "assets/images/full-outfit-lifestyle-shop.webp",
+      "heroImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
+      "tileImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
       "logo": "assets/branding/kalm-move/kalm-move-logo.png",
       "slug": "kalm-move",
       "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
       "logoAlt": "KALM Move logo",
       "description": "Movement and activewear essentials from KALM Collective.",
       "categoryLink": "#/shop?category=activewear",
-      "homepageTileImage": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp"
+      "homepageTileImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp"
     },
     {
       "id": "kalm-outdoor",
       "name": "KALM Outdoor",
       "role": "Outdoor cooking and living",
       "summary": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
-      "heroImage": "",
-      "tileImage": "",
+      "heroImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
+      "tileImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
       "logo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
       "slug": "kalm-outdoor",
       "approvedLogo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
       "logoAlt": "KALM Outdoor logo",
       "description": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
       "categoryLink": "#/shop?category=outdoor",
-      "homepageTileImage": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp",
-      "visualMode": "text-led"
+      "homepageTileImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp"
     },
     {
       "id": "kalm-wellness",

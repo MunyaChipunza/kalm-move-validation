@@ -1,0 +1,1838 @@
+commit a2b7c3c9aac19df74261dfb9b24c1f39bba6f50f
+Author: MunyaChipunza <121972769+MunyaChipunza@users.noreply.github.com>
+Date:   Sun Jul 12 08:00:25 2026 +0200
+
+    fix: recover storefront visual approval baseline
+
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/white-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/olive-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/white-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/white/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/white/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/move-cap/white/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/movement.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive-hero.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/angle.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/front.webp
+A	assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/movement.webp
+A	assets/images/products/kalm-move/women/studio-bottle-recovery-v2/lavender-grey/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle-recovery-v2/sand/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle-recovery-v2/soft-olive/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp
+
+commit fa355fb36b77f92ebb4bbe116a371c71f6e88639
+Author: MunyaChipunza <121972769+MunyaChipunza@users.noreply.github.com>
+Date:   Sun Jul 12 01:17:00 2026 +0200
+
+    feat: complete zero-paid imagery recovery
+
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/black/back.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/black/front.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/date-brown/angle.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/date-brown/back.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/date-brown/front.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/delicate-red/angle.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/delicate-red/back.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/delicate-red/front.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/grayish-blue/angle.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/grayish-blue/back.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/grayish-blue/front.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/pink-drink/angle.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/pink-drink/back.webp
+A	assets/images/products/kalm-move/women/align-halter-legging-set-v3/pink-drink/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/black/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/black/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/blue/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/blue/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/blue/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/brown/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/brown/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/brown/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/charcoal-gray/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/charcoal-gray/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/charcoal-gray/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/purple/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/purple/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/purple/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/red/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/red/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/red/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/white/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/white/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short-v3/white/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/blossom-pink/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/blossom-pink/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/blossom-pink/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/bluebird/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/bluebird/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/bluebird/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/coffee-brown/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/coffee-brown/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/coffee-brown/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/crushed-limestone/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/crushed-limestone/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/crushed-limestone/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/dress-blues/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/dress-blues/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/dress-blues/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/fawn/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/fawn/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/fawn/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/lemon-yellow/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/lemon-yellow/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/lemon-yellow/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/magic-forest-green/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/magic-forest-green/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/magic-forest-green/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/pomegranate-red/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/pomegranate-red/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/pomegranate-red/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/van-dyke-brown/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/van-dyke-brown/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set-v3/van-dyke-brown/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set-v3/gray/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set-v3/green/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set-v3/purple/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/berry-red/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/berry-red/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/berry-red/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/black/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/black/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/charcoal/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/charcoal/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/charcoal/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/coco/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/coco/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/coco/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/peony/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/peony/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/peony/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/pine/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/pine/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/pine/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/white/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/white/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/white/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/wine-red/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/wine-red/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/wine-red/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/yellow/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/yellow/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard-v3/yellow/front.webp
+A	assets/images/products/kalm-move/women/cropped-zip-yoga-jacket-v3/dark-green/angle.webp
+A	assets/images/products/kalm-move/women/cropped-zip-yoga-jacket-v3/dark-green/back.webp
+A	assets/images/products/kalm-move/women/cropped-zip-yoga-jacket-v3/dark-green/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging-v3/black/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging-v3/blue/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging-v3/red/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant-v3/black/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant-v3/cream-white/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant-v3/millennial-pink/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant-v3/sunny-orange/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant-v3/wine-red/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/black/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/black/back.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/black/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/cream/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/cream/back.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/cream/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/espresso/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/espresso/back.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/espresso/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/sage/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/sage/back.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/sage/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/taupe/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/taupe/back.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v3/taupe/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/black/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/black/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/brown/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/brown/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/brown/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/dark-purple/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/dark-purple/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/dark-purple/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/dark-red/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/dark-red/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/dark-red/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/khaki/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/khaki/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/khaki/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/orange/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/orange/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/orange/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/sky-blue/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/sky-blue/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/sky-blue/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/white/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/white/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/white/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/yellow/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/yellow/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v3/yellow/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/black/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/black/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/blue/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/blue/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/blue/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/brown/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/brown/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/brown/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/grey/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/grey/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/grey/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/red/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/red/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/red/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/white/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/white/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set-v3/white/front.webp
+A	assets/images/products/kalm-move/women/lightweight-windbreaker-set-v3/light-blue/angle.webp
+A	assets/images/products/kalm-move/women/lightweight-windbreaker-set-v3/light-blue/back.webp
+A	assets/images/products/kalm-move/women/lightweight-windbreaker-set-v3/light-blue/front.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/brown/angle.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/brown/back.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/brown/front.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/olive-taupe/angle.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/olive-taupe/back.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/olive-taupe/front.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/apricot/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/apricot/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/apricot/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/army-green/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/army-green/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/army-green/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/black/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/black/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/blue/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/blue/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/blue/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/navy/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/navy/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/navy/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/pocket-racerback-crop-bra-v3/brown/front.webp
+A	assets/images/products/kalm-move/women/pocket-racerback-crop-bra-v3/red/front.webp
+A	assets/images/products/kalm-move/women/pulse-crop-short-set-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/pulse-crop-short-set-v3/black/front.webp
+A	assets/images/products/kalm-move/women/pulse-crop-short-set-v3/black/movement.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/apricot/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/apricot/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/apricot/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/black/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/black/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/blue/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/blue/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/blue/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/coffee/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/coffee/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/coffee/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/green/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/green/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/green/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/grey/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/grey/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/grey/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/light-blue/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/light-blue/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/light-blue/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/light-grey/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/light-grey/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/light-grey/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/magenta/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/magenta/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/magenta/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/navy/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/navy/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/navy/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/rose-red/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/rose-red/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set-v3/rose-red/front.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/coral-orange/angle.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/coral-orange/back.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/coral-orange/front.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/neon-green/angle.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/neon-green/back.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/neon-green/front.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/split-running-skort-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/black/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/black/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/blue/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/blue/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/blue/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/brown/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/brown/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/brown/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/burgundy-red/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/burgundy-red/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/burgundy-red/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/cream-yellow/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/cream-yellow/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/cream-yellow/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/dark-purple/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/dark-purple/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/dark-purple/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/gray-blue/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/gray-blue/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/gray-blue/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/gray/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/gray/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/gray/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/light-blue/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/light-blue/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/light-blue/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/light-grey/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/light-grey/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/light-grey/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/pink/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/pink/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/pink/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/rose-red/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/rose-red/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant-v3/rose-red/front.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-dough-and-heat-kit-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-dough-and-heat-kit-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-dough-and-heat-kit-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-dough-and-heat-kit-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-dough-and-heat-kit-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-dough-and-heat-kit-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-launch-pro-perforated-peel-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-launch-pro-perforated-peel-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-launch-pro-perforated-peel-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-launch-pro-perforated-peel-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-launch-pro-perforated-peel-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-launch-pro-perforated-peel-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-turn-pro-turning-peel-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-turn-pro-turning-peel-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-turn-pro-turning-peel-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-turn-pro-turning-peel-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-turn-pro-turning-peel-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/ember-turn-pro-turning-peel-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-pro-griddle-tool-roll-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-pro-griddle-tool-roll-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-pro-griddle-tool-roll-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-pro-griddle-tool-roll-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-pro-griddle-tool-roll-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-pro-griddle-tool-roll-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-season-and-care-kit-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-season-and-care-kit-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-season-and-care-kit-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-season-and-care-kit-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-season-and-care-kit-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-season-and-care-kit-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-smash-and-steam-kit-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-smash-and-steam-kit-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-smash-and-steam-kit-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-smash-and-steam-kit-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-smash-and-steam-kit-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/forge-smash-and-steam-kit-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-cast-iron-sear-system-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-cast-iron-sear-system-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-cast-iron-sear-system-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-cast-iron-sear-system-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-cast-iron-sear-system-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-cast-iron-sear-system-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-pro-rotisserie-kit-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-pro-rotisserie-kit-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-pro-rotisserie-kit-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-pro-rotisserie-kit-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-pro-rotisserie-kit-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-pro-rotisserie-kit-v2/06-compatible-appliance.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-smart-temperature-system-v2/01-hero-three-quarter.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-smart-temperature-system-v2/02-opposite-side.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-smart-temperature-system-v2/03-component-layout.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-smart-temperature-system-v2/04-material-detail.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-smart-temperature-system-v2/05-lifestyle-use.webp
+A	assets/images/products/kalm-outdoor/accessories/ridge-smart-temperature-system-v2/06-compatible-appliance.webp
+
+commit 57c577089876f96f3ef3f2f71faa56c2d22c3a8c
+Author: MunyaChipunza <MunyaChipunza@users.noreply.github.com>
+Date:   Sat Jul 11 20:20:54 2026 +0200
+
+    Add KALM Outdoor accessory preproduction drafts
+
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-insulated-cover/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-pizza-peel/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ember-16-turning-peel/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-grease-liner-pack/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-griddle-tool-set/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-forge-2-melting-dome/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-braai-tool-set/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-ridge-4-smoker-box/side.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/compatibility.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/contents.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/detail.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/hero.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/lifestyle.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/scene.svg
+A	assets/images/products/kalm-outdoor/accessories/kalm-outdoor-universal-prep-tray/side.svg
+
+commit 5d33e4b415ee0834a08d5cc7cbcebdd3bfa5d5ee
+Author: Codex <codex@local>
+Date:   Sat Jul 11 14:01:09 2026 +0200
+
+    Add basic KALM Move women live coverage
+
+A	assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp
+A	assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging/black/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging/blue/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging/pink/front.webp
+A	assets/images/products/kalm-move/women/crossline-legging/red/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp
+A	assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/blush/angle.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/blush/movement.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/cream/angle.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/cream/movement.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/sage/angle.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/sage/movement.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/stone/angle.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/stone/movement.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/white/angle.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/white/front.webp
+M	assets/images/products/kalm-move/women/everyday-bottle/white/movement.webp
+A	assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp
+A	assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/angle.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/movement.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/angle.webp
+M	assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp
+M	assets/images/products/kalm-move/women/studio-bottle/lavender-grey/front.webp
+M	assets/images/products/kalm-move/women/studio-bottle/sand/front.webp
+M	assets/images/products/kalm-move/women/studio-bottle/soft-olive/front.webp
+M	assets/images/products/kalm-move/women/studio-bottle/stone/front.webp
+
+commit 03011bdc8655f93d3a6f71ee669506c79d9c70fb
+Author: Codex <codex@local>
+Date:   Fri Jul 10 22:36:48 2026 +0200
+
+    Replace KALM Move women imagery with approved supplier models
+
+A	assets/images/products/kalm-move/women/align-ruched-short/black/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/black/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/black/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/blue/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/blue/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/brown/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/brown/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp
+M	assets/images/products/kalm-move/women/align-ruched-short/pink/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/pink/back.webp
+M	assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp
+M	assets/images/products/kalm-move/women/align-ruched-short/purple/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/purple/back.webp
+M	assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/red/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/red/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/red/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/white/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/white/back.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/white/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/angle.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp
+A	assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/berry-red/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/berry-red/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/black/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/black/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/black/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/charcoal/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/charcoal/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/coco/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/coco/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/peony/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/peony/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/pine/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/pine/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/pink/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/pink/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/white/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/white/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/white/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/wine-red/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/wine-red/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/yellow/angle.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/yellow/back.webp
+A	assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp
+A	assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/angle.webp
+A	assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/back.webp
+A	assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/black/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/blue/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/brown/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/brown/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/grey/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/grey/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/pink/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/pink/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/red/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/white/angle.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/white/back.webp
+A	assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp
+A	assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/angle.webp
+A	assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/back.webp
+A	assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/brown/angle.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/brown/back.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/angle.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/back.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/front.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/pink/angle.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/pink/back.webp
+A	assets/images/products/kalm-move/women/loose-split-running-short/pink/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/black/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/black/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/green/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/green/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/green/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/front.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/angle.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/back.webp
+A	assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/front.webp
+A	assets/images/products/kalm-move/women/split-running-skort/coral-orange/angle.webp
+A	assets/images/products/kalm-move/women/split-running-skort/coral-orange/back.webp
+A	assets/images/products/kalm-move/women/split-running-skort/coral-orange/front.webp
+A	assets/images/products/kalm-move/women/split-running-skort/neon-green/angle.webp
+A	assets/images/products/kalm-move/women/split-running-skort/neon-green/back.webp
+A	assets/images/products/kalm-move/women/split-running-skort/neon-green/front.webp
+A	assets/images/products/kalm-move/women/split-running-skort/pink/angle.webp
+A	assets/images/products/kalm-move/women/split-running-skort/pink/back.webp
+A	assets/images/products/kalm-move/women/split-running-skort/pink/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/front.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/angle.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/back.webp
+A	assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/front.webp
+
+commit 31445de208fd706e1aee50565ad597a635fedf28
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Fri Jul 10 21:02:03 2026 +0200
+
+    Update Wellness product catalogue
+
+A	assets/images/products/kalm-wellness/align-block-set-v2/charcoal/angle.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/charcoal/detail.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/charcoal/front.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/charcoal/lifestyle.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/angle.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/detail.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/lifestyle.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/sage/angle.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/sage/detail.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/sage/front.webp
+A	assets/images/products/kalm-wellness/align-block-set-v2/sage/lifestyle.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sage/angle.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sage/detail.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sage/front.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sage/lifestyle.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sand/angle.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sand/detail.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/stone/angle.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/stone/detail.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/stone/front.webp
+A	assets/images/products/kalm-wellness/breathe-mat-v2/stone/lifestyle.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/angle.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/detail.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/front.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/lifestyle.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/oat/angle.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/oat/detail.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/oat/lifestyle.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/sage/angle.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/sage/detail.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/sage/front.webp
+A	assets/images/products/kalm-wellness/centre-pouch-v2/sage/lifestyle.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/charcoal/angle.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/charcoal/detail.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/charcoal/front.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/charcoal/lifestyle.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/oat/angle.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/oat/detail.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/oat/lifestyle.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/sage/angle.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/sage/detail.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/sage/front.webp
+A	assets/images/products/kalm-wellness/ease-strap-v2/sage/lifestyle.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/black/angle.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/black/detail.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/black/front.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/black/lifestyle.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/olive/angle.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/olive/detail.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/olive/lifestyle.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/angle.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/detail.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp
+A	assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/lifestyle.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp
+D	assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/blush/angle.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/blush/detail.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/blush/lifestyle.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/charcoal/angle.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/charcoal/detail.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/charcoal/front.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/charcoal/lifestyle.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/oat/angle.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/oat/detail.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp
+A	assets/images/products/kalm-wellness/pause-journal-v2/oat/lifestyle.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/charcoal/angle.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/charcoal/detail.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/charcoal/front.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/charcoal/lifestyle.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/angle.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/detail.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/lifestyle.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/oat/angle.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/oat/detail.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp
+A	assets/images/products/kalm-wellness/restore-towel-v2/oat/lifestyle.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/charcoal/angle.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/charcoal/detail.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/charcoal/front.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/charcoal/lifestyle.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/angle.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/detail.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/lifestyle.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/sage/angle.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/sage/detail.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/sage/front.webp
+A	assets/images/products/kalm-wellness/ritual-set-v2/sage/lifestyle.webp
+
+commit 850d33c3a2d2a77ed5c888266402df5259c44052
+Author: Codex <codex@local>
+Date:   Fri Jul 10 15:56:39 2026 +0200
+
+    Add KALM Move open back short romper imagery
+
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/angle.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp
+A	assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp
+
+commit 5e1d6cc5145cf10ea779a772682a97d139a94a44
+Author: Codex <codex@local>
+Date:   Fri Jul 10 14:37:12 2026 +0200
+
+    Regenerate Form Short Set imagery from scratch
+
+A	assets/images/products/kalm-move/women/form-short-set-v2/black/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/brown/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/dark-red/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/khaki/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/orange/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/pink/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/yellow/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp
+A	assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp
+
+commit c708806a3f0d94d459cfde1ca2c9b8d9d1b9c768
+Author: Codex <codex@local>
+Date:   Fri Jul 10 13:01:17 2026 +0200
+
+    Regenerate Ease Flare Set imagery from scratch
+
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/black/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/black/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/cream/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/cream/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/sage/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp
+
+commit 1ea4e579c3054f9eccde1df5a179ae62cf0a7de7
+Author: Codex <codex@local>
+Date:   Fri Jul 10 11:36:38 2026 +0200
+
+    Version Ease Flare Set image paths
+
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/black/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/black/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/black/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/cream/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/cream/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/cream/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/espresso/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/espresso/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/espresso/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/sage/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/sage/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/sage/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/taupe/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/taupe/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v3/taupe/front.webp
+
+commit 78c508c9e8ed809d8c55dd9095a8d80655d33e65
+Author: Codex <codex@local>
+Date:   Fri Jul 10 10:59:22 2026 +0200
+
+    Refine Ease Flare Set buffalo logo placement
+
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/black/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/black/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/front.webp
+
+commit dc6a9fb85f8f521f270749e5b8511c709d92b528
+Author: Codex <codex@local>
+Date:   Fri Jul 10 10:33:01 2026 +0200
+
+    Add buffalo placement standard to Ease Flare Set
+
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/black/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/black/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/angle.webp
+M	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/front.webp
+
+commit bb30891e8f6a23442d177973778aead4edd6d8e1
+Author: Codex <codex@local>
+Date:   Fri Jul 10 10:11:49 2026 +0200
+
+    Reset KALM Move Ease Flare Set imagery
+
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/black/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/black/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/black/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/cream/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/espresso/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/sage/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/back.webp
+A	assets/images/products/kalm-move/women/ease-flare-set-v2/taupe/front.webp
+
+commit 7d7adf3208c30046c542b19caf0067c21fd8993c
+Author: Codex <codex@local>
+Date:   Fri Jul 10 08:53:57 2026 +0200
+
+    Version first KALM Move women imagery paths
+
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/angle.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/angle.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/back.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/angle.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/angle.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/back.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/front.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/angle.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/angle.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/back.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/back.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/front.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/angle.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/back.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/back.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/angle.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/angle.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/back.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp
+R100	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/front.webp	assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp
+
+commit 04d99242cdba911509876902737f51fbabc3e235
+Author: Codex <codex@local>
+Date:   Fri Jul 10 08:33:15 2026 +0200
+
+    Add diverse model imagery for first KALM Move women product
+
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/front.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/front.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/front.webp
+
+commit 9b634afd4203b6c4ee8745cf3ddda6839ee7041f
+Author: Codex <codex@local>
+Date:   Fri Jul 10 08:09:27 2026 +0200
+
+    Reset first KALM Move women product imagery
+
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp
+D	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/movement.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/front.webp
+D	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/movement.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/front.webp
+D	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/movement.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp
+D	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/movement.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/back.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/front.webp
+D	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/movement.webp
+
+commit a327704f40f623dd8617c870dd8f3db840a5a4b4
+Author: Codex <codex@local>
+Date:   Fri Jul 10 06:45:55 2026 +0200
+
+    Fix first KALM Move women supplier product imagery
+
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/front.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/movement.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/front.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/movement.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/front.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/movement.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp
+M	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/movement.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/front.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/movement.webp
+
+commit a892330822a1c3485a15347bfc52a5a397ac3673
+Author: Codex <codex@local>
+Date:   Fri Jul 10 00:52:20 2026 +0200
+
+    Reset KALM Move women imagery from supplier references
+
+A	assets/images/products/kalm-move/women/align-ruched-short/pink/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/pink/movement.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/purple/angle.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp
+A	assets/images/products/kalm-move/women/align-ruched-short/purple/movement.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/front.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/movement.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/angle.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/front.webp
+A	assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/movement.webp
+A	assets/images/products/kalm-move/women/balance-strappy-set/blossom-pink/angle.webp
+A	assets/images/products/kalm-move/women/balance-strappy-set/blossom-pink/front.webp
+A	assets/images/products/kalm-move/women/balance-strappy-set/blossom-pink/movement.webp
+A	assets/images/products/kalm-move/women/core-seamless-tank/black/angle.webp
+A	assets/images/products/kalm-move/women/core-seamless-tank/black/front.webp
+A	assets/images/products/kalm-move/women/core-seamless-tank/black/movement.webp
+A	assets/images/products/kalm-move/women/core-seamless-tank/charcoal/angle.webp
+A	assets/images/products/kalm-move/women/core-seamless-tank/charcoal/front.webp
+A	assets/images/products/kalm-move/women/core-seamless-tank/charcoal/movement.webp
+A	assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/angle.webp
+A	assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/front.webp
+A	assets/images/products/kalm-move/women/ease-flare-legging/gray-blue/movement.webp
+A	assets/images/products/kalm-move/women/form-short-set/white/angle.webp
+A	assets/images/products/kalm-move/women/form-short-set/white/front.webp
+A	assets/images/products/kalm-move/women/form-short-set/white/movement.webp
+A	assets/images/products/kalm-move/women/pulse-crop-short-set/black/angle.webp
+A	assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp
+A	assets/images/products/kalm-move/women/pulse-crop-short-set/black/movement.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/apricot/angle.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/apricot/front.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/apricot/movement.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/green/angle.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/green/front.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/green/movement.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/rose-red/angle.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/rose-red/front.webp
+A	assets/images/products/kalm-move/women/rise-long-sleeve-set/rose-red/movement.webp
+
+commit 5c0fff2da19269ff0f4ddd769c100d680c2b5f45
+Author: Codex <codex@local>
+Date:   Thu Jul 9 22:27:48 2026 +0200
+
+    Complete KALM Move and KS Active variant image rollout
+
+A	assets/images/products/kalm-move/men/base-compression-short/black/angle.webp
+A	assets/images/products/kalm-move/men/base-compression-short/black/front.webp
+A	assets/images/products/kalm-move/men/base-compression-short/black/movement.webp
+A	assets/images/products/kalm-move/men/base-compression-short/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/base-compression-short/charcoal/front.webp
+A	assets/images/products/kalm-move/men/base-compression-short/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/base-compression-short/navy/angle.webp
+A	assets/images/products/kalm-move/men/base-compression-short/navy/front.webp
+A	assets/images/products/kalm-move/men/base-compression-short/navy/movement.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/black/angle.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/black/front.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/black/movement.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/charcoal/front.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/navy/angle.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/navy/front.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/navy/movement.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/olive/angle.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/olive/front.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/olive/movement.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/white/angle.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/white/front.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/white/movement.webp
+A	assets/images/products/kalm-move/men/flow-training-short/black/angle.webp
+A	assets/images/products/kalm-move/men/flow-training-short/black/front.webp
+A	assets/images/products/kalm-move/men/flow-training-short/black/movement.webp
+A	assets/images/products/kalm-move/men/flow-training-short/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/flow-training-short/charcoal/front.webp
+A	assets/images/products/kalm-move/men/flow-training-short/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/flow-training-short/navy/angle.webp
+A	assets/images/products/kalm-move/men/flow-training-short/navy/front.webp
+A	assets/images/products/kalm-move/men/flow-training-short/navy/movement.webp
+A	assets/images/products/kalm-move/men/flow-training-short/olive/angle.webp
+A	assets/images/products/kalm-move/men/flow-training-short/olive/front.webp
+A	assets/images/products/kalm-move/men/flow-training-short/olive/movement.webp
+A	assets/images/products/kalm-move/men/lift-tank/black/angle.webp
+A	assets/images/products/kalm-move/men/lift-tank/black/front.webp
+A	assets/images/products/kalm-move/men/lift-tank/black/movement.webp
+A	assets/images/products/kalm-move/men/lift-tank/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/lift-tank/charcoal/front.webp
+A	assets/images/products/kalm-move/men/lift-tank/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/lift-tank/navy/angle.webp
+A	assets/images/products/kalm-move/men/lift-tank/navy/front.webp
+A	assets/images/products/kalm-move/men/lift-tank/navy/movement.webp
+A	assets/images/products/kalm-move/men/lift-tank/white/angle.webp
+A	assets/images/products/kalm-move/men/lift-tank/white/front.webp
+A	assets/images/products/kalm-move/men/lift-tank/white/movement.webp
+A	assets/images/products/kalm-move/men/move-cap/black/angle.webp
+A	assets/images/products/kalm-move/men/move-cap/black/front.webp
+A	assets/images/products/kalm-move/men/move-cap/black/movement.webp
+A	assets/images/products/kalm-move/men/move-cap/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/move-cap/charcoal/front.webp
+A	assets/images/products/kalm-move/men/move-cap/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/move-cap/navy/angle.webp
+A	assets/images/products/kalm-move/men/move-cap/navy/front.webp
+A	assets/images/products/kalm-move/men/move-cap/navy/movement.webp
+A	assets/images/products/kalm-move/men/move-cap/olive/angle.webp
+A	assets/images/products/kalm-move/men/move-cap/olive/front.webp
+A	assets/images/products/kalm-move/men/move-cap/olive/movement.webp
+A	assets/images/products/kalm-move/men/move-cap/white/angle.webp
+A	assets/images/products/kalm-move/men/move-cap/white/front.webp
+A	assets/images/products/kalm-move/men/move-cap/white/movement.webp
+A	assets/images/products/kalm-move/men/pace-jogger/black/angle.webp
+A	assets/images/products/kalm-move/men/pace-jogger/black/front.webp
+A	assets/images/products/kalm-move/men/pace-jogger/black/movement.webp
+A	assets/images/products/kalm-move/men/pace-jogger/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/pace-jogger/charcoal/front.webp
+A	assets/images/products/kalm-move/men/pace-jogger/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/pace-jogger/navy/angle.webp
+A	assets/images/products/kalm-move/men/pace-jogger/navy/front.webp
+A	assets/images/products/kalm-move/men/pace-jogger/navy/movement.webp
+A	assets/images/products/kalm-move/men/pace-jogger/olive/angle.webp
+A	assets/images/products/kalm-move/men/pace-jogger/olive/front.webp
+A	assets/images/products/kalm-move/men/pace-jogger/olive/movement.webp
+A	assets/images/products/kalm-move/men/pace-jogger/stone/angle.webp
+A	assets/images/products/kalm-move/men/pace-jogger/stone/front.webp
+A	assets/images/products/kalm-move/men/pace-jogger/stone/movement.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/black/angle.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/black/front.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/black/movement.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/charcoal/front.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/navy/angle.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/navy/front.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/navy/movement.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey/angle.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey/front.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey/movement.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/black/angle.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/black/front.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/black/movement.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/charcoal/front.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/cobalt/angle.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/cobalt/front.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/cobalt/movement.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/navy/angle.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/navy/front.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/navy/movement.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/black-pack/angle.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/black-pack/front.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/black-pack/movement.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-pack/angle.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-pack/front.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-pack/movement.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/white-pack/angle.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/white-pack/front.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/white-pack/movement.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/black/angle.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/black/front.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/black/movement.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/charcoal/front.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/navy/angle.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/navy/front.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/navy/movement.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/olive/angle.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/olive/front.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/olive/movement.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/blush/angle.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/blush/movement.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/cream/angle.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/cream/movement.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/sage/angle.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/sage/movement.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/stone/angle.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/stone/movement.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/white/angle.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/white/front.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/white/movement.webp
+A	assets/images/products/kalm-move/women/kalm-move-canvas-tote-and-cap/black-natural/angle.webp
+A	assets/images/products/kalm-move/women/kalm-move-canvas-tote-and-cap/black-natural/front.webp
+A	assets/images/products/kalm-move/women/kalm-move-canvas-tote-and-cap/black-natural/movement.webp
+A	assets/images/products/kalm-move/women/kalm-move-everyday-movement-legging/black/angle.webp
+A	assets/images/products/kalm-move/women/kalm-move-everyday-movement-legging/black/front.webp
+A	assets/images/products/kalm-move/women/kalm-move-everyday-movement-legging/black/movement.webp
+A	assets/images/products/kalm-move/women/kalm-move-medium-support-sports-bra/olive/angle.webp
+A	assets/images/products/kalm-move/women/kalm-move-medium-support-sports-bra/olive/front.webp
+A	assets/images/products/kalm-move/women/kalm-move-medium-support-sports-bra/olive/movement.webp
+A	assets/images/products/kalm-move/women/kalm-move-modest-performance-tee/oat/angle.webp
+A	assets/images/products/kalm-move/women/kalm-move-modest-performance-tee/oat/front.webp
+A	assets/images/products/kalm-move/women/kalm-move-modest-performance-tee/oat/movement.webp
+A	assets/images/products/kalm-move/women/kalm-move-studio-starter-set/black-olive-oat/angle.webp
+A	assets/images/products/kalm-move/women/kalm-move-studio-starter-set/black-olive-oat/front.webp
+A	assets/images/products/kalm-move/women/kalm-move-studio-starter-set/black-olive-oat/movement.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/angle.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/movement.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/angle.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/movement.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/angle.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/movement.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/angle.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/movement.webp
+A	assets/images/products/kalm-move/women/studio-bottle/lavender-grey/angle.webp
+A	assets/images/products/kalm-move/women/studio-bottle/lavender-grey/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle/lavender-grey/movement.webp
+A	assets/images/products/kalm-move/women/studio-bottle/sand/angle.webp
+A	assets/images/products/kalm-move/women/studio-bottle/sand/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle/sand/movement.webp
+A	assets/images/products/kalm-move/women/studio-bottle/soft-olive/angle.webp
+A	assets/images/products/kalm-move/women/studio-bottle/soft-olive/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle/soft-olive/movement.webp
+A	assets/images/products/kalm-move/women/studio-bottle/stone/angle.webp
+A	assets/images/products/kalm-move/women/studio-bottle/stone/front.webp
+A	assets/images/products/kalm-move/women/studio-bottle/stone/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine/movement.webp
+A	assets/images/products/ks-active/model-shoot/ks-open-back-romper/black/angle.webp
+A	assets/images/products/ks-active/model-shoot/ks-open-back-romper/black/front.webp
+A	assets/images/products/ks-active/model-shoot/ks-open-back-romper/black/movement.webp
+
+commit 1c2efd8c65db3cfab01255b2cb3b3b4540d90553
+Author: Codex <codex@local>
+Date:   Thu Jul 9 21:25:11 2026 +0200
+
+    Improve Motion Hoodie product imagery
+
+A	assets/images/products/kalm-move/men/motion-hoodie/black/angle.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/black/front.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/black/movement.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/charcoal/angle.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/charcoal/front.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/charcoal/movement.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/navy/angle.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/navy/front.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/navy/movement.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/olive/angle.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/olive/front.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/olive/movement.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/stone/angle.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/stone/front.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/stone/movement.webp
+
+commit b5eca526813d4548a65c4c24e01589b89ca55456
+Author: Codex <codex@local>
+Date:   Thu Jul 9 20:25:03 2026 +0200
+
+    Fix product navigation and variant images
+
+A	assets/images/products/kalm-move/men/base-compression-short/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/base-compression-short/navy-hero.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/black-hero.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/navy-hero.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/white-hero.webp
+A	assets/images/products/kalm-move/men/flow-training-short/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/flow-training-short/navy-hero.webp
+A	assets/images/products/kalm-move/men/flow-training-short/olive-hero.webp
+A	assets/images/products/kalm-move/men/lift-tank/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/lift-tank/navy-hero.webp
+A	assets/images/products/kalm-move/men/lift-tank/white-hero.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/black-hero.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/navy-hero.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/olive-hero.webp
+A	assets/images/products/kalm-move/men/move-cap/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/move-cap/navy-hero.webp
+A	assets/images/products/kalm-move/men/move-cap/olive-hero.webp
+A	assets/images/products/kalm-move/men/move-cap/white-hero.webp
+A	assets/images/products/kalm-move/men/pace-jogger/black-hero.webp
+A	assets/images/products/kalm-move/men/pace-jogger/navy-hero.webp
+A	assets/images/products/kalm-move/men/pace-jogger/olive-hero.webp
+A	assets/images/products/kalm-move/men/pace-jogger/stone-hero.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/black-hero.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/navy-hero.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/black-hero.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/cobalt-hero.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/black-pack-hero.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/white-pack-hero.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/navy-hero.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/olive-hero.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/blush-hero.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/sage-hero.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/stone-hero.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/white-hero.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink-hero.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green-hero.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige-hero.webp
+A	assets/images/products/kalm-move/women/studio-bottle/lavender-grey-hero.webp
+A	assets/images/products/kalm-move/women/studio-bottle/sand-hero.webp
+A	assets/images/products/kalm-move/women/studio-bottle/stone-hero.webp
+
+commit 9707bc55d16905a23c1b6562a923c983fa8835ba
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Thu Jul 9 19:16:37 2026 +0200
+
+    Build KALM Move men capsule
+
+A	assets/images/products/kalm-move/men/base-compression-short/black-hero.webp
+A	assets/images/products/kalm-move/men/core-performance-tee/olive-hero.webp
+A	assets/images/products/kalm-move/men/flow-training-short/black-hero.webp
+A	assets/images/products/kalm-move/men/lift-tank/black-hero.webp
+A	assets/images/products/kalm-move/men/motion-hoodie/stone-hero.webp
+A	assets/images/products/kalm-move/men/move-cap/black-hero.webp
+A	assets/images/products/kalm-move/men/pace-jogger/charcoal-hero.webp
+A	assets/images/products/kalm-move/men/protein-shaker-bottle/smoke-grey-hero.webp
+A	assets/images/products/kalm-move/men/sprint-running-short/navy-hero.webp
+A	assets/images/products/kalm-move/men/training-sock-3-pack/mixed-neutral-hero.webp
+A	assets/images/products/kalm-move/men/utility-gym-bag/black-hero.webp
+A	assets/images/products/kalm-move/women/everyday-bottle/cream-hero.webp
+A	assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white-hero.webp
+A	assets/images/products/kalm-move/women/studio-bottle/soft-olive-hero.webp
+
+commit 4d59e6b707905c8bd7a3f36ffecadff65b80ee17
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Thu Jul 9 17:49:49 2026 +0200
+
+    Add KS Active model imagery
+
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/black-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/purple-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/stone-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/taupe-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/charcoal-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine-01.webp
+A	assets/images/products/ks-active/model-shoot/ks-open-back-romper/black-01.webp
+
+commit 36064eb9f3ad38a6b4ea589b93fe3e31e85c4ff1
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Thu Jul 9 11:41:46 2026 +0200
+
+    Add KALM Outdoor cooking products
+
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-detail.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-front.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-lifestyle.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-side.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-detail.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-front.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-lifestyle.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-scene.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-side.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-detail.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-front.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-lifestyle.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-side.webp
+
+commit 90fd91f92badbfd99f8873e3d19b6192750a5f9b
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Wed Jul 8 19:39:45 2026 +0200
+
+    Separate deployments and improve storefront image system
+
+D	assets/images/generated/brand-tiles/kalm-living-tile.webp
+D	assets/images/generated/kalm-living/ceramic-soy-candle.webp
+D	assets/images/generated/kalm-living/linen-cushion-pair.webp
+D	assets/images/generated/kalm-living/ribbed-carafe-and-tumbler.webp
+D	assets/images/generated/kalm-living/stoneware-tray-and-vase.webp
+D	assets/images/generated/kalm-living/woven-throw-blanket.webp
+A	assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp
+A	assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp
+A	assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp
+A	assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp
+A	assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp
+A	assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp
+A	assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp
+A	assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp
+A	assets/images/products/kalm-home/kalm-home-woven-storage-basket-main.webp
+A	assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp
+A	assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-black-natural.webp
+A	assets/images/products/kalm-move/kalm-move-canvas-tote-and-cap-main.webp
+A	assets/images/products/kalm-move/kalm-move-everyday-movement-legging-black.webp
+A	assets/images/products/kalm-move/kalm-move-everyday-movement-legging-main.webp
+A	assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-main.webp
+A	assets/images/products/kalm-move/kalm-move-medium-support-sports-bra-olive.webp
+A	assets/images/products/kalm-move/kalm-move-modest-performance-tee-main.webp
+A	assets/images/products/kalm-move/kalm-move-modest-performance-tee-oat.webp
+A	assets/images/products/kalm-move/kalm-move-studio-starter-set-black-olive-oat.webp
+A	assets/images/products/kalm-move/kalm-move-studio-starter-set-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-main.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp
+A	assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp
+A	assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp
+A	assets/images/products/ks-active/ks-crisscross-back-sports-bra-black.webp
+A	assets/images/products/ks-active/ks-crisscross-back-sports-bra-blue.webp
+A	assets/images/products/ks-active/ks-crisscross-back-sports-bra-main.webp
+A	assets/images/products/ks-active/ks-crisscross-back-sports-bra-purple.webp
+A	assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-black.webp
+A	assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-main.webp
+A	assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-stone.webp
+A	assets/images/products/ks-active/ks-dual-zip-long-sleeve-crop-taupe.webp
+A	assets/images/products/ks-active/ks-high-stretch-seamless-leggings-black.webp
+A	assets/images/products/ks-active/ks-high-stretch-seamless-leggings-charcoal.webp
+A	assets/images/products/ks-active/ks-high-stretch-seamless-leggings-main.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-leggings-black.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-leggings-deep-plum.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-leggings-main.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-leggings-wine.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-shorts-black.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-shorts-deep-plum.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-shorts-main.webp
+A	assets/images/products/ks-active/ks-high-waist-seamless-shorts-wine.webp
+A	assets/images/products/ks-active/ks-open-back-romper-black.webp
+A	assets/images/products/ks-active/ks-open-back-romper-main.webp
+
+commit f2671de6312c6457603be2eb03c899ad40573fbf
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Wed Jul 8 17:17:16 2026 +0200
+
+    Update storefront variants and outdoor brand
+
+A	assets/images/generated/brand-tiles/kalm-outdoor-tile.webp
+A	assets/images/generated/kalm-outdoor/canvas-utility-tote.webp
+A	assets/images/generated/kalm-outdoor/insulated-carafe-and-tumbler.webp
+A	assets/images/generated/kalm-outdoor/matte-camp-lantern.webp
+A	assets/images/generated/kalm-outdoor/patio-cushion-pair.webp
+A	assets/images/generated/kalm-outdoor/weather-ready-picnic-blanket.webp
+A	assets/images/home-hero-shop-1200.webp
+A	assets/images/home-hero-shop-760.webp
+A	assets/images/home-hero-shop-900.webp
+
+commit 4bd39147e8c2a2ce60abba0e1159f13d3b0e52c4
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Wed Jul 8 12:34:29 2026 +0200
+
+    Rebuild KALM Collective storefront
+
+A	assets/images/generated/brand-tiles/kalm-home-tile.webp
+A	assets/images/generated/brand-tiles/kalm-living-tile.webp
+A	assets/images/generated/brand-tiles/kalm-move-tile.webp
+A	assets/images/generated/brand-tiles/kalm-wellness-tile.webp
+A	assets/images/generated/hero/kalm-collective-feature-band.webp
+A	assets/images/generated/hero/kalm-collective-home-hero.webp
+A	assets/images/generated/kalm-home/black-reed-diffuser.webp
+A	assets/images/generated/kalm-home/ceramic-mug-pair.webp
+A	assets/images/generated/kalm-home/charcoal-bath-towel-stack.webp
+A	assets/images/generated/kalm-home/white-cotton-bedding-set.webp
+A	assets/images/generated/kalm-home/woven-storage-basket.webp
+A	assets/images/generated/kalm-living/ceramic-soy-candle.webp
+A	assets/images/generated/kalm-living/linen-cushion-pair.webp
+A	assets/images/generated/kalm-living/ribbed-carafe-and-tumbler.webp
+A	assets/images/generated/kalm-living/stoneware-tray-and-vase.webp
+A	assets/images/generated/kalm-living/woven-throw-blanket.webp
+A	assets/images/generated/kalm-move/canvas-tote-and-cap.webp
+A	assets/images/generated/kalm-move/everyday-movement-legging.webp
+A	assets/images/generated/kalm-move/medium-support-sports-bra.webp
+A	assets/images/generated/kalm-move/modest-performance-tee.webp
+A	assets/images/generated/kalm-move/studio-starter-set.webp
+A	assets/images/generated/kalm-wellness/calm-roller-and-balm.webp
+A	assets/images/generated/kalm-wellness/matte-steel-water-bottle.webp
+A	assets/images/generated/kalm-wellness/olive-resistance-band-set.webp
+A	assets/images/generated/kalm-wellness/recovery-strap-and-cork-ball.webp
+A	assets/images/generated/kalm-wellness/studio-mat-and-towel.webp
+
+commit e6bd7e560296d663f17bb6debf35000b3e2220b2
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Wed Jul 8 09:39:00 2026 +0200
+
+    Correct storefront imagery and enquiry state
+
+A	assets/images/home-hero-source-collage.webp
+A	assets/images/ks-active-archive-hero.webp
+A	assets/images/ks-active-archive-tile.webp
+A	assets/images/ks-active/ks-crisscross-back-sports-bra.webp
+A	assets/images/ks-active/ks-crisscross-cut-out-bra.webp
+A	assets/images/ks-active/ks-cut-out-back-sports-bra.webp
+A	assets/images/ks-active/ks-dual-zip-long-sleeve-crop.webp
+A	assets/images/ks-active/ks-high-stretch-seamless-leggings.webp
+A	assets/images/ks-active/ks-high-support-cut-out-bra.webp
+A	assets/images/ks-active/ks-high-waist-seamless-leggings.webp
+A	assets/images/ks-active/ks-high-waist-seamless-shorts.webp
+A	assets/images/ks-active/ks-mid-support-crisscross-bra.webp
+A	assets/images/ks-active/ks-open-back-romper.webp
+A	assets/images/ks-active/ks-seamless-breathable-leggings.webp
+A	assets/images/ks-active/ks-seamless-breathable-shorts.webp
+
+commit cf0876325fcae081257b8b40b7ce2c863376c6de
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Wed Jul 8 07:56:32 2026 +0200
+
+    Rebuild as KALM Collective storefront
+
+A	assets/images/full-outfit-lifestyle-shop.webp
+A	assets/images/home-hero-shop.webp
+A	assets/images/kalm-move-brand-tile.webp
+A	assets/images/kalm-move-hero-shop.webp
+A	assets/images/ks-active-brand-tile.webp
+A	assets/images/ks-active-hero.webp
+A	assets/images/ks-archive-leggings-flatlay.webp
+A	assets/images/ks-archive-shorts-romper-flatlay.webp
+A	assets/images/ks-archive-sports-bras-flatlay.webp
+
+commit 36960455a23ee924cbc3de784fd209000d682bc9
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Tue Jul 7 20:31:44 2026 +0200
+
+    Build KALM Move validation site
+
+A	assets/images/bra-flatlay.webp
+A	assets/images/bra-lifestyle.webp
+A	assets/images/campaign-hero.webp
+A	assets/images/legging-bra-flatlay.webp
+A	assets/images/legging-bra-lifestyle.webp
+A	assets/images/legging-flatlay.webp
+A	assets/images/legging-lifestyle.webp
+A	assets/images/legging-tee-flatlay.webp
+A	assets/images/legging-tee-lifestyle.webp
+A	assets/images/starter-accessory-flatlay.webp
+A	assets/images/starter-lifestyle.webp
+A	assets/images/tee-flatlay.webp
+A	assets/images/tee-lifestyle.webp

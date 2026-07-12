@@ -1,0 +1,42 @@
+commit 31445de208fd706e1aee50565ad597a635fedf28
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Fri Jul 10 21:02:03 2026 +0200
+
+    Update Wellness product catalogue
+
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-amber-black.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-calm-roller-and-balm-main.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-black.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-matte-steel-water-bottle-main.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-main.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-olive-resistance-band-set-olive.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-black-cork.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-recovery-strap-and-cork-ball-main.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-black-charcoal.webp
+ delete mode 100644 assets/images/products/kalm-wellness/kalm-wellness-studio-mat-and-towel-main.webp
+
+commit 9b634afd4203b6c4ee8745cf3ddda6839ee7041f
+Author: Codex <codex@local>
+Date:   Fri Jul 10 08:09:27 2026 +0200
+
+    Reset first KALM Move women product imagery
+
+ delete mode 100644 assets/images/products/kalm-move/women/align-strappy-jumpsuit/black/movement.webp
+ delete mode 100644 assets/images/products/kalm-move/women/align-strappy-jumpsuit/date-brown/movement.webp
+ delete mode 100644 assets/images/products/kalm-move/women/align-strappy-jumpsuit/delicate-red/movement.webp
+ delete mode 100644 assets/images/products/kalm-move/women/align-strappy-jumpsuit/grayish-blue/movement.webp
+ delete mode 100644 assets/images/products/kalm-move/women/align-strappy-jumpsuit/pink-drink/movement.webp
+
+commit 90fd91f92badbfd99f8873e3d19b6192750a5f9b
+Author: Munya Chipunza <chipunzamunya@gmail.com>
+Date:   Wed Jul 8 19:39:45 2026 +0200
+
+    Separate deployments and improve storefront image system
+
+ delete mode 100644 assets/images/generated/brand-tiles/kalm-living-tile.webp
+ delete mode 100644 assets/images/generated/kalm-living/ceramic-soy-candle.webp
+ delete mode 100644 assets/images/generated/kalm-living/linen-cushion-pair.webp
+ delete mode 100644 assets/images/generated/kalm-living/ribbed-carafe-and-tumbler.webp
+ delete mode 100644 assets/images/generated/kalm-living/stoneware-tray-and-vase.webp
+ delete mode 100644 assets/images/generated/kalm-living/woven-throw-blanket.webp
+ delete mode 100644 branding/kalm-living-display-logo.png

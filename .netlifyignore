@@ -1,5 +1,7 @@
 .qa/
 .git/
 .netlify/
+reports/
+tools/
 Thumbs.db
 .DS_Store

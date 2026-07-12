@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-07-12T08:32:21.433Z",
+  "sourceAudit": "OUTDOOR_IMAGE_ASSET_INDEX.md",
+  "contactSheet": "reports/drive-recovery/contact-sheets/outdoor-lifestyle-candidates.webp",
+  "brandPanelDecision": {
+    "selectedCandidate": {
+      "DriveSourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\brand-heroes\\kalm-outdoor-brand-hero-lifestyle-v1.webp",
+      "SourceSha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+      "LocalDestination": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
+      "LocalSha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+      "CopiedAtUtc": "2026-07-12T07:52:48.4842297Z",
+      "ReasonSelected": "Adults cooking and gathering around KALM Outdoor equipment; satisfies the pending Brands-page outdoor lifestyle requirement.",
+      "PreviewUse": "KALM Outdoor Brands-page lifestyle panel",
+      "ApprovalState": "preview_candidate_pending_munya_visual_approval"
+    },
+    "visualResult": "Adults cooking and gathering around Outdoor equipment are visible in the recovered historical hero.",
+    "previewUse": "enabled in the third draft",
+    "approvalState": "preview_candidate_pending_munya_visual_approval"
+  },
+  "candidates": [
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\brand-heroes\\kalm-outdoor-brand-hero-lifestyle-v1.webp",
+      "sha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+      "dimensions": "1448x1086",
+      "modifiedTime": "2026-07-10T21:03:41.729Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "selected_preview_candidate"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\kalm-outdoor\\patio-cushion-pair.webp",
+      "sha256": "F390ECFB0B27041B8D0226BB2F71660F517A029809AA5CCDA0612DB26BE7AD4E",
+      "dimensions": "900x900",
+      "modifiedTime": "2026-07-08T14:47:58.699Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-ember-16-lifestyle.webp",
+      "sha256": "B9F428D3C97A58EA5D2C0E91903CE3A356C4E17FE8CE38D628E3EF68F4F94DEB",
+      "dimensions": "1200x1500",
+      "modifiedTime": "2026-07-09T09:21:31.508Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-ember-16-scene.webp",
+      "sha256": "3642C0FE3428261076506E868F9E024B45EDB14224444806F0598303D1CC9F4C",
+      "dimensions": "1200x1500",
+      "modifiedTime": "2026-07-09T09:21:32.14Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-forge-2-lifestyle.webp",
+      "sha256": "14073D529343DD6DA2AC424C511D657EC48D5DEB10A38B9519CE8973458C8149",
+      "dimensions": "1200x1500",
+      "modifiedTime": "2026-07-09T09:21:34.981Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-forge-2-scene.webp",
+      "sha256": "F11977B78138230976114E98002FF06916A21DE5829D7522E03DFA975287CFB4",
+      "dimensions": "1200x1500",
+      "modifiedTime": "2026-07-09T09:21:35.694Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-patio-cushion-pair-ivory-black.webp",
+      "sha256": "F390ECFB0B27041B8D0226BB2F71660F517A029809AA5CCDA0612DB26BE7AD4E",
+      "dimensions": "900x900",
+      "modifiedTime": "2026-07-08T14:47:58.699Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-patio-cushion-pair-main.webp",
+      "sha256": "F390ECFB0B27041B8D0226BB2F71660F517A029809AA5CCDA0612DB26BE7AD4E",
+      "dimensions": "900x900",
+      "modifiedTime": "2026-07-08T14:47:58.699Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-ridge-4-lifestyle.webp",
+      "sha256": "D1BE7D13C30DAF85ABC621B692A632B967B7B4356B546D63B32F89DF73B9F3B3",
+      "dimensions": "1200x1500",
+      "modifiedTime": "2026-07-09T09:21:38.322Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    },
+    {
+      "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-outdoor\\kalm-outdoor-ridge-4-scene.webp",
+      "sha256": "1E4EFEE718B563F3E6280DE9CF5CE59D6CC3B75A53DE60916206ED4B3FA70CE5",
+      "dimensions": "1200x1500",
+      "modifiedTime": "2026-07-09T09:21:38.871Z",
+      "reviewStatus": "found_pending_review",
+      "hashReadError": null,
+      "likelyUse": "lifestyle or campaign candidate",
+      "assessment": "not_selected_for_brand_panel"
+    }
+  ],
+  "accessoryPolicy": "No low-detail Outdoor accessory render is reactivated. Unsourced accessories remain text-led, compatibility-led, and waitlist-only."
+}

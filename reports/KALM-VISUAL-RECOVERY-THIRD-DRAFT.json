@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-07-12T08:34:37.239Z",
+  "checkpoint": "dc423b9686509a90c81de5fef25e9d9eeb1d8fc9",
+  "branch": "codex/kalm-visual-recovery-preview-20260712",
+  "headAtAssembly": "dc423b9686509a90c81de5fef25e9d9eeb1d8fc9",
+  "productionChanged": false,
+  "draftPreview": "pending_deploy",
+  "selectedDriveFiles": [
+    {
+      "DriveSourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\brand-heroes\\kalm-move-brand-hero-lifestyle-v1.webp",
+      "SourceSha256": "6B723801B84821D933CDDEA5CCDA4186BCF303D01FC9FD9BD9E3BC0D10426CE1",
+      "LocalDestination": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
+      "LocalSha256": "6B723801B84821D933CDDEA5CCDA4186BCF303D01FC9FD9BD9E3BC0D10426CE1",
+      "CopiedAtUtc": "2026-07-12T07:52:48.4842297Z",
+      "ReasonSelected": "Adult man and woman wearing KALM Move attire in a natural walking setting; satisfies the pending Brands-page lifestyle requirement.",
+      "PreviewUse": "KALM Move Brands-page lifestyle panel",
+      "ApprovalState": "preview_candidate_pending_munya_visual_approval"
+    },
+    {
+      "DriveSourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\brand-heroes\\kalm-outdoor-brand-hero-lifestyle-v1.webp",
+      "SourceSha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+      "LocalDestination": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
+      "LocalSha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+      "CopiedAtUtc": "2026-07-12T07:52:48.4842297Z",
+      "ReasonSelected": "Adults cooking and gathering around KALM Outdoor equipment; satisfies the pending Brands-page outdoor lifestyle requirement.",
+      "PreviewUse": "KALM Outdoor Brands-page lifestyle panel",
+      "ApprovalState": "preview_candidate_pending_munya_visual_approval"
+    }
+  ],
+  "men": {
+    "foundOutOf46": 46,
+    "usedInPreview": 0,
+    "decision": "No men V3 staged image is wired in the third draft. The existing historical men-recovery-v2 lane remains active until Munya gives product-detail approval."
+  },
+  "women": {
+    "products": 19,
+    "productColourRecords": 108,
+    "driveCandidateFiles": 31,
+    "previewChanges": 0
+  },
+  "bottles": {
+    "products": 3,
+    "productColourRecords": 13,
+    "previewChanges": 0
+  },
+  "outdoor": {
+    "lifestyleCandidates": 10,
+    "brandPanel": {
+      "selectedCandidate": {
+        "DriveSourcePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\generated\\brand-heroes\\kalm-outdoor-brand-hero-lifestyle-v1.webp",
+        "SourceSha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+        "LocalDestination": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
+        "LocalSha256": "9FE5532ABA7B44328376F85C07C88D308635709ED3930747E4AB6975D2639EE8",
+        "CopiedAtUtc": "2026-07-12T07:52:48.4842297Z",
+        "ReasonSelected": "Adults cooking and gathering around KALM Outdoor equipment; satisfies the pending Brands-page outdoor lifestyle requirement.",
+        "PreviewUse": "KALM Outdoor Brands-page lifestyle panel",
+        "ApprovalState": "preview_candidate_pending_munya_visual_approval"
+      },
+      "visualResult": "Adults cooking and gathering around Outdoor equipment are visible in the recovered historical hero.",
+      "previewUse": "enabled in the third draft",
+      "approvalState": "preview_candidate_pending_munya_visual_approval"
+    }
+  },
+  "screenshots": {
+    "secondDraftBrandsReference": "visual-recovery-preview-evidence/brands-desktop.png",
+    "secondDraftMobileFooterReference": "visual-recovery-preview-evidence/mobile-footer-375x812.png",
+    "thirdDraft": []
+  },
+  "unresolved": [
+    "Munya visual approval is required before any production action.",
+    "Men V3 staged images remain pending product-detail approval and are not wired.",
+    "Drive entries with explicit hash-read errors remain inventory-only and are not recovery candidates."
+  ]
+}

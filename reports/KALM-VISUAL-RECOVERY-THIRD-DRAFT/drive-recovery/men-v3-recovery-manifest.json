@@ -1,0 +1,1115 @@
+{
+  "generatedAt": "2026-07-12T08:32:21.433Z",
+  "stagingManifestSource": "MEN_EMBEDDED_LOGO_V3_MANIFEST.md",
+  "expectedImageCount": 46,
+  "foundImageCount": 46,
+  "usedInPreviewCount": 0,
+  "decision": "No men V3 staged image is wired in the third draft. The existing historical men-recovery-v2 lane remains active until Munya gives product-detail approval.",
+  "contactSheet": "reports/drive-recovery/contact-sheets/men-v3-recovered-master.webp",
+  "images": [
+    {
+      "product": "KALM Move Flow Training Short",
+      "productId": "kalm-move-flow-training-short",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/flow-training-short-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\black\\front.webp",
+          "sha256": "E168770074C73F88D5068AC00B3ED1154F7641CEFB47854F6E06561096E6E78A",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:34.876Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Flow Training Short",
+      "productId": "kalm-move-flow-training-short",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/flow-training-short-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\charcoal\\front.webp",
+          "sha256": "E0FAC4D4777EFD9A966AB553F556418F7FC11D6F8722EF640B8B16156FBA79B9",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:35.5Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Flow Training Short",
+      "productId": "kalm-move-flow-training-short",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/flow-training-short-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\navy\\front.webp",
+          "sha256": "129D8BE03A7B6BD216E45878A0C157903CA0072A73924B97CFFD1EE95E52006C",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:36.053Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Flow Training Short",
+      "productId": "kalm-move-flow-training-short",
+      "colour": "Olive",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/flow-training-short-v3/olive/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\flow-training-short-v3\\olive\\front.webp",
+          "sha256": "5CD5CFE4223376353FFBCA18F68D42C68366A13E0EB751AF95EAF318493FF18F",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:36.577Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/flow-training-short/olive/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Sprint Running Short",
+      "productId": "kalm-move-sprint-running-short",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/sprint-running-short-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\black\\front.webp",
+          "sha256": "8D822D7FDFB91553DD4BE8EC6BF3406EFBC2547D868FD5F80363AAF6D85BAF78",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:52.781Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Sprint Running Short",
+      "productId": "kalm-move-sprint-running-short",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/sprint-running-short-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\navy\\front.webp",
+          "sha256": "E5033E97428B1393C4A0EFAD1C668D8E0B18A7F93D763A3E9B1CEFB4246A2132",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:54.615Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Sprint Running Short",
+      "productId": "kalm-move-sprint-running-short",
+      "colour": "Cobalt",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/sprint-running-short-v3/cobalt/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\cobalt\\front.webp",
+          "sha256": "B08D6D5A1E335AE082DC10E4B09D9531C40A3EE65EF2B5F7B056EC358FC54336",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:53.983Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/cobalt/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Sprint Running Short",
+      "productId": "kalm-move-sprint-running-short",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/sprint-running-short-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\sprint-running-short-v3\\charcoal\\front.webp",
+          "sha256": "B9D005BC71F06B554F697954CD90FD392FC6C8FAEA09B012D5C8613B8CEB14E8",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:53.418Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/sprint-running-short/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Core Performance Tee",
+      "productId": "kalm-move-core-performance-tee",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/core-performance-tee-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\black\\front.webp",
+          "sha256": "B82B721F6B5D4778A144EBA86D611CB80A4349AECD6FC2E8F5AA0BB8B920FEB7",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:31.503Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Core Performance Tee",
+      "productId": "kalm-move-core-performance-tee",
+      "colour": "White",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/core-performance-tee-v3/white/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\white\\front.webp",
+          "sha256": "97CACF2F1BC35D59458A745E9BB5A64728F68255D42933222991F1996CEFE229",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:34.18Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/white/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Core Performance Tee",
+      "productId": "kalm-move-core-performance-tee",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/core-performance-tee-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\charcoal\\front.webp",
+          "sha256": "E409CF0D9EDBDECA1D7165CA99EE834A0605FD3C35C2C427C5829E5EE9750766",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:32.101Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Core Performance Tee",
+      "productId": "kalm-move-core-performance-tee",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/core-performance-tee-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\navy\\front.webp",
+          "sha256": "1C3D81A646FB70D0C7E02413F63F1763F9A2540383383B8C28CE8FFED1FC6A29",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:32.864Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Core Performance Tee",
+      "productId": "kalm-move-core-performance-tee",
+      "colour": "Olive",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/core-performance-tee-v3/olive/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\core-performance-tee-v3\\olive\\front.webp",
+          "sha256": "E9948701FF1B68B6E5DBA5061EF1B6B68E29633C3EBA1EEAF7E34BD8AED9AAB9",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:33.554Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/core-performance-tee/olive/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Lift Tank",
+      "productId": "kalm-move-lift-tank",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/lift-tank-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\black\\front.webp",
+          "sha256": "C6EFC31151C8032374DDE241C8EF83E664ACF272A57626B105554DC26547310E",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:37.202Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Lift Tank",
+      "productId": "kalm-move-lift-tank",
+      "colour": "White",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/lift-tank-v3/white/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\white\\front.webp",
+          "sha256": "D30B09078CA1B1C218CDAB32F6BDCA27A0A2992D373F621291222481EDCCAD92",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:39.183Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/white/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Lift Tank",
+      "productId": "kalm-move-lift-tank",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/lift-tank-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\charcoal\\front.webp",
+          "sha256": "5CBB6EE1CAE7B63AAD70FB82F47BACF1CD1D9486EF53B9B3D4A87A90E3756BB2",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:37.952Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Lift Tank",
+      "productId": "kalm-move-lift-tank",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/lift-tank-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\lift-tank-v3\\navy\\front.webp",
+          "sha256": "431225EB63347BA3190942876E6DFE775A954054E7C320EA2E4B8682D6F6F497",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:38.574Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/lift-tank/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Pace Jogger",
+      "productId": "kalm-move-pace-jogger",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/pace-jogger-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\black\\front.webp",
+          "sha256": "31B2AD533D2E18CBC65CCBD2B13F3F1A88E305CB936A4AC2E03E2175D87DC428",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:47.109Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Pace Jogger",
+      "productId": "kalm-move-pace-jogger",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/pace-jogger-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\charcoal\\front.webp",
+          "sha256": "02000B5A8067AFD1DC560AF1F11E0250E8ABF89432D02028390E2C22C280B5E5",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:47.717Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Pace Jogger",
+      "productId": "kalm-move-pace-jogger",
+      "colour": "Stone",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/pace-jogger-v3/stone/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\stone\\front.webp",
+          "sha256": "601A795C67A80D4445B15447DD777182923CB8053B69CDEF75F8C96003B0C521",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:49.59Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/stone/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Pace Jogger",
+      "productId": "kalm-move-pace-jogger",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/pace-jogger-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\navy\\front.webp",
+          "sha256": "F8B3114F5A99620C2817958CE343BD2D46B2B97AFA0C69F48841B9FFCC52F426",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:48.321Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Pace Jogger",
+      "productId": "kalm-move-pace-jogger",
+      "colour": "Olive",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/pace-jogger-v3/olive/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\pace-jogger-v3\\olive\\front.webp",
+          "sha256": "80497490DF5409B0FE12FD58640AB7D7836336510786819EA47FF3E251ECC0FF",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:48.942Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/pace-jogger/olive/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Motion Hoodie",
+      "productId": "kalm-move-motion-hoodie",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/motion-hoodie-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\black\\front.webp",
+          "sha256": "3CF354600C67A036B47E0C9159304C3E5CE6371697A1FA930D1A39007F513551",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:39.824Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Motion Hoodie",
+      "productId": "kalm-move-motion-hoodie",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/motion-hoodie-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\charcoal\\front.webp",
+          "sha256": "F3E3F0B4D52EE50D9A4CC8091B5775A8245C795AFF26766B30A3D7431FEE3302",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:40.547Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Motion Hoodie",
+      "productId": "kalm-move-motion-hoodie",
+      "colour": "Stone",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/motion-hoodie-v3/stone/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\stone\\front.webp",
+          "sha256": "2A239B539A70587ACA03F705112AF77F686CB0F89E53ED46EE84E85665106249",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:42.507Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/stone/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Motion Hoodie",
+      "productId": "kalm-move-motion-hoodie",
+      "colour": "Olive",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/motion-hoodie-v3/olive/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\olive\\front.webp",
+          "sha256": "65A570285DDC0728E603261D558F006453A5A7973FE86BB90B80321F466CA924",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:41.933Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/olive/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Motion Hoodie",
+      "productId": "kalm-move-motion-hoodie",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/motion-hoodie-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\motion-hoodie-v3\\navy\\front.webp",
+          "sha256": "9E5BE2AF411B6B4C757271E99D433FD7ADB2842017A275C75FBD74D2A80E0499",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:41.242Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/motion-hoodie/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Base Compression Short",
+      "productId": "kalm-move-base-compression-short",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/base-compression-short-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\base-compression-short-v3\\black\\front.webp",
+          "sha256": "C28EC2D445F720A10C69161E4C39BDA69C836FA0DC447E0A592A2B5CB2424154",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:29.943Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Base Compression Short",
+      "productId": "kalm-move-base-compression-short",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/base-compression-short-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\base-compression-short-v3\\charcoal\\front.webp",
+          "sha256": "8BA198C391C41965BDC85CB1B53A89784954C0DA04C85B2E65BA08CFF60E49B4",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:30.442Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Base Compression Short",
+      "productId": "kalm-move-base-compression-short",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/base-compression-short-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\base-compression-short-v3\\navy\\front.webp",
+          "sha256": "041FA0E5731E2341505A0074660709E9AAA4FE6D28FC216D105909EFD2BCBAFE",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:30.961Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/base-compression-short/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Cap",
+      "productId": "kalm-move-cap",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/move-cap-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\black\\front.webp",
+          "sha256": "8BEE8B6AB46C62643A120402569B46F66E354589B4D10A37CDE3B32CF69EEA09",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:43.272Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Cap",
+      "productId": "kalm-move-cap",
+      "colour": "White",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/move-cap-v3/white/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\white\\front.webp",
+          "sha256": "BFF2AB2DE2904243B14AA4ABA9B179DFF3EBB1C2414ED22CEC6C42F8DAEF6F96",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:46.45Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/white/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Cap",
+      "productId": "kalm-move-cap",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/move-cap-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\navy\\front.webp",
+          "sha256": "C8FBD794309CCBE5204267F8D4E0AAE88484D8947129FC3A68D88BD3E6E35CD2",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:44.761Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Cap",
+      "productId": "kalm-move-cap",
+      "colour": "Olive",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/move-cap-v3/olive/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\olive\\front.webp",
+          "sha256": "6FD72FEBD529ADB867A2C3C534F8384A8168F67CF52D5B02207D6347FAF01C57",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:45.557Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/olive/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Cap",
+      "productId": "kalm-move-cap",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/move-cap-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\move-cap-v3\\charcoal\\front.webp",
+          "sha256": "E2A01F64EC02099C42581962AC22CB2228F68D138EB64DC84A4E3D54A672B414",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:43.955Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/move-cap/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Training Sock 3-Pack",
+      "productId": "kalm-move-training-sock-3-pack",
+      "colour": "Black Pack",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/training-sock-3-pack-v3/black-pack/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\training-sock-3-pack-v3\\black-pack\\front.webp",
+          "sha256": "A08C49A30DC0FE86DFC1FBFC0619F09A2A58C12CA60D455789C041D69CBABF29",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:55.416Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/black-pack/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Training Sock 3-Pack",
+      "productId": "kalm-move-training-sock-3-pack",
+      "colour": "White Pack",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/training-sock-3-pack-v3/white-pack/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\training-sock-3-pack-v3\\white-pack\\front.webp",
+          "sha256": "D8F46F7F006B860D00D8F69B67107D9ED647E20D8FB0FEC1FA995305CD54815E",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:57.156Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/white-pack/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Training Sock 3-Pack",
+      "productId": "kalm-move-training-sock-3-pack",
+      "colour": "Mixed Neutral Pack",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/training-sock-3-pack-v3/mixed-neutral-pack/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\training-sock-3-pack-v3\\mixed-neutral-pack\\front.webp",
+          "sha256": "ED461E1EF0CDA604CA6F6DFA95A0FC8A6111AB49CF883BAB704159323BF5A7EF",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:56.296Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/training-sock-3-pack/mixed-neutral-pack/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Utility Gym Bag",
+      "productId": "kalm-move-utility-gym-bag",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/utility-gym-bag-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\black\\front.webp",
+          "sha256": "41BA2216681862AF7CA765C120BEF30C658845CCBAA1277BB696DBAC1C27BBFE",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:57.762Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Utility Gym Bag",
+      "productId": "kalm-move-utility-gym-bag",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/utility-gym-bag-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\charcoal\\front.webp",
+          "sha256": "718B0D5A2BC5D3FF25918A30E155E3F97D54D096BAD8BF5367E91D101F3732F6",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:58.343Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Utility Gym Bag",
+      "productId": "kalm-move-utility-gym-bag",
+      "colour": "Olive",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/utility-gym-bag-v3/olive/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\olive\\front.webp",
+          "sha256": "34BEACFC5ED34A4064539D4B59D5271E7F111B7B7A31974AB341A120320B63C3",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:59.591Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/olive/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Utility Gym Bag",
+      "productId": "kalm-move-utility-gym-bag",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/utility-gym-bag-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\utility-gym-bag-v3\\navy\\front.webp",
+          "sha256": "62265B640D34F36A4E30AB3D2AE73C07FE74C41B9B9024D6A37B78AC228CC3F9",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:58.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/utility-gym-bag/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Protein Shaker Bottle",
+      "productId": "kalm-move-protein-shaker-bottle",
+      "colour": "Black",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/protein-shaker-bottle-v3/black/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\black\\front.webp",
+          "sha256": "025652015E4B26F50196FB3CA1B9B58C58CE9F60CDE260877696933F1D30143F",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:50.236Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/black/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Protein Shaker Bottle",
+      "productId": "kalm-move-protein-shaker-bottle",
+      "colour": "Charcoal",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/protein-shaker-bottle-v3/charcoal/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\charcoal\\front.webp",
+          "sha256": "9A0C850589C5E0AA4A8821787308F1DE55193DF45B91C546D73E613A7BBF7AB4",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:50.937Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/charcoal/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Protein Shaker Bottle",
+      "productId": "kalm-move-protein-shaker-bottle",
+      "colour": "Navy",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/protein-shaker-bottle-v3/navy/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\navy\\front.webp",
+          "sha256": "0FB7DEF79E10C0DF850C892542D21F70DEA58DE914E9C1A0854B37869F818D51",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:51.565Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/navy/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    },
+    {
+      "product": "KALM Move Protein Shaker Bottle",
+      "productId": "kalm-move-protein-shaker-bottle",
+      "colour": "Smoke Grey",
+      "expectedPath": "assets/images/staged/kalm-move/men-embedded-logo-v3/protein-shaker-bottle-v3/smoke-grey/front.webp",
+      "actualDrivePaths": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\staged\\kalm-move\\men-embedded-logo-v3\\protein-shaker-bottle-v3\\smoke-grey\\front.webp",
+          "sha256": "51294B6468F4355AE96ACC12F17482D429E2309B1E31B45B2D1F081987A78BDC",
+          "dimensions": "1200x1500",
+          "modifiedTime": "2026-07-10T19:11:52.177Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "actualExistence": true,
+      "matchingSourcePngExistence": true,
+      "currentLiveImagePath": "assets/images/products/kalm-move/men-recovery-v2/protein-shaker-bottle/smoke-grey/front.webp",
+      "visualComparisonResult": "Contact-sheet review found a coherent studio image, but this is staged generated embedded-mark imagery and requires Munya product-detail approval.",
+      "betterThanCurrentProduction": "not_proven",
+      "extraOrIncorrectMark": "No oversized duplicate mark seen at contact-sheet scale; exact mark fidelity remains pending detail review.",
+      "candidateStatus": "found_pending_review",
+      "previewDecision": "retain_best_historical_current_preview_path"
+    }
+  ]
+}

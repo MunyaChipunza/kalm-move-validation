@@ -1,0 +1,624 @@
+{
+  "generatedAt": "2026-07-12T08:32:21.433Z",
+  "contactSheet": "reports/drive-recovery/contact-sheets/bottle-candidates.webp",
+  "studioBottleRule": "The corrupted Studio Bottle image is excluded and is not eligible for copy or preview use.",
+  "summary": {
+    "products": 3,
+    "productColourRecords": 13,
+    "previewChanges": 0
+  },
+  "comparisons": [
+    {
+      "product": "KALM Move Everyday Bottle",
+      "productId": "kalm-move-everyday-bottle",
+      "colour": "Cream",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\blush\\movement.webp",
+          "sha256": "73C5D5E8FCD61CE29ACB735BF1A577AF81581D05406612EADD94968F9A89DF1F",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.103Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\cream\\movement.webp",
+          "sha256": "F80D7B7B1DD64279EAFD241E0CCA0CBD2EB8F26C404F70FCD63E9F3291072E91",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.158Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\sage\\movement.webp",
+          "sha256": "979DA557555AA7FC5C0B902FBBB15D6A715CC1025A7F4E53D1EFAB1B400A9FCB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.232Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\stone\\movement.webp",
+          "sha256": "EFC3157BED7D009C46ED3AB966B1421F678C2588972B830D1030B5D57323A6F7",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.299Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\white\\movement.webp",
+          "sha256": "22FF34D72BCEB2C5957593A10BFE0B038AF7D68C0050A19D47C3555F1A1C0436",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/everyday-bottle/cream/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Everyday Bottle",
+      "productId": "kalm-move-everyday-bottle",
+      "colour": "Blush",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\blush\\movement.webp",
+          "sha256": "73C5D5E8FCD61CE29ACB735BF1A577AF81581D05406612EADD94968F9A89DF1F",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.103Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\cream\\movement.webp",
+          "sha256": "F80D7B7B1DD64279EAFD241E0CCA0CBD2EB8F26C404F70FCD63E9F3291072E91",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.158Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\sage\\movement.webp",
+          "sha256": "979DA557555AA7FC5C0B902FBBB15D6A715CC1025A7F4E53D1EFAB1B400A9FCB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.232Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\stone\\movement.webp",
+          "sha256": "EFC3157BED7D009C46ED3AB966B1421F678C2588972B830D1030B5D57323A6F7",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.299Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\white\\movement.webp",
+          "sha256": "22FF34D72BCEB2C5957593A10BFE0B038AF7D68C0050A19D47C3555F1A1C0436",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/everyday-bottle/blush/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Everyday Bottle",
+      "productId": "kalm-move-everyday-bottle",
+      "colour": "Sage",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\blush\\movement.webp",
+          "sha256": "73C5D5E8FCD61CE29ACB735BF1A577AF81581D05406612EADD94968F9A89DF1F",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.103Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\cream\\movement.webp",
+          "sha256": "F80D7B7B1DD64279EAFD241E0CCA0CBD2EB8F26C404F70FCD63E9F3291072E91",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.158Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\sage\\movement.webp",
+          "sha256": "979DA557555AA7FC5C0B902FBBB15D6A715CC1025A7F4E53D1EFAB1B400A9FCB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.232Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\stone\\movement.webp",
+          "sha256": "EFC3157BED7D009C46ED3AB966B1421F678C2588972B830D1030B5D57323A6F7",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.299Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\white\\movement.webp",
+          "sha256": "22FF34D72BCEB2C5957593A10BFE0B038AF7D68C0050A19D47C3555F1A1C0436",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/everyday-bottle/sage/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Everyday Bottle",
+      "productId": "kalm-move-everyday-bottle",
+      "colour": "Stone",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\blush\\movement.webp",
+          "sha256": "73C5D5E8FCD61CE29ACB735BF1A577AF81581D05406612EADD94968F9A89DF1F",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.103Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\cream\\movement.webp",
+          "sha256": "F80D7B7B1DD64279EAFD241E0CCA0CBD2EB8F26C404F70FCD63E9F3291072E91",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.158Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\sage\\movement.webp",
+          "sha256": "979DA557555AA7FC5C0B902FBBB15D6A715CC1025A7F4E53D1EFAB1B400A9FCB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.232Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\stone\\movement.webp",
+          "sha256": "EFC3157BED7D009C46ED3AB966B1421F678C2588972B830D1030B5D57323A6F7",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.299Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\white\\movement.webp",
+          "sha256": "22FF34D72BCEB2C5957593A10BFE0B038AF7D68C0050A19D47C3555F1A1C0436",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/everyday-bottle/stone/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Everyday Bottle",
+      "productId": "kalm-move-everyday-bottle",
+      "colour": "White",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\blush\\movement.webp",
+          "sha256": "73C5D5E8FCD61CE29ACB735BF1A577AF81581D05406612EADD94968F9A89DF1F",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.103Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\cream\\movement.webp",
+          "sha256": "F80D7B7B1DD64279EAFD241E0CCA0CBD2EB8F26C404F70FCD63E9F3291072E91",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.158Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\sage\\movement.webp",
+          "sha256": "979DA557555AA7FC5C0B902FBBB15D6A715CC1025A7F4E53D1EFAB1B400A9FCB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.232Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\stone\\movement.webp",
+          "sha256": "EFC3157BED7D009C46ED3AB966B1421F678C2588972B830D1030B5D57323A6F7",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.299Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\everyday-bottle\\white\\movement.webp",
+          "sha256": "22FF34D72BCEB2C5957593A10BFE0B038AF7D68C0050A19D47C3555F1A1C0436",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:49.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/everyday-bottle/white/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Slim Wellness Bottle",
+      "productId": "kalm-move-slim-wellness-bottle",
+      "colour": "Matte White",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\dusty-pink\\movement.webp",
+          "sha256": "0E76E0ACA478C3AABF5DE21E3A33E746038542371DDEFA5510B2F6AE8F240FED",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.942Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\matte-white\\movement.webp",
+          "sha256": "C28B32459DA62FFFCB46D75598C4920AA729005158FEA28E8148D6AE7DF2F980",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.99Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\sage-green\\movement.webp",
+          "sha256": "E1032091F90C19C9C928308396A4989FADA187A48CBE6C9B6C4FC7A8B3919F8B",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.054Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\soft-beige\\movement.webp",
+          "sha256": "148792A38425EC8D66C3B0D06C7F4CFBCBD7341D5123FB05820A3A931AC97DDB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.129Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/slim-wellness-bottle/matte-white/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Slim Wellness Bottle",
+      "productId": "kalm-move-slim-wellness-bottle",
+      "colour": "Soft Beige",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\dusty-pink\\movement.webp",
+          "sha256": "0E76E0ACA478C3AABF5DE21E3A33E746038542371DDEFA5510B2F6AE8F240FED",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.942Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\matte-white\\movement.webp",
+          "sha256": "C28B32459DA62FFFCB46D75598C4920AA729005158FEA28E8148D6AE7DF2F980",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.99Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\sage-green\\movement.webp",
+          "sha256": "E1032091F90C19C9C928308396A4989FADA187A48CBE6C9B6C4FC7A8B3919F8B",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.054Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\soft-beige\\movement.webp",
+          "sha256": "148792A38425EC8D66C3B0D06C7F4CFBCBD7341D5123FB05820A3A931AC97DDB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.129Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/slim-wellness-bottle/soft-beige/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Slim Wellness Bottle",
+      "productId": "kalm-move-slim-wellness-bottle",
+      "colour": "Dusty Pink",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\dusty-pink\\movement.webp",
+          "sha256": "0E76E0ACA478C3AABF5DE21E3A33E746038542371DDEFA5510B2F6AE8F240FED",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.942Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\matte-white\\movement.webp",
+          "sha256": "C28B32459DA62FFFCB46D75598C4920AA729005158FEA28E8148D6AE7DF2F980",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.99Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\sage-green\\movement.webp",
+          "sha256": "E1032091F90C19C9C928308396A4989FADA187A48CBE6C9B6C4FC7A8B3919F8B",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.054Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\soft-beige\\movement.webp",
+          "sha256": "148792A38425EC8D66C3B0D06C7F4CFBCBD7341D5123FB05820A3A931AC97DDB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.129Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/slim-wellness-bottle/dusty-pink/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Slim Wellness Bottle",
+      "productId": "kalm-move-slim-wellness-bottle",
+      "colour": "Sage Green",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\dusty-pink\\movement.webp",
+          "sha256": "0E76E0ACA478C3AABF5DE21E3A33E746038542371DDEFA5510B2F6AE8F240FED",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.942Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\matte-white\\movement.webp",
+          "sha256": "C28B32459DA62FFFCB46D75598C4920AA729005158FEA28E8148D6AE7DF2F980",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:50.99Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\sage-green\\movement.webp",
+          "sha256": "E1032091F90C19C9C928308396A4989FADA187A48CBE6C9B6C4FC7A8B3919F8B",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.054Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\slim-wellness-bottle\\soft-beige\\movement.webp",
+          "sha256": "148792A38425EC8D66C3B0D06C7F4CFBCBD7341D5123FB05820A3A931AC97DDB",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.129Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "second-draft retained source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/slim-wellness-bottle/sage-green/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Studio Bottle",
+      "productId": "kalm-move-studio-bottle",
+      "colour": "Stone",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\lavender-grey\\movement.webp",
+          "sha256": "8D2F0859045D91300E9D072DC20079BE7A5B8B6ED3539B52A4B947715A483FAC",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.202Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\sand\\movement.webp",
+          "sha256": "09B39CC5BC17724626992DAEF1E5BE8886A799E2FB39FD537940C2E6DB543BE6",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.259Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\soft-olive\\movement.webp",
+          "sha256": "5A11F1E5956FBB7EA115F84C94438036A404CBD3175C59282361F79A0A479ED8",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.303Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\stone\\movement.webp",
+          "sha256": "5E854630937D5672D7A3985A9C29DCD16C33EDBC14A0BED81AB133988BD10741",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "5d33e4b415ee0834a08d5cc7cbcebdd3bfa5d5ee clean front-image source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/stone/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Studio Bottle",
+      "productId": "kalm-move-studio-bottle",
+      "colour": "Sand",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/sand/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\lavender-grey\\movement.webp",
+          "sha256": "8D2F0859045D91300E9D072DC20079BE7A5B8B6ED3539B52A4B947715A483FAC",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.202Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\sand\\movement.webp",
+          "sha256": "09B39CC5BC17724626992DAEF1E5BE8886A799E2FB39FD537940C2E6DB543BE6",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.259Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\soft-olive\\movement.webp",
+          "sha256": "5A11F1E5956FBB7EA115F84C94438036A404CBD3175C59282361F79A0A479ED8",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.303Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\stone\\movement.webp",
+          "sha256": "5E854630937D5672D7A3985A9C29DCD16C33EDBC14A0BED81AB133988BD10741",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "5d33e4b415ee0834a08d5cc7cbcebdd3bfa5d5ee clean front-image source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/sand/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Studio Bottle",
+      "productId": "kalm-move-studio-bottle",
+      "colour": "Lavender Grey",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/lavender-grey/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\lavender-grey\\movement.webp",
+          "sha256": "8D2F0859045D91300E9D072DC20079BE7A5B8B6ED3539B52A4B947715A483FAC",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.202Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\sand\\movement.webp",
+          "sha256": "09B39CC5BC17724626992DAEF1E5BE8886A799E2FB39FD537940C2E6DB543BE6",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.259Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\soft-olive\\movement.webp",
+          "sha256": "5A11F1E5956FBB7EA115F84C94438036A404CBD3175C59282361F79A0A479ED8",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.303Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\stone\\movement.webp",
+          "sha256": "5E854630937D5672D7A3985A9C29DCD16C33EDBC14A0BED81AB133988BD10741",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "5d33e4b415ee0834a08d5cc7cbcebdd3bfa5d5ee clean front-image source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/lavender-grey/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    },
+    {
+      "product": "KALM Move Studio Bottle",
+      "productId": "kalm-move-studio-bottle",
+      "colour": "Soft Olive",
+      "currentPreviewImage": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/soft-olive/front.webp",
+      "driveCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\lavender-grey\\movement.webp",
+          "sha256": "8D2F0859045D91300E9D072DC20079BE7A5B8B6ED3539B52A4B947715A483FAC",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.202Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\sand\\movement.webp",
+          "sha256": "09B39CC5BC17724626992DAEF1E5BE8886A799E2FB39FD537940C2E6DB543BE6",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.259Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\soft-olive\\movement.webp",
+          "sha256": "5A11F1E5956FBB7EA115F84C94438036A404CBD3175C59282361F79A0A479ED8",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.303Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\studio-bottle\\stone\\movement.webp",
+          "sha256": "5E854630937D5672D7A3985A9C29DCD16C33EDBC14A0BED81AB133988BD10741",
+          "dimensions": "900x1125",
+          "modifiedTime": "2026-07-10T19:03:51.365Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "5d33e4b415ee0834a08d5cc7cbcebdd3bfa5d5ee clean front-image source",
+      "corruptedStudioBottleEligible": false,
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/studio-bottle-recovery-v2/soft-olive/front.webp",
+      "decision": "retain_second_draft_clean_source"
+    }
+  ]
+}

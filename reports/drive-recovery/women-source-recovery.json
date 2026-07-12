@@ -1,0 +1,2405 @@
+{
+  "generatedAt": "2026-07-12T08:32:21.433Z",
+  "sourceAudit": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+  "gitAnchor": "03011bdc8655f93d3a6f71ee669506c79d9c70fb",
+  "contactSheet": "reports/drive-recovery/contact-sheets/women-historical-source-master.webp",
+  "prohibitedLane": "All failed women -v3 buffalo composites remain quarantined.",
+  "summary": {
+    "products": 19,
+    "productColourRecords": 108,
+    "driveCandidateFiles": 31,
+    "previewChanges": 0
+  },
+  "comparisons": [
+    {
+      "product": "KALM Move Align Halter Legging Set",
+      "productId": "kalm-move-align-strappy-jumpsuit",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Halter Legging Set",
+      "productId": "kalm-move-align-strappy-jumpsuit",
+      "colour": "Pink Drink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Halter Legging Set",
+      "productId": "kalm-move-align-strappy-jumpsuit",
+      "colour": "Grayish Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Halter Legging Set",
+      "productId": "kalm-move-align-strappy-jumpsuit",
+      "colour": "Delicate Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Halter Legging Set",
+      "productId": "kalm-move-align-strappy-jumpsuit",
+      "colour": "Date Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Ease Flare Set",
+      "productId": "kalm-move-ease-flare-set",
+      "colour": "Sage",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Ease Flare Set",
+      "productId": "kalm-move-ease-flare-set",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Ease Flare Set",
+      "productId": "kalm-move-ease-flare-set",
+      "colour": "Taupe",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Ease Flare Set",
+      "productId": "kalm-move-ease-flare-set",
+      "colour": "Espresso",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Ease Flare Set",
+      "productId": "kalm-move-ease-flare-set",
+      "colour": "Cream",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "White",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Khaki",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Dark Purple",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Sky Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Yellow",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Orange",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Form Short Set",
+      "productId": "kalm-move-form-short-set",
+      "colour": "Dark Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\form-short-set\\white\\movement.webp",
+          "sha256": "B4EEA36C32A4B8B30DF08C71C48CB6B9E70997AE6050BA32AEDF9C90905D3404",
+          "dimensions": "565x908",
+          "modifiedTime": "2026-07-10T19:03:49.982Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Pulse Crop Short Set",
+      "productId": "kalm-move-pulse-crop-short-set",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\pulse-crop-short-set\\black\\movement.webp",
+          "sha256": "FE55898FB015872E75BE0096A4503063DF6A75E05E0C3050D1B19ECF87D975E9",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.708Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Light Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Gray",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Cream Yellow",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Gray Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Dark Purple",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Burgundy Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Rose Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Light Grey",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Wide-Leg Yoga Pant",
+      "productId": "kalm-move-wide-leg-yoga-pant",
+      "colour": "Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Van Dyke Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Dress Blues",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Fawn",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Crushed Limestone",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Magic Forest Green",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Lemon Yellow",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Coffee Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Bluebird",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Blossom Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Balance X-Back Legging Set",
+      "productId": "kalm-move-balance-strappy-set",
+      "colour": "Pomegranate Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\balance-strappy-set\\blossom-pink\\movement.webp",
+          "sha256": "94CFE4881E78E37B6A0B8AA6489E5D7DFE848AFD7C657AC180DC952A7522EDF1",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.888Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "White",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Halter Biker Short Set",
+      "productId": "kalm-move-halter-biker-short-set",
+      "colour": "Grey",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Apricot",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Rose Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Light Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Coffee",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Green",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Navy",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Grey",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Magenta",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Rise Zip Jacket Set",
+      "productId": "kalm-move-rise-long-sleeve-set",
+      "colour": "Light Grey",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\apricot\\movement.webp",
+          "sha256": "03DC7D43871B512C22AFBB069017654E66534910EDFDF87A54B2395D6AF806CE",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.767Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\green\\movement.webp",
+          "sha256": "0108099FDE2E352DF3CF1C63FAA77C038106377F155CDAF0CB04A787AD90C4E3",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.825Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\rise-long-sleeve-set\\rose-red\\movement.webp",
+          "sha256": "5C2BB60BF27F1D2204E857E379D720394D21A81DAF9337B26A7EB7077202F462",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:50.875Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Lightweight Windbreaker Set",
+      "productId": "kalm-move-lightweight-windbreaker-set",
+      "colour": "Light Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Cropped Zip Yoga Jacket",
+      "productId": "kalm-move-cropped-zip-yoga-jacket",
+      "colour": "Dark Green",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "White",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Charcoal",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Pine",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Peony",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Coco",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Berry Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Wine Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Core Short Unitard",
+      "productId": "kalm-move-core-seamless-tank",
+      "colour": "Yellow",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\black\\movement.webp",
+          "sha256": "B099B9C542D192EBFD09DD64F595763AA8CC5FAE0096FF8D0670488C80DFF335",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.975Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\core-seamless-tank\\charcoal\\movement.webp",
+          "sha256": "5C99F64D5E8E2C989EFE01278EBE9D420C9A86679D21AA1A16AA288737D36E91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:48.034Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Purple",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "Charcoal Gray",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Align Ruched Short",
+      "productId": "kalm-move-align-ruched-short",
+      "colour": "White",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp",
+      "matchingDriveHistoricalCandidates": [
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\pink\\movement.webp",
+          "sha256": "6F42C2569A304D79892116A1BA8192761D5974670D77B4DA5C416920DA4D5A91",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.766Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        },
+        {
+          "drivePath": "G:\\My Drive\\kalm_collective_ks_active_relaunch_pack\\kalm_move_validation_sprint_pack\\kalm_move_simulation_baseline\\site\\assets\\images\\products\\kalm-move\\women\\align-ruched-short\\purple\\movement.webp",
+          "sha256": "E65EAB0F6338D06142EAF687CF33401BDDBFCE9BB59D5B272647C7296B9EDF1C",
+          "dimensions": "584x879",
+          "modifiedTime": "2026-07-10T19:03:47.823Z",
+          "reviewStatus": "found_pending_review",
+          "hashReadError": null
+        }
+      ],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Loose Split Running Short",
+      "productId": "kalm-move-loose-split-running-short",
+      "colour": "Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Loose Split Running Short",
+      "productId": "kalm-move-loose-split-running-short",
+      "colour": "Olive Taupe",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Loose Split Running Short",
+      "productId": "kalm-move-loose-split-running-short",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/loose-split-running-short/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/loose-split-running-short/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Split Running Skort",
+      "productId": "kalm-move-split-running-skort",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/split-running-skort/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/split-running-skort/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Split Running Skort",
+      "productId": "kalm-move-split-running-skort",
+      "colour": "Coral Orange",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/split-running-skort/coral-orange/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/split-running-skort/coral-orange/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Split Running Skort",
+      "productId": "kalm-move-split-running-skort",
+      "colour": "Neon Green",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/split-running-skort/neon-green/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/split-running-skort/neon-green/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Open Back Short Romper",
+      "productId": "kalm-move-open-back-short-romper",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Open Back Short Romper",
+      "productId": "kalm-move-open-back-short-romper",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Open Back Short Romper",
+      "productId": "kalm-move-open-back-short-romper",
+      "colour": "Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Open Back Short Romper",
+      "productId": "kalm-move-open-back-short-romper",
+      "colour": "Army Green",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Open Back Short Romper",
+      "productId": "kalm-move-open-back-short-romper",
+      "colour": "Navy",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Open Back Short Romper",
+      "productId": "kalm-move-open-back-short-romper",
+      "colour": "Apricot",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Pocket Racerback Crop Bra",
+      "productId": "kalm-move-pocket-racerback-crop-bra",
+      "colour": "Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Pocket Racerback Crop Bra",
+      "productId": "kalm-move-pocket-racerback-crop-bra",
+      "colour": "Brown",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Contrast Flare Set",
+      "productId": "kalm-move-contrast-flare-set",
+      "colour": "Gray",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Contrast Flare Set",
+      "productId": "kalm-move-contrast-flare-set",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Contrast Flare Set",
+      "productId": "kalm-move-contrast-flare-set",
+      "colour": "Purple",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Contrast Flare Set",
+      "productId": "kalm-move-contrast-flare-set",
+      "colour": "Green",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Crossline Legging",
+      "productId": "kalm-move-crossline-legging",
+      "colour": "Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/crossline-legging/red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/crossline-legging/red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Crossline Legging",
+      "productId": "kalm-move-crossline-legging",
+      "colour": "Blue",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Crossline Legging",
+      "productId": "kalm-move-crossline-legging",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/crossline-legging/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/crossline-legging/black/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Crossline Legging",
+      "productId": "kalm-move-crossline-legging",
+      "colour": "Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Drift Crop Wide Pant",
+      "productId": "kalm-move-drift-crop-wide-pant",
+      "colour": "Cream White",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Drift Crop Wide Pant",
+      "productId": "kalm-move-drift-crop-wide-pant",
+      "colour": "Sunny Orange",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Drift Crop Wide Pant",
+      "productId": "kalm-move-drift-crop-wide-pant",
+      "colour": "Millennial Pink",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Drift Crop Wide Pant",
+      "productId": "kalm-move-drift-crop-wide-pant",
+      "colour": "Wine Red",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp",
+      "decision": "retain_second_draft"
+    },
+    {
+      "product": "KALM Move Drift Crop Wide Pant",
+      "productId": "kalm-move-drift-crop-wide-pant",
+      "colour": "Black",
+      "currentFailedProductionImage": "quarantined; no v3 composite is eligible for restoration",
+      "secondDraftRestoredImage": "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp",
+      "matchingDriveHistoricalCandidates": [],
+      "gitHistoricalSource": "07258b3a6f2960718750a78b57a01f9537d4ce34 where applicable",
+      "supplierReferenceEvidence": "KALM_MOVE_IMAGE_REBUILD_AUDIT.md",
+      "visualQuality": "retain second-draft historical restoration unless a source candidate proves cleaner at visual review",
+      "garmentAccuracy": "second-draft source retained",
+      "logoState": "no post-hoc buffalo mark permitted",
+      "preferredPreviewCandidate": "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp",
+      "decision": "retain_second_draft"
+    }
+  ]
+}
