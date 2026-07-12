@@ -1,0 +1,34 @@
+{
+  "title": "KALM Move Bottles Photorealistic Draft",
+  "date": "2026-07-12",
+  "stage": "generation_and_review_only",
+  "nccEntry": "KALM Bottle Photorealistic Generation Exception, 12 July 2026.",
+  "integrationAuthorised": false,
+  "netlifyDraftCreated": false,
+  "productionDeployment": false,
+  "generation": {
+    "system": "OpenAI image generation with controlled colour variation and approved-mark application",
+    "calls": 16,
+    "retainedGeneratedPhotoMasters": 10,
+    "rejectedGeneratedFrames": 6,
+    "rejectedFirstColourPassAssets": 60,
+    "cost": "not surfaced by the image-generation system"
+  },
+  "validation": {
+    "reviewAssetsExpected": 60,
+    "reviewAssetsPresent": 60,
+    "dimensions": [1122, 1402],
+    "publicReviewPathReferences": 0,
+    "approvedBuffaloSha256": "994b2e455cb441eaa1b04b26899a13ebb096fc389d59c64718bc5140ecda7ea2",
+    "nccRefetched": true
+  },
+  "products": [
+    {"name": "KALM Move Everyday Bottle", "colours": ["Black", "Cream", "Lilac", "Sky Blue"], "viewsPerColour": 3, "supplierLock": "Approved existing source", "status": "review_only_candidate"},
+    {"name": "KALM Move Slim Wellness Bottle", "colours": ["Matte White", "Stone", "Soft Pink", "Sage"], "viewsPerColour": 3, "supplierLock": "Approved existing source", "status": "review_only_candidate"},
+    {"name": "KALM Move Studio Bottle", "colours": ["Black", "Stone", "Lilac", "Sky Blue"], "viewsPerColour": 3, "supplierLock": "Approved existing source", "status": "review_only_candidate"},
+    {"name": "KALM Move Protein Shaker Bottle", "colours": ["Black", "Charcoal", "Navy", "Smoke Grey"], "viewsPerColour": 3, "supplierLock": "Approved existing source", "status": "review_only_candidate"},
+    {"name": "KALM Move All-Day Straw Tumbler", "colours": ["Black", "Cream", "Lilac", "Sky Blue"], "viewsPerColour": 3, "supplierLock": "Provisional reference only", "status": "provisional_concept_for_review"}
+  ],
+  "reviewPack": "reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/",
+  "nextGate": "Munya visual approval before a separately authorised Stage 2."
+}

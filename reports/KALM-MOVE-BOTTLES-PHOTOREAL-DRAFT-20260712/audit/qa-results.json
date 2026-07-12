@@ -1,0 +1,12 @@
+{
+  "reviewAssetCount": 60,
+  "expectedAssetCount": 60,
+  "dimensionsExpected": [
+    1122,
+    1402
+  ],
+  "allDimensionsValid": true,
+  "errors": [],
+  "silhouetteConsistency": "Each colour/view derives from one locked master image per SKU/view; only colour and source-mark contrast vary.",
+  "publicPathExposure": "All new review output paths are under reports/KALM-MOVE-BOTTLES-PHOTOREAL-DRAFT-20260712/."
+}
