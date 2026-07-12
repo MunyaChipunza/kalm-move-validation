@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "generatedFor": "KALM Move Bottles Stage 2",
+  "releaseCandidate": "92b3216d2feba18e282b289db95c56509f9d0140",
+  "branch": "codex/kalm-move-bottles-stage2-20260712",
+  "stage1ReviewCommit": "7dcab8867be78ff133e1debf5518736120ca6472",
+  "baselineCommit": "699c571f9a5462688a935482ec88f2af38f7e2d2",
+  "rollbackTag": "checkpoint/pre-kalm-bottles-stage2-20260712",
+  "draft": {
+    "siteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+    "siteName": "kalm-collective-storefront",
+    "deployId": "6a53ccb972c185e4420af41d",
+    "url": "https://6a53ccb972c185e4420af41d--kalm-collective-storefront.netlify.app"
+  },
+  "previousProductionDeploy": "6a5399df38d1843624b586fb",
+  "imageIntegration": {
+    "assetCount": 60,
+    "sourceManifest": "product-image-manifest.json",
+    "hashesVerified": true,
+    "publicRoot": "assets/images/products/kalm-move/bottles-v2"
+  },
+  "products": [
+    {"name": "Everyday Bottle", "colours": ["Black", "Cream", "Lilac", "Sky Blue"], "price": 279, "collections": ["men", "women"], "purchasable": true},
+    {"name": "Slim Wellness Bottle", "colours": ["Matte White", "Stone", "Soft Pink", "Sage"], "price": 299, "collections": ["women"], "purchasable": true},
+    {"name": "Studio Bottle", "colours": ["Black", "Stone", "Lilac", "Sky Blue"], "price": 329, "collections": ["women"], "purchasable": true},
+    {"name": "Protein Shaker Bottle", "colours": ["Black", "Charcoal", "Navy", "Smoke Grey"], "price": 249, "collections": ["men", "women"], "purchasable": true},
+    {"name": "All-Day Straw Tumbler", "colours": ["Black", "Cream", "Lilac", "Sky Blue"], "price": null, "collections": ["men", "women"], "purchasable": false, "comingSoon": true, "supplierLock": "provisional pending supplier/sample lock"}
+  ],
+  "draftChecks": {
+    "desktop": true,
+    "mobile375x812": true,
+    "colourGallerySwitch": true,
+    "selectedColourBagImage": true,
+    "tumblerNoPurchaseControls": true
+  },
+  "production": {"state": "not yet promoted at report creation"}
+}
