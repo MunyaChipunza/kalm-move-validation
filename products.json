@@ -9037,7 +9037,7 @@
       "audience": "men",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/front.jpg",
+      "image": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
       "description": "A clean shaker bottle for training days and post-session routines.",
       "shortDescription": "A clean shaker bottle for training days and post-session routines.",
       "longDescription": "The Protein Shaker Bottle is designed as a practical gym essential with a premium KALM Move finish. It should feel strong, simple and easy to carry, with a small buffalo mark that keeps the branding refined.",
@@ -9068,48 +9068,43 @@
         "shaker",
         "men-v4-preview",
         "women",
-        "bottles-v3"
+        "bottles-v4"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/angle.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/charcoal/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/charcoal/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/charcoal/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/charcoal/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/angle.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/navy/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/navy/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/navy/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/navy/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/angle.webp"
           ]
         },
         "Smoke Grey": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/smoke-grey/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/smoke-grey/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/smoke-grey/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/smoke-grey/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/angle.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/front.jpg",
-        "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/angle.jpg",
-        "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/black/detail.jpg"
+        "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/angle.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Protein Shaker Bottle | KALM Move",
@@ -10151,7 +10146,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/front.jpg",
+      "image": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
       "description": "A clean everyday bottle for movement, errands and studio days.",
       "shortDescription": "A clean everyday bottle for movement, errands and studio days.",
       "longDescription": "The Everyday Bottle is designed as an easy carry piece for daily movement. It should feel stylish enough for errands and studio sessions, while still fitting naturally into the KALM Move accessories range.",
@@ -10180,48 +10175,43 @@
         "accessories",
         "bottle",
         "men",
-        "bottles-v3"
+        "bottles-v4"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/angle.webp"
           ]
         },
         "Cream": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/everyday-bottle/cream/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/cream/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/cream/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/cream/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/angle.webp"
           ]
         },
         "Lilac": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/everyday-bottle/lilac/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/lilac/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/lilac/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/lilac/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/angle.webp"
           ]
         },
         "Sky Blue": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/everyday-bottle/sky-blue/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/sky-blue/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/sky-blue/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/everyday-bottle/sky-blue/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/angle.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/front.jpg",
-        "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/angle.jpg",
-        "assets/images/products/kalm-move/bottles-v3/everyday-bottle/black/detail.jpg"
+        "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/angle.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Everyday Bottle | KALM Move",
@@ -10308,7 +10298,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/front.jpg",
+      "image": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
       "description": "A sleek wellness bottle with a slim profile and calm studio finish.",
       "shortDescription": "A sleek wellness bottle with a slim profile and calm studio finish.",
       "longDescription": "The Slim Wellness Bottle is a refined accessory for studio sessions, walks and daily routines. Its slim profile keeps the look elegant, while the small buffalo mark keeps the KALM Move identity subtle and premium.",
@@ -10336,48 +10326,43 @@
         "women",
         "accessories",
         "bottle",
-        "bottles-v3"
+        "bottles-v4"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Matte White": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp"
           ]
         },
         "Stone": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/stone/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/stone/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/stone/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/stone/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/angle.webp"
           ]
         },
         "Soft Pink": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/soft-pink/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/soft-pink/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/soft-pink/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/soft-pink/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/angle.webp"
           ]
         },
         "Sage": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/sage/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/sage/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/sage/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/sage/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/angle.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/front.jpg",
-        "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/angle.jpg",
-        "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/matte-white/detail.jpg"
+        "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Slim Wellness Bottle | KALM Move",
@@ -10463,7 +10448,7 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/front.jpg",
+      "image": "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
       "description": "A studio-ready bottle for Pilates, yoga and everyday movement.",
       "shortDescription": "A studio-ready bottle for Pilates, yoga and everyday movement.",
       "longDescription": "The Studio Bottle is designed for calm movement spaces and daily routines. It has a clean shape, muted studio colours and a small buffalo mark that feels intentional without becoming loud.",
@@ -10492,48 +10477,43 @@
         "accessories",
         "bottle",
         "studio",
-        "bottles-v3"
+        "bottles-v4"
       ],
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/angle.webp"
           ]
         },
         "Stone": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/studio-bottle/stone/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/stone/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/stone/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/stone/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/angle.webp"
           ]
         },
         "Lilac": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/studio-bottle/lilac/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/lilac/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/lilac/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/lilac/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/angle.webp"
           ]
         },
         "Sky Blue": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/angle.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/front.jpg",
-        "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/angle.jpg",
-        "assets/images/products/kalm-move/bottles-v3/studio-bottle/black/detail.jpg"
+        "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/angle.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move Studio Bottle | KALM Move",
@@ -12786,7 +12766,7 @@
       ],
       "moveCategory": "accessories",
       "stockLabel": "Coming soon",
-      "image": "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/front.jpg",
+      "image": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
       "description": "A larger straw tumbler for desks, commutes and all-day hydration.",
       "shortDescription": "A larger straw tumbler for desks, commutes and all-day hydration.",
       "longDescription": "A larger straw tumbler for desks, commutes and all-day hydration.",
@@ -12813,48 +12793,43 @@
         "bottle",
         "tumbler",
         "coming-soon",
-        "bottles-v3"
+        "bottles-v4"
       ],
       "badge": "Coming soon",
       "ctaLabel": "Coming soon",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/angle.webp"
           ]
         },
         "Cream": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/cream/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/cream/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/cream/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/cream/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/angle.webp"
           ]
         },
         "Lilac": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/lilac/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/lilac/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/lilac/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/lilac/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/angle.webp"
           ]
         },
         "Sky Blue": {
-          "hero": "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/sky-blue/front.jpg",
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/sky-blue/front.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/sky-blue/angle.jpg",
-            "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/sky-blue/detail.jpg"
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/angle.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/front.jpg",
-        "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/angle.jpg",
-        "assets/images/products/kalm-move/bottles-v3/all-day-straw-tumbler/black/detail.jpg"
+        "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/angle.webp"
       ],
       "relatedProducts": [],
       "metaTitle": "KALM Move All-Day Straw Tumbler | KALM Move",

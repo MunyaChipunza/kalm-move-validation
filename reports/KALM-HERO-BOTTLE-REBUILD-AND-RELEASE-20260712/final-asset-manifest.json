@@ -1,0 +1,444 @@
+{
+  "generationSystem": "OpenAI built-in image generation",
+  "generationCalls": 43,
+  "acceptedNativeBottleAssets": 40,
+  "acceptedHeroAssets": 3,
+  "bottleDimensions": [
+    1122,
+    1402
+  ],
+  "conversion": "Each accepted PNG was converted once to quality-95 WebP. No rejected V2/V3 source was read or copied.",
+  "approvedBuffaloSha256": "994b2e455cb441eaa1b04b26899a13ebb096fc389d59c64718bc5140ecda7ea2",
+  "assets": [
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-139e0f55-5b5f-40f5-bb08-f8ee08c5cb74.png",
+      "sourceSha256": "c3ea0533f00c2565aa0296325da727c9536e488a078b296c4be40c663e82ec2b",
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp",
+      "sha256": "07ba73994b91b97593b14c3d8ee79b188bca5e50ee120c7bcb8917aaec39d4ae",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-d6096ddb-3702-4287-9028-a5d52803ce7b.png",
+      "sourceSha256": "2140d1d05653630f473ffdb3460e0a1c548cf9339486e5eb413187f3252ad83e",
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp",
+      "sha256": "0d37a64b731eed9c8135a6d2bfc431e4f25d12d8f66ccbcd261c788ed1411e2f",
+      "dimensions": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-ac5b2d2f-f8cf-43d2-940c-76a9c45892c1.png",
+      "sourceSha256": "a68d4e58cb573715995d741449d1dfdd4f1d9d46889ffa4ae4c6c360e5ca4ae6",
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp",
+      "sha256": "f29dff504d0df299ef38ddc2fc7403d47120b009ad623974c663e21ddf9d0196",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-88fb5124-257f-4a7f-90d4-b69377ffe724.png",
+      "sourceSha256": "e165558c977bb61861c94ae79c2982b7179374ad352a8750f2572a810e762d29",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
+      "sha256": "9634bc3a5d7d7c98a4d68be41d53c200f65f6df0bb78e7778d693bd415dc9d96",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-72369319-33ec-47a5-ba2c-88d9f174557e.png",
+      "sourceSha256": "210b090f22bca373caa726a62b9e2799f4ffb78dc9af6a6defbef84cef8e7679",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/angle.webp",
+      "sha256": "4f5d0b52269b5ff11c76eb74a88b4bccbdc0c1c94bc8de746334889a2be6cca2",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-f58379d2-c479-441b-bfab-737e99aeea8d.png",
+      "sourceSha256": "5cc5394f384ff75fa7436b3a7250852e31b49fe545e6dd06cee3ba819d5efc15",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/front.webp",
+      "sha256": "4f6b6ecd3496ff668fac303dbc14c852dba3eb8bd8faa6d37a5ae152e02e9ad9",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-4e4bee29-9001-4d7f-9dc3-c5e3222faf60.png",
+      "sourceSha256": "87c3acb852b06fb174ac6de8b6f7c4eecff7a724d6a020ffdd9369fbfabb55f1",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/angle.webp",
+      "sha256": "b4351c3427aa4e319e38079130e4ab5c2412f8cec941f758f91cb410764a40a7",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-ce54edc2-e70a-41b4-ac16-66d182b61777.png",
+      "sourceSha256": "fc538c2c72d8a4929d0c5ccf6e0a041daebff20c14a3b2fd9c6ab84de8cbf824",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp",
+      "sha256": "c357c5084ecdd05e4354f18a069955544936db928be4d8dbf2d54a848fc13b0f",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-57c61a7b-9577-4411-b2f0-efa53a9627d3.png",
+      "sourceSha256": "e6af7dc1c59b046e6a033d371033be72c3f03b74dad4cac7708e8841f2d0eef1",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/angle.webp",
+      "sha256": "97f6470a0d5567ac4daa0a49ef6f42ca6d6656923afb0abe95188f525b0212f2",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-bfe2e3a4-cba5-4518-aabc-719a2b31c442.png",
+      "sourceSha256": "28292155ab7eea29a31bb10ea572dd289d26d26c4e35e6c6c108808730dc8e51",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/front.webp",
+      "sha256": "b8bc0d4e136d52ca2603afaaef17772a35e89df11cc3790664a12c892b21aa64",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-e038106a-d4e7-4a19-8c52-2653eeeaf355.png",
+      "sourceSha256": "0af6d79e60cb16268f8de03b7aaf53e95b5a022c3ad5c1961e604eff57c1aa23",
+      "path": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/angle.webp",
+      "sha256": "a711995853016e2e3540b67d8e03b79357cd9e2b11daed0d76542c64ec39135c",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-217a7be1-d8dc-4807-b9f5-6de3184b2311.png",
+      "sourceSha256": "3482f1abf4f27159f70f028706b642ae6530341400fb8b11a6e4988ff6cf5b64",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+      "sha256": "1dfc5339c3afdad286ea5a75857f0915655505262c347581ff413ec2bfac3d7a",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-134f2e7d-9855-4c8b-a337-dad65ec78203.png",
+      "sourceSha256": "69172da8d6731d604417e00e8cfad9772977fdf7c65963688a280b33b3330a9f",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp",
+      "sha256": "90d9a5b9f2939ee7404892721a6bee3a72e18ee19100acac3c4979716701f0ca",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-04f45410-afb0-451c-9e06-e978ab63cf96.png",
+      "sourceSha256": "0677cf2ecf0dc38b543c4c23f8505c6a02a79abdc30ca8c6b17b7285b744ff4a",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
+      "sha256": "e776575424991ca1d6cd6c7886e6dc64229f457092ce7c3a20a0300459aab99c",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-60b9fc9d-5bc6-4f7d-bd05-2f9011141c02.png",
+      "sourceSha256": "fd6b9c59605ed8ced8dfff91aedf3f174f4be2a691a8567f497074f7ed09def3",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/angle.webp",
+      "sha256": "328c905ceeb4d26a55cf371b219f0ccf017a1d22abe4aa4aff6aa66a21428b1c",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-ddb5f671-1d99-4c99-ad6b-aa531b1ab02e.png",
+      "sourceSha256": "194718f04d6c2112d29f07e6b8b0bf15610146f5e9726a9826118422494f6d7f",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
+      "sha256": "6bc0d4acf3a2dfd0c153e1ec37aa25a187d7dbebbcc1da146868acbfff61b9bb",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-4994112d-3a04-45cc-9f1c-4344c700594e.png",
+      "sourceSha256": "d0eee5e50af74e63b96f39295509ee4fe739b68c17470c4435f346e76ad62731",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/angle.webp",
+      "sha256": "473fa6041220a0f17c21375bad1a89c523247f0df49ce7587bcadca2d12c692a",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-92ad10a3-72cf-477d-a1fb-8bac7846c218.png",
+      "sourceSha256": "bc76d007d948c07193d6d99d27dd1dcb47e9585aba229bebcb12c6be24bbe8c7",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
+      "sha256": "09302018055aee6719af445e8423704141ccbc69f846d56418cc74b52506c400",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-fdbdf23b-e774-48cb-91ec-cfc92fe38952.png",
+      "sourceSha256": "6c10f2667f71c2a5e9e3227973028aa7dc54bd9a6c0ab5cf0bdcefa9826fec1c",
+      "path": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/angle.webp",
+      "sha256": "0b2a15c134db9075494c6a59fb6bc67fe8869ece3c2cc8328415652c469fb558",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-2acf85fc-4ef9-4295-b302-7442be2d9076.png",
+      "sourceSha256": "7a6c4a5ea833fae60020dede8cd9ed39c00c8e4fa1851b10130d78f91294d349",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
+      "sha256": "2106c7cf327df68375c39cd9830afc136f9488fe530041d6c4b0ea7cfb8d71bd",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-7a7d1a5c-689d-4846-8255-f9d55181df80.png",
+      "sourceSha256": "9911ae93d1be813430ae7d0b1750c79e865c64b0532225789cea4edefa734988",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/angle.webp",
+      "sha256": "baa3d589e6bc9190f5e02a54ce451d56160bc896e5c56c22eb377e8856e8618f",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-494496d1-954b-42fb-9705-c042a132d371.png",
+      "sourceSha256": "2d3e2f4cacee63314db34b32ad5de42a915b720e4f16f04416969b945a34f2b8",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/front.webp",
+      "sha256": "5f8057d2827839b90c4a94885a09a6759d78f11171a0a18e202a5b55d3f24eb9",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-2860da97-f439-4fab-9410-857397be4831.png",
+      "sourceSha256": "daa47375488b4d80f9c8ba9a37430d53512de55fdd610f61f410378d159e8978",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/angle.webp",
+      "sha256": "7bab1fd24de5a28ee73516d65929b7e7a8b118bec8d1f8c7a562183ca3f6d098",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-f16b77db-9482-484b-8729-6e595a49a9ca.png",
+      "sourceSha256": "3e11bb544750bbff9339d030d810c77f057d7e737c29ccd5363a80ce5816b61a",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/front.webp",
+      "sha256": "cb6e4e2946fa38f143845df4fda99f2b1309d704f75c1f24d7132cadec83d638",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-7ccba473-c6e8-456d-9d84-6f35711145d7.png",
+      "sourceSha256": "245c9a713bce3b9de1f7917f750cccf488c9000998b466e469e81a4a327e320b",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/angle.webp",
+      "sha256": "0acc64e6cfc8cdc8322400daafc9a91ac975399004629662067c7d395ddbd194",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-953a6fa9-66c4-4d10-8704-3dc8e098cf18.png",
+      "sourceSha256": "d980994445c09286fdf0b1f4b862c1a6ca41b6947a3685d9bb44deb708dc6c65",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp",
+      "sha256": "57b656b91f7fa924423a2ace42ca597a64affbc9dbe776368c9c0a77686360a9",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-05991b32-2657-4ef6-9fa4-708157af6e3c.png",
+      "sourceSha256": "b9d5719735a79956ae9bb75097a919ae280d53636646a2cca70f643ed82160f5",
+      "path": "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/angle.webp",
+      "sha256": "110905ad5096e0ec9981a571c366f3a5981e9e128243acb9a6989e90977984c0",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-0fdeec16-e46e-4930-a123-fbff3ee04047.png",
+      "sourceSha256": "72a315a9bea3d47b15cff70aafa356c9867a0f8f8f0d8b8f5f35dbd96e91c156",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
+      "sha256": "5828d6c0a3b54dbaadea2fba77d930063d6714a76e2721200935f108d4293591",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-d2e3e5ba-4e96-4fd6-99e7-e350ce1078f0.png",
+      "sourceSha256": "cc4370fc7e5c1665d53ad867d2d9371f84bef2b6e84e2b2df44c2488d2b237c9",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/angle.webp",
+      "sha256": "f7e1e18be67fe1c7ac25aa99c3727a67ca7f605e170ac28f35687c25c7e013ec",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-7545eeb9-b0aa-477c-a97c-a589d6f1d2cc.png",
+      "sourceSha256": "b20d098ae9021bb0c562c22b187e69fb5746fc1271457233e76fc7c5a9b159b2",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/front.webp",
+      "sha256": "40d3d24dbeb44a50a363913b3aab7c5d1504ff69ebb71cc77b595c975e8f9d1c",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-0bc8e43a-060d-4be3-b45d-83efd51820c0.png",
+      "sourceSha256": "c6dc1b9a9cda6fee39bca084ad9948e0c894e73de66f2cbd90a30a76082de1c8",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/angle.webp",
+      "sha256": "c13659142b8ed5d1364cbe29afafd8133c9f082c41bb88022f6f78ac2a786c4c",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-4caa045c-039a-4c90-848c-e6ecbcac2b53.png",
+      "sourceSha256": "8bdf8934e01692972fb2d20c61b38981c7cbe076e06fa25f5e6c19cf0e46895b",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp",
+      "sha256": "da39313343120e079258be16f38622bad16324b6853541bf8e11a81207f2be6e",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-b51c72a5-9a73-4972-8967-44f0fdf3bae0.png",
+      "sourceSha256": "6326992f53a2b9eb6b9e2053f1cb8e258468eb6f0b8fce09c2ddd13fb35fc4b0",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/angle.webp",
+      "sha256": "f37efc5c42e390031f7fba099a082d67d9c77ede26efd2e9f3bd7d988957e3b5",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-3fd85c58-cc8f-4caf-8cca-d9fa20e16df8.png",
+      "sourceSha256": "ba0ab5bcae389299cc185d7045cff1f4c0c4f9c41d1ef41c1e6629dc51afb1fe",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp",
+      "sha256": "c6d4972b5a80e23fb386398af19baf907c83b59063ad210abd5bd274d705b190",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-e2de3435-8580-4b87-a962-ddb348d5ddfd.png",
+      "sourceSha256": "3870ca01ffc13e07a089e0f8860cb880583e21979779ae68abb394393112d0db",
+      "path": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/angle.webp",
+      "sha256": "fd16e88a2c96979d2f479b0c105f8cf8a86c618acf9edebb721d56e86e866e8a",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-d0d41cba-4708-41bf-8a26-788e6a4220b9.png",
+      "sourceSha256": "4d641b24eb2412a44ae6b264b3a2dd5b30f47ab67db82281f8733cda88b9094d",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+      "sha256": "4795ed123d84d04f77cc53d5aa6bd81036beb927dbfb0c932438c99d6482fb81",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-8024c6ad-6604-41e3-a7c5-9fc523a72599.png",
+      "sourceSha256": "ad6f4c570253f99bf12202801abd9216e34a7678b18fa025400ab8908a5fa2ad",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/angle.webp",
+      "sha256": "d2cb0b77f0480cb4dfebd7b92e67f5e65a7a180c713e1140915e088f4408e9e7",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-90a70f68-4979-46df-8452-c141e5aed443.png",
+      "sourceSha256": "a9beeba2234799ae3df5345b357a49ec7653878fde3fd71782150e112ae56e7c",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp",
+      "sha256": "46202b3c4ed6ec79f440c5eca2504181ed4fa8b87a89bf1b19ff21bce14dfb3c",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-92d66dde-fac2-44ff-a397-078c75c2df12.png",
+      "sourceSha256": "10be062bf5495554a04f7b5f5447affeb978782e802da9aed7220c6be443f201",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/angle.webp",
+      "sha256": "7476655ed5038c093e3aac69a04d272220938c83a84063aef4933c448bef226b",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-d5979d10-9efd-4671-9061-0c82ef0ea980.png",
+      "sourceSha256": "5f019ae00a7b2fd6fcc0426b0612a604b15621319b55a6995398f4a636e65331",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/front.webp",
+      "sha256": "123d7cf05d9e3e834922b891aa8e51304c88e5409033386fbf8f6e144b1e5471",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-3b9aacda-2f77-48c0-b162-fa9778c5e047.png",
+      "sourceSha256": "ab0a387a1a2511632043d0af8e05683a28683e075b9715aed6c98fe67eaafb33",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/angle.webp",
+      "sha256": "f483c21f6ac0a4c650979fdb99c5ecd7e8ed8890a2fdd5449b338024e2842953",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-8255b5c6-13e6-41be-b748-fb5615a3988a.png",
+      "sourceSha256": "4d05ca3b8e30f9ea70e123a08c85e26c779d6d02056bd198f34d7ec587770369",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/front.webp",
+      "sha256": "13517fd69e0d83ecc6fe2d8b7e55f50d6bbea92185616b6575b4907fb9a2a391",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "source": "C:\\Users\\Dell\\.codex\\generated_images\\019f52cf-30cb-7401-baf7-9a72a22da332\\exec-6b9d34a3-6726-4e4d-aa2d-7ae516946218.png",
+      "sourceSha256": "67c7ff7a40a447e0a8f2abb01725ee0eac5253c07e66ffc9ddcb0c49af3f357f",
+      "path": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/angle.webp",
+      "sha256": "f4d4f52bf9dcb831e236c23faefd50cb264ef4a6d24d6eac527be105b378507d",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    }
+  ]
+}

@@ -3,9 +3,9 @@ window.KALM_MERCHANDISING = {
   version: "2026-07-12",
   campaigns: {
     homeHero: {
-      desktop: "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-desktop.webp",
-      tablet: "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-tablet.webp",
-      mobile: "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-mobile.webp",
+      desktop: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp",
+      tablet: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp",
+      mobile: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp",
       alt: "Six adults in varied KALM Move training looks sharing a relaxed movement moment outdoors"
     },
     featuredCollection: {

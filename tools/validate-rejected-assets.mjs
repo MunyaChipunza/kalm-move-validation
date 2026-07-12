@@ -66,13 +66,13 @@ const bottleRules = new Map([
 for (const product of catalog.products.filter((item) => bottleRules.has(item.id))) {
   const expectedColours = bottleRules.get(product.id);
   assert(JSON.stringify(product.colors) === JSON.stringify(expectedColours), `${product.id} has unsupported public bottle colours.`);
-  assert(product.image.startsWith("assets/images/products/kalm-move/bottles-v3/"), `${product.id} must use fresh versioned bottle imagery.`);
-  assert(product.gallery.length === 3 && product.gallery[0] === product.image, `${product.id} must have a three-view default gallery.`);
+  assert(product.image.startsWith("assets/images/products/kalm-move/bottles-v4/"), `${product.id} must use fresh V4 bottle imagery.`);
+  assert(product.gallery.length === 2 && product.gallery[0] === product.image, `${product.id} must have a front and alternate default gallery.`);
   for (const [colour, images] of Object.entries(product.variantImages)) {
     assert(expectedColours.includes(colour), `${product.id} exposes an unsupported colour.`);
-    assert(images.hero.startsWith("assets/images/products/kalm-move/bottles-v3/"), `${product.id} ${colour} must use fresh versioned bottle imagery.`);
-    assert(images.gallery.length === 3 && images.gallery[0] === images.hero, `${product.id} ${colour} must have a three-view gallery.`);
-    assert(new Set(images.gallery).size === 3, `${product.id} ${colour} gallery must contain distinct approved views.`);
+    assert(images.hero.startsWith("assets/images/products/kalm-move/bottles-v4/"), `${product.id} ${colour} must use fresh V4 bottle imagery.`);
+    assert(images.gallery.length === 2 && images.gallery[0] === images.hero, `${product.id} ${colour} must have a front and alternate gallery.`);
+    assert(new Set(images.gallery).size === 2, `${product.id} ${colour} gallery must contain distinct approved views.`);
   }
 }
 assert(catalog.products.filter((item) => bottleRules.has(item.id)).length === 5, "Exactly five Stage 2 bottle products must be public.");

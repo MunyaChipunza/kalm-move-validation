@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T20:23:58.523Z",
+  "generatedAt": "2026-07-12T21:42:02.169Z",
   "status": "pass",
   "checks": [
     {
@@ -270,7 +270,7 @@
     {
       "name": "New In hero image exists: kalm-move-everyday-bottle / Lilac",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v3/everyday-bottle/lilac/front.jpg"
+      "detail": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp"
     },
     {
       "name": "New In product exists: kalm-move-slim-wellness-bottle",
@@ -285,7 +285,7 @@
     {
       "name": "New In hero image exists: kalm-move-slim-wellness-bottle / Soft Pink",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v3/slim-wellness-bottle/soft-pink/front.jpg"
+      "detail": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp"
     },
     {
       "name": "New In product exists: kalm-wellness-ritual-set",
@@ -465,7 +465,7 @@
     {
       "name": "Activewear hero image exists: kalm-move-protein-shaker-bottle / Smoke Grey",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v3/protein-shaker-bottle/smoke-grey/front.jpg"
+      "detail": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp"
     },
     {
       "name": "Activewear product exists: kalm-move-studio-bottle",
@@ -480,7 +480,7 @@
     {
       "name": "Activewear hero image exists: kalm-move-studio-bottle / Sky Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v3/studio-bottle/sky-blue/front.jpg"
+      "detail": "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp"
     },
     {
       "name": "Sale product exists: ks-high-waist-seamless-leggings",
@@ -871,19 +871,19 @@
   "allocationCount": 49,
   "campaignFiles": [
     {
-      "path": "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-desktop.webp",
-      "bytes": 1724126,
-      "sha256": "7899790e2b588de81b94174cb1bbc2073f9dd2b341c4cc5153e288368624d73c"
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp",
+      "bytes": 602724,
+      "sha256": "07ba73994b91b97593b14c3d8ee79b188bca5e50ee120c7bcb8917aaec39d4ae"
     },
     {
-      "path": "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-tablet.webp",
-      "bytes": 1271476,
-      "sha256": "f4c124967be8d1a043fdfcf54142002ce134731e8d824478dc14724769e6c858"
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp",
+      "bytes": 500196,
+      "sha256": "0d37a64b731eed9c8135a6d2bfc431e4f25d12d8f66ccbcd261c788ed1411e2f"
     },
     {
-      "path": "assets/images/recovered/campaigns-v2/kalm-final-home-hero-v2-mobile.webp",
-      "bytes": 1232030,
-      "sha256": "3cad931d61fbb5e9ce1970d4b25673f8ee497869cca6262fbb27bb455305a0e2"
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp",
+      "bytes": 524854,
+      "sha256": "f29dff504d0df299ef38ddc2fc7403d47120b009ad623974c663e21ddf9d0196"
     },
     {
       "path": "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-desktop.webp",
