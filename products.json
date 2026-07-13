@@ -970,7 +970,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+      "image": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
       "description": "A halter active tank and full-length legging set with a clean open-back line.",
       "shortDescription": "A halter active tank and full-length legging set with a clean open-back line.",
       "longDescription": "The Align Halter Legging Set pairs a V-front halter tank with high-waist full-length leggings for studio sessions, light training and everyday movement. The open back keeps the silhouette clean while the matching set finish makes it easy to wear as a full look.",
@@ -1001,50 +1001,50 @@
       "moveCategory": "sets",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
             "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/angle.webp",
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp"
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp"
           ]
         },
         "Pink Drink": {
-          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp",
             "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/angle.webp",
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp"
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp"
           ]
         },
         "Grayish Blue": {
-          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/back.webp",
             "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/angle.webp",
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/back.webp"
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp"
           ]
         },
         "Delicate Red": {
-          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/back.webp",
             "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/angle.webp",
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/back.webp"
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp"
           ]
         },
         "Date Brown": {
-          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp",
             "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/angle.webp",
-            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp"
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
         "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/angle.webp",
-        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp"
+        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp"
       ],
       "metaTitle": "KALM Move Align Halter Legging Set | KALM Move",
       "metaDescription": "A halter active tank and full-length legging set with a clean open-back line.",
@@ -1248,7 +1248,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+      "image": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
       "description": "A square-neck active tank and flare-leg set with a soft studio shape.",
       "shortDescription": "A square-neck active tank and flare-leg set with a soft studio shape.",
       "longDescription": "The Ease Flare Set pairs a fitted square-neck tank with a clean X-back strap and high-waist flare leggings. The look is soft, wearable and made for studio days, errands and light movement.",
@@ -1279,50 +1279,50 @@
       "moveCategory": "sets",
       "variantImages": {
         "Sage": {
-          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
             "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/angle.webp",
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp"
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp"
           ]
         },
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/back.webp",
             "assets/images/products/kalm-move/women/ease-flare-set-v4/black/angle.webp",
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/back.webp"
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp"
           ]
         },
         "Taupe": {
-          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp",
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp",
             "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/angle.webp",
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp"
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp"
           ]
         },
         "Espresso": {
-          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp",
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp",
             "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/angle.webp",
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp"
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp"
           ]
         },
         "Cream": {
-          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp",
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/back.webp",
             "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/angle.webp",
-            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/back.webp"
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
         "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/angle.webp",
-        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp"
+        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp"
       ],
       "metaTitle": "KALM Move Ease Flare Set | KALM Move",
       "metaDescription": "A square-neck active tank and flare-leg set with a soft studio shape.",
@@ -1570,7 +1570,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+      "image": "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
       "description": "A clean halter bra and fitted short set for studio sessions and warm-weather movement.",
       "shortDescription": "A clean halter bra and fitted short set for studio sessions and warm-weather movement.",
       "longDescription": "The Form Short Set pairs a V-front halter sports bra with high-waist fitted shorts for a compact studio-to-training silhouette. The open back uses a simple neck-tie strap and straight back band, keeping the set light, clean and easy to wear.",
@@ -1601,90 +1601,90 @@
       "moveCategory": "shorts",
       "variantImages": {
         "White": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp"
           ]
         },
         "Brown": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/brown/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp"
           ]
         },
         "Khaki": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/khaki/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp"
           ]
         },
         "Dark Purple": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp"
           ]
         },
         "Sky Blue": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp"
           ]
         },
         "Yellow": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/yellow/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp"
           ]
         },
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/black/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp"
           ]
         },
         "Pink": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/pink/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp"
           ]
         },
         "Orange": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/orange/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp"
           ]
         },
         "Dark Red": {
-          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp",
             "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/angle.webp",
-            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp"
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
         "assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp",
-        "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp"
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp"
       ],
       "metaTitle": "KALM Move Form Short Set | KALM Move",
       "metaDescription": "A clean halter bra and fitted short set for studio sessions and warm-weather movement.",
@@ -2826,7 +2826,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+      "image": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
       "description": "A strappy active top and legging set with a clean X-back finish.",
       "shortDescription": "A strappy active top and legging set with a clean X-back finish.",
       "longDescription": "The Balance X-Back Legging Set is built around a fitted strappy top and high-waist leggings. The X-back line gives the set a strong studio identity while keeping the front minimal and wearable.",
@@ -2857,90 +2857,90 @@
       "moveCategory": "sets",
       "variantImages": {
         "Van Dyke Brown": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp"
           ]
         },
         "Dress Blues": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp"
           ]
         },
         "Fawn": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp"
           ]
         },
         "Crushed Limestone": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp"
           ]
         },
         "Magic Forest Green": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp"
           ]
         },
         "Lemon Yellow": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp"
           ]
         },
         "Coffee Brown": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp"
           ]
         },
         "Bluebird": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp"
           ]
         },
         "Blossom Pink": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp"
           ]
         },
         "Pomegranate Red": {
-          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/back.webp",
             "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/angle.webp",
-            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/back.webp"
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
         "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/angle.webp",
-        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp"
+        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp"
       ],
       "metaTitle": "KALM Move Balance X-Back Legging Set | KALM Move",
       "metaDescription": "A strappy active top and legging set with a clean X-back finish.",
@@ -3385,7 +3385,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+      "image": "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
       "description": "A halter active top and biker short set with a clean open-back shape.",
       "shortDescription": "A halter active top and biker short set with a clean open-back shape.",
       "longDescription": "The Halter Biker Short Set pairs a fitted active top with high-waist biker shorts. The open-back construction keeps the set breathable and polished for studio sessions and warm-weather movement.",
@@ -3416,66 +3416,66 @@
       "moveCategory": "shorts",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/black/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp"
           ]
         },
         "White": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/white/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/white/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/white/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/white/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp"
           ]
         },
         "Pink": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/pink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/pink/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp"
           ]
         },
         "Red": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/red/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp"
           ]
         },
         "Blue": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/blue/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp"
           ]
         },
         "Brown": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/brown/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/brown/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp"
           ]
         },
         "Grey": {
-          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp",
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/grey/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/back.webp",
             "assets/images/products/kalm-move/women/halter-biker-short-set/grey/angle.webp",
-            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/back.webp"
+            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+        "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
         "assets/images/products/kalm-move/women/halter-biker-short-set/black/angle.webp",
-        "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp"
+        "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp"
       ],
       "metaTitle": "KALM Move Halter Biker Short Set | KALM Move",
       "metaDescription": "A halter active top and biker short set with a clean open-back shape.",
@@ -4496,7 +4496,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+      "image": "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
       "description": "A strappy open-back short unitard for studio sessions and warm-weather movement.",
       "shortDescription": "A strappy open-back short unitard for studio sessions and warm-weather movement.",
       "longDescription": "The Core Short Unitard keeps the silhouette simple with a fitted one-piece body, short length and open-back strap detail. It is a clean active piece for studio sessions, errands and light training.",
@@ -4527,90 +4527,90 @@
       "moveCategory": "shorts",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/black/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp"
           ]
         },
         "White": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/white/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/white/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/white/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/white/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp"
           ]
         },
         "Charcoal": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/charcoal/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/charcoal/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp"
           ]
         },
         "Pine": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/pine/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/pine/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/pine/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/pine/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp"
           ]
         },
         "Peony": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/peony/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/peony/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/peony/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/peony/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp"
           ]
         },
         "Coco": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/coco/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/coco/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/coco/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/coco/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp"
           ]
         },
         "Berry Red": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/berry-red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/berry-red/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp"
           ]
         },
         "Wine Red": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/wine-red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/wine-red/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp"
           ]
         },
         "Pink": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/pink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/pink/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/pink/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/pink/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp"
           ]
         },
         "Yellow": {
-          "hero": "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp",
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/yellow/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/yellow/back.webp",
             "assets/images/products/kalm-move/women/core-short-unitard/yellow/angle.webp",
-            "assets/images/products/kalm-move/women/core-short-unitard/yellow/back.webp"
+            "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+        "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
         "assets/images/products/kalm-move/women/core-short-unitard/black/angle.webp",
-        "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp"
+        "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp"
       ],
       "metaTitle": "KALM Move Core Short Unitard | KALM Move",
       "metaDescription": "A strappy open-back short unitard for studio sessions and warm-weather movement.",
@@ -5056,7 +5056,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+      "image": "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
       "description": "A high-waist biker short with a ruched back detail and clean active fit.",
       "shortDescription": "A high-waist biker short with a ruched back detail and clean active fit.",
       "longDescription": "The Align Ruched Short is a high-waist biker short with a smooth front and ruched back detail. It is designed as an easy studio and light-training bottom with a compact, wearable shape.",
@@ -5086,74 +5086,74 @@
       "moveCategory": "shorts",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/black/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp"
           ]
         },
         "Red": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/red/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/red/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/red/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/red/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp"
           ]
         },
         "Blue": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/blue/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/blue/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/blue/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/blue/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp"
           ]
         },
         "Pink": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/pink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/pink/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/pink/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/pink/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp"
           ]
         },
         "Purple": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/purple/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/purple/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/purple/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/purple/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp"
           ]
         },
         "Brown": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/brown/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/brown/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/brown/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/brown/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp"
           ]
         },
         "Charcoal Gray": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp"
           ]
         },
         "White": {
-          "hero": "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp",
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/white/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/white/back.webp",
             "assets/images/products/kalm-move/women/align-ruched-short/white/angle.webp",
-            "assets/images/products/kalm-move/women/align-ruched-short/white/back.webp"
+            "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+        "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
         "assets/images/products/kalm-move/women/align-ruched-short/black/angle.webp",
-        "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp"
+        "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp"
       ],
       "metaTitle": "KALM Move Align Ruched Short | KALM Move",
       "metaDescription": "A high-waist biker short with a ruched back detail and clean active fit.",
@@ -5841,7 +5841,7 @@
       "badge": "New in",
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+      "image": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
       "description": "A stand-collar short romper with a hollow open back and fitted active shape.",
       "shortDescription": "A stand-collar short romper with a hollow open back and fitted active shape.",
       "longDescription": "The Open Back Short Romper is a one-piece active style with a stand collar, sleeveless front, hollow open back and fitted short length. It keeps the look clean while giving the back construction a strong visual identity.",
@@ -5872,58 +5872,58 @@
       "moveCategory": "shorts",
       "variantImages": {
         "Black": {
-          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
             "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp",
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp"
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp"
           ]
         },
         "Pink": {
-          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp",
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp",
             "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/angle.webp",
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp"
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp"
           ]
         },
         "Blue": {
-          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp",
             "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/angle.webp",
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp"
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp"
           ]
         },
         "Army Green": {
-          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp",
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp",
             "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/angle.webp",
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp"
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp"
           ]
         },
         "Navy": {
-          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp",
             "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/angle.webp",
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp"
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp"
           ]
         },
         "Apricot": {
-          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp",
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp",
           "gallery": [
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp",
             "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/angle.webp",
-            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp"
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
         "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp",
-        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp"
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp"
       ],
       "metaTitle": "KALM Move Open Back Short Romper | KALM Move",
       "metaDescription": "A stand-collar short romper with a hollow open back and fitted active shape.",

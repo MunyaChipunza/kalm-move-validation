@@ -1,6 +1,32 @@
 [build]
   publish = "."
 
+# ksactive.co.za is a domain alias, never a second storefront. These rules are
+# deliberately host-specific and precede the SPA rewrites below.
+[[redirects]]
+  from = "http://ksactive.co.za/*"
+  to = "https://kalmcollective.co.za/#/brand/ks-active"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ksactive.co.za/*"
+  to = "https://kalmcollective.co.za/#/brand/ks-active"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.ksactive.co.za/*"
+  to = "https://kalmcollective.co.za/#/brand/ks-active"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ksactive.co.za/*"
+  to = "https://kalmcollective.co.za/#/brand/ks-active"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/products/*"
   to = "/index.html"

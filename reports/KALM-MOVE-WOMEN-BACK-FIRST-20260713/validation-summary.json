@@ -1,0 +1,1637 @@
+{
+  "pass": true,
+  "checkCount": 326,
+  "failures": [],
+  "checks": [
+    {
+      "name": "High Waist Seamless Leggings: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "High Stretch Seamless Leggings: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Open Back Romper: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "High Waist Seamless Shorts: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Crisscross Back Sports Bra: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dual Zip Long-Sleeve Crop: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Pink Drink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Pink Drink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Pink Drink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Pink Drink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Grayish Blue: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Grayish Blue: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Grayish Blue: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Grayish Blue: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Delicate Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Delicate Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Delicate Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Delicate Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Date Brown: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Date Brown: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Date Brown: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Halter Legging Set Date Brown: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Sage: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Sage: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Sage: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Sage: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Taupe: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Taupe: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Taupe: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Taupe: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Espresso: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Espresso: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Espresso: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Espresso: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Cream: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Cream: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Cream: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Ease Flare Set Cream: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set White: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set White: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set White: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set White: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Brown: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Brown: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Brown: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Brown: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Khaki: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Khaki: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Khaki: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Khaki: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Purple: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Purple: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Purple: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Purple: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Sky Blue: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Sky Blue: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Sky Blue: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Sky Blue: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Yellow: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Yellow: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Yellow: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Yellow: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Pink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Pink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Pink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Pink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Orange: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Orange: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Orange: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Orange: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Form Short Set Dark Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Pulse Crop Short Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Wide-Leg Yoga Pant: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Van Dyke Brown: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Van Dyke Brown: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Van Dyke Brown: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Van Dyke Brown: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Dress Blues: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Dress Blues: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Dress Blues: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Dress Blues: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Fawn: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Fawn: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Fawn: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Fawn: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Crushed Limestone: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Crushed Limestone: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Crushed Limestone: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Crushed Limestone: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Magic Forest Green: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Magic Forest Green: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Magic Forest Green: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Magic Forest Green: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Lemon Yellow: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Lemon Yellow: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Lemon Yellow: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Lemon Yellow: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Coffee Brown: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Coffee Brown: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Coffee Brown: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Coffee Brown: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Bluebird: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Bluebird: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Bluebird: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Bluebird: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Blossom Pink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Blossom Pink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Blossom Pink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Blossom Pink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Pomegranate Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Pomegranate Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Pomegranate Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Balance X-Back Legging Set Pomegranate Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set White: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set White: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set White: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set White: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Pink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Pink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Pink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Pink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Blue: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Blue: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Blue: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Blue: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Brown: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Brown: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Brown: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Brown: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Grey: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Grey: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Grey: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Halter Biker Short Set Grey: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Rise Zip Jacket Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Lightweight Windbreaker Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Cropped Zip Yoga Jacket: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard White: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard White: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard White: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard White: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Charcoal: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Charcoal: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Charcoal: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Charcoal: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pine: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pine: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pine: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pine: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Peony: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Peony: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Peony: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Peony: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Coco: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Coco: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Coco: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Coco: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Berry Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Berry Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Berry Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Berry Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Wine Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Wine Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Wine Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Wine Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Pink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Yellow: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Yellow: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Yellow: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Short Unitard Yellow: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Red: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Red: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Red: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Red: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Blue: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Blue: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Blue: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Blue: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Pink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Pink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Pink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Pink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Purple: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Purple: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Purple: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Purple: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Brown: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Brown: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Brown: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Brown: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Charcoal Gray: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Charcoal Gray: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Charcoal Gray: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short Charcoal Gray: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short White: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short White: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short White: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Align Ruched Short White: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Loose Split Running Short: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Split Running Skort: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper: women-only KALM Move scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper: product default is back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Black: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Black: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Black: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Black: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Pink: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Pink: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Pink: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Pink: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Blue: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Blue: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Blue: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Blue: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Army Green: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Army Green: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Army Green: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Army Green: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Navy: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Navy: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Navy: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Navy: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Apricot: back-first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Apricot: side/three-quarter second when present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Apricot: front last",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Open Back Short Romper Apricot: all mapped images exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Flow Training Short: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Sprint Running Short: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Core Performance Tee: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Lift Tank: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Pace Jogger: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Motion Hoodie: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Base Compression Short: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Cap: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Training Sock 3-Pack: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Utility Gym Bag: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Protein Shaker Bottle: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Pocket Racerback Crop Bra: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Contrast Flare Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Crossline Legging: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Drift Crop Wide Pant: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Everyday Bottle: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Slim Wellness Bottle: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move Studio Bottle: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ember 16 Gas Pizza Oven: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Forge 2 Portable Gas Griddle: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ridge 4 Stainless Gas Braai: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Canvas Utility Tote: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Weather-Ready Picnic Blanket: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Patio Cushion Pair: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Matte Camp Lantern: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Insulated Carafe and Tumbler Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "White Cotton Bedding Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Charcoal Bath Towel Stack: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ceramic Mug Pair: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Woven Storage Basket: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Black Reed Diffuser: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Breathe Mat: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Restore Towel: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ground Bottle: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pause Journal: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ritual Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Align Block Set: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ease Strap: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Centre Pouch: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ember Launch Pro Perforated Peel: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ember Turn Pro Turning Peel: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ember Dough & Heat Kit: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ridge Smart Temperature System: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ridge Pro Rotisserie Kit: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Ridge Cast-Iron Sear System: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Forge Pro Griddle Tool Roll: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Forge Smash & Steam Kit: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Forge Season & Care Kit: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "KALM Move All-Day Straw Tumbler: excluded product remains unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "http://ksactive.co.za/*: permanent KS Active canonical redirect is configured",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "https://ksactive.co.za/*: permanent KS Active canonical redirect is configured",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "http://www.ksactive.co.za/*: permanent KS Active canonical redirect is configured",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "https://www.ksactive.co.za/*: permanent KS Active canonical redirect is configured",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

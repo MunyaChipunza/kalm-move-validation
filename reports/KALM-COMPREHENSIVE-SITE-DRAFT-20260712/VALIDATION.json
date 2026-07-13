@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T22:08:35.788Z",
+  "generatedAt": "2026-07-13T17:26:35.725Z",
   "status": "pass",
   "checks": [
     {
@@ -15,7 +15,7 @@
     {
       "name": "Homepage Find Your Edit hero image exists: kalm-move-form-short-set / Khaki",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp"
+      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp"
     },
     {
       "name": "Homepage Find Your Edit product exists: kalm-wellness-breathe-mat",
@@ -75,7 +75,7 @@
     {
       "name": "Homepage Featured Edit hero image exists: kalm-move-open-back-short-romper / Navy",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp"
+      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp"
     },
     {
       "name": "Homepage Featured Edit product exists: kalm-wellness-ground-bottle",
@@ -210,7 +210,7 @@
     {
       "name": "New In hero image exists: kalm-move-align-halter-legging-set / Pink Drink",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp"
+      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp"
     },
     {
       "name": "New In product exists: kalm-move-ease-flare-set",
@@ -225,7 +225,7 @@
     {
       "name": "New In hero image exists: kalm-move-ease-flare-set / Taupe",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp"
+      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp"
     },
     {
       "name": "New In product exists: kalm-move-wide-leg-yoga-pant",
@@ -330,7 +330,7 @@
     {
       "name": "New In hero image exists: kalm-move-open-back-short-romper / Apricot",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp"
+      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp"
     },
     {
       "name": "Activewear product exists: kalm-move-form-short-set",
@@ -345,7 +345,7 @@
     {
       "name": "Activewear hero image exists: kalm-move-form-short-set / Dark Purple",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp"
+      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp"
     },
     {
       "name": "Activewear product exists: kalm-move-pulse-crop-short-set",
@@ -375,7 +375,7 @@
     {
       "name": "Activewear hero image exists: kalm-move-balance-x-back-legging-set / Magic Forest Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp"
+      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp"
     },
     {
       "name": "Activewear product exists: kalm-move-halter-biker-short-set",
@@ -390,7 +390,7 @@
     {
       "name": "Activewear hero image exists: kalm-move-halter-biker-short-set / Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp"
+      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp"
     },
     {
       "name": "Activewear product exists: kalm-move-core-performance-tee",
@@ -525,7 +525,7 @@
     {
       "name": "Sale hero image exists: kalm-move-align-halter-legging-set / Date Brown",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp"
+      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp"
     },
     {
       "name": "Sale product exists: kalm-move-ease-flare-set",
@@ -540,7 +540,7 @@
     {
       "name": "Sale hero image exists: kalm-move-ease-flare-set / Espresso",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp"
+      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp"
     },
     {
       "name": "Sale product exists: kalm-move-form-short-set",
@@ -555,7 +555,7 @@
     {
       "name": "Sale hero image exists: kalm-move-form-short-set / Orange",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp"
+      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp"
     },
     {
       "name": "Sale product exists: kalm-move-wide-leg-yoga-pant",
@@ -585,7 +585,7 @@
     {
       "name": "Sale hero image exists: kalm-move-balance-x-back-legging-set / Bluebird",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp"
+      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp"
     },
     {
       "name": "Sale product exists: kalm-move-halter-biker-short-set",
@@ -600,7 +600,7 @@
     {
       "name": "Sale hero image exists: kalm-move-halter-biker-short-set / Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp"
+      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp"
     },
     {
       "name": "Sale product exists: kalm-move-rise-zip-jacket-set",
@@ -630,7 +630,7 @@
     {
       "name": "Sale hero image exists: kalm-move-open-back-short-romper / Army Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp"
+      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp"
     },
     {
       "name": "Sale product exists: kalm-move-pocket-racerback-crop-bra",

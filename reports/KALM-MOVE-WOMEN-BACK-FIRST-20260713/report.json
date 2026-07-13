@@ -1,0 +1,131 @@
+{
+  "scope": "KALM Move women back-first merchandising and KS Active redirect preparation",
+  "baselineSha": "44d46ed8ce10817de05773984d9efda98d4b3153",
+  "affectedProducts": [
+    {
+      "id": "kalm-move-align-strappy-jumpsuit",
+      "title": "KALM Move Align Halter Legging Set",
+      "backFeature": "Open-back halter strap structure",
+      "colourCount": 5,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-ease-flare-set",
+      "title": "KALM Move Ease Flare Set",
+      "backFeature": "Low X-back strap detail",
+      "colourCount": 5,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-form-short-set",
+      "title": "KALM Move Form Short Set",
+      "backFeature": "Straight-band open back",
+      "colourCount": 10,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-balance-strappy-set",
+      "title": "KALM Move Balance X-Back Legging Set",
+      "backFeature": "X-back construction",
+      "colourCount": 10,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-halter-biker-short-set",
+      "title": "KALM Move Halter Biker Short Set",
+      "backFeature": "Open-back halter construction",
+      "colourCount": 7,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-core-seamless-tank",
+      "title": "KALM Move Core Short Unitard",
+      "backFeature": "Strappy open-back unitard",
+      "colourCount": 10,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-align-ruched-short",
+      "title": "KALM Move Align Ruched Short",
+      "backFeature": "Ruched back short detail",
+      "colourCount": 8,
+      "galleryOrder": "back, angle, front"
+    },
+    {
+      "id": "kalm-move-open-back-short-romper",
+      "title": "KALM Move Open Back Short Romper",
+      "backFeature": "Hollow open-back romper construction",
+      "colourCount": 6,
+      "galleryOrder": "back, angle, front"
+    }
+  ],
+  "excludedProducts": [
+    {
+      "id": "kalm-move-pulse-crop-short-set",
+      "title": "KALM Move Pulse Crop Short Set",
+      "reason": "No clean back image exists."
+    },
+    {
+      "id": "kalm-move-wide-leg-yoga-pant",
+      "title": "KALM Move Wide-Leg Yoga Pant",
+      "reason": "Back view is not a major selling feature."
+    },
+    {
+      "id": "kalm-move-rise-long-sleeve-set",
+      "title": "KALM Move Rise Zip Jacket Set",
+      "reason": "Jacket/base back view is not a major selling feature."
+    },
+    {
+      "id": "kalm-move-lightweight-windbreaker-set",
+      "title": "KALM Move Lightweight Windbreaker Set",
+      "reason": "Windbreaker back view is not a major selling feature."
+    },
+    {
+      "id": "kalm-move-cropped-zip-yoga-jacket",
+      "title": "KALM Move Cropped Zip Yoga Jacket",
+      "reason": "Jacket back view is not a major selling feature."
+    },
+    {
+      "id": "kalm-move-loose-split-running-short",
+      "title": "KALM Move Loose Split Running Short",
+      "reason": "Side split, not back construction, is the selling feature."
+    },
+    {
+      "id": "kalm-move-split-running-skort",
+      "title": "KALM Move Split Running Skort",
+      "reason": "Skort overlay is not a back-detail product."
+    },
+    {
+      "id": "kalm-move-pocket-racerback-crop-bra",
+      "title": "KALM Move Pocket Racerback Crop Bra",
+      "reason": "No clean back image exists."
+    },
+    {
+      "id": "kalm-move-contrast-flare-set",
+      "title": "KALM Move Contrast Flare Set",
+      "reason": "No clean back image exists."
+    },
+    {
+      "id": "kalm-move-crossline-legging",
+      "title": "KALM Move Crossline Legging",
+      "reason": "No clean back image exists."
+    },
+    {
+      "id": "kalm-move-drift-crop-wide-pant",
+      "title": "KALM Move Drift Crop Wide Pant",
+      "reason": "No clean back image exists."
+    }
+  ],
+  "redirect": {
+    "source": [
+      "http://ksactive.co.za/*",
+      "https://ksactive.co.za/*",
+      "http://www.ksactive.co.za/*",
+      "https://www.ksactive.co.za/*"
+    ],
+    "destination": "https://kalmcollective.co.za/#/brand/ks-active",
+    "status": 301,
+    "configuration": "netlify.toml",
+    "statusAtReportTime": "blocked_pending_godaddy_registration"
+  }
+}

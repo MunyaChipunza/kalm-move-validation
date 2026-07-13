@@ -1,0 +1,30 @@
+{
+  "auditedAt": "2026-07-13",
+  "domain": "ksactive.co.za",
+  "registrar": "GoDaddy",
+  "registrationStatus": "Pending Registration",
+  "expiryDate": "2027-07-14",
+  "autoRenew": false,
+  "dnsManagement": "No editable GoDaddy DNS zone was exposed while registration is pending.",
+  "publicDns": {
+    "nameservers": [],
+    "apexA": [],
+    "apexAAAA": [],
+    "wwwCname": [],
+    "mx": [],
+    "txt": [],
+    "result": "NXDOMAIN for every queried name and record type."
+  },
+  "emailRecords": {
+    "spf": [],
+    "dkim": [],
+    "dmarc": [],
+    "changed": false
+  },
+  "forwardingOrHosting": {
+    "goDaddyForwarding": "not configured",
+    "goDaddyWebsiteOrParkingProduct": "not configured",
+    "ssl": "not provisionable until DNS and Netlify domain aliasing are available"
+  },
+  "changesMade": []
+}
