@@ -1,0 +1,41 @@
+{
+  "auditedAt": "2026-07-13",
+  "domain": "ksactive.co.za",
+  "registrar": "GoDaddy",
+  "portfolioStatus": "Active",
+  "domainSettingsState": "Idle",
+  "renewalDate": "2027-07-14",
+  "registrarLock": "On",
+  "authoritativeDnsProvider": "GoDaddy",
+  "nameservers": [
+    "ns07.domaincontrol.com",
+    "ns08.domaincontrol.com"
+  ],
+  "before": {
+    "records": [
+      { "type": "A", "name": "@", "value": "Parked", "ttlSeconds": 600 },
+      { "type": "CNAME", "name": "www", "value": "ksactive.co.za.", "ttlSeconds": 3600 },
+      { "type": "NS", "name": "@", "value": "ns07.domaincontrol.com.", "ttlSeconds": 3600 },
+      { "type": "NS", "name": "@", "value": "ns08.domaincontrol.com.", "ttlSeconds": 3600 },
+      { "type": "CNAME", "name": "_domainconnect", "value": "_domainconnect.gd.domaincontrol.com.", "ttlSeconds": 3600 },
+      { "type": "SOA", "name": "@", "value": "ns07.domaincontrol.com.", "ttlSeconds": 3600 },
+      { "type": "TXT", "name": "_dmarc", "value": "DMARC record retained unchanged", "ttlSeconds": 3600 }
+    ],
+    "forwarding": "not configured"
+  },
+  "after": {
+    "recordsChanged": [
+      { "type": "A", "name": "@", "value": "75.2.60.5", "ttlSeconds": 600 },
+      { "type": "CNAME", "name": "www", "value": "kalm-collective-storefront.netlify.app.", "ttlSeconds": 3600 }
+    ],
+    "unchanged": ["NS", "SOA", "_domainconnect CNAME", "_dmarc TXT"],
+    "emailRecordsChanged": false
+  },
+  "netlify": {
+    "siteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+    "siteName": "kalm-collective-storefront",
+    "aliases": ["ksactive.co.za", "www.ksactive.co.za"],
+    "destination": "https://kalmcollective.co.za/#/brand/ks-active",
+    "tlsStatus": "issued and verified for both aliases"
+  }
+}

@@ -1,7 +1,12 @@
-# KS Active DNS no-change record
+# KS Active DNS change control — superseded no-change record
 
-No GoDaddy or Netlify domain configuration was changed.
+The earlier no-change record is retained as historical context only. It is superseded by the fresh GoDaddy audit and controlled domain configuration performed on 13 July 2026.
 
-At the time of audit, GoDaddy showed `ksactive.co.za` as **Pending Registration** and exposed no editable DNS zone. Public DNS queries for the apex and `www` returned NXDOMAIN. As a result, no A, AAAA, CNAME, forwarding, MX, TXT, SPF, DKIM, DMARC, verification, SSL, or unrelated subdomain record could be modified.
+Only two records changed:
 
-The GoDaddy before-state and Netlify before-state screenshots are retained in `dns-evidence/`. An after-state screenshot is intentionally absent: there was no authorized or technically possible DNS change to record.
+| Record | Previous value | Current value | TTL |
+|---|---|---|---:|
+| A `@` | GoDaddy `Parked` | `75.2.60.5` | 600 seconds |
+| CNAME `www` | `ksactive.co.za.` | `kalm-collective-storefront.netlify.app.` | 1 hour |
+
+No nameserver, MX, SPF, DKIM, DMARC, verification, unrelated-subdomain, or forwarding configuration was changed. See [KS-ACTIVE-REDIRECT-AUDIT.md](KS-ACTIVE-REDIRECT-AUDIT.md) for the current evidence and TLS/redirect verification state.

@@ -1,5 +1,5 @@
 {
-  "scope": "KALM Move women back-first merchandising and KS Active redirect preparation",
+  "scope": "KALM Move women back-first merchandising production release and KS Active redirect configuration",
   "baselineSha": "44d46ed8ce10817de05773984d9efda98d4b3153",
   "affectedProducts": [
     {
@@ -126,6 +126,36 @@
     "destination": "https://kalmcollective.co.za/#/brand/ks-active",
     "status": 301,
     "configuration": "netlify.toml",
-    "statusAtReportTime": "blocked_pending_godaddy_registration"
+    "statusAtReportTime": "live_verified_https_redirect",
+    "netlifySiteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+    "netlifyAliases": [
+      "ksactive.co.za",
+      "www.ksactive.co.za"
+    ],
+    "dnsProvider": "GoDaddy",
+    "nameservers": [
+      "ns07.domaincontrol.com",
+      "ns08.domaincontrol.com"
+    ],
+    "dnsChanges": [
+      {
+        "type": "A",
+        "name": "@",
+        "value": "75.2.60.5",
+        "ttlSeconds": 600
+      },
+      {
+        "type": "CNAME",
+        "name": "www",
+        "value": "kalm-collective-storefront.netlify.app.",
+        "ttlSeconds": 3600
+      }
+    ],
+    "emailRecordsChanged": false,
+    "production": {
+      "deployId": "6a5526020de52ac89c54c14a",
+      "deploymentSourceCommit": "48a395a003f29ef60bc44227eac4c0aa7e173a30",
+      "rollbackTag": "rollback/kalm-before-women-back-first-and-ksactive-redirect-20260713"
+    }
   }
 }

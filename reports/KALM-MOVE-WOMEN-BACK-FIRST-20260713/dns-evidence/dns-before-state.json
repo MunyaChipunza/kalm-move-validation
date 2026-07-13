@@ -2,10 +2,11 @@
   "auditedAt": "2026-07-13",
   "domain": "ksactive.co.za",
   "registrar": "GoDaddy",
-  "registrationStatus": "Pending Registration",
+  "historicalSnapshot": true,
+  "supersededByCurrentActiveAudit": true,
   "expiryDate": "2027-07-14",
-  "autoRenew": false,
-  "dnsManagement": "No editable GoDaddy DNS zone was exposed while registration is pending.",
+  "autoRenew": "historical screen assertion, not re-used as current state",
+  "dnsManagement": "Historical capture before the current Active-domain audit; see current-dns-audit.json for the authoritative current state.",
   "publicDns": {
     "nameservers": [],
     "apexA": [],
@@ -13,7 +14,7 @@
     "wwwCname": [],
     "mx": [],
     "txt": [],
-    "result": "NXDOMAIN for every queried name and record type."
+    "result": "Historical pre-activation query result; superseded by the active current DNS inventory."
   },
   "emailRecords": {
     "spf": [],
@@ -24,7 +25,7 @@
   "forwardingOrHosting": {
     "goDaddyForwarding": "not configured",
     "goDaddyWebsiteOrParkingProduct": "not configured",
-    "ssl": "not provisionable until DNS and Netlify domain aliasing are available"
+    "ssl": "Historical pre-configuration state; superseded by final Let’s Encrypt verification."
   },
   "changesMade": []
 }
