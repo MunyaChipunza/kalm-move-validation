@@ -5,6 +5,8 @@ Scope: the eight women’s products whose back construction is a genuine selling
 - [Affected products](affected-products-list.md)
 - [Excluded products](excluded-products-list.md)
 - [Redirect and DNS audit](KS-ACTIVE-REDIRECT-AUDIT.md)
+- [Draft deployment record](DRAFT-DEPLOY.md)
+- [DNS no-change record](DNS-NO-CHANGE.md)
 - `before-vs-after-contact-sheet.jpg`
 - `validation-summary.json`
 
