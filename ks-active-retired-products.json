@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Future KS Active Archive retirement manifest. This manifest does not alter the current storefront during individual product review.",
+  "currentStorefrontMutation": false,
+  "reviewRule": "Only products classified approved_archive after individual stock, source and Munya approval may enter the future public KS Active Archive catalogue.",
+  "products": [
+    {
+      "slug": "ks-high-waist-seamless-leggings",
+      "title": "High Waist Seamless Leggings",
+      "classification": "awaiting_product_review",
+      "currentLiveState": "unchanged pending archive programme"
+    },
+    {
+      "slug": "ks-high-stretch-seamless-leggings",
+      "title": "High Stretch Seamless Leggings",
+      "classification": "awaiting_product_review",
+      "currentLiveState": "unchanged pending archive programme"
+    },
+    {
+      "slug": "ks-open-back-romper",
+      "title": "Open Back Romper",
+      "classification": "awaiting_product_review",
+      "currentLiveState": "unchanged pending archive programme"
+    },
+    {
+      "slug": "ks-high-waist-seamless-shorts",
+      "title": "High Waist Seamless Shorts",
+      "classification": "awaiting_product_review",
+      "currentLiveState": "unchanged pending archive programme"
+    },
+    {
+      "slug": "ks-crisscross-back-sports-bra",
+      "title": "Crisscross Back Sports Bra",
+      "classification": "awaiting_product_review",
+      "currentLiveState": "unchanged pending archive programme"
+    },
+    {
+      "slug": "ks-dual-zip-long-sleeve-crop",
+      "title": "Dual Zip Long-Sleeve Crop",
+      "classification": "awaiting_product_review",
+      "currentLiveState": "unchanged pending archive programme"
+    }
+  ],
+  "p050RepresentativeReview": {
+    "productCode": "P050",
+    "classification": "awaiting_product_review",
+    "storefrontState": "hidden review route only",
+    "approvalState": "awaiting_munya"
+  }
+}

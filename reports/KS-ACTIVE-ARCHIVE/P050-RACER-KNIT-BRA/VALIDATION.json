@@ -1,0 +1,35 @@
+{
+  "productCode": "P050",
+  "stage": "representative_colour_review",
+  "checks": {
+    "onlyP050InScope": true,
+    "representativeColourHasManualStock": true,
+    "representativeColourHasSourceReference": true,
+    "sourceHashesMatchLocalCopies": true,
+    "generatedViewsPresent": ["hero_three_quarter", "back", "side", "front"],
+    "generatedReviewLabelsPresent": true,
+    "sourceReferenceLabelsPresent": true,
+    "hiddenReviewRouteCreated": true,
+    "reviewRouteNoIndex": true,
+    "draftReviewRouteHttpsStatus": 200,
+    "draftReviewRouteHasSourceLabel": true,
+    "draftReviewRouteHasGeneratedLabel": true,
+    "draftReviewRouteHasPurchaseControls": false,
+    "productionReviewRouteHttpsStatus": 404,
+    "p050AbsentFromCurrentArchiveWorkbook": true,
+    "countOneAndTwoReconciled": false,
+    "storefrontModified": false,
+    "productionDeployment": false,
+    "driveFolderRenamed": false,
+    "zohoOrIntranetUpdated": false
+  },
+  "existingValidators": {
+    "catalogue": "pass: 70 products, 716 variants, 0 warnings, 0 errors",
+    "rejectedAssets": "pass",
+    "comprehensiveDraft": "pass: 173 checks",
+    "publicImageDimensions": "pass: 555 public image paths",
+    "mobileFirst": "pass: 888 public image paths",
+    "p050ReviewIsolation": "pass"
+  },
+  "result": "representative review evidence passed source, scope and isolation checks; product remains non-purchasable and awaiting Munya review"
+}

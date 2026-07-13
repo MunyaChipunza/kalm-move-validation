@@ -1,0 +1,47 @@
+{
+  "productCode": "P050",
+  "originalDriveFolderName": "Seamless Knit Racer Back Sports Bra",
+  "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
+  "proposedName": "KS Active Racer Knit Bra",
+  "proposedSlug": "ks-active-racer-knit-bra",
+  "representativeColour": "Espresso",
+  "stockAuthority": {
+    "manualInstruction": true,
+    "confirmedManualQuantity": 11,
+    "countOneAndTwoReconciliation": "not yet present in the available workbook",
+    "storefrontUse": "prohibited"
+  },
+  "historicalCrossReference": {
+    "role": "background evidence only, never inventory authority",
+    "workbook": "KS_Active_Archive_SKU_Master.xlsx",
+    "workbookProductCode": "P023",
+    "workbookColour": "Espresso",
+    "normalisedSourceFilename": "Untitleddesign_28.png"
+  },
+  "files": [
+    {
+      "role": "exact_source_reference_front",
+      "driveFileId": "1sDk5_pDdNDnMbAtbm85ucNIIMyvVbuh6",
+      "driveFileName": "Untitled design (28).png",
+      "driveRelativePath": "Seamless Knit Racer Back Sports Bra/Untitled design (28).png",
+      "localPath": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/espresso-front.png",
+      "originalHashSha256": "BB9A33FB5A8FA8405EF26DE744DDEB85A853889E17DAA56A93E26BBB36C3E973",
+      "copiedHashSha256": "BB9A33FB5A8FA8405EF26DE744DDEB85A853889E17DAA56A93E26BBB36C3E973",
+      "dimensions": { "width": 2820, "height": 2364 },
+      "unaltered": true
+    },
+    {
+      "role": "exact_source_reference_back",
+      "driveFileId": "1lZ39qGtc-zQHl28BHz_wJNj5NvnR718h",
+      "driveFileName": "Untitled design (29).png",
+      "driveRelativePath": "Seamless Knit Racer Back Sports Bra/Untitled design (29).png",
+      "localPath": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/espresso-back.png",
+      "originalHashSha256": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
+      "copiedHashSha256": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
+      "dimensions": { "width": 2820, "height": 2364 },
+      "unaltered": true
+    }
+  ],
+  "hashVerification": "passed",
+  "publicStorefrontReference": false
+}

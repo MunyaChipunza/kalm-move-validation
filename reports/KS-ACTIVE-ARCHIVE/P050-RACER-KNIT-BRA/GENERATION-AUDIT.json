@@ -1,0 +1,23 @@
+{
+  "productCode": "P050",
+  "representativeColour": "Espresso",
+  "status": "representative_review_complete_awaiting_munya",
+  "generationCalls": 5,
+  "acceptedOutputs": 4,
+  "rejectedOutputs": 0,
+  "blockedAttempts": 1,
+  "sourceLockRequired": true,
+  "storefrontIntegration": false,
+  "notes": [
+    "The first request was blocked by the generation safety filter before an image was produced. It is not a rejected visual output.",
+    "Four model images were inspected against the locked neckline, straps, vertical rib, longline band, open racer back, Espresso colour, logo absence, and no-added-feature gates.",
+    "No generated image is accepted for publication. All four are limited to the representative review route and evidence pack.",
+    "No other P050 colour may be generated before Munya approves the representative Espresso review."
+  ],
+  "acceptedAssets": [
+    { "view": "hero_three_quarter", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-hero-three-quarter.png", "sha256": "085EF91A87EC79A3C2BEA3DF3C7A91C2C2A88EB4DAF5EE5C58168E3F8930D475", "dimensions": "1003x1568" },
+    { "view": "back", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-back.png", "sha256": "B94B1B27DB57FBAFABF95E1D9A2EAACC41E3BE3CA6B5B7102D0D23A7AB2EDEDC", "dimensions": "970x1621" },
+    { "view": "side", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-side.png", "sha256": "E34FD2598204835C325BAE9EC833D5C88EBBB5609603C67D2254A66DEED90068", "dimensions": "960x1639" },
+    { "view": "front", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-front.png", "sha256": "C659AF48949AD2F54E4DCDF61FAAF0315BCEA0C84B3F1A2B23D08494DF9D5A06", "dimensions": "971x1619" }
+  ]
+}
