@@ -1,15 +1,18 @@
 {
   "schemaVersion": 1,
   "productCode": "P049",
-  "reviewStage": "representative_colour_only",
-  "selectedColour": "White",
-  "selectedStock": { "colour": "White", "size": "M", "quantity": 1 },
+  "reviewStage": "complete_stocked_colour_review_awaiting_final_munya_approval",
+  "representativeApproval": {
+    "approvedBy": "Munya",
+    "approvedAt": "2026-07-14",
+    "scope": "White representative styling and working name only; it authorised the remaining confirmed P049 colours for review, not public approval."
+  },
   "workingName": "KS Active Rib Contour Legging",
   "workingSlug": "ks-active-rib-contour-legging",
   "sourceAuthority": {
     "construction": "Supplier listing image retained unaltered",
     "physicalStock": "Munya explicit manual P049 stock record",
-    "physicalPhoto": "not supplied; physical White unit must be checked before approval"
+    "physicalPhoto": "not supplied; every stocked physical colour must be compared before final product approval"
   },
   "driveSourceFolder": {
     "id": "19OT_erT6AJKofKhvb47Jx4Zi-M3c59Rj",
@@ -25,7 +28,12 @@
     "sha256": "94E861F940883B9B853351CCD4F8047E1F27CC19B528FC87F29A9BE716931EF9",
     "dimensions": { "width": 800, "height": 800 },
     "unaltered": true,
-    "note": "The unaltered supplier composition displays the selected White legging at right. Other folded colours in the source composition are not selected P049 variants."
+    "note": "The unaltered supplier composition displays the White legging at right. Other folded colours in the source composition are not selected P049 variants."
+  },
+  "manualColourDisclosure": {
+    "exactSourceColour": "White",
+    "manualPhysicalStockLabelRepresentations": ["Bright Green", "Peach Yellow", "Egyptian Blue", "Gray", "Red"],
+    "rule": "The five non-White review colours represent Munya's physical-stock labels, not an independently verified Drive colour reference. Each remains subject to physical-item comparison before final P049 approval."
   },
   "rejectedCandidate": {
     "driveFolderId": "1SCD2QlfRdIt-A6g22aIuYM7FjK6rix6_",

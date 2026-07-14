@@ -1,24 +1,29 @@
 {
-  "scope": "P049 White / M representative review only",
+  "scope": "P049 complete six-colour source-first hidden product review",
   "validator": "tools/validate-p049-review.mjs",
   "status": "passed",
-  "draftDeployId": "6a55f4bdd29c4a224544cf26",
+  "draftDeployId": "6a5616fac105cd1c670b9794",
   "draftRouteVerification": {
     "httpStatus": 200,
     "noindex": true,
-    "sourceBeforeGenerated": true,
-    "noPurchaseControls": true
+    "sixSourceFirstColourGalleries": true,
+    "twentyFourGeneratedViews": true,
+    "noPurchaseControls": true,
+    "completeRangeSheetHttpStatus": 200
   },
   "requiredGuards": [
-    "unaltered supplier source retained first",
-    "four generated White views only",
-    "no other P049 colour or size generated",
+    "unaltered supplier source retained first in every colour gallery",
+    "six confirmed colours with four generated views each",
+    "five non-White colours explicitly disclosed as manual physical-stock-label representations",
     "hidden noindex review route",
     "no purchase controls",
-    "no public catalogue, search, sitemap, structured-data, Zoho or intranet mutation"
+    "no public catalogue, search, sitemap, structured-data, Zoho or intranet mutation",
+    "no P049 Drive-folder rename, approved-archive storage, merge or production deployment"
   ],
   "result": {
-    "assetHashes": true,
+    "sourceHashAndAcceptedAssetHashes": true,
+    "24AcceptedGeneratedAssets": true,
+    "4RejectedOutputsQuarantined": true,
     "hiddenReviewRoute": true,
     "completeReviewPack": true,
     "notPublic": true

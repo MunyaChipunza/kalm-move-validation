@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "productCode": "P049",
+  "status": "complete_stocked_colour_review_awaiting_final_munya_approval",
+  "workingName": "KS Active Rib Contour Legging",
+  "sourcePolicy": "The unaltered supplier listing image is the exact construction authority. White is visibly present at right; other colours are manual physical-stock label representations pending physical comparison.",
+  "confirmedStock": [
+    {
+      "colour": "Bright Green",
+      "size": "S",
+      "quantity": 1
+    },
+    {
+      "colour": "White",
+      "size": "M",
+      "quantity": 1
+    },
+    {
+      "colour": "Peach Yellow",
+      "size": "M",
+      "quantity": 1
+    },
+    {
+      "colour": "Egyptian Blue",
+      "size": "M",
+      "quantity": 1
+    },
+    {
+      "colour": "Gray",
+      "size": "M",
+      "quantity": 1
+    },
+    {
+      "colour": "Red",
+      "size": "M",
+      "quantity": 2
+    }
+  ],
+  "totalPhysicalUnits": 7,
+  "galleryOrder": [
+    "source_reference",
+    "hero_three_quarter",
+    "back",
+    "side",
+    "front"
+  ],
+  "assets": [
+    {
+      "role": "supplier_construction_reference",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/source-reference/supplier-main.jpg",
+      "sha256": "94E861F940883B9B853351CCD4F8047E1F27CC19B528FC87F29A9BE716931EF9",
+      "dimensions": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/bright-green-hero-three-quarter.png",
+      "sha256": "7A5EABEB4541B3E6FBA4BFB6585DAE2A5B69CE8526EC9DEAFF58780CE71CB5F3",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Bright Green",
+      "view": "hero_three_quarter"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/bright-green-back.png",
+      "sha256": "E9B914CBE409D1E3A277670FE5C1F4D9918C7050FD6C460679CEF110A4F1D947",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Bright Green",
+      "view": "back"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/bright-green-side.png",
+      "sha256": "66C12F27A8CA57EC9FCA26FDD31D48A552EF21651354AB607CD1F2FA9B96B173",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Bright Green",
+      "view": "side"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/bright-green-front.png",
+      "sha256": "986C14B2C08A1E51DCC7D74B6A4DBFC4D379EEF309A9C98ACF05D414F6EAEF6A",
+      "dimensions": {
+        "width": 1009,
+        "height": 1558
+      },
+      "colour": "Bright Green",
+      "view": "front"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-hero-three-quarter.png",
+      "sha256": "363BF8C84B3D9DC863B7C7E628945E710EE3330B93DBAF8A8DEF495428DA49FD",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "colour": "White",
+      "view": "hero_three_quarter"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-back.png",
+      "sha256": "96627C69DEED75903280062269787E4B9B7F7D88D27CD43F18DB82C769647E12",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "colour": "White",
+      "view": "back"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-side.png",
+      "sha256": "1DC09AF5FA3E1EEB6D349DAD63B7FF8470649A344554DE35E9C1FECB4BE30C81",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      },
+      "colour": "White",
+      "view": "side"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-front.png",
+      "sha256": "16A4E73CD053701395D9A8CDDCC18754B8789CA9472C541D112820656AB70AB4",
+      "dimensions": {
+        "width": 1003,
+        "height": 1568
+      },
+      "colour": "White",
+      "view": "front"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/peach-yellow-hero-three-quarter.png",
+      "sha256": "6C1F70D8CBAFDD33F707D5C8691C2AA87B53445530CB33BA4F3F3A1BBA899DAE",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Peach Yellow",
+      "view": "hero_three_quarter"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/peach-yellow-back.png",
+      "sha256": "CBCE4762096ACA08AD3D87D2F3B37B54C22748B9DD57F73B88CBF5C01680E072",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Peach Yellow",
+      "view": "back"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/peach-yellow-side.png",
+      "sha256": "DB302855DADFA478E4A1165691D06C46082DFB6098B3DAF4545DBA7DD797FAD7",
+      "dimensions": {
+        "width": 1024,
+        "height": 1535
+      },
+      "colour": "Peach Yellow",
+      "view": "side"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/peach-yellow-front.png",
+      "sha256": "C9384881090E94077BBFDB3FCB4BBEA395BDFEA0C378411D8424D937A866CDA5",
+      "dimensions": {
+        "width": 1003,
+        "height": 1568
+      },
+      "colour": "Peach Yellow",
+      "view": "front"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/egyptian-blue-hero-three-quarter.png",
+      "sha256": "C62B803FAEC7970F868505B4177DDE73466610963DD29E1BA73F7EB788EEE12B",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "colour": "Egyptian Blue",
+      "view": "hero_three_quarter"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/egyptian-blue-back.png",
+      "sha256": "A0B86E7B78E2A4F9AD7D3B6721415E2D515731A2601414BF2D460446F8A554D6",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "colour": "Egyptian Blue",
+      "view": "back"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/egyptian-blue-side.png",
+      "sha256": "2663796C16F6A8D35F23DD1FF82CF8AC4CE9F66B0278845110F8E10E0C74136D",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "colour": "Egyptian Blue",
+      "view": "side"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/egyptian-blue-front.png",
+      "sha256": "F8FC1C4A8284B5178FF019D86E464645F05428E408B59193B5B25BAFCABF437C",
+      "dimensions": {
+        "width": 1003,
+        "height": 1568
+      },
+      "colour": "Egyptian Blue",
+      "view": "front"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/gray-hero-three-quarter.png",
+      "sha256": "6E2AC082102DEB15343FF88B15760A81CB84E491D3DB2D9B5EEABAE5F1C2F9F0",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "colour": "Gray",
+      "view": "hero_three_quarter"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/gray-back.png",
+      "sha256": "F97EE3EFB739D57A8FD46ACF7454A35D943601D8583936AD081911516BEB8E4F",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "colour": "Gray",
+      "view": "back"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/gray-side.png",
+      "sha256": "3D87067F4DC440DD41DC409A9E0663E9D80B42576E887B30B9B275167266A708",
+      "dimensions": {
+        "width": 1023,
+        "height": 1537
+      },
+      "colour": "Gray",
+      "view": "side"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/gray-front.png",
+      "sha256": "48948514AEDDE30619E5D095784609C38E04DB52FA0FC361A8A8B45DB3CD58C7",
+      "dimensions": {
+        "width": 1003,
+        "height": 1568
+      },
+      "colour": "Gray",
+      "view": "front"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/red-hero-three-quarter.png",
+      "sha256": "C48CAEDFAE435FE3EB72101CE4C80866122CB0E9BB9B09246A3A9CB13E15EF51",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Red",
+      "view": "hero_three_quarter"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/red-back.png",
+      "sha256": "F7D8BE3DDD8A80058C2096E0D3A9DF05F122FEAC864D47469AA0C16DF529B384",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Red",
+      "view": "back"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/red-side.png",
+      "sha256": "0CD764D87E3807418A72038DAF145A6796C3110B0852A8797FEEB646D490A8DA",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "colour": "Red",
+      "view": "side"
+    },
+    {
+      "role": "generated_model_review",
+      "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/red-front.png",
+      "sha256": "057E331B9C978B255DF309C0FFB2041E8C193606CB84E0A1853B72C7A9A4F0D7",
+      "dimensions": {
+        "width": 1003,
+        "height": 1568
+      },
+      "colour": "Red",
+      "view": "front"
+    }
+  ],
+  "storefrontIntegration": false,
+  "zohoUpdated": false,
+  "intranetUpdated": false,
+  "productionDeployed": false
+}

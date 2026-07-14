@@ -1,13 +1,16 @@
 # P049 approval status
 
-Current gate: **Representative White style and name approval required from Munya.**
+## Gate 1 — complete
 
-- P049 has one selected representative only: White / M × 1.
-- The exact supplier listing reference is shown first, unchanged.
-- Four generated model-review views follow it.
-- No other P049 colour was generated.
-- The working name is not approved yet.
+Munya approved the White / M × 1 representative and the working name **KS Active Rib Contour Legging** on 14 July 2026. That approval authorises one controlled batch for the five remaining physically confirmed P049 colours only.
+
+## Gate 2 — complete review ready for final approval
+
+- The full review contains exactly the six confirmed stocked colours: Bright Green / S × 1, White / M × 1, Peach Yellow / M × 1, Egyptian Blue / M × 1, Gray / M × 1 and Red / M × 2.
+- Every colour gallery presents the unaltered supplier construction source first, followed by four generated model-review views.
+- White is the exact visibly sourced colour. The other five colours are explicitly labelled manual physical-stock representations pending physical-item comparison.
+- The working name is approved for the P049 complete-product review, not for public publication.
 - The Drive folder has not been renamed under an approved customer name.
 - P049 is not in the approved archive manifest, `products.json`, public collections, search, sitemap, Zoho, the intranet, a merge or production.
 
-On rejection, the root cause must be recorded and only a replacement White representative review may be prepared. On approval, remaining P049 colours may be generated in a separate product stage.
+P049 is now waiting for Munya's full product approval. It remains hidden, non-purchasable and out of public storefront, Zoho and intranet flows until that approval is explicit.
