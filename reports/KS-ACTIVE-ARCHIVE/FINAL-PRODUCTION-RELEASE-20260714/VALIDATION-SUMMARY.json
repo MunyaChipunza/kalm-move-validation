@@ -1,5 +1,5 @@
 {
-  "validatedAt": "2026-07-14T18:59:51.898054+00:00",
+  "validatedAt": "2026-07-14T19:07:57.1635311+00:00",
   "hiddenReview": {
     "validator": "tools/validate-ks-active-final-range.py",
     "passed": true,

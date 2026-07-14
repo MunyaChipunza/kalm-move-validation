@@ -1,5 +1,5 @@
 {
-  "stage": "draft_deploy",
+  "stage": "validation",
   "currentProduct": "P026 - KS Active High-Waist Seamless Short",
   "completedProducts": 13,
   "totalEligibleProducts": 14,
@@ -8,8 +8,8 @@
   "approvedImageCount": 212,
   "rejectedImageCount": 1,
   "lastCompletedProduct": "P028 - KS Active High-Waist Seamless Legging",
-  "lastCommit": "c3dcfcf73202a5a8ab61cdc3adb7d808343f03da",
-  "lastUpdated": "2026-07-14T19:03:30Z",
+  "lastCommit": "07052fcfa7973ca35f8457b5d8408cb11cd9a217",
+  "lastUpdated": "2026-07-14T19:07:57.1635311Z",
   "blocker": "source_evidence_still_incomplete: P026 has private and historical rear construction evidence only; no source-backed front construction view exists. The full production gate is also blocked pending ownership, condition, launch, price, Zoho and intranet reconciliation.",
   "nextAction": "Obtain one clear front construction photograph for P026, then re-run the full 14-product release gate after the required commercial controls are reconciled. The latest P028-inclusive draft is available for internal review only."
 }

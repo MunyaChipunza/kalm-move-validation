@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "validator": "tools/validate-ks-active-archive-release-gates.py",
-  "validatedAt": "2026-07-14T18:59:51.898054+00:00",
+  "validatedAt": "2026-07-14T19:07:54.852191+00:00",
   "passed": false,
   "releaseAuthorised": false,
   "scope": "KS Active Archive only",
