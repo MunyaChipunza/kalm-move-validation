@@ -1,0 +1,50 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const expectedCodes = ["P002", "P003", "P010", "P012", "P019", "P020", "P026", "P027", "P028", "P030", "P033", "P035", "P049", "P050"];
+const expectedPrices = { P002: 799, P003: 499, P010: 399, P012: 399, P019: 399, P020: 399, P026: 419, P027: 499, P028: 529, P030: 479, P033: 529, P035: 499, P049: 529, P050: 399 };
+const errors = [];
+const checks = {};
+const assert = (condition, label) => { checks[label] = Boolean(condition); if (!condition) errors.push(label); };
+const read = (file) => JSON.parse(fs.readFileSync(path.join(root, file), "utf8"));
+const exists = (file) => fs.existsSync(path.join(root, file));
+const data = read("products.json");
+const inventory = read("reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/FINAL-INVENTORY-MANIFEST.json");
+const skuManifest = read("reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/FINAL-SKU-MANIFEST.json");
+const productManifest = read("reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/FINAL-PRODUCT-MANIFEST.json");
+const removal = read("reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/LEGACY-KS-ACTIVE-PUBLIC-REMOVAL-MANIFEST.json");
+const publicKs = data.products.filter((product) => product.brandId === "ks-active" && product.publicationStatus === "published" && product.visibility === "visible");
+const legacyKs = data.products.filter((product) => product.brandId === "ks-active" && !product.id.startsWith("ks-active-archive-"));
+const publicCodes = publicKs.map((product) => product.skuRoot?.replace("KS-ARCH-", "")).sort();
+const expectedSorted = [...expectedCodes].sort();
+const publicSkus = publicKs.flatMap((product) => product.variants || []);
+const publicSkuSet = new Set(publicSkus.map((variant) => variant.sku));
+const manifestSkuSet = new Set(skuManifest.variants.map((variant) => variant.sku));
+const publicImagePaths = publicKs.flatMap((product) => [product.image, ...product.gallery, ...Object.values(product.variantImages || {}).flatMap((variant) => [variant.hero, ...(variant.gallery || [])])]);
+const uniqueImages = [...new Set(publicImagePaths)];
+
+assert(publicKs.length === 14, "fourteen approved KS Active Archive products are public");
+assert(JSON.stringify(publicCodes) === JSON.stringify(expectedSorted), "only the required fourteen product codes are public");
+assert(legacyKs.length === removal.removedLegacyProducts.length && legacyKs.every((product) => product.publicationStatus === "archived" && product.visibility === "hidden" && product.availability === "discontinued"), "all legacy KS Active products are archived and hidden");
+assert(publicKs.every((product) => product.price === expectedPrices[product.skuRoot?.replace("KS-ARCH-", "")] && product.temporaryArchiveLaunchPrice === true && product.priceApprovedBy === "Munya"), "all public prices match Munya temporary launch prices");
+assert(publicSkus.length === 104 && publicSkus.reduce((sum, variant) => sum + variant.quantity, 0) === 111, "storefront has 104 physical SKUs and 111 launch units");
+assert(publicSkuSet.size === publicSkus.length && publicSkuSet.size === manifestSkuSet.size && [...publicSkuSet].every((sku) => manifestSkuSet.has(sku)), "public SKUs are unique and match the final SKU manifest");
+assert(publicSkus.every((variant) => Number.isInteger(variant.quantity) && variant.quantity > 0 && variant.enabled === true), "only positive physical inventory variants are purchasable");
+assert(publicKs.reduce((sum, product) => sum + product.colors.length, 0) === 56, "all fifty-six approved stocked colours are public");
+assert(uniqueImages.length === 224 && uniqueImages.every((image) => image.startsWith("assets/images/products/ks-active/archive-approved/") && !image.includes("review-only") && !image.includes("source")), "public galleries reference only 224 approved generated public assets");
+assert(uniqueImages.every(exists), "every public Archive image path exists");
+assert(!JSON.stringify(publicKs).toLowerCase().includes("kuhle") && !JSON.stringify(publicKs).includes("SOURCE REFERENCE"), "public catalogue contains no Kuhle or review-only reference");
+const netlifyConfig = fs.readFileSync(path.join(root, "netlify.toml"), "utf8");
+assert(["/assets/images/review-only/*", "/reports/KS-ACTIVE-ARCHIVE/*", "/review/ks-active/*"].every((route) => netlifyConfig.includes(`from = \"${route}\"`) && netlifyConfig.includes("status = 404")), "Netlify blocks review-only, source-lock, and KS Active review routes");
+const netlifyIgnore = fs.readFileSync(path.join(root, ".netlifyignore"), "utf8");
+assert(["assets/images/review-only/", "review/", "reports/"].every((entry) => netlifyIgnore.includes(entry)), "Netlify excludes review-only images, review routes, and reports from deploy uploads");
+assert(productManifest.visualRangeApprovalRecorded === true && productManifest.visualApprovalBy === "Munya" && productManifest.visualApprovalDate === "2026-07-14", "visual approval is recorded");
+assert(inventory.totals.physicalLaunchQuantity === 111 && inventory.totals.stockedColours === 56, "final physical inventory totals reconcile");
+assert(publicKs.filter((product) => ["P002", "P003", "P010", "P012", "P019", "P020", "P027", "P030", "P035", "P050"].includes(product.skuRoot?.replace("KS-ARCH-", ""))).every((product) => Object.values(product.variantImages).every((variant) => path.basename(variant.gallery[0]).toLowerCase().includes("back"))), "back-first product galleries lead with the approved back view");
+assert(!fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").includes("ks-high-waist-seamless-leggings") && publicKs.every((product) => fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").includes(`/products/${product.slug}`)), "sitemap excludes legacy KS Active routes and includes all Archive routes");
+
+const result = { schemaVersion: 1, validator: "tools/validate-ks-active-archive-production-release.mjs", passed: errors.length === 0, checks, errors };
+fs.writeFileSync(path.join(root, "reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/LOCAL-CATALOGUE-VALIDATION.json"), `${JSON.stringify(result, null, 2)}\n`);
+if (errors.length) { console.error(JSON.stringify(result, null, 2)); process.exit(1); }
+console.log(JSON.stringify(result, null, 2));

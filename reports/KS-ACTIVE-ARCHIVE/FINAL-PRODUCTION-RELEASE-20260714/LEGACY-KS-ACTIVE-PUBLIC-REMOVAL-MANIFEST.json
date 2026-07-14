@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "removedLegacyProducts": [
+    {
+      "oldProductId": "ks-high-waist-seamless-leggings",
+      "oldName": "High Waist Seamless Leggings",
+      "oldSlug": "ks-high-waist-seamless-leggings",
+      "oldPublicRoute": "/products/ks-high-waist-seamless-leggings",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-high-stretch-seamless-leggings",
+      "oldName": "High Stretch Seamless Leggings",
+      "oldSlug": "ks-high-stretch-seamless-leggings",
+      "oldPublicRoute": "/products/ks-high-stretch-seamless-leggings",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-open-back-romper",
+      "oldName": "Open Back Romper",
+      "oldSlug": "ks-open-back-romper",
+      "oldPublicRoute": "/products/ks-open-back-romper",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-high-waist-seamless-shorts",
+      "oldName": "High Waist Seamless Shorts",
+      "oldSlug": "ks-high-waist-seamless-shorts",
+      "oldPublicRoute": "/products/ks-high-waist-seamless-shorts",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-crisscross-back-sports-bra",
+      "oldName": "Crisscross Back Sports Bra",
+      "oldSlug": "ks-crisscross-back-sports-bra",
+      "oldPublicRoute": "/products/ks-crisscross-back-sports-bra",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-dual-zip-long-sleeve-crop",
+      "oldName": "Dual Zip Long-Sleeve Crop",
+      "oldSlug": "ks-dual-zip-long-sleeve-crop",
+      "oldPublicRoute": "/products/ks-dual-zip-long-sleeve-crop",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "temporaryArchiveLaunchPrice": true,
+  "priceApprovedBy": "Munya",
+  "priceApprovalDate": "2026-07-14",
+  "prices": [
+    {
+      "productCode": "P002",
+      "productName": "KS Active Halter Back Romper",
+      "price": 799,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P003",
+      "productName": "KS Active Rib Scrunch Legging",
+      "price": 499,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P010",
+      "productName": "KS Active Cutout Crossback Bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P012",
+      "productName": "KS Active Scrunch Seamless Short",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P019",
+      "productName": "KS Active Cutout Seamless Bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P020",
+      "productName": "KS Active Crossback Seamless Bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P026",
+      "productName": "KS Active High-Waist Seamless Short",
+      "price": 419,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P027",
+      "productName": "KS Active Curve Seam Legging",
+      "price": 499,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P028",
+      "productName": "KS Active High-Waist Seamless Legging",
+      "price": 529,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P030",
+      "productName": "KS Active Crisscross Back Bra",
+      "price": 479,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P033",
+      "productName": "KS Active Panel Seamless Legging",
+      "price": 529,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P035",
+      "productName": "KS Active Scrunch Seamless Legging",
+      "price": 499,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P049",
+      "productName": "KS Active Rib Contour Legging",
+      "price": 529,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P050",
+      "productName": "KS Active Racer Knit Bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14"
+    }
+  ]
+}

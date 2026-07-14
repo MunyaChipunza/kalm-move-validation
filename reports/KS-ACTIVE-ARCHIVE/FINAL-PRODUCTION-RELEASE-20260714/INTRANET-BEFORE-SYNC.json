@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "reason": "Authenticated browser session bridge is unavailable in this Codex environment; no intranet export was read or changed.",
+  "records": []
+}

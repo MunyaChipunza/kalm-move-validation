@@ -1,6 +1,6 @@
 {
-  "stage": "draft_deploy",
-  "currentProduct": "KS Active Archive final visual and commercial release gate",
+  "stage": "validation",
+  "currentProduct": "KS Active Archive final production reconciliation",
   "completedProducts": 14,
   "totalEligibleProducts": 14,
   "completedColours": 56,
@@ -8,8 +8,8 @@
   "approvedImageCount": 224,
   "rejectedImageCount": 1,
   "lastCompletedProduct": "P026 - KS Active High-Waist Seamless Short",
-  "lastCommit": "5919708b3e689145f3e5bc27a35b6870d06b2742",
-  "lastUpdated": "2026-07-14T19:45:00Z",
-  "blocker": "Final source-locked visual range is complete. Production remains gated pending Munya's complete-range visual approval and reconciliation of ownership, condition, launch decision, launch quantity, public price, Zoho and intranet controls.",
-  "nextAction": "Obtain final visual approval of the complete 14-product review draft, then complete the commercial controls before any production release decision."
+  "lastCommit": "40465af717856739558144738dd36c094efe8496",
+  "lastUpdated": "2026-07-14T20:21:59.875Z",
+  "blocker": "Zoho and KALM intranet cannot be audited or updated because the authenticated browser-session bridge fails before session access (Cannot redefine property: process). GitHub fetch cannot reach github.com:443 through the local proxy, and Netlify CLI cannot open its configuration temporary file (EPERM).",
+  "nextAction": "Restore authenticated Zoho and intranet browser access and GitHub/Netlify connectivity, run live reconciliation, then push and deploy only after every release gate passes."
 }

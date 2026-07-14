@@ -1,48 +1,49 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "validator": "tools/validate-ks-active-archive-release-gates.py",
-  "validatedAt": "2026-07-14T19:43:19.807362+00:00",
+  "validatedAt": "2026-07-14T20:22:02.151745+00:00",
   "passed": false,
   "releaseAuthorised": false,
-  "scope": "KS Active Archive only",
-  "summary": {
-    "completedProducts": 14,
-    "totalEligibleProducts": 14,
-    "completedColours": 56,
-    "totalEligibleColours": 56,
-    "retainedGeneratedViews": 224,
-    "sourceBlockedProducts": []
-  },
+  "scope": "KS Active Archive production release only",
   "checks": {
-    "all_fourteen_products_complete": true,
-    "all_fifty_six_stocked_colours_complete": true,
-    "no_source_blocked_products": true,
-    "p026_front_construction_source_complete": true,
-    "visual_range_approval_recorded": false,
-    "ownership_condition_launch_and_quantity_reconciled": false,
-    "approved_public_prices_available": false,
-    "zoho_inventory_reconciled": false,
-    "intranet_inventory_reconciled": false,
-    "public_catalogue_mapping_finalised": false,
-    "private_source_evidence_not_tracked_or_published": true,
-    "production_deployment_is_not_yet_performed": true
+    "allFourteenProductsComplete": true,
+    "allFiftySixStockedColoursComplete": true,
+    "noSourceBlockedProducts": true,
+    "visualRangeApprovalRecorded": true,
+    "temporaryPricesApproved": true,
+    "launchAuthorityRecorded": true,
+    "legacyPublicCatalogueRemoved": true,
+    "publicCatalogueMappingFinalised": true,
+    "physicalInventoryLoaded": true,
+    "zohoInventoryReconciled": false,
+    "intranetInventoryReconciled": false,
+    "threeSystemReconciliationPassed": false,
+    "privateSourceEvidenceNotPublished": true,
+    "kuhleLikenessNotPublished": true,
+    "noUnsupportedProductPublic": true,
+    "noDuplicateSku": true,
+    "bagValidationPassed": false,
+    "checkoutValidationPassed": false,
+    "mobileValidationPassed": false,
+    "desktopValidationPassed": false,
+    "sitemapValidationPassed": true,
+    "structuredDataValidationPassed": false,
+    "taskApplicationUnchanged": false
   },
   "blockingGates": [
-    "visual_range_approval_recorded",
-    "ownership_condition_launch_and_quantity_reconciled",
-    "approved_public_prices_available",
-    "zoho_inventory_reconciled",
-    "intranet_inventory_reconciled",
-    "public_catalogue_mapping_finalised"
+    "zohoInventoryReconciled",
+    "intranetInventoryReconciled",
+    "threeSystemReconciliationPassed",
+    "bagValidationPassed",
+    "checkoutValidationPassed",
+    "mobileValidationPassed",
+    "desktopValidationPassed",
+    "structuredDataValidationPassed",
+    "taskApplicationUnchanged"
   ],
-  "requiredNextEvidence": {
-    "commerce": "Reconcile ownership, condition, launch decision, launch quantity, approved public price, Zoho quantity and intranet quantity for every sellable SKU."
-  },
-  "controlsConfirmed": {
-    "productsJsonChanged": false,
-    "zohoUpdated": false,
-    "intranetUpdated": false,
-    "productionDeployed": false,
-    "privateEvidencePubliclyExposed": false
+  "externalBlockers": {
+    "zoho": "Zoho has not been read or written in this session.",
+    "intranet": "The intranet has not been read or written in this session.",
+    "production": "GitHub and Netlify access have not been verified from this environment; no production deployment was attempted."
   }
 }

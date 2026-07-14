@@ -1,6 +1,27 @@
 [build]
   publish = "."
 
+# Review and source-lock material is never a public storefront asset. The
+# underlying audit history remains in Git, while these request paths are
+# explicitly unavailable from every production or preview deployment.
+[[redirects]]
+  from = "/assets/images/review-only/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/reports/KS-ACTIVE-ARCHIVE/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/review/ks-active/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 # ksactive.co.za is a domain alias, never a second storefront. These rules are
 # deliberately host-specific and precede the SPA rewrites below.
 [[redirects]]
