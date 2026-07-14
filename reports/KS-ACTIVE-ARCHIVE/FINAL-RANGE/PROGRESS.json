@@ -1,15 +1,15 @@
 {
-  "stage": "image_generation",
-  "currentProduct": "P030 - KS Active Crisscross Back Bra",
-  "completedProducts": 5,
+  "stage": "product_storage",
+  "currentProduct": "Final range cumulative hidden review evidence",
+  "completedProducts": 12,
   "totalEligibleProducts": 14,
-  "completedColours": 38,
+  "completedColours": 51,
   "totalEligibleColours": 56,
-  "approvedImageCount": 152,
+  "approvedImageCount": 204,
   "rejectedImageCount": 0,
-  "lastCompletedProduct": "P027 - KS Active Curve Seam Legging",
-  "lastCommit": "011410cd05ce025ecb2c192fd73b80ba0e824cce",
-  "lastUpdated": "2026-07-14T17:28:53.7558240Z",
+  "lastCompletedProduct": "P019 - KS Active Cutout Seamless Bra",
+  "lastCommit": "a8fdfee406bbcbed381422ddd97692e5d9bd79a3",
+  "lastUpdated": "2026-07-14T18:08:10.3797610Z",
   "blocker": "source_blocked: P026 has rear-only source evidence; P028 has front-only source evidence. Neither product will receive invented missing construction views.",
-  "nextAction": "Commit and push the validated P020/P027 checkpoint, then generate the two matched P030 colours from their source lock."
+  "nextAction": "Commit and push all completed source-backed review packages, then build cumulative hidden review evidence."
 }

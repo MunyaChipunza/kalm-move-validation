@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P010",
+    "proposed_customer_name": "KS Active Cutout Crossback Bra",
+    "source_title": "Seamless Crisscross Cut Out Back Sports Bra",
+    "source_lock": {
+      "construction": "Fine-rib seamless longline training crop top with rounded scoop front, narrow shoulder straps, wide lower band and multi-strap crisscross open-back construction.",
+      "forbidden_changes": [
+        "logos",
+        "padding seams",
+        "zips",
+        "mesh",
+        "cups",
+        "different strap count",
+        "changed lower band"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-1.jpg",
+          "sha256": "D48FA15BB7227F773A8E096B5052312820FAEBBC1DC312426D1A9707436CFBBA",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 149613
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-2.jpg",
+          "sha256": "2F7BA7AE55366249A60DF5A145765D0EDF1A9AD8D6ABF5B28322DC61F6C0F982",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 251885
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Imperial Red",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/generated-multiview-source.png",
+        "sha256": "ACC1AA4B997A358AD0A0E25FA82E55D10009E670FE8E11C3302D2FE35109399B",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1426330
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/hero-three-quarter.jpg",
+          "sha256": "6BADCE5A727D44FDD390BD8835BBA749BD621ED6FC65CEE6EAD4A9E6784ADA80",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57340
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/back.jpg",
+          "sha256": "097BF1CFCDBBD4BF41777BFBB31CCF2E0FCFB6DE45697DEA6D2D607ABD230E44",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58276
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/side.jpg",
+          "sha256": "8BCF520D0CE1628A855E472559830872038D6BEDEA7230E3C0A5ECADC40AE18F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51399
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/front.jpg",
+          "sha256": "7A285854EE4FA8934C85A58675FABCDB166BDDF61A8DF297089F7AB4F078372B",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56235
+        }
+      ]
+    },
+    {
+      "colour": "Peach Yellow",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/peach-yellow/generated-multiview-source.png",
+        "sha256": "62E082BF0B6D56D50439D20B6D87818B086AAAD2C8321F6A488D9C0B992FC943",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1618636
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/peach-yellow/hero-three-quarter.jpg",
+          "sha256": "0C92A4F5E3FAEC7AE9DA82D9B1EC8767256B8F46F5E0AE2A43C93A68A1C15F5D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 67581
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/peach-yellow/back.jpg",
+          "sha256": "0A7E5DABEE668AF74B68D2058314C93ECE2CB168A5231F6BD71B8DA0A5243C29",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59481
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/peach-yellow/side.jpg",
+          "sha256": "A7EC836AB4023CE00B70982F388C55B02624B9071A36862DDBE41B33061F07A9",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 52522
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/peach-yellow/front.jpg",
+          "sha256": "D9ECAD4C82955926A909042256AF87573C272E5A4A8B70A02DE29BBBECCFD123",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62597
+        }
+      ]
+    },
+    {
+      "colour": "Pearl Gray",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/pearl-gray/generated-multiview-source.png",
+        "sha256": "28F9BA5223B28C95696C440B4FD348A79ACE7FBB10129CA00C7D2F022EF80273",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1592210
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/pearl-gray/hero-three-quarter.jpg",
+          "sha256": "C693B5900D3B74B9A8B4C9A4A2EFCBD9146E1DAB8128B3CBBA6D4124075BA279",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57900
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/pearl-gray/back.jpg",
+          "sha256": "B031393244FE6B962232C4A572C9F0E1E6419896CCE8A2E36E305668625EF85D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 70424
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/pearl-gray/side.jpg",
+          "sha256": "1E82514D6D65D15111725C9AB4BF6615D59360B9F31070966846E1E2523000C4",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 52105
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/pearl-gray/front.jpg",
+          "sha256": "4F8DB81EE2C49843981BFABFE7817A8348869811FA0946E634C41345031CC223",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56008
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P010",
+    "validation_time_utc": "2026-07-14T18:07:11.672503+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P033",
+    "proposed_customer_name": "KS Active Panel Seamless Legging",
+    "source_title": "Seamless Solid Tummy Control Leggings",
+    "source_lock": {
+      "construction": "Full-length high-waist seamless legging with clean high waistband, smooth close-fitting legs and the subtle moulded contour/panel construction visible in source.",
+      "forbidden_changes": [
+        "branding",
+        "pockets",
+        "mesh",
+        "piping",
+        "drawstrings",
+        "unsupported new panels",
+        "changed waist height"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-1.jpg",
+          "sha256": "FFDFADC62D77C15221CC65679ADCF81F21E04DB16079241C36465BE37D5DCA33",
+          "dimensions": {
+            "width": 1000,
+            "height": 1256
+          },
+          "bytes": 195271
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-2.jpg",
+          "sha256": "9E3DBE82750BB0B41CB7520969A30CDF480D84754274AB5381F738251E530FE4",
+          "dimensions": {
+            "width": 1000,
+            "height": 1216
+          },
+          "bytes": 190445
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Azure Blue",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/generated-multiview-source.png",
+        "sha256": "99A14D08D11A4B83121546EBCF8582E380EBEC6C78E9D931828062485FC607C7",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1608650
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+          "sha256": "1DBDD9FD872D46B0E6D5E68CC9914A855FFD1C622F59AA26DC8BA828291ACBAA",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 64768
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/back.jpg",
+          "sha256": "6E6CE4A5095C02022D63EECEEF599FAC5791313AB021A671C26AEB8C72544BD3",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60954
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/side.jpg",
+          "sha256": "5AFD20BE958A018A0861D0664086E5EB8FEF00458C291855CDBC452BCC682671",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57124
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/front.jpg",
+          "sha256": "91984AAB7055F655D895BF1E6852D4DEB677BF671EBDAC9929352767567E0EFB",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60961
+        }
+      ]
+    },
+    {
+      "colour": "Byzantine Violet",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/byzantine-violet/generated-multiview-source.png",
+        "sha256": "0AFB258F67B740EAB2CFA1D1CCBA006503082100B27D42C98D18361393AC6BE4",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1595140
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/byzantine-violet/hero-three-quarter.jpg",
+          "sha256": "6076F8428BF0B9BB0B6D6DDCA2AE1D9A463074390881874E966B5F1B9176654B",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59513
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/byzantine-violet/back.jpg",
+          "sha256": "6EF6A31538039016F23DA68B98366130947705B42B771BF4F440E6DDB98FD051",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57677
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/byzantine-violet/side.jpg",
+          "sha256": "AB17BC4272C0D5B72E43A1A1A23C00711936A43F728F832322FAFEAA86A95B0F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 52863
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/byzantine-violet/front.jpg",
+          "sha256": "48AC38E82F99028312A6B41F9C6CCCBF0DA4CB962AC71CE1C6C910272FA0BB3E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57234
+        }
+      ]
+    },
+    {
+      "colour": "Cinnamon",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/cinnamon/generated-multiview-source.png",
+        "sha256": "DC28DC6E20EF82D202F333A6AEDEF9E2D05C44D4D80BACDB6185A224B17E4791",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1567661
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/cinnamon/hero-three-quarter.jpg",
+          "sha256": "6E40F0DBE75FB48E88576EFF701090055E1BA835CAE10881168A6FAA12F17E3B",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58225
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/cinnamon/back.jpg",
+          "sha256": "BF386A90B131617F1048072FD47E0149AB4FE4E48FCE305D012EEEBB9F93C3E6",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56477
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/cinnamon/side.jpg",
+          "sha256": "6D39991AC7113D658B33F8741BD4A0BFBAEC7251DDAC50444BFCAB60F27B0210",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51919
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/cinnamon/front.jpg",
+          "sha256": "233E457DB7C04421A9F4327F025B5FBF9EE525CCDA250FFAAA130E52B0EFD96C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56826
+        }
+      ]
+    },
+    {
+      "colour": "Hunter Green",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/hunter-green/generated-multiview-source.png",
+        "sha256": "02F09B4A444E80E058FBB10C992F9ABC3FC61E09D79ED6BBA33508101AF9C415",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1580757
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/hunter-green/hero-three-quarter.jpg",
+          "sha256": "836262D682116437956F497BAE4538BB3ADA9AD8C2FAFEBA0AD4D5CF63218437",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58511
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/hunter-green/back.jpg",
+          "sha256": "E9405AD46AD6295BB51409D3D98AFCCEF88B538AFA8B8A2282B846FDB114BAB5",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55722
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/hunter-green/side.jpg",
+          "sha256": "1BD05B08B69548190BFD0CE25E4E811372A819BA5C196DC4C8591E547898062A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55220
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/hunter-green/front.jpg",
+          "sha256": "78086DE66ED00BA36A365F74E199075FF5F39F414062264B185ECD76F8771726",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58335
+        }
+      ]
+    },
+    {
+      "colour": "Iron Gray",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/iron-gray/generated-multiview-source.png",
+        "sha256": "666FD55503789732B6126B73D809FC2F564A7CADD8D5202A5802617C85523D0B",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1647450
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/iron-gray/hero-three-quarter.jpg",
+          "sha256": "B272A29DE4BCF19BFD96B0802C12C7EEEEC223586C4C9C5C8D1013C283798242",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63344
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/iron-gray/back.jpg",
+          "sha256": "D44FE2C6C097D8B6FD7907F614EB7D0C7CF4320ADB39C4BCCE8EA23D41B8F75C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61839
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/iron-gray/side.jpg",
+          "sha256": "DFED0C01F48ECCB37AD1C92FF295C86A28903A53054B7575D9364ECD8F5EB899",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59289
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/iron-gray/front.jpg",
+          "sha256": "445CE6D83F3D30D9D41B4154DE392FC86E41335934CA8FE93CFA3DE4A7084627",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59937
+        }
+      ]
+    },
+    {
+      "colour": "Jungle Green",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/jungle-green/generated-multiview-source.png",
+        "sha256": "771EDF50C77E172C226BCB1317E3EB5201BF50DDFD313F833837F476C6378B82",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1615114
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/jungle-green/hero-three-quarter.jpg",
+          "sha256": "7CF3B7F2FB7F9B0287CDB3ED9A9045DF349696D3386ADA55B231036DD997662F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61891
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/jungle-green/back.jpg",
+          "sha256": "303308B8FD4DF71BF53EF01275528DA5418BEF68A2D3F442AEF956324C860B22",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56644
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/jungle-green/side.jpg",
+          "sha256": "6D2343B72F62812F461A0865C76ABF2FB187D5CA1AA72047BBAD7C6F8EB6E3C0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55155
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/jungle-green/front.jpg",
+          "sha256": "ACD7264CE2C6A51E0082626A676073735F159854FF258F887EECE1B3CFAE3D8F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59869
+        }
+      ]
+    },
+    {
+      "colour": "Mauve",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/mauve/generated-multiview-source.png",
+        "sha256": "B3B188102517F34ABC656A95C494142888A023333761214B7D18AC893C5B404A",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1582925
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/mauve/hero-three-quarter.jpg",
+          "sha256": "EBB568F199E11DA36D48859B8EB39D0089B700BF8562AF055A95DE60BA00CCB7",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57905
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/mauve/back.jpg",
+          "sha256": "B483D7255317C3A916EF5B9B3DA6891DFC373856DE59C7E2886AE194EC62B20D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56524
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/mauve/side.jpg",
+          "sha256": "92FF6F97CDEDAA595E8B21B80313FEA109D60C139016303D2D01138123CE1E06",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55388
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/mauve/front.jpg",
+          "sha256": "7E7226A5F8D7DAC985423136B7D6D59B007547F72A0D9D4F78B183FC5AC503AB",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57212
+        }
+      ]
+    },
+    {
+      "colour": "Pine Green",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/pine-green/generated-multiview-source.png",
+        "sha256": "5C7C04C56D15F06F80CCCB6F4C766B55DAB8F8F85E73E8634EB1F40442D601AA",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1605919
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/pine-green/hero-three-quarter.jpg",
+          "sha256": "23EA9897BD32ABFBBFFA4AA655B4943A9475AD0DEC5C442A2CF9796B4D4779AE",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58113
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/pine-green/back.jpg",
+          "sha256": "628AE57BBFD46AEE9AF7C73DFC137806FD63F8C86B0F7EA2317B514635F07FBC",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55109
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/pine-green/side.jpg",
+          "sha256": "8A3D40527A13E65B9937096397DFD76C4B769269F98041A5297B36319910C607",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 53536
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/pine-green/front.jpg",
+          "sha256": "9CB1B444AAF52423EEB4A739530F4090E58DC1587442749337F6E934C8A2F2FE",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56603
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P033",
+    "validation_time_utc": "2026-07-14T18:07:44.077228+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

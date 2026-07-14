@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P003",
+    "proposed_customer_name": "KS Active Rib Scrunch Legging",
+    "source_title": "Seamless High Stretch Scrunch Butt Leggings 1",
+    "source_lock": {
+      "construction": "Full-length fine vertical seamless rib knit legging with high wide ribbed waistband, curved rear yoke and centre-back scrunch seam.",
+      "forbidden_changes": [
+        "logos",
+        "pockets",
+        "mesh",
+        "panels",
+        "different rib direction",
+        "changed waistband",
+        "changed rear yoke"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p003-rib-scrunch-legging/drive-back-reference.jpg",
+          "sha256": "CCD326AE030DA84EA141960D637C1DF9AE7E6EE62F96A485D6AC4858B2669163",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 943914
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p003-rib-scrunch-legging/drive-front-reference.jpg",
+          "sha256": "D6C04B46FFA4D74B5BE513516E1516CB27F8E7D442E863DF8E76EC4834106C23",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 310225
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Ash Gray",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/generated-multiview-source.png",
+        "sha256": "7A06E1705437CDCB9B39346EC248B84B216D4F4755942A5DE24D60FC65831959",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1639477
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/hero-three-quarter.jpg",
+          "sha256": "3FB7E6984B9DF54F39EE1C12634207310CDF2F3537C954977B36D2D6A4D371C8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57283
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/back.jpg",
+          "sha256": "7CF855899E36F90AB364CE727C706DE83A2182FACC38A6EF7964D7D0BC8CC3B2",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55757
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/side.jpg",
+          "sha256": "17EFB495B47861194CBDF825F55283572D365E15C55EB2530012ABAA92C83292",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 50171
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/front.jpg",
+          "sha256": "299F4700258288F838460A54046946B93E17C5F19514C0448D409DFB3AC0171C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56631
+        }
+      ]
+    },
+    {
+      "colour": "Black",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/black/generated-multiview-source.png",
+        "sha256": "BC08ECF936629338CF71F945BD34E500BCB789583AF6ECA5306AE5728E157CFB",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1585764
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/black/hero-three-quarter.jpg",
+          "sha256": "3FE2C2E9159F35119FEBC33618FA81B537EC5902277200F13EB1A5FED4E66D54",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55904
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/black/back.jpg",
+          "sha256": "66015842A9542CDBB6F8810E1D191D8DE1F0CFEEBB8F75016E3C65F2C1BB3CA8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 52375
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/black/side.jpg",
+          "sha256": "76AB2DCDC6538D040290B3BE522DDA3CF266D4B5562DED40E25A9AA507889716",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51321
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/black/front.jpg",
+          "sha256": "CF3BC3C21E7AB6349CEB8C09ADCF7D54D9B4A9C4CE3ACD6B55BB3FDA6F5F3292",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 52951
+        }
+      ]
+    },
+    {
+      "colour": "Chestnut",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/chestnut/generated-multiview-source.png",
+        "sha256": "8D1633F9E420E4F432BCDBED52CAA4C513D22B940D11A93BF4E4872196B7EB55",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1694577
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/chestnut/hero-three-quarter.jpg",
+          "sha256": "72F1D0E4D1260F364B2F025E13A6F554509E5367BFF06E50D5B30CE2BD43E435",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59572
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/chestnut/back.jpg",
+          "sha256": "1752905B14B3842E9049E40A6B1BD7E9ED85B871AC7A8ED7C4091B597700C669",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59897
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/chestnut/side.jpg",
+          "sha256": "4728BD378BD2FAE87322E2F8B4A44A084D5D8A1F70BDABB9EB83B0039AE0CBC5",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56497
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/chestnut/front.jpg",
+          "sha256": "B99DD2BB1BE50724FD792B7E65FFD0B3646F2F20B8F8B2830DEA67B9252C7341",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62519
+        }
+      ]
+    },
+    {
+      "colour": "French Rose",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/french-rose/generated-multiview-source.png",
+        "sha256": "C9B79AEAB70059FC08BA6F1833CE2E1DD7781449BBEF6DD5318A3AC8D6686EE3",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1732165
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/french-rose/hero-three-quarter.jpg",
+          "sha256": "2A105D242B99791055911697FC4F2E001C180C59BE1AA7ECC52A10183BF89181",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 66921
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/french-rose/back.jpg",
+          "sha256": "845FE92595BAFAC8C3C7F38268AF7FB008552F35DE4FFDE96E1FAC5FD14E4886",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 65553
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/french-rose/side.jpg",
+          "sha256": "A82791D225F08905757AA8A2465F5B59CE38057CBC6262EDB9AECC5200D9605A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57889
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/french-rose/front.jpg",
+          "sha256": "59597761AAE42BB760D1E7A4C60A36CA5D87FD03FC04C8C647AFB0240A439E75",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 65970
+        }
+      ]
+    },
+    {
+      "colour": "Sky Blue",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/sky-blue/generated-multiview-source.png",
+        "sha256": "06F51E7196186D279849B2FD2F8DB3E6F6A5ECB0479A95BAF3E440A4844DC3C9",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1615819
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/sky-blue/hero-three-quarter.jpg",
+          "sha256": "3F610885DB22A0B40D73BB1819BE19D53D64F36244F85143A372FF421B583F60",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55339
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/sky-blue/back.jpg",
+          "sha256": "CA5128163969BF8C54D802D2D2E0320B231C74A719BBDBF95BDA09E31E60F4EF",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55121
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/sky-blue/side.jpg",
+          "sha256": "953FBBACF573F3A890F847851845CC4FBC010860B09016B379D54E59221D0DC8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51856
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/sky-blue/front.jpg",
+          "sha256": "8BE95F2D46F606FEE92FD5118E1ACE727B3F417C0E0CA01267F6F55CA22B3F6A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55013
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P003",
+    "validation_time_utc": "2026-07-14T18:07:11.262423+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

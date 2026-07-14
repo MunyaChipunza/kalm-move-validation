@@ -14,6 +14,42 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 VIEWS = ["hero-three-quarter.jpg", "back.jpg", "side.jpg", "front.jpg"]
 CONFIG = {
+    "P002": {
+        "name": "KS Active Halter Back Romper",
+        "source_title": "Crisscross Back Halter Romper",
+        "asset_slug": "halter-back-romper",
+        "report_slug": "HALTER-BACK-ROMPER",
+        "colours": [("Army Green", "army-green"), ("Egyptian Blue", "egyptian-blue"), ("Electric Violet", "electric-violet"), ("Imperial Red", "imperial-red"), ("Midnight Black", "midnight-black")],
+        "construction": "Fitted smooth matte one-piece short unitard with thin shoulder straps, small centred V-notch neckline, short inseam, low open back, narrow crisscross/horizontal back straps and curved rear yoke seam.",
+        "forbidden": ["logos", "pockets", "zips", "cups", "mesh", "different straps", "changed neckline"],
+    },
+    "P003": {
+        "name": "KS Active Rib Scrunch Legging",
+        "source_title": "Seamless High Stretch Scrunch Butt Leggings 1",
+        "asset_slug": "rib-scrunch-legging",
+        "report_slug": "RIB-SCRUNCH-LEGGING",
+        "colours": [("Ash Gray", "ash-gray"), ("Black", "black"), ("Chestnut", "chestnut"), ("French Rose", "french-rose"), ("Sky Blue", "sky-blue")],
+        "construction": "Full-length fine vertical seamless rib knit legging with high wide ribbed waistband, curved rear yoke and centre-back scrunch seam.",
+        "forbidden": ["logos", "pockets", "mesh", "panels", "different rib direction", "changed waistband", "changed rear yoke"],
+    },
+    "P010": {
+        "name": "KS Active Cutout Crossback Bra",
+        "source_title": "Seamless Crisscross Cut Out Back Sports Bra",
+        "asset_slug": "cutout-crossback-bra",
+        "report_slug": "CUTOUT-CROSSBACK-BRA",
+        "colours": [("Imperial Red", "imperial-red"), ("Peach Yellow", "peach-yellow"), ("Pearl Gray", "pearl-gray")],
+        "construction": "Fine-rib seamless longline training crop top with rounded scoop front, narrow shoulder straps, wide lower band and multi-strap crisscross open-back construction.",
+        "forbidden": ["logos", "padding seams", "zips", "mesh", "cups", "different strap count", "changed lower band"],
+    },
+    "P019": {
+        "name": "KS Active Cutout Seamless Bra",
+        "source_title": "High Support Seamless Cut Out Sports Bra",
+        "asset_slug": "cutout-seamless-bra",
+        "report_slug": "CUTOUT-SEAMLESS-BRA",
+        "colours": [("Black", "black"), ("Desert Gold", "desert-gold"), ("Steel", "steel")],
+        "construction": "Fine-rib longline training crop top with rounded scoop front, wide lower band, racer-back panel and single centred triangular lower-back cutout.",
+        "forbidden": ["logos", "extra straps", "mesh", "zips", "new cutouts", "changed triangular opening"],
+    },
     "P020": {
         "name": "KS Active Crossback Seamless Bra",
         "source_title": "Mid Support Seamless Crisscross Sports Bra",
@@ -31,6 +67,33 @@ CONFIG = {
         "colours": [("Espresso", "espresso"), ("Forest Green", "forest-green"), ("Olive", "olive")],
         "construction": "Full-length seamless close-fit legging with high smooth waistband, clean plain legs and the subtle rear centre/contour construction shown in source.",
         "forbidden": ["logos", "pockets", "mesh", "side panels", "contrast piping", "unsupported scrunch", "changed waistband"],
+    },
+    "P030": {
+        "name": "KS Active Crisscross Back Bra",
+        "source_title": "Seamless Crisscross Back Sports Bra",
+        "asset_slug": "crisscross-back-bra",
+        "report_slug": "CRISSCROSS-BACK-BRA",
+        "colours": [("Black", "black"), ("True Purple", "true-purple")],
+        "construction": "Smooth longline training crop top with rounded scoop front, clean wide lower band, racer-style upper back, narrow X-shaped crossed straps and lower triangular opening.",
+        "forbidden": ["logos", "mesh", "zips", "extra straps", "padding seams", "new cutouts"],
+    },
+    "P033": {
+        "name": "KS Active Panel Seamless Legging",
+        "source_title": "Seamless Solid Tummy Control Leggings",
+        "asset_slug": "panel-seamless-legging",
+        "report_slug": "PANEL-SEAMLESS-LEGGING",
+        "colours": [("Azure Blue", "azure-blue"), ("Byzantine Violet", "byzantine-violet"), ("Cinnamon", "cinnamon"), ("Hunter Green", "hunter-green"), ("Iron Gray", "iron-gray"), ("Jungle Green", "jungle-green"), ("Mauve", "mauve"), ("Pine Green", "pine-green")],
+        "construction": "Full-length high-waist seamless legging with clean high waistband, smooth close-fitting legs and the subtle moulded contour/panel construction visible in source.",
+        "forbidden": ["branding", "pockets", "mesh", "piping", "drawstrings", "unsupported new panels", "changed waist height"],
+    },
+    "P035": {
+        "name": "KS Active Scrunch Seamless Legging",
+        "source_title": "Seamless Breathable Scrunch Butt Leggings",
+        "asset_slug": "scrunch-seamless-legging",
+        "report_slug": "SCRUNCH-SEAMLESS-LEGGING",
+        "colours": [("Imperial Red", "imperial-red"), ("Peach Yellow", "peach-yellow"), ("Pearl Gray", "pearl-gray")],
+        "construction": "Full-length close-fit legging with high smooth waistband, clean full legs and the rear centre scrunch/contour construction visible in source.",
+        "forbidden": ["branding", "pockets", "mesh", "side panels", "contrast piping", "drawstrings", "new seams"],
     },
 }
 
@@ -63,7 +126,10 @@ def main() -> None:
     assets = ROOT / "assets/images/review-only/ks-active/archive-range-draft" / f"{args.product_code.lower()}-{config['asset_slug']}"
     out = ROOT / "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE" / f"{args.product_code}-{config['report_slug']}"
     out.mkdir(parents=True, exist_ok=True)
-    source_files = sorted(source.glob("zip-source-*"))
+    source_files = sorted(
+        item for item in source.iterdir()
+        if item.is_file() and item.suffix.lower() in {".avif", ".jpeg", ".jpg", ".png", ".webp"}
+    )
     errors: list[str] = []
     colours = []
     for colour, folder in config["colours"]:
@@ -84,7 +150,7 @@ def main() -> None:
     checks = {
         "all_matched_colours_have_review_packages": len(colours) == len(config["colours"]),
         "four_generated_views_per_colour": all(len(item["views"]) == 4 for item in colours),
-        "source_locks_retained": len(source_files) == 2,
+        "source_locks_retained": len(source_files) >= 2,
         "review_assets_non_public": all(item["master_sheet"]["path"].startswith("assets/images/review-only/") for item in colours),
         "products_json_untouched": True,
         "zoho_untouched": True,
