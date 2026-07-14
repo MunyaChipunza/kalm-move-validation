@@ -6,4 +6,6 @@ P026 and P028 are now source-locked for draft generation. P026's newly supplied 
 
 The latest release-gate result is in `RELEASE-GATE-VALIDATION.json`. The visual source scope is now complete at 14 products and 56 colours, but production remains blocked pending final visual approval plus ownership, condition, launch, price, Zoho and intranet controls. `products.json`, public collections, pricing, Zoho, intranet and production remain unchanged.
 
+The latest unlinked review draft is `https://6a5691be67a1ecfd1017be52--kalm-collective-storefront.netlify.app/review/ks-active/archive-final-range/` (Netlify deploy `6a5691be67a1ecfd1017be52`).
+
 NCC status: no local NCC or `soul.md` source was available in this worktree, so no entry was fabricated.
