@@ -1,5 +1,8 @@
 {
   "reviewedAt": "2026-07-14",
+  "status": "superseded_by_corrected_workbook",
+  "supersededBy": "reports/KS-ACTIVE-ARCHIVE/CORRECTED-STOCK-MANIFEST-20260714.json",
+  "supersessionReason": "This report used an older Downloads workbook. The authoritative Desktop workbook contains 87 matched positive variants across 12 additional Gate A families.",
   "workbookPresent": "C:\\Users\\Dell\\Downloads\\KS_Active_Archive_SKU_Master.xlsx",
   "requestedWorkbookNameFound": false,
   "requestedWorkbookName": "KS_Active_Archive_SKU_Master(2).xlsx",

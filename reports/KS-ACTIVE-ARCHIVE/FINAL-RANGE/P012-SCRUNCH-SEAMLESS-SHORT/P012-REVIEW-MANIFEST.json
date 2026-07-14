@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P012",
+    "source_title": "Seamless Breathable Scrunch Butt Shorts",
+    "proposed_customer_name": "KS Active Scrunch Seamless Short",
+    "source_lock": {
+      "construction": "Fitted seamless high-rise bike short with wide waistband, mid-thigh inseam, clean leg openings and the subtle centre-rear seam/shaping visible in source.",
+      "forbidden_changes": [
+        "pockets",
+        "logos",
+        "mesh",
+        "contrasting panels",
+        "drawstrings",
+        "changed inseam",
+        "unsupported side seams"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-1.jpg",
+          "sha256": "E2C5CC464F2A871419D681AF8385D56F73C7F650CEA1D57F01AE48C09C440277",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 133542
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-2.jpg",
+          "sha256": "A2B4FB349CFCB53F7C83AB11861492D94E02D0095AA2FD139BB17E52E2C17B6F",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 143807
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Egyptian Blue",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/generated-multiview-source.png",
+        "sha256": "3597B6094B21DA5C31F295B57448190A21463193FFCF3A5FF57627A1CD90E41F",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1468979
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/hero-three-quarter.jpg",
+          "sha256": "A5F62C51FACF8A691B16C32218DFA71BDA6B6E9E26B92274DDF2FD26BE7E9CB0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61655
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/back.jpg",
+          "sha256": "173971850D90FA48A1302608E919A7A472CDC56657FB37F10BBAA6C0FE9273B7",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56059
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/side.jpg",
+          "sha256": "AB49FA0AEA677546038CCE2A121FC2B8944113FC550BA0F6FB513639BB9F5D14",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 53842
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/front.jpg",
+          "sha256": "43E20AE8FA496B2F84F8D447519F70735C076EAF14F83BE74BA507E1237E57E0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60182
+        }
+      ],
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included."
+    },
+    {
+      "colour": "Imperial Red",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/imperial-red/generated-multiview-source.png",
+        "sha256": "B97232C760A11176780AD151405AECD3B64351071A13DCB0F0441E321C877EFA",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1597047
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/imperial-red/hero-three-quarter.jpg",
+          "sha256": "9325B3A9A9E7127969219F94377E52AD84338700FC38E89D4329A9DB7621A3F9",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63642
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/imperial-red/back.jpg",
+          "sha256": "D76B18D51C9E66EA888E347B9337D274084D4D54C69112B025D0FC8781E8A9C6",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61469
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/imperial-red/side.jpg",
+          "sha256": "D0BB1828689A86913AF554377E069E2A4CA47CFE79811BCF404B9A276444604F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63099
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/imperial-red/front.jpg",
+          "sha256": "FBCC2EA49923719B87E1ADCDA5F1096176935B314154C9266B51521C9F538D07",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61710
+        }
+      ],
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included."
+    },
+    {
+      "colour": "Peach Yellow",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/peach-yellow/generated-multiview-source.png",
+        "sha256": "C210B4A0A5091CECD396542978AD06E58413875843CB60D543CDE26E83BF85B4",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1451226
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/peach-yellow/hero-three-quarter.jpg",
+          "sha256": "82D7A5DC3905AB72DCCB81AA409B52DC03E95B4A55D406E3C16954EA0BFA9802",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60440
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/peach-yellow/back.jpg",
+          "sha256": "F3ED54CE7F075D8B41E57FF8065451ED8AAA580393136A74F1644E27AF479E76",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57894
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/peach-yellow/side.jpg",
+          "sha256": "B5211F0D95BA72385346F7771EF24BDECD46E12B0F1CC55D68670DE7F7017701",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55391
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/peach-yellow/front.jpg",
+          "sha256": "7607200DD46AD8073B174FAC5685B2BA920A741ACF75224AACF86C2037860514",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59199
+        }
+      ],
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included."
+    },
+    {
+      "colour": "Pearl Gray",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/pearl-gray/generated-multiview-source.png",
+        "sha256": "6C22FF4B32302305463D4F19B1E765DEE83D861394E376719CF07489878E94B3",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1656945
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/pearl-gray/hero-three-quarter.jpg",
+          "sha256": "3D4A50C407FDC9F003A4941065FA58E8400FE845E4BE9035260B28A8139F80FA",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 66006
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/pearl-gray/back.jpg",
+          "sha256": "01183545A372B287A58ED8645D5CED0D1F5E283EEF6836BF13D790414BEAF199",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63609
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/pearl-gray/side.jpg",
+          "sha256": "5C253A0898E06FD4E4CD8630A755D917EB9CB6F87E11A0AE0BB6B013F87AF842",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58913
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/pearl-gray/front.jpg",
+          "sha256": "B9785C57B505F141C572E453660C3244A5386CBB35995DF0C80B18B6E94F637E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 67535
+        }
+      ],
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included."
+    }
+  ],
+  "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P012-SCRUNCH-SEAMLESS-SHORT/P012-GENERATED-MODEL-CONTACT-SHEET.jpg",
+  "validation": {
+    "product_code": "P012",
+    "validation_time_utc": "2026-07-14T15:27:21.014496+00:00",
+    "passed": true,
+    "checks": {
+      "four_matched_stocked_colours_present": true,
+      "four_generated_views_per_colour_present": true,
+      "master_sheets_retained": true,
+      "source_lock_pair_retained": true,
+      "non_public_review_only_paths": true,
+      "products_json_untouched_by_checkpoint": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

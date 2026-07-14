@@ -1,3 +1,5 @@
+> **SUPERSEDED: This blocker was produced from an older workbook and must not be used for current KS Active stock decisions.** The corrected source is `C:\Users\Dell\OneDrive\Desktop\KS_Active_Archive_SKU_Master.xlsx`, SHA-256 `91650C7A344172BF33E2550261A5B45DAED4DC31D30A11AB47AF5B618EC2DCED`.
+
 # KS Active Archive stock-baseline reconciliation — 14 July 2026
 
 ## Read-only source reviewed

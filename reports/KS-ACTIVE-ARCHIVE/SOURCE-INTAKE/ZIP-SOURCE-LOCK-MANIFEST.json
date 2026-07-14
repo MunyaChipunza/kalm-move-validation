@@ -1,0 +1,230 @@
+{
+  "purpose": "Versioned source locks copied individually from user-provided source ZIP; non-public review-only use.",
+  "source_zip": {
+    "path": "C:\\Users\\Dell\\Downloads\\product images-20260714T132444Z-1-001.zip",
+    "sha256": "E1D1957FA3298005FF5296AC0DD97975CD2DA7D40C5B84161A39674DBCAEE489"
+  },
+  "created_utc": "2026-07-14T13:56:03.837068+00:00",
+  "products": [
+    {
+      "product_code": "P002",
+      "zip_folder": "Crisscross Back Halter Romper",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Crisscross Back Halter Romper/\u2553\u2248\u2550\u255d-03.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-1.jpg",
+          "size_bytes": 601911,
+          "sha256": "9DA39C1DF011BE704BCF10C8395094AC918C98788403F198335CB50E01809EFE"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Crisscross Back Halter Romper/\u2567\u03a9\u255f\u0398-65.jpg",
+          "contact_sheet_index": 6,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-2.jpg",
+          "size_bytes": 355621,
+          "sha256": "17C842F53DB15D9111F1E8F73DD4C692CD99A9FB297C8229DE1DAA63D02F8B2D"
+        }
+      ]
+    },
+    {
+      "product_code": "P010",
+      "zip_folder": "Seamless Crisscross Cut Out Back Crop",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Crisscross Cut Out Back Crop/\u63cf\u8ff0\u56fe_39.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-1.jpg",
+          "size_bytes": 149613,
+          "sha256": "D48FA15BB7227F773A8E096B5052312820FAEBBC1DC312426D1A9707436CFBBA"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Crisscross Cut Out Back Crop/\u63cf\u8ff0\u56fe_35.jpg",
+          "contact_sheet_index": 2,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-2.jpg",
+          "size_bytes": 251885,
+          "sha256": "2F7BA7AE55366249A60DF5A145765D0EDF1A9AD8D6ABF5B28322DC61F6C0F982"
+        }
+      ]
+    },
+    {
+      "product_code": "P012",
+      "zip_folder": "Seamless Breathable Scrunch Butt Shorts",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Breathable Scrunch Butt Shorts/\u63cf\u8ff0\u56fe_47.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-1.jpg",
+          "size_bytes": 133542,
+          "sha256": "E2C5CC464F2A871419D681AF8385D56F73C7F650CEA1D57F01AE48C09C440277"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Breathable Scrunch Butt Shorts/\u63cf\u8ff0\u56fe_41.jpg",
+          "contact_sheet_index": 6,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-2.jpg",
+          "size_bytes": 143807,
+          "sha256": "A2B4FB349CFCB53F7C83AB11861492D94E02D0095AA2FD139BB17E52E2C17B6F"
+        }
+      ]
+    },
+    {
+      "product_code": "P019",
+      "zip_folder": "HIGH  Support Seamless Cut Out Sports Bra",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/HIGH  Support Seamless Cut Out Sports Bra/Untitled design (90).png",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-1.png",
+          "size_bytes": 5000773,
+          "sha256": "CC7CF24B91C3C818A5160977E454FB8ED6CCD3AD376C3537EEE4A645D202A5FD"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/HIGH  Support Seamless Cut Out Sports Bra/Untitled design (84).png",
+          "contact_sheet_index": 2,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-2.png",
+          "size_bytes": 4194072,
+          "sha256": "72B7A96D1F089C3495586C54B58EBD63CC07FFF79859C5B716D194747A77F4C9"
+        }
+      ]
+    },
+    {
+      "product_code": "P020",
+      "zip_folder": "Mid Support Seamless Crisscross Sports Bra",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Mid Support Seamless Crisscross Sports Bra/Untitled design (78).png",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-1.png",
+          "size_bytes": 4694392,
+          "sha256": "BCA6578CA22CC8EA5CDE7FE974E7106083B39444C42DC1514D9552D38C51B858"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Mid Support Seamless Crisscross Sports Bra/Untitled design (10).png",
+          "contact_sheet_index": 4,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-2.png",
+          "size_bytes": 3353122,
+          "sha256": "3600F8EE088AEF68CAE31E73F5F302B6DCFD3C4F7DAE98376B1AE2B7542EF1FB"
+        }
+      ]
+    },
+    {
+      "product_code": "P026",
+      "zip_folder": "High Waist Seamless Sports Shorts",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/High Waist Seamless Sports Shorts/\u5546\u54c1\u4e3b\u56fe_22.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-1.jpg",
+          "size_bytes": 139000,
+          "sha256": "0B9E67BF5AFF3C781BCF64CFA4B8B2D77AE80594E798E3C84A03FDD55A14236C"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/High Waist Seamless Sports Shorts/\u5546\u54c1\u4e3b\u56fe_23.jpg",
+          "contact_sheet_index": 3,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-2.jpg",
+          "size_bytes": 155579,
+          "sha256": "4424C0B08A2CEC35D89670580A997B959FEF0DA0877FE4C0E9DD4D4288D3C427"
+        }
+      ]
+    },
+    {
+      "product_code": "P027",
+      "zip_folder": "Seamless Breathable Scrunch Butt Tummy Control Leggings",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Breathable Scrunch Butt Tummy Control Leggings/\u63cf\u8ff0\u56fe_39.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-1.jpg",
+          "size_bytes": 141402,
+          "sha256": "4D941C62F863108F893890D33DF46261FB0D3F32521D8942684C22D382BF8965"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Breathable Scrunch Butt Tummy Control Leggings/\u63cf\u8ff0\u56fe_43.jpg",
+          "contact_sheet_index": 3,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-2.jpg",
+          "size_bytes": 151534,
+          "sha256": "762C1771A025909E69A23A9B9909AADA4A61EE7A24101BBB7ECDFCC4B41B2752"
+        }
+      ]
+    },
+    {
+      "product_code": "P028",
+      "zip_folder": "High Waist Seamless Leggings ",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/High Waist Seamless Leggings /\u5546\u54c1\u4e3b\u56fe_26.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-1.jpg",
+          "size_bytes": 69418,
+          "sha256": "B5F047A5D68C6D507033570CAE7A1D337141617A8914DFF7022B8325B5106BEC"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/High Waist Seamless Leggings /\u5546\u54c1\u4e3b\u56fe_27.jpg",
+          "contact_sheet_index": 2,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-2.jpg",
+          "size_bytes": 75369,
+          "sha256": "46B40FFA1BAFCC3ECBC9849F5F717B11CDC12EAE4D85241321F1AE1CC7D737A1"
+        }
+      ]
+    },
+    {
+      "product_code": "P030",
+      "zip_folder": "Seamless Crisscross Back Sports Bra",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Crisscross Back Sports Bra/\u7eff\u8272\u6587\u80f8.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-1.jpg",
+          "size_bytes": 120838,
+          "sha256": "2F9214A363452D1F4E4C67B4015EC4F034D6A66980A1CE97AAE720E7BF99E4D4"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Crisscross Back Sports Bra/Untitled design - 2022-11-15T121028.077.png",
+          "contact_sheet_index": 11,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-2.png",
+          "size_bytes": 2984229,
+          "sha256": "673570B50A60CA1797F9F2E347035AADBD5E5BC00923C08E456248A2BDCE9C9E"
+        }
+      ]
+    },
+    {
+      "product_code": "P033",
+      "zip_folder": "Seamless Solid Tummy Control Leggings",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Solid Tummy Control Leggings/\u63cf\u8ff0\u56fe_54.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-1.jpg",
+          "size_bytes": 195271,
+          "sha256": "FFDFADC62D77C15221CC65679ADCF81F21E04DB16079241C36465BE37D5DCA33"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Solid Tummy Control Leggings/\u63cf\u8ff0\u56fe_51.jpg",
+          "contact_sheet_index": 4,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-2.jpg",
+          "size_bytes": 190445,
+          "sha256": "9E3DBE82750BB0B41CB7520969A30CDF480D84754274AB5381F738251E530FE4"
+        }
+      ]
+    },
+    {
+      "product_code": "P035",
+      "zip_folder": "Seamless Breathable Scrunch Butt Leggings ",
+      "selected_sources": [
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Breathable Scrunch Butt Leggings /\u63cf\u8ff0\u56fe_59.jpg",
+          "contact_sheet_index": 1,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-1.jpg",
+          "size_bytes": 119772,
+          "sha256": "7E0C445A0605968605BD6530DF6975DC63BEDDD41780736B1FC12BA5366D79E0"
+        },
+        {
+          "zip_entry": "product images/ACTIVE PRODUCTS/Seamless Breathable Scrunch Butt Leggings /\u63cf\u8ff0\u56fe_61.jpg",
+          "contact_sheet_index": 4,
+          "local_path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-2.jpg",
+          "size_bytes": 125906,
+          "sha256": "896DA50BAFE10025FDB27B2DD27BAE8897A6C7FB53D6B32A2E37433E15265EEB"
+        }
+      ]
+    }
+  ]
+}
