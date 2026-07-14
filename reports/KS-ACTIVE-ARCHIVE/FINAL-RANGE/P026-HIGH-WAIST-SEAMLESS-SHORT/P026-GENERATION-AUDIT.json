@@ -1,0 +1,15 @@
+{
+  "productCode": "P026",
+  "product": "KS Active High-Waist Seamless Short",
+  "scope": "Draft-only, source-locked model review",
+  "generationSystem": "OpenAI image generation",
+  "generationCalls": 3,
+  "acceptedCalls": 3,
+  "rejectedCalls": 0,
+  "retainedGeneratedViews": 12,
+  "acceptedColours": ["Electric Violet", "Flamingo", "True Purple"],
+  "constructionDecision": "The private front reference shows the waistband folded down; generated review imagery restores the standard unfolded high-rise position confirmed by the matching legging construction lock.",
+  "privateSourcePhotographIncluded": false,
+  "publicIntegration": false,
+  "productionDeployment": false
+}

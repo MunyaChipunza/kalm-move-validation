@@ -1,15 +1,15 @@
 {
   "stage": "validation",
-  "currentProduct": "P026 - KS Active High-Waist Seamless Short",
-  "completedProducts": 13,
+  "currentProduct": "KS Active Archive final visual and commercial release gate",
+  "completedProducts": 14,
   "totalEligibleProducts": 14,
-  "completedColours": 53,
+  "completedColours": 56,
   "totalEligibleColours": 56,
-  "approvedImageCount": 212,
+  "approvedImageCount": 224,
   "rejectedImageCount": 1,
-  "lastCompletedProduct": "P028 - KS Active High-Waist Seamless Legging",
-  "lastCommit": "07052fcfa7973ca35f8457b5d8408cb11cd9a217",
-  "lastUpdated": "2026-07-14T19:07:57.1635311Z",
-  "blocker": "source_evidence_still_incomplete: P026 has private and historical rear construction evidence only; no source-backed front construction view exists. The full production gate is also blocked pending ownership, condition, launch, price, Zoho and intranet reconciliation.",
-  "nextAction": "Obtain one clear front construction photograph for P026, then re-run the full 14-product release gate after the required commercial controls are reconciled. The latest P028-inclusive draft is available for internal review only."
+  "lastCompletedProduct": "P026 - KS Active High-Waist Seamless Short",
+  "lastCommit": "1ceeb5a4b09a54271e23e5546aecf7c376d77c59",
+  "lastUpdated": "2026-07-14T19:39:30.4698356Z",
+  "blocker": "Final source-locked visual range is complete. Production remains gated pending Munya's complete-range visual approval and reconciliation of ownership, condition, launch decision, launch quantity, public price, Zoho and intranet controls.",
+  "nextAction": "Publish the refreshed private review draft, obtain final visual approval, then complete the commercial controls before any production release decision."
 }

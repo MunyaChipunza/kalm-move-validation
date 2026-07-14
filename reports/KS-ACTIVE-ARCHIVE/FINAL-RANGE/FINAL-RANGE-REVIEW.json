@@ -1,16 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T18:59:51.165991+00:00",
+  "generatedAt": "2026-07-14T19:38:39.538954+00:00",
   "status": "draft_only_ready_for_range_review",
   "summary": {
-    "completedProducts": 13,
+    "completedProducts": 14,
     "totalEligibleProducts": 14,
-    "completedColours": 53,
+    "completedColours": 56,
     "totalEligibleColours": 56,
-    "retainedGeneratedViews": 212,
-    "sourceBlockedProducts": [
-      "P026"
-    ]
+    "retainedGeneratedViews": 224,
+    "sourceBlockedProducts": []
   },
   "products": [
     {
@@ -435,14 +433,30 @@
       "productCode": "P026",
       "name": "KS Active High-Waist Seamless Short",
       "driveFolderId": "1DPiL2BmIp5DxmSNyOQUvCP-cSiGlLrJG",
-      "status": "source_blocked_rear_only",
+      "status": "completed_review",
       "source": {
         "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-1.jpg",
         "width": 768,
         "height": 1152
       },
-      "generatedHero": null,
-      "generatedBack": null,
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg",
+        "sha256": "74B1D50BFECCF203B1939C9FD21355EE3D56823B8FB6620C9B99020B9B6DD93C",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 58507
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/back.jpg",
+        "sha256": "F4C18741CBAE33393A34121B7E073E5A1678A1963194646EF58B5120AD3122DA",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 56995
+      },
       "stockedColours": [
         "Electric Violet",
         "Flamingo",
@@ -450,10 +464,43 @@
       ],
       "matchedUnits": 3,
       "sourceLock": {
-        "restriction": "private and historical evidence confirms rear construction only; a clear front construction view is still missing, so no generated model views are permitted",
-        "requiredForRelease": "exact complementary construction view from physical stock or approved Drive source"
+        "construction": "Smooth matte seamless high-waist short matching the locked P028 legging construction, with a broad straight unfolded high-rise waistband, clean unbroken front, subtle rear centre seam/contour, upper-thigh inseam and clean narrow leg hems.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "side panels",
+          "mesh",
+          "drawstrings",
+          "scrunch",
+          "rib knit",
+          "contrast piping",
+          "changed waistband",
+          "changed inseam"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-1.jpg",
+            "sha256": "0B9E67BF5AFF3C781BCF64CFA4B8B2D77AE80594E798E3C84A03FDD55A14236C",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 139000
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-2.jpg",
+            "sha256": "4424C0B08A2CEC35D89670580A997B959FEF0DA0877FE4C0E9DD4D4288D3C427",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 155579
+          }
+        ],
+        "private_source_evidence": "Private front, rear and rear-detail construction evidence is held outside Git and Netlify. The front reference shows the waistband folded down; the standard unfolded high-rise position is confirmed by the matching locked legging construction. No source photograph or likeness is included in this review package."
       },
-      "reportPath": null
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P026-HIGH-WAIST-SEAMLESS-SHORT/P026-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
     },
     {
       "productCode": "P027",
@@ -901,8 +948,9 @@
     }
   ],
   "checks": {
-    "thirteen_completed_packages_have_passing_product_validation": true,
-    "p026_rear_only_source_block_recorded": true,
+    "fourteen_completed_packages_have_passing_product_validation": true,
+    "no_source_blocked_products": true,
+    "p026_private_source_lock_complete": true,
     "p028_private_source_lock_complete": true,
     "products_json_unchanged_from_master": true,
     "zoho_unchanged": true,
@@ -917,6 +965,7 @@
     "P012": true,
     "P019": true,
     "P020": true,
+    "P026": true,
     "P027": true,
     "P028": true,
     "P030": true,

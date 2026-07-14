@@ -435,6 +435,30 @@
       "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
     },
     {
+      "sku": "KS-ARCH-P026-ELEVI-M",
+      "productCode": "P026",
+      "colour": "Electric Violet",
+      "size": "M",
+      "quantity": 1,
+      "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
+    },
+    {
+      "sku": "KS-ARCH-P026-FLMNG-S",
+      "productCode": "P026",
+      "colour": "Flamingo",
+      "size": "S",
+      "quantity": 1,
+      "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
+    },
+    {
+      "sku": "KS-ARCH-P026-TRUPU-M",
+      "productCode": "P026",
+      "colour": "True Purple",
+      "size": "M",
+      "quantity": 1,
+      "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
+    },
+    {
       "sku": "KS-ARCH-P027-ESPRS-L",
       "productCode": "P027",
       "colour": "Espresso",
@@ -478,6 +502,22 @@
       "sku": "KS-ARCH-P027-OLVOL-S",
       "productCode": "P027",
       "colour": "Olive",
+      "size": "S",
+      "quantity": 1,
+      "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
+    },
+    {
+      "sku": "KS-ARCH-P028-ELEVI-S",
+      "productCode": "P028",
+      "colour": "Electric Violet",
+      "size": "S",
+      "quantity": 1,
+      "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
+    },
+    {
+      "sku": "KS-ARCH-P028-TRUPU-S",
+      "productCode": "P028",
+      "colour": "True Purple",
       "size": "S",
       "quantity": 1,
       "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"
@@ -796,8 +836,6 @@
     }
   ],
   "excludedProductCodes": [
-    "P026",
-    "P028",
     "P016",
     "P017"
   ]

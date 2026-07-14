@@ -59,6 +59,16 @@ CONFIG = {
         "construction": "Smooth seamless longline bra with rounded scoop neckline, broad shoulder straps, wide lower band and crossed X-back configuration with a central lower-back opening.",
         "forbidden": ["logos", "mesh", "extra straps", "zips", "cups", "changed neckline"],
     },
+    "P026": {
+        "name": "KS Active High-Waist Seamless Short",
+        "source_title": "High Waist Seamless Shorts",
+        "asset_slug": "high-waist-seamless-short",
+        "report_slug": "HIGH-WAIST-SEAMLESS-SHORT",
+        "colours": [("Electric Violet", "electric-violet"), ("Flamingo", "flamingo"), ("True Purple", "true-purple")],
+        "construction": "Smooth matte seamless high-waist short matching the locked P028 legging construction, with a broad straight unfolded high-rise waistband, clean unbroken front, subtle rear centre seam/contour, upper-thigh inseam and clean narrow leg hems.",
+        "forbidden": ["logos", "pockets", "side panels", "mesh", "drawstrings", "scrunch", "rib knit", "contrast piping", "changed waistband", "changed inseam"],
+        "private_source_evidence": "Private front, rear and rear-detail construction evidence is held outside Git and Netlify. The front reference shows the waistband folded down; the standard unfolded high-rise position is confirmed by the matching locked legging construction. No source photograph or likeness is included in this review package.",
+    },
     "P027": {
         "name": "KS Active Curve Seam Legging",
         "source_title": "Seamless Breathable Scrunch Butt Tummy Control Leggings",

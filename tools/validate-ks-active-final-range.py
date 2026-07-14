@@ -29,9 +29,10 @@ def main() -> None:
     route = ROOT / "review/ks-active/archive-final-range/index.html"
     checks = {
         "all_required_final_range_artifacts_exist": all((OUT / name).is_file() for name in required),
-        "thirteen_completed_packages_pass": audit["checks"]["thirteen_completed_packages_have_passing_product_validation"],
-        "fifty_three_of_fifty_six_colours_completed": audit["summary"]["completedColours"] == 53 and audit["summary"]["totalEligibleColours"] == 56,
-        "p026_rear_only_source_blocked": audit["summary"]["sourceBlockedProducts"] == ["P026"],
+        "fourteen_completed_packages_pass": audit["checks"]["fourteen_completed_packages_have_passing_product_validation"],
+        "fifty_six_of_fifty_six_colours_completed": audit["summary"]["completedColours"] == 56 and audit["summary"]["totalEligibleColours"] == 56,
+        "no_source_blocked_products": audit["checks"]["no_source_blocked_products"],
+        "p026_private_source_lock_complete": audit["checks"]["p026_private_source_lock_complete"],
         "p028_private_source_lock_complete": audit["products"][8]["status"] == "completed_review",
         "products_json_unchanged": branch_diff == "",
         "review_route_is_noindex": route.is_file() and "noindex" in route.read_text(encoding="utf-8"),

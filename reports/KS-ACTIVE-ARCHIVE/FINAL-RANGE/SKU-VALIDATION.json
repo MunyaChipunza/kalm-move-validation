@@ -1,12 +1,13 @@
 {
   "validator": "tools/validate-ks-active-final-range.py",
-  "validatedAt": "2026-07-14T19:07:54.544749+00:00",
+  "validatedAt": "2026-07-14T19:38:40.003084+00:00",
   "passed": true,
   "checks": {
     "all_required_final_range_artifacts_exist": true,
-    "thirteen_completed_packages_pass": true,
-    "fifty_three_of_fifty_six_colours_completed": true,
-    "p026_rear_only_source_blocked": true,
+    "fourteen_completed_packages_pass": true,
+    "fifty_six_of_fifty_six_colours_completed": true,
+    "no_source_blocked_products": true,
+    "p026_private_source_lock_complete": true,
     "p028_private_source_lock_complete": true,
     "products_json_unchanged": true,
     "review_route_is_noindex": true,

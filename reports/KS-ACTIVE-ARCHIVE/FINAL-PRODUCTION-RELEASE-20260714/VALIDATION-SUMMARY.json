@@ -1,11 +1,11 @@
 {
-  "validatedAt": "2026-07-14T19:07:57.1635311+00:00",
+  "validatedAt": "2026-07-14T19:39:30.4698356+00:00",
   "hiddenReview": {
     "validator": "tools/validate-ks-active-final-range.py",
     "passed": true,
-    "completedProducts": 13,
-    "completedStockedColours": 53,
-    "sourceBlockedProducts": ["P026"]
+    "completedProducts": 14,
+    "completedStockedColours": 56,
+    "sourceBlockedProducts": []
   },
   "existingStorefrontControls": {
     "catalogueValidation": {"passed": true, "products": 70, "variants": 716, "warnings": 0, "errors": 0},
@@ -15,7 +15,7 @@
   "productionRelease": {
     "validator": "tools/validate-ks-active-archive-release-gates.py",
     "passed": false,
-    "reason": "P026 source construction is incomplete and the mandatory commerce reconciliations have not been completed."
+    "reason": "The visual source scope is complete, but final visual approval and the mandatory commerce reconciliations have not been completed."
   },
   "writes": {"productsJson": false, "zoho": false, "intranet": false, "production": false}
 }

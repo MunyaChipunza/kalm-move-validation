@@ -28,7 +28,7 @@ PRODUCTS = [
     ("P012", "KS Active Scrunch Seamless Short", "scrunch-seamless-short", "P012-SCRUNCH-SEAMLESS-SHORT", "completed_review"),
     ("P019", "KS Active Cutout Seamless Bra", "cutout-seamless-bra", "P019-CUTOUT-SEAMLESS-BRA", "completed_review"),
     ("P020", "KS Active Crossback Seamless Bra", "crossback-seamless-bra", "P020-CROSSBACK-SEAMLESS-BRA", "completed_review"),
-    ("P026", "KS Active High-Waist Seamless Short", "high-waist-seamless-short", None, "source_blocked_rear_only"),
+    ("P026", "KS Active High-Waist Seamless Short", "high-waist-seamless-short", "P026-HIGH-WAIST-SEAMLESS-SHORT", "completed_review"),
     ("P027", "KS Active Curve Seam Legging", "curve-seam-legging", "P027-CURVE-SEAM-LEGGING", "completed_review"),
     ("P028", "KS Active High-Waist Seamless Legging", "high-waist-seamless-legging", "P028-HIGH-WAIST-SEAMLESS-LEGGING", "completed_review"),
     ("P030", "KS Active Crisscross Back Bra", "crisscross-back-bra", "P030-CRISSCROSS-BACK-BRA", "completed_review"),
@@ -312,13 +312,11 @@ def main() -> None:
 
     staged = []
     for family in stock["gateA"]["eligibleProductFamilies"]:
-        if family["productCode"] in {"P026", "P028"}:
-            continue
         staged.extend({"sku": variant["Archive SKU"], "productCode": family["productCode"], "colour": variant["Colour"], "size": variant["Size"], "quantity": variant["Final Qty"], "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"} for variant in family["variants"])
     for manual_code in ("P049", "P050"):
         manual = read_json(ROOT / "assets/images/products/ks-active/archive-approved" / ("p049-rib-contour-legging" if manual_code == "P049" else "p050-racer-knit-bra") / "APPROVED-PRODUCT.json")
         staged.extend({"sku": variant["sku"], "productCode": manual_code, "colour": variant["colour"], "size": variant["size"], "quantity": variant["quantity"], "operation": "DO_NOT_SEND_PENDING_COMMERCIAL_GATE"} for variant in manual["stock"]["variants"])
-    payload = {"stagedOnly": True, "writeAuthorised": False, "records": staged, "excludedProductCodes": ["P026", "P028", "P016", "P017"]}
+    payload = {"stagedOnly": True, "writeAuthorised": False, "records": staged, "excludedProductCodes": ["P016", "P017"]}
     (OUT / "ZOHO-STAGED-PAYLOAD.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     (OUT / "INTRANET-STAGED-PAYLOAD.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
@@ -330,7 +328,7 @@ def main() -> None:
     rename_markdown += "| P003 | `1qQpd66ZxV5Vv4pYSx0fHgolNJzIFTwYp` | Seamless High Stretch Scrunch Butt Leggings 1 | P003 - Rib Scrunch Legging | Renamed after individual approval; ID retained |\n"
     rename_markdown += "\nAll other source folders remain unchanged pending product-level visual approval.\n"
     (OUT / "DRIVE-FOLDER-RENAME-MANIFEST.md").write_text(rename_markdown, encoding="utf-8")
-    (OUT / "PRODUCTION-BLOCK.md").write_text("# Production block\n\nThis Archive range is draft-only. `products.json`, public collections, navigation, sitemap, search, structured data, Zoho, intranet and production have not been changed. P026 and P028 are source-blocked; P016, P017 and all not-counted variants remain excluded. A future release additionally requires ownership, condition, launch decision, launch quantity and commercial-system reconciliation.\n", encoding="utf-8")
+    (OUT / "PRODUCTION-BLOCK.md").write_text("# Production block\n\nThis Archive range is draft-only. `products.json`, public collections, navigation, sitemap, search, structured data, Zoho, intranet and production have not been changed. All 14 visual packages are source-locked for hidden review, but P016, P017 and all not-counted variants remain excluded. A future release additionally requires visual approval plus ownership, condition, launch decision, launch quantity, price and commercial-system reconciliation.\n", encoding="utf-8")
 
     review_route = ROOT / "review/ks-active/archive-final-range"
     review_route.mkdir(parents=True, exist_ok=True)
@@ -351,11 +349,12 @@ def main() -> None:
         "schemaVersion": 1,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "status": "draft_only_ready_for_range_review",
-        "summary": {"completedProducts": len(completed), "totalEligibleProducts": 14, "completedColours": 53, "totalEligibleColours": 56, "retainedGeneratedViews": 212, "sourceBlockedProducts": [r["productCode"] for r in blocked]},
+        "summary": {"completedProducts": len(completed), "totalEligibleProducts": 14, "completedColours": 56, "totalEligibleColours": 56, "retainedGeneratedViews": 224, "sourceBlockedProducts": [r["productCode"] for r in blocked]},
         "products": records,
         "checks": {
-            "thirteen_completed_packages_have_passing_product_validation": all(existing_checks.values()) and len(existing_checks) == 13,
-            "p026_rear_only_source_block_recorded": any(r["productCode"] == "P026" for r in blocked),
+            "fourteen_completed_packages_have_passing_product_validation": all(existing_checks.values()) and len(existing_checks) == 14,
+            "no_source_blocked_products": not blocked,
+            "p026_private_source_lock_complete": any(r["productCode"] == "P026" and r["status"] == "completed_review" for r in records),
             "p028_private_source_lock_complete": any(r["productCode"] == "P028" and r["status"] == "completed_review" for r in records),
             "products_json_unchanged_from_master": public_diff == "",
             "zoho_unchanged": True,
@@ -372,17 +371,16 @@ def main() -> None:
 Status: **draft-only review evidence**. This package does not publish, integrate or price any product.
 
 - Completed hidden review packages: **{len(completed)} of 14**
-- Completed stocked colours: **53 of 56**
-- Retained generated views: **212**
-- Source-blocked: **P026** (rear-only evidence; front construction still absent)
+- Completed stocked colours: **56 of 56**
+- Retained generated views: **224**
+- Source-blocked: **none**
 - Stock authority: `KS_Active_Archive_SKU_Master.xlsx`, SHA-256 `91650C7A344172BF33E2550261A5B45DAED4DC31D30A11AB47AF5B618EC2DCED`
 
 ## Controls retained
 
 - Every completed generated gallery is based on a local source lock and keeps a single adult model within a colour gallery.
 - Supporting fashion styling is disclosed and never represented as included product inventory.
-- P026 has no invented complementary construction view or generated model imagery.
-- P028 now has a completed private construction lock and two non-public stocked-colour galleries; the source photographs remain private.
+- P026 and P028 have completed private construction locks and non-public stocked-colour galleries; the source photographs remain private.
 - P016, P017 and all 669 not-counted workbook variants remain outside this range.
 - P049 and P050 remain approved hidden packages; the other completed packages remain internal-QA candidates pending the final range review.
 - `products.json`, public catalogue surfaces, Zoho, intranet and production remain unchanged.

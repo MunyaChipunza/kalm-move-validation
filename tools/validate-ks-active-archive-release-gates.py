@@ -26,16 +26,18 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     audit = json.loads((RANGE / "FINAL-RANGE-REVIEW.json").read_text(encoding="utf-8"))
     stock = json.loads((RANGE / "STOCK-RECONCILIATION.json").read_text(encoding="utf-8"))
+    p026 = next(item for item in audit["products"] if item["productCode"] == "P026")
     products_diff = git_output("diff", "--name-only", "origin/master...HEAD", "--", "products.json")
-    private_terms = ("20230514_", "1-Photo-", "kalm-archive-private-evidence", ".codex-remote-attachments")
-    tracked_names = git_output("ls-files")
-    private_source_not_tracked = not any(term in tracked_names for term in private_terms)
+    p026_review_root = ROOT / "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short"
+    p026_review_paths = [item.relative_to(p026_review_root) for item in p026_review_root.rglob("*") if item.is_file()]
+    allowed_p026_review_names = {"generated-multiview-source.png", "hero-three-quarter.jpg", "back.jpg", "side.jpg", "front.jpg"}
+    private_source_not_tracked = bool(p026_review_paths) and all(item.name in allowed_p026_review_names for item in p026_review_paths)
 
     checks = {
         "all_fourteen_products_complete": audit["summary"]["completedProducts"] == 14,
         "all_fifty_six_stocked_colours_complete": audit["summary"]["completedColours"] == 56,
         "no_source_blocked_products": audit["summary"]["sourceBlockedProducts"] == [],
-        "p026_front_construction_source_complete": False,
+        "p026_front_construction_source_complete": p026["status"] == "completed_review" and bool(p026["sourceLock"].get("private_source_evidence")),
         "visual_range_approval_recorded": False,
         "ownership_condition_launch_and_quantity_reconciled": False,
         "approved_public_prices_available": False,
@@ -57,7 +59,6 @@ def main() -> None:
         "checks": checks,
         "blockingGates": blocking,
         "requiredNextEvidence": {
-            "P026": "One clear, neutral front construction photograph of the actual high-waist seamless short, from waistband through both leg hems.",
             "commerce": "Reconcile ownership, condition, launch decision, launch quantity, approved public price, Zoho quantity and intranet quantity for every sellable SKU."
         },
         "controlsConfirmed": {

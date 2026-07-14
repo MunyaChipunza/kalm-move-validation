@@ -1,25 +1,23 @@
 {
   "schemaVersion": 1,
   "validator": "tools/validate-ks-active-archive-release-gates.py",
-  "validatedAt": "2026-07-14T19:07:54.852191+00:00",
+  "validatedAt": "2026-07-14T19:43:19.807362+00:00",
   "passed": false,
   "releaseAuthorised": false,
   "scope": "KS Active Archive only",
   "summary": {
-    "completedProducts": 13,
+    "completedProducts": 14,
     "totalEligibleProducts": 14,
-    "completedColours": 53,
+    "completedColours": 56,
     "totalEligibleColours": 56,
-    "retainedGeneratedViews": 212,
-    "sourceBlockedProducts": [
-      "P026"
-    ]
+    "retainedGeneratedViews": 224,
+    "sourceBlockedProducts": []
   },
   "checks": {
-    "all_fourteen_products_complete": false,
-    "all_fifty_six_stocked_colours_complete": false,
-    "no_source_blocked_products": false,
-    "p026_front_construction_source_complete": false,
+    "all_fourteen_products_complete": true,
+    "all_fifty_six_stocked_colours_complete": true,
+    "no_source_blocked_products": true,
+    "p026_front_construction_source_complete": true,
     "visual_range_approval_recorded": false,
     "ownership_condition_launch_and_quantity_reconciled": false,
     "approved_public_prices_available": false,
@@ -30,10 +28,6 @@
     "production_deployment_is_not_yet_performed": true
   },
   "blockingGates": [
-    "all_fourteen_products_complete",
-    "all_fifty_six_stocked_colours_complete",
-    "no_source_blocked_products",
-    "p026_front_construction_source_complete",
     "visual_range_approval_recorded",
     "ownership_condition_launch_and_quantity_reconciled",
     "approved_public_prices_available",
@@ -42,7 +36,6 @@
     "public_catalogue_mapping_finalised"
   ],
   "requiredNextEvidence": {
-    "P026": "One clear, neutral front construction photograph of the actual high-waist seamless short, from waistband through both leg hems.",
     "commerce": "Reconcile ownership, condition, launch decision, launch quantity, approved public price, Zoho quantity and intranet quantity for every sellable SKU."
   },
   "controlsConfirmed": {

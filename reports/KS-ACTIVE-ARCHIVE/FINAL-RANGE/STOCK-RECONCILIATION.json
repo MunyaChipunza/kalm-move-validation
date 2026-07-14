@@ -28,12 +28,7 @@
       "units": 11
     }
   ],
-  "sourceBlockedProducts": [
-    {
-      "productCode": "P026",
-      "reason": "private and historical evidence confirms rear construction only; a clear front construction view is still missing, so no generated model views are permitted"
-    }
-  ],
+  "sourceBlockedProducts": [],
   "commercialPublicationBlocked": true,
   "zohoUpdated": false,
   "intranetUpdated": false,
