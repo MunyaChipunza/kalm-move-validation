@@ -8,8 +8,8 @@
   "approvedImageCount": 204,
   "rejectedImageCount": 0,
   "lastCompletedProduct": "P019 - KS Active Cutout Seamless Bra",
-  "lastCommit": "adfb16a935614348a2931d4461fe0cbe22100c06",
-  "lastUpdated": "2026-07-14T18:14:25.9859750Z",
+  "lastCommit": "3bf1401427a47901dc4251c7b5eadd6681c9c72e",
+  "lastUpdated": "2026-07-14T18:16:57.0000000Z",
   "blocker": "source_blocked: P026 has rear-only source evidence; P028 has front-only source evidence. Neither product will receive invented missing construction views.",
-  "nextAction": "Commit and push the validated review evidence, then create a draft-only Netlify review deploy."
+  "nextAction": "Await Munya's range review and obtain exact missing construction views for P026 and P028 before any future catalogue-release decision."
 }

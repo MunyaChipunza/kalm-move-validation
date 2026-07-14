@@ -20,7 +20,7 @@ def main() -> None:
         "PRODUCT-NAME-MAP.json", "DRIVE-FOLDER-RENAME-MANIFEST.md", "APPROVED-PRODUCT-MANIFEST.json",
         "RETIRED-PRODUCT-MANIFEST.json", "STOCK-RECONCILIATION.json",
         "ZOHO-STAGED-PAYLOAD.json", "INTRANET-STAGED-PAYLOAD.json", "PRODUCTION-BLOCK.md",
-        "FINAL-RANGE-REVIEW.md", "FINAL-RANGE-REVIEW.json",
+        "FINAL-RANGE-REVIEW.md", "FINAL-RANGE-REVIEW.json", "DRAFT-DEPLOY.md",
     ]
     branch_diff = subprocess.run(
         ["git", "diff", "--name-only", "origin/master...HEAD", "--", "products.json"],

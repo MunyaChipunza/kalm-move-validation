@@ -1,6 +1,6 @@
 {
   "validator": "tools/validate-ks-active-final-range.py",
-  "validatedAt": "2026-07-14T18:15:47.302549+00:00",
+  "validatedAt": "2026-07-14T18:18:51.142781+00:00",
   "passed": true,
   "checks": {
     "all_required_final_range_artifacts_exist": true,
