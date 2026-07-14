@@ -6,22 +6,13 @@ REPORT = ROOT / "reports" / "KS-ACTIVE-ARCHIVE" / "P050-RACER-KNIT-BRA"
 SOURCE = ROOT / "assets" / "images" / "review-only" / "ks-active" / "p050-racer-knit-bra" / "source-reference"
 GENERATED = ROOT / "assets" / "images" / "review-only" / "ks-active" / "p050-racer-knit-bra" / "generated"
 
-BG = "#F7F3ED"
-INK = "#20201D"
-MUTED = "#706B62"
-SOURCE_TAG = "#8A4E36"
-GENERATED_TAG = "#355D5D"
-LINE = "#D9D2C7"
-FONT = r"C:\Windows\Fonts\arial.ttf"
-FONT_BOLD = r"C:\Windows\Fonts\arialbd.ttf"
+BG, INK, MUTED = "#F7F3ED", "#20201D", "#706B62"
+SOURCE_TAG, GENERATED_TAG, LINE = "#8A4E36", "#355D5D", "#D9D2C7"
+FONT, FONT_BOLD = r"C:\Windows\Fonts\arial.ttf", r"C:\Windows\Fonts\arialbd.ttf"
 
 
-def font(size, bold=False):
+def f(size, bold=False):
     return ImageFont.truetype(FONT_BOLD if bold else FONT, size)
-
-
-def cover(image, size):
-    return ImageOps.fit(image.convert("RGB"), size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.4))
 
 
 def contain(image, size):
@@ -32,155 +23,144 @@ def contain(image, size):
     return panel
 
 
-def label(draw, xy, text, kind):
-    x, y = xy
-    fill = SOURCE_TAG if kind == "source" else GENERATED_TAG
-    box = draw.textbbox((0, 0), text, font=font(22, True))
-    width = (box[2] - box[0]) + 28
-    draw.rounded_rectangle((x, y, x + width, y + 42), radius=8, fill=fill)
-    draw.text((x + 14, y + 9), text, font=font(22, True), fill="white")
+def crop_detail(image):
+    w, h = image.size
+    return image.crop((int(w * .16), int(h * .16), int(w * .84), int(h * .56)))
 
 
-def caption(draw, x, y, title, note):
-    draw.text((x, y), title, font=font(31, True), fill=INK)
-    draw.text((x, y + 39), note, font=font(23), fill=MUTED)
+def pill(draw, x, y, text, source=False):
+    box = draw.textbbox((0, 0), text, font=f(20, True))
+    width = box[2] - box[0] + 24
+    draw.rounded_rectangle((x, y, x + width, y + 38), radius=8, fill=SOURCE_TAG if source else GENERATED_TAG)
+    draw.text((x + 12, y + 8), text, font=f(20, True), fill="white")
 
 
-assets = {
-    "source_front": Image.open(SOURCE / "espresso-front.png"),
-    "source_back": Image.open(SOURCE / "espresso-back.png"),
-    "hero": Image.open(GENERATED / "espresso-hero-three-quarter.png"),
-    "back": Image.open(GENERATED / "espresso-back.png"),
-    "side": Image.open(GENERATED / "espresso-side.png"),
-    "front": Image.open(GENERATED / "espresso-front.png"),
-    "plum_source": Image.open(SOURCE / "plum-back.jpg"),
-    "plum_hero": Image.open(GENERATED / "plum-front-full.png"),
-    "plum_back": Image.open(GENERATED / "plum-back-full.png"),
-    "plum_side": Image.open(GENERATED / "plum-side-full.png"),
-    "plum_front": Image.open(GENERATED / "plum-front.png"),
-}
+COLORS = [
+    {
+        "name": "Espresso", "stock": "M × 1 · L × 1", "model": "Representative approved construction standard",
+        "source": "espresso-front.png", "source_note": "Exact Drive source · Espresso front",
+        "views": [("Hero / three-quarter", "espresso-hero-three-quarter.png"), ("Back", "espresso-back.png"), ("Side", "espresso-side.png"), ("Front", "espresso-front.png")],
+        "manual": False,
+    },
+    {
+        "name": "Dark Green", "stock": "S × 1", "model": "Adult Black African model · short natural coils",
+        "source": "espresso-front.png", "source_note": "Exact Drive construction source · manual Dark Green stock label",
+        "views": [("Hero / three-quarter", "dark-green-hero.png"), ("Back", "dark-green-back.png"), ("Side", "dark-green-side.png"), ("Front", "dark-green-front.png")],
+        "manual": True,
+    },
+    {
+        "name": "Iron Blue", "stock": "S × 1 · M × 1 · L × 1", "model": "Adult East Asian model · denim styling",
+        "source": "espresso-front.png", "source_note": "Exact Drive construction source · manual Iron Blue stock label",
+        "views": [("Hero / three-quarter", "iron-blue-hero.png"), ("Back", "iron-blue-back.png"), ("Side", "iron-blue-side.png"), ("Front", "iron-blue-front.png")],
+        "manual": True,
+    },
+    {
+        "name": "Plum", "stock": "M × 1 · L × 1", "model": "Adult South Asian model · retained review set",
+        "source": "plum-back.jpg", "source_note": "Exact historical Drive source · Plum back",
+        "views": [("Hero / three-quarter", "plum-front-full.png"), ("Back", "plum-back-full.png"), ("Side", "plum-side-full.png"), ("Front", "plum-front.png")],
+        "manual": False,
+    },
+    {
+        "name": "Violet", "stock": "S × 1 · M × 1 · L × 1", "model": "Adult auburn-curled model · tailored-trouser styling",
+        "source": "espresso-front.png", "source_note": "Exact Drive construction source · manual Violet stock label",
+        "views": [("Hero / three-quarter", "violet-hero.png"), ("Back", "violet-back.png"), ("Side", "violet-side.png"), ("Front", "violet-front.png")],
+        "manual": True,
+    },
+]
 
 
-def crop_garment(name):
-    img = assets[name]
-    boxes = {
-        "hero": (180, 390, 825, 940),
-        "back": (135, 390, 835, 1055),
-        "side": (175, 410, 760, 1030),
-        "front": (175, 470, 800, 1040),
-    }
-    return img.crop(boxes[name])
+def load_source(filename):
+    return Image.open(SOURCE / filename)
 
 
-def build_comparison():
-    width, height = 3200, 5000
-    canvas = Image.new("RGB", (width, height), BG)
+def load_generated(filename):
+    return Image.open(GENERATED / filename)
+
+
+def sheet_for_colour(spec):
+    canvas = Image.new("RGB", (3240, 1880), BG)
     draw = ImageDraw.Draw(canvas)
-    draw.text((100, 85), "P050  |  KS ACTIVE RACER KNIT BRA", font=font(56, True), fill=INK)
-    draw.text((100, 160), "ESPRESSO REPRESENTATIVE COLOUR  •  DRAFT-ONLY SOURCE-LOCKED REVIEW", font=font(30, True), fill=MUTED)
-    draw.text((100, 211), "Left: unaltered Drive source reference. Centre: generated model review. Right: 100% garment-detail crop.", font=font(25), fill=MUTED)
-    col_w, panel_h = 900, 900
-    x_positions = [100, 1150, 2200]
-    rows = [340, 1500, 2660, 3820]
-    specs = [
-        ("hero", "MODEL HERO / THREE-QUARTER", "source_front"),
-        ("back", "MODEL BACK", "source_back"),
-        ("side", "MODEL SIDE", "source_front"),
-        ("front", "MODEL FRONT", "source_front"),
+    draw.text((90, 62), f"P050  |  KS ACTIVE RACER KNIT BRA  |  {spec['name'].upper()}", font=f(48, True), fill=INK)
+    subtitle = f"Confirmed manual stock: {spec['stock']}  •  {spec['model']}"
+    draw.text((90, 128), subtitle, font=f(24), fill=MUTED)
+    if spec["manual"]:
+        draw.text((90, 164), "Colour shown is a draft review representation from the manual stock label; Espresso Drive images remain the construction authority.", font=f(22), fill=MUTED)
+    items = [("1. " + spec["source_note"], load_source(spec["source"]), True)] + [
+        (f"{index + 2}. {title}", load_generated(filename), False) for index, (title, filename) in enumerate(spec["views"])
     ]
-    for row_y, (generated_key, title, source_key) in zip(rows, specs):
-        draw.rounded_rectangle((80, row_y - 24, 3120, row_y + 1055), radius=20, outline=LINE, width=3, fill="#FBF9F5")
-        entries = [
-            (assets[source_key], "SOURCE REFERENCE - NOT FOR PUBLICATION", "source", "Exact unaltered Drive copy"),
-            (assets[generated_key], "GENERATED MODEL REVIEW", "generated", title),
-            (crop_garment(generated_key), "100% GARMENT DETAIL CROP", "generated", "Construction QA crop"),
-        ]
-        for x, (img, tag, kind, note) in zip(x_positions, entries):
-            panel = contain(img, (col_w, panel_h))
-            canvas.paste(panel, (x, row_y + 80))
-            label(draw, (x + 20, row_y + 100), tag, kind)
-            caption(draw, x, row_y + 1005, note, "P050 · Espresso")
-    canvas.save(REPORT / "SIDE-BY-SIDE-COMPARISON.jpg", quality=94, subsampling=0)
+    positions = [(90, 240), (1130, 240), (2170, 240), (610, 1030), (1650, 1030)]
+    for (title, image, source), (x, y) in zip(items, positions):
+        canvas.paste(contain(image, (960, 680)), (x, y))
+        pill(draw, x + 18, y + 18, "SOURCE REFERENCE - NOT FOR PUBLICATION" if source else "GENERATED MODEL REVIEW", source)
+        draw.text((x, y + 712), title, font=f(25, True), fill=INK)
+    canvas.save(REPORT / f"{spec['name'].upper().replace(' ', '-')}-REVIEW.jpg", quality=94, subsampling=0)
 
 
-def tile(canvas, draw, x, y, image, tag, title, kind, tile_size=(960, 690)):
-    panel = contain(image, tile_size)
-    canvas.paste(panel, (x, y))
-    label(draw, (x + 18, y + 18), tag, kind)
-    draw.text((x, y + tile_size[1] + 18), title, font=font(28, True), fill=INK)
-
-
-def build_desktop():
-    width, height = 3240, 1880
-    canvas = Image.new("RGB", (width, height), BG)
+def complete_range():
+    canvas = Image.new("RGB", (3500, 5120), BG)
     draw = ImageDraw.Draw(canvas)
-    draw.text((100, 65), "P050  |  KS ACTIVE RACER KNIT BRA  |  ESPRESSO", font=font(48, True), fill=INK)
-    draw.text((100, 128), "Representative-colour review only · no storefront integration · no sale state", font=font(25), fill=MUTED)
-    tiles = [
-        (assets["source_front"], "SOURCE REFERENCE - NOT FOR PUBLICATION", "Exact Drive source · front", "source"),
-        (assets["source_back"], "SOURCE REFERENCE - NOT FOR PUBLICATION", "Exact Drive source · back", "source"),
-        (assets["hero"], "GENERATED MODEL REVIEW", "Hero / three-quarter", "generated"),
-        (assets["back"], "GENERATED MODEL REVIEW", "Back", "generated"),
-        (assets["side"], "GENERATED MODEL REVIEW", "Side", "generated"),
-        (assets["front"], "GENERATED MODEL REVIEW", "Front", "generated"),
-    ]
-    positions = [(100, 230), (1140, 230), (2180, 230), (100, 1030), (1140, 1030), (2180, 1030)]
-    for pos, data in zip(positions, tiles):
-        tile(canvas, draw, pos[0], pos[1], data[0], data[1], data[2], data[3])
+    draw.text((110, 74), "P050  |  KS ACTIVE RACER KNIT BRA", font=f(58, True), fill=INK)
+    draw.text((110, 154), "COMPLETE STOCKED-COLOUR REVIEW · DRAFT ONLY · NO STOREFRONT INTEGRATION", font=f(30, True), fill=MUTED)
+    draw.text((110, 204), "Five confirmed colours · 11 physical units · generated once per stocked colour, not per size", font=f(25), fill=MUTED)
+    for row, spec in enumerate(COLORS):
+        y = 310 + row * 950
+        draw.rounded_rectangle((80, y - 22, 3420, y + 860), radius=18, fill="#FBF9F5", outline=LINE, width=3)
+        draw.text((115, y + 12), spec["name"], font=f(40, True), fill=INK)
+        draw.text((115, y + 62), f"Stock: {spec['stock']}  |  {spec['model']}", font=f(23), fill=MUTED)
+        image_items = [("Source", load_source(spec["source"]), True)] + [(title, load_generated(filename), False) for title, filename in spec["views"]]
+        for col, (title, image, source) in enumerate(image_items):
+            x = 110 + col * 670
+            canvas.paste(contain(image, (610, 650)), (x, y + 125))
+            pill(draw, x + 14, y + 141, "SOURCE REFERENCE" if source else "GENERATED REVIEW", source)
+            draw.text((x, y + 792), title, font=f(21, True), fill=INK)
+    canvas.save(REPORT / "COMPLETE-P050-REVIEW.jpg", quality=94, subsampling=0)
     canvas.save(REPORT / "DESKTOP-REVIEW.jpg", quality=94, subsampling=0)
 
 
-def mobile_tile(canvas, draw, y, image, tag, title, kind):
-    x = 70
-    w, h = 1060, 690
-    panel = contain(image, (w, h))
-    canvas.paste(panel, (x, y + 68))
-    label(draw, (x + 20, y + 88), tag, kind)
-    draw.text((x, y + 18), title, font=font(34, True), fill=INK)
-    return y + 820
-
-
-def build_mobile():
-    width, height = 1200, 5350
-    canvas = Image.new("RGB", (width, height), BG)
+def mobile_review():
+    canvas = Image.new("RGB", (1240, 6460), BG)
     draw = ImageDraw.Draw(canvas)
-    draw.text((70, 56), "P050 | KS ACTIVE RACER KNIT BRA", font=font(36, True), fill=INK)
-    draw.text((70, 106), "ESPRESSO · REPRESENTATIVE COLOUR", font=font(25, True), fill=MUTED)
-    draw.text((70, 145), "Swipe-style review sheet. Draft only.", font=font(24), fill=MUTED)
-    y = 220
-    tiles = [
-        (assets["source_front"], "SOURCE REFERENCE - NOT FOR PUBLICATION", "1. Exact Drive source · front", "source"),
-        (assets["source_back"], "SOURCE REFERENCE - NOT FOR PUBLICATION", "2. Exact Drive source · back", "source"),
-        (assets["hero"], "GENERATED MODEL REVIEW", "3. Hero / three-quarter", "generated"),
-        (assets["back"], "GENERATED MODEL REVIEW", "4. Back", "generated"),
-        (assets["side"], "GENERATED MODEL REVIEW", "5. Side", "generated"),
-        (assets["front"], "GENERATED MODEL REVIEW", "6. Front", "generated"),
-    ]
-    for item in tiles:
-        y = mobile_tile(canvas, draw, y, *item)
+    draw.text((70, 54), "P050 | KS ACTIVE RACER KNIT BRA", font=f(35, True), fill=INK)
+    draw.text((70, 104), "COMPLETE STOCKED-COLOUR REVIEW · DRAFT ONLY", font=f(22, True), fill=MUTED)
+    y = 175
+    for spec in COLORS:
+        draw.rounded_rectangle((55, y, 1185, y + 1190), radius=18, fill="#FBF9F5", outline=LINE, width=2)
+        draw.text((85, y + 28), spec["name"], font=f(40, True), fill=INK)
+        draw.text((85, y + 78), f"Stock: {spec['stock']}", font=f(22, True), fill=MUTED)
+        if spec["manual"]:
+            draw.text((85, y + 110), "Manual stock-colour representation · Espresso source locks construction", font=f(19), fill=MUTED)
+        tiles = [("Source", load_source(spec["source"]), True)] + [(title, load_generated(filename), False) for title, filename in spec["views"]]
+        for i, (title, image, source) in enumerate(tiles):
+            x = 85 + (i % 2) * 550
+            ty = y + 160 + (i // 2) * 320
+            canvas.paste(contain(image, (510, 260)), (x, ty))
+            pill(draw, x + 10, ty + 10, "SOURCE" if source else "GENERATED", source)
+            draw.text((x, ty + 270), title, font=f(18, True), fill=INK)
+        y += 1250
+    canvas.save(REPORT / "P050-MOBILE-COMPLETE-REVIEW.jpg", quality=94, subsampling=0)
     canvas.save(REPORT / "MOBILE-REVIEW.jpg", quality=94, subsampling=0)
 
 
-def build_plum():
-    width, height = 3240, 1880
-    canvas = Image.new("RGB", (width, height), BG)
+def construction_comparison():
+    canvas = Image.new("RGB", (3260, 2220), BG)
     draw = ImageDraw.Draw(canvas)
-    draw.text((100, 65), "P050  |  KS ACTIVE RACER KNIT BRA  |  PLUM", font=font(48, True), fill=INK)
-    draw.text((100, 128), "Exact historical Plum reference · draft-only model review · not for publication", font=font(25), fill=MUTED)
-    tiles = [
-        (assets["plum_source"], "SOURCE REFERENCE - NOT FOR PUBLICATION", "1. Exact Drive source · Plum back", "source"),
-        (assets["plum_hero"], "GENERATED MODEL REVIEW", "2. Hero / three-quarter", "generated"),
-        (assets["plum_back"], "GENERATED MODEL REVIEW", "3. Back", "generated"),
-        (assets["plum_side"], "GENERATED MODEL REVIEW", "4. Side", "generated"),
-        (assets["plum_front"], "GENERATED MODEL REVIEW", "5. Front", "generated"),
-    ]
-    positions = [(100, 230), (1140, 230), (2180, 230), (620, 1030), (1660, 1030)]
-    for pos, data in zip(positions, tiles):
-        tile(canvas, draw, pos[0], pos[1], data[0], data[1], data[2], data[3])
-    canvas.save(REPORT / "PLUM-REVIEW.jpg", quality=94, subsampling=0)
+    draw.text((100, 75), "P050 CONSTRUCTION COMPARISON", font=f(55, True), fill=INK)
+    draw.text((100, 150), "Unaltered Espresso Drive construction reference alongside one generated hero per confirmed stocked colour.", font=f(26), fill=MUTED)
+    source = load_source("espresso-front.png")
+    entries = [("SOURCE REFERENCE - NOT FOR PUBLICATION", "Exact Espresso Drive construction", source, True)]
+    entries += [("GENERATED MODEL REVIEW", spec["name"], load_generated(spec["views"][0][1]), False) for spec in COLORS]
+    for index, (tag, title, image, is_source) in enumerate(entries):
+        x = 100 + (index % 3) * 1050
+        y = 270 + (index // 3) * 930
+        canvas.paste(contain(image, (900, 650)), (x, y))
+        pill(draw, x + 18, y + 18, tag, is_source)
+        draw.text((x, y + 680), title, font=f(29, True), fill=INK)
+        canvas.paste(contain(crop_detail(image), (900, 180)), (x, y + 730))
+    canvas.save(REPORT / "SIDE-BY-SIDE-COMPARISON.jpg", quality=94, subsampling=0)
 
 
-build_comparison()
-build_desktop()
-build_mobile()
-build_plum()
+for color in COLORS:
+    sheet_for_colour(color)
+complete_range()
+mobile_review()
+construction_comparison()

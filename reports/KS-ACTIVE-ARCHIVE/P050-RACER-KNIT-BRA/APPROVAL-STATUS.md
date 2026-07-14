@@ -1,29 +1,34 @@
 # P050 Approval Status
 
-## Recorded approval
+## Gate 1 — complete
 
-**Munya approved the representative Espresso source-locked imagery and the name KS Active Racer Knit Bra on 14 July 2026.**
+**Munya approved the Espresso representative imagery and the name _KS Active Racer Knit Bra_ on 14 July 2026.**
 
-That approval authorised only the P050 continuation. It does not approve the full product, catalogue integration, folder rename, price, inventory sync or another product. The review route is `/review/ks-active/p050-racer-knit-bra` and is deliberately non-indexed and unlinked.
+That approval locked Espresso as the construction and visual standard for P050 and authorised the single batch of remaining physically stocked P050 colours. It did not authorise a public catalogue change, a Drive rename, price, inventory sync, other product work, or production deployment.
 
-## Current gate
+## Gate 2 — awaiting Munya's complete P050 approval
 
-Plum has a source-locked generated review set. Dark Green, Iron Blue and Violet are blocked until an exact Drive mapping or physical-label photograph is provided. Historical Sage Green, Navy / Deep Blue and Grape imagery is not a substitute for those manual labels.
+All five confirmed stocked colours now have a four-view generated review gallery:
 
-## Draft verification
+- Dark Green — S × 1
+- Espresso — M × 1, L × 1
+- Iron Blue — S × 1, M × 1, L × 1
+- Plum — M × 1, L × 1
+- Violet — S × 1, M × 1, L × 1
 
-- Draft route: `https://6a55d66ecad2211cc7c41797--kalm-collective-storefront.netlify.app/review/ks-active/p050-racer-knit-bra/`
-- Netlify draft deploy ID: `6a55d66ecad2211cc7c41797`
-- The draft route returned HTTPS 200 with the source and generated-review labels, the Plum section and no purchase controls.
-- The same route returned HTTPS 404 on `https://kalmcollective.co.za`, confirming P050 has not reached production.
+Images were generated once per stocked colour, never per size. The source construction is locked to the exact Espresso Drive images. Plum also has an exact historical Plum Drive reference. Dark Green, Iron Blue and Violet are transparently labelled as draft representations based on Munya's manual physical-stock colour labels; they are not represented as exact Drive colour photographs and must be checked against the physical garments before Gate 2 approval.
 
-## Explicitly not authorised
+## Current review surface
 
-- Dark Green, Iron Blue and Violet generation without exact source evidence
-- P049 or any other product
-- Drive folder rename
-- Approved archive manifest entry
-- Catalogue, collection, search, sitemap, structured-data, bag, or checkout changes
-- Zoho or intranet updates
-- Netlify production deployment
-- Merge to `master`
+- Draft-only route: `/review/ks-active/p050-racer-knit-bra/`
+- The route is non-indexed, unlinked, non-purchasable and omitted from collections, search, structured data and the sitemap.
+- A final complete-review Netlify draft will be recorded after the updated evidence pack is deployed.
+- The production route remains intentionally absent.
+
+## Explicitly not authorised pending Gate 2
+
+- Drive folder rename or approved-archive manifest entry
+- Catalogue, collection, search, sitemap, structured-data, bag or checkout changes
+- Price, stock sync, Zoho or intranet updates
+- P049 or another product
+- Merge to `master` or production deployment

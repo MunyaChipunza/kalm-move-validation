@@ -8,14 +8,24 @@
   "representativeApproval": {
     "approvedBy": "Munya",
     "approvedAt": "2026-07-14",
-    "scope": "source-locked representative imagery and customer-facing name only"
+    "scope": "source-locked representative imagery, visual construction standard and customer-facing name"
   },
-  "reviewColours": ["Espresso", "Plum"],
+  "constructionAuthority": {
+    "colour": "Espresso",
+    "rule": "Exact Espresso Drive front and back copies are the construction authority for every generated P050 colour review."
+  },
+  "reviewColours": ["Dark Green", "Espresso", "Iron Blue", "Plum", "Violet"],
+  "manualColourDisclosure": {
+    "authority": "Munya's explicit manual physical-stock labels",
+    "exactDriveColourSources": ["Espresso", "Plum"],
+    "manualLabelOnlyColours": ["Dark Green", "Iron Blue", "Violet"],
+    "rule": "Manual-label representations are clearly disclosed as draft review imagery and require a physical garment check at final P050 approval. Historic Sage Green, Navy / Deep Blue and Grape imagery was not substituted."
+  },
   "stockAuthority": {
     "manualInstruction": true,
     "confirmedManualQuantity": 11,
     "countOneAndTwoReconciliation": "not yet present in the available workbook",
-    "storefrontUse": "prohibited"
+    "storefrontUse": "prohibited pending final P050 approval and inventory reconciliation"
   },
   "historicalCrossReference": {
     "role": "background evidence only, never inventory authority",
@@ -25,7 +35,7 @@
     "normalisedSourceFilename": "Untitleddesign_28.png"
   },
   "plumHistoricalCrossReference": {
-    "role": "colour and construction traceability only; never inventory authority",
+    "role": "colour and construction traceability only, never inventory authority",
     "workbook": "KS_Active_Archive_SKU_Master.xlsx",
     "workbookProductCode": "P023",
     "workbookColour": "Plum",

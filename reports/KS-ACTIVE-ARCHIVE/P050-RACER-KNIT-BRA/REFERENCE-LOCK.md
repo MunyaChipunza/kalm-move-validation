@@ -1,10 +1,8 @@
 # P050 Reference Lock: KS Active Racer Knit Bra
 
-## Review status
+## Status and identity
 
-Espresso representative review and the proposed customer name were approved by Munya on 14 July 2026. This remains a draft-only P050 lock: it authorises the source-locked Plum review only, not catalogue integration, Drive folder rename, price, inventory synchronisation, production deployment, or progression to another product.
-
-## Identity
+Espresso representative imagery and the proposed customer name were approved by Munya on 14 July 2026. Espresso remains the sole construction and visual standard for every P050 review colour. The current complete set is draft-only; it does not authorise public integration, folder rename, pricing, inventory synchronisation, production or another product.
 
 | Field | Locked value |
 | --- | --- |
@@ -12,33 +10,23 @@ Espresso representative review and the proposed customer name were approved by M
 | Original Drive folder | Seamless Knit Racer Back Sports Bra |
 | Proposed customer name | KS Active Racer Knit Bra |
 | Proposed slug | `ks-active-racer-knit-bra` |
-| Representative colour | Espresso |
+| Representative / construction colour | Espresso |
 | Source folder ID | `1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV` |
-
-Espresso was selected because the supplied P050 inventory explicitly includes Espresso and the exact front source filename is traceable to the historical Espresso source lane. Plum is now also locked because the historical P023 source lane names the exact colour Plum and its Drive copy matches the P050 racer construction. Iron Blue was not selected because no exact Iron Blue-labelled source reference was found.
 
 ## Visible construction lock
 
-The generated review images must preserve all of the following visible characteristics.
-
 | Area | Locked observation | Forbidden change |
 | --- | --- | --- |
-| Front neckline | A shallow rounded scoop, bounded with narrow self-colour binding. | V-neck, square neck, halter neck, deeper plunge, gathered front, or cut-out. |
-| Shoulder straps | Two narrow, round-edged self-colour straps. They meet the front bodice at the upper neckline corners. | Wider straps, crossed front straps, adjustable hardware, extra straps, or strap relocation. |
-| Front body | Longline cropped bra body with an even, close-fitting silhouette. | A standard short bra, tank, bodysuit, extra-long crop, loose fit, or changed torso proportion. |
-| Underband | Integrated straight lower band, approximately 45 to 55 mm high in the source crop, with a horizontal seam above it. | Elastic logo band, contrasting band, scalloped hem, raw hem, or changed band height. |
-| Knit | Fine, continuous vertical ribbing across the front body and lower band. | Horizontal ribbing, smooth jersey, mesh, perforation, printed pattern, or compression-zone pattern. |
-| Back | Open racer-back construction: the shoulder straps converge to an upper-centre back junction and continue as a narrow vertical centre-back strap to the top of the lower band. | Crisscross back, double strap back, closed tank back, mesh insert, broad racer panel, added cut-out, or missing centre strap. |
-| Armholes and edges | High curved armholes and narrow self-colour bound edges. | Low-cut armholes, contrasting piping, raw edges, or thicker binding. |
-| Seams | Only the visibly evidenced neckline/armhole binding, lower-band seam, side seam, and centre-back strap junction. | Princess seams, front panel seams, exposed overlock, extra contour seams, zip, hook, clasp, or hardware. |
-| Colour | Espresso brown or an individually source-locked confirmed P050 colour, with low-sheen knit texture and slightly darker edge definition where the original lighting produces it. | Colour grading, colour substitution, or recolouring to an unconfirmed stock colour. |
-| Branding | No garment logo is visible in either approved source. | Any KS Active, KALM, buffalo, supplier, typographic, or invented logo. |
-| Fabric finish | Matte-to-soft-satin knit, opaque in the supplied lighting. | Plastic sheen, reflective latex effect, transparency, visible padding outline, or invented texture. |
+| Front neckline | Shallow rounded scoop with narrow self-colour binding. | V-neck, square neck, halter neck, deeper plunge, gathered front or cut-out. |
+| Shoulder straps | Two narrow, round-edged self-colour straps meeting the upper neckline corners. | Wider, crossed-front, adjustable, extra or relocated straps. |
+| Body and band | Longline cropped body; an integrated, straight lower band around 45–55 mm high, with the visible horizontal seam above it. | Standard short bra, tank, bodysuit, loose body, changed torso proportion, contrasting band or altered height. |
+| Knit | Fine continuous **vertical** ribbing across body and lower band. | Horizontal ribbing, smooth jersey, mesh, perforation, print or compression-zone pattern. |
+| Back | Open racer-back: straps converge at the upper centre and continue as a narrow vertical centre-back strap to the top of the lower band. | Cross-back, double strap, closed tank back, mesh, broad racer panel, added cut-out or missing centre strap. |
+| Edges and seams | High curved armholes, narrow bound edges, lower-band seam, side seam and centre-back strap junction only. | Princess/contour seams, exposed overlock, zip, hook, clasp or hardware. |
+| Colour | Espresso exact source; other colours use only their manual stock labels for draft review. | Colour substitution, historic-name normalisation or fashion-grade that changes the stock label. |
+| Branding | No garment logo is visible in approved sources. | Any KS Active, KALM, buffalo, supplier, typographic or invented logo. |
+| Finish | Opaque matte-to-soft-satin knit. | Plastic sheen, latex effect, transparency, visible padding outline or invented texture. |
 
-## Evidence limits
+## Evidence limits and rejection gate
 
-The source does not reveal internal cup construction, padding, removable inserts, fibre composition, care instructions, adjustability, support rating, or exact material weight. Those features must not be claimed, depicted as visible construction, or inferred.
-
-## Generation rejection gates
-
-Reject any output with a changed neckline, non-racer or crossed back, a missing vertical centre-back strap, a different band height, horizontal knit, any logo, any extra seam or hardware, changed locked colour, distorted anatomy, obscured garment construction, or synthetic garment texture.
+Internal cups, padding, removable inserts, fibre content, care, adjustability, support rating and material weight are not evidenced and cannot be claimed. Reject any output with a changed neckline, non-racer/crossed back, missing centre-back strap, different band height, non-vertical knit, logo, extra seam/hardware, altered colour, distorted anatomy or synthetic fabric texture.

@@ -1,11 +1,15 @@
-# P050 Exact-Colour Source Gaps
+# P050 Colour-Evidence Disclosure
 
-Espresso and Plum have exact historical colour lineage in the approved P050 Drive folder. Plum is now represented in the hidden review route.
+## Exact-source status
 
-| Manual stock colour | Manual stock | Exact source state | Decision |
-| --- | ---: | --- | --- |
-| Dark Green | S × 1 | No exact Dark Green Drive reference or physical-label photograph found. Historical Sage Green is not a substitute. | Blocked |
-| Iron Blue | S × 1, M × 1, L × 1 | No exact Iron Blue Drive reference or physical-label photograph found. Historical Navy / Deep Blue is not a substitute. | Blocked |
-| Violet | S × 1, M × 1, L × 1 | No exact Violet Drive reference or physical-label photograph found. Historical Grape is not a substitute. | Blocked |
+| Stocked colour | Exact P050 Drive colour source | Draft-review authority | Final gate requirement |
+| --- | --- | --- | --- |
+| Espresso | Yes — exact front and back Drive copies | Exact Drive source and approved representative construction | Complete product approval |
+| Plum | Yes — exact historical Plum Drive back copy | Exact historical source plus manual stock label | Complete product approval |
+| Dark Green | No exact Drive colour photograph located | Munya's explicit manual physical-stock label; Espresso exact images lock construction | Compare with physical Dark Green garment at Gate 2 |
+| Iron Blue | No exact Drive colour photograph located | Munya's explicit manual physical-stock label; Espresso exact images lock construction | Compare with physical Iron Blue garment at Gate 2 |
+| Violet | No exact Drive colour photograph located | Munya's explicit manual physical-stock label; Espresso exact images lock construction | Compare with physical Violet garment at Gate 2 |
 
-Required evidence before generation: a physical stock photograph that clearly shows the manual colour label beside the garment, or an approved Drive reference explicitly mapped to that exact manual colour. No similar-colour recolour or historical-name normalisation is allowed.
+The workflow correction authorised one controlled batch for all remaining confirmed P050 stock after representative approval. This removes the earlier per-colour stop, but does **not** transform a manual colour label into a claimed exact Drive reference. Historic Sage Green, Navy / Deep Blue and Grape evidence was not used as a substitute, recolour source or renamed mapping.
+
+All non-Espresso exact-colour limitations remain visible in the review route and complete contact sheet. No image is eligible for public use until Munya performs the complete P050 approval.
