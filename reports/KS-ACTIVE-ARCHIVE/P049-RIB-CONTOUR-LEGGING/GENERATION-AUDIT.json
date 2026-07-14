@@ -1,0 +1,18 @@
+{
+  "productCode": "P049",
+  "status": "representative_white_review_awaiting_munya_approval",
+  "generationSystem": "Codex image generation",
+  "generationCalls": 4,
+  "acceptedOutputs": 4,
+  "rejectedOutputs": 0,
+  "generationScope": "White / M × 1 only; no other P049 colour, size or product was generated.",
+  "cost": "not available from the generation system",
+  "constructionLock": "Fine vertical rib, high straight waistband, full-length tapered leg, White, no logo or contour/scrunch/ombré additions.",
+  "acceptedAssets": [
+    { "view": "hero_three_quarter", "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-hero-three-quarter.png", "sha256": "363BF8C84B3D9DC863B7C7E628945E710EE3330B93DBAF8A8DEF495428DA49FD" },
+    { "view": "back", "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-back.png", "sha256": "96627C69DEED75903280062269787E4B9B7F7D88D27CD43F18DB82C769647E12" },
+    { "view": "side", "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-side.png", "sha256": "1DC09AF5FA3E1EEB6D349DAD63B7FF8470649A344554DE35E9C1FECB4BE30C81" },
+    { "view": "front", "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/white-front.png", "sha256": "16A4E73CD053701395D9A8CDDCC18754B8789CA9472C541D112820656AB70AB4" }
+  ],
+  "publication": "prohibited pending representative style and name approval"
+}

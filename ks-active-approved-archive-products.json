@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Approved hidden KS Active Archive product packages. This manifest does not publish products or mutate the storefront.",
+  "currentStorefrontMutation": false,
+  "products": [
+    {
+      "productCode": "P050",
+      "name": "KS Active Racer Knit Bra",
+      "slug": "ks-active-racer-knit-bra",
+      "classification": "approved_archive",
+      "publicCatalogueState": "hidden_pending_archive_launch",
+      "package": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/APPROVED-PRODUCT.json",
+      "stockedColours": ["Dark Green", "Espresso", "Iron Blue", "Plum", "Violet"],
+      "confirmedQuantity": 11,
+      "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
+      "approvedAt": "2026-07-14"
+    }
+  ]
+}

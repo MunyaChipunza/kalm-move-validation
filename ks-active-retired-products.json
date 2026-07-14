@@ -41,10 +41,10 @@
       "currentLiveState": "unchanged pending archive programme"
     }
   ],
-  "p050RepresentativeReview": {
+  "p050ApprovedArchive": {
     "productCode": "P050",
-    "classification": "awaiting_product_review",
-    "storefrontState": "hidden review route only",
-    "approvalState": "awaiting_munya"
+    "classification": "approved_archive",
+    "storefrontState": "hidden_pending_archive_launch",
+    "approvalState": "approved_by_munya_2026-07-14"
   }
 }

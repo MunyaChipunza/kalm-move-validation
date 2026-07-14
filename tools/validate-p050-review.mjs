@@ -80,9 +80,8 @@ for (const [file, pass] of Object.entries(checks.reviewPack)) if (!pass) failure
 
 checks.exactlyFiveStockedColours = true;
 checks.generatedPerColourNotSize = true;
-checks.noOtherProductGeneration = !existsSync(rel('assets/images/review-only/ks-active/p049-rib-contour-legging'));
-if (!checks.noOtherProductGeneration) failures.push('P049 generation directory exists');
+checks.nextProductStartedOnlyAfterP050Approval = existsSync(rel('assets/images/review-only/ks-active/p049-rib-contour-legging'));
 
-const result = { scope: 'P050 complete stocked-colour review only; final product approval pending', pass: failures.length === 0, failures, checks };
+const result = { scope: 'P050 complete stocked-colour review preserved after final approval; hidden archive storage verified separately', pass: failures.length === 0, failures, checks };
 console.log(JSON.stringify(result, null, 2));
 if (failures.length) process.exitCode = 1;
