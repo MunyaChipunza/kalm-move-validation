@@ -30,7 +30,7 @@ PRODUCTS = [
     ("P020", "KS Active Crossback Seamless Bra", "crossback-seamless-bra", "P020-CROSSBACK-SEAMLESS-BRA", "completed_review"),
     ("P026", "KS Active High-Waist Seamless Short", "high-waist-seamless-short", None, "source_blocked_rear_only"),
     ("P027", "KS Active Curve Seam Legging", "curve-seam-legging", "P027-CURVE-SEAM-LEGGING", "completed_review"),
-    ("P028", "KS Active High-Waist Seamless Legging", "high-waist-seamless-legging", None, "source_blocked_front_only"),
+    ("P028", "KS Active High-Waist Seamless Legging", "high-waist-seamless-legging", "P028-HIGH-WAIST-SEAMLESS-LEGGING", "completed_review"),
     ("P030", "KS Active Crisscross Back Bra", "crisscross-back-bra", "P030-CRISSCROSS-BACK-BRA", "completed_review"),
     ("P033", "KS Active Panel Seamless Legging", "panel-seamless-legging", "P033-PANEL-SEAMLESS-LEGGING", "completed_review"),
     ("P035", "KS Active Scrunch Seamless Legging", "scrunch-seamless-legging", "P035-SCRUNCH-SEAMLESS-LEGGING", "completed_review"),
@@ -124,7 +124,7 @@ def product_record(code: str, name: str, slug: str, report_dir: str | None, stat
     record["source"] = image_metadata(find_image(source_folder))
     if status.startswith("source_blocked"):
         record["sourceLock"] = {
-            "restriction": "rear-only source evidence; no generated model views" if code == "P026" else "front-only source evidence; no generated model views",
+            "restriction": "private and historical evidence confirms rear construction only; a clear front construction view is still missing, so no generated model views are permitted" if code == "P026" else "front-only source evidence; no generated model views",
             "requiredForRelease": "exact complementary construction view from physical stock or approved Drive source",
         }
         return record
@@ -194,7 +194,7 @@ def product_sheet(records: list[dict], path: Path, mobile: bool) -> None:
         draw = ImageDraw.Draw(canvas)
         draw.text((46, 40), "KS ACTIVE ARCHIVE", font=font(38, True), fill=ink)
         draw.text((46, 92), "Hidden final-range visual review · source reference first", font=font(26), fill=muted)
-        draw.text((46, 136), "12 source-backed packages · P026/P028 held for missing evidence · not public", font=font(22), fill="#8b4d39")
+        draw.text((46, 136), "13 source-backed packages · P026 held for missing front evidence · not public", font=font(22), fill="#8b4d39")
         for index, record in enumerate(records):
             y = header_height + index * row_height
             draw.rounded_rectangle((26, y + 12, canvas_width - 26, y + row_height - 12), radius=24, fill="#fffdf9", outline="#d8d0c5", width=2)
@@ -211,7 +211,7 @@ def product_sheet(records: list[dict], path: Path, mobile: bool) -> None:
         draw = ImageDraw.Draw(canvas)
         draw.text((70, 46), "KS ACTIVE ARCHIVE — FINAL RANGE", font=font(64, True), fill=ink)
         draw.text((70, 128), "Internal visual-review evidence · source reference first · unlinked, non-indexed and not purchasable", font=font(34), fill=muted)
-        draw.text((70, 185), "12 completed review packages · 51 stocked colours · P026 and P028 remain source-blocked", font=font(30, True), fill="#8b4d39")
+        draw.text((70, 185), "13 completed review packages · 53 stocked colours · P026 remains source-blocked", font=font(30, True), fill="#8b4d39")
         for index, record in enumerate(records):
             y = header_height + index * row_height
             draw.rounded_rectangle((50, y + 16, canvas_width - 50, y + row_height - 16), radius=30, fill="#fffdf9", outline="#d8d0c5", width=2)
@@ -351,12 +351,12 @@ def main() -> None:
         "schemaVersion": 1,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "status": "draft_only_ready_for_range_review",
-        "summary": {"completedProducts": len(completed), "totalEligibleProducts": 14, "completedColours": 51, "totalEligibleColours": 56, "retainedGeneratedViews": 204, "sourceBlockedProducts": [r["productCode"] for r in blocked]},
+        "summary": {"completedProducts": len(completed), "totalEligibleProducts": 14, "completedColours": 53, "totalEligibleColours": 56, "retainedGeneratedViews": 212, "sourceBlockedProducts": [r["productCode"] for r in blocked]},
         "products": records,
         "checks": {
-            "twelve_completed_packages_have_passing_product_validation": all(existing_checks.values()) and len(existing_checks) == 12,
+            "thirteen_completed_packages_have_passing_product_validation": all(existing_checks.values()) and len(existing_checks) == 13,
             "p026_rear_only_source_block_recorded": any(r["productCode"] == "P026" for r in blocked),
-            "p028_front_only_source_block_recorded": any(r["productCode"] == "P028" for r in blocked),
+            "p028_private_source_lock_complete": any(r["productCode"] == "P028" and r["status"] == "completed_review" for r in records),
             "products_json_unchanged_from_master": public_diff == "",
             "zoho_unchanged": True,
             "intranet_unchanged": True,
@@ -372,16 +372,17 @@ def main() -> None:
 Status: **draft-only review evidence**. This package does not publish, integrate or price any product.
 
 - Completed hidden review packages: **{len(completed)} of 14**
-- Completed stocked colours: **51 of 56**
-- Retained generated views: **204**
-- Source-blocked: **P026** (rear-only evidence) and **P028** (front-only evidence)
+- Completed stocked colours: **53 of 56**
+- Retained generated views: **212**
+- Source-blocked: **P026** (rear-only evidence; front construction still absent)
 - Stock authority: `KS_Active_Archive_SKU_Master.xlsx`, SHA-256 `91650C7A344172BF33E2550261A5B45DAED4DC31D30A11AB47AF5B618EC2DCED`
 
 ## Controls retained
 
 - Every completed generated gallery is based on a local source lock and keeps a single adult model within a colour gallery.
 - Supporting fashion styling is disclosed and never represented as included product inventory.
-- P026 and P028 have no invented complementary construction views or generated model imagery.
+- P026 has no invented complementary construction view or generated model imagery.
+- P028 now has a completed private construction lock and two non-public stocked-colour galleries; the source photographs remain private.
 - P016, P017 and all 669 not-counted workbook variants remain outside this range.
 - P049 and P050 remain approved hidden packages; the other completed packages remain internal-QA candidates pending the final range review.
 - `products.json`, public catalogue surfaces, Zoho, intranet and production remain unchanged.

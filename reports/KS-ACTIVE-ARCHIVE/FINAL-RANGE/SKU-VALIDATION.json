@@ -1,13 +1,13 @@
 {
   "validator": "tools/validate-ks-active-final-range.py",
-  "validatedAt": "2026-07-14T18:18:51.142781+00:00",
+  "validatedAt": "2026-07-14T18:59:51.573484+00:00",
   "passed": true,
   "checks": {
     "all_required_final_range_artifacts_exist": true,
-    "twelve_completed_packages_pass": true,
-    "fifty_one_of_fifty_six_colours_completed": true,
+    "thirteen_completed_packages_pass": true,
+    "fifty_three_of_fifty_six_colours_completed": true,
     "p026_rear_only_source_blocked": true,
-    "p028_front_only_source_blocked": true,
+    "p028_private_source_lock_complete": true,
     "products_json_unchanged": true,
     "review_route_is_noindex": true,
     "zoho_intranet_and_production_untouched": true

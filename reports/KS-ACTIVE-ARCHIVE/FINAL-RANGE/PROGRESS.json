@@ -1,15 +1,15 @@
 {
-  "stage": "draft_deploy",
-  "currentProduct": "KS Active Archive final-range hidden review",
-  "completedProducts": 12,
+  "stage": "validation",
+  "currentProduct": "P026 - KS Active High-Waist Seamless Short",
+  "completedProducts": 13,
   "totalEligibleProducts": 14,
-  "completedColours": 51,
+  "completedColours": 53,
   "totalEligibleColours": 56,
-  "approvedImageCount": 204,
-  "rejectedImageCount": 0,
-  "lastCompletedProduct": "P019 - KS Active Cutout Seamless Bra",
-  "lastCommit": "9939774da776ecedd4d40c08198cfb10b79a1dbe",
-  "lastUpdated": "2026-07-14T18:18:51.1427810Z",
-  "blocker": "source_blocked: P026 has rear-only source evidence; P028 has front-only source evidence. Neither product will receive invented missing construction views.",
-  "nextAction": "Await Munya's range review and obtain exact missing construction views for P026 and P028 before any future catalogue-release decision."
+  "approvedImageCount": 212,
+  "rejectedImageCount": 1,
+  "lastCompletedProduct": "P028 - KS Active High-Waist Seamless Legging",
+  "lastCommit": "ad3e2684c4aa150d646dbaf42688e214d9746f9c",
+  "lastUpdated": "2026-07-14T19:00:03.6358234Z",
+  "blocker": "source_evidence_still_incomplete: P026 has private and historical rear construction evidence only; no source-backed front construction view exists. The full production gate is also blocked pending ownership, condition, launch, price, Zoho and intranet reconciliation.",
+  "nextAction": "Obtain one clear front construction photograph for P026, then re-run the full 14-product release gate after the required commercial controls are reconciled."
 }

@@ -29,10 +29,10 @@ def main() -> None:
     route = ROOT / "review/ks-active/archive-final-range/index.html"
     checks = {
         "all_required_final_range_artifacts_exist": all((OUT / name).is_file() for name in required),
-        "twelve_completed_packages_pass": audit["checks"]["twelve_completed_packages_have_passing_product_validation"],
-        "fifty_one_of_fifty_six_colours_completed": audit["summary"]["completedColours"] == 51 and audit["summary"]["totalEligibleColours"] == 56,
-        "p026_rear_only_source_blocked": audit["summary"]["sourceBlockedProducts"] == ["P026", "P028"],
-        "p028_front_only_source_blocked": audit["products"][8]["status"] == "source_blocked_front_only",
+        "thirteen_completed_packages_pass": audit["checks"]["thirteen_completed_packages_have_passing_product_validation"],
+        "fifty_three_of_fifty_six_colours_completed": audit["summary"]["completedColours"] == 53 and audit["summary"]["totalEligibleColours"] == 56,
+        "p026_rear_only_source_blocked": audit["summary"]["sourceBlockedProducts"] == ["P026"],
+        "p028_private_source_lock_complete": audit["products"][8]["status"] == "completed_review",
         "products_json_unchanged": branch_diff == "",
         "review_route_is_noindex": route.is_file() and "noindex" in route.read_text(encoding="utf-8"),
         "zoho_intranet_and_production_untouched": all(audit["checks"][name] for name in ("zoho_unchanged", "intranet_unchanged", "production_unchanged")),

@@ -1,16 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T18:15:46.766172+00:00",
+  "generatedAt": "2026-07-14T18:59:51.165991+00:00",
   "status": "draft_only_ready_for_range_review",
   "summary": {
-    "completedProducts": 12,
+    "completedProducts": 13,
     "totalEligibleProducts": 14,
-    "completedColours": 51,
+    "completedColours": 53,
     "totalEligibleColours": 56,
-    "retainedGeneratedViews": 204,
+    "retainedGeneratedViews": 212,
     "sourceBlockedProducts": [
-      "P026",
-      "P028"
+      "P026"
     ]
   },
   "products": [
@@ -451,7 +450,7 @@
       ],
       "matchedUnits": 3,
       "sourceLock": {
-        "restriction": "rear-only source evidence; no generated model views",
+        "restriction": "private and historical evidence confirms rear construction only; a clear front construction view is still missing, so no generated model views are permitted",
         "requiredForRelease": "exact complementary construction view from physical stock or approved Drive source"
       },
       "reportPath": null
@@ -529,24 +528,71 @@
       "productCode": "P028",
       "name": "KS Active High-Waist Seamless Legging",
       "driveFolderId": "1ussFOxDa6iYfM8pUqKr077E5UKxNLjQe",
-      "status": "source_blocked_front_only",
+      "status": "completed_review",
       "source": {
         "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-1.jpg",
         "width": 768,
         "height": 1152
       },
-      "generatedHero": null,
-      "generatedBack": null,
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg",
+        "sha256": "B08BD5868E083D9A29CE1F640731A0B25B409298A9C7BDA7D212B11820807B10",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 64006
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/back.jpg",
+        "sha256": "80FEF01F3380E78468872034BA78AC8F36A03D6FA3FABC2A172AC74F59860D30",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 60105
+      },
       "stockedColours": [
         "Electric Violet",
         "True Purple"
       ],
       "matchedUnits": 2,
       "sourceLock": {
-        "restriction": "front-only source evidence; no generated model views",
-        "requiredForRelease": "exact complementary construction view from physical stock or approved Drive source"
+        "construction": "Full-length smooth matte seamless legging with a broad straight high-rise waistband, clean unbroken front, subtle rear centre seam/contour, full tapered legs and clean ankle hems.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "side panels",
+          "mesh",
+          "drawstrings",
+          "scrunch",
+          "changed waistband",
+          "changed ankle length"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-1.jpg",
+            "sha256": "B5F047A5D68C6D507033570CAE7A1D337141617A8914DFF7022B8325B5106BEC",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 69418
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-2.jpg",
+            "sha256": "46B40FFA1BAFCC3ECBC9849F5F717B11CDC12EAE4D85241321F1AE1CC7D737A1",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 75369
+          }
+        ],
+        "private_source_evidence": "Private front, rear and rear-three-quarter construction evidence is held outside Git and Netlify; no source photograph or likeness is included in this review package."
       },
-      "reportPath": null
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P028-HIGH-WAIST-SEAMLESS-LEGGING/P028-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
     },
     {
       "productCode": "P030",
@@ -855,9 +901,9 @@
     }
   ],
   "checks": {
-    "twelve_completed_packages_have_passing_product_validation": true,
+    "thirteen_completed_packages_have_passing_product_validation": true,
     "p026_rear_only_source_block_recorded": true,
-    "p028_front_only_source_block_recorded": true,
+    "p028_private_source_lock_complete": true,
     "products_json_unchanged_from_master": true,
     "zoho_unchanged": true,
     "intranet_unchanged": true,
@@ -872,6 +918,7 @@
     "P019": true,
     "P020": true,
     "P027": true,
+    "P028": true,
     "P030": true,
     "P033": true,
     "P035": true,

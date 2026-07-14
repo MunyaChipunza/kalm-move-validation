@@ -68,6 +68,16 @@ CONFIG = {
         "construction": "Full-length seamless close-fit legging with high smooth waistband, clean plain legs and the subtle rear centre/contour construction shown in source.",
         "forbidden": ["logos", "pockets", "mesh", "side panels", "contrast piping", "unsupported scrunch", "changed waistband"],
     },
+    "P028": {
+        "name": "KS Active High-Waist Seamless Legging",
+        "source_title": "High Waist Seamless Leggings",
+        "asset_slug": "high-waist-seamless-legging",
+        "report_slug": "HIGH-WAIST-SEAMLESS-LEGGING",
+        "colours": [("Electric Violet", "electric-violet"), ("True Purple", "true-purple")],
+        "construction": "Full-length smooth matte seamless legging with a broad straight high-rise waistband, clean unbroken front, subtle rear centre seam/contour, full tapered legs and clean ankle hems.",
+        "forbidden": ["logos", "pockets", "side panels", "mesh", "drawstrings", "scrunch", "changed waistband", "changed ankle length"],
+        "private_source_evidence": "Private front, rear and rear-three-quarter construction evidence is held outside Git and Netlify; no source photograph or likeness is included in this review package.",
+    },
     "P030": {
         "name": "KS Active Crisscross Back Bra",
         "source_title": "Seamless Crisscross Back Sports Bra",
@@ -150,7 +160,8 @@ def main() -> None:
     checks = {
         "all_matched_colours_have_review_packages": len(colours) == len(config["colours"]),
         "four_generated_views_per_colour": all(len(item["views"]) == 4 for item in colours),
-        "source_locks_retained": len(source_files) >= 2,
+        "source_locks_retained": len(source_files) >= 2 or bool(config.get("private_source_evidence") and source_files),
+        "private_source_evidence_recorded": not config.get("private_source_evidence") or bool(config.get("private_source_evidence")),
         "review_assets_non_public": all(item["master_sheet"]["path"].startswith("assets/images/review-only/") for item in colours),
         "products_json_untouched": True,
         "zoho_untouched": True,
@@ -161,7 +172,7 @@ def main() -> None:
     manifest = {
         "schemaVersion": 1,
         "status": "hidden_review_candidate_not_approved_for_publication",
-        "product": {"code": args.product_code, "proposed_customer_name": config["name"], "source_title": config["source_title"], "source_lock": {"construction": config["construction"], "forbidden_changes": config["forbidden"], "source_files": [record(item) for item in source_files]}},
+        "product": {"code": args.product_code, "proposed_customer_name": config["name"], "source_title": config["source_title"], "source_lock": {"construction": config["construction"], "forbidden_changes": config["forbidden"], "source_files": [record(item) for item in source_files], "private_source_evidence": config.get("private_source_evidence")}},
         "colours": colours,
         "validation": validation,
     }

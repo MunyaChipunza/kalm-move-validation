@@ -1,0 +1,17 @@
+{
+  "product_code": "P028",
+  "validation_time_utc": "2026-07-14T18:54:00.760058+00:00",
+  "passed": true,
+  "checks": {
+    "all_matched_colours_have_review_packages": true,
+    "four_generated_views_per_colour": true,
+    "source_locks_retained": true,
+    "private_source_evidence_recorded": true,
+    "review_assets_non_public": true,
+    "products_json_untouched": true,
+    "zoho_untouched": true,
+    "intranet_untouched": true,
+    "production_untouched": true
+  },
+  "issues": []
+}

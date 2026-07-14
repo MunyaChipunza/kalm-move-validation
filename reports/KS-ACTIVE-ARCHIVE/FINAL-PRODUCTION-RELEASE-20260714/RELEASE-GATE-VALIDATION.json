@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "validator": "tools/validate-ks-active-archive-release-gates.py",
+  "validatedAt": "2026-07-14T18:59:51.898054+00:00",
+  "passed": false,
+  "releaseAuthorised": false,
+  "scope": "KS Active Archive only",
+  "summary": {
+    "completedProducts": 13,
+    "totalEligibleProducts": 14,
+    "completedColours": 53,
+    "totalEligibleColours": 56,
+    "retainedGeneratedViews": 212,
+    "sourceBlockedProducts": [
+      "P026"
+    ]
+  },
+  "checks": {
+    "all_fourteen_products_complete": false,
+    "all_fifty_six_stocked_colours_complete": false,
+    "no_source_blocked_products": false,
+    "p026_front_construction_source_complete": false,
+    "visual_range_approval_recorded": false,
+    "ownership_condition_launch_and_quantity_reconciled": false,
+    "approved_public_prices_available": false,
+    "zoho_inventory_reconciled": false,
+    "intranet_inventory_reconciled": false,
+    "public_catalogue_mapping_finalised": false,
+    "private_source_evidence_not_tracked_or_published": true,
+    "production_deployment_is_not_yet_performed": true
+  },
+  "blockingGates": [
+    "all_fourteen_products_complete",
+    "all_fifty_six_stocked_colours_complete",
+    "no_source_blocked_products",
+    "p026_front_construction_source_complete",
+    "visual_range_approval_recorded",
+    "ownership_condition_launch_and_quantity_reconciled",
+    "approved_public_prices_available",
+    "zoho_inventory_reconciled",
+    "intranet_inventory_reconciled",
+    "public_catalogue_mapping_finalised"
+  ],
+  "requiredNextEvidence": {
+    "P026": "One clear, neutral front construction photograph of the actual high-waist seamless short, from waistband through both leg hems.",
+    "commerce": "Reconcile ownership, condition, launch decision, launch quantity, approved public price, Zoho quantity and intranet quantity for every sellable SKU."
+  },
+  "controlsConfirmed": {
+    "productsJsonChanged": false,
+    "zohoUpdated": false,
+    "intranetUpdated": false,
+    "productionDeployed": false,
+    "privateEvidencePubliclyExposed": false
+  }
+}

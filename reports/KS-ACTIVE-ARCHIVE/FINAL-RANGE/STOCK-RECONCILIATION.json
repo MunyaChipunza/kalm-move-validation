@@ -31,11 +31,7 @@
   "sourceBlockedProducts": [
     {
       "productCode": "P026",
-      "reason": "rear-only source evidence; no generated model views"
-    },
-    {
-      "productCode": "P028",
-      "reason": "front-only source evidence; no generated model views"
+      "reason": "private and historical evidence confirms rear construction only; a clear front construction view is still missing, so no generated model views are permitted"
     }
   ],
   "commercialPublicationBlocked": true,

@@ -1,0 +1,21 @@
+{
+  "validatedAt": "2026-07-14T18:59:51.898054+00:00",
+  "hiddenReview": {
+    "validator": "tools/validate-ks-active-final-range.py",
+    "passed": true,
+    "completedProducts": 13,
+    "completedStockedColours": 53,
+    "sourceBlockedProducts": ["P026"]
+  },
+  "existingStorefrontControls": {
+    "catalogueValidation": {"passed": true, "products": 70, "variants": 716, "warnings": 0, "errors": 0},
+    "rejectedAssetsValidation": {"passed": true, "deletedAssetPathsValidated": 46, "approvedBrandLogos": 5, "hiddenOutdoorAccessories": 9},
+    "publicImageDimensions": {"passed": true, "publicImagePaths": 555}
+  },
+  "productionRelease": {
+    "validator": "tools/validate-ks-active-archive-release-gates.py",
+    "passed": false,
+    "reason": "P026 source construction is incomplete and the mandatory commerce reconciliations have not been completed."
+  },
+  "writes": {"productsJson": false, "zoho": false, "intranet": false, "production": false}
+}
