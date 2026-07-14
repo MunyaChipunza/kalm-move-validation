@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Range review status only; this does not alter the storefront.",
+  "products": [
+    {
+      "productCode": "P002",
+      "name": "KS Active Halter Back Romper",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Army Green",
+        "Egyptian Blue",
+        "Electric Violet",
+        "Imperial Red",
+        "Midnight Black"
+      ],
+      "matchedUnits": 11
+    },
+    {
+      "productCode": "P003",
+      "name": "KS Active Rib Scrunch Legging",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Ash Gray",
+        "Black",
+        "Chestnut",
+        "French Rose",
+        "Sky Blue"
+      ],
+      "matchedUnits": 13
+    },
+    {
+      "productCode": "P010",
+      "name": "KS Active Cutout Crossback Bra",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "matchedUnits": 6
+    },
+    {
+      "productCode": "P012",
+      "name": "KS Active Scrunch Seamless Short",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Egyptian Blue",
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "matchedUnits": 8
+    },
+    {
+      "productCode": "P019",
+      "name": "KS Active Cutout Seamless Bra",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Black",
+        "Desert Gold",
+        "Steel"
+      ],
+      "matchedUnits": 6
+    },
+    {
+      "productCode": "P020",
+      "name": "KS Active Crossback Seamless Bra",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Apricot",
+        "Egyptian Blue",
+        "Peach",
+        "Sapphire"
+      ],
+      "matchedUnits": 12
+    },
+    {
+      "productCode": "P026",
+      "name": "KS Active High-Waist Seamless Short",
+      "state": "source_blocked_rear_only",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Electric Violet",
+        "Flamingo",
+        "True Purple"
+      ],
+      "matchedUnits": 3
+    },
+    {
+      "productCode": "P027",
+      "name": "KS Active Curve Seam Legging",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Espresso",
+        "Forest Green",
+        "Olive"
+      ],
+      "matchedUnits": 7
+    },
+    {
+      "productCode": "P028",
+      "name": "KS Active High-Waist Seamless Legging",
+      "state": "source_blocked_front_only",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Electric Violet",
+        "True Purple"
+      ],
+      "matchedUnits": 2
+    },
+    {
+      "productCode": "P030",
+      "name": "KS Active Crisscross Back Bra",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Black",
+        "True Purple"
+      ],
+      "matchedUnits": 2
+    },
+    {
+      "productCode": "P033",
+      "name": "KS Active Panel Seamless Legging",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Azure Blue",
+        "Byzantine Violet",
+        "Cinnamon",
+        "Hunter Green",
+        "Iron Gray",
+        "Jungle Green",
+        "Mauve",
+        "Pine Green"
+      ],
+      "matchedUnits": 18
+    },
+    {
+      "productCode": "P035",
+      "name": "KS Active Scrunch Seamless Legging",
+      "state": "completed_review",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "matchedUnits": 5
+    },
+    {
+      "productCode": "P049",
+      "name": "KS Active Rib Contour Legging",
+      "state": "approved_hidden_package",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Bright Green",
+        "Egyptian Blue",
+        "Gray",
+        "Peach Yellow",
+        "Red",
+        "White"
+      ],
+      "matchedUnits": 7
+    },
+    {
+      "productCode": "P050",
+      "name": "KS Active Racer Knit Bra",
+      "state": "approved_hidden_package",
+      "public": false,
+      "purchasable": false,
+      "stockedColours": [
+        "Dark Green",
+        "Espresso",
+        "Iron Blue",
+        "Plum",
+        "Violet"
+      ],
+      "matchedUnits": 11
+    }
+  ],
+  "publicationGate": "Munya review plus ownership, condition, launch decision, launch quantity and commercial-system reconciliation are still required before public publication."
+}

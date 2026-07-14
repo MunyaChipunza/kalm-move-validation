@@ -1,6 +1,6 @@
 {
-  "stage": "product_storage",
-  "currentProduct": "Final range cumulative hidden review evidence",
+  "stage": "draft_deploy",
+  "currentProduct": "KS Active Archive final-range hidden review",
   "completedProducts": 12,
   "totalEligibleProducts": 14,
   "completedColours": 51,
@@ -8,8 +8,8 @@
   "approvedImageCount": 204,
   "rejectedImageCount": 0,
   "lastCompletedProduct": "P019 - KS Active Cutout Seamless Bra",
-  "lastCommit": "a8fdfee406bbcbed381422ddd97692e5d9bd79a3",
-  "lastUpdated": "2026-07-14T18:08:10.3797610Z",
+  "lastCommit": "adfb16a935614348a2931d4461fe0cbe22100c06",
+  "lastUpdated": "2026-07-14T18:14:25.9859750Z",
   "blocker": "source_blocked: P026 has rear-only source evidence; P028 has front-only source evidence. Neither product will receive invented missing construction views.",
-  "nextAction": "Commit and push all completed source-backed review packages, then build cumulative hidden review evidence."
+  "nextAction": "Commit and push the validated review evidence, then create a draft-only Netlify review deploy."
 }

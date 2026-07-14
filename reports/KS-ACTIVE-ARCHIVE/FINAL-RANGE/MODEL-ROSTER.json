@@ -1,0 +1,63 @@
+{
+  "scope": "Visual QA description only; no demographic identity is inferred from images.",
+  "galleryContinuity": "Each retained colour gallery uses one consistent adult model across hero, back, side and front views.",
+  "rangeDirection": "Varied adult model presentation, hair, styling and support pieces were intentionally used across product families. Supporting fashion items are never sold as part of the reviewed product.",
+  "products": [
+    {
+      "productCode": "P002",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P003",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P010",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P012",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P019",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P020",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P026",
+      "modelContinuity": "not applicable; no model generation"
+    },
+    {
+      "productCode": "P027",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P028",
+      "modelContinuity": "not applicable; no model generation"
+    },
+    {
+      "productCode": "P030",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P033",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P035",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P049",
+      "modelContinuity": "same adult model within each colour gallery"
+    },
+    {
+      "productCode": "P050",
+      "modelContinuity": "same adult model within each colour gallery"
+    }
+  ]
+}

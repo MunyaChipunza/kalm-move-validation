@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "adult_models_only": true,
+    "same_model_within_each_colour_gallery": true,
+    "varied_model_presentation_across_range": true,
+    "no_demographic_claims_inferred_from_image_pixels": true,
+    "no_sexualised_or_extreme_poses_selected": true
+  },
+  "notes": "Visual diversity was reviewed as presentation and styling variety. Demographic attributes are not inferred or asserted from product imagery."
+}
