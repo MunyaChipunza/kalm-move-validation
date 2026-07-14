@@ -1,6 +1,6 @@
 {
-  "scope": "P049 complete six-colour source-first hidden product review",
-  "validator": "tools/validate-p049-review.mjs",
+  "scope": "P049 complete six-colour source-first hidden product review and approved hidden-package storage",
+  "validator": "tools/validate-p049-review.mjs; tools/validate-p049-approved-storage.mjs",
   "status": "passed",
   "draftDeployId": "6a5616fac105cd1c670b9794",
   "draftRouteVerification": {
@@ -18,7 +18,9 @@
     "hidden noindex review route",
     "no purchase controls",
     "no public catalogue, search, sitemap, structured-data, Zoho or intranet mutation",
-    "no P049 Drive-folder rename, approved-archive storage, merge or production deployment"
+    "P049 Drive folder identity preserved at its already-approved final name",
+    "24 reviewed assets copied into a versioned approved hidden package with matching SHA-256 hashes",
+    "no merge or production deployment"
   ],
   "result": {
     "sourceHashAndAcceptedAssetHashes": true,
@@ -26,6 +28,7 @@
     "4RejectedOutputsQuarantined": true,
     "hiddenReviewRoute": true,
     "completeReviewPack": true,
-    "notPublic": true
+    "notPublic": true,
+    "approvedHiddenStorage": true
   }
 }

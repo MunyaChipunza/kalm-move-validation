@@ -4,13 +4,38 @@
   "currentStorefrontMutation": false,
   "products": [
     {
+      "productCode": "P049",
+      "name": "KS Active Rib Contour Legging",
+      "slug": "ks-active-rib-contour-legging",
+      "classification": "approved_archive",
+      "publicCatalogueState": "hidden_pending_final_range_review",
+      "package": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/APPROVED-PRODUCT.json",
+      "stockedColours": [
+        "Bright Green",
+        "White",
+        "Peach Yellow",
+        "Egyptian Blue",
+        "Gray",
+        "Red"
+      ],
+      "confirmedQuantity": 7,
+      "driveFolderId": "19OT_erT6AJKofKhvb47Jx4Zi-M3c59Rj",
+      "approvedAt": "2026-07-14"
+    },
+    {
       "productCode": "P050",
       "name": "KS Active Racer Knit Bra",
       "slug": "ks-active-racer-knit-bra",
       "classification": "approved_archive",
       "publicCatalogueState": "hidden_pending_archive_launch",
       "package": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/APPROVED-PRODUCT.json",
-      "stockedColours": ["Dark Green", "Espresso", "Iron Blue", "Plum", "Violet"],
+      "stockedColours": [
+        "Dark Green",
+        "Espresso",
+        "Iron Blue",
+        "Plum",
+        "Violet"
+      ],
       "confirmedQuantity": 11,
       "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
       "approvedAt": "2026-07-14"

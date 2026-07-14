@@ -1,11 +1,16 @@
 {
   "schemaVersion": 1,
   "productCode": "P049",
-  "reviewStage": "complete_stocked_colour_review_awaiting_final_munya_approval",
+  "reviewStage": "approved_hidden_archive_package_pending_final_range_review",
   "representativeApproval": {
     "approvedBy": "Munya",
     "approvedAt": "2026-07-14",
-    "scope": "White representative styling and working name only; it authorised the remaining confirmed P049 colours for review, not public approval."
+    "scope": "White representative styling and working name only; it authorised the remaining confirmed P049 colours for review."
+  },
+  "fullProductApproval": {
+    "approvedBy": "Munya",
+    "approvedAt": "2026-07-14",
+    "scope": "Complete six-colour P049 product package, including manual-label colour representations after physical comparison; public release remains unauthorised."
   },
   "workingName": "KS Active Rib Contour Legging",
   "workingSlug": "ks-active-rib-contour-legging",
@@ -33,7 +38,7 @@
   "manualColourDisclosure": {
     "exactSourceColour": "White",
     "manualPhysicalStockLabelRepresentations": ["Bright Green", "Peach Yellow", "Egyptian Blue", "Gray", "Red"],
-    "rule": "The five non-White review colours represent Munya's physical-stock labels, not an independently verified Drive colour reference. Each remains subject to physical-item comparison before final P049 approval."
+    "rule": "The five non-White review colours represent Munya's physical-stock labels, not independently verified Drive colour references. Munya completed the physical comparison before final P049 approval."
   },
   "rejectedCandidate": {
     "driveFolderId": "1SCD2QlfRdIt-A6g22aIuYM7FjK6rix6_",
