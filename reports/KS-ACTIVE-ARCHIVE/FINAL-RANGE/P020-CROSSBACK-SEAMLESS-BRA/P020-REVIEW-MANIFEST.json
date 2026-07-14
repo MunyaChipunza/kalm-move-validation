@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P020",
+    "proposed_customer_name": "KS Active Crossback Seamless Bra",
+    "source_title": "Mid Support Seamless Crisscross Sports Bra",
+    "source_lock": {
+      "construction": "Smooth seamless longline bra with rounded scoop neckline, broad shoulder straps, wide lower band and crossed X-back configuration with a central lower-back opening.",
+      "forbidden_changes": [
+        "logos",
+        "mesh",
+        "extra straps",
+        "zips",
+        "cups",
+        "changed neckline"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-1.png",
+          "sha256": "BCA6578CA22CC8EA5CDE7FE974E7106083B39444C42DC1514D9552D38C51B858",
+          "dimensions": {
+            "width": 2820,
+            "height": 2364
+          },
+          "bytes": 4694392
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-2.png",
+          "sha256": "3600F8EE088AEF68CAE31E73F5F302B6DCFD3C4F7DAE98376B1AE2B7542EF1FB",
+          "dimensions": {
+            "width": 2820,
+            "height": 2364
+          },
+          "bytes": 3353122
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Apricot",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/generated-multiview-source.png",
+        "sha256": "9D7E4548FBA828BD6A6488389BCBBE3AB748CE782E3AD45FBE8CB88C809E7C30",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1607146
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/hero-three-quarter.jpg",
+          "sha256": "1A222AB6EDD28AE1957B937A9E5240153A7C24997C1D3B427FF52EDDD1CEFA69",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 67300
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/back.jpg",
+          "sha256": "E7364586CDB9DD56320BFDBAFE44BFFA3EAA520C729D16CE8B12BCA611D897F5",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59499
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/side.jpg",
+          "sha256": "14FF21D85CC83A4594DA3D344DED435E17A5246D4FE46F254FAA0E176B87FC94",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54128
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/front.jpg",
+          "sha256": "E20C48D8906011B86EF28DE5D3B35C760C1660F98E69CF5C8EE0A95D84CC34A2",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57825
+        }
+      ]
+    },
+    {
+      "colour": "Egyptian Blue",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/egyptian-blue/generated-multiview-source.png",
+        "sha256": "5BE7448BA829D0C0A55D758ED72DE07183533D3680539BFB0F8E5F49570A005B",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1604220
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/egyptian-blue/hero-three-quarter.jpg",
+          "sha256": "D76F21D4505FF4100B070FB0CE151EDDD809EDB60E8C4A65C1CB0DA93F8E4493",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 69051
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/egyptian-blue/back.jpg",
+          "sha256": "B1A3E9DC44A9ED9DBD93EF538EA96013566FB9CC644F8E0D4AB668C90EACA079",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 66614
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/egyptian-blue/side.jpg",
+          "sha256": "DB878E9E8F65AE45AE1128129BF186F1958873088D8720676DE019199BB7E37F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59659
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/egyptian-blue/front.jpg",
+          "sha256": "A1DF540C4A011600159641D7DA757AA0A66E3DD8AF5BC3BB40B8702C93F484D0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 65876
+        }
+      ]
+    },
+    {
+      "colour": "Peach",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/peach/generated-multiview-source.png",
+        "sha256": "BA574A1F06BF907EE5E2A6BFE4B9C03B4D91F07ACF24166DDE650F33F192EE42",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1606972
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/peach/hero-three-quarter.jpg",
+          "sha256": "251BEC5CB3A6F8A461EFD43F2E49B06F94055CBB3D0693F72F0BA523D5FD46A4",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 66732
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/peach/back.jpg",
+          "sha256": "0194CE4C9554E9B15C8B4D5FE7817D197D4253D6C6BA56E3EC34A4A816C7A5A8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63453
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/peach/side.jpg",
+          "sha256": "687C386EDB2C86EDEA98E5FF05B3A3576AAE3120345A56898C382E8F8C20CE88",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51497
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/peach/front.jpg",
+          "sha256": "8E3E89D71261372F90C058AAF7B3FFB9DF71B182DBBDA68F0EE1688652EB9E82",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57153
+        }
+      ]
+    },
+    {
+      "colour": "Sapphire",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/sapphire/generated-multiview-source.png",
+        "sha256": "1DCF178AF0740278D290ED84058559B36C7AEE845BCCADA2E8CB46A732BB321C",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1591362
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/sapphire/hero-three-quarter.jpg",
+          "sha256": "9268363B832215D99D9CA0A9868D9A552085F237AE60FE59459B72084A7FFBFF",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62930
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/sapphire/back.jpg",
+          "sha256": "DBFE505969B9EDAFE0F60871DFCDCE01FD3300FAEBDD7C5391C64A0C7C81EE4F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62715
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/sapphire/side.jpg",
+          "sha256": "E2ACD669962AD731F8066B0D5AD0AF9768D097D7819FD6A0A2D961B4BBFA2859",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 50169
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/sapphire/front.jpg",
+          "sha256": "6E39586C15427D1389B240391763D4B015CC472E56DCAFFBC895C97740A438B6",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62288
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P020",
+    "validation_time_utc": "2026-07-14T15:57:27.650394+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

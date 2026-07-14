@@ -1,15 +1,15 @@
 {
   "stage": "image_generation",
-  "currentProduct": "P020 - KS Active Crossback Seamless Bra",
-  "completedProducts": 3,
+  "currentProduct": "P030 - KS Active Crisscross Back Bra",
+  "completedProducts": 5,
   "totalEligibleProducts": 14,
-  "completedColours": 35,
+  "completedColours": 38,
   "totalEligibleColours": 56,
-  "approvedImageCount": 140,
+  "approvedImageCount": 152,
   "rejectedImageCount": 0,
-  "lastCompletedProduct": "P012 - KS Active Scrunch Seamless Short",
-  "lastCommit": "519b2b9f09a80f139a5e663c706b431fe9b80ad6",
-  "lastUpdated": "2026-07-14T15:17:01.0557240Z",
-  "blocker": "P026 has rear-only source evidence and P028 has front-only source evidence; no unsupported missing-angle imagery will be generated.",
-  "nextAction": "Commit and push the validated P012 checkpoint, then report the next source-complete family with P020."
+  "lastCompletedProduct": "P027 - KS Active Curve Seam Legging",
+  "lastCommit": "011410cd05ce025ecb2c192fd73b80ba0e824cce",
+  "lastUpdated": "2026-07-14T17:28:53.7558240Z",
+  "blocker": "source_blocked: P026 has rear-only source evidence; P028 has front-only source evidence. Neither product will receive invented missing construction views.",
+  "nextAction": "Commit and push the validated P020/P027 checkpoint, then generate the two matched P030 colours from their source lock."
 }

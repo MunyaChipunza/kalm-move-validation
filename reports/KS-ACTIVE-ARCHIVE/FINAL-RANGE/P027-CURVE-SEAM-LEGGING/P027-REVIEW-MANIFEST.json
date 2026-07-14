@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P027",
+    "proposed_customer_name": "KS Active Curve Seam Legging",
+    "source_title": "Seamless Breathable Scrunch Butt Tummy Control Leggings",
+    "source_lock": {
+      "construction": "Full-length seamless close-fit legging with high smooth waistband, clean plain legs and the subtle rear centre/contour construction shown in source.",
+      "forbidden_changes": [
+        "logos",
+        "pockets",
+        "mesh",
+        "side panels",
+        "contrast piping",
+        "unsupported scrunch",
+        "changed waistband"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-1.jpg",
+          "sha256": "4D941C62F863108F893890D33DF46261FB0D3F32521D8942684C22D382BF8965",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 141402
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-2.jpg",
+          "sha256": "762C1771A025909E69A23A9B9909AADA4A61EE7A24101BBB7ECDFCC4B41B2752",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 151534
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Espresso",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/generated-multiview-source.png",
+        "sha256": "0C2BE50C076E07D7E81DE20ACBC88A77BC9366D2033567E0877E80A1D31FAB70",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1593927
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/hero-three-quarter.jpg",
+          "sha256": "B52EDB161A0BB8BF89524F6374CE10D70732969BA3E5065BE6029CDDEBC914F8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57863
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/back.jpg",
+          "sha256": "36E6D8D94DCD11EA2A537284D5A579D15C1E1C17F3ADB3E58E03B45425DD4FA7",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56451
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/side.jpg",
+          "sha256": "9907D9FD67794613453B50259BBBC9A079D48E5ACE95E21D065976E3B12E73C4",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51953
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/front.jpg",
+          "sha256": "39BC05A16D063564CC0727D6A79F1848C1EC113B91C727AF1D7FE299B6F9A1FD",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56228
+        }
+      ]
+    },
+    {
+      "colour": "Forest Green",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/forest-green/generated-multiview-source.png",
+        "sha256": "C7A48381175016C82B04479F8DEB240F5D8D0CF820FD899F38522FA72C5CF956",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1543557
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/forest-green/hero-three-quarter.jpg",
+          "sha256": "F03D1F068B85EE34CE2B05A42E3489FC4EDD314FD70144DEE01483AA4BAD2728",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51440
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/forest-green/back.jpg",
+          "sha256": "4C4A5CB1DFBC9FE054CFD28A9933D9AAA090150FD1929B81E61B4C104A76E49C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 50521
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/forest-green/side.jpg",
+          "sha256": "2D85D57EE10CBFEDB77CC02E0C99F1CC3E4FD11C616147D3F55AA072205D2027",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 44953
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/forest-green/front.jpg",
+          "sha256": "C76E7FBFAC96A55A7376B770E3B446B051B1C4DD08A2B386C4A0DD55F4C6F9DA",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 50249
+        }
+      ]
+    },
+    {
+      "colour": "Olive",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/olive/generated-multiview-source.png",
+        "sha256": "5269EEF811DEF930F0E5E95C9BBDA263E7939313206C38DE5DBBF34F9E820F9D",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1549170
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/olive/hero-three-quarter.jpg",
+          "sha256": "EBCAA59BEB7D2B6DF3EA24CA4A5F835E5A85778128A381926F66B96EF1D72743",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58543
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/olive/back.jpg",
+          "sha256": "FDDD3EBABB22B41976F8BB0E567105F8DA2FDF4AD3308CE67DDDC978B2147A0A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55443
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/olive/side.jpg",
+          "sha256": "3CB3626019EC5ADFF2A8F9CEC7580AE8179AF0B9F4CA5F450012928D036FFAF8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 48492
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/olive/front.jpg",
+          "sha256": "12436321003B47F656BF2A2DAEBBA7DE3084A063B4CB7CACC4006B8035BC0A10",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56052
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P027",
+    "validation_time_utc": "2026-07-14T17:28:53.755824+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}
