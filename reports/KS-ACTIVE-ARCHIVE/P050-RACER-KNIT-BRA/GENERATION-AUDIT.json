@@ -1,23 +1,28 @@
 {
   "productCode": "P050",
   "representativeColour": "Espresso",
-  "status": "representative_review_complete_awaiting_munya",
-  "generationCalls": 5,
-  "acceptedOutputs": 4,
-  "rejectedOutputs": 0,
-  "blockedAttempts": 1,
+  "status": "partial_p050_review_after_espresso_approval",
+  "generationCalls": 11,
+  "acceptedOutputs": 8,
+  "rejectedOutputs": 1,
+  "blockedAttempts": 2,
   "sourceLockRequired": true,
   "storefrontIntegration": false,
   "notes": [
-    "The first request was blocked by the generation safety filter before an image was produced. It is not a rejected visual output.",
+    "Two requests were blocked by the generation safety filter before an image was produced. They are not rejected visual outputs.",
     "Four model images were inspected against the locked neckline, straps, vertical rib, longline band, open racer back, Espresso colour, logo absence, and no-added-feature gates.",
-    "No generated image is accepted for publication. All four are limited to the representative review route and evidence pack.",
-    "No other P050 colour may be generated before Munya approves the representative Espresso review."
+    "Four Plum model images were inspected against the source-locked neckline, straps, vertical rib, longline band, open racer back, Plum colour, logo absence, and no-added-feature gates.",
+    "No generated image is accepted for publication. The eight retained images are limited to the hidden review route and evidence pack.",
+    "Dark Green, Iron Blue and Violet have not been generated: no exact Drive mapping or physical-label photograph was found, and similar historic colours are prohibited substitutes."
   ],
   "acceptedAssets": [
     { "view": "hero_three_quarter", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-hero-three-quarter.png", "sha256": "085EF91A87EC79A3C2BEA3DF3C7A91C2C2A88EB4DAF5EE5C58168E3F8930D475", "dimensions": "1003x1568" },
     { "view": "back", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-back.png", "sha256": "B94B1B27DB57FBAFABF95E1D9A2EAACC41E3BE3CA6B5B7102D0D23A7AB2EDEDC", "dimensions": "970x1621" },
     { "view": "side", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-side.png", "sha256": "E34FD2598204835C325BAE9EC833D5C88EBBB5609603C67D2254A66DEED90068", "dimensions": "960x1639" },
-    { "view": "front", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-front.png", "sha256": "C659AF48949AD2F54E4DCDF61FAAF0315BCEA0C84B3F1A2B23D08494DF9D5A06", "dimensions": "971x1619" }
+    { "view": "front", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/espresso-front.png", "sha256": "C659AF48949AD2F54E4DCDF61FAAF0315BCEA0C84B3F1A2B23D08494DF9D5A06", "dimensions": "971x1619" },
+    { "view": "plum_hero_three_quarter", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/plum-front-full.png", "sha256": "099DEEBC7E60D622E153B3FFAE1D532BD3875E2FC46B7AC9008B1ED96DBD1DDA", "dimensions": "1003x1568" },
+    { "view": "plum_back", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/plum-back-full.png", "sha256": "94642D6604B3B2F9375DEE8AFC817632A6ABB1E5C50416A2A3CEE24134EBBFF1", "dimensions": "1009x1559" },
+    { "view": "plum_side", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/plum-side-full.png", "sha256": "7648842A65268B65EE9D29AF75A8AAAD87598DAFE8F17013BDCF8C1176A05CDB", "dimensions": "1001x1571" },
+    { "view": "plum_front", "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/plum-front.png", "sha256": "824C1B702FF6B83503D21B21171789C9682B77A605FF41ACBA37D7077D669C2A", "dimensions": "851x1847" }
   ]
 }

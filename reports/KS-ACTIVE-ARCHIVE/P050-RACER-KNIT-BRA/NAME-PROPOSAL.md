@@ -1,6 +1,6 @@
 # Name Proposal: P050
 
-## Proposed customer-facing name
+## Approved customer-facing name
 
 **KS Active Racer Knit Bra**
 
@@ -12,9 +12,9 @@ The name is short, memorable, accurately identifies the visible racer-back knit 
 | --- | --- |
 | Product code | P050 |
 | Original Drive folder name | Seamless Knit Racer Back Sports Bra |
-| Proposed product name | KS Active Racer Knit Bra |
+| Approved product name | KS Active Racer Knit Bra |
 | Proposed slug | `ks-active-racer-knit-bra` |
 | Representative colour | Espresso |
-| Price | Pending Munya approval |
+| Price | Pending separate Munya approval |
 
-No Drive folder will be renamed unless Munya approves the completed P050 product package.
+Munya approved the representative name on 14 July 2026. The Drive folder will not be renamed unless Munya separately approves the completed P050 product package.

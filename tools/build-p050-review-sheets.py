@@ -53,6 +53,11 @@ assets = {
     "back": Image.open(GENERATED / "espresso-back.png"),
     "side": Image.open(GENERATED / "espresso-side.png"),
     "front": Image.open(GENERATED / "espresso-front.png"),
+    "plum_source": Image.open(SOURCE / "plum-back.jpg"),
+    "plum_hero": Image.open(GENERATED / "plum-front-full.png"),
+    "plum_back": Image.open(GENERATED / "plum-back-full.png"),
+    "plum_side": Image.open(GENERATED / "plum-side-full.png"),
+    "plum_front": Image.open(GENERATED / "plum-front.png"),
 }
 
 
@@ -156,6 +161,26 @@ def build_mobile():
     canvas.save(REPORT / "MOBILE-REVIEW.jpg", quality=94, subsampling=0)
 
 
+def build_plum():
+    width, height = 3240, 1880
+    canvas = Image.new("RGB", (width, height), BG)
+    draw = ImageDraw.Draw(canvas)
+    draw.text((100, 65), "P050  |  KS ACTIVE RACER KNIT BRA  |  PLUM", font=font(48, True), fill=INK)
+    draw.text((100, 128), "Exact historical Plum reference · draft-only model review · not for publication", font=font(25), fill=MUTED)
+    tiles = [
+        (assets["plum_source"], "SOURCE REFERENCE - NOT FOR PUBLICATION", "1. Exact Drive source · Plum back", "source"),
+        (assets["plum_hero"], "GENERATED MODEL REVIEW", "2. Hero / three-quarter", "generated"),
+        (assets["plum_back"], "GENERATED MODEL REVIEW", "3. Back", "generated"),
+        (assets["plum_side"], "GENERATED MODEL REVIEW", "4. Side", "generated"),
+        (assets["plum_front"], "GENERATED MODEL REVIEW", "5. Front", "generated"),
+    ]
+    positions = [(100, 230), (1140, 230), (2180, 230), (620, 1030), (1660, 1030)]
+    for pos, data in zip(positions, tiles):
+        tile(canvas, draw, pos[0], pos[1], data[0], data[1], data[2], data[3])
+    canvas.save(REPORT / "PLUM-REVIEW.jpg", quality=94, subsampling=0)
+
+
 build_comparison()
 build_desktop()
 build_mobile()
+build_plum()

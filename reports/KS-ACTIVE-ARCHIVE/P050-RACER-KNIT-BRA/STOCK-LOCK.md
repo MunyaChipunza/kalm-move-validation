@@ -9,13 +9,13 @@ The product review is non-purchasable. No Zoho, intranet, storefront, bag, check
 | Colour | Size | Confirmed manual quantity | Draft SKU | Review availability |
 | --- | --- | ---: | --- | --- |
 | Dark Green | S | 1 | `KS-ARCH-P050-DKGRN-S` | pending Count 1 and Count 2 reconciliation |
-| Espresso | M | 1 | `KS-ARCH-P050-ESPRS-M` | representative image review only |
-| Espresso | L | 1 | `KS-ARCH-P050-ESPRS-L` | representative image review only |
+| Espresso | M | 1 | `KS-ARCH-P050-ESPRS-M` | representative imagery approved; full-product gate remains open |
+| Espresso | L | 1 | `KS-ARCH-P050-ESPRS-L` | representative imagery approved; full-product gate remains open |
 | Iron Blue | S | 1 | `KS-ARCH-P050-IRNBL-S` | pending exact source reference |
 | Iron Blue | M | 1 | `KS-ARCH-P050-IRNBL-M` | pending exact source reference |
 | Iron Blue | L | 1 | `KS-ARCH-P050-IRNBL-L` | pending exact source reference |
-| Plum | M | 1 | `KS-ARCH-P050-PLUM-M` | pending source and representative approval |
-| Plum | L | 1 | `KS-ARCH-P050-PLUM-L` | pending source and representative approval |
+| Plum | M | 1 | `KS-ARCH-P050-PLUM-M` | exact historical source locked; draft review generated |
+| Plum | L | 1 | `KS-ARCH-P050-PLUM-L` | exact historical source locked; draft review generated |
 | Violet | S | 1 | `KS-ARCH-P050-VIOLT-S` | pending source and representative approval |
 | Violet | M | 1 | `KS-ARCH-P050-VIOLT-M` | pending source and representative approval |
 | Violet | L | 1 | `KS-ARCH-P050-VIOLT-L` | pending source and representative approval |

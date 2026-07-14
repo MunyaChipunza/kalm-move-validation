@@ -5,6 +5,12 @@
   "proposedName": "KS Active Racer Knit Bra",
   "proposedSlug": "ks-active-racer-knit-bra",
   "representativeColour": "Espresso",
+  "representativeApproval": {
+    "approvedBy": "Munya",
+    "approvedAt": "2026-07-14",
+    "scope": "source-locked representative imagery and customer-facing name only"
+  },
+  "reviewColours": ["Espresso", "Plum"],
   "stockAuthority": {
     "manualInstruction": true,
     "confirmedManualQuantity": 11,
@@ -17,6 +23,13 @@
     "workbookProductCode": "P023",
     "workbookColour": "Espresso",
     "normalisedSourceFilename": "Untitleddesign_28.png"
+  },
+  "plumHistoricalCrossReference": {
+    "role": "colour and construction traceability only; never inventory authority",
+    "workbook": "KS_Active_Archive_SKU_Master.xlsx",
+    "workbookProductCode": "P023",
+    "workbookColour": "Plum",
+    "normalisedSourceFilename": "27_ae992050-26e2-4704-a9fd-8876848a02a5.jpg"
   },
   "files": [
     {
@@ -39,6 +52,17 @@
       "originalHashSha256": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
       "copiedHashSha256": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
       "dimensions": { "width": 2820, "height": 2364 },
+      "unaltered": true
+    },
+    {
+      "role": "exact_source_reference_plum_back",
+      "driveFileId": "1nJuXZ9KeKxR7DkAXtLue7qIQM4X-d0aJ",
+      "driveFileName": "描述图_27.jpg",
+      "driveRelativePath": "Seamless Knit Racer Back Sports Bra/描述图_27.jpg",
+      "localPath": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/plum-back.jpg",
+      "originalHashSha256": "0398296D93A7320CBD8507622A81337E4015591572D2F17B453AB5CF990E77A6",
+      "copiedHashSha256": "0398296D93A7320CBD8507622A81337E4015591572D2F17B453AB5CF990E77A6",
+      "dimensions": { "width": 1200, "height": 1200 },
       "unaltered": true
     }
   ],

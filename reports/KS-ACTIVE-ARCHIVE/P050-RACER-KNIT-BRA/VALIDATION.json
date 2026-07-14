@@ -1,10 +1,16 @@
 {
   "productCode": "P050",
-  "stage": "representative_colour_review",
+  "stage": "partial_colour_review_after_representative_approval",
   "checks": {
     "onlyP050InScope": true,
     "representativeColourHasManualStock": true,
     "representativeColourHasSourceReference": true,
+    "plumHasExactHistoricalSourceReference": true,
+    "plumGeneratedViewsPresent": ["hero_three_quarter", "back", "side", "front"],
+    "darkGreenExactSourceReference": false,
+    "ironBlueExactSourceReference": false,
+    "violetExactSourceReference": false,
+    "similarHistoricalColourSubstitution": false,
     "sourceHashesMatchLocalCopies": true,
     "generatedViewsPresent": ["hero_three_quarter", "back", "side", "front"],
     "generatedReviewLabelsPresent": true,
@@ -14,6 +20,7 @@
     "draftReviewRouteHttpsStatus": 200,
     "draftReviewRouteHasSourceLabel": true,
     "draftReviewRouteHasGeneratedLabel": true,
+    "draftReviewRouteHasPlumSection": true,
     "draftReviewRouteHasPurchaseControls": false,
     "productionReviewRouteHttpsStatus": 404,
     "p050AbsentFromCurrentArchiveWorkbook": true,
@@ -31,5 +38,5 @@
     "mobileFirst": "pass: 888 public image paths",
     "p050ReviewIsolation": "pass"
   },
-  "result": "representative review evidence passed source, scope and isolation checks; product remains non-purchasable and awaiting Munya review"
+  "result": "Espresso approval and Plum source-locked review pass scope and isolation checks; P050 remains non-purchasable and cannot enter full-product approval until exact evidence is supplied for Dark Green, Iron Blue and Violet"
 }

@@ -2,7 +2,7 @@
 
 ## Review status
 
-Draft-only representative-colour review. This lock authorises no catalogue integration, Drive folder rename, price, inventory synchronisation, production deployment, or progression to another product.
+Espresso representative review and the proposed customer name were approved by Munya on 14 July 2026. This remains a draft-only P050 lock: it authorises the source-locked Plum review only, not catalogue integration, Drive folder rename, price, inventory synchronisation, production deployment, or progression to another product.
 
 ## Identity
 
@@ -15,7 +15,7 @@ Draft-only representative-colour review. This lock authorises no catalogue integ
 | Representative colour | Espresso |
 | Source folder ID | `1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV` |
 
-Espresso was selected because the supplied P050 inventory explicitly includes Espresso and the exact front source filename is traceable to the historical Espresso source lane. Iron Blue was not selected because no exact Iron Blue-labelled source reference was found.
+Espresso was selected because the supplied P050 inventory explicitly includes Espresso and the exact front source filename is traceable to the historical Espresso source lane. Plum is now also locked because the historical P023 source lane names the exact colour Plum and its Drive copy matches the P050 racer construction. Iron Blue was not selected because no exact Iron Blue-labelled source reference was found.
 
 ## Visible construction lock
 
@@ -31,7 +31,7 @@ The generated review images must preserve all of the following visible character
 | Back | Open racer-back construction: the shoulder straps converge to an upper-centre back junction and continue as a narrow vertical centre-back strap to the top of the lower band. | Crisscross back, double strap back, closed tank back, mesh insert, broad racer panel, added cut-out, or missing centre strap. |
 | Armholes and edges | High curved armholes and narrow self-colour bound edges. | Low-cut armholes, contrasting piping, raw edges, or thicker binding. |
 | Seams | Only the visibly evidenced neckline/armhole binding, lower-band seam, side seam, and centre-back strap junction. | Princess seams, front panel seams, exposed overlock, extra contour seams, zip, hook, clasp, or hardware. |
-| Colour | Espresso brown with low-sheen knit texture and slightly darker edge definition where the original lighting produces it. | Colour grading, warm olive shift, black, taupe, or recolouring to an unconfirmed stock colour. |
+| Colour | Espresso brown or an individually source-locked confirmed P050 colour, with low-sheen knit texture and slightly darker edge definition where the original lighting produces it. | Colour grading, colour substitution, or recolouring to an unconfirmed stock colour. |
 | Branding | No garment logo is visible in either approved source. | Any KS Active, KALM, buffalo, supplier, typographic, or invented logo. |
 | Fabric finish | Matte-to-soft-satin knit, opaque in the supplied lighting. | Plastic sheen, reflective latex effect, transparency, visible padding outline, or invented texture. |
 
@@ -41,4 +41,4 @@ The source does not reveal internal cup construction, padding, removable inserts
 
 ## Generation rejection gates
 
-Reject any output with a changed neckline, non-racer or crossed back, a missing vertical centre-back strap, a different band height, horizontal knit, any logo, any extra seam or hardware, changed Espresso colour, distorted anatomy, obscured garment construction, or synthetic garment texture.
+Reject any output with a changed neckline, non-racer or crossed back, a missing vertical centre-back strap, a different band height, horizontal knit, any logo, any extra seam or hardware, changed locked colour, distorted anatomy, obscured garment construction, or synthetic garment texture.
