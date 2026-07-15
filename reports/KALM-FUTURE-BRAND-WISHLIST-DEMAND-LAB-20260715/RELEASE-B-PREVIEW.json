@@ -58,6 +58,8 @@
   },
   "localSmokeEvidence": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/LOCAL-SMOKE-TEST.json",
   "mobileScreenshot": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/mobile-future-candidate.jpg",
-  "previewUrl": null,
-  "previewDeployId": null
+  "previewUrl": "https://6a5770dc223557c36fb6383c--kalm-collective-storefront.netlify.app",
+  "previewDeployId": "6a5770dc223557c36fb6383c",
+  "previewSmokeEvidence": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/PREVIEW-SMOKE-TEST.json",
+  "previewMobileScreenshot": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/preview-mobile-future-candidate.jpg"
 }

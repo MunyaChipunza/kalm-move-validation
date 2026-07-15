@@ -1,0 +1,28 @@
+{
+  "preview": "https://6a5770dc223557c36fb6383c--kalm-collective-storefront.netlify.app",
+  "lab": {
+    "href": "https://6a5770dc223557c36fb6383c--kalm-collective-storefront.netlify.app/future-demand",
+    "h1": "Future-brand wishlist testing",
+    "cards": 12,
+    "addToBag": 0,
+    "marketingChecked": false,
+    "initialRoute": "non-home",
+    "routeRendered": "true"
+  },
+  "wishlist": {
+    "pressed": "true",
+    "label": "On your wishlist",
+    "saved": "[\"future-kalm-move-all-day-straw-tumbler\"]"
+  },
+  "future": {
+    "h1": "All-Day Straw Tumbler",
+    "status": "In consideration",
+    "addToBag": 0,
+    "offer": false
+  },
+  "ks": {
+    "h1": "Racer Knit Bra",
+    "addToBag": 1
+  },
+  "screenshot": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/preview-mobile-future-candidate.jpg"
+}

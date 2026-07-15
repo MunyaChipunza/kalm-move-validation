@@ -69,6 +69,22 @@ Key result:
 - Future candidate page add-to-bag count: 0.
 - Future candidate structured data included no `Offer`.
 
-## Preview verification pending
+## Preview verification
 
-The immutable Netlify preview URL and clean URL checks are recorded after deploy.
+- Preview URL: https://6a5770dc223557c36fb6383c--kalm-collective-storefront.netlify.app
+- Deploy ID: `6a5770dc223557c36fb6383c`
+- Branch commit used for preview: `cf6789a`
+
+See `PREVIEW-SMOKE-TEST.json`.
+
+Key preview result:
+
+- `/future-demand` clean route rendered the demand lab.
+- 12 future candidates rendered.
+- Demand lab add-to-bag count: 0.
+- Wishlist add persisted and changed the CTA to `On your wishlist`.
+- Candidate page label: `In consideration`.
+- Candidate page add-to-bag count: 0.
+- Candidate page structured data included no `Offer`.
+- KS Active Racer Knit Bra still had add-to-bag.
+- Production deployment was not run for Release B.
