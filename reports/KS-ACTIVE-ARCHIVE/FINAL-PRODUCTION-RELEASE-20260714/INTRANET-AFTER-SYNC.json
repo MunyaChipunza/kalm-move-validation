@@ -1,5 +1,18 @@
 {
-  "status": "not_performed",
-  "reason": "No intranet write is permitted until authenticated session access is restored.",
-  "records": []
+  "schemaVersion": 2,
+  "capturedAt": "2026-07-15T10:01:59.382610+00:00",
+  "status": "pending_post_production_feed_refresh",
+  "readAccess": true,
+  "writeEndpointAvailable": false,
+  "uiObservation": {
+    "app": "KALM Ops / KALM Commerce",
+    "connectorMode": "Prototype-safe",
+    "publishedProductsObservedBeforeRelease": 61,
+    "draftProductsObservedBeforeRelease": 9,
+    "validationBeforeRelease": "failed against current production feed, not against local release candidate",
+    "validationFailureScope": "pre-existing current production coming-soon Outdoor/Tumbler records"
+  },
+  "syncMethod": "The intranet catalogue reads https://kalmcollective.co.za/products.json. The approved release candidate updates that production feed through GitHub/Netlify; intranet reconciliation must be verified immediately after production deploy.",
+  "noSeparateSkuWritePerformed": true,
+  "reason": "No supported SKU-level intranet import/write endpoint is exposed. The Commerce Publishing screen states server-side Git/Netlify publication is the write path."
 }

@@ -1,0 +1,11 @@
+{
+  "createdAt": "2026-07-15T11:35:00+02:00",
+  "source": "Codex thread user message",
+  "approvalText": "everything is approved, proceed",
+  "recordedBy": "Codex",
+  "interpretation": "Management approval to proceed was provided in-thread. This is recorded as electronic approval evidence, not a fabricated wet signature.",
+  "kalmSideAuthority": "Approved in thread by Munya / authenticated user context.",
+  "ksActiveSideAuthority": "Approval represented in-thread by user statement; no separate wet signature file was provided in this turn.",
+  "documentsRemainUnsigned": true,
+  "privacyControl": "No identity numbers, bank details, private signatures or private photographs are recorded in this repository evidence."
+}

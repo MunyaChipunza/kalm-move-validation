@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-07-15T11:25:00+02:00",
+  "stage": "zoho_import",
+  "status": "blocked_by_chrome_extension_file_upload_permission",
+  "protectedReleaseCommit": "53e3dd3bbdd15ebec6ddcf3a0418d8da6ae23c04",
+  "zohoOrganisationObserved": "KALM Collective",
+  "zohoRoute": "https://inventory.zoho.com/app/930770020#/inventory/product/variant-import",
+  "attemptedAction": "Upload ZOHO_ITEMS_IMPORT.csv through Zoho Inventory Import Items wizard",
+  "fileAttempted": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\ZOHO_ITEMS_IMPORT.csv",
+  "error": "Chrome fileChooser.setFiles failed with Not allowed",
+  "cause": "ChatGPT Chrome Extension does not currently have file URL access permission required for automated file upload.",
+  "requiredUserAction": "Open chrome://extensions, click Details under the ChatGPT Chrome Extension, and enable Allow access to file URLs.",
+  "externalMutationPerformed": false,
+  "zohoItemsCreated": false,
+  "zohoBooksPostingComplete": false,
+  "intranetSyncPerformed": false,
+  "productionDeployPerformed": false,
+  "nextActionAfterFix": "Retry Zoho Import Items upload, verify field mapping, import items, then import opening stock and reconcile before intranet/storefront release."
+}
