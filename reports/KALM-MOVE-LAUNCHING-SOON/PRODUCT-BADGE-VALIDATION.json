@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-07-15T17:09:49.631Z",
+  "branch": "codex/kalm-move-launching-soon-preview-20260715",
+  "previewOnly": true,
+  "protectedReleaseCommit": "53e3dd3bbdd15ebec6ddcf3a0418d8da6ae23c04",
+  "visualEvidence": {
+    "viewport360": [
+      "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-HEADER-HERO.png",
+      "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-KS-ACTIVE-GRID.png",
+      "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-KALM-MOVE-CARD.png"
+    ],
+    "viewport412": [
+      "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-HEADER-HERO.png",
+      "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-KS-ACTIVE-GRID.png",
+      "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-KALM-MOVE-CARD.png"
+    ]
+  },
+  "checks": {
+    "zeroAvailableNowProductCardBadges": true,
+    "ksActiveCardsDoNotRenderGenericProductBadges": true,
+    "soldOutCardsRetainExceptionalStatus": true,
+    "kalmMoveLaunchingSoonBadgesRemain": true,
+    "productMediaHasNoBadgeSpaceReservation": true
+  },
+  "errors": [],
+  "passed": true
+}

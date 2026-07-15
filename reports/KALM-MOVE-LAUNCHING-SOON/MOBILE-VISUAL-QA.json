@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-07-15T17:00:00.000Z",
+  "branch": "codex/kalm-move-launching-soon-preview-20260715",
+  "previewOnly": true,
+  "environments": {
+    "chrome": {
+      "result": "passed",
+      "checks": {
+        "desktopFullKalmCollectiveLockupVisible": true,
+        "duplicateHeroLogoAbsent": true,
+        "consoleErrors": []
+      },
+      "evidence": "reports/KALM-MOVE-LAUNCHING-SOON/DESKTOP-HEADER-LOGO-QA.png"
+    },
+    "inAppMobileBrowser": {
+      "result": "passed",
+      "viewports": [
+        { "viewport": "320x568", "headerLogoContained": true, "menuOpen": true, "horizontalOverflow": false, "ctaReachable": true },
+        { "viewport": "360x800", "headerLogoContained": true, "menuOpen": true, "horizontalOverflow": false, "ctaReachable": true },
+        { "viewport": "375x812", "headerLogoContained": true, "menuOpen": true, "horizontalOverflow": false, "ctaReachable": true },
+        { "viewport": "390x844", "headerLogoContained": true, "menuOpen": true, "horizontalOverflow": false, "ctaReachable": true },
+        { "viewport": "412x915", "headerLogoContained": true, "menuOpen": true, "horizontalOverflow": false, "ctaReachable": true },
+        { "viewport": "430x932", "headerLogoContained": true, "menuOpen": true, "horizontalOverflow": false, "ctaReachable": true }
+      ]
+    }
+  },
+  "visualChecks": {
+    "mobileHeaderUsesCompleteContainedEmblem": true,
+    "mobileHeroHasNoDuplicateLogo": true,
+    "ksActiveGridHasNoGenericProductPills": true,
+    "kalmMoveCardsRetainLaunchingSoon": true,
+    "headerControlsDoNotCollide": true,
+    "heroCopyFlowsAfterImage": true
+  },
+  "screenshots": [
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-HEADER-HERO.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-KS-ACTIVE-GRID.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-KALM-MOVE-CARD.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-HEADER-HERO.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-KS-ACTIVE-GRID.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-KALM-MOVE-CARD.png"
+  ],
+  "passed": true
+}

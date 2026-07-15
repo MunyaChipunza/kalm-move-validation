@@ -542,7 +542,6 @@ function renderHome({ preserveHero = false } = {}) {
   const hero = `
     <section class="hero-shell ks-active-hero">
       <div class="hero-copy">
-        <img class="hero-brand-logo" src="${escapeHtml(meta.logo)}" alt="${escapeAttribute(meta.logoAlt || "KALM Collective")}" width="1120" height="260" decoding="async">
         <p class="eyebrow">KS ACTIVE ARCHIVE</p>
         <h1>THE FINAL COLLECTION</h1>
         <p>Limited pieces. Available now through KALM Collective.</p>
@@ -1910,7 +1909,7 @@ function renderProductCard(product, options = {}) {
   const defaultColour = options.displayColour && product.colors.includes(options.displayColour)
     ? options.displayColour
     : getDefaultColor(product);
-  const badge = isUnavailable ? "Sold out" : product.brandId === "ks-active" ? "AVAILABLE NOW" : product.badge;
+  const badge = isUnavailable ? "Sold out" : product.brandId === "ks-active" ? "" : product.badge;
   const productHref = productRoute(product, defaultColour);
   const displayImage = getVariantImage(product, defaultColour) || product.image;
   const imageMarkup = options.eager

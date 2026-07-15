@@ -43,8 +43,9 @@ for (const file of [...walk(path.join(root, "assets")), ...walk(path.join(root, 
 
 assert(catalog.meta.logo === collectiveLogo, "KALM Collective metadata must use the approved image logo.");
 assert(catalog.meta.favicon === collectiveLogo && catalog.meta.socialPreview === collectiveLogo, "Favicon and social metadata must use the approved image logo.");
-assert(index.includes(`src="${collectiveLogo}"`), "Static desktop/mobile header must use the approved KALM Collective image logo.");
-assert(script.includes('class="hero-brand-logo"') && script.includes('renderFooter()'), "Homepage hero and footer must render the KALM Collective image logo.");
+assert(index.includes(`src="${collectiveLogo}"`), "Desktop header must use the approved KALM Collective lockup.");
+assert(index.includes('assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png'), "Mobile header must use the approved compact buffalo emblem.");
+assert(!script.includes('class="hero-brand-logo"') && script.includes('renderFooter()'), "Homepage must not render a redundant hero logo and the footer must retain its approved brand logo.");
 assert(!index.includes("KALM\nCOLLECTIVE") && !index.includes("<span>KALM</span>"), "Typed text must not replace the visible KALM Collective logo.");
 
 const logoPaths = [];
