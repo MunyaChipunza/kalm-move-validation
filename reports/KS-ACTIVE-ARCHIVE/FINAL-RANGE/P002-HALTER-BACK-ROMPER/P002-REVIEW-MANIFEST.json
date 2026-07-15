@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P002",
+    "proposed_customer_name": "KS Active Halter Back Romper",
+    "source_title": "Crisscross Back Halter Romper",
+    "source_lock": {
+      "construction": "Fitted smooth matte one-piece short unitard with thin shoulder straps, small centred V-notch neckline, short inseam, low open back, narrow crisscross/horizontal back straps and curved rear yoke seam.",
+      "forbidden_changes": [
+        "logos",
+        "pockets",
+        "zips",
+        "cups",
+        "mesh",
+        "different straps",
+        "changed neckline"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-1.jpg",
+          "sha256": "9DA39C1DF011BE704BCF10C8395094AC918C98788403F198335CB50E01809EFE",
+          "dimensions": {
+            "width": 1920,
+            "height": 1920
+          },
+          "bytes": 601911
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-2.jpg",
+          "sha256": "17C842F53DB15D9111F1E8F73DD4C692CD99A9FB297C8229DE1DAA63D02F8B2D",
+          "dimensions": {
+            "width": 1920,
+            "height": 1920
+          },
+          "bytes": 355621
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Army Green",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/generated-multiview-source.png",
+        "sha256": "36BD5B17ACA8D3278FA5B6A6F37368B73CE0AFE800805C0D5D7C08BB2AF1B6CE",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1578077
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/hero-three-quarter.jpg",
+          "sha256": "E676E0BABBAEFC274CC9FFD44BEA288EFE8F4CE8B34A934C6DB7440AF3BF4431",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61056
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/back.jpg",
+          "sha256": "7963C1608B11B928C4D2F3767C9AC6809DA602639EEBFB198663FA7DC8E6E15A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59365
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/side.jpg",
+          "sha256": "E1179CE3BAD65C28FE04A56CA3E6D59D1DA9D8BE73E864CF475C2E4FFA139B6B",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54799
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/front.jpg",
+          "sha256": "56111EF529595AFB78AE63B7CB8DD029E5000FB076380CB319A84C8D07858D7F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57439
+        }
+      ]
+    },
+    {
+      "colour": "Egyptian Blue",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/egyptian-blue/generated-multiview-source.png",
+        "sha256": "19882882042DFE20BBB7EC5B1528098160E6EB2AD1620456D3C85BE72BEDA0B5",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1475357
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/egyptian-blue/hero-three-quarter.jpg",
+          "sha256": "7910A3059FD443778C960AF13C8635BA6260A47873FA17B7F939BC8550D17550",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60351
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/egyptian-blue/back.jpg",
+          "sha256": "055A14AF805AC208A557B1CEE2F222B88AA2E7C3D5AFBC5D6D86164EF6CBABB8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63047
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/egyptian-blue/side.jpg",
+          "sha256": "203377008F76A386C40C16109DCD33FCC4454E75CD4A161AB39214856405D922",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54883
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/egyptian-blue/front.jpg",
+          "sha256": "428A24C14ACA795EC8249AAA4EC11CF0AF9D7F5BC73ED58875D86A06D532C6C3",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58419
+        }
+      ]
+    },
+    {
+      "colour": "Electric Violet",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/electric-violet/generated-multiview-source.png",
+        "sha256": "772164AA93C8DEB8F45ABE074FA4E38ECBB04B2D5EBD214BCA323EB306C50390",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1474871
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/electric-violet/hero-three-quarter.jpg",
+          "sha256": "053ECEBE41482387A4CE52713A194F1FB665697D2B9F6B2276B3206E95C0F30D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56238
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/electric-violet/back.jpg",
+          "sha256": "22C5AA9AA3965DC00950598776E0BDF04880CF857B2FC0775AA0FC601AC224FB",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60179
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/electric-violet/side.jpg",
+          "sha256": "32E58C4EBC979E38E90BFB7323FB7EFAFD6B9186F021E3EE1A3681A137850FEF",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54302
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/electric-violet/front.jpg",
+          "sha256": "BF1794DD60708ECB228EC8EE4A4E173D744539CDFBB309F909A949D1D797D36C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56669
+        }
+      ]
+    },
+    {
+      "colour": "Imperial Red",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/imperial-red/generated-multiview-source.png",
+        "sha256": "315AF8EEC8FE14838DF23B77ED36E35A306887C44CB3EB57D9E088861BAE3B5A",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1602176
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/imperial-red/hero-three-quarter.jpg",
+          "sha256": "CECDA3811FC3D940BF52656AF9D192D6377142964DA80A3370003127A9593B1C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63936
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/imperial-red/back.jpg",
+          "sha256": "257A3921518587595C410FD363519E120333798D852B85FE5B64F0543F5D664E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 64519
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/imperial-red/side.jpg",
+          "sha256": "F25FC2C570E1CCAA20FD04FD30643D6B328A9F718B8BAD8A4FB2E58984D22199",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59097
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/imperial-red/front.jpg",
+          "sha256": "CE12DF1B8F422A26A7D6090EABD777028C569F7774BBB06C83181D781C67A1BC",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 61888
+        }
+      ]
+    },
+    {
+      "colour": "Midnight Black",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/midnight-black/generated-multiview-source.png",
+        "sha256": "2F1CEA856B74EA576A014099B06568FC795C3D42B91164541C1EDD3CFE174A27",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1587739
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/midnight-black/hero-three-quarter.jpg",
+          "sha256": "1F29EB6E3E7015D70700E2E30E7DAEF7595C15FC4EE8EB755A01C3E7D3873C16",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59785
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/midnight-black/back.jpg",
+          "sha256": "1695107195F1DB9B36F8A01F1E07D96AE43945A63010571DEE5A71F25F5FECE7",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62486
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/midnight-black/side.jpg",
+          "sha256": "2EFB8F4BD3F66D7E66288E9821DEBD58946AD2792D8634B4104A5E7A9EE99D43",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51784
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/midnight-black/front.jpg",
+          "sha256": "58AEBE5349B925EAE5A12C1ADE2E4EF4BB3A45818D464D32EEE3A0405A9E8BDE",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 57974
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P002",
+    "validation_time_utc": "2026-07-14T18:06:30.074776+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

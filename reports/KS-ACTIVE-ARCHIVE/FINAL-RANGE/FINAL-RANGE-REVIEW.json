@@ -1,0 +1,978 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-14T19:38:39.538954+00:00",
+  "status": "draft_only_ready_for_range_review",
+  "summary": {
+    "completedProducts": 14,
+    "totalEligibleProducts": 14,
+    "completedColours": 56,
+    "totalEligibleColours": 56,
+    "retainedGeneratedViews": 224,
+    "sourceBlockedProducts": []
+  },
+  "products": [
+    {
+      "productCode": "P002",
+      "name": "KS Active Halter Back Romper",
+      "driveFolderId": "1_ejSNDZD6Bs7Co1eO171zOjLSonN06lU",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-1.jpg",
+        "width": 1920,
+        "height": 1920
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/hero-three-quarter.jpg",
+        "sha256": "E676E0BABBAEFC274CC9FFD44BEA288EFE8F4CE8B34A934C6DB7440AF3BF4431",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 61056
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p002-halter-back-romper/army-green/back.jpg",
+        "sha256": "7963C1608B11B928C4D2F3767C9AC6809DA602639EEBFB198663FA7DC8E6E15A",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 59365
+      },
+      "stockedColours": [
+        "Army Green",
+        "Egyptian Blue",
+        "Electric Violet",
+        "Imperial Red",
+        "Midnight Black"
+      ],
+      "matchedUnits": 11,
+      "sourceLock": {
+        "construction": "Fitted smooth matte one-piece short unitard with thin shoulder straps, small centred V-notch neckline, short inseam, low open back, narrow crisscross/horizontal back straps and curved rear yoke seam.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "zips",
+          "cups",
+          "mesh",
+          "different straps",
+          "changed neckline"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-1.jpg",
+            "sha256": "9DA39C1DF011BE704BCF10C8395094AC918C98788403F198335CB50E01809EFE",
+            "dimensions": {
+              "width": 1920,
+              "height": 1920
+            },
+            "bytes": 601911
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p002-halter-back-romper/zip-source-2.jpg",
+            "sha256": "17C842F53DB15D9111F1E8F73DD4C692CD99A9FB297C8229DE1DAA63D02F8B2D",
+            "dimensions": {
+              "width": 1920,
+              "height": 1920
+            },
+            "bytes": 355621
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P002-HALTER-BACK-ROMPER/P002-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P003",
+      "name": "KS Active Rib Scrunch Legging",
+      "driveFolderId": "1qQpd66ZxV5Vv4pYSx0fHgolNJzIFTwYp",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p003-rib-scrunch-legging/drive-back-reference.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/hero-three-quarter.jpg",
+        "sha256": "3FB7E6984B9DF54F39EE1C12634207310CDF2F3537C954977B36D2D6A4D371C8",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 57283
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p003-rib-scrunch-legging/ash-gray/back.jpg",
+        "sha256": "7CF855899E36F90AB364CE727C706DE83A2182FACC38A6EF7964D7D0BC8CC3B2",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 55757
+      },
+      "stockedColours": [
+        "Ash Gray",
+        "Black",
+        "Chestnut",
+        "French Rose",
+        "Sky Blue"
+      ],
+      "matchedUnits": 13,
+      "sourceLock": {
+        "construction": "Full-length fine vertical seamless rib knit legging with high wide ribbed waistband, curved rear yoke and centre-back scrunch seam.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "mesh",
+          "panels",
+          "different rib direction",
+          "changed waistband",
+          "changed rear yoke"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p003-rib-scrunch-legging/drive-back-reference.jpg",
+            "sha256": "CCD326AE030DA84EA141960D637C1DF9AE7E6EE62F96A485D6AC4858B2669163",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 943914
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p003-rib-scrunch-legging/drive-front-reference.jpg",
+            "sha256": "D6C04B46FFA4D74B5BE513516E1516CB27F8E7D442E863DF8E76EC4834106C23",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 310225
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P003-RIB-SCRUNCH-LEGGING/P003-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P010",
+      "name": "KS Active Cutout Crossback Bra",
+      "driveFolderId": "1Js1u3oSx8M_BsSSLvKBly5sGzUUxILVK",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-1.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/hero-three-quarter.jpg",
+        "sha256": "6BADCE5A727D44FDD390BD8835BBA749BD621ED6FC65CEE6EAD4A9E6784ADA80",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 57340
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p010-cutout-crossback-bra/imperial-red/back.jpg",
+        "sha256": "097BF1CFCDBBD4BF41777BFBB31CCF2E0FCFB6DE45697DEA6D2D607ABD230E44",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 58276
+      },
+      "stockedColours": [
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "matchedUnits": 6,
+      "sourceLock": {
+        "construction": "Fine-rib seamless longline training crop top with rounded scoop front, narrow shoulder straps, wide lower band and multi-strap crisscross open-back construction.",
+        "forbidden_changes": [
+          "logos",
+          "padding seams",
+          "zips",
+          "mesh",
+          "cups",
+          "different strap count",
+          "changed lower band"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-1.jpg",
+            "sha256": "D48FA15BB7227F773A8E096B5052312820FAEBBC1DC312426D1A9707436CFBBA",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 149613
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p010-cutout-crossback-bra/zip-source-2.jpg",
+            "sha256": "2F7BA7AE55366249A60DF5A145765D0EDF1A9AD8D6ABF5B28322DC61F6C0F982",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 251885
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P010-CUTOUT-CROSSBACK-BRA/P010-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P012",
+      "name": "KS Active Scrunch Seamless Short",
+      "driveFolderId": "1McBz0H3-go3k45jYeswRvwUW7FEGswwS",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-1.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/hero-three-quarter.jpg",
+        "sha256": "A5F62C51FACF8A691B16C32218DFA71BDA6B6E9E26B92274DDF2FD26BE7E9CB0",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 61655
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p012-scrunch-seamless-short/egyptian-blue/back.jpg",
+        "sha256": "173971850D90FA48A1302608E919A7A472CDC56657FB37F10BBAA6C0FE9273B7",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 56059
+      },
+      "stockedColours": [
+        "Egyptian Blue",
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "matchedUnits": 8,
+      "sourceLock": {
+        "construction": "Fitted seamless high-rise bike short with wide waistband, mid-thigh inseam, clean leg openings and the subtle centre-rear seam/shaping visible in source.",
+        "forbidden_changes": [
+          "pockets",
+          "logos",
+          "mesh",
+          "contrasting panels",
+          "drawstrings",
+          "changed inseam",
+          "unsupported side seams"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-1.jpg",
+            "sha256": "E2C5CC464F2A871419D681AF8385D56F73C7F650CEA1D57F01AE48C09C440277",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 133542
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p012-scrunch-seamless-short/zip-source-2.jpg",
+            "sha256": "A2B4FB349CFCB53F7C83AB11861492D94E02D0095AA2FD139BB17E52E2C17B6F",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 143807
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P012-SCRUNCH-SEAMLESS-SHORT/P012-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P019",
+      "name": "KS Active Cutout Seamless Bra",
+      "driveFolderId": "11d3QdOEVsWQ5FWweuJF20jcYzaUcCztO",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-1.png",
+        "width": 2820,
+        "height": 2364
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/hero-three-quarter.jpg",
+        "sha256": "627DAA55BE2DBFE8A39638A8770EB155949263CF75B5A6556D83AF5C1217450E",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 73401
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/back.jpg",
+        "sha256": "2EBA83CBA5BE40EAA1BF9AB4FC07E8DF9AA9ADC1E8A75CBDADF0BCDDE92F9E3E",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 74010
+      },
+      "stockedColours": [
+        "Black",
+        "Desert Gold",
+        "Steel"
+      ],
+      "matchedUnits": 6,
+      "sourceLock": {
+        "construction": "Fine-rib longline training crop top with rounded scoop front, wide lower band, racer-back panel and single centred triangular lower-back cutout.",
+        "forbidden_changes": [
+          "logos",
+          "extra straps",
+          "mesh",
+          "zips",
+          "new cutouts",
+          "changed triangular opening"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-1.png",
+            "sha256": "CC7CF24B91C3C818A5160977E454FB8ED6CCD3AD376C3537EEE4A645D202A5FD",
+            "dimensions": {
+              "width": 2820,
+              "height": 2364
+            },
+            "bytes": 5000773
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-2.png",
+            "sha256": "72B7A96D1F089C3495586C54B58EBD63CC07FFF79859C5B716D194747A77F4C9",
+            "dimensions": {
+              "width": 2820,
+              "height": 2364
+            },
+            "bytes": 4194072
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P019-CUTOUT-SEAMLESS-BRA/P019-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P020",
+      "name": "KS Active Crossback Seamless Bra",
+      "driveFolderId": "1GXzSGLVA5b5zq38Rw6KVjztx-MawwWDX",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-1.png",
+        "width": 2820,
+        "height": 2364
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/hero-three-quarter.jpg",
+        "sha256": "1A222AB6EDD28AE1957B937A9E5240153A7C24997C1D3B427FF52EDDD1CEFA69",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 67300
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p020-crossback-seamless-bra/apricot/back.jpg",
+        "sha256": "E7364586CDB9DD56320BFDBAFE44BFFA3EAA520C729D16CE8B12BCA611D897F5",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 59499
+      },
+      "stockedColours": [
+        "Apricot",
+        "Egyptian Blue",
+        "Peach",
+        "Sapphire"
+      ],
+      "matchedUnits": 12,
+      "sourceLock": {
+        "construction": "Smooth seamless longline bra with rounded scoop neckline, broad shoulder straps, wide lower band and crossed X-back configuration with a central lower-back opening.",
+        "forbidden_changes": [
+          "logos",
+          "mesh",
+          "extra straps",
+          "zips",
+          "cups",
+          "changed neckline"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-1.png",
+            "sha256": "BCA6578CA22CC8EA5CDE7FE974E7106083B39444C42DC1514D9552D38C51B858",
+            "dimensions": {
+              "width": 2820,
+              "height": 2364
+            },
+            "bytes": 4694392
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p020-crossback-seamless-bra/zip-source-2.png",
+            "sha256": "3600F8EE088AEF68CAE31E73F5F302B6DCFD3C4F7DAE98376B1AE2B7542EF1FB",
+            "dimensions": {
+              "width": 2820,
+              "height": 2364
+            },
+            "bytes": 3353122
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P020-CROSSBACK-SEAMLESS-BRA/P020-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P026",
+      "name": "KS Active High-Waist Seamless Short",
+      "driveFolderId": "1DPiL2BmIp5DxmSNyOQUvCP-cSiGlLrJG",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-1.jpg",
+        "width": 768,
+        "height": 1152
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg",
+        "sha256": "74B1D50BFECCF203B1939C9FD21355EE3D56823B8FB6620C9B99020B9B6DD93C",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 58507
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/back.jpg",
+        "sha256": "F4C18741CBAE33393A34121B7E073E5A1678A1963194646EF58B5120AD3122DA",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 56995
+      },
+      "stockedColours": [
+        "Electric Violet",
+        "Flamingo",
+        "True Purple"
+      ],
+      "matchedUnits": 3,
+      "sourceLock": {
+        "construction": "Smooth matte seamless high-waist short matching the locked P028 legging construction, with a broad straight unfolded high-rise waistband, clean unbroken front, subtle rear centre seam/contour, upper-thigh inseam and clean narrow leg hems.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "side panels",
+          "mesh",
+          "drawstrings",
+          "scrunch",
+          "rib knit",
+          "contrast piping",
+          "changed waistband",
+          "changed inseam"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-1.jpg",
+            "sha256": "0B9E67BF5AFF3C781BCF64CFA4B8B2D77AE80594E798E3C84A03FDD55A14236C",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 139000
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-2.jpg",
+            "sha256": "4424C0B08A2CEC35D89670580A997B959FEF0DA0877FE4C0E9DD4D4288D3C427",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 155579
+          }
+        ],
+        "private_source_evidence": "Private front, rear and rear-detail construction evidence is held outside Git and Netlify. The front reference shows the waistband folded down; the standard unfolded high-rise position is confirmed by the matching locked legging construction. No source photograph or likeness is included in this review package."
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P026-HIGH-WAIST-SEAMLESS-SHORT/P026-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P027",
+      "name": "KS Active Curve Seam Legging",
+      "driveFolderId": "1oawzhxSE9XHqft5GtMdkb6bltg9gJF00",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-1.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/hero-three-quarter.jpg",
+        "sha256": "B52EDB161A0BB8BF89524F6374CE10D70732969BA3E5065BE6029CDDEBC914F8",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 57863
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p027-curve-seam-legging/espresso/back.jpg",
+        "sha256": "36E6D8D94DCD11EA2A537284D5A579D15C1E1C17F3ADB3E58E03B45425DD4FA7",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 56451
+      },
+      "stockedColours": [
+        "Espresso",
+        "Forest Green",
+        "Olive"
+      ],
+      "matchedUnits": 7,
+      "sourceLock": {
+        "construction": "Full-length seamless close-fit legging with high smooth waistband, clean plain legs and the subtle rear centre/contour construction shown in source.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "mesh",
+          "side panels",
+          "contrast piping",
+          "unsupported scrunch",
+          "changed waistband"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-1.jpg",
+            "sha256": "4D941C62F863108F893890D33DF46261FB0D3F32521D8942684C22D382BF8965",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 141402
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p027-curve-seam-legging/zip-source-2.jpg",
+            "sha256": "762C1771A025909E69A23A9B9909AADA4A61EE7A24101BBB7ECDFCC4B41B2752",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 151534
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P027-CURVE-SEAM-LEGGING/P027-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P028",
+      "name": "KS Active High-Waist Seamless Legging",
+      "driveFolderId": "1ussFOxDa6iYfM8pUqKr077E5UKxNLjQe",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-1.jpg",
+        "width": 768,
+        "height": 1152
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg",
+        "sha256": "B08BD5868E083D9A29CE1F640731A0B25B409298A9C7BDA7D212B11820807B10",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 64006
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/back.jpg",
+        "sha256": "80FEF01F3380E78468872034BA78AC8F36A03D6FA3FABC2A172AC74F59860D30",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 60105
+      },
+      "stockedColours": [
+        "Electric Violet",
+        "True Purple"
+      ],
+      "matchedUnits": 2,
+      "sourceLock": {
+        "construction": "Full-length smooth matte seamless legging with a broad straight high-rise waistband, clean unbroken front, subtle rear centre seam/contour, full tapered legs and clean ankle hems.",
+        "forbidden_changes": [
+          "logos",
+          "pockets",
+          "side panels",
+          "mesh",
+          "drawstrings",
+          "scrunch",
+          "changed waistband",
+          "changed ankle length"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-1.jpg",
+            "sha256": "B5F047A5D68C6D507033570CAE7A1D337141617A8914DFF7022B8325B5106BEC",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 69418
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-2.jpg",
+            "sha256": "46B40FFA1BAFCC3ECBC9849F5F717B11CDC12EAE4D85241321F1AE1CC7D737A1",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 75369
+          }
+        ],
+        "private_source_evidence": "Private front, rear and rear-three-quarter construction evidence is held outside Git and Netlify; no source photograph or likeness is included in this review package."
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P028-HIGH-WAIST-SEAMLESS-LEGGING/P028-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P030",
+      "name": "KS Active Crisscross Back Bra",
+      "driveFolderId": "1B8gnd9Tb1ecRFeJzBWHNrjLjUk9lne-i",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-1.jpg",
+        "width": 768,
+        "height": 1152
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/hero-three-quarter.jpg",
+        "sha256": "B6EA84A1E54656ADE6D8BBE78CE3165976C57FE7C63EE34D316333057856F635",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 55442
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/back.jpg",
+        "sha256": "988A6AE555D6C3F8ACCF8B88FC6EEDCFFB1BEC1AE75C4F1FB07144A77B882271",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 56960
+      },
+      "stockedColours": [
+        "Black",
+        "True Purple"
+      ],
+      "matchedUnits": 2,
+      "sourceLock": {
+        "construction": "Smooth longline training crop top with rounded scoop front, clean wide lower band, racer-style upper back, narrow X-shaped crossed straps and lower triangular opening.",
+        "forbidden_changes": [
+          "logos",
+          "mesh",
+          "zips",
+          "extra straps",
+          "padding seams",
+          "new cutouts"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-1.jpg",
+            "sha256": "2F9214A363452D1F4E4C67B4015EC4F034D6A66980A1CE97AAE720E7BF99E4D4",
+            "dimensions": {
+              "width": 768,
+              "height": 1152
+            },
+            "bytes": 120838
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-2.png",
+            "sha256": "673570B50A60CA1797F9F2E347035AADBD5E5BC00923C08E456248A2BDCE9C9E",
+            "dimensions": {
+              "width": 2820,
+              "height": 2364
+            },
+            "bytes": 2984229
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P030-CRISSCROSS-BACK-BRA/P030-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P033",
+      "name": "KS Active Panel Seamless Legging",
+      "driveFolderId": "1gFwv0DLb12WkX-ttyVi7NDCNEEDsXsQy",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-1.jpg",
+        "width": 1000,
+        "height": 1256
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+        "sha256": "1DBDD9FD872D46B0E6D5E68CC9914A855FFD1C622F59AA26DC8BA828291ACBAA",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 64768
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p033-panel-seamless-legging/azure-blue/back.jpg",
+        "sha256": "6E6CE4A5095C02022D63EECEEF599FAC5791313AB021A671C26AEB8C72544BD3",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 60954
+      },
+      "stockedColours": [
+        "Azure Blue",
+        "Byzantine Violet",
+        "Cinnamon",
+        "Hunter Green",
+        "Iron Gray",
+        "Jungle Green",
+        "Mauve",
+        "Pine Green"
+      ],
+      "matchedUnits": 18,
+      "sourceLock": {
+        "construction": "Full-length high-waist seamless legging with clean high waistband, smooth close-fitting legs and the subtle moulded contour/panel construction visible in source.",
+        "forbidden_changes": [
+          "branding",
+          "pockets",
+          "mesh",
+          "piping",
+          "drawstrings",
+          "unsupported new panels",
+          "changed waist height"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-1.jpg",
+            "sha256": "FFDFADC62D77C15221CC65679ADCF81F21E04DB16079241C36465BE37D5DCA33",
+            "dimensions": {
+              "width": 1000,
+              "height": 1256
+            },
+            "bytes": 195271
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p033-panel-seamless-legging/zip-source-2.jpg",
+            "sha256": "9E3DBE82750BB0B41CB7520969A30CDF480D84754274AB5381F738251E530FE4",
+            "dimensions": {
+              "width": 1000,
+              "height": 1216
+            },
+            "bytes": 190445
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P033-PANEL-SEAMLESS-LEGGING/P033-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P035",
+      "name": "KS Active Scrunch Seamless Legging",
+      "driveFolderId": "1NWiDBlOQWG3ITkKv22RNJtjzKVbZKLL6",
+      "status": "completed_review",
+      "source": {
+        "path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-1.jpg",
+        "width": 1200,
+        "height": 1200
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/hero-three-quarter.jpg",
+        "sha256": "93F72829CFF673A26B624481393D3291E9F67D2A5FC0DEA5B42958E326DC7682",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 65979
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/back.jpg",
+        "sha256": "202580950D0DFD9A0CB2D36C910408E97B0E064DEB71FC44F094ED960B4712BD",
+        "dimensions": {
+          "width": 619,
+          "height": 619
+        },
+        "bytes": 63322
+      },
+      "stockedColours": [
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "matchedUnits": 5,
+      "sourceLock": {
+        "construction": "Full-length close-fit legging with high smooth waistband, clean full legs and the rear centre scrunch/contour construction visible in source.",
+        "forbidden_changes": [
+          "branding",
+          "pockets",
+          "mesh",
+          "side panels",
+          "contrast piping",
+          "drawstrings",
+          "new seams"
+        ],
+        "source_files": [
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-1.jpg",
+            "sha256": "7E0C445A0605968605BD6530DF6975DC63BEDDD41780736B1FC12BA5366D79E0",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 119772
+          },
+          {
+            "path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-2.jpg",
+            "sha256": "896DA50BAFE10025FDB27B2DD27BAE8897A6C7FB53D6B32A2E37433E15265EEB",
+            "dimensions": {
+              "width": 1200,
+              "height": 1200
+            },
+            "bytes": 125906
+          }
+        ]
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/FINAL-RANGE/P035-SCRUNCH-SEAMLESS-LEGGING/P035-VALIDATION.json",
+      "reviewStatus": "hidden_review_candidate_not_approved_for_publication"
+    },
+    {
+      "productCode": "P049",
+      "name": "KS Active Rib Contour Legging",
+      "driveFolderId": "19OT_erT6AJKofKhvb47Jx4Zi-M3c59Rj",
+      "status": "approved_hidden_package",
+      "source": {
+        "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/source-reference/supplier-main.jpg",
+        "width": 800,
+        "height": 800
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/bright-green-hero-three-quarter.png",
+        "width": 1024,
+        "height": 1536
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/p049-rib-contour-legging/generated/bright-green-back.png",
+        "width": 1024,
+        "height": 1536
+      },
+      "stockedColours": [
+        "Bright Green",
+        "Egyptian Blue",
+        "Gray",
+        "Peach Yellow",
+        "Red",
+        "White"
+      ],
+      "matchedUnits": 7,
+      "sourceLock": {
+        "originalSourceName": "High Waisted Ribbed Yoga Pants / Ribbed Leggings",
+        "driveFolderId": "19OT_erT6AJKofKhvb47Jx4Zi-M3c59Rj",
+        "originalDriveFolderNameAtApproval": "P049 - Rib Contour Legging",
+        "renamedDriveFolderName": "P049 - Rib Contour Legging",
+        "driveRenameRecord": "Folder already matched the approved final name when full P049 approval was received; Drive ID and parent were verified unchanged.",
+        "sourceManifest": "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/SOURCE-MANIFEST.json",
+        "exactSourceHashes": {
+          "supplierConstructionReference": "94E861F940883B9B853351CCD4F8047E1F27CC19B528FC87F29A9BE716931EF9"
+        }
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/APPROVED-STORAGE-VALIDATION.json",
+      "approval": {
+        "approvedBy": "Munya",
+        "approvedDate": "2026-07-14",
+        "approvalEvidence": "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/APPROVAL-STATUS.md",
+        "scope": "complete hidden KS Active Archive product package; five manual-label colour representations were approved after physical comparison; public release not authorised"
+      }
+    },
+    {
+      "productCode": "P050",
+      "name": "KS Active Racer Knit Bra",
+      "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
+      "status": "approved_hidden_package",
+      "source": {
+        "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/espresso-back.png",
+        "width": 2820,
+        "height": 2364
+      },
+      "generatedHero": {
+        "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/dark-green-hero.png",
+        "width": 831,
+        "height": 1893
+      },
+      "generatedBack": {
+        "path": "assets/images/review-only/ks-active/p050-racer-knit-bra/generated/dark-green-back.png",
+        "width": 840,
+        "height": 1872
+      },
+      "stockedColours": [
+        "Dark Green",
+        "Espresso",
+        "Iron Blue",
+        "Plum",
+        "Violet"
+      ],
+      "matchedUnits": 11,
+      "sourceLock": {
+        "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
+        "originalDriveFolderName": "Seamless Knit Racer Back Sports Bra",
+        "renamedDriveFolderName": "P050 - Racer Knit Bra",
+        "sourceManifest": "reports/KS-ACTIVE-ARCHIVE/P050-RACER-KNIT-BRA/SOURCE-MANIFEST.json",
+        "exactSourceHashes": {
+          "espressoFront": "BB9A33FB5A8FA8405EF26DE744DDEB85A853889E17DAA56A93E26BBB36C3E973",
+          "espressoBack": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
+          "plumBack": "0398296D93A7320CBD8507622A81337E4015591572D2F17B453AB5CF990E77A6"
+        }
+      },
+      "reportPath": "reports/KS-ACTIVE-ARCHIVE/P050-RACER-KNIT-BRA/APPROVED-STORAGE-VALIDATION.json",
+      "approval": {
+        "approvedBy": "Munya",
+        "approvedDate": "2026-07-14",
+        "approvalEvidence": "reports/KS-ACTIVE-ARCHIVE/P050-RACER-KNIT-BRA/APPROVAL-STATUS.md",
+        "scope": "complete hidden KS Active Archive product package; public release not authorised"
+      }
+    }
+  ],
+  "checks": {
+    "fourteen_completed_packages_have_passing_product_validation": true,
+    "no_source_blocked_products": true,
+    "p026_private_source_lock_complete": true,
+    "p028_private_source_lock_complete": true,
+    "products_json_unchanged_from_master": true,
+    "zoho_unchanged": true,
+    "intranet_unchanged": true,
+    "production_unchanged": true,
+    "review_route_noindex": true
+  },
+  "perProductValidation": {
+    "P002": true,
+    "P003": true,
+    "P010": true,
+    "P012": true,
+    "P019": true,
+    "P020": true,
+    "P026": true,
+    "P027": true,
+    "P028": true,
+    "P030": true,
+    "P033": true,
+    "P035": true,
+    "P049": true,
+    "P050": true
+  },
+  "reviewRoute": "review/ks-active/archive-final-range/index.html"
+}

@@ -1,0 +1,29 @@
+{
+  "reviewedAt": "2026-07-14",
+  "status": "superseded_by_corrected_workbook",
+  "supersededBy": "reports/KS-ACTIVE-ARCHIVE/CORRECTED-STOCK-MANIFEST-20260714.json",
+  "supersessionReason": "This report used an older Downloads workbook. The authoritative Desktop workbook contains 87 matched positive variants across 12 additional Gate A families.",
+  "workbookPresent": "C:\\Users\\Dell\\Downloads\\KS_Active_Archive_SKU_Master.xlsx",
+  "requestedWorkbookNameFound": false,
+  "requestedWorkbookName": "KS_Active_Archive_SKU_Master(2).xlsx",
+  "physicalCountRows": 767,
+  "states": {
+    "notCounted": 763,
+    "secondCountPending": 4,
+    "fullyReconciledLaunchReady": 0
+  },
+  "incompleteNonZeroRows": [
+    "KS-ARCH-P002-ELEVI-S",
+    "KS-ARCH-P002-ELEVI-M",
+    "KS-ARCH-P002-MIDBL-M",
+    "KS-ARCH-P002-MIDBL-L"
+  ],
+  "manualApprovalExceptions": [
+    { "productCode": "P049", "confirmedUnits": 7, "hidden": true },
+    { "productCode": "P050", "confirmedUnits": 11, "hidden": true }
+  ],
+  "additionalProductsEligible": false,
+  "blocker": "No additional variant has matched Count 1 and Count 2, confirmed ownership, acceptable condition, unique SKU, and a launch decision.",
+  "externalSystemsChanged": false,
+  "productionChanged": false
+}

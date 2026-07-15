@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P030",
+    "proposed_customer_name": "KS Active Crisscross Back Bra",
+    "source_title": "Seamless Crisscross Back Sports Bra",
+    "source_lock": {
+      "construction": "Smooth longline training crop top with rounded scoop front, clean wide lower band, racer-style upper back, narrow X-shaped crossed straps and lower triangular opening.",
+      "forbidden_changes": [
+        "logos",
+        "mesh",
+        "zips",
+        "extra straps",
+        "padding seams",
+        "new cutouts"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-1.jpg",
+          "sha256": "2F9214A363452D1F4E4C67B4015EC4F034D6A66980A1CE97AAE720E7BF99E4D4",
+          "dimensions": {
+            "width": 768,
+            "height": 1152
+          },
+          "bytes": 120838
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p030-crisscross-back-bra/zip-source-2.png",
+          "sha256": "673570B50A60CA1797F9F2E347035AADBD5E5BC00923C08E456248A2BDCE9C9E",
+          "dimensions": {
+            "width": 2820,
+            "height": 2364
+          },
+          "bytes": 2984229
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Black",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/generated-multiview-source.png",
+        "sha256": "CA236E17BBD3A7FC9CA8EB9892CFCB9F15B350C96EB4011F776BABC2DF696A9D",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1522482
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/hero-three-quarter.jpg",
+          "sha256": "B6EA84A1E54656ADE6D8BBE78CE3165976C57FE7C63EE34D316333057856F635",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55442
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/back.jpg",
+          "sha256": "988A6AE555D6C3F8ACCF8B88FC6EEDCFFB1BEC1AE75C4F1FB07144A77B882271",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56960
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/side.jpg",
+          "sha256": "7461E8A1EEBA189C117B1E942646D527D7956C24AA6CE0B28D7A0125D7A0C84E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 48655
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/black/front.jpg",
+          "sha256": "64C1CBFE6105A8662BD167CD07686F48143B29508314DBD08C4C356EC265DFA2",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54947
+        }
+      ]
+    },
+    {
+      "colour": "True Purple",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/true-purple/generated-multiview-source.png",
+        "sha256": "A85D52139A5811FC2FD0FE57C9AEAAA339DB7B824A0F5DEE874B18E89A7A46BA",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1612922
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/true-purple/hero-three-quarter.jpg",
+          "sha256": "6434D6E5EE0FCE352AB577A99C29AD31A74CB8067C8F8DC0C8F7B28D126158F0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63064
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/true-purple/back.jpg",
+          "sha256": "E1399545317C0B537B6FAD5E4D218EB8A6E5AC1CD7977954B8B6AEFE1677F0B6",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62275
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/true-purple/side.jpg",
+          "sha256": "6A23BF1AA210D5D5E44FAB69EC7ACF1D3E9F93B02EC954C8500C2696815EF64A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 50909
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p030-crisscross-back-bra/true-purple/front.jpg",
+          "sha256": "A41CBF09F9487B9D40B198BA5640A730F5BD35C96EAC8929D3159BFF13F5AFD3",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60639
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P030",
+    "validation_time_utc": "2026-07-14T18:07:43.696751+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "createdAt": "2026-07-15T11:51:38+02:00",
+  "operatingModel": {
+    "legalSeller": "KALM COLLECTIVE (PTY) LTD",
+    "merchantOfRecord": "KALM COLLECTIVE (PTY) LTD",
+    "inventoryOwnerAfterTransfer": "KALM COLLECTIVE (PTY) LTD",
+    "brand": "KS Active",
+    "accountingOrganisation": "KALM Collective Zoho Books organisation",
+    "inventoryOrganisation": "KALM Collective Zoho Inventory organisation"
+  },
+  "sourceEvidence": {
+    "manifestHashes": {
+      "FINAL-PRODUCT-MANIFEST.json": {
+        "path": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\FINAL-PRODUCT-MANIFEST.json",
+        "expectedSha256": "28ED7F0EA89903DF44ED51A5E1144356EABE16304F1B97ED375E6C000E2F91BB",
+        "actualSha256": "28ED7F0EA89903DF44ED51A5E1144356EABE16304F1B97ED375E6C000E2F91BB",
+        "matches": true
+      },
+      "FINAL-SKU-MANIFEST.json": {
+        "path": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\FINAL-SKU-MANIFEST.json",
+        "expectedSha256": "58EDB97262171552D9ACE68EC67113B836A283B9E2FC85E5B2484F8C38656085",
+        "actualSha256": "58EDB97262171552D9ACE68EC67113B836A283B9E2FC85E5B2484F8C38656085",
+        "matches": true
+      },
+      "FINAL-INVENTORY-MANIFEST.json": {
+        "path": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\FINAL-INVENTORY-MANIFEST.json",
+        "expectedSha256": "4CAAC3BB544407718A90BAD56860D4DB85D7BCFBDE355E94B4295292D46E7DB2",
+        "actualSha256": "4CAAC3BB544407718A90BAD56860D4DB85D7BCFBDE355E94B4295292D46E7DB2",
+        "matches": true
+      },
+      "FINAL-PRICE-MANIFEST.json": {
+        "path": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\FINAL-PRICE-MANIFEST.json",
+        "expectedSha256": "88DFBD5269191C683E4139988A0C6ED06FD9F39575FF141213B104CE2637DF0B",
+        "actualSha256": "88DFBD5269191C683E4139988A0C6ED06FD9F39575FF141213B104CE2637DF0B",
+        "matches": true
+      }
+    },
+    "januaryOrderPath": "G:\\My Drive\\Master Folder\\08 Business Documents\\KS active\\January 2023 Order.xlsx",
+    "januaryOrderSha256": "235317E3DD8C8747E3E64427A8A39503445651FFDB6DE65D6D5B4E36C7E7ABD6",
+    "zohoOrganisationObserved": "KALM Collective",
+    "zohoOrganisationIdObserved": "930770020",
+    "unverifiedFieldsLeftBlank": [
+      "company registration numbers",
+      "tax numbers",
+      "identity numbers",
+      "registered addresses",
+      "bank details",
+      "directors/shareholders/legal representatives",
+      "VAT registration status",
+      "signatures"
+    ]
+  },
+  "totals": {
+    "productCount": 14,
+    "skuCount": 104,
+    "physicalUnits": 111,
+    "stockedColourCount": 56,
+    "approvedGeneratedAssets": 224,
+    "transferValueZar": 17062.05,
+    "directCostSkuCount": 66,
+    "provisionalCostSkuCount": 38,
+    "januaryOrderPath": "G:\\My Drive\\Master Folder\\08 Business Documents\\KS active\\January 2023 Order.xlsx",
+    "januaryOrderSha256": "235317E3DD8C8747E3E64427A8A39503445651FFDB6DE65D6D5B4E36C7E7ABD6",
+    "januaryOrderRowsReviewed": 56,
+    "createdAt": "2026-07-15T11:51:38+02:00"
+  },
+  "documents": {
+    "agreement_docx": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_ARCHIVE_STOCK_SALE_AND_TRANSFER_AGREEMENT.docx",
+    "board_docx": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KALM_BOARD_RESOLUTION_ACCEPTING_KS_ACTIVE_STOCK.docx",
+    "seller_docx": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_SELLER_DECLARATION_AND_TRANSFER_AUTHORITY.docx",
+    "brand_docx": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_BRAND_LICENCE_FOR_ARCHIVE_SALE.docx",
+    "accounting_docx": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KALM_ACCOUNTING_TREATMENT_MEMO.docx",
+    "KS_ACTIVE_ARCHIVE_STOCK_SALE_AND_TRANSFER_AGREEMENT.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_ARCHIVE_STOCK_SALE_AND_TRANSFER_AGREEMENT.pdf",
+    "KALM_BOARD_RESOLUTION_ACCEPTING_KS_ACTIVE_STOCK.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KALM_BOARD_RESOLUTION_ACCEPTING_KS_ACTIVE_STOCK.pdf",
+    "KS_ACTIVE_SELLER_DECLARATION_AND_TRANSFER_AUTHORITY.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_SELLER_DECLARATION_AND_TRANSFER_AUTHORITY.pdf",
+    "KS_ACTIVE_BRAND_LICENCE_FOR_ARCHIVE_SALE.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_BRAND_LICENCE_FOR_ARCHIVE_SALE.pdf",
+    "KALM_ACCOUNTING_TREATMENT_MEMO.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KALM_ACCOUNTING_TREATMENT_MEMO.pdf",
+    "ZOHO_POSTING_CONTROL_MEMO.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\ZOHO_POSTING_CONTROL_MEMO.pdf",
+    "MANAGEMENT_APPROVAL_RECORD.pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\MANAGEMENT_APPROVAL_RECORD.pdf",
+    "schedule_pdf": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\KS_ACTIVE_ARCHIVE_INVENTORY_TRANSFER_SCHEDULE.pdf"
+  },
+  "status": {
+    "transferDocumentsApproved": false,
+    "stockOwnershipTransferredToKALM": false,
+    "zohoItemsCreated": false,
+    "zohoBooksPostingComplete": false,
+    "intranetReconciled": false,
+    "storefrontReconciled": false,
+    "releaseAuthorised": false,
+    "blockingGates": [
+      "Kuhle/K SENTWA approval not captured"
+    ]
+  }
+}

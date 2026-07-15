@@ -1,0 +1,12 @@
+{
+  "scope": "P049 approved hidden archive storage only",
+  "passed": true,
+  "storedAssets": 24,
+  "sourceHash": "94E861F940883B9B853351CCD4F8047E1F27CC19B528FC87F29A9BE716931EF9",
+  "stockUnits": 7,
+  "skuCount": 6,
+  "publicStorefrontMutation": false,
+  "zohoUpdated": false,
+  "intranetUpdated": false,
+  "productionDeployed": false
+}

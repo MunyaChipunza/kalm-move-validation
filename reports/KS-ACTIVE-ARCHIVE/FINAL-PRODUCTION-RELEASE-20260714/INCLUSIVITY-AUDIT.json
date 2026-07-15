@@ -1,0 +1,14 @@
+{
+  "scope": "KS Active Archive hidden review",
+  "finalRangePass": false,
+  "reason": "All source-locked galleries are complete; final visual approval and commercial release controls remain outstanding.",
+  "completedProductCodes": ["P002", "P003", "P010", "P012", "P019", "P020", "P026", "P027", "P028", "P030", "P033", "P035", "P049", "P050"],
+  "blockedProductCodes": [],
+  "controls": {
+    "adultModelsOnly": true,
+    "galleryModelContinuity": true,
+    "variedPresentationAcrossCompletedPackages": true,
+    "demographicIdentityInferredFromPixels": false,
+    "sexualisedOrExtremePosesSelected": false
+  }
+}

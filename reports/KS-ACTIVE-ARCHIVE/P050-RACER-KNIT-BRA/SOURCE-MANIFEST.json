@@ -1,0 +1,81 @@
+{
+  "productCode": "P050",
+  "originalDriveFolderName": "Seamless Knit Racer Back Sports Bra",
+  "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
+  "proposedName": "KS Active Racer Knit Bra",
+  "proposedSlug": "ks-active-racer-knit-bra",
+  "representativeColour": "Espresso",
+  "representativeApproval": {
+    "approvedBy": "Munya",
+    "approvedAt": "2026-07-14",
+    "scope": "source-locked representative imagery, visual construction standard and customer-facing name"
+  },
+  "constructionAuthority": {
+    "colour": "Espresso",
+    "rule": "Exact Espresso Drive front and back copies are the construction authority for every generated P050 colour review."
+  },
+  "reviewColours": ["Dark Green", "Espresso", "Iron Blue", "Plum", "Violet"],
+  "manualColourDisclosure": {
+    "authority": "Munya's explicit manual physical-stock labels",
+    "exactDriveColourSources": ["Espresso", "Plum"],
+    "manualLabelOnlyColours": ["Dark Green", "Iron Blue", "Violet"],
+    "rule": "Manual-label representations are clearly disclosed as draft review imagery and require a physical garment check at final P050 approval. Historic Sage Green, Navy / Deep Blue and Grape imagery was not substituted."
+  },
+  "stockAuthority": {
+    "manualInstruction": true,
+    "confirmedManualQuantity": 11,
+    "countOneAndTwoReconciliation": "not yet present in the available workbook",
+    "storefrontUse": "prohibited pending final P050 approval and inventory reconciliation"
+  },
+  "historicalCrossReference": {
+    "role": "background evidence only, never inventory authority",
+    "workbook": "KS_Active_Archive_SKU_Master.xlsx",
+    "workbookProductCode": "P023",
+    "workbookColour": "Espresso",
+    "normalisedSourceFilename": "Untitleddesign_28.png"
+  },
+  "plumHistoricalCrossReference": {
+    "role": "colour and construction traceability only, never inventory authority",
+    "workbook": "KS_Active_Archive_SKU_Master.xlsx",
+    "workbookProductCode": "P023",
+    "workbookColour": "Plum",
+    "normalisedSourceFilename": "27_ae992050-26e2-4704-a9fd-8876848a02a5.jpg"
+  },
+  "files": [
+    {
+      "role": "exact_source_reference_front",
+      "driveFileId": "1sDk5_pDdNDnMbAtbm85ucNIIMyvVbuh6",
+      "driveFileName": "Untitled design (28).png",
+      "driveRelativePath": "Seamless Knit Racer Back Sports Bra/Untitled design (28).png",
+      "localPath": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/espresso-front.png",
+      "originalHashSha256": "BB9A33FB5A8FA8405EF26DE744DDEB85A853889E17DAA56A93E26BBB36C3E973",
+      "copiedHashSha256": "BB9A33FB5A8FA8405EF26DE744DDEB85A853889E17DAA56A93E26BBB36C3E973",
+      "dimensions": { "width": 2820, "height": 2364 },
+      "unaltered": true
+    },
+    {
+      "role": "exact_source_reference_back",
+      "driveFileId": "1lZ39qGtc-zQHl28BHz_wJNj5NvnR718h",
+      "driveFileName": "Untitled design (29).png",
+      "driveRelativePath": "Seamless Knit Racer Back Sports Bra/Untitled design (29).png",
+      "localPath": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/espresso-back.png",
+      "originalHashSha256": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
+      "copiedHashSha256": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
+      "dimensions": { "width": 2820, "height": 2364 },
+      "unaltered": true
+    },
+    {
+      "role": "exact_source_reference_plum_back",
+      "driveFileId": "1nJuXZ9KeKxR7DkAXtLue7qIQM4X-d0aJ",
+      "driveFileName": "描述图_27.jpg",
+      "driveRelativePath": "Seamless Knit Racer Back Sports Bra/描述图_27.jpg",
+      "localPath": "assets/images/review-only/ks-active/p050-racer-knit-bra/source-reference/plum-back.jpg",
+      "originalHashSha256": "0398296D93A7320CBD8507622A81337E4015591572D2F17B453AB5CF990E77A6",
+      "copiedHashSha256": "0398296D93A7320CBD8507622A81337E4015591572D2F17B453AB5CF990E77A6",
+      "dimensions": { "width": 1200, "height": 1200 },
+      "unaltered": true
+    }
+  ],
+  "hashVerification": "passed",
+  "publicStorefrontReference": false
+}

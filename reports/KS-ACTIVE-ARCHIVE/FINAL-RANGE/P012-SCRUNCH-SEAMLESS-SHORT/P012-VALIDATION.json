@@ -1,0 +1,17 @@
+{
+  "product_code": "P012",
+  "validation_time_utc": "2026-07-14T15:27:21.014496+00:00",
+  "passed": true,
+  "checks": {
+    "four_matched_stocked_colours_present": true,
+    "four_generated_views_per_colour_present": true,
+    "master_sheets_retained": true,
+    "source_lock_pair_retained": true,
+    "non_public_review_only_paths": true,
+    "products_json_untouched_by_checkpoint": true,
+    "zoho_untouched": true,
+    "intranet_untouched": true,
+    "production_untouched": true
+  },
+  "issues": []
+}

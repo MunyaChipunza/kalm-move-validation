@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "productCode": "P050",
+  "approvedName": "KS Active Racer Knit Bra",
+  "approvedSlug": "ks-active-racer-knit-bra",
+  "approval": {
+    "approvedBy": "Munya",
+    "approvedDate": "2026-07-14",
+    "approvalEvidence": "reports/KS-ACTIVE-ARCHIVE/P050-RACER-KNIT-BRA/APPROVAL-STATUS.md",
+    "scope": "complete hidden KS Active Archive product package; public release not authorised"
+  },
+  "source": {
+    "driveFolderId": "1-SBFJrpneVQMdtJBzDyuSpI1ShtprYmV",
+    "originalDriveFolderName": "Seamless Knit Racer Back Sports Bra",
+    "renamedDriveFolderName": "P050 - Racer Knit Bra",
+    "sourceManifest": "reports/KS-ACTIVE-ARCHIVE/P050-RACER-KNIT-BRA/SOURCE-MANIFEST.json",
+    "exactSourceHashes": {
+      "espressoFront": "BB9A33FB5A8FA8405EF26DE744DDEB85A853889E17DAA56A93E26BBB36C3E973",
+      "espressoBack": "C911CEAD8881679FB31B31461125129E7672673A95E5646DD2A2133F4CC9C4AE",
+      "plumBack": "0398296D93A7320CBD8507622A81337E4015591572D2F17B453AB5CF990E77A6"
+    }
+  },
+  "catalogueState": {
+    "public": false,
+    "purchasable": false,
+    "productsJsonChanged": false,
+    "zohoUpdated": false,
+    "intranetUpdated": false,
+    "productionDeployed": false
+  },
+  "stock": {
+    "totalUnits": 11,
+    "variants": [
+      { "colour": "Dark Green", "size": "S", "quantity": 1, "sku": "KS-ARCH-P050-DKGRN-S" },
+      { "colour": "Espresso", "size": "M", "quantity": 1, "sku": "KS-ARCH-P050-ESPRS-M" },
+      { "colour": "Espresso", "size": "L", "quantity": 1, "sku": "KS-ARCH-P050-ESPRS-L" },
+      { "colour": "Iron Blue", "size": "S", "quantity": 1, "sku": "KS-ARCH-P050-IRNBL-S" },
+      { "colour": "Iron Blue", "size": "M", "quantity": 1, "sku": "KS-ARCH-P050-IRNBL-M" },
+      { "colour": "Iron Blue", "size": "L", "quantity": 1, "sku": "KS-ARCH-P050-IRNBL-L" },
+      { "colour": "Plum", "size": "M", "quantity": 1, "sku": "KS-ARCH-P050-PLUM-M" },
+      { "colour": "Plum", "size": "L", "quantity": 1, "sku": "KS-ARCH-P050-PLUM-L" },
+      { "colour": "Violet", "size": "S", "quantity": 1, "sku": "KS-ARCH-P050-VIOLT-S" },
+      { "colour": "Violet", "size": "M", "quantity": 1, "sku": "KS-ARCH-P050-VIOLT-M" },
+      { "colour": "Violet", "size": "L", "quantity": 1, "sku": "KS-ARCH-P050-VIOLT-L" }
+    ],
+    "futureZeroStockRule": "Normal future sizes with zero confirmed stock must display Out of stock and be disabled."
+  },
+  "storedAssets": {
+    "directory": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/",
+    "hashCopyVerification": "passed; each storage file matches its review-only approved source file",
+    "assets": [
+      { "colour": "Dark Green", "view": "hero", "file": "dark-green-hero.png", "sha256": "D71875BC89FA2BA76103CFC2B27EDC39B54A6ADAFBAF93A450ECB3F256BDE1C2" },
+      { "colour": "Dark Green", "view": "back", "file": "dark-green-back.png", "sha256": "81ED6E3B35224ECECC46880CA3C282F8C4D698F931B776FF2DB86AA4F6F3ED23" },
+      { "colour": "Dark Green", "view": "side", "file": "dark-green-side.png", "sha256": "03B881727F79D97F91B39337B8842D3B0FF7D3AC1B0E8AEED2EB3418F3C21880" },
+      { "colour": "Dark Green", "view": "front", "file": "dark-green-front.png", "sha256": "9709AFC03251D2064F165619976543A156284CBA64125B40A51BD84EC201F6A0" },
+      { "colour": "Espresso", "view": "hero", "file": "espresso-hero-three-quarter.png", "sha256": "085EF91A87EC79A3C2BEA3DF3C7A91C2C2A88EB4DAF5EE5C58168E3F8930D475" },
+      { "colour": "Espresso", "view": "back", "file": "espresso-back.png", "sha256": "B94B1B27DB57FBAFABF95E1D9A2EAACC41E3BE3CA6B5B7102D0D23A7AB2EDEDC" },
+      { "colour": "Espresso", "view": "side", "file": "espresso-side.png", "sha256": "E34FD2598204835C325BAE9EC833D5C88EBBB5609603C67D2254A66DEED90068" },
+      { "colour": "Espresso", "view": "front", "file": "espresso-front.png", "sha256": "C659AF48949AD2F54E4DCDF61FAAF0315BCEA0C84B3F1A2B23D08494DF9D5A06" },
+      { "colour": "Iron Blue", "view": "hero", "file": "iron-blue-hero.png", "sha256": "85F3B9FD2A1CF6979C25FD72FDD58393D8DDA8624948FAB58287975AA4EFACC6" },
+      { "colour": "Iron Blue", "view": "back", "file": "iron-blue-back.png", "sha256": "750C2900F620918EC3B3B8302B6746620805B9AEFAC42030A85DD7F2C9CDFD9B" },
+      { "colour": "Iron Blue", "view": "side", "file": "iron-blue-side.png", "sha256": "5767BEB09A3B3906D591E4633061601494BEFAB2BEC33CFFCFB64BE1AC2448E5" },
+      { "colour": "Iron Blue", "view": "front", "file": "iron-blue-front.png", "sha256": "A9D5F5F4D4C590FCF5916F9DA420B0918F26AFBB6247DFA3ECDD0275FD602235" },
+      { "colour": "Plum", "view": "hero", "file": "plum-front-full.png", "sha256": "099DEEBC7E60D622E153B3FFAE1D532BD3875E2FC46B7AC9008B1ED96DBD1DDA" },
+      { "colour": "Plum", "view": "back", "file": "plum-back-full.png", "sha256": "94642D6604B3B2F9375DEE8AFC817632A6ABB1E5C50416A2A3CEE24134EBBFF1" },
+      { "colour": "Plum", "view": "side", "file": "plum-side-full.png", "sha256": "7648842A65268B65EE9D29AF75A8AAAD87598DAFE8F17013BDCF8C1176A05CDB" },
+      { "colour": "Plum", "view": "front", "file": "plum-front.png", "sha256": "824C1B702FF6B83503D21B21171789C9682B77A605FF41ACBA37D7077D669C2A" },
+      { "colour": "Violet", "view": "hero", "file": "violet-hero.png", "sha256": "C85CB0BDFB6634D5417353D19B910D16C317E2934F27EC075C87FB65A50786EC" },
+      { "colour": "Violet", "view": "back", "file": "violet-back.png", "sha256": "0E9F5B109CD03EB40E84F7D600E3CAD384EED06F71A939DA50B73FF2CDD3440C" },
+      { "colour": "Violet", "view": "side", "file": "violet-side.png", "sha256": "1E42C73AC9A5C6F38BB37FE552ECBE8ABD182A3F42761767F307CAE901ABCA7D" },
+      { "colour": "Violet", "view": "front", "file": "violet-front.png", "sha256": "CDB9B5CC60451F8F672905B584829863BE38AA7AC82DBD8DA26828A4B001136C" }
+    ]
+  }
+}

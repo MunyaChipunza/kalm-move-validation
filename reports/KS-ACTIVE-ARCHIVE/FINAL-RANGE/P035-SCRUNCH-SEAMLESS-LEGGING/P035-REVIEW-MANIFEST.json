@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P035",
+    "proposed_customer_name": "KS Active Scrunch Seamless Legging",
+    "source_title": "Seamless Breathable Scrunch Butt Leggings",
+    "source_lock": {
+      "construction": "Full-length close-fit legging with high smooth waistband, clean full legs and the rear centre scrunch/contour construction visible in source.",
+      "forbidden_changes": [
+        "branding",
+        "pockets",
+        "mesh",
+        "side panels",
+        "contrast piping",
+        "drawstrings",
+        "new seams"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-1.jpg",
+          "sha256": "7E0C445A0605968605BD6530DF6975DC63BEDDD41780736B1FC12BA5366D79E0",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 119772
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p035-scrunch-seamless-legging/zip-source-2.jpg",
+          "sha256": "896DA50BAFE10025FDB27B2DD27BAE8897A6C7FB53D6B32A2E37433E15265EEB",
+          "dimensions": {
+            "width": 1200,
+            "height": 1200
+          },
+          "bytes": 125906
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Imperial Red",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/generated-multiview-source.png",
+        "sha256": "AF29C202B9B3184F52B9930022B1204CAE91A32A5C57D60250A7057929E97D23",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1616624
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/hero-three-quarter.jpg",
+          "sha256": "93F72829CFF673A26B624481393D3291E9F67D2A5FC0DEA5B42958E326DC7682",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 65979
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/back.jpg",
+          "sha256": "202580950D0DFD9A0CB2D36C910408E97B0E064DEB71FC44F094ED960B4712BD",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63322
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/side.jpg",
+          "sha256": "933ED0E5238F5C951461FB9895F131CEBED7358405433551CC1CDF052C0FA8B0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54783
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/imperial-red/front.jpg",
+          "sha256": "2E069F8147C5B56AE5518DE4A1A36B82D2D03FCC64DC9D18A74E09945C3F2364",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63945
+        }
+      ]
+    },
+    {
+      "colour": "Peach Yellow",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/peach-yellow/generated-multiview-source.png",
+        "sha256": "8922422347F93E2D0B8A812EC4104F17FBA0D1AE5058220B8FCAEEC07BFD11D6",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1531777
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/peach-yellow/hero-three-quarter.jpg",
+          "sha256": "01B5D7A9A1D16C47F65326C044891762424E4D21859B266046F9B5F02C49F5C8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58089
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/peach-yellow/back.jpg",
+          "sha256": "3345F2540E6F3A55337A9B448F891A81E3594BE43451BE56600391DBBBF4B8BC",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54095
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/peach-yellow/side.jpg",
+          "sha256": "EC71D75AAC4F647FD9C4F29E8C0BB5B096C9AE7BB3E4C2A082886C291C373238",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 47570
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/peach-yellow/front.jpg",
+          "sha256": "7314E4176624494CBBB26F6AEBD6B0510D1C73339876BB75C7544F9604588B4D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54560
+        }
+      ]
+    },
+    {
+      "colour": "Pearl Gray",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/pearl-gray/generated-multiview-source.png",
+        "sha256": "71DCC14356561C89328AB4FAE4E658FB95AC8F57A8F3C1ABFA4FB9B1698302F4",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1567652
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/pearl-gray/hero-three-quarter.jpg",
+          "sha256": "4D981758E31E437D1088FC7615E8419B59B830F72AD4C57B0217F4E7400BEB6F",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58280
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/pearl-gray/back.jpg",
+          "sha256": "3F66053AC1AE6C1423C0504BE43750F02C148978734F25FF8F1FD296D5E68084",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56974
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/pearl-gray/side.jpg",
+          "sha256": "9FA87A34EDE9514D02C3B5C9A4F1E18D62D69D7F73F01731696E04CF18B61F7D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 51684
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p035-scrunch-seamless-legging/pearl-gray/front.jpg",
+          "sha256": "D9F277EDA2A7F4546AE24F4173EE7E1ECECCF9648210F6AD9ADE4D3AA2C596D3",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56985
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P035",
+    "validation_time_utc": "2026-07-14T18:07:44.426269+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

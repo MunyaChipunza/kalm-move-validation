@@ -1,0 +1,108 @@
+{
+  "purpose": "Read-only, selected-folder source inspection mirror; not storefront imagery.",
+  "archive": {
+    "path": "C:\\Users\\Dell\\Downloads\\product images-20260714T132444Z-1-001.zip",
+    "size_bytes": 1062603660,
+    "modified_utc": "2026-07-14T13:28:57.704555+00:00",
+    "sha256": "E1D1957FA3298005FF5296AC0DD97975CD2DA7D40C5B84161A39674DBCAEE489"
+  },
+  "created_utc": "2026-07-14T13:49:12.029415+00:00",
+  "products": [
+    {
+      "product_code": "P002",
+      "workbook_title": "Crisscross Back Halter Romper",
+      "zip_folder": "Crisscross Back Halter Romper",
+      "entry_count": 108,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p002-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P003",
+      "workbook_title": "Seamless High Stretch Scrunch Butt Leggings 1",
+      "zip_folder": "P003 - Rib Scrunch Legging",
+      "entry_count": 157,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p003-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P010",
+      "workbook_title": "Seamless Crisscross Cut Out Back Sports Bra",
+      "zip_folder": "Seamless Crisscross Cut Out Back Crop",
+      "entry_count": 30,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p010-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P012",
+      "workbook_title": "Seamless Breathable Scrunch Butt Shorts",
+      "zip_folder": "Seamless Breathable Scrunch Butt Shorts",
+      "entry_count": 34,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p012-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P019",
+      "workbook_title": "High Support Seamless Cut Out Sports Bra",
+      "zip_folder": "HIGH  Support Seamless Cut Out Sports Bra",
+      "entry_count": 10,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p019-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P020",
+      "workbook_title": "Mid Support Seamless Crisscross Sports Bra",
+      "zip_folder": "Mid Support Seamless Crisscross Sports Bra",
+      "entry_count": 8,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p020-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P026",
+      "workbook_title": "High Waist Seamless Shorts",
+      "zip_folder": "High Waist Seamless Sports Shorts",
+      "entry_count": 5,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p026-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P027",
+      "workbook_title": "Seamless Breathable Scrunch Butt Tummy Control Leggings",
+      "zip_folder": "Seamless Breathable Scrunch Butt Tummy Control Leggings",
+      "entry_count": 27,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p027-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P028",
+      "workbook_title": "High Waist Seamless Leggings",
+      "zip_folder": "High Waist Seamless Leggings ",
+      "entry_count": 5,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p028-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P030",
+      "workbook_title": "Seamless Crisscross Back Sports Bra",
+      "zip_folder": "Seamless Crisscross Back Sports Bra",
+      "entry_count": 13,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p030-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P033",
+      "workbook_title": "Seamless Solid Tummy Control Leggings",
+      "zip_folder": "Seamless Solid Tummy Control Leggings",
+      "entry_count": 43,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p033-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    },
+    {
+      "product_code": "P035",
+      "workbook_title": "Seamless Breathable Scrunch Butt Leggings",
+      "zip_folder": "Seamless Breathable Scrunch Butt Leggings ",
+      "entry_count": 36,
+      "contact_sheet": "reports/KS-ACTIVE-ARCHIVE/SOURCE-INTAKE/p035-zip-source-contact-sheet.jpg",
+      "unreadable_entries": []
+    }
+  ]
+}

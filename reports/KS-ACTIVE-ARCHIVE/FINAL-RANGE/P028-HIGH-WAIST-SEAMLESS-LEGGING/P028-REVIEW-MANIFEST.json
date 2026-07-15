@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P028",
+    "proposed_customer_name": "KS Active High-Waist Seamless Legging",
+    "source_title": "High Waist Seamless Leggings",
+    "source_lock": {
+      "construction": "Full-length smooth matte seamless legging with a broad straight high-rise waistband, clean unbroken front, subtle rear centre seam/contour, full tapered legs and clean ankle hems.",
+      "forbidden_changes": [
+        "logos",
+        "pockets",
+        "side panels",
+        "mesh",
+        "drawstrings",
+        "scrunch",
+        "changed waistband",
+        "changed ankle length"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-1.jpg",
+          "sha256": "B5F047A5D68C6D507033570CAE7A1D337141617A8914DFF7022B8325B5106BEC",
+          "dimensions": {
+            "width": 768,
+            "height": 1152
+          },
+          "bytes": 69418
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p028-high-waist-seamless-legging/zip-source-2.jpg",
+          "sha256": "46B40FFA1BAFCC3ECBC9849F5F717B11CDC12EAE4D85241321F1AE1CC7D737A1",
+          "dimensions": {
+            "width": 768,
+            "height": 1152
+          },
+          "bytes": 75369
+        }
+      ],
+      "private_source_evidence": "Private front, rear and rear-three-quarter construction evidence is held outside Git and Netlify; no source photograph or likeness is included in this review package."
+    }
+  },
+  "colours": [
+    {
+      "colour": "Electric Violet",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/generated-multiview-source.png",
+        "sha256": "9A3A41900A997CC89CE748FFE26BB7F3DC8F3940D851BD9A4DF3D99D8100DD3A",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1545188
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg",
+          "sha256": "B08BD5868E083D9A29CE1F640731A0B25B409298A9C7BDA7D212B11820807B10",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 64006
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/back.jpg",
+          "sha256": "80FEF01F3380E78468872034BA78AC8F36A03D6FA3FABC2A172AC74F59860D30",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60105
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/side.jpg",
+          "sha256": "65D249ABA39B125BF093BFD25B938685A4013600B4F01A06D9B94BBEE5E2A7A9",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58275
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/electric-violet/front.jpg",
+          "sha256": "717390351F7DF4A31388904E9D2EFEEF2BEC701AEE686E7B5DC5986EE36FF24E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62960
+        }
+      ]
+    },
+    {
+      "colour": "True Purple",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/true-purple/generated-multiview-source.png",
+        "sha256": "0E5BDFDB2ED14A7C59F9DA77CE4C69C46CBFE9499A16F190E1227AD5482DC8E4",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1503952
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/true-purple/hero-three-quarter.jpg",
+          "sha256": "4D7750D454E671E54FDC6DC1AB840AFF9BD93C9D7D62B4A7389292B4B7D614B0",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58360
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/true-purple/back.jpg",
+          "sha256": "C8F5D74F34245FEDB6EB168FDFF2D42BE990A227F34941F160E37722D9A53652",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54803
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/true-purple/side.jpg",
+          "sha256": "3064910071049D02C2E1EECA3A66BAEE206A567195CA0E4CA4CBAE62AA979D5E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 49910
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p028-high-waist-seamless-legging/true-purple/front.jpg",
+          "sha256": "3B4BB7996EC583D3FBB5363D9FC8FB187EB7E39F33413229EDA2ED68959ABC00",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55781
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P028",
+    "validation_time_utc": "2026-07-14T18:54:00.760058+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "private_source_evidence_recorded": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "capturedAt": "2026-07-15T09:56:06.589Z",
+  "source": "Zoho Inventory UI, KALM Collective org 930770020",
+  "importMethod": "Zoho item CSV import followed by overwrite import using inventory-format CSV",
+  "importedItemCount": 104,
+  "totalStockOnHand": 111,
+  "rows": [
+    {
+      "name": "KS Active Crisscross Back Bra - Black - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P030-BLCKB-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crisscross Back Bra - True Purple - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P030-TRUPU-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Apricot - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-APRCT-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Apricot - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-APRCT-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Apricot - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-APRCT-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Egyptian Blue - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-EGYBL-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Egyptian Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-EGYBL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Egyptian Blue - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-EGYBL-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Peach - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-PCHPE-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Peach - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-PCHPE-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Peach - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-PCHPE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Sapphire - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-SPPHR-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Sapphire - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-SPPHR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Crossback Seamless Bra - Sapphire - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P020-SPPHR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Curve Seam Legging - Espresso - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P027-ESPRS-L",
+      "stock": "2.00",
+      "stockNumber": 2
+    },
+    {
+      "name": "KS Active Curve Seam Legging - Espresso - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P027-ESPRS-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Curve Seam Legging - Forest Green - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P027-FORGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Curve Seam Legging - Forest Green - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P027-FORGR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Curve Seam Legging - Olive - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P027-OLVOL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Curve Seam Legging - Olive - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P027-OLVOL-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Crossback Bra - Imperial Red - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P010-IMPRE-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Crossback Bra - Imperial Red - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P010-IMPRE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Crossback Bra - Peach Yellow - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P010-PEAYE-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Crossback Bra - Peach Yellow - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P010-PEAYE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Crossback Bra - Pearl Gray - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P010-PEAGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Crossback Bra - Pearl Gray - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P010-PEAGR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Seamless Bra - Black - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P019-BLCKB-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Seamless Bra - Black - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P019-BLCKB-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Seamless Bra - Desert Gold - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P019-DESGO-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Seamless Bra - Desert Gold - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P019-DESGO-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Seamless Bra - Desert Gold - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P019-DESGO-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Cutout Seamless Bra - Steel - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P019-STLST-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Army Green - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-ARMGR-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Army Green - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-ARMGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Army Green - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-ARMGR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Egyptian Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-EGYBL-M",
+      "stock": "2.00",
+      "stockNumber": 2
+    },
+    {
+      "name": "KS Active Halter Back Romper - Electric Violet - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-ELEVI-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Electric Violet - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-ELEVI-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Imperial Red - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-IMPRE-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Imperial Red - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-IMPRE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Midnight Black - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-MIDBL-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Halter Back Romper - Midnight Black - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P002-MIDBL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active High-Waist Seamless Legging - Electric Violet - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P028-ELEVI-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active High-Waist Seamless Legging - True Purple - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P028-TRUPU-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active High-Waist Seamless Short - Electric Violet - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P026-ELEVI-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active High-Waist Seamless Short - Flamingo - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P026-FLMNG-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active High-Waist Seamless Short - True Purple - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P026-TRUPU-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Azure Blue - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-AZUBL-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Azure Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-AZUBL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Azure Blue - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-AZUBL-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Byzantine Violet - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-BYZVI-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Byzantine Violet - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-BYZVI-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Cinnamon - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-CNNMN-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Hunter Green - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-HUNGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Iron Gray - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-IROGR-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Iron Gray - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-IROGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Iron Gray - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-IROGR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Jungle Green - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-JUNGR-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Jungle Green - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-JUNGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Jungle Green - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-JUNGR-S",
+      "stock": "2.00",
+      "stockNumber": 2
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Mauve - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-MVMAU-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Panel Seamless Legging - Pine Green - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P033-PINGR-L",
+      "stock": "3.00",
+      "stockNumber": 3
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Dark Green - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-DKGRN-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Espresso - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-ESPRS-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Espresso - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-ESPRS-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Iron Blue - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-IRNBL-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Iron Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-IRNBL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Iron Blue - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-IRNBL-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Plum - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-PLUM-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Plum - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-PLUM-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Violet - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-VIOLT-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Violet - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-VIOLT-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Racer Knit Bra - Violet - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P050-VIOLT-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Contour Legging - Bright Green - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P049-BRGRE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Contour Legging - Egyptian Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P049-EGYBLU-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Contour Legging - Gray - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P049-GRAY-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Contour Legging - Peach Yellow - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P049-PEAYEL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Contour Legging - Red - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P049-RED-M",
+      "stock": "2.00",
+      "stockNumber": 2
+    },
+    {
+      "name": "KS Active Rib Contour Legging - White - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P049-WHITE-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Ash Gray - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-ASHGR-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Ash Gray - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-ASHGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Ash Gray - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-ASHGR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Black - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-BLCKB-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Black - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-BLCKB-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Chestnut - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-CHSTN-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Chestnut - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-CHSTN-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - French Rose - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-FRERO-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - French Rose - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-FRERO-M",
+      "stock": "2.00",
+      "stockNumber": 2
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Sky Blue - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-SKYBL-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Sky Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-SKYBL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Rib Scrunch Legging - Sky Blue - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P003-SKYBL-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Legging - Imperial Red - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P035-IMPRE-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Legging - Imperial Red - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P035-IMPRE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Legging - Peach Yellow - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P035-PEAYE-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Legging - Pearl Gray - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P035-PEAGR-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Legging - Pearl Gray - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P035-PEAGR-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Egyptian Blue - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-EGYBL-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Egyptian Blue - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-EGYBL-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Imperial Red - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-IMPRE-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Imperial Red - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-IMPRE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Peach Yellow - L",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-PEAYE-L",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Peach Yellow - M",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-PEAYE-M",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Peach Yellow - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-PEAYE-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    },
+    {
+      "name": "KS Active Scrunch Seamless Short - Pearl Gray - S",
+      "reorder": "",
+      "sku": "KS-ARCH-P012-PEAGR-S",
+      "stock": "1.00",
+      "stockNumber": 1
+    }
+  ]
+}

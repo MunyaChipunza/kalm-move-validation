@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "supporting_fashion_styling_is_disclosed": true,
+    "supporting_items_not_misrepresented_as_product_contents": true,
+    "construction_views_remain_visible": true,
+    "missing_construction_views_not_invented": true
+  },
+  "disclosure": "Every generated product package records: Styled with supporting garments and accessories not included."
+}

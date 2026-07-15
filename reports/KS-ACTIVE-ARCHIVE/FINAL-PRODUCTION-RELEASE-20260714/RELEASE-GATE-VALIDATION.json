@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "validator": "tools/validate-ks-active-archive-release-gates.py",
+  "validatedAt": "2026-07-15T09:59:31.490706+00:00",
+  "passed": false,
+  "releaseAuthorised": false,
+  "scope": "KS Active Archive production release only",
+  "checks": {
+    "allFourteenProductsComplete": true,
+    "allFiftySixStockedColoursComplete": true,
+    "noSourceBlockedProducts": true,
+    "visualRangeApprovalRecorded": true,
+    "temporaryPricesApproved": true,
+    "launchAuthorityRecorded": true,
+    "legacyPublicCatalogueRemoved": true,
+    "publicCatalogueMappingFinalised": true,
+    "physicalInventoryLoaded": true,
+    "zohoInventoryReconciled": false,
+    "intranetInventoryReconciled": false,
+    "threeSystemReconciliationPassed": false,
+    "privateSourceEvidenceNotPublished": true,
+    "kuhleLikenessNotPublished": true,
+    "noUnsupportedProductPublic": true,
+    "noDuplicateSku": true,
+    "bagValidationPassed": false,
+    "checkoutValidationPassed": false,
+    "mobileValidationPassed": false,
+    "desktopValidationPassed": false,
+    "sitemapValidationPassed": true,
+    "structuredDataValidationPassed": false,
+    "taskApplicationUnchanged": false
+  },
+  "blockingGates": [
+    "zohoInventoryReconciled",
+    "intranetInventoryReconciled",
+    "threeSystemReconciliationPassed",
+    "bagValidationPassed",
+    "checkoutValidationPassed",
+    "mobileValidationPassed",
+    "desktopValidationPassed",
+    "structuredDataValidationPassed",
+    "taskApplicationUnchanged"
+  ],
+  "externalBlockers": {
+    "zoho": null,
+    "intranet": "The intranet has not been read or written in this session.",
+    "production": "GitHub and Netlify access have not been verified from this environment; no production deployment was attempted."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "validator": "tools/validate-ks-active-archive-production-release.mjs",
+  "passed": true,
+  "checks": {
+    "fourteen approved KS Active Archive products are public": true,
+    "only the required fourteen product codes are public": true,
+    "all legacy KS Active products are archived and hidden": true,
+    "all public prices match Munya temporary launch prices": true,
+    "storefront has 104 physical SKUs and 111 launch units": true,
+    "public SKUs are unique and match the final SKU manifest": true,
+    "only positive physical inventory variants are purchasable": true,
+    "all fifty-six approved stocked colours are public": true,
+    "public galleries reference only 224 approved generated public assets": true,
+    "every public Archive image path exists": true,
+    "public catalogue contains no Kuhle or review-only reference": true,
+    "Netlify blocks review-only, source-lock, and KS Active review routes": true,
+    "Netlify excludes review-only images, review routes, and reports from deploy uploads": true,
+    "visual approval is recorded": true,
+    "final physical inventory totals reconcile": true,
+    "back-first product galleries lead with the approved back view": true,
+    "sitemap excludes legacy KS Active routes and includes all Archive routes": true
+  },
+  "errors": []
+}

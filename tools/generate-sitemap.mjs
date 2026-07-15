@@ -15,7 +15,7 @@ const routes = [
   "/contact",
   "/policies"
 ];
-const publicProducts = data.products.filter((product) => (product.status || "published") === "published" && (product.visibility || "visible") === "visible");
+const publicProducts = data.products.filter((product) => (product.publicationStatus || product.status || "published") === "published" && (product.visibility || "visible") === "visible");
 for (const product of publicProducts) routes.push(`/products/${encodeURIComponent(product.slug)}`);
 const xml = [
   '<?xml version="1.0" encoding="UTF-8"?>',

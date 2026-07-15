@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "productCode": "P049",
+  "approvedName": "KS Active Rib Contour Legging",
+  "approvedSlug": "ks-active-rib-contour-legging",
+  "approval": {
+    "approvedBy": "Munya",
+    "approvedDate": "2026-07-14",
+    "approvalEvidence": "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/APPROVAL-STATUS.md",
+    "scope": "complete hidden KS Active Archive product package; five manual-label colour representations were approved after physical comparison; public release not authorised"
+  },
+  "source": {
+    "originalSourceName": "High Waisted Ribbed Yoga Pants / Ribbed Leggings",
+    "driveFolderId": "19OT_erT6AJKofKhvb47Jx4Zi-M3c59Rj",
+    "originalDriveFolderNameAtApproval": "P049 - Rib Contour Legging",
+    "renamedDriveFolderName": "P049 - Rib Contour Legging",
+    "driveRenameRecord": "Folder already matched the approved final name when full P049 approval was received; Drive ID and parent were verified unchanged.",
+    "sourceManifest": "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/SOURCE-MANIFEST.json",
+    "exactSourceHashes": {
+      "supplierConstructionReference": "94E861F940883B9B853351CCD4F8047E1F27CC19B528FC87F29A9BE716931EF9"
+    }
+  },
+  "catalogueState": {
+    "public": false,
+    "purchasable": false,
+    "productsJsonChanged": false,
+    "zohoUpdated": false,
+    "intranetUpdated": false,
+    "productionDeployed": false
+  },
+  "stock": {
+    "totalUnits": 7,
+    "variants": [
+      {
+        "colour": "Bright Green",
+        "size": "S",
+        "quantity": 1,
+        "sku": "KS-ARCH-P049-BRGRE-S"
+      },
+      {
+        "colour": "White",
+        "size": "M",
+        "quantity": 1,
+        "sku": "KS-ARCH-P049-WHITE-M"
+      },
+      {
+        "colour": "Peach Yellow",
+        "size": "M",
+        "quantity": 1,
+        "sku": "KS-ARCH-P049-PEAYEL-M"
+      },
+      {
+        "colour": "Egyptian Blue",
+        "size": "M",
+        "quantity": 1,
+        "sku": "KS-ARCH-P049-EGYBLU-M"
+      },
+      {
+        "colour": "Gray",
+        "size": "M",
+        "quantity": 1,
+        "sku": "KS-ARCH-P049-GRAY-M"
+      },
+      {
+        "colour": "Red",
+        "size": "M",
+        "quantity": 2,
+        "sku": "KS-ARCH-P049-RED-M"
+      }
+    ],
+    "futureZeroStockRule": "Normal future sizes with zero confirmed stock must display Out of stock and be disabled."
+  },
+  "rejectedAssets": [
+    "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/rejected-generated-v1/bright-green-hero-three-quarter.png",
+    "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/rejected-generated-v1/bright-green-back.png",
+    "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/rejected-generated-v1/bright-green-side-same-model.png",
+    "reports/KS-ACTIVE-ARCHIVE/P049-RIB-CONTOUR-LEGGING/rejected-generated-v1/egyptian-blue-muted-first-attempt.png"
+  ],
+  "storedAssets": {
+    "directory": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/",
+    "hashCopyVerification": "passed; each storage file matches its review-only approved source file",
+    "assets": [
+      {
+        "colour": "Bright Green",
+        "view": "hero_three_quarter",
+        "file": "bright-green-hero-three-quarter.png",
+        "sha256": "7A5EABEB4541B3E6FBA4BFB6585DAE2A5B69CE8526EC9DEAFF58780CE71CB5F3",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Bright Green",
+        "view": "back",
+        "file": "bright-green-back.png",
+        "sha256": "E9B914CBE409D1E3A277670FE5C1F4D9918C7050FD6C460679CEF110A4F1D947",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Bright Green",
+        "view": "side",
+        "file": "bright-green-side.png",
+        "sha256": "66C12F27A8CA57EC9FCA26FDD31D48A552EF21651354AB607CD1F2FA9B96B173",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Bright Green",
+        "view": "front",
+        "file": "bright-green-front.png",
+        "sha256": "986C14B2C08A1E51DCC7D74B6A4DBFC4D379EEF309A9C98ACF05D414F6EAEF6A",
+        "dimensions": {
+          "width": 1009,
+          "height": 1558
+        }
+      },
+      {
+        "colour": "White",
+        "view": "hero_three_quarter",
+        "file": "white-hero-three-quarter.png",
+        "sha256": "363BF8C84B3D9DC863B7C7E628945E710EE3330B93DBAF8A8DEF495428DA49FD",
+        "dimensions": {
+          "width": 1122,
+          "height": 1402
+        }
+      },
+      {
+        "colour": "White",
+        "view": "back",
+        "file": "white-back.png",
+        "sha256": "96627C69DEED75903280062269787E4B9B7F7D88D27CD43F18DB82C769647E12",
+        "dimensions": {
+          "width": 1122,
+          "height": 1402
+        }
+      },
+      {
+        "colour": "White",
+        "view": "side",
+        "file": "white-side.png",
+        "sha256": "1DC09AF5FA3E1EEB6D349DAD63B7FF8470649A344554DE35E9C1FECB4BE30C81",
+        "dimensions": {
+          "width": 1122,
+          "height": 1402
+        }
+      },
+      {
+        "colour": "White",
+        "view": "front",
+        "file": "white-front.png",
+        "sha256": "16A4E73CD053701395D9A8CDDCC18754B8789CA9472C541D112820656AB70AB4",
+        "dimensions": {
+          "width": 1003,
+          "height": 1568
+        }
+      },
+      {
+        "colour": "Peach Yellow",
+        "view": "hero_three_quarter",
+        "file": "peach-yellow-hero-three-quarter.png",
+        "sha256": "6C1F70D8CBAFDD33F707D5C8691C2AA87B53445530CB33BA4F3F3A1BBA899DAE",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Peach Yellow",
+        "view": "back",
+        "file": "peach-yellow-back.png",
+        "sha256": "CBCE4762096ACA08AD3D87D2F3B37B54C22748B9DD57F73B88CBF5C01680E072",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Peach Yellow",
+        "view": "side",
+        "file": "peach-yellow-side.png",
+        "sha256": "DB302855DADFA478E4A1165691D06C46082DFB6098B3DAF4545DBA7DD797FAD7",
+        "dimensions": {
+          "width": 1024,
+          "height": 1535
+        }
+      },
+      {
+        "colour": "Peach Yellow",
+        "view": "front",
+        "file": "peach-yellow-front.png",
+        "sha256": "C9384881090E94077BBFDB3FCB4BBEA395BDFEA0C378411D8424D937A866CDA5",
+        "dimensions": {
+          "width": 1003,
+          "height": 1568
+        }
+      },
+      {
+        "colour": "Egyptian Blue",
+        "view": "hero_three_quarter",
+        "file": "egyptian-blue-hero-three-quarter.png",
+        "sha256": "C62B803FAEC7970F868505B4177DDE73466610963DD29E1BA73F7EB788EEE12B",
+        "dimensions": {
+          "width": 1023,
+          "height": 1537
+        }
+      },
+      {
+        "colour": "Egyptian Blue",
+        "view": "back",
+        "file": "egyptian-blue-back.png",
+        "sha256": "A0B86E7B78E2A4F9AD7D3B6721415E2D515731A2601414BF2D460446F8A554D6",
+        "dimensions": {
+          "width": 1023,
+          "height": 1537
+        }
+      },
+      {
+        "colour": "Egyptian Blue",
+        "view": "side",
+        "file": "egyptian-blue-side.png",
+        "sha256": "2663796C16F6A8D35F23DD1FF82CF8AC4CE9F66B0278845110F8E10E0C74136D",
+        "dimensions": {
+          "width": 1023,
+          "height": 1537
+        }
+      },
+      {
+        "colour": "Egyptian Blue",
+        "view": "front",
+        "file": "egyptian-blue-front.png",
+        "sha256": "F8FC1C4A8284B5178FF019D86E464645F05428E408B59193B5B25BAFCABF437C",
+        "dimensions": {
+          "width": 1003,
+          "height": 1568
+        }
+      },
+      {
+        "colour": "Gray",
+        "view": "hero_three_quarter",
+        "file": "gray-hero-three-quarter.png",
+        "sha256": "6E2AC082102DEB15343FF88B15760A81CB84E491D3DB2D9B5EEABAE5F1C2F9F0",
+        "dimensions": {
+          "width": 1023,
+          "height": 1537
+        }
+      },
+      {
+        "colour": "Gray",
+        "view": "back",
+        "file": "gray-back.png",
+        "sha256": "F97EE3EFB739D57A8FD46ACF7454A35D943601D8583936AD081911516BEB8E4F",
+        "dimensions": {
+          "width": 1023,
+          "height": 1537
+        }
+      },
+      {
+        "colour": "Gray",
+        "view": "side",
+        "file": "gray-side.png",
+        "sha256": "3D87067F4DC440DD41DC409A9E0663E9D80B42576E887B30B9B275167266A708",
+        "dimensions": {
+          "width": 1023,
+          "height": 1537
+        }
+      },
+      {
+        "colour": "Gray",
+        "view": "front",
+        "file": "gray-front.png",
+        "sha256": "48948514AEDDE30619E5D095784609C38E04DB52FA0FC361A8A8B45DB3CD58C7",
+        "dimensions": {
+          "width": 1003,
+          "height": 1568
+        }
+      },
+      {
+        "colour": "Red",
+        "view": "hero_three_quarter",
+        "file": "red-hero-three-quarter.png",
+        "sha256": "C48CAEDFAE435FE3EB72101CE4C80866122CB0E9BB9B09246A3A9CB13E15EF51",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Red",
+        "view": "back",
+        "file": "red-back.png",
+        "sha256": "F7D8BE3DDD8A80058C2096E0D3A9DF05F122FEAC864D47469AA0C16DF529B384",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Red",
+        "view": "side",
+        "file": "red-side.png",
+        "sha256": "0CD764D87E3807418A72038DAF145A6796C3110B0852A8797FEEB646D490A8DA",
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "colour": "Red",
+        "view": "front",
+        "file": "red-front.png",
+        "sha256": "057E331B9C978B255DF309C0FFB2041E8C193606CB84E0A1853B72C7A9A4F0D7",
+        "dimensions": {
+          "width": 1003,
+          "height": 1568
+        }
+      }
+    ]
+  }
+}

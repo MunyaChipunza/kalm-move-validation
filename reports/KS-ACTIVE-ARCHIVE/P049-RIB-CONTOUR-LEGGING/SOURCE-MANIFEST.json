@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "productCode": "P049",
+  "reviewStage": "approved_hidden_archive_package_pending_final_range_review",
+  "representativeApproval": {
+    "approvedBy": "Munya",
+    "approvedAt": "2026-07-14",
+    "scope": "White representative styling and working name only; it authorised the remaining confirmed P049 colours for review."
+  },
+  "fullProductApproval": {
+    "approvedBy": "Munya",
+    "approvedAt": "2026-07-14",
+    "scope": "Complete six-colour P049 product package, including manual-label colour representations after physical comparison; public release remains unauthorised."
+  },
+  "workingName": "KS Active Rib Contour Legging",
+  "workingSlug": "ks-active-rib-contour-legging",
+  "sourceAuthority": {
+    "construction": "Supplier listing image retained unaltered",
+    "physicalStock": "Munya explicit manual P049 stock record",
+    "physicalPhoto": "not supplied; every stocked physical colour must be compared before final product approval"
+  },
+  "driveSourceFolder": {
+    "id": "19OT_erT6AJKofKhvb47Jx4Zi-M3c59Rj",
+    "name": "P049 - Rib Contour Legging",
+    "parentId": "1GHTJ7u2XZzEX75Bp3bt4N6SdknNHzgXI"
+  },
+  "exactReference": {
+    "supplierUrl": "https://www.alibaba.com/product-detail/High-Waisted-Ribbed-Yoga-Pants-Gym_1600957794526.html",
+    "originalSupplierImageUrl": "https://s.alicdn.com/@sc04/kf/H6c2a071395394b679f92a7e161cc698fh.jpg_960x960q80.jpg",
+    "driveFileId": "1_f7v8FTjw6TthMwjICWKjIFvdXe67Klj",
+    "driveFileName": "P049 supplier reference - High Waisted Ribbed Yoga Pants - White.jpg",
+    "localPath": "assets/images/review-only/ks-active/p049-rib-contour-legging/source-reference/supplier-main.jpg",
+    "sha256": "94E861F940883B9B853351CCD4F8047E1F27CC19B528FC87F29A9BE716931EF9",
+    "dimensions": { "width": 800, "height": 800 },
+    "unaltered": true,
+    "note": "The unaltered supplier composition displays the White legging at right. Other folded colours in the source composition are not selected P049 variants."
+  },
+  "manualColourDisclosure": {
+    "exactSourceColour": "White",
+    "manualPhysicalStockLabelRepresentations": ["Bright Green", "Peach Yellow", "Egyptian Blue", "Gray", "Red"],
+    "rule": "The five non-White review colours represent Munya's physical-stock labels, not independently verified Drive colour references. Munya completed the physical comparison before final P049 approval."
+  },
+  "rejectedCandidate": {
+    "driveFolderId": "1SCD2QlfRdIt-A6g22aIuYM7FjK6rix6_",
+    "driveFolderName": "Seamless Bum Contour Ombre Leggings",
+    "reason": "Different ombré/bum-contour construction; it is not a valid construction or colour authority for P049."
+  }
+}

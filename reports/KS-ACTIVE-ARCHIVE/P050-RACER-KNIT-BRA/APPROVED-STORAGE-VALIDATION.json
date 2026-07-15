@@ -1,0 +1,21 @@
+{
+  "validator": "tools/validate-p050-approved-storage.mjs",
+  "scope": "P050 approved hidden archive storage only",
+  "pass": true,
+  "checks": {
+    "approvedProductPresent": true,
+    "identity": true,
+    "hiddenOnly": true,
+    "stockTotal": true,
+    "stockSkuCount": true,
+    "driveRename": true,
+    "twentyApprovedAssets": true,
+    "storageHashes": true,
+    "approvedArchiveIndex": true,
+    "noPublicProductReference": true
+  },
+  "recordedAt": "2026-07-14",
+  "productionDeployment": false,
+  "zohoUpdated": false,
+  "intranetUpdated": false
+}

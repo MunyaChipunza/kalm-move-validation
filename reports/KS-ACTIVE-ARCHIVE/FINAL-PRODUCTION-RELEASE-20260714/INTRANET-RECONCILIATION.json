@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "capturedAt": "2026-07-15T10:01:59.382610+00:00",
+  "passed": false,
+  "status": "pending_post_deploy_verification",
+  "readAccess": true,
+  "writeEndpointAvailable": false,
+  "expectedAfterDeploy": {
+    "products": 14,
+    "physicalSkus": 104,
+    "physicalUnits": 111
+  },
+  "preDeployObserved": {
+    "ksActiveProducts": 6,
+    "source": "current production products.json via intranet UI/API"
+  },
+  "syncMethod": "Production feed deployment; intranet is a reader of the production products.json feed.",
+  "reason": "Cannot truthfully mark intranet reconciled before the production feed is deployed. Post-deploy verification required."
+}

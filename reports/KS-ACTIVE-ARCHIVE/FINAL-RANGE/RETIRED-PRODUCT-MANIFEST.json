@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "scope": "Future Archive release planning only; existing production records were not changed.",
+  "currentStorefrontMutation": false,
+  "rule": "No product outside the source-and-stock-backed review list may be shown as a future public Archive product.",
+  "excluded": {
+    "secondCountPending": [
+      "P016",
+      "P017"
+    ],
+    "notCountedVariantTotal": 669
+  }
+}

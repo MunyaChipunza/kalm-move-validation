@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-15T09:56:30.839Z",
+  "source": "KALM intranet commerce/ecommerce read APIs",
+  "authenticatedIntranetReadAccess": true,
+  "commerceEndpoint": {
+    "url": "https://intranet.kalmcollective.co.za/api/commerce/products",
+    "status": 200,
+    "count": 70
+  },
+  "ecommerceEndpoint": {
+    "url": "https://intranet.kalmcollective.co.za/api/ecommerce/products",
+    "status": 200,
+    "count": 70
+  },
+  "currentKsCommerceCount": 6,
+  "currentKsEcommerceCount": 6,
+  "currentKsCommerce": [
+    {
+      "id": "ks-high-waist-seamless-leggings",
+      "slug": "ks-high-waist-seamless-leggings",
+      "title": "High Waist Seamless Leggings",
+      "brand": "KS Active",
+      "audience": "",
+      "category": "activewear",
+      "type": "Leggings",
+      "price": 429,
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "availability": "in_stock",
+      "skuRoot": "KS-HIGH-WAIST-SEAMLESS-LEGGINGS",
+      "image": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/black/front.webp",
+      "imageCount": 9,
+      "variantCount": 9,
+      "missingImages": 0,
+      "lowStockVariants": 0,
+      "outOfStockVariants": 0,
+      "updatedAt": "2026-07-11T00:00:00.000+02:00"
+    },
+    {
+      "id": "ks-high-stretch-seamless-leggings",
+      "slug": "ks-high-stretch-seamless-leggings",
+      "title": "High Stretch Seamless Leggings",
+      "brand": "KS Active",
+      "audience": "",
+      "category": "activewear",
+      "type": "Leggings",
+      "price": 399,
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "availability": "in_stock",
+      "skuRoot": "KS-HIGH-STRETCH-SEAMLESS-LEGGINGS",
+      "image": "assets/images/products/ks-active/model-shoot/ks-high-stretch-seamless-leggings/black/front.webp",
+      "imageCount": 6,
+      "variantCount": 6,
+      "missingImages": 0,
+      "lowStockVariants": 0,
+      "outOfStockVariants": 0,
+      "updatedAt": "2026-07-11T00:00:00.000+02:00"
+    },
+    {
+      "id": "ks-open-back-romper",
+      "slug": "ks-open-back-romper",
+      "title": "Open Back Romper",
+      "brand": "KS Active",
+      "audience": "",
+      "category": "activewear",
+      "type": "One-piece",
+      "price": 699,
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "availability": "in_stock",
+      "skuRoot": "KS-OPEN-BACK-ROMPER",
+      "image": "assets/images/products/ks-active/model-shoot/ks-open-back-romper/black/front.webp",
+      "imageCount": 3,
+      "variantCount": 3,
+      "missingImages": 0,
+      "lowStockVariants": 0,
+      "outOfStockVariants": 0,
+      "updatedAt": "2026-07-11T00:00:00.000+02:00"
+    },
+    {
+      "id": "ks-high-waist-seamless-shorts",
+      "slug": "ks-high-waist-seamless-shorts",
+      "title": "High Waist Seamless Shorts",
+      "brand": "KS Active",
+      "audience": "",
+      "category": "activewear",
+      "type": "Shorts",
+      "price": 319,
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "availability": "in_stock",
+      "skuRoot": "KS-HIGH-WAIST-SEAMLESS-SHORTS",
+      "image": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/black/front.webp",
+      "imageCount": 9,
+      "variantCount": 9,
+      "missingImages": 0,
+      "lowStockVariants": 0,
+      "outOfStockVariants": 0,
+      "updatedAt": "2026-07-11T00:00:00.000+02:00"
+    },
+    {
+      "id": "ks-crisscross-back-sports-bra",
+      "slug": "ks-crisscross-back-sports-bra",
+      "title": "Crisscross Back Sports Bra",
+      "brand": "KS Active",
+      "audience": "",
+      "category": "activewear",
+      "type": "Sports bra",
+      "price": 379,
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "availability": "in_stock",
+      "skuRoot": "KS-CRISSCROSS-BACK-SPORTS-BRA",
+      "image": "assets/images/products/ks-active/model-shoot/ks-crisscross-back-sports-bra/blue/front.webp",
+      "imageCount": 9,
+      "variantCount": 9,
+      "missingImages": 0,
+      "lowStockVariants": 0,
+      "outOfStockVariants": 0,
+      "updatedAt": "2026-07-11T00:00:00.000+02:00"
+    },
+    {
+      "id": "ks-dual-zip-long-sleeve-crop",
+      "slug": "ks-dual-zip-long-sleeve-crop",
+      "title": "Dual Zip Long-Sleeve Crop",
+      "brand": "KS Active",
+      "audience": "",
+      "category": "activewear",
+      "type": "Top",
+      "price": 359,
+      "publicationStatus": "published",
+      "visibility": "visible",
+      "availability": "in_stock",
+      "skuRoot": "KS-DUAL-ZIP-LONG-SLEEVE-CROP",
+      "image": "assets/images/products/ks-active/model-shoot/ks-dual-zip-long-sleeve-crop/black/front.webp",
+      "imageCount": 9,
+      "variantCount": 9,
+      "missingImages": 0,
+      "lowStockVariants": 0,
+      "outOfStockVariants": 0,
+      "updatedAt": "2026-07-11T00:00:00.000+02:00"
+    }
+  ],
+  "currentKsEcommerce": [
+    {
+      "id": "ks-high-waist-seamless-leggings",
+      "title": "High Waist Seamless Leggings",
+      "brand": "KS Active",
+      "category": "activewear",
+      "price": 429,
+      "compareAtPrice": 499,
+      "stockLabel": "Selected sizes available",
+      "colors": [
+        "Black",
+        "Wine",
+        "Deep Plum"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "source": "https://kalmcollective.co.za/products.json"
+    },
+    {
+      "id": "ks-high-stretch-seamless-leggings",
+      "title": "High Stretch Seamless Leggings",
+      "brand": "KS Active",
+      "category": "activewear",
+      "price": 399,
+      "stockLabel": "Selected sizes available",
+      "colors": [
+        "Black",
+        "Charcoal"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "source": "https://kalmcollective.co.za/products.json"
+    },
+    {
+      "id": "ks-open-back-romper",
+      "title": "Open Back Romper",
+      "brand": "KS Active",
+      "category": "activewear",
+      "price": 699,
+      "stockLabel": "Selected sizes available",
+      "colors": [
+        "Black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "source": "https://kalmcollective.co.za/products.json"
+    },
+    {
+      "id": "ks-high-waist-seamless-shorts",
+      "title": "High Waist Seamless Shorts",
+      "brand": "KS Active",
+      "category": "activewear",
+      "price": 319,
+      "compareAtPrice": 379,
+      "stockLabel": "Selected sizes available",
+      "colors": [
+        "Black",
+        "Wine",
+        "Deep Plum"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "source": "https://kalmcollective.co.za/products.json"
+    },
+    {
+      "id": "ks-crisscross-back-sports-bra",
+      "title": "Crisscross Back Sports Bra",
+      "brand": "KS Active",
+      "category": "activewear",
+      "price": 379,
+      "stockLabel": "Selected sizes available",
+      "colors": [
+        "Blue",
+        "Black",
+        "Purple"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "source": "https://kalmcollective.co.za/products.json"
+    },
+    {
+      "id": "ks-dual-zip-long-sleeve-crop",
+      "title": "Dual Zip Long-Sleeve Crop",
+      "brand": "KS Active",
+      "category": "activewear",
+      "price": 359,
+      "stockLabel": "Selected sizes available",
+      "colors": [
+        "Black",
+        "Stone",
+        "Taupe"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "source": "https://kalmcollective.co.za/products.json"
+    }
+  ],
+  "legacyProductsExpectedForArchive": [
+    {
+      "oldProductId": "ks-high-waist-seamless-leggings",
+      "oldName": "High Waist Seamless Leggings",
+      "oldSlug": "ks-high-waist-seamless-leggings",
+      "oldPublicRoute": "/products/ks-high-waist-seamless-leggings",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-high-stretch-seamless-leggings",
+      "oldName": "High Stretch Seamless Leggings",
+      "oldSlug": "ks-high-stretch-seamless-leggings",
+      "oldPublicRoute": "/products/ks-high-stretch-seamless-leggings",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-open-back-romper",
+      "oldName": "Open Back Romper",
+      "oldSlug": "ks-open-back-romper",
+      "oldPublicRoute": "/products/ks-open-back-romper",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-high-waist-seamless-shorts",
+      "oldName": "High Waist Seamless Shorts",
+      "oldSlug": "ks-high-waist-seamless-shorts",
+      "oldPublicRoute": "/products/ks-high-waist-seamless-shorts",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-crisscross-back-sports-bra",
+      "oldName": "Crisscross Back Sports Bra",
+      "oldSlug": "ks-crisscross-back-sports-bra",
+      "oldPublicRoute": "/products/ks-crisscross-back-sports-bra",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    },
+    {
+      "oldProductId": "ks-dual-zip-long-sleeve-crop",
+      "oldName": "Dual Zip Long-Sleeve Crop",
+      "oldSlug": "ks-dual-zip-long-sleeve-crop",
+      "oldPublicRoute": "/products/ks-dual-zip-long-sleeve-crop",
+      "removalReason": "Superseded by the physically confirmed fourteen-product KS Active Archive release.",
+      "replacementProduct": null,
+      "internalEvidenceLocation": "Git history and pre-release catalogue state",
+      "rollbackReference": "rollback/kalm-before-ks-active-archive-20260714"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "ks-high-waist-seamless-leggings",
+      "title": "High Waist Seamless Leggings",
+      "skuRoot": "KS-HIGH-WAIST-SEAMLESS-LEGGINGS",
+      "status": "published",
+      "visibility": "visible"
+    },
+    {
+      "id": "ks-high-stretch-seamless-leggings",
+      "title": "High Stretch Seamless Leggings",
+      "skuRoot": "KS-HIGH-STRETCH-SEAMLESS-LEGGINGS",
+      "status": "published",
+      "visibility": "visible"
+    },
+    {
+      "id": "ks-open-back-romper",
+      "title": "Open Back Romper",
+      "skuRoot": "KS-OPEN-BACK-ROMPER",
+      "status": "published",
+      "visibility": "visible"
+    },
+    {
+      "id": "ks-high-waist-seamless-shorts",
+      "title": "High Waist Seamless Shorts",
+      "skuRoot": "KS-HIGH-WAIST-SEAMLESS-SHORTS",
+      "status": "published",
+      "visibility": "visible"
+    },
+    {
+      "id": "ks-crisscross-back-sports-bra",
+      "title": "Crisscross Back Sports Bra",
+      "skuRoot": "KS-CRISSCROSS-BACK-SPORTS-BRA",
+      "status": "published",
+      "visibility": "visible"
+    },
+    {
+      "id": "ks-dual-zip-long-sleeve-crop",
+      "title": "Dual Zip Long-Sleeve Crop",
+      "skuRoot": "KS-DUAL-ZIP-LONG-SLEEVE-CROP",
+      "status": "published",
+      "visibility": "visible"
+    }
+  ],
+  "blocker": "The live intranet commerce catalogue is read-only from available APIs. Product publication is server-side Git/Netlify oriented and does not expose a supported SKU-level intranet sync endpoint."
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2026-07-15T11:51:38+02:00",
+  "passed": true,
+  "checks": {
+    "manifestHashesMatch": true,
+    "uniqueSkuCount": 104,
+    "expectedSkuCount": 104,
+    "physicalUnits": 111,
+    "expectedPhysicalUnits": 111,
+    "noNegativeQuantity": true,
+    "everyUnitHasCostBasis": true,
+    "transferValueEqualsLineSum": true
+  },
+  "transferValueZar": 17062.05,
+  "provisionalCostProductCodes": [
+    "P027",
+    "P033",
+    "P049",
+    "P050"
+  ],
+  "blockingGate": "Kuhle/K SENTWA signed approval is required before transferDocumentsApproved=true and stockOwnershipTransferredToKALM=true."
+}

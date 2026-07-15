@@ -1,0 +1,2246 @@
+{
+  "schemaVersion": 1,
+  "approvedGeneratedPublicAssets": [
+    {
+      "productCode": "P002",
+      "colour": "Army Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/hero-three-quarter.jpg",
+      "sha256": "E676E0BABBAEFC274CC9FFD44BEA288EFE8F4CE8B34A934C6DB7440AF3BF4431",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Army Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg",
+      "sha256": "7963C1608B11B928C4D2F3767C9AC6809DA602639EEBFB198663FA7DC8E6E15A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Army Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/side.jpg",
+      "sha256": "E1179CE3BAD65C28FE04A56CA3E6D59D1DA9D8BE73E864CF475C2E4FFA139B6B",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Army Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/front.jpg",
+      "sha256": "56111EF529595AFB78AE63B7CB8DD029E5000FB076380CB319A84C8D07858D7F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Egyptian Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/hero-three-quarter.jpg",
+      "sha256": "7910A3059FD443778C960AF13C8635BA6260A47873FA17B7F939BC8550D17550",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Egyptian Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/back.jpg",
+      "sha256": "055A14AF805AC208A557B1CEE2F222B88AA2E7C3D5AFBC5D6D86164EF6CBABB8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Egyptian Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/side.jpg",
+      "sha256": "203377008F76A386C40C16109DCD33FCC4454E75CD4A161AB39214856405D922",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Egyptian Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/front.jpg",
+      "sha256": "428A24C14ACA795EC8249AAA4EC11CF0AF9D7F5BC73ED58875D86A06D532C6C3",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Electric Violet",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/hero-three-quarter.jpg",
+      "sha256": "053ECEBE41482387A4CE52713A194F1FB665697D2B9F6B2276B3206E95C0F30D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Electric Violet",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/back.jpg",
+      "sha256": "22C5AA9AA3965DC00950598776E0BDF04880CF857B2FC0775AA0FC601AC224FB",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Electric Violet",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/side.jpg",
+      "sha256": "32E58C4EBC979E38E90BFB7323FB7EFAFD6B9186F021E3EE1A3681A137850FEF",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Electric Violet",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/front.jpg",
+      "sha256": "BF1794DD60708ECB228EC8EE4A4E173D744539CDFBB309F909A949D1D797D36C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Imperial Red",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/hero-three-quarter.jpg",
+      "sha256": "CECDA3811FC3D940BF52656AF9D192D6377142964DA80A3370003127A9593B1C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Imperial Red",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/back.jpg",
+      "sha256": "257A3921518587595C410FD363519E120333798D852B85FE5B64F0543F5D664E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Imperial Red",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/side.jpg",
+      "sha256": "F25FC2C570E1CCAA20FD04FD30643D6B328A9F718B8BAD8A4FB2E58984D22199",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Imperial Red",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/front.jpg",
+      "sha256": "CE12DF1B8F422A26A7D6090EABD777028C569F7774BBB06C83181D781C67A1BC",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Midnight Black",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/hero-three-quarter.jpg",
+      "sha256": "1F29EB6E3E7015D70700E2E30E7DAEF7595C15FC4EE8EB755A01C3E7D3873C16",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Midnight Black",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/back.jpg",
+      "sha256": "1695107195F1DB9B36F8A01F1E07D96AE43945A63010571DEE5A71F25F5FECE7",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Midnight Black",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/side.jpg",
+      "sha256": "2EFB8F4BD3F66D7E66288E9821DEBD58946AD2792D8634B4104A5E7A9EE99D43",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P002",
+      "colour": "Midnight Black",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/front.jpg",
+      "sha256": "58AEBE5349B925EAE5A12C1ADE2E4EF4BB3A45818D464D32EEE3A0405A9E8BDE",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Ash Gray",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/hero-three-quarter.jpg",
+      "sha256": "3FB7E6984B9DF54F39EE1C12634207310CDF2F3537C954977B36D2D6A4D371C8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Ash Gray",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg",
+      "sha256": "7CF855899E36F90AB364CE727C706DE83A2182FACC38A6EF7964D7D0BC8CC3B2",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Ash Gray",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/side.jpg",
+      "sha256": "17EFB495B47861194CBDF825F55283572D365E15C55EB2530012ABAA92C83292",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Ash Gray",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/front.jpg",
+      "sha256": "299F4700258288F838460A54046946B93E17C5F19514C0448D409DFB3AC0171C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Black",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/hero-three-quarter.jpg",
+      "sha256": "3FE2C2E9159F35119FEBC33618FA81B537EC5902277200F13EB1A5FED4E66D54",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Black",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/back.jpg",
+      "sha256": "66015842A9542CDBB6F8810E1D191D8DE1F0CFEEBB8F75016E3C65F2C1BB3CA8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Black",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/side.jpg",
+      "sha256": "76AB2DCDC6538D040290B3BE522DDA3CF266D4B5562DED40E25A9AA507889716",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Black",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/front.jpg",
+      "sha256": "CF3BC3C21E7AB6349CEB8C09ADCF7D54D9B4A9C4CE3ACD6B55BB3FDA6F5F3292",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Chestnut",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/hero-three-quarter.jpg",
+      "sha256": "72F1D0E4D1260F364B2F025E13A6F554509E5367BFF06E50D5B30CE2BD43E435",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Chestnut",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/back.jpg",
+      "sha256": "1752905B14B3842E9049E40A6B1BD7E9ED85B871AC7A8ED7C4091B597700C669",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Chestnut",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/side.jpg",
+      "sha256": "4728BD378BD2FAE87322E2F8B4A44A084D5D8A1F70BDABB9EB83B0039AE0CBC5",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Chestnut",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/front.jpg",
+      "sha256": "B99DD2BB1BE50724FD792B7E65FFD0B3646F2F20B8F8B2830DEA67B9252C7341",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "French Rose",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/hero-three-quarter.jpg",
+      "sha256": "2A105D242B99791055911697FC4F2E001C180C59BE1AA7ECC52A10183BF89181",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "French Rose",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/back.jpg",
+      "sha256": "845FE92595BAFAC8C3C7F38268AF7FB008552F35DE4FFDE96E1FAC5FD14E4886",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "French Rose",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/side.jpg",
+      "sha256": "A82791D225F08905757AA8A2465F5B59CE38057CBC6262EDB9AECC5200D9605A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "French Rose",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/front.jpg",
+      "sha256": "59597761AAE42BB760D1E7A4C60A36CA5D87FD03FC04C8C647AFB0240A439E75",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Sky Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/hero-three-quarter.jpg",
+      "sha256": "3F610885DB22A0B40D73BB1819BE19D53D64F36244F85143A372FF421B583F60",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Sky Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/back.jpg",
+      "sha256": "CA5128163969BF8C54D802D2D2E0320B231C74A719BBDBF95BDA09E31E60F4EF",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Sky Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/side.jpg",
+      "sha256": "953FBBACF573F3A890F847851845CC4FBC010860B09016B379D54E59221D0DC8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P003",
+      "colour": "Sky Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/front.jpg",
+      "sha256": "8BE95F2D46F606FEE92FD5118E1ACE727B3F417C0E0CA01267F6F55CA22B3F6A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Imperial Red",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/hero-three-quarter.jpg",
+      "sha256": "6BADCE5A727D44FDD390BD8835BBA749BD621ED6FC65CEE6EAD4A9E6784ADA80",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Imperial Red",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg",
+      "sha256": "097BF1CFCDBBD4BF41777BFBB31CCF2E0FCFB6DE45697DEA6D2D607ABD230E44",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Imperial Red",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/side.jpg",
+      "sha256": "8BCF520D0CE1628A855E472559830872038D6BEDEA7230E3C0A5ECADC40AE18F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Imperial Red",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/front.jpg",
+      "sha256": "7A285854EE4FA8934C85A58675FABCDB166BDDF61A8DF297089F7AB4F078372B",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Peach Yellow",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/hero-three-quarter.jpg",
+      "sha256": "0C92A4F5E3FAEC7AE9DA82D9B1EC8767256B8F46F5E0AE2A43C93A68A1C15F5D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Peach Yellow",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/back.jpg",
+      "sha256": "0A7E5DABEE668AF74B68D2058314C93ECE2CB168A5231F6BD71B8DA0A5243C29",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Peach Yellow",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/side.jpg",
+      "sha256": "A7EC836AB4023CE00B70982F388C55B02624B9071A36862DDBE41B33061F07A9",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Peach Yellow",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/front.jpg",
+      "sha256": "D9ECAD4C82955926A909042256AF87573C272E5A4A8B70A02DE29BBBECCFD123",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Pearl Gray",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/hero-three-quarter.jpg",
+      "sha256": "C693B5900D3B74B9A8B4C9A4A2EFCBD9146E1DAB8128B3CBBA6D4124075BA279",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Pearl Gray",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/back.jpg",
+      "sha256": "B031393244FE6B962232C4A572C9F0E1E6419896CCE8A2E36E305668625EF85D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Pearl Gray",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/side.jpg",
+      "sha256": "1E82514D6D65D15111725C9AB4BF6615D59360B9F31070966846E1E2523000C4",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P010",
+      "colour": "Pearl Gray",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/front.jpg",
+      "sha256": "4F8DB81EE2C49843981BFABFE7817A8348869811FA0946E634C41345031CC223",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Egyptian Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/hero-three-quarter.jpg",
+      "sha256": "A5F62C51FACF8A691B16C32218DFA71BDA6B6E9E26B92274DDF2FD26BE7E9CB0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Egyptian Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg",
+      "sha256": "173971850D90FA48A1302608E919A7A472CDC56657FB37F10BBAA6C0FE9273B7",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Egyptian Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/side.jpg",
+      "sha256": "AB49FA0AEA677546038CCE2A121FC2B8944113FC550BA0F6FB513639BB9F5D14",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Egyptian Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/front.jpg",
+      "sha256": "43E20AE8FA496B2F84F8D447519F70735C076EAF14F83BE74BA507E1237E57E0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Imperial Red",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/hero-three-quarter.jpg",
+      "sha256": "9325B3A9A9E7127969219F94377E52AD84338700FC38E89D4329A9DB7621A3F9",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Imperial Red",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/back.jpg",
+      "sha256": "D76B18D51C9E66EA888E347B9337D274084D4D54C69112B025D0FC8781E8A9C6",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Imperial Red",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/side.jpg",
+      "sha256": "D0BB1828689A86913AF554377E069E2A4CA47CFE79811BCF404B9A276444604F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Imperial Red",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/front.jpg",
+      "sha256": "FBCC2EA49923719B87E1ADCDA5F1096176935B314154C9266B51521C9F538D07",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Peach Yellow",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/hero-three-quarter.jpg",
+      "sha256": "82D7A5DC3905AB72DCCB81AA409B52DC03E95B4A55D406E3C16954EA0BFA9802",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Peach Yellow",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/back.jpg",
+      "sha256": "F3ED54CE7F075D8B41E57FF8065451ED8AAA580393136A74F1644E27AF479E76",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Peach Yellow",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/side.jpg",
+      "sha256": "B5211F0D95BA72385346F7771EF24BDECD46E12B0F1CC55D68670DE7F7017701",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Peach Yellow",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/front.jpg",
+      "sha256": "7607200DD46AD8073B174FAC5685B2BA920A741ACF75224AACF86C2037860514",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Pearl Gray",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/hero-three-quarter.jpg",
+      "sha256": "3D4A50C407FDC9F003A4941065FA58E8400FE845E4BE9035260B28A8139F80FA",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Pearl Gray",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/back.jpg",
+      "sha256": "01183545A372B287A58ED8645D5CED0D1F5E283EEF6836BF13D790414BEAF199",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Pearl Gray",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/side.jpg",
+      "sha256": "5C253A0898E06FD4E4CD8630A755D917EB9CB6F87E11A0AE0BB6B013F87AF842",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P012",
+      "colour": "Pearl Gray",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/front.jpg",
+      "sha256": "B9785C57B505F141C572E453660C3244A5386CBB35995DF0C80B18B6E94F637E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Black",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/hero-three-quarter.jpg",
+      "sha256": "627DAA55BE2DBFE8A39638A8770EB155949263CF75B5A6556D83AF5C1217450E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Black",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg",
+      "sha256": "2EBA83CBA5BE40EAA1BF9AB4FC07E8DF9AA9ADC1E8A75CBDADF0BCDDE92F9E3E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Black",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/side.jpg",
+      "sha256": "375403DBC5ACD660390B1DC853A5B4BBB250A90D8344A70F7033DCEA4D44833D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Black",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/front.jpg",
+      "sha256": "752322E6F5A9E2D6FD4DF096DEDC5B2E6B013ACF34058AC26310168CD8780DB3",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Desert Gold",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/hero-three-quarter.jpg",
+      "sha256": "9A450E63B007DAB59D7F06FD2AE0DEA6D9D4AE182C31B115A72568A7FAC36DEA",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Desert Gold",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/back.jpg",
+      "sha256": "EF26C68150E9BB99EF0AAF9548409861D37F9D63FAF4BF9A7415A4F37EE4DEDF",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Desert Gold",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/side.jpg",
+      "sha256": "A7C57BD506C4C1DB557CCAD8C5C457FE276A91901868B7E942EDECBF97D2B70A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Desert Gold",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/front.jpg",
+      "sha256": "FE129F968B5422A5FA26D2E79E7D77BC5D8EA9D34ADB0B95FAE82A6F76B33B08",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Steel",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/hero-three-quarter.jpg",
+      "sha256": "DD138C75BAE42DA9057AD59DCB7120CF25741CCB90217DD53F80DDA899436E15",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Steel",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/back.jpg",
+      "sha256": "D8407779E67C85B156FED0515219343642AED26EB47B752E81DE39FEAFF90161",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Steel",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/side.jpg",
+      "sha256": "484BE4CC8B3FAA176D7623CF9EC60B1E98606BAE434B1E4F2A00BB55428E942E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P019",
+      "colour": "Steel",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/front.jpg",
+      "sha256": "D73513468BE028FC092A769185F73510C94559FC2D70E620350BA9FC23C19950",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Apricot",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/hero-three-quarter.jpg",
+      "sha256": "1A222AB6EDD28AE1957B937A9E5240153A7C24997C1D3B427FF52EDDD1CEFA69",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Apricot",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg",
+      "sha256": "E7364586CDB9DD56320BFDBAFE44BFFA3EAA520C729D16CE8B12BCA611D897F5",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Apricot",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/side.jpg",
+      "sha256": "14FF21D85CC83A4594DA3D344DED435E17A5246D4FE46F254FAA0E176B87FC94",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Apricot",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/front.jpg",
+      "sha256": "E20C48D8906011B86EF28DE5D3B35C760C1660F98E69CF5C8EE0A95D84CC34A2",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Egyptian Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/hero-three-quarter.jpg",
+      "sha256": "D76F21D4505FF4100B070FB0CE151EDDD809EDB60E8C4A65C1CB0DA93F8E4493",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Egyptian Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/back.jpg",
+      "sha256": "B1A3E9DC44A9ED9DBD93EF538EA96013566FB9CC644F8E0D4AB668C90EACA079",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Egyptian Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/side.jpg",
+      "sha256": "DB878E9E8F65AE45AE1128129BF186F1958873088D8720676DE019199BB7E37F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Egyptian Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/front.jpg",
+      "sha256": "A1DF540C4A011600159641D7DA757AA0A66E3DD8AF5BC3BB40B8702C93F484D0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Peach",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/hero-three-quarter.jpg",
+      "sha256": "251BEC5CB3A6F8A461EFD43F2E49B06F94055CBB3D0693F72F0BA523D5FD46A4",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Peach",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/back.jpg",
+      "sha256": "0194CE4C9554E9B15C8B4D5FE7817D197D4253D6C6BA56E3EC34A4A816C7A5A8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Peach",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/side.jpg",
+      "sha256": "687C386EDB2C86EDEA98E5FF05B3A3576AAE3120345A56898C382E8F8C20CE88",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Peach",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/front.jpg",
+      "sha256": "8E3E89D71261372F90C058AAF7B3FFB9DF71B182DBBDA68F0EE1688652EB9E82",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Sapphire",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/hero-three-quarter.jpg",
+      "sha256": "9268363B832215D99D9CA0A9868D9A552085F237AE60FE59459B72084A7FFBFF",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Sapphire",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/back.jpg",
+      "sha256": "DBFE505969B9EDAFE0F60871DFCDCE01FD3300FAEBDD7C5391C64A0C7C81EE4F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Sapphire",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/side.jpg",
+      "sha256": "E2ACD669962AD731F8066B0D5AD0AF9768D097D7819FD6A0A2D961B4BBFA2859",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P020",
+      "colour": "Sapphire",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/front.jpg",
+      "sha256": "6E39586C15427D1389B240391763D4B015CC472E56DCAFFBC895C97740A438B6",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Electric Violet",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg",
+      "sha256": "74B1D50BFECCF203B1939C9FD21355EE3D56823B8FB6620C9B99020B9B6DD93C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Electric Violet",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/back.jpg",
+      "sha256": "F4C18741CBAE33393A34121B7E073E5A1678A1963194646EF58B5120AD3122DA",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Electric Violet",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/side.jpg",
+      "sha256": "550E49F1132CABD266872DD7D57DBD4CC707DEC7CEA775669FB4A571FB109E67",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Electric Violet",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/front.jpg",
+      "sha256": "C916E2C77CA3A4241B408F5911363F931F1EBC59DD64D55FF50888CE5855BF65",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Flamingo",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/hero-three-quarter.jpg",
+      "sha256": "95ABFA10EF88464924D6A2755F6DB2DB4ECBBB43F4D069991F289332E0868A32",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Flamingo",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/back.jpg",
+      "sha256": "5C8FB63FDFB8C3DA808C6D84B592F7975F434B12E2694E5D16D083EF3CDDA746",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Flamingo",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/side.jpg",
+      "sha256": "42E6BA4AE1B080A87A1395A171A4E344E50C47C900D4B3582D332D3E52043453",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "Flamingo",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/front.jpg",
+      "sha256": "56646473EF31DE2D0EC43900C5962860B5C2999DA56202F2B0F9E08DE5D071E8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "True Purple",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/hero-three-quarter.jpg",
+      "sha256": "C019B82ADF13594FE7CB78A61704ED0C4960285C58E72244746BEDBDC05337C3",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "True Purple",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/back.jpg",
+      "sha256": "49875441F38A8A3681CEE3C2B260F0EE04B86C0EADBF512B41EF174FE4591C2C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "True Purple",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/side.jpg",
+      "sha256": "FF7ED9E20678E67B243693CA6B36170E90FD10BF0C06D0534573FCD1EE682DCE",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P026",
+      "colour": "True Purple",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/front.jpg",
+      "sha256": "946F266534BB1561CC9E4143FE205DBF2F4B4064017A36E064F288296DAE4BC2",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Espresso",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/hero-three-quarter.jpg",
+      "sha256": "B52EDB161A0BB8BF89524F6374CE10D70732969BA3E5065BE6029CDDEBC914F8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Espresso",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg",
+      "sha256": "36E6D8D94DCD11EA2A537284D5A579D15C1E1C17F3ADB3E58E03B45425DD4FA7",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Espresso",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/side.jpg",
+      "sha256": "9907D9FD67794613453B50259BBBC9A079D48E5ACE95E21D065976E3B12E73C4",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Espresso",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/front.jpg",
+      "sha256": "39BC05A16D063564CC0727D6A79F1848C1EC113B91C727AF1D7FE299B6F9A1FD",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Forest Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/hero-three-quarter.jpg",
+      "sha256": "F03D1F068B85EE34CE2B05A42E3489FC4EDD314FD70144DEE01483AA4BAD2728",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Forest Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/back.jpg",
+      "sha256": "4C4A5CB1DFBC9FE054CFD28A9933D9AAA090150FD1929B81E61B4C104A76E49C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Forest Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/side.jpg",
+      "sha256": "2D85D57EE10CBFEDB77CC02E0C99F1CC3E4FD11C616147D3F55AA072205D2027",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Forest Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/front.jpg",
+      "sha256": "C76E7FBFAC96A55A7376B770E3B446B051B1C4DD08A2B386C4A0DD55F4C6F9DA",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Olive",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/hero-three-quarter.jpg",
+      "sha256": "EBCAA59BEB7D2B6DF3EA24CA4A5F835E5A85778128A381926F66B96EF1D72743",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Olive",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/back.jpg",
+      "sha256": "FDDD3EBABB22B41976F8BB0E567105F8DA2FDF4AD3308CE67DDDC978B2147A0A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Olive",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/side.jpg",
+      "sha256": "3CB3626019EC5ADFF2A8F9CEC7580AE8179AF0B9F4CA5F450012928D036FFAF8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P027",
+      "colour": "Olive",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/front.jpg",
+      "sha256": "12436321003B47F656BF2A2DAEBBA7DE3084A063B4CB7CACC4006B8035BC0A10",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "Electric Violet",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg",
+      "sha256": "B08BD5868E083D9A29CE1F640731A0B25B409298A9C7BDA7D212B11820807B10",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "Electric Violet",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/back.jpg",
+      "sha256": "80FEF01F3380E78468872034BA78AC8F36A03D6FA3FABC2A172AC74F59860D30",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "Electric Violet",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/side.jpg",
+      "sha256": "65D249ABA39B125BF093BFD25B938685A4013600B4F01A06D9B94BBEE5E2A7A9",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "Electric Violet",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/front.jpg",
+      "sha256": "717390351F7DF4A31388904E9D2EFEEF2BEC701AEE686E7B5DC5986EE36FF24E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "True Purple",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/hero-three-quarter.jpg",
+      "sha256": "4D7750D454E671E54FDC6DC1AB840AFF9BD93C9D7D62B4A7389292B4B7D614B0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "True Purple",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/back.jpg",
+      "sha256": "C8F5D74F34245FEDB6EB168FDFF2D42BE990A227F34941F160E37722D9A53652",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "True Purple",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/side.jpg",
+      "sha256": "3064910071049D02C2E1EECA3A66BAEE206A567195CA0E4CA4CBAE62AA979D5E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P028",
+      "colour": "True Purple",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/front.jpg",
+      "sha256": "3B4BB7996EC583D3FBB5363D9FC8FB187EB7E39F33413229EDA2ED68959ABC00",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "Black",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/hero-three-quarter.jpg",
+      "sha256": "B6EA84A1E54656ADE6D8BBE78CE3165976C57FE7C63EE34D316333057856F635",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "Black",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg",
+      "sha256": "988A6AE555D6C3F8ACCF8B88FC6EEDCFFB1BEC1AE75C4F1FB07144A77B882271",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "Black",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/side.jpg",
+      "sha256": "7461E8A1EEBA189C117B1E942646D527D7956C24AA6CE0B28D7A0125D7A0C84E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "Black",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/front.jpg",
+      "sha256": "64C1CBFE6105A8662BD167CD07686F48143B29508314DBD08C4C356EC265DFA2",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "True Purple",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/hero-three-quarter.jpg",
+      "sha256": "6434D6E5EE0FCE352AB577A99C29AD31A74CB8067C8F8DC0C8F7B28D126158F0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "True Purple",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/back.jpg",
+      "sha256": "E1399545317C0B537B6FAD5E4D218EB8A6E5AC1CD7977954B8B6AEFE1677F0B6",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "True Purple",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/side.jpg",
+      "sha256": "6A23BF1AA210D5D5E44FAB69EC7ACF1D3E9F93B02EC954C8500C2696815EF64A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P030",
+      "colour": "True Purple",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/front.jpg",
+      "sha256": "A41CBF09F9487B9D40B198BA5640A730F5BD35C96EAC8929D3159BFF13F5AFD3",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Azure Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+      "sha256": "1DBDD9FD872D46B0E6D5E68CC9914A855FFD1C622F59AA26DC8BA828291ACBAA",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Azure Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/back.jpg",
+      "sha256": "6E6CE4A5095C02022D63EECEEF599FAC5791313AB021A671C26AEB8C72544BD3",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Azure Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/side.jpg",
+      "sha256": "5AFD20BE958A018A0861D0664086E5EB8FEF00458C291855CDBC452BCC682671",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Azure Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/front.jpg",
+      "sha256": "91984AAB7055F655D895BF1E6852D4DEB677BF671EBDAC9929352767567E0EFB",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Byzantine Violet",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/hero-three-quarter.jpg",
+      "sha256": "6076F8428BF0B9BB0B6D6DDCA2AE1D9A463074390881874E966B5F1B9176654B",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Byzantine Violet",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/back.jpg",
+      "sha256": "6EF6A31538039016F23DA68B98366130947705B42B771BF4F440E6DDB98FD051",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Byzantine Violet",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/side.jpg",
+      "sha256": "AB17BC4272C0D5B72E43A1A1A23C00711936A43F728F832322FAFEAA86A95B0F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Byzantine Violet",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/front.jpg",
+      "sha256": "48AC38E82F99028312A6B41F9C6CCCBF0DA4CB962AC71CE1C6C910272FA0BB3E",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Cinnamon",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/hero-three-quarter.jpg",
+      "sha256": "6E40F0DBE75FB48E88576EFF701090055E1BA835CAE10881168A6FAA12F17E3B",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Cinnamon",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/back.jpg",
+      "sha256": "BF386A90B131617F1048072FD47E0149AB4FE4E48FCE305D012EEEBB9F93C3E6",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Cinnamon",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/side.jpg",
+      "sha256": "6D39991AC7113D658B33F8741BD4A0BFBAEC7251DDAC50444BFCAB60F27B0210",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Cinnamon",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/front.jpg",
+      "sha256": "233E457DB7C04421A9F4327F025B5FBF9EE525CCDA250FFAAA130E52B0EFD96C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Hunter Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/hero-three-quarter.jpg",
+      "sha256": "836262D682116437956F497BAE4538BB3ADA9AD8C2FAFEBA0AD4D5CF63218437",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Hunter Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/back.jpg",
+      "sha256": "E9405AD46AD6295BB51409D3D98AFCCEF88B538AFA8B8A2282B846FDB114BAB5",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Hunter Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/side.jpg",
+      "sha256": "1BD05B08B69548190BFD0CE25E4E811372A819BA5C196DC4C8591E547898062A",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Hunter Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/front.jpg",
+      "sha256": "78086DE66ED00BA36A365F74E199075FF5F39F414062264B185ECD76F8771726",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Iron Gray",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/hero-three-quarter.jpg",
+      "sha256": "B272A29DE4BCF19BFD96B0802C12C7EEEEC223586C4C9C5C8D1013C283798242",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Iron Gray",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/back.jpg",
+      "sha256": "D44FE2C6C097D8B6FD7907F614EB7D0C7CF4320ADB39C4BCCE8EA23D41B8F75C",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Iron Gray",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/side.jpg",
+      "sha256": "DFED0C01F48ECCB37AD1C92FF295C86A28903A53054B7575D9364ECD8F5EB899",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Iron Gray",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/front.jpg",
+      "sha256": "445CE6D83F3D30D9D41B4154DE392FC86E41335934CA8FE93CFA3DE4A7084627",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Jungle Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/hero-three-quarter.jpg",
+      "sha256": "7CF3B7F2FB7F9B0287CDB3ED9A9045DF349696D3386ADA55B231036DD997662F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Jungle Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/back.jpg",
+      "sha256": "303308B8FD4DF71BF53EF01275528DA5418BEF68A2D3F442AEF956324C860B22",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Jungle Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/side.jpg",
+      "sha256": "6D2343B72F62812F461A0865C76ABF2FB187D5CA1AA72047BBAD7C6F8EB6E3C0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Jungle Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/front.jpg",
+      "sha256": "ACD7264CE2C6A51E0082626A676073735F159854FF258F887EECE1B3CFAE3D8F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Mauve",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/hero-three-quarter.jpg",
+      "sha256": "EBB568F199E11DA36D48859B8EB39D0089B700BF8562AF055A95DE60BA00CCB7",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Mauve",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/back.jpg",
+      "sha256": "B483D7255317C3A916EF5B9B3DA6891DFC373856DE59C7E2886AE194EC62B20D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Mauve",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/side.jpg",
+      "sha256": "92FF6F97CDEDAA595E8B21B80313FEA109D60C139016303D2D01138123CE1E06",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Mauve",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/front.jpg",
+      "sha256": "7E7226A5F8D7DAC985423136B7D6D59B007547F72A0D9D4F78B183FC5AC503AB",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Pine Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/hero-three-quarter.jpg",
+      "sha256": "23EA9897BD32ABFBBFFA4AA655B4943A9475AD0DEC5C442A2CF9796B4D4779AE",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Pine Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/back.jpg",
+      "sha256": "628AE57BBFD46AEE9AF7C73DFC137806FD63F8C86B0F7EA2317B514635F07FBC",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Pine Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/side.jpg",
+      "sha256": "8A3D40527A13E65B9937096397DFD76C4B769269F98041A5297B36319910C607",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P033",
+      "colour": "Pine Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/front.jpg",
+      "sha256": "9CB1B444AAF52423EEB4A739530F4090E58DC1587442749337F6E934C8A2F2FE",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Imperial Red",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/hero-three-quarter.jpg",
+      "sha256": "93F72829CFF673A26B624481393D3291E9F67D2A5FC0DEA5B42958E326DC7682",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Imperial Red",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg",
+      "sha256": "202580950D0DFD9A0CB2D36C910408E97B0E064DEB71FC44F094ED960B4712BD",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Imperial Red",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/side.jpg",
+      "sha256": "933ED0E5238F5C951461FB9895F131CEBED7358405433551CC1CDF052C0FA8B0",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Imperial Red",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/front.jpg",
+      "sha256": "2E069F8147C5B56AE5518DE4A1A36B82D2D03FCC64DC9D18A74E09945C3F2364",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Peach Yellow",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/hero-three-quarter.jpg",
+      "sha256": "01B5D7A9A1D16C47F65326C044891762424E4D21859B266046F9B5F02C49F5C8",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Peach Yellow",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/back.jpg",
+      "sha256": "3345F2540E6F3A55337A9B448F891A81E3594BE43451BE56600391DBBBF4B8BC",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Peach Yellow",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/side.jpg",
+      "sha256": "EC71D75AAC4F647FD9C4F29E8C0BB5B096C9AE7BB3E4C2A082886C291C373238",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Peach Yellow",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/front.jpg",
+      "sha256": "7314E4176624494CBBB26F6AEBD6B0510D1C73339876BB75C7544F9604588B4D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Pearl Gray",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/hero-three-quarter.jpg",
+      "sha256": "4D981758E31E437D1088FC7615E8419B59B830F72AD4C57B0217F4E7400BEB6F",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Pearl Gray",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/back.jpg",
+      "sha256": "3F66053AC1AE6C1423C0504BE43750F02C148978734F25FF8F1FD296D5E68084",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Pearl Gray",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/side.jpg",
+      "sha256": "9FA87A34EDE9514D02C3B5C9A4F1E18D62D69D7F73F01731696E04CF18B61F7D",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P035",
+      "colour": "Pearl Gray",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/front.jpg",
+      "sha256": "D9F277EDA2A7F4546AE24F4173EE7E1ECECCF9648210F6AD9ADE4D3AA2C596D3",
+      "format": "JPEG",
+      "width": 619,
+      "height": 619
+    },
+    {
+      "productCode": "P049",
+      "colour": "Bright Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png",
+      "sha256": "7A5EABEB4541B3E6FBA4BFB6585DAE2A5B69CE8526EC9DEAFF58780CE71CB5F3",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Bright Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-back.png",
+      "sha256": "E9B914CBE409D1E3A277670FE5C1F4D9918C7050FD6C460679CEF110A4F1D947",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Bright Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-side.png",
+      "sha256": "66C12F27A8CA57EC9FCA26FDD31D48A552EF21651354AB607CD1F2FA9B96B173",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Bright Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-front.png",
+      "sha256": "986C14B2C08A1E51DCC7D74B6A4DBFC4D379EEF309A9C98ACF05D414F6EAEF6A",
+      "format": "PNG",
+      "width": 1009,
+      "height": 1558
+    },
+    {
+      "productCode": "P049",
+      "colour": "White",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-hero-three-quarter.png",
+      "sha256": "363BF8C84B3D9DC863B7C7E628945E710EE3330B93DBAF8A8DEF495428DA49FD",
+      "format": "PNG",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "productCode": "P049",
+      "colour": "White",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-back.png",
+      "sha256": "96627C69DEED75903280062269787E4B9B7F7D88D27CD43F18DB82C769647E12",
+      "format": "PNG",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "productCode": "P049",
+      "colour": "White",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-side.png",
+      "sha256": "1DC09AF5FA3E1EEB6D349DAD63B7FF8470649A344554DE35E9C1FECB4BE30C81",
+      "format": "PNG",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "productCode": "P049",
+      "colour": "White",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-front.png",
+      "sha256": "16A4E73CD053701395D9A8CDDCC18754B8789CA9472C541D112820656AB70AB4",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P049",
+      "colour": "Peach Yellow",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-hero-three-quarter.png",
+      "sha256": "6C1F70D8CBAFDD33F707D5C8691C2AA87B53445530CB33BA4F3F3A1BBA899DAE",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Peach Yellow",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-back.png",
+      "sha256": "CBCE4762096ACA08AD3D87D2F3B37B54C22748B9DD57F73B88CBF5C01680E072",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Peach Yellow",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-side.png",
+      "sha256": "DB302855DADFA478E4A1165691D06C46082DFB6098B3DAF4545DBA7DD797FAD7",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1535
+    },
+    {
+      "productCode": "P049",
+      "colour": "Peach Yellow",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-front.png",
+      "sha256": "C9384881090E94077BBFDB3FCB4BBEA395BDFEA0C378411D8424D937A866CDA5",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P049",
+      "colour": "Egyptian Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-hero-three-quarter.png",
+      "sha256": "C62B803FAEC7970F868505B4177DDE73466610963DD29E1BA73F7EB788EEE12B",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P049",
+      "colour": "Egyptian Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-back.png",
+      "sha256": "A0B86E7B78E2A4F9AD7D3B6721415E2D515731A2601414BF2D460446F8A554D6",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P049",
+      "colour": "Egyptian Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-side.png",
+      "sha256": "2663796C16F6A8D35F23DD1FF82CF8AC4CE9F66B0278845110F8E10E0C74136D",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P049",
+      "colour": "Egyptian Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-front.png",
+      "sha256": "F8FC1C4A8284B5178FF019D86E464645F05428E408B59193B5B25BAFCABF437C",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P049",
+      "colour": "Gray",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-hero-three-quarter.png",
+      "sha256": "6E2AC082102DEB15343FF88B15760A81CB84E491D3DB2D9B5EEABAE5F1C2F9F0",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P049",
+      "colour": "Gray",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-back.png",
+      "sha256": "F97EE3EFB739D57A8FD46ACF7454A35D943601D8583936AD081911516BEB8E4F",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P049",
+      "colour": "Gray",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-side.png",
+      "sha256": "3D87067F4DC440DD41DC409A9E0663E9D80B42576E887B30B9B275167266A708",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P049",
+      "colour": "Gray",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-front.png",
+      "sha256": "48948514AEDDE30619E5D095784609C38E04DB52FA0FC361A8A8B45DB3CD58C7",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P049",
+      "colour": "Red",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-hero-three-quarter.png",
+      "sha256": "C48CAEDFAE435FE3EB72101CE4C80866122CB0E9BB9B09246A3A9CB13E15EF51",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Red",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-back.png",
+      "sha256": "F7D8BE3DDD8A80058C2096E0D3A9DF05F122FEAC864D47469AA0C16DF529B384",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Red",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-side.png",
+      "sha256": "0CD764D87E3807418A72038DAF145A6796C3110B0852A8797FEEB646D490A8DA",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P049",
+      "colour": "Red",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-front.png",
+      "sha256": "057E331B9C978B255DF309C0FFB2041E8C193606CB84E0A1853B72C7A9A4F0D7",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P050",
+      "colour": "Dark Green",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-hero.png",
+      "sha256": "D71875BC89FA2BA76103CFC2B27EDC39B54A6ADAFBAF93A450ECB3F256BDE1C2",
+      "format": "PNG",
+      "width": 831,
+      "height": 1893
+    },
+    {
+      "productCode": "P050",
+      "colour": "Dark Green",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png",
+      "sha256": "81ED6E3B35224ECECC46880CA3C282F8C4D698F931B776FF2DB86AA4F6F3ED23",
+      "format": "PNG",
+      "width": 840,
+      "height": 1872
+    },
+    {
+      "productCode": "P050",
+      "colour": "Dark Green",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-side.png",
+      "sha256": "03B881727F79D97F91B39337B8842D3B0FF7D3AC1B0E8AEED2EB3418F3C21880",
+      "format": "PNG",
+      "width": 1023,
+      "height": 1537
+    },
+    {
+      "productCode": "P050",
+      "colour": "Dark Green",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-front.png",
+      "sha256": "9709AFC03251D2064F165619976543A156284CBA64125B40A51BD84EC201F6A0",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "productCode": "P050",
+      "colour": "Espresso",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-hero-three-quarter.png",
+      "sha256": "085EF91A87EC79A3C2BEA3DF3C7A91C2C2A88EB4DAF5EE5C58168E3F8930D475",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P050",
+      "colour": "Espresso",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-back.png",
+      "sha256": "B94B1B27DB57FBAFABF95E1D9A2EAACC41E3BE3CA6B5B7102D0D23A7AB2EDEDC",
+      "format": "PNG",
+      "width": 970,
+      "height": 1621
+    },
+    {
+      "productCode": "P050",
+      "colour": "Espresso",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-side.png",
+      "sha256": "E34FD2598204835C325BAE9EC833D5C88EBBB5609603C67D2254A66DEED90068",
+      "format": "PNG",
+      "width": 960,
+      "height": 1639
+    },
+    {
+      "productCode": "P050",
+      "colour": "Espresso",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-front.png",
+      "sha256": "C659AF48949AD2F54E4DCDF61FAAF0315BCEA0C84B3F1A2B23D08494DF9D5A06",
+      "format": "PNG",
+      "width": 971,
+      "height": 1619
+    },
+    {
+      "productCode": "P050",
+      "colour": "Iron Blue",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-hero.png",
+      "sha256": "85F3B9FD2A1CF6979C25FD72FDD58393D8DDA8624948FAB58287975AA4EFACC6",
+      "format": "PNG",
+      "width": 971,
+      "height": 1619
+    },
+    {
+      "productCode": "P050",
+      "colour": "Iron Blue",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-back.png",
+      "sha256": "750C2900F620918EC3B3B8302B6746620805B9AEFAC42030A85DD7F2C9CDFD9B",
+      "format": "PNG",
+      "width": 972,
+      "height": 1619
+    },
+    {
+      "productCode": "P050",
+      "colour": "Iron Blue",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-side.png",
+      "sha256": "5767BEB09A3B3906D591E4633061601494BEFAB2BEC33CFFCFB64BE1AC2448E5",
+      "format": "PNG",
+      "width": 971,
+      "height": 1619
+    },
+    {
+      "productCode": "P050",
+      "colour": "Iron Blue",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-front.png",
+      "sha256": "A9D5F5F4D4C590FCF5916F9DA420B0918F26AFBB6247DFA3ECDD0275FD602235",
+      "format": "PNG",
+      "width": 971,
+      "height": 1619
+    },
+    {
+      "productCode": "P050",
+      "colour": "Plum",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-front-full.png",
+      "sha256": "099DEEBC7E60D622E153B3FFAE1D532BD3875E2FC46B7AC9008B1ED96DBD1DDA",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P050",
+      "colour": "Plum",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-back-full.png",
+      "sha256": "94642D6604B3B2F9375DEE8AFC817632A6ABB1E5C50416A2A3CEE24134EBBFF1",
+      "format": "PNG",
+      "width": 1009,
+      "height": 1559
+    },
+    {
+      "productCode": "P050",
+      "colour": "Plum",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-side-full.png",
+      "sha256": "7648842A65268B65EE9D29AF75A8AAAD87598DAFE8F17013BDCF8C1176A05CDB",
+      "format": "PNG",
+      "width": 1001,
+      "height": 1571
+    },
+    {
+      "productCode": "P050",
+      "colour": "Plum",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-front.png",
+      "sha256": "824C1B702FF6B83503D21B21171789C9682B77A605FF41ACBA37D7077D669C2A",
+      "format": "PNG",
+      "width": 851,
+      "height": 1847
+    },
+    {
+      "productCode": "P050",
+      "colour": "Violet",
+      "view": "hero",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-hero.png",
+      "sha256": "C85CB0BDFB6634D5417353D19B910D16C317E2934F27EC075C87FB65A50786EC",
+      "format": "PNG",
+      "width": 1003,
+      "height": 1568
+    },
+    {
+      "productCode": "P050",
+      "colour": "Violet",
+      "view": "back",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-back.png",
+      "sha256": "0E9F5B109CD03EB40E84F7D600E3CAD384EED06F71A939DA50B73FF2CDD3440C",
+      "format": "PNG",
+      "width": 992,
+      "height": 1586
+    },
+    {
+      "productCode": "P050",
+      "colour": "Violet",
+      "view": "side",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-side.png",
+      "sha256": "1E42C73AC9A5C6F38BB37FE552ECBE8ABD182A3F42761767F307CAE901ABCA7D",
+      "format": "PNG",
+      "width": 992,
+      "height": 1586
+    },
+    {
+      "productCode": "P050",
+      "colour": "Violet",
+      "view": "front",
+      "path": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-front.png",
+      "sha256": "CDB9B5CC60451F8F672905B584829863BE38AA7AC82DBD8DA26828A4B001136C",
+      "format": "PNG",
+      "width": 992,
+      "height": 1586
+    }
+  ],
+  "privateAndReviewOnlyPathsForbidden": true
+}

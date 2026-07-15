@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P019",
+    "proposed_customer_name": "KS Active Cutout Seamless Bra",
+    "source_title": "High Support Seamless Cut Out Sports Bra",
+    "source_lock": {
+      "construction": "Fine-rib longline training crop top with rounded scoop front, wide lower band, racer-back panel and single centred triangular lower-back cutout.",
+      "forbidden_changes": [
+        "logos",
+        "extra straps",
+        "mesh",
+        "zips",
+        "new cutouts",
+        "changed triangular opening"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-1.png",
+          "sha256": "CC7CF24B91C3C818A5160977E454FB8ED6CCD3AD376C3537EEE4A645D202A5FD",
+          "dimensions": {
+            "width": 2820,
+            "height": 2364
+          },
+          "bytes": 5000773
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p019-cutout-seamless-bra/zip-source-2.png",
+          "sha256": "72B7A96D1F089C3495586C54B58EBD63CC07FFF79859C5B716D194747A77F4C9",
+          "dimensions": {
+            "width": 2820,
+            "height": 2364
+          },
+          "bytes": 4194072
+        }
+      ]
+    }
+  },
+  "colours": [
+    {
+      "colour": "Black",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/generated-multiview-source.png",
+        "sha256": "13A62774943611F633FD6AFC261CAC9EB1C61C718496F5060AD082F24320FB21",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1699993
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/hero-three-quarter.jpg",
+          "sha256": "627DAA55BE2DBFE8A39638A8770EB155949263CF75B5A6556D83AF5C1217450E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 73401
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/back.jpg",
+          "sha256": "2EBA83CBA5BE40EAA1BF9AB4FC07E8DF9AA9ADC1E8A75CBDADF0BCDDE92F9E3E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 74010
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/side.jpg",
+          "sha256": "375403DBC5ACD660390B1DC853A5B4BBB250A90D8344A70F7033DCEA4D44833D",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59706
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/black/front.jpg",
+          "sha256": "752322E6F5A9E2D6FD4DF096DEDC5B2E6B013ACF34058AC26310168CD8780DB3",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 73228
+        }
+      ]
+    },
+    {
+      "colour": "Desert Gold",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/desert-gold/generated-multiview-source.png",
+        "sha256": "5528404BAB267238F13A94CA0DE0B39A3B9D323AF6EE51B6A21804A2E0608140",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1778747
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/desert-gold/hero-three-quarter.jpg",
+          "sha256": "9A450E63B007DAB59D7F06FD2AE0DEA6D9D4AE182C31B115A72568A7FAC36DEA",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 79939
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/desert-gold/back.jpg",
+          "sha256": "EF26C68150E9BB99EF0AAF9548409861D37F9D63FAF4BF9A7415A4F37EE4DEDF",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 77242
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/desert-gold/side.jpg",
+          "sha256": "A7C57BD506C4C1DB557CCAD8C5C457FE276A91901868B7E942EDECBF97D2B70A",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 66290
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/desert-gold/front.jpg",
+          "sha256": "FE129F968B5422A5FA26D2E79E7D77BC5D8EA9D34ADB0B95FAE82A6F76B33B08",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 74789
+        }
+      ]
+    },
+    {
+      "colour": "Steel",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/steel/generated-multiview-source.png",
+        "sha256": "4B01F94F5CC817078574C970F2187DEF294C916B6BD68B2455016F5B6F6F7D84",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1718551
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/steel/hero-three-quarter.jpg",
+          "sha256": "DD138C75BAE42DA9057AD59DCB7120CF25741CCB90217DD53F80DDA899436E15",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 81796
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/steel/back.jpg",
+          "sha256": "D8407779E67C85B156FED0515219343642AED26EB47B752E81DE39FEAFF90161",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 66273
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/steel/side.jpg",
+          "sha256": "484BE4CC8B3FAA176D7623CF9EC60B1E98606BAE434B1E4F2A00BB55428E942E",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 55376
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p019-cutout-seamless-bra/steel/front.jpg",
+          "sha256": "D73513468BE028FC092A769185F73510C94559FC2D70E620350BA9FC23C19950",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 63164
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P019",
+    "validation_time_utc": "2026-07-14T18:07:12.085346+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

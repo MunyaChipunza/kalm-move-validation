@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "visualRangeApprovalRecorded": true,
+  "visualApprovalBy": "Munya",
+  "visualApprovalDate": "2026-07-14",
+  "products": [
+    {
+      "productCode": "P002",
+      "productId": "ks-active-archive-p002-halter-back-romper",
+      "name": "KS Active Halter Back Romper",
+      "slug": "ks-active-halter-back-romper",
+      "price": 799,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Army Green",
+        "Egyptian Blue",
+        "Electric Violet",
+        "Imperial Red",
+        "Midnight Black"
+      ],
+      "imagePaths": {
+        "Army Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/hero-three-quarter.jpg"
+          ]
+        },
+        "Egyptian Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/egyptian-blue/hero-three-quarter.jpg"
+          ]
+        },
+        "Electric Violet": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/electric-violet/hero-three-quarter.jpg"
+          ]
+        },
+        "Imperial Red": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/imperial-red/hero-three-quarter.jpg"
+          ]
+        },
+        "Midnight Black": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/midnight-black/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 11,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P003",
+      "productId": "ks-active-archive-p003-rib-scrunch-legging",
+      "name": "KS Active Rib Scrunch Legging",
+      "slug": "ks-active-rib-scrunch-legging",
+      "price": 499,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Ash Gray",
+        "Black",
+        "Chestnut",
+        "French Rose",
+        "Sky Blue"
+      ],
+      "imagePaths": {
+        "Ash Gray": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/hero-three-quarter.jpg"
+          ]
+        },
+        "Black": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/black/hero-three-quarter.jpg"
+          ]
+        },
+        "Chestnut": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/chestnut/hero-three-quarter.jpg"
+          ]
+        },
+        "French Rose": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/french-rose/hero-three-quarter.jpg"
+          ]
+        },
+        "Sky Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/sky-blue/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 13,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P010",
+      "productId": "ks-active-archive-p010-cutout-crossback-bra",
+      "name": "KS Active Cutout Crossback Bra",
+      "slug": "ks-active-cutout-crossback-bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "imagePaths": {
+        "Imperial Red": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/hero-three-quarter.jpg"
+          ]
+        },
+        "Peach Yellow": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/peach-yellow/hero-three-quarter.jpg"
+          ]
+        },
+        "Pearl Gray": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/pearl-gray/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 6,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P012",
+      "productId": "ks-active-archive-p012-scrunch-seamless-short",
+      "name": "KS Active Scrunch Seamless Short",
+      "slug": "ks-active-scrunch-seamless-short",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Egyptian Blue",
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "imagePaths": {
+        "Egyptian Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/hero-three-quarter.jpg"
+          ]
+        },
+        "Imperial Red": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/imperial-red/hero-three-quarter.jpg"
+          ]
+        },
+        "Peach Yellow": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/peach-yellow/hero-three-quarter.jpg"
+          ]
+        },
+        "Pearl Gray": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/pearl-gray/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 8,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P019",
+      "productId": "ks-active-archive-p019-cutout-seamless-bra",
+      "name": "KS Active Cutout Seamless Bra",
+      "slug": "ks-active-cutout-seamless-bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Black",
+        "Desert Gold",
+        "Steel"
+      ],
+      "imagePaths": {
+        "Black": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/hero-three-quarter.jpg"
+          ]
+        },
+        "Desert Gold": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/desert-gold/hero-three-quarter.jpg"
+          ]
+        },
+        "Steel": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/steel/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 6,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P020",
+      "productId": "ks-active-archive-p020-crossback-seamless-bra",
+      "name": "KS Active Crossback Seamless Bra",
+      "slug": "ks-active-crossback-seamless-bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Apricot",
+        "Egyptian Blue",
+        "Peach",
+        "Sapphire"
+      ],
+      "imagePaths": {
+        "Apricot": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/hero-three-quarter.jpg"
+          ]
+        },
+        "Egyptian Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/egyptian-blue/hero-three-quarter.jpg"
+          ]
+        },
+        "Peach": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/peach/hero-three-quarter.jpg"
+          ]
+        },
+        "Sapphire": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/sapphire/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 12,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P026",
+      "productId": "ks-active-archive-p026-high-waist-seamless-short",
+      "name": "KS Active High-Waist Seamless Short",
+      "slug": "ks-active-high-waist-seamless-short",
+      "price": 419,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Electric Violet",
+        "Flamingo",
+        "True Purple"
+      ],
+      "imagePaths": {
+        "Electric Violet": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/front.jpg"
+          ]
+        },
+        "Flamingo": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/flamingo/front.jpg"
+          ]
+        },
+        "True Purple": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/true-purple/front.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 3,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P027",
+      "productId": "ks-active-archive-p027-curve-seam-legging",
+      "name": "KS Active Curve Seam Legging",
+      "slug": "ks-active-curve-seam-legging",
+      "price": 499,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Espresso",
+        "Forest Green",
+        "Olive"
+      ],
+      "imagePaths": {
+        "Espresso": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/hero-three-quarter.jpg"
+          ]
+        },
+        "Forest Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/forest-green/hero-three-quarter.jpg"
+          ]
+        },
+        "Olive": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/olive/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 7,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P028",
+      "productId": "ks-active-archive-p028-high-waist-seamless-legging",
+      "name": "KS Active High-Waist Seamless Legging",
+      "slug": "ks-active-high-waist-seamless-legging",
+      "price": 529,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Electric Violet",
+        "True Purple"
+      ],
+      "imagePaths": {
+        "Electric Violet": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/front.jpg"
+          ]
+        },
+        "True Purple": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/true-purple/front.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 2,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P030",
+      "productId": "ks-active-archive-p030-crisscross-back-bra",
+      "name": "KS Active Crisscross Back Bra",
+      "slug": "ks-active-crisscross-back-bra",
+      "price": 479,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Black",
+        "True Purple"
+      ],
+      "imagePaths": {
+        "Black": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/hero-three-quarter.jpg"
+          ]
+        },
+        "True Purple": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/true-purple/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 2,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P033",
+      "productId": "ks-active-archive-p033-panel-seamless-legging",
+      "name": "KS Active Panel Seamless Legging",
+      "slug": "ks-active-panel-seamless-legging",
+      "price": 529,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Azure Blue",
+        "Byzantine Violet",
+        "Cinnamon",
+        "Hunter Green",
+        "Iron Gray",
+        "Jungle Green",
+        "Mauve",
+        "Pine Green"
+      ],
+      "imagePaths": {
+        "Azure Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/front.jpg"
+          ]
+        },
+        "Byzantine Violet": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/byzantine-violet/front.jpg"
+          ]
+        },
+        "Cinnamon": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/cinnamon/front.jpg"
+          ]
+        },
+        "Hunter Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/hunter-green/front.jpg"
+          ]
+        },
+        "Iron Gray": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/iron-gray/front.jpg"
+          ]
+        },
+        "Jungle Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/jungle-green/front.jpg"
+          ]
+        },
+        "Mauve": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/mauve/front.jpg"
+          ]
+        },
+        "Pine Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/hero-three-quarter.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/hero-three-quarter.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/pine-green/front.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 18,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P035",
+      "productId": "ks-active-archive-p035-scrunch-seamless-legging",
+      "name": "KS Active Scrunch Seamless Legging",
+      "slug": "ks-active-scrunch-seamless-legging",
+      "price": 499,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Imperial Red",
+        "Peach Yellow",
+        "Pearl Gray"
+      ],
+      "imagePaths": {
+        "Imperial Red": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/hero-three-quarter.jpg"
+          ]
+        },
+        "Peach Yellow": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/peach-yellow/hero-three-quarter.jpg"
+          ]
+        },
+        "Pearl Gray": {
+          "hero": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/back.jpg",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/back.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/side.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/front.jpg",
+            "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/pearl-gray/hero-three-quarter.jpg"
+          ]
+        }
+      },
+      "launchQuantity": 5,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P049",
+      "productId": "ks-active-archive-p049-rib-contour-legging",
+      "name": "KS Active Rib Contour Legging",
+      "slug": "ks-active-rib-contour-legging",
+      "price": 529,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Bright Green",
+        "White",
+        "Peach Yellow",
+        "Egyptian Blue",
+        "Gray",
+        "Red"
+      ],
+      "imagePaths": {
+        "Bright Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-side.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-back.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-front.png"
+          ]
+        },
+        "White": {
+          "hero": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-hero-three-quarter.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-hero-three-quarter.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-side.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-back.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/white-front.png"
+          ]
+        },
+        "Peach Yellow": {
+          "hero": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-hero-three-quarter.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-hero-three-quarter.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-side.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-back.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/peach-yellow-front.png"
+          ]
+        },
+        "Egyptian Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-hero-three-quarter.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-hero-three-quarter.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-side.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-back.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/egyptian-blue-front.png"
+          ]
+        },
+        "Gray": {
+          "hero": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-hero-three-quarter.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-hero-three-quarter.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-side.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-back.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/gray-front.png"
+          ]
+        },
+        "Red": {
+          "hero": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-hero-three-quarter.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-hero-three-quarter.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-side.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-back.png",
+            "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/red-front.png"
+          ]
+        }
+      },
+      "launchQuantity": 7,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    },
+    {
+      "productCode": "P050",
+      "productId": "ks-active-archive-p050-racer-knit-bra",
+      "name": "KS Active Racer Knit Bra",
+      "slug": "ks-active-racer-knit-bra",
+      "price": 399,
+      "currency": "ZAR",
+      "temporaryArchiveLaunchPrice": true,
+      "priceApprovedBy": "Munya",
+      "priceApprovalDate": "2026-07-14",
+      "colours": [
+        "Dark Green",
+        "Espresso",
+        "Iron Blue",
+        "Plum",
+        "Violet"
+      ],
+      "imagePaths": {
+        "Dark Green": {
+          "hero": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-side.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-front.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-hero.png"
+          ]
+        },
+        "Espresso": {
+          "hero": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-back.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-back.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-side.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-front.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/espresso-hero-three-quarter.png"
+          ]
+        },
+        "Iron Blue": {
+          "hero": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-back.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-back.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-side.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-front.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/iron-blue-hero.png"
+          ]
+        },
+        "Plum": {
+          "hero": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-back-full.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-back-full.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-side-full.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-front.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/plum-front-full.png"
+          ]
+        },
+        "Violet": {
+          "hero": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-back.png",
+          "gallery": [
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-back.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-side.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-front.png",
+            "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/violet-hero.png"
+          ]
+        }
+      },
+      "launchQuantity": 11,
+      "visualRangeApprovalRecorded": true,
+      "visualApprovalBy": "Munya",
+      "visualApprovalDate": "2026-07-14"
+    }
+  ],
+  "totals": {
+    "products": 14,
+    "stockedColours": 56,
+    "purchasableVariants": 104,
+    "zeroStockVariants": 0,
+    "physicalLaunchQuantity": 111,
+    "approvedGeneratedPublicAssets": 224
+  }
+}

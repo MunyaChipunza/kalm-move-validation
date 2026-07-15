@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-15T09:56:30.839Z",
+  "protectedReleaseCommit": "53e3dd3bbdd15ebec6ddcf3a0418d8da6ae23c04",
+  "expected": {
+    "products": 14,
+    "stockedColours": 56,
+    "physicalSkus": 104,
+    "physicalUnits": 111,
+    "approvedAssets": 224,
+    "legacyProductsToArchive": 6
+  },
+  "blockers": [
+    "zohoInventoryWritePathUnavailable",
+    "intranetSkuSyncEndpointUnavailable",
+    "threeSystemReconciliationNotPossible"
+  ],
+  "zohoBeforePath": "reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/ZOHO-BEFORE-SYNC.json",
+  "intranetBeforePath": "reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/INTRANET-BEFORE-SYNC.json",
+  "noExternalMutationPerformed": true
+}

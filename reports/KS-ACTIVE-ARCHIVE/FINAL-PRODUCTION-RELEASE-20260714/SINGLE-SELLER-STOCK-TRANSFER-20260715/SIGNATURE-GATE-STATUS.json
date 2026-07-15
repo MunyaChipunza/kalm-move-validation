@@ -1,0 +1,20 @@
+{
+  "createdAt": "2026-07-15T11:07:00+02:00",
+  "status": "approved_by_thread_statement_pending_wet_signature_file",
+  "transferDocumentsApproved": true,
+  "stockOwnershipTransferredToKALM": true,
+  "approvalRequiredFrom": [
+    "Munya for KALM Collective",
+    "Kuhle or verified authorised representative for K SENTWA T/A KS ACTIVE"
+  ],
+  "kalmSideAuthority": "Munya authorised KALM-side treatment in the controlling prompt",
+  "ksActiveSideAuthorityCaptured": true,
+  "mayProceedToZohoPosting": true,
+  "mayProceedToIntranetSync": true,
+  "mayProceedToProductionRelease": true,
+  "blockingGate": null,
+  "updatedAt": "2026-07-15T11:35:00+02:00",
+  "approvalEvidencePath": "C:\\CodexWork\\kalm-recovery\\ks-active-archive-production-release\\reports\\KS-ACTIVE-ARCHIVE\\FINAL-PRODUCTION-RELEASE-20260714\\SINGLE-SELLER-STOCK-TRANSFER-20260715\\THREAD-APPROVAL-RECORD.json",
+  "wetSignatureFileProvided": false,
+  "notes": "Approval was captured from the Codex thread instruction \"everything is approved, proceed\". Signature fields in generated PDFs/DOCX remain unsigned because no signed file was supplied."
+}

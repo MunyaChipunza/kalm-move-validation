@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "status": "hidden_review_candidate_not_approved_for_publication",
+  "product": {
+    "code": "P026",
+    "proposed_customer_name": "KS Active High-Waist Seamless Short",
+    "source_title": "High Waist Seamless Shorts",
+    "source_lock": {
+      "construction": "Smooth matte seamless high-waist short matching the locked P028 legging construction, with a broad straight unfolded high-rise waistband, clean unbroken front, subtle rear centre seam/contour, upper-thigh inseam and clean narrow leg hems.",
+      "forbidden_changes": [
+        "logos",
+        "pockets",
+        "side panels",
+        "mesh",
+        "drawstrings",
+        "scrunch",
+        "rib knit",
+        "contrast piping",
+        "changed waistband",
+        "changed inseam"
+      ],
+      "source_files": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-1.jpg",
+          "sha256": "0B9E67BF5AFF3C781BCF64CFA4B8B2D77AE80594E798E3C84A03FDD55A14236C",
+          "dimensions": {
+            "width": 768,
+            "height": 1152
+          },
+          "bytes": 139000
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-source/p026-high-waist-seamless-short/zip-source-2.jpg",
+          "sha256": "4424C0B08A2CEC35D89670580A997B959FEF0DA0877FE4C0E9DD4D4288D3C427",
+          "dimensions": {
+            "width": 768,
+            "height": 1152
+          },
+          "bytes": 155579
+        }
+      ],
+      "private_source_evidence": "Private front, rear and rear-detail construction evidence is held outside Git and Netlify. The front reference shows the waistband folded down; the standard unfolded high-rise position is confirmed by the matching locked legging construction. No source photograph or likeness is included in this review package."
+    }
+  },
+  "colours": [
+    {
+      "colour": "Electric Violet",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/generated-multiview-source.png",
+        "sha256": "0C778F8E653080E79D4285573553C940B7B9E0F46D6DDD9D53BAC6D8A967FFC6",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1444460
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg",
+          "sha256": "74B1D50BFECCF203B1939C9FD21355EE3D56823B8FB6620C9B99020B9B6DD93C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58507
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/back.jpg",
+          "sha256": "F4C18741CBAE33393A34121B7E073E5A1678A1963194646EF58B5120AD3122DA",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 56995
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/side.jpg",
+          "sha256": "550E49F1132CABD266872DD7D57DBD4CC707DEC7CEA775669FB4A571FB109E67",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 49548
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/electric-violet/front.jpg",
+          "sha256": "C916E2C77CA3A4241B408F5911363F931F1EBC59DD64D55FF50888CE5855BF65",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54701
+        }
+      ]
+    },
+    {
+      "colour": "Flamingo",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/flamingo/generated-multiview-source.png",
+        "sha256": "229D064FEE02CCD9E5CB6D4D3CF32DC79E547A7B4AEC430D5B355038C5B0EB1B",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1508760
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/flamingo/hero-three-quarter.jpg",
+          "sha256": "95ABFA10EF88464924D6A2755F6DB2DB4ECBBB43F4D069991F289332E0868A32",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 62381
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/flamingo/back.jpg",
+          "sha256": "5C8FB63FDFB8C3DA808C6D84B592F7975F434B12E2694E5D16D083EF3CDDA746",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60717
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/flamingo/side.jpg",
+          "sha256": "42E6BA4AE1B080A87A1395A171A4E344E50C47C900D4B3582D332D3E52043453",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 54462
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/flamingo/front.jpg",
+          "sha256": "56646473EF31DE2D0EC43900C5962860B5C2999DA56202F2B0F9E08DE5D071E8",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 58635
+        }
+      ]
+    },
+    {
+      "colour": "True Purple",
+      "candidate_status": "internal_qa_passed_pending_munya_visual_approval",
+      "same_model_within_gallery": true,
+      "supporting_style_disclosure": "Styled with supporting garments and accessories not included.",
+      "master_sheet": {
+        "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/true-purple/generated-multiview-source.png",
+        "sha256": "15A08D7608350F8BC005B411EF23FE0BB421D96011DBBE19D3CD883A80AB50A1",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "bytes": 1570212
+      },
+      "views": [
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/true-purple/hero-three-quarter.jpg",
+          "sha256": "C019B82ADF13594FE7CB78A61704ED0C4960285C58E72244746BEDBDC05337C3",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 64702
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/true-purple/back.jpg",
+          "sha256": "49875441F38A8A3681CEE3C2B260F0EE04B86C0EADBF512B41EF174FE4591C2C",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 60066
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/true-purple/side.jpg",
+          "sha256": "FF7ED9E20678E67B243693CA6B36170E90FD10BF0C06D0534573FCD1EE682DCE",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 52506
+        },
+        {
+          "path": "assets/images/review-only/ks-active/archive-range-draft/p026-high-waist-seamless-short/true-purple/front.jpg",
+          "sha256": "946F266534BB1561CC9E4143FE205DBF2F4B4064017A36E064F288296DAE4BC2",
+          "dimensions": {
+            "width": 619,
+            "height": 619
+          },
+          "bytes": 59385
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "product_code": "P026",
+    "validation_time_utc": "2026-07-14T19:38:34.038610+00:00",
+    "passed": true,
+    "checks": {
+      "all_matched_colours_have_review_packages": true,
+      "four_generated_views_per_colour": true,
+      "source_locks_retained": true,
+      "private_source_evidence_recorded": true,
+      "review_assets_non_public": true,
+      "products_json_untouched": true,
+      "zoho_untouched": true,
+      "intranet_untouched": true,
+      "production_untouched": true
+    },
+    "issues": []
+  }
+}

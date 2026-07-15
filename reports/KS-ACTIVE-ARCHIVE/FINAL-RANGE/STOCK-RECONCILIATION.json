@@ -1,0 +1,36 @@
+{
+  "workbook": {
+    "path": "C:\\Users\\Dell\\OneDrive\\Desktop\\KS_Active_Archive_SKU_Master.xlsx",
+    "filename": "KS_Active_Archive_SKU_Master.xlsx",
+    "fileSizeBytes": 184182,
+    "modifiedAt": "2026-07-13T20:44:03+00:00",
+    "sha256": "91650C7A344172BF33E2550261A5B45DAED4DC31D30A11AB47AF5B618EC2DCED",
+    "physicalCountSheet": "Physical Count",
+    "headerRow": 3
+  },
+  "workbookControls": {
+    "dataRows": 767,
+    "matchedPositiveRows": 87,
+    "secondCountPendingRows": 11,
+    "notCountedRows": 669,
+    "count1PopulatedRows": 98,
+    "count2PopulatedRows": 87,
+    "eligibleProducts": 12,
+    "eligibleUnits": 93
+  },
+  "manualApprovedProducts": [
+    {
+      "productCode": "P049",
+      "units": 7
+    },
+    {
+      "productCode": "P050",
+      "units": 11
+    }
+  ],
+  "sourceBlockedProducts": [],
+  "commercialPublicationBlocked": true,
+  "zohoUpdated": false,
+  "intranetUpdated": false,
+  "productionDeployed": false
+}

@@ -1,0 +1,85 @@
+{
+  "createdAt": "2026-07-15T11:05:00+02:00",
+  "docxStructuralChecks": [
+    {
+      "file": "KALM_ACCOUNTING_TREATMENT_MEMO.docx",
+      "wordDocumentXmlPresent": true,
+      "bytes": 37129
+    },
+    {
+      "file": "KALM_BOARD_RESOLUTION_ACCEPTING_KS_ACTIVE_STOCK.docx",
+      "wordDocumentXmlPresent": true,
+      "bytes": 37106
+    },
+    {
+      "file": "KS_ACTIVE_ARCHIVE_STOCK_SALE_AND_TRANSFER_AGREEMENT.docx",
+      "wordDocumentXmlPresent": true,
+      "bytes": 37677
+    },
+    {
+      "file": "KS_ACTIVE_BRAND_LICENCE_FOR_ARCHIVE_SALE.docx",
+      "wordDocumentXmlPresent": true,
+      "bytes": 37171
+    },
+    {
+      "file": "KS_ACTIVE_SELLER_DECLARATION_AND_TRANSFER_AUTHORITY.docx",
+      "wordDocumentXmlPresent": true,
+      "bytes": 37108
+    }
+  ],
+  "pdfChecks": [
+    {
+      "file": "KALM_ACCOUNTING_TREATMENT_MEMO.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 1907,
+      "sha256": "91FBDDC2D24156D4474C3A2CF9D55F165E2B65A7CF6EBD588C669E833D0E7717"
+    },
+    {
+      "file": "KALM_BOARD_RESOLUTION_ACCEPTING_KS_ACTIVE_STOCK.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 1923,
+      "sha256": "631A2595F1D6A977C7E26E5CA07B056E63D14DC1616999F70C5B94C52EA3CA60"
+    },
+    {
+      "file": "KS_ACTIVE_ARCHIVE_INVENTORY_TRANSFER_SCHEDULE.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 10421,
+      "sha256": "D7CC0519CABC7F6D87612C2C19DB705CFB5A9A10DB97A9BB607147FA27B9203D"
+    },
+    {
+      "file": "KS_ACTIVE_ARCHIVE_STOCK_SALE_AND_TRANSFER_AGREEMENT.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 2579,
+      "sha256": "099031AF319362E26403EF034770098236CB4B29DAA3A1BC2AD37AC49C21C605"
+    },
+    {
+      "file": "KS_ACTIVE_BRAND_LICENCE_FOR_ARCHIVE_SALE.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 1916,
+      "sha256": "3C0BC8CA7CB86D86B15518A3B038A71414D2ACAB3C3966576C5615E258E1E260"
+    },
+    {
+      "file": "KS_ACTIVE_SELLER_DECLARATION_AND_TRANSFER_AUTHORITY.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 1923,
+      "sha256": "1445A45A9569A6F40B75279FD0DDF754BC655B21F067399A36A7F46510843C01"
+    },
+    {
+      "file": "MANAGEMENT_APPROVAL_RECORD.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 1922,
+      "sha256": "4DBEFC2E20DFC49578095155FD0ED1CB5C4812D0316B9D55AD754E35B86F06B6"
+    },
+    {
+      "file": "ZOHO_POSTING_CONTROL_MEMO.pdf",
+      "pdfHeaderPresent": true,
+      "bytes": 1902,
+      "sha256": "16AF650C390A6C9B8506C321A347E711CBD2AB2B78B7BBDA0A02863AB360D008"
+    }
+  ],
+  "docxRenderQa": {
+    "attempted": true,
+    "passed": false,
+    "reason": "render_docx.py failed because LibreOffice/soffice executable was not found in this runtime; direct PDFs were generated with reportlab instead."
+  }
+}

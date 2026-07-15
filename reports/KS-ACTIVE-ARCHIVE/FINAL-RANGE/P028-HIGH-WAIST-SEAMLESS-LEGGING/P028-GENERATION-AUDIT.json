@@ -1,0 +1,15 @@
+{
+  "productCode": "P028",
+  "product": "KS Active High-Waist Seamless Legging",
+  "scope": "Draft-only, source-locked model review",
+  "generationSystem": "OpenAI image generation",
+  "generationCalls": 3,
+  "acceptedCalls": 2,
+  "rejectedCalls": 1,
+  "retainedGeneratedViews": 8,
+  "acceptedColours": ["Electric Violet", "True Purple"],
+  "rejectionReasons": ["The rejected output obscured the rear waistband construction with an extra outer layer."],
+  "privateSourcePhotographIncluded": false,
+  "publicIntegration": false,
+  "productionDeployment": false
+}
