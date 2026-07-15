@@ -18,7 +18,8 @@ assert(fs.existsSync(path.join(root, hero)), "Homepage hero asset is missing.");
 const collectiveLogo = "assets/branding/kalm-collective/kalm-collective-logo.png";
 assert(index.includes(`src="${collectiveLogo}"`), "Static homepage must use the approved KALM Collective image logo.");
 assert(!script.includes('class="hero-brand-logo"'), "The homepage must not render a redundant hero logo.");
-assert(index.includes('assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png'), "Mobile header must use the approved compact buffalo emblem.");
+assert(!index.includes('assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png'), "Header must not use the buffalo-only mobile emblem.");
+assert(index.includes(`src="${collectiveLogo}"`), "Mobile header must use the approved complete KALM Collective lockup.");
 assert(!index.includes("<span>kalmcollective.co.za</span>"), "Utility strip must not show the domain.");
 
 const approvedLogos = catalog.brands.map((brand) => brand.approvedLogo);

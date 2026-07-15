@@ -20,10 +20,11 @@ const productCardRenderer = script.slice(script.indexOf("function renderProductC
 const moveCardRenderer = script.slice(script.indexOf("function renderMoveLaunchingSoonCard"), script.indexOf("function renderPrice"));
 const mobileRules = styles.slice(styles.indexOf("@media (max-width: 900px)"), styles.indexOf("@media (max-width: 520px)"));
 const compactRules = styles.slice(styles.indexOf("@media (max-width: 520px)"));
+const narrowRules = styles.slice(styles.indexOf("@media (max-width: 390px)"));
 const matchingRules = (source, selector) => [...source.matchAll(new RegExp(`${selector}\\s*\\{([^}]*)\\}`, "g"))].map((match) => match[1]);
 const mobileBrandRules = [
-  ...matchingRules(mobileRules, "\\.brand(?:\\s+picture|\\s+img)?"),
-  ...matchingRules(compactRules, "\\.brand(?:\\s+picture|\\s+img)?")
+  ...matchingRules(mobileRules, "\\.brand(?:\\s+img)?"),
+  ...matchingRules(compactRules, "\\.brand(?:\\s+img)?")
 ];
 const mobileHeroCopyRules = matchingRules(mobileRules, "\\.hero-copy");
 const primaryNavigation = index.match(/<nav id="site-nav"[\s\S]*?<\/nav>/)?.[0] || "";
@@ -40,15 +41,16 @@ const protectedReleaseRemainsUnchanged = (() => {
 const approvedKs = catalogue.products.filter((product) => product.brandId === "ks-active" && product.publicationStatus === "published" && product.visibility === "visible");
 const evidence = {
   viewport360: [
-    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-HEADER-HERO.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-FULL-HEADER-LOCKUP.png",
     "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-KS-ACTIVE-GRID.png",
     "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-360-KALM-MOVE-CARD.png"
   ],
   viewport412: [
-    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-HEADER-HERO.png",
+    "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-FULL-HEADER-LOCKUP.png",
     "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-KS-ACTIVE-GRID.png",
     "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-412-KALM-MOVE-CARD.png"
-  ]
+  ],
+  desktop: ["reports/KALM-MOVE-LAUNCHING-SOON/DESKTOP-FULL-HEADER-LOCKUP.png"]
 };
 const base = {
   generatedAt: new Date().toISOString(),
@@ -72,11 +74,11 @@ const reports = {
     ...base,
     checks: {
       desktopUsesCompleteKalmCollectiveLockup: index.includes('src="assets/branding/kalm-collective/kalm-collective-logo.png"'),
-      mobileUsesApprovedCompactBuffaloEmblem: index.includes('media="(max-width: 900px)" srcset="assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png"'),
-      headerLogoUsesContainSafeSizing: mobileRules.includes(".brand picture,") && mobileRules.includes("object-fit: contain") && compactRules.includes(".brand picture,"),
+      mobileAndTabletUseCompleteKalmCollectiveLockup: !index.includes("kalm-buffalo-mark-cropped.png") && !index.includes("<source media=") && index.includes('src="assets/branding/kalm-collective/kalm-collective-logo.png"'),
+      headerLogoUsesContainSafeSizing: styles.includes(".brand img") && styles.includes("height: auto;") && styles.includes("object-fit: contain"),
       headerLogoHasNoScaleOrCropTransform: mobileBrandRules.length > 0 && mobileBrandRules.every((rule) => !rule.includes("transform:")),
       headerLogoContainerDoesNotClip: mobileRules.includes("overflow: visible"),
-      compactHeaderHeightAccommodatesLogo: mobileRules.includes("min-height: 72px") && mobileRules.includes("width: 48px")
+      fullHeaderLockupHasDedicatedSpace: mobileRules.includes("min-height: 180px") && mobileRules.includes("width: min(180px, 100%)") && narrowRules.includes("width: 180px")
     }
   },
   "MOBILE-HERO-SPACING-VALIDATION.json": {

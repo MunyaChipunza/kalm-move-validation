@@ -21,7 +21,7 @@ if (/object-fit\s*:\s*fill/i.test(css)) fail('object-fit: fill is prohibited.');
 if (!css.includes('aspect-ratio: var(--card-aspect') || !css.includes('--mobile-card-position')) fail('Product-specific card presentation controls are missing.');
 if (!css.includes('object-fit: var(--gallery-fit')) fail('Gallery fit metadata is not applied.');
 if (!css.includes('@media (max-width: 359px)') || !css.includes('grid-template-columns: repeat(2, minmax(0, 1fr))')) fail('Required mobile one-column/two-column grid thresholds are missing.');
-if (!css.includes('width: 100vw') || !/min-height:\s*(6[0-9]|7[0-9]|8[0-9])px/.test(css)) fail('Mobile shell width/header constraints are missing.');
+if (!css.includes('width: 100vw') || !/min-height:\s*(6[0-9]|7[0-9]|8[0-9]|1[0-9]{2}|2[0-9]{2})px/.test(css)) fail('Mobile shell width/header constraints are missing.');
 if (!js.includes('setFilterSheetOpen') || !js.includes('aria-expanded')) fail('Mobile filter open/close state is not accessible.');
 if (!js.includes('renderResponsiveCardAttributes') || !js.includes('srcset')) fail('Responsive card image delivery is not implemented.');
 console.log(JSON.stringify({ status: 'passed', publicImagePathsChecked: images.filter(Boolean).length, viewportsRequired: [320, 360, 375, 390, 412, 430, 768, '844x390'] }, null, 2));
