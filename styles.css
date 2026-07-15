@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html[data-initial-route="non-home"][data-route-rendered="false"] #app > .hero-shell {
+  display: none;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -36,6 +40,42 @@ body.bag-open {
 img {
   display: block;
   max-width: 100%;
+}
+
+.route-skeleton {
+  display: none;
+  min-height: clamp(520px, 72vh, 760px);
+  padding: clamp(72px, 12vw, 132px) var(--page-pad);
+  background:
+    linear-gradient(120deg, rgba(255,255,255,.92), rgba(245,239,230,.94)),
+    radial-gradient(circle at 80% 18%, rgba(155, 119, 87, .14), transparent 34%);
+  color: var(--ink);
+}
+
+html[data-initial-route="non-home"][data-route-rendered="false"] .route-skeleton {
+  display: grid;
+  align-items: center;
+}
+
+.route-skeleton > div {
+  max-width: 720px;
+}
+
+.route-skeleton h1 {
+  margin: 0;
+  max-width: 680px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.1rem, 7vw, 4.8rem);
+  line-height: .95;
+}
+
+.route-skeleton p:not(.eyebrow) {
+  max-width: 520px;
+  color: var(--muted);
+}
+
+html[data-route-rendered="true"] .route-skeleton {
+  display: none;
 }
 
 a {

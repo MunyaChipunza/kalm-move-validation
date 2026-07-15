@@ -1,0 +1,68 @@
+{
+  "previewUrl": "https://6a5769632a0aadbff91f7dd1--kalm-collective-storefront.netlify.app",
+  "runs": [
+    {
+      "run": 1,
+      "performance": 97.0,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69.0,
+      "lcp": 1793.5595,
+      "lcpDisplay": "1.8\u00a0s",
+      "cls": 0,
+      "tbt": 71.5,
+      "speedIndex": 4248.147487994495,
+      "fcp": 1049.5595,
+      "bytes": 247445,
+      "requestCount": 10,
+      "totalByteWeight": 247445
+    },
+    {
+      "run": 2,
+      "performance": 96.0,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69.0,
+      "lcp": 2057.687,
+      "lcpDisplay": "2.1\u00a0s",
+      "cls": 0,
+      "tbt": 129.9999999999999,
+      "speedIndex": 4120.273812003586,
+      "fcp": 879.687,
+      "bytes": 247219,
+      "requestCount": 10,
+      "totalByteWeight": 247219
+    },
+    {
+      "run": 3,
+      "performance": 97.0,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69.0,
+      "lcp": 2039.943,
+      "lcpDisplay": "2.0\u00a0s",
+      "cls": 0,
+      "tbt": 96,
+      "speedIndex": 3706.2844520045783,
+      "fcp": 863.943,
+      "bytes": 247214,
+      "requestCount": 10,
+      "totalByteWeight": 247214
+    }
+  ],
+  "median": {
+    "performance": 97.0,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 69.0,
+    "lcp": 2039.943,
+    "cls": 0,
+    "tbt": 96,
+    "speedIndex": 4120.273812003586,
+    "fcp": 879.687,
+    "bytes": 247219,
+    "requestCount": 10,
+    "totalByteWeight": 247219
+  },
+  "seoNote": "Preview deploys return x-robots-tag: noindex; production SEO must be verified after production deploy."
+}

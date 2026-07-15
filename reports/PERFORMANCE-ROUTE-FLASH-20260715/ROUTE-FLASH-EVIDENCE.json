@@ -1,0 +1,23 @@
+{
+  "previewUrl": "https://6a5769632a0aadbff91f7dd1--kalm-collective-storefront.netlify.app",
+  "passed": true,
+  "routesChecked": [
+    "/brands",
+    "/collections/activewear",
+    "/collections/wellness",
+    "/collections/home",
+    "/collections/outdoor",
+    "/products/ks-active-racer-knit-bra",
+    "/#/checkout"
+  ],
+  "preRenderNonHome": {
+    "htmlAttribute": "data-initial-route=non-home",
+    "heroVisible": false,
+    "skeletonVisible": true
+  },
+  "postRender": {
+    "heroRemovedOnNonHome": true,
+    "skeletonRemoved": true,
+    "requestedRouteRendered": true
+  }
+}
