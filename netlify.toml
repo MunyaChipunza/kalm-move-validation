@@ -64,6 +64,16 @@
   status = 200
 
 [[redirects]]
+  from = "/future-demand"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/future-demand/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
   from = "/brand/*"
   to = "/index.html"
   status = 200

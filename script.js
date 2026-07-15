@@ -16,7 +16,12 @@ const state = {
   currentRouteKey: "",
   scrollPositions: new Map(),
   activeLightbox: null,
-  waitlistSubmissions: new Set()
+  waitlistSubmissions: new Set(),
+  futureWishlist: loadFutureWishlist(),
+  futureVisitorId: getFutureVisitorId(),
+  futureExperimentVariant: getFutureExperimentVariant(),
+  futureImpressions: new Set(),
+  futurePendingEvents: new Set()
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -40,6 +45,231 @@ const moveCategories = [
   { id: "layers", name: "Jackets & Layers" },
   { id: "jumpsuits-rompers", name: "Jumpsuits & Rompers" },
   { id: "accessories", name: "Accessories" }
+];
+const futureDemandExperimentId = "wishlist-cta-copy-v1";
+const futureDemandBrandStates = {
+  "kalm-move": {
+    stage: "research and shortlist stage",
+    message: "Help shape the first KALM Move drop."
+  },
+  "kalm-wellness": {
+    stage: "concept research stage",
+    message: "Tell us what deserves a place in the first Wellness edit."
+  },
+  "kalm-home": {
+    stage: "concept research stage",
+    message: "Help us choose the first KALM Home pieces."
+  },
+  "kalm-outdoor": {
+    stage: "concept, enquiry or demand-validation stage",
+    message: "Help us understand what KALM Outdoor should source or develop next."
+  }
+};
+const futureDemandCandidates = [
+  {
+    id: "future-kalm-move-all-day-straw-tumbler",
+    slug: "kalm-move-all-day-straw-tumbler-demand",
+    title: "All-Day Straw Tumbler",
+    brandId: "kalm-move",
+    brand: "KALM Move",
+    family: "Hydration",
+    image: "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+    description: "A larger straw tumbler concept for desk, car and all-day hydration routines.",
+    sourceEvidenceStatus: "Stage 1 bottle concept imagery and existing draft product evidence.",
+    pricingStatus: "No approved selling price.",
+    sampleStatus: "Provisional pending supplier and physical sample lock.",
+    preferredSizes: ["One size"],
+    preferredColours: ["Black", "Cream", "Lilac", "Sky Blue"],
+    sourceCollection: "kalm-move-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-move-commute-layer",
+    slug: "kalm-move-commute-layer-demand",
+    title: "Commute Layer",
+    brandId: "kalm-move",
+    brand: "KALM Move",
+    family: "Layers",
+    image: "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+    description: "A calm, wearable layer family for cool starts, errands and light movement.",
+    sourceEvidenceStatus: "Existing KALM Move layer imagery used as directional evidence only.",
+    pricingStatus: "No approved selling price.",
+    sampleStatus: "No final sample lock.",
+    preferredSizes: ["XS", "S", "M", "L", "XL"],
+    preferredColours: ["Black", "Stone", "Navy", "Oat"],
+    sourceCollection: "kalm-move-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-move-carry-goods",
+    slug: "kalm-move-carry-goods-demand",
+    title: "Carry Goods",
+    brandId: "kalm-move",
+    brand: "KALM Move",
+    family: "Accessories",
+    image: "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+    description: "A compact accessories lane for gym, work and weekend carry.",
+    sourceEvidenceStatus: "Existing KALM Move bag imagery used as directional evidence only.",
+    pricingStatus: "No approved selling price.",
+    sampleStatus: "No final sample lock.",
+    preferredSizes: ["Compact", "Daily", "Weekend"],
+    preferredColours: ["Black", "Charcoal", "Cream"],
+    sourceCollection: "kalm-move-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-wellness-recovery-mat",
+    slug: "kalm-wellness-recovery-mat-demand",
+    title: "Recovery Mat",
+    brandId: "kalm-wellness",
+    brand: "KALM Wellness",
+    family: "Studio recovery",
+    image: "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
+    description: "A premium mat direction for stretching, recovery and low-impact practice.",
+    sourceEvidenceStatus: "Existing Wellness product imagery used as concept evidence.",
+    pricingStatus: "No approved future-price decision.",
+    sampleStatus: "Concept sample not locked for this demand lane.",
+    preferredSizes: ["Standard", "Long"],
+    preferredColours: ["Sand", "Charcoal", "Sage"],
+    sourceCollection: "kalm-wellness-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-wellness-ritual-kit",
+    slug: "kalm-wellness-ritual-kit-demand",
+    title: "Ritual Kit",
+    brandId: "kalm-wellness",
+    brand: "KALM Wellness",
+    family: "Daily ritual",
+    image: "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
+    description: "A calm bundled edit for home rituals, recovery corners and gifting.",
+    sourceEvidenceStatus: "Existing Wellness set imagery used as concept evidence.",
+    pricingStatus: "No approved future-price decision.",
+    sampleStatus: "Concept sample not locked for this demand lane.",
+    preferredSizes: ["Small set", "Full set"],
+    preferredColours: ["Natural", "Oat", "Charcoal"],
+    sourceCollection: "kalm-wellness-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-wellness-studio-props",
+    slug: "kalm-wellness-studio-props-demand",
+    title: "Studio Props",
+    brandId: "kalm-wellness",
+    brand: "KALM Wellness",
+    family: "Studio support",
+    image: "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
+    description: "Blocks, straps and small studio supports for stretching and alignment routines.",
+    sourceEvidenceStatus: "Existing Wellness prop imagery used as concept evidence.",
+    pricingStatus: "No approved future-price decision.",
+    sampleStatus: "Concept sample not locked for this demand lane.",
+    preferredSizes: ["Pair", "Full support kit"],
+    preferredColours: ["Natural Cork", "Sand", "Black"],
+    sourceCollection: "kalm-wellness-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-home-cotton-sleep",
+    slug: "kalm-home-cotton-sleep-demand",
+    title: "Cotton Sleep Edit",
+    brandId: "kalm-home",
+    brand: "KALM Home",
+    family: "Bedroom",
+    image: "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp",
+    description: "A clean bedding direction for calm bedrooms and everyday sleep routines.",
+    sourceEvidenceStatus: "Existing Home bedding imagery used as concept evidence.",
+    pricingStatus: "No approved future-price decision.",
+    sampleStatus: "Concept sample not locked for this demand lane.",
+    preferredSizes: ["Double", "Queen", "King"],
+    preferredColours: ["White", "Oat", "Charcoal"],
+    sourceCollection: "kalm-home-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-home-towel-stack",
+    slug: "kalm-home-towel-stack-demand",
+    title: "Towel Stack",
+    brandId: "kalm-home",
+    brand: "KALM Home",
+    family: "Bathroom",
+    image: "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp",
+    description: "A bathroom textile lane for soft, durable daily-use towels.",
+    sourceEvidenceStatus: "Existing Home towel imagery used as concept evidence.",
+    pricingStatus: "No approved future-price decision.",
+    sampleStatus: "Concept sample not locked for this demand lane.",
+    preferredSizes: ["Hand towel", "Bath towel", "Bath sheet"],
+    preferredColours: ["White", "Charcoal", "Sage"],
+    sourceCollection: "kalm-home-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-home-table-ritual",
+    slug: "kalm-home-table-ritual-demand",
+    title: "Table Ritual",
+    brandId: "kalm-home",
+    brand: "KALM Home",
+    family: "Kitchen and table",
+    image: "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp",
+    description: "Small ceramic and table pieces for calmer daily routines.",
+    sourceEvidenceStatus: "Existing Home ceramic imagery used as concept evidence.",
+    pricingStatus: "No approved future-price decision.",
+    sampleStatus: "Concept sample not locked for this demand lane.",
+    preferredSizes: ["Pair", "Set of four"],
+    preferredColours: ["Ivory", "Black", "Clay"],
+    sourceCollection: "kalm-home-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-outdoor-ember-tools",
+    slug: "kalm-outdoor-ember-tools-demand",
+    title: "Ember Tool System",
+    brandId: "kalm-outdoor",
+    brand: "KALM Outdoor",
+    family: "Cooking tools",
+    image: "",
+    description: "A source-led tool lane for pizza ovens and open-air cooking.",
+    sourceEvidenceStatus: "Existing Outdoor accessory concepts; final source and sample not locked.",
+    pricingStatus: "No verified public price.",
+    sampleStatus: "Demand validation only.",
+    preferredSizes: ["Compact", "Pro"],
+    preferredColours: ["Stainless", "Black"],
+    sourceCollection: "kalm-outdoor-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-outdoor-ridge-smart-system",
+    slug: "kalm-outdoor-ridge-smart-system-demand",
+    title: "Ridge Smart System",
+    brandId: "kalm-outdoor",
+    brand: "KALM Outdoor",
+    family: "Braai accessories",
+    image: "",
+    description: "Temperature and hosting accessories for the Ridge outdoor cooking line.",
+    sourceEvidenceStatus: "Existing Outdoor concept evidence; final source and sample not locked.",
+    pricingStatus: "No verified public price.",
+    sampleStatus: "Demand validation only.",
+    preferredSizes: ["Ridge compatible"],
+    preferredColours: ["Black", "Stainless"],
+    sourceCollection: "kalm-outdoor-demand-shortlist",
+    commercialApproval: false
+  },
+  {
+    id: "future-kalm-outdoor-hosting-softgoods",
+    slug: "kalm-outdoor-hosting-softgoods-demand",
+    title: "Hosting Softgoods",
+    brandId: "kalm-outdoor",
+    brand: "KALM Outdoor",
+    family: "Patio and hosting",
+    image: "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp",
+    description: "Blankets, cushions and portable hosting pieces for patio weekends.",
+    sourceEvidenceStatus: "Existing Outdoor softgoods imagery used as concept evidence.",
+    pricingStatus: "No verified future-price decision.",
+    sampleStatus: "Demand validation only.",
+    preferredSizes: ["Picnic", "Patio", "Travel"],
+    preferredColours: ["Charcoal", "Olive", "Sand"],
+    sourceCollection: "kalm-outdoor-demand-shortlist",
+    commercialApproval: false
+  }
 ];
 let deferredImageObserver = null;
 
@@ -116,6 +346,27 @@ function bindChrome() {
     if (event.target.closest("[data-search-open]")) openSearch();
     if (event.target.closest("[data-search-close]")) closeSearch();
 
+    const futureWishlistButton = event.target.closest("[data-future-wishlist]");
+    if (futureWishlistButton) {
+      toggleFutureWishlist(futureWishlistButton);
+      return;
+    }
+
+    const futurePreferenceToggle = event.target.closest("[data-future-preference-toggle]");
+    if (futurePreferenceToggle) {
+      const panel = document.getElementById(futurePreferenceToggle.getAttribute("aria-controls"));
+      const expanded = futurePreferenceToggle.getAttribute("aria-expanded") === "true";
+      futurePreferenceToggle.setAttribute("aria-expanded", String(!expanded));
+      if (panel) panel.hidden = expanded;
+      return;
+    }
+
+    const futureCsv = event.target.closest("[data-future-demand-export]");
+    if (futureCsv) {
+      exportFutureDemandCsv();
+      return;
+    }
+
     const previewButton = event.target.closest("[data-variant-preview]");
     if (previewButton) {
       const scope = previewButton.closest("[data-product-scope]");
@@ -189,6 +440,13 @@ function bindChrome() {
     }
   });
 
+  document.addEventListener("submit", (event) => {
+    const futureForm = event.target.closest("[data-future-preference-form]");
+    if (futureForm) {
+      submitFuturePreference(event, futureForm);
+    }
+  });
+
   searchPanel?.addEventListener("submit", (event) => event.preventDefault());
   siteSearch?.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
@@ -246,6 +504,8 @@ function renderRoute() {
   });
   if (route.path === "/shop") return renderShop(route.params);
   if (route.path === "/brands") return renderBrands();
+  if (route.path === "/future-demand") return renderFutureDemandLab();
+  if (route.path.startsWith("/future-demand/")) return renderFutureCandidatePage(route.path.split("/").pop());
   if (route.path.startsWith("/brand/")) {
     renderBrand(route.path.split("/").pop());
     scrollToAnchor(route.anchor);
@@ -843,6 +1103,7 @@ function renderBrand(brandId) {
     </section>
 
     ${brand.id === "kalm-move" ? renderKalmMoveSubcategories() : ""}
+    ${renderFutureBrandPanel(brand.id)}
 
     <section class="section-block">
       <div class="section-head">
@@ -859,6 +1120,534 @@ function renderBrand(brandId) {
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+  recordVisibleFutureImpressions(`${brand.id}-brand-page`);
+}
+
+function renderFutureBrandPanel(brandId) {
+  if (brandId === "ks-active") return "";
+  const candidates = getFutureCandidatesByBrand(brandId);
+  if (!candidates.length) return "";
+  const brandState = futureDemandBrandStates[brandId] || {};
+  return `
+    <section class="section-block future-demand-panel" aria-labelledby="future-demand-${escapeAttribute(brandId)}">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Future product research</p>
+          <h2 id="future-demand-${escapeAttribute(brandId)}">${escapeHtml(brandState.message || "Help shape what comes next.")}</h2>
+          <p>${escapeHtml(brandState.stage || "concept research stage")}. No launch date has been set. Add this to your wishlist to help us decide what to develop or source first.</p>
+        </div>
+        <a class="text-link" href="#/future-demand">View demand lab</a>
+      </div>
+      <div class="product-grid future-demand-grid">
+        ${candidates.map((candidate, index) => renderFutureCandidateCard(candidate, { cardPosition: index + 1, sourceCollection: `${brandId}-brand-page` })).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderFutureDemandLab() {
+  setDocumentMeta(
+    "Future Brand Wishlist Demand Lab | KALM Collective",
+    "Preview-only wishlist demand testing for future KALM brand concepts.",
+    "/future-demand"
+  );
+  setStructuredData({ type: "website" });
+  const groups = Object.keys(futureDemandBrandStates).map((brandId) => ({
+    brandId,
+    brand: state.data.brands.find((item) => item.id === brandId),
+    candidates: getFutureCandidatesByBrand(brandId)
+  })).filter((group) => group.candidates.length);
+  app.innerHTML = `
+    <section class="collection-hero future-demand-hero">
+      <p class="eyebrow">Preview-only demand lab</p>
+      <h1>Future-brand wishlist testing</h1>
+      <p>These concepts are in consideration only. No launch date, price, stock or purchase route is promised. Wishlist signals help Munya and Kuhle decide what to develop or source first.</p>
+      <div class="future-demand-note">
+        <strong>Storage method</strong>
+        <span>Anonymous local wishlist state plus Netlify Forms event capture. Email is optional and notification consent is separate from marketing consent.</span>
+      </div>
+    </section>
+    ${groups.map((group) => `
+      <section class="section-block future-demand-panel" aria-labelledby="future-demand-lab-${escapeAttribute(group.brandId)}">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">${escapeHtml(group.brand?.name || group.brandId)}</p>
+            <h2 id="future-demand-lab-${escapeAttribute(group.brandId)}">${escapeHtml(futureDemandBrandStates[group.brandId].message)}</h2>
+            <p>${escapeHtml(futureDemandBrandStates[group.brandId].stage)} · In consideration · Commercial approval false.</p>
+          </div>
+        </div>
+        <div class="product-grid future-demand-grid">
+          ${group.candidates.map((candidate, index) => renderFutureCandidateCard(candidate, { cardPosition: index + 1, sourceCollection: `${group.brandId}-lab` })).join("")}
+        </div>
+      </section>
+    `).join("")}
+    ${renderFutureDemandDashboard()}
+    ${renderFooter()}
+  `;
+  bindNetlifyForms(app);
+  hydrateDeferredImages(app);
+  recordVisibleFutureImpressions("future-demand-lab");
+}
+
+function renderFutureCandidatePage(slug) {
+  const candidate = getFutureCandidateBySlug(slug);
+  if (!candidate) return renderNotFound();
+  const brandState = futureDemandBrandStates[candidate.brandId] || {};
+  setDocumentMeta(
+    `${candidate.title} demand test | ${candidate.brand}`,
+    candidate.description,
+    `/future-demand/${candidate.slug}`
+  );
+  setStructuredData({ type: "website" });
+  const saved = isFutureWishlisted(candidate.id);
+  app.innerHTML = `
+    <section class="product-detail future-product-detail" data-future-candidate="${escapeAttribute(candidate.id)}">
+      <div class="product-gallery future-product-media" data-product-gallery>
+        ${candidate.image ? `<img src="${escapeHtml(candidate.image)}" alt="${escapeAttribute(candidate.title)} concept reference" width="640" height="800" decoding="async" fetchpriority="high">` : renderComingSoonMedia("product-coming-soon-media")}
+      </div>
+      <div class="product-info">
+        <a class="eyebrow" href="#/brand/${candidate.brandId}">${escapeHtml(candidate.brand)}</a>
+        <span class="future-status-label">In consideration</span>
+        <h1>${escapeHtml(candidate.title)}</h1>
+        <p>${escapeHtml(candidate.description)}</p>
+        <div class="future-commercial-state">
+          <strong>${escapeHtml(brandState.message || "Help shape what comes next.")}</strong>
+          <p>${escapeHtml(brandState.stage || "concept research stage")}. No launch date has been set. Add this to your wishlist to help us decide what to develop or source first.</p>
+        </div>
+        ${renderFutureWishlistControl(candidate, { sourceCollection: "future-candidate-page", cardPosition: 1 })}
+        ${renderFuturePreferencePanel(candidate, !saved)}
+        <div class="accordion-list">
+          <details open>
+            <summary>Research status</summary>
+            <dl class="spec-list">
+              <div><dt>Source evidence</dt><dd>${escapeHtml(candidate.sourceEvidenceStatus)}</dd></div>
+              <div><dt>Pricing</dt><dd>${escapeHtml(candidate.pricingStatus)}</dd></div>
+              <div><dt>Sample status</dt><dd>${escapeHtml(candidate.sampleStatus)}</dd></div>
+              <div><dt>Commercial approval</dt><dd>false</dd></div>
+            </dl>
+          </details>
+          <details>
+            <summary>Wishlist privacy</summary>
+            <p>Anonymous wishlist use does not require an email address. Email is only used if you separately choose launch notification. Marketing consent remains separate and unticked by default.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">${escapeHtml(candidate.brand)}</p>
+          <h2>More in consideration</h2>
+        </div>
+      </div>
+      <div class="product-grid future-demand-grid">
+        ${getFutureCandidatesByBrand(candidate.brandId).filter((item) => item.id !== candidate.id).map((item, index) => renderFutureCandidateCard(item, { cardPosition: index + 1, sourceCollection: "future-related" })).join("")}
+      </div>
+    </section>
+    ${renderFooter()}
+  `;
+  bindNetlifyForms(app);
+  hydrateDeferredImages(app);
+  sendFutureDemandEvent("product_open", candidate, { action: "open", cardPosition: 1, sourceCollection: "future-candidate-page" });
+  recordVisibleFutureImpressions("future-candidate-page");
+}
+
+function renderFutureCandidateCard(candidate, options = {}) {
+  return `
+    <article class="product-card future-candidate-card" data-future-candidate="${escapeAttribute(candidate.id)}" data-future-card-position="${Number(options.cardPosition) || 0}" data-future-source-collection="${escapeAttribute(options.sourceCollection || candidate.sourceCollection)}">
+      <a class="product-media" href="#/future-demand/${candidate.slug}" aria-label="${escapeAttribute(`${candidate.title} demand test`)}">
+        <span class="product-badge future-badge">In consideration</span>
+        ${candidate.image ? `<img src="${escapeHtml(candidate.image)}" alt="${escapeAttribute(candidate.title)} concept reference" width="640" height="800" loading="lazy" decoding="async" fetchpriority="low">` : renderComingSoonMedia("card-coming-soon-media")}
+      </a>
+      <div class="product-card-body">
+        <a class="product-brand" href="#/brand/${candidate.brandId}">${escapeHtml(candidate.brand)}</a>
+        <h3><a href="#/future-demand/${candidate.slug}">${escapeHtml(candidate.title)}</a></h3>
+        <p class="card-photo-status">${escapeHtml(candidate.family)} · research candidate</p>
+        <p class="future-card-copy">No launch date has been set. Add this to your wishlist to help us decide what to develop or source first.</p>
+        ${renderFutureWishlistControl(candidate, options)}
+        ${renderFuturePreferencePanel(candidate, true)}
+        <a class="button secondary full card-view-link" href="#/future-demand/${candidate.slug}">View research status</a>
+      </div>
+    </article>
+  `;
+}
+
+function renderFutureWishlistControl(candidate, options = {}) {
+  const saved = isFutureWishlisted(candidate.id);
+  const label = getFutureCtaLabel(saved);
+  return `
+    <div class="future-wishlist-actions" data-future-wishlist-shell="${escapeAttribute(candidate.id)}">
+      <button class="future-wishlist-button" type="button"
+        data-future-wishlist="${escapeAttribute(candidate.id)}"
+        data-source-collection="${escapeAttribute(options.sourceCollection || candidate.sourceCollection)}"
+        data-card-position="${Number(options.cardPosition) || 0}"
+        aria-pressed="${saved ? "true" : "false"}">
+        <span aria-hidden="true">${saved ? "♥" : "♡"}</span>
+        <span data-future-wishlist-label>${escapeHtml(label)}</span>
+      </button>
+      <button class="future-preference-link" type="button" data-future-preference-toggle aria-expanded="${saved ? "true" : "false"}" aria-controls="future-preferences-${escapeAttribute(candidate.id)}">Help us get this right</button>
+    </div>
+  `;
+}
+
+function renderFuturePreferencePanel(candidate, hidden = true) {
+  const panelId = `future-preferences-${candidate.id}`;
+  return `
+    <form class="future-preference-panel" id="${escapeAttribute(panelId)}" data-future-preference-form data-candidate-id="${escapeAttribute(candidate.id)}" ${hidden ? "hidden" : ""}>
+      <input type="hidden" name="form-name" value="kalm-future-demand-event">
+      <input type="hidden" name="bot-field">
+      <p class="eyebrow">Help us get this right</p>
+      <label>Preferred size
+        <select name="preferredSize">
+          <option value="">No preference</option>
+          ${candidate.preferredSizes.map((item) => `<option value="${escapeAttribute(item)}">${escapeHtml(item)}</option>`).join("")}
+        </select>
+      </label>
+      <label>Preferred colour
+        <select name="preferredColour">
+          <option value="">No preference</option>
+          ${candidate.preferredColours.map((item) => `<option value="${escapeAttribute(item)}">${escapeHtml(item)}</option>`).join("")}
+        </select>
+      </label>
+      <label>Acceptable price range
+        <select name="priceBand">
+          <option value="">No preference</option>
+          <option value="under-r300">Under R300</option>
+          <option value="r300-r500">R300-R500</option>
+          <option value="r500-r800">R500-R800</option>
+          <option value="r800-plus">R800+</option>
+        </select>
+      </label>
+      <label>Optional email for launch notification
+        <input name="optionalEmail" type="email" autocomplete="email" inputmode="email">
+      </label>
+      <label class="consent"><input type="checkbox" name="notificationConsent" value="yes"> <span>Notify me if this product is selected.</span></label>
+      <label class="consent"><input type="checkbox" name="marketingConsent" value="yes"> <span>I also agree to receive KALM marketing updates.</span></label>
+      <button class="button secondary full" type="submit">Save preferences</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  `;
+}
+
+function renderFutureDemandDashboard() {
+  const events = loadFutureDemandEventLog();
+  const rows = futureDemandCandidates.map((candidate) => {
+    const candidateEvents = events.filter((event) => event.productId === candidate.id);
+    const impressions = uniqueCount(candidateEvents.filter((event) => event.eventType === "product_impression").map((event) => event.anonymousVisitorId));
+    const wishlistAdds = uniqueCount(candidateEvents.filter((event) => event.eventType === "wishlist_add").map((event) => event.anonymousVisitorId));
+    const notificationOptIns = uniqueCount(candidateEvents.filter((event) => event.eventType === "notification_opt_in").map((event) => event.anonymousVisitorId));
+    const preferenceSubmits = uniqueCount(candidateEvents.filter((event) => event.eventType === "preference_submit").map((event) => event.anonymousVisitorId));
+    const rate = impressions ? Math.round((wishlistAdds / impressions) * 100) : 0;
+    return { candidate, impressions, wishlistAdds, notificationOptIns, preferenceSubmits, rate };
+  });
+  return `
+    <section class="section-block future-dashboard" aria-labelledby="future-dashboard-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">KALM Ops preview</p>
+          <h2 id="future-dashboard-title">Future Demand read-only summary</h2>
+          <p>This preview summarizes non-sensitive events stored in this browser. Netlify Forms is the capture fallback for review; a protected KALM Ops aggregate endpoint remains the production follow-up.</p>
+        </div>
+        <button class="button secondary" type="button" data-future-demand-export>Export aggregate CSV</button>
+      </div>
+      <div class="table-scroll">
+        <table class="future-demand-table">
+          <thead>
+            <tr>
+              <th>Brand</th>
+              <th>Product</th>
+              <th>Impressions</th>
+              <th>Wishlist adds</th>
+              <th>Wishlist rate</th>
+              <th>Notifications</th>
+              <th>Preferences</th>
+              <th>Sample status</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((row) => `
+              <tr>
+                <td>${escapeHtml(row.candidate.brand)}</td>
+                <td>${escapeHtml(row.candidate.title)}</td>
+                <td>${row.impressions}</td>
+                <td>${row.wishlistAdds}</td>
+                <td>${row.rate}%</td>
+                <td>${row.notificationOptIns}</td>
+                <td>${row.preferenceSubmits}</td>
+                <td>${row.impressions < 30 ? "Insufficient exposure" : "Reviewable"}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  `;
+}
+
+function getFutureCandidatesByBrand(brandId) {
+  return futureDemandCandidates.filter((candidate) => candidate.brandId === brandId);
+}
+
+function getFutureCandidateById(id) {
+  return futureDemandCandidates.find((candidate) => candidate.id === id);
+}
+
+function getFutureCandidateBySlug(slug) {
+  return futureDemandCandidates.find((candidate) => candidate.slug === slug);
+}
+
+function getFutureCtaLabel(saved) {
+  if (saved) return "On your wishlist";
+  return state.futureExperimentVariant === "B" ? "Vote for this product" : "Add to wishlist";
+}
+
+function isFutureWishlisted(candidateId) {
+  return state.futureWishlist.includes(candidateId);
+}
+
+function toggleFutureWishlist(button) {
+  const candidate = getFutureCandidateById(button.getAttribute("data-future-wishlist"));
+  if (!candidate) return;
+  const saved = isFutureWishlisted(candidate.id);
+  const nextSaved = !saved;
+  state.futureWishlist = nextSaved
+    ? Array.from(new Set([...state.futureWishlist, candidate.id]))
+    : state.futureWishlist.filter((id) => id !== candidate.id);
+  saveFutureWishlist();
+  document.querySelectorAll(`[data-future-wishlist="${CSS.escape(candidate.id)}"]`).forEach((control) => {
+    control.setAttribute("aria-pressed", String(nextSaved));
+    const icon = control.querySelector("span[aria-hidden='true']");
+    const label = control.querySelector("[data-future-wishlist-label]");
+    if (icon) icon.textContent = nextSaved ? "♥" : "♡";
+    if (label) label.textContent = getFutureCtaLabel(nextSaved);
+  });
+  const eventType = nextSaved ? "wishlist_add" : "wishlist_remove";
+  sendFutureDemandEvent(eventType, candidate, {
+    action: nextSaved ? "add" : "remove",
+    cardPosition: button.getAttribute("data-card-position") || "",
+    sourceCollection: button.getAttribute("data-source-collection") || candidate.sourceCollection
+  });
+}
+
+function recordVisibleFutureImpressions(sourceCollection = "") {
+  document.querySelectorAll("[data-future-candidate]").forEach((card) => {
+    const candidate = getFutureCandidateById(card.getAttribute("data-future-candidate"));
+    if (!candidate) return;
+    const collection = card.getAttribute("data-future-source-collection") || sourceCollection || candidate.sourceCollection;
+    const key = `${window.location.href}::${candidate.id}::${collection}`;
+    if (state.futureImpressions.has(key)) return;
+    state.futureImpressions.add(key);
+    sendFutureDemandEvent("product_impression", candidate, {
+      action: "impression",
+      cardPosition: card.getAttribute("data-future-card-position") || "",
+      sourceCollection: collection
+    });
+  });
+}
+
+async function submitFuturePreference(event, form) {
+  event.preventDefault();
+  const candidate = getFutureCandidateById(form.getAttribute("data-candidate-id"));
+  const status = form.querySelector(".form-status");
+  if (!candidate) {
+    if (status) status.textContent = "This research candidate is not recognised.";
+    return;
+  }
+  const formData = new FormData(form);
+  const notificationConsent = formData.get("notificationConsent") === "yes";
+  const ok = await sendFutureDemandEvent("preference_submit", candidate, {
+    action: "preference",
+    preferredSize: formData.get("preferredSize") || "",
+    preferredColour: formData.get("preferredColour") || "",
+    priceBand: formData.get("priceBand") || "",
+    optionalEmail: formData.get("optionalEmail") || "",
+    notificationConsent,
+    marketingConsent: formData.get("marketingConsent") === "yes",
+    sourceCollection: "future-preference-form"
+  });
+  if (notificationConsent) {
+    await sendFutureDemandEvent("notification_opt_in", candidate, {
+      action: "notification_opt_in",
+      optionalEmail: formData.get("optionalEmail") || "",
+      notificationConsent: true,
+      marketingConsent: formData.get("marketingConsent") === "yes",
+      sourceCollection: "future-preference-form"
+    });
+  }
+  if (status) status.textContent = ok ? "Preferences saved for review." : "Preferences were saved in this browser and will retry when available.";
+}
+
+async function sendFutureDemandEvent(eventType, candidate, overrides = {}) {
+  const allowedEvents = new Set(["product_impression", "wishlist_add", "wishlist_remove", "preference_submit", "notification_opt_in", "product_open"]);
+  if (!allowedEvents.has(eventType) || !getFutureCandidateById(candidate?.id)) return false;
+  const idempotencyKey = `${state.futureVisitorId}:${candidate.id}:${eventType}:${overrides.action || ""}:${overrides.sourceCollection || ""}`;
+  if ((eventType === "wishlist_add" || eventType === "product_open") && state.futurePendingEvents.has(idempotencyKey)) return true;
+  state.futurePendingEvents.add(idempotencyKey);
+  const eventRecord = sanitizeFutureDemandEvent({
+    eventId: createEventId(),
+    eventType,
+    createdAt: new Date().toISOString(),
+    anonymousVisitorId: state.futureVisitorId,
+    productId: candidate.id,
+    productSlug: candidate.slug,
+    productTitle: candidate.title,
+    brand: candidate.brand,
+    productStatus: "research_candidate",
+    pagePath: window.location.pathname + window.location.search + window.location.hash,
+    cardPosition: overrides.cardPosition || "",
+    sourceCollection: overrides.sourceCollection || candidate.sourceCollection,
+    experimentId: futureDemandExperimentId,
+    experimentVariant: state.futureExperimentVariant,
+    action: overrides.action || eventType,
+    preferredSize: overrides.preferredSize || "",
+    preferredColour: overrides.preferredColour || "",
+    priceBand: overrides.priceBand || "",
+    optionalEmail: overrides.optionalEmail || "",
+    notificationConsent: overrides.notificationConsent === true ? "yes" : "no",
+    marketingConsent: overrides.marketingConsent === true ? "yes" : "no",
+    referrer: document.referrer || "",
+    utmSource: getUrlParam("utm_source"),
+    utmMedium: getUrlParam("utm_medium"),
+    utmCampaign: getUrlParam("utm_campaign"),
+    userAgentClass: getUserAgentClass(),
+    viewportClass: getViewportClass(),
+    idempotencyKey
+  });
+  appendFutureDemandEventLog(eventRecord);
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ "form-name": "kalm-future-demand-event", "bot-field": "", ...eventRecord }).toString()
+    });
+    return response.ok;
+  } catch (error) {
+    queueFutureDemandEvent(eventRecord);
+    return false;
+  }
+}
+
+function sanitizeFutureDemandEvent(eventRecord) {
+  const max = {
+    optionalEmail: 120,
+    pagePath: 240,
+    referrer: 240
+  };
+  return Object.fromEntries(Object.entries(eventRecord).map(([key, value]) => {
+    const text = String(value ?? "");
+    return [key, text.slice(0, max[key] || 140)];
+  }));
+}
+
+function loadFutureWishlist() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem("kalmFutureDemandWishlist") || "[]");
+    return Array.isArray(parsed) ? parsed.filter((id) => typeof id === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveFutureWishlist() {
+  localStorage.setItem("kalmFutureDemandWishlist", JSON.stringify(state.futureWishlist));
+}
+
+function getFutureVisitorId() {
+  try {
+    const existing = localStorage.getItem("kalmFutureDemandVisitorId");
+    if (existing) return existing;
+    const next = `anon_${crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2)}`;
+    localStorage.setItem("kalmFutureDemandVisitorId", next);
+    return next;
+  } catch {
+    return `anon_${Date.now().toString(36)}`;
+  }
+}
+
+function getFutureExperimentVariant() {
+  try {
+    const key = "kalmFutureDemandExperiment:wishlist-cta-copy-v1";
+    const existing = localStorage.getItem(key);
+    if (existing === "A" || existing === "B") return existing;
+    const next = Math.random() < 0.5 ? "A" : "B";
+    localStorage.setItem(key, next);
+    return next;
+  } catch {
+    return "A";
+  }
+}
+
+function createEventId() {
+  return `evt_${crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2)}`;
+}
+
+function getUrlParam(name) {
+  return new URLSearchParams(window.location.search).get(name) || "";
+}
+
+function getUserAgentClass() {
+  const ua = navigator.userAgent || "";
+  if (/bot|crawler|spider/i.test(ua)) return "bot_or_crawler";
+  if (/Mobi|Android|iPhone/i.test(ua)) return "mobile_browser";
+  return "desktop_browser";
+}
+
+function getViewportClass() {
+  const width = window.innerWidth || 0;
+  if (width < 640) return "mobile";
+  if (width < 1024) return "tablet";
+  return "desktop";
+}
+
+function loadFutureDemandEventLog() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem("kalmFutureDemandEventLog") || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function appendFutureDemandEventLog(eventRecord) {
+  const log = loadFutureDemandEventLog();
+  log.push(eventRecord);
+  localStorage.setItem("kalmFutureDemandEventLog", JSON.stringify(log.slice(-500)));
+}
+
+function queueFutureDemandEvent(eventRecord) {
+  try {
+    const queue = JSON.parse(localStorage.getItem("kalmFutureDemandEventQueue") || "[]");
+    queue.push(eventRecord);
+    localStorage.setItem("kalmFutureDemandEventQueue", JSON.stringify(queue.slice(-100)));
+  } catch {
+    // Keep public UX non-blocking if local storage is unavailable.
+  }
+}
+
+function uniqueCount(values) {
+  return new Set(values.filter(Boolean)).size;
+}
+
+function exportFutureDemandCsv() {
+  const rows = [["brand", "product", "impressions", "wishlistAdds", "notificationOptIns", "preferenceSubmissions", "wishlistRate", "sampleStatus"]];
+  const events = loadFutureDemandEventLog();
+  futureDemandCandidates.forEach((candidate) => {
+    const candidateEvents = events.filter((event) => event.productId === candidate.id);
+    const impressions = uniqueCount(candidateEvents.filter((event) => event.eventType === "product_impression").map((event) => event.anonymousVisitorId));
+    const wishlistAdds = uniqueCount(candidateEvents.filter((event) => event.eventType === "wishlist_add").map((event) => event.anonymousVisitorId));
+    const notificationOptIns = uniqueCount(candidateEvents.filter((event) => event.eventType === "notification_opt_in").map((event) => event.anonymousVisitorId));
+    const preferenceSubmissions = uniqueCount(candidateEvents.filter((event) => event.eventType === "preference_submit").map((event) => event.anonymousVisitorId));
+    const rate = impressions ? (wishlistAdds / impressions).toFixed(4) : "0";
+    rows.push([candidate.brand, candidate.title, impressions, wishlistAdds, notificationOptIns, preferenceSubmissions, rate, impressions < 30 ? "insufficient_exposure" : "reviewable"]);
+  });
+  const csv = rows.map((row) => row.map((value) => `"${String(value).replaceAll('"', '""')}"`).join(",")).join("\n");
+  const blob = new Blob([csv], { type: "text/csv" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "kalm-future-demand-summary.csv";
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 function getOutdoorAnchorProducts() {
@@ -901,9 +1690,12 @@ function renderKalmOutdoorExperience(brand) {
       </div>
     </section>
 
+    ${renderFutureBrandPanel(brand.id)}
+
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+  recordVisibleFutureImpressions("kalm-outdoor-brand-page");
 }
 
 function getOutdoorWaitlistChoices() {

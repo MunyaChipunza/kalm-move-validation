@@ -1,0 +1,31 @@
+{
+  "before": {
+    "h1": "Future-brand wishlist testing",
+    "cards": 12,
+    "addToBag": 0,
+    "marketingChecked": false,
+    "variant": "B"
+  },
+  "after": {
+    "pressed": "true",
+    "label": "On your wishlist",
+    "wishlist": "[\"future-kalm-move-all-day-straw-tumbler\"]"
+  },
+  "eventState": {
+    "total": 14,
+    "product_impression": 12,
+    "wishlist_add": 1,
+    "preference_submit": 1
+  },
+  "ks": {
+    "h1": "Racer Knit Bra",
+    "addToBag": 1
+  },
+  "futurePage": {
+    "h1": "All-Day Straw Tumbler",
+    "status": "In consideration",
+    "addToBag": 0,
+    "offers": false
+  },
+  "screenshot": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/mobile-future-candidate.jpg"
+}

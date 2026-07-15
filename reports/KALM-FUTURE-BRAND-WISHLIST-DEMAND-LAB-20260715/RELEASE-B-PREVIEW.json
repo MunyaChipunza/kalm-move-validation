@@ -1,0 +1,63 @@
+{
+  "release": "B",
+  "status": "preview_only",
+  "productionDeploymentAuthorised": false,
+  "branch": "codex/kalm-future-brand-wishlist-demand-lab-20260715",
+  "storageMethod": "Netlify Forms fallback",
+  "eventForm": "kalm-future-demand-event",
+  "experiment": {
+    "id": "wishlist-cta-copy-v1",
+    "variantA": "Add to wishlist",
+    "variantB": "Vote for this product",
+    "assignment": "localStorage"
+  },
+  "candidateCounts": {
+    "kalmMove": 3,
+    "kalmWellness": 3,
+    "kalmHome": 3,
+    "kalmOutdoor": 3,
+    "total": 12
+  },
+  "candidateProducts": [
+    "KALM Move — All-Day Straw Tumbler",
+    "KALM Move — Commute Layer",
+    "KALM Move — Carry Goods",
+    "KALM Wellness — Recovery Mat",
+    "KALM Wellness — Ritual Kit",
+    "KALM Wellness — Studio Props",
+    "KALM Home — Cotton Sleep Edit",
+    "KALM Home — Towel Stack",
+    "KALM Home — Table Ritual",
+    "KALM Outdoor — Ember Tool System",
+    "KALM Outdoor — Ridge Smart System",
+    "KALM Outdoor — Hosting Softgoods"
+  ],
+  "commercialControls": {
+    "futureLabel": "In consideration",
+    "noLaunchDateCopy": true,
+    "futureAddToBag": false,
+    "futureCheckout": false,
+    "futureOfferStructuredData": false,
+    "futurePrices": false,
+    "futureInStockStatus": false
+  },
+  "ksActiveRegression": {
+    "visibleArchiveProducts": 14,
+    "hiddenLegacyProducts": 6,
+    "physicalSkus": 104,
+    "physicalUnits": 111,
+    "productsJsonModified": false
+  },
+  "privacyControls": {
+    "anonymousWishlistAllowed": true,
+    "emailOptional": true,
+    "notificationConsentSeparate": true,
+    "marketingConsentUntickedByDefault": true,
+    "noTokensCookiesOrPrivateBrowserDataInGit": true,
+    "publicAggregateEndpoint": false
+  },
+  "localSmokeEvidence": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/LOCAL-SMOKE-TEST.json",
+  "mobileScreenshot": "reports/KALM-FUTURE-BRAND-WISHLIST-DEMAND-LAB-20260715/mobile-future-candidate.jpg",
+  "previewUrl": null,
+  "previewDeployId": null
+}
