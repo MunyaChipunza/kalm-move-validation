@@ -1,0 +1,32 @@
+{
+  "performance": 71.0,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "largest-contentful-paint": {
+    "display": "7.1\u00a0s",
+    "numeric": 7136.827
+  },
+  "cumulative-layout-shift": {
+    "display": "0",
+    "numeric": 0
+  },
+  "total-blocking-time": {
+    "display": "110\u00a0ms",
+    "numeric": 114
+  },
+  "speed-index": {
+    "display": "5.6\u00a0s",
+    "numeric": 5559.74842000206
+  },
+  "first-contentful-paint": {
+    "display": "0.9\u00a0s",
+    "numeric": 850.827
+  },
+  "total-byte-weight": {
+    "display": "Total size was 1,244\u00a0KiB",
+    "numeric": 1273879
+  },
+  "requestCount": 10,
+  "bytes": 1273879
+}

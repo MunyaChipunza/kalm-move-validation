@@ -56,6 +56,7 @@ async function init() {
     renderRoute();
     renderBag();
   } catch (error) {
+    document.documentElement.dataset.routeRendered = "true";
     app.innerHTML = renderEmptyState("The shop could not load. Refresh the page to try again.");
     console.error(error);
   }
@@ -69,6 +70,13 @@ function bindChrome() {
   });
 
   document.addEventListener("click", (event) => {
+    const internalLink = event.target.closest("a[href]");
+    if (internalLink && shouldHandleClientNavigation(event, internalLink)) {
+      event.preventDefault();
+      navigateTo(internalLink.getAttribute("href"));
+      return;
+    }
+
     const addButton = event.target.closest("[data-add-to-bag]");
     if (addButton) {
       const productId = addButton.getAttribute("data-add-to-bag");
@@ -185,10 +193,35 @@ function bindChrome() {
   siteSearch?.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       const query = siteSearch.value.trim();
-      if (query) window.location.hash = `#/shop?search=${encodeURIComponent(query)}`;
+      if (query) navigateTo(`#/shop?search=${encodeURIComponent(query)}`);
       closeSearch();
     }
   });
+}
+
+function shouldHandleClientNavigation(event, link) {
+  if (event.defaultPrevented) return false;
+  if (event.button !== 0) return false;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return false;
+  if (link.target && link.target !== "_self") return false;
+  if (link.hasAttribute("download")) return false;
+  const href = link.getAttribute("href") || "";
+  if (!href || href.startsWith("mailto:") || href.startsWith("tel:")) return false;
+  if (href.startsWith("#/")) return true;
+  const url = new URL(href, window.location.href);
+  if (url.origin !== window.location.origin) return false;
+  return url.pathname !== window.location.pathname || url.search !== window.location.search || url.hash !== window.location.hash;
+}
+
+function navigateTo(href, { replace = false } = {}) {
+  const target = href.startsWith("#/")
+    ? `${window.location.pathname}${window.location.search}${href}`
+    : new URL(href, window.location.href).pathname + new URL(href, window.location.href).search + new URL(href, window.location.href).hash;
+  const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  if (target === current) return;
+  if (replace) window.history.replaceState({}, "", target);
+  else window.history.pushState({}, "", target);
+  renderRoute();
 }
 
 function renderRoute() {
@@ -201,6 +234,8 @@ function renderRoute() {
   state.hasRenderedRoute = true;
   state.currentRouteKey = routeKey;
   if (!isHomeRoute) clearHomeSectionSchedule();
+  document.documentElement.dataset.routeRendered = "true";
+  document.documentElement.dataset.initialRoute = isHomeRoute ? "home" : "non-home";
   closeBag();
   nav?.classList.remove("open");
   navToggle?.setAttribute("aria-expanded", "false");
@@ -460,9 +495,9 @@ function renderHome({ preserveHero = false } = {}) {
       </div>
       <a class="hero-media" href="${collectionRoute("activewear")}" aria-label="Shop KALM Move activewear">
         <picture>
-          <source media="(max-width: 640px)" srcset="${escapeHtml(heroCampaign.mobile)}">
-          <source media="(max-width: 1100px)" srcset="${escapeHtml(heroCampaign.tablet)}">
-          <img src="${escapeHtml(heroCampaign.desktop)}" alt="${escapeAttribute(heroCampaign.alt || "KALM Move adults enjoying a relaxed movement moment")}" width="1920" height="1080" fetchpriority="high" decoding="async">
+          <source media="(max-width: 640px)" srcset="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp">
+          <source media="(max-width: 1100px)" srcset="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet-perf-20260715.webp">
+          <img src="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp" alt="${escapeAttribute(heroCampaign.alt || "KALM Move adults enjoying a relaxed movement moment")}" width="1600" height="900" fetchpriority="high" decoding="async">
         </picture>
       </a>
     </section>`;
@@ -2079,7 +2114,7 @@ function updateShopFromForm(event) {
     const value = values.get(key);
     if (value && value !== "all" && value !== "featured") params.set(key, value);
   }
-  window.location.hash = `#/shop${params.toString() ? "?" + params.toString() : ""}`;
+  navigateTo(`#/shop${params.toString() ? "?" + params.toString() : ""}`);
 }
 
 function shopHeading({ brand, category, audience, moveCategory, search }) {
