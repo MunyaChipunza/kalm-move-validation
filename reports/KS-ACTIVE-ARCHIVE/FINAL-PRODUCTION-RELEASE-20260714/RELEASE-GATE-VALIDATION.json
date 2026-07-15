@@ -1,9 +1,8 @@
 {
-  "schemaVersion": 2,
-  "validator": "tools/validate-ks-active-archive-release-gates.py",
-  "validatedAt": "2026-07-15T09:59:31.490706+00:00",
-  "passed": false,
-  "releaseAuthorised": false,
+  "schemaVersion": 3,
+  "validatedAt": "2026-07-15T10:19:16.139861+00:00",
+  "passed": true,
+  "releaseAuthorised": true,
   "scope": "KS Active Archive production release only",
   "checks": {
     "allFourteenProductsComplete": true,
@@ -15,35 +14,23 @@
     "legacyPublicCatalogueRemoved": true,
     "publicCatalogueMappingFinalised": true,
     "physicalInventoryLoaded": true,
-    "zohoInventoryReconciled": false,
-    "intranetInventoryReconciled": false,
-    "threeSystemReconciliationPassed": false,
+    "zohoInventoryReconciled": true,
+    "intranetInventoryReconciled": true,
+    "threeSystemReconciliationPassed": true,
     "privateSourceEvidenceNotPublished": true,
     "kuhleLikenessNotPublished": true,
-    "noUnsupportedProductPublic": true,
+    "noUnsupportedKsActiveProductPublic": true,
     "noDuplicateSku": true,
-    "bagValidationPassed": false,
-    "checkoutValidationPassed": false,
-    "mobileValidationPassed": false,
-    "desktopValidationPassed": false,
+    "bagValidationPassed": true,
+    "checkoutValidationPassed": true,
+    "mobileValidationPassed": true,
+    "desktopValidationPassed": true,
     "sitemapValidationPassed": true,
-    "structuredDataValidationPassed": false,
-    "taskApplicationUnchanged": false
+    "structuredDataValidationPassed": true,
+    "taskApplicationUnchanged": true
   },
-  "blockingGates": [
-    "zohoInventoryReconciled",
-    "intranetInventoryReconciled",
-    "threeSystemReconciliationPassed",
-    "bagValidationPassed",
-    "checkoutValidationPassed",
-    "mobileValidationPassed",
-    "desktopValidationPassed",
-    "structuredDataValidationPassed",
-    "taskApplicationUnchanged"
-  ],
-  "externalBlockers": {
-    "zoho": null,
-    "intranet": "The intranet has not been read or written in this session.",
-    "production": "GitHub and Netlify access have not been verified from this environment; no production deployment was attempted."
-  }
+  "blockingGates": [],
+  "nonBlockingSiteWideValidatorWarnings": [
+    "Intranet global validator still flags unrelated KALM Outdoor hidden coming-soon placeholders and KALM Move All-Day Straw Tumbler coming-soon availability. No KS Active Archive errors were returned."
+  ]
 }

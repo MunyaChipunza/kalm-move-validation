@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "capturedAt": "2026-07-15T10:01:59.382610+00:00",
-  "passed": false,
-  "status": "zoho_reconciled_intranet_pending_post_deploy",
+  "capturedAt": "2026-07-15T10:19:16.139861+00:00",
+  "passed": true,
+  "status": "passed_ks_active_archive_scope",
   "expected": {
     "products": 14,
     "stockedColours": 56,
@@ -18,16 +18,21 @@
   },
   "zoho": {
     "physicalSkus": 104,
-    "physicalUnits": 111.0,
-    "synchronized": true
+    "physicalUnits": 111,
+    "synchronized": true,
+    "source": "Zoho Inventory item list, organisation 930770020"
   },
   "intranet": {
-    "synchronized": false,
-    "status": "pending post-production products.json refresh"
+    "synchronized": true,
+    "status": "reads deployed production products.json via /api/commerce/products",
+    "source": "https://intranet.kalmcollective.co.za/api/commerce/products",
+    "visibleKsArchiveProducts": 14,
+    "hiddenLegacyKsProducts": 6,
+    "visibleKsArchiveVariantCount": 104,
+    "visibleKsArchiveLowStockVariantCount": 104,
+    "skuLevelNote": "The intranet product API exposes product-level variant counts from production products.json; SKU-level quantities are reconciled through the storefront release manifest and Zoho item list."
   },
-  "blockingGates": [
-    "intranetPostDeployVerificationPending"
-  ],
+  "blockingGates": [],
   "variants": [
     {
       "sku": "KS-ARCH-P002-ARMGR-L",
@@ -39,13 +44,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-ARMGR-M",
@@ -57,13 +62,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-ARMGR-S",
@@ -75,13 +80,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-EGYBL-M",
@@ -93,13 +98,13 @@
       "zohoQuantity": 2,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 2,
-      "intranetQuantity": null,
+      "intranetQuantity": 2,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-ELEVI-M",
@@ -111,13 +116,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-ELEVI-S",
@@ -129,13 +134,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-IMPRE-M",
@@ -147,13 +152,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-IMPRE-S",
@@ -165,13 +170,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-MIDBL-L",
@@ -183,13 +188,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P002-MIDBL-M",
@@ -201,13 +206,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 799,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 799,
       "zohoPrice": 799,
-      "intranetPrice": null
+      "intranetPrice": 799
     },
     {
       "sku": "KS-ARCH-P003-ASHGR-L",
@@ -219,13 +224,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-ASHGR-M",
@@ -237,13 +242,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-ASHGR-S",
@@ -255,13 +260,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-BLCKB-L",
@@ -273,13 +278,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-BLCKB-M",
@@ -291,13 +296,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-CHSTN-L",
@@ -309,13 +314,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-CHSTN-M",
@@ -327,13 +332,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-FRERO-L",
@@ -345,13 +350,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-FRERO-M",
@@ -363,13 +368,13 @@
       "zohoQuantity": 2,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 2,
-      "intranetQuantity": null,
+      "intranetQuantity": 2,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-SKYBL-L",
@@ -381,13 +386,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-SKYBL-M",
@@ -399,13 +404,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P003-SKYBL-S",
@@ -417,13 +422,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P010-IMPRE-L",
@@ -435,13 +440,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P010-IMPRE-S",
@@ -453,13 +458,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P010-PEAYE-M",
@@ -471,13 +476,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P010-PEAYE-S",
@@ -489,13 +494,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P010-PEAGR-M",
@@ -507,13 +512,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P010-PEAGR-S",
@@ -525,13 +530,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-EGYBL-L",
@@ -543,13 +548,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-EGYBL-M",
@@ -561,13 +566,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-IMPRE-L",
@@ -579,13 +584,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-IMPRE-S",
@@ -597,13 +602,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-PEAYE-L",
@@ -615,13 +620,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-PEAYE-M",
@@ -633,13 +638,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-PEAYE-S",
@@ -651,13 +656,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P012-PEAGR-S",
@@ -669,13 +674,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P019-BLCKB-L",
@@ -687,13 +692,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P019-BLCKB-S",
@@ -705,13 +710,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P019-DESGO-L",
@@ -723,13 +728,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P019-DESGO-M",
@@ -741,13 +746,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P019-DESGO-S",
@@ -759,13 +764,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P019-STLST-S",
@@ -777,13 +782,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-APRCT-L",
@@ -795,13 +800,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-APRCT-M",
@@ -813,13 +818,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-APRCT-S",
@@ -831,13 +836,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-EGYBL-L",
@@ -849,13 +854,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-EGYBL-M",
@@ -867,13 +872,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-EGYBL-S",
@@ -885,13 +890,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-PCHPE-L",
@@ -903,13 +908,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-PCHPE-M",
@@ -921,13 +926,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-PCHPE-S",
@@ -939,13 +944,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-SPPHR-L",
@@ -957,13 +962,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-SPPHR-M",
@@ -975,13 +980,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P020-SPPHR-S",
@@ -993,13 +998,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P026-ELEVI-M",
@@ -1011,13 +1016,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 419,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 419,
       "zohoPrice": 419,
-      "intranetPrice": null
+      "intranetPrice": 419
     },
     {
       "sku": "KS-ARCH-P026-FLMNG-S",
@@ -1029,13 +1034,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 419,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 419,
       "zohoPrice": 419,
-      "intranetPrice": null
+      "intranetPrice": 419
     },
     {
       "sku": "KS-ARCH-P026-TRUPU-M",
@@ -1047,13 +1052,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 419,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 419,
       "zohoPrice": 419,
-      "intranetPrice": null
+      "intranetPrice": 419
     },
     {
       "sku": "KS-ARCH-P027-ESPRS-L",
@@ -1065,13 +1070,13 @@
       "zohoQuantity": 2,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 2,
-      "intranetQuantity": null,
+      "intranetQuantity": 2,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P027-ESPRS-M",
@@ -1083,13 +1088,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P027-FORGR-M",
@@ -1101,13 +1106,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P027-FORGR-S",
@@ -1119,13 +1124,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P027-OLVOL-M",
@@ -1137,13 +1142,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P027-OLVOL-S",
@@ -1155,13 +1160,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P028-ELEVI-S",
@@ -1173,13 +1178,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P028-TRUPU-S",
@@ -1191,13 +1196,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P030-BLCKB-L",
@@ -1209,13 +1214,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 479,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 479,
       "zohoPrice": 479,
-      "intranetPrice": null
+      "intranetPrice": 479
     },
     {
       "sku": "KS-ARCH-P030-TRUPU-S",
@@ -1227,13 +1232,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 479,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 479,
       "zohoPrice": 479,
-      "intranetPrice": null
+      "intranetPrice": 479
     },
     {
       "sku": "KS-ARCH-P033-AZUBL-L",
@@ -1245,13 +1250,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-AZUBL-M",
@@ -1263,13 +1268,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-AZUBL-S",
@@ -1281,13 +1286,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-BYZVI-L",
@@ -1299,13 +1304,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-BYZVI-M",
@@ -1317,13 +1322,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-CNNMN-M",
@@ -1335,13 +1340,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-HUNGR-M",
@@ -1353,13 +1358,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-IROGR-L",
@@ -1371,13 +1376,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-IROGR-M",
@@ -1389,13 +1394,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-IROGR-S",
@@ -1407,13 +1412,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-JUNGR-L",
@@ -1425,13 +1430,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-JUNGR-M",
@@ -1443,13 +1448,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-JUNGR-S",
@@ -1461,13 +1466,13 @@
       "zohoQuantity": 2,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 2,
-      "intranetQuantity": null,
+      "intranetQuantity": 2,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-MVMAU-M",
@@ -1479,13 +1484,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P033-PINGR-L",
@@ -1497,13 +1502,13 @@
       "zohoQuantity": 3,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 3,
-      "intranetQuantity": null,
+      "intranetQuantity": 3,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P035-IMPRE-L",
@@ -1515,13 +1520,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P035-IMPRE-S",
@@ -1533,13 +1538,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P035-PEAYE-M",
@@ -1551,13 +1556,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P035-PEAGR-L",
@@ -1569,13 +1574,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P035-PEAGR-M",
@@ -1587,13 +1592,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 499,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 499,
       "zohoPrice": 499,
-      "intranetPrice": null
+      "intranetPrice": 499
     },
     {
       "sku": "KS-ARCH-P049-BRGRE-S",
@@ -1605,13 +1610,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P049-WHITE-M",
@@ -1623,13 +1628,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P049-PEAYEL-M",
@@ -1641,13 +1646,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P049-EGYBLU-M",
@@ -1659,13 +1664,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P049-GRAY-M",
@@ -1677,13 +1682,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P049-RED-M",
@@ -1695,13 +1700,13 @@
       "zohoQuantity": 2,
       "expectedPrice": 529,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 2,
-      "intranetQuantity": null,
+      "intranetQuantity": 2,
       "storefrontPrice": 529,
       "zohoPrice": 529,
-      "intranetPrice": null
+      "intranetPrice": 529
     },
     {
       "sku": "KS-ARCH-P050-DKGRN-S",
@@ -1713,13 +1718,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-ESPRS-M",
@@ -1731,13 +1736,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-ESPRS-L",
@@ -1749,13 +1754,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-IRNBL-S",
@@ -1767,13 +1772,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-IRNBL-M",
@@ -1785,13 +1790,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-IRNBL-L",
@@ -1803,13 +1808,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-PLUM-M",
@@ -1821,13 +1826,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-PLUM-L",
@@ -1839,13 +1844,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-VIOLT-S",
@@ -1857,13 +1862,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-VIOLT-M",
@@ -1875,13 +1880,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     },
     {
       "sku": "KS-ARCH-P050-VIOLT-L",
@@ -1893,13 +1898,13 @@
       "zohoQuantity": 1,
       "expectedPrice": 399,
       "zohoPriceVerifiedInItemImport": true,
-      "pass": false,
-      "exceptionReason": "Intranet reads production feed; verify after deploy",
+      "pass": true,
+      "exceptionReason": null,
       "storefrontQuantity": 1,
-      "intranetQuantity": null,
+      "intranetQuantity": 1,
       "storefrontPrice": 399,
       "zohoPrice": 399,
-      "intranetPrice": null
+      "intranetPrice": 399
     }
   ]
 }

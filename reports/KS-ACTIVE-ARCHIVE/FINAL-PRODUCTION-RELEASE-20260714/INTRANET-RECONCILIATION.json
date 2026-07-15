@@ -1,19 +1,28 @@
 {
-  "schemaVersion": 2,
-  "capturedAt": "2026-07-15T10:01:59.382610+00:00",
-  "passed": false,
-  "status": "pending_post_deploy_verification",
-  "readAccess": true,
-  "writeEndpointAvailable": false,
-  "expectedAfterDeploy": {
-    "products": 14,
-    "physicalSkus": 104,
-    "physicalUnits": 111
+  "capturedAt": "2026-07-15T10:19:16.139861+00:00",
+  "passed": true,
+  "status": "ks_active_archive_reconciled_via_production_feed",
+  "authenticatedReadAccess": true,
+  "source": "https://intranet.kalmcollective.co.za/api/commerce/products",
+  "ksActiveArchive": {
+    "expectedVisibleProducts": 14,
+    "actualVisibleProducts": 14,
+    "expectedHiddenLegacyProducts": 6,
+    "actualHiddenLegacyProducts": 6,
+    "expectedPhysicalSkus": 104,
+    "actualVisibleVariantCount": 104,
+    "expectedPhysicalUnits": 111,
+    "quantitySource": "storefront products.json variant inventory; product API exposes aggregate variant counts",
+    "missingImages": 0,
+    "priceMismatches": []
   },
-  "preDeployObserved": {
-    "ksActiveProducts": 6,
-    "source": "current production products.json via intranet UI/API"
-  },
-  "syncMethod": "Production feed deployment; intranet is a reader of the production products.json feed.",
-  "reason": "Cannot truthfully mark intranet reconciled before the production feed is deployed. Post-deploy verification required."
+  "globalCommerceValidate": {
+    "passed": false,
+    "scope": "site-wide, not KS Active Archive only",
+    "ksActiveErrors": [],
+    "nonKsActiveErrors": [
+      "KALM Outdoor hidden coming-soon placeholders have zero price / coming_soon availability / no hero image under the intranet site-wide validator.",
+      "KALM Move All-Day Straw Tumbler remains a coming-soon/out-of-stock concept with zero price and is flagged by the intranet site-wide validator."
+    ]
+  }
 }

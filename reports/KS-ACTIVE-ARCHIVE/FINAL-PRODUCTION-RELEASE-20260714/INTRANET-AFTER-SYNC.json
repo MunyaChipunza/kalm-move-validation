@@ -1,18 +1,39 @@
 {
-  "schemaVersion": 2,
-  "capturedAt": "2026-07-15T10:01:59.382610+00:00",
-  "status": "pending_post_production_feed_refresh",
-  "readAccess": true,
-  "writeEndpointAvailable": false,
-  "uiObservation": {
-    "app": "KALM Ops / KALM Commerce",
-    "connectorMode": "Prototype-safe",
-    "publishedProductsObservedBeforeRelease": 61,
-    "draftProductsObservedBeforeRelease": 9,
-    "validationBeforeRelease": "failed against current production feed, not against local release candidate",
-    "validationFailureScope": "pre-existing current production coming-soon Outdoor/Tumbler records"
+  "capturedAt": "2026-07-15T10:19:16.139861+00:00",
+  "status": "read_reconciled_post_production_deploy",
+  "authenticatedReadAccess": true,
+  "source": "https://intranet.kalmcollective.co.za/api/commerce/products",
+  "dashboard": {
+    "publishedProducts": 69,
+    "draftProducts": 9,
+    "hiddenOrArchived": 15,
+    "missingImages": 0,
+    "lowStockVariants": 104,
+    "outOfStockProducts": 1
   },
-  "syncMethod": "The intranet catalogue reads https://kalmcollective.co.za/products.json. The approved release candidate updates that production feed through GitHub/Netlify; intranet reconciliation must be verified immediately after production deploy.",
-  "noSeparateSkuWritePerformed": true,
-  "reason": "No supported SKU-level intranet import/write endpoint is exposed. The Commerce Publishing screen states server-side Git/Netlify publication is the write path."
+  "ksActiveArchive": {
+    "visibleProducts": 14,
+    "hiddenLegacyProducts": 6,
+    "visibleVariantCount": 104,
+    "visibleLowStockVariantCount": 104,
+    "missingImages": 0,
+    "productSlugs": [
+      "ks-active-halter-back-romper",
+      "ks-active-rib-scrunch-legging",
+      "ks-active-cutout-crossback-bra",
+      "ks-active-scrunch-seamless-short",
+      "ks-active-cutout-seamless-bra",
+      "ks-active-crossback-seamless-bra",
+      "ks-active-high-waist-seamless-short",
+      "ks-active-curve-seam-legging",
+      "ks-active-high-waist-seamless-legging",
+      "ks-active-crisscross-back-bra",
+      "ks-active-panel-seamless-legging",
+      "ks-active-scrunch-seamless-legging",
+      "ks-active-rib-contour-legging",
+      "ks-active-racer-knit-bra"
+    ]
+  },
+  "writeMode": "no direct intranet writes performed; intranet reads deployed production products.json",
+  "unrelatedSiteWideValidationErrors": "See INTRANET-RECONCILIATION.json; validation errors are for KALM Outdoor hidden coming-soon placeholders and KALM Move tumbler availability, not KS Active Archive."
 }
