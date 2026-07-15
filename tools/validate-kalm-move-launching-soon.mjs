@@ -109,7 +109,7 @@ const reports = {
   },
   "WISHLIST-VALIDATION.json": {
     ...base,
-    checks: { localWishlist: script.includes("kalmMoveLaunchWishlist"), exactSelectionRequiredOnPdp: script.includes("Choose a size to save this product"), anonymousSessionId: script.includes("kalmMoveLaunchSessionId"), notifyForm: index.includes("kalm-move-launch-interest"), separateMarketingConsent: script.includes("marketing_consent"), popiaDeviceConsent: script.includes("device_category_consent") }
+    checks: { localWishlist: script.includes("kalmMoveLaunchWishlist"), exactSelectionRequiredOnPdp: script.includes("Choose a size to save this product"), cardWishlistRequiresExplicitSize: script.includes("data-move-card-wishlist-confirm") && script.includes("card_selected_preference") && !script.includes("card_default"), anonymousSessionId: script.includes("kalmMoveLaunchSessionId"), notifyForm: index.includes("kalm-move-launch-interest"), separateMarketingConsent: script.includes("marketing_consent"), popiaDeviceConsent: script.includes("device_category_consent") }
   },
   "RESPONSIVE-QA.json": {
     ...base,

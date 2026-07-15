@@ -121,11 +121,32 @@ function bindChrome() {
     const moveCardWishlistButton = event.target.closest("[data-move-card-wishlist]");
     if (moveCardWishlistButton) {
       const product = findProduct(moveCardWishlistButton.getAttribute("data-move-card-wishlist"));
-      if (product) {
-        const colour = moveCardWishlistButton.getAttribute("data-display-colour") || getDefaultColor(product);
-        const size = product.sizes?.[0] || "One size";
-        saveMoveWishlist(product, colour, size, "card_default", moveCardWishlistButton);
+      const scope = moveCardWishlistButton.closest("[data-product-scope]");
+      const panel = scope?.querySelector("[data-move-card-wishlist-panel]");
+      if (product && panel) {
+        panel.hidden = false;
+        moveCardWishlistButton.setAttribute("aria-expanded", "true");
+        panel.querySelector("[data-move-card-size-select]")?.focus();
       }
+    }
+
+    const moveCardWishlistConfirm = event.target.closest("[data-move-card-wishlist-confirm]");
+    if (moveCardWishlistConfirm) {
+      const scope = moveCardWishlistConfirm.closest("[data-product-scope]");
+      const product = findProduct(scope?.getAttribute("data-product-id"));
+      const colour = scope?.getAttribute("data-display-colour") || getDefaultColor(product);
+      const size = scope?.querySelector("[data-move-card-size-select]")?.value || "";
+      const error = scope?.querySelector("[data-move-card-wishlist-error]");
+      if (!product || !size) {
+        if (error) error.textContent = "Choose a size to save this product.";
+        scope?.querySelector("[data-move-card-size-select]")?.setAttribute("aria-invalid", "true");
+        return;
+      }
+      saveMoveWishlist(product, colour, size, "card_selected_preference", scope.querySelector("[data-move-card-wishlist]"));
+      const panel = scope.querySelector("[data-move-card-wishlist-panel]");
+      if (panel) panel.hidden = true;
+      scope.querySelector("[data-move-card-wishlist]")?.setAttribute("aria-expanded", "false");
+      if (error) error.textContent = "";
     }
 
     const moveNotifyToggle = event.target.closest("[data-move-notify-toggle]");
@@ -1884,8 +1905,7 @@ function renderMoveLaunchingSoonCard(product, options = {}) {
     : getDefaultColor(product);
   const productHref = productRoute(product, defaultColour);
   const displayImage = getVariantImage(product, defaultColour) || product.image;
-  const defaultSize = product.sizes?.[0] || "One size";
-  const saved = isMoveWishlisted(product, defaultColour, defaultSize);
+  const cardWishlistId = `move-wishlist-${product.id}`;
   const imageMarkup = options.eager
     ? `src="${escapeHtml(displayImage)}" decoding="async"`
     : `src="${escapeHtml(displayImage)}" loading="lazy" decoding="async" fetchpriority="low"`;
@@ -1899,12 +1919,22 @@ function renderMoveLaunchingSoonCard(product, options = {}) {
         <a class="product-brand" href="/brand/kalm-move">KALM Move</a>
         <div class="move-card-title-row">
           <h3><a href="${productHref}">${escapeHtml(product.title)}</a></h3>
-          <button class="wishlist-heart" type="button" data-move-card-wishlist="${escapeAttribute(product.id)}" data-display-colour="${escapeAttribute(defaultColour)}" aria-label="${escapeAttribute(saved ? `${product.title} is on your wishlist` : `Save ${product.title} to wishlist`)}" aria-pressed="${saved}">${saved ? "♥" : "♡"}</button>
+          <button class="wishlist-heart" type="button" data-move-card-wishlist="${escapeAttribute(product.id)}" data-display-colour="${escapeAttribute(defaultColour)}" aria-label="Save ${escapeAttribute(product.title)} to wishlist" aria-pressed="false" aria-controls="${escapeAttribute(cardWishlistId)}" aria-expanded="false">♡</button>
         </div>
         <div class="price-line"><strong>${formatPrice(getDisplayPrice(product))}</strong></div>
         <p class="card-display-colour">Colour: ${escapeHtml(defaultColour)}</p>
         <div class="swatches" aria-label="Available colours">
           ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
+        </div>
+        <div class="move-card-wishlist-panel" id="${escapeAttribute(cardWishlistId)}" data-move-card-wishlist-panel hidden>
+          <label>Size
+            <select data-move-card-size-select>
+              <option value="">Choose size</option>
+              ${product.sizes.map((size) => `<option value="${escapeAttribute(size)}">${escapeHtml(size)}</option>`).join("")}
+            </select>
+          </label>
+          <button class="button secondary" type="button" data-move-card-wishlist-confirm>SAVE SELECTION</button>
+          <p class="variant-error" data-move-card-wishlist-error role="status" aria-live="polite"></p>
         </div>
       </div>
     </article>
@@ -2438,7 +2468,8 @@ function updateMoveWishlistControls(scope) {
   if (!product || !isMoveLaunchingSoonProduct(product) || !scope) return;
   const colour = scope.querySelector("[data-color-select]")?.value || scope.getAttribute("data-display-colour") || getDefaultColor(product);
   const sizeSelector = scope.querySelector("[data-size-select]");
-  const size = sizeSelector ? sizeSelector.value : (product.sizes?.[0] || "One size");
+  const cardSizeSelector = scope.querySelector("[data-move-card-size-select]");
+  const size = sizeSelector ? sizeSelector.value : (cardSizeSelector?.value || "");
   const saved = isMoveWishlisted(product, colour, size);
   const productButton = scope.querySelector("[data-move-wishlist-save]");
   if (productButton) {

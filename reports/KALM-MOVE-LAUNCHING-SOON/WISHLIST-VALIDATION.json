@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-07-15T14:28:23.476Z",
+  "generatedAt": "2026-07-15T14:42:36.654Z",
   "branch": "codex/kalm-move-launching-soon-preview-20260715",
   "passed": true,
   "errors": [],
   "checks": {
     "localWishlist": true,
     "exactSelectionRequiredOnPdp": true,
+    "cardWishlistRequiresExplicitSize": true,
     "anonymousSessionId": true,
     "notifyForm": true,
     "separateMarketingConsent": true,
