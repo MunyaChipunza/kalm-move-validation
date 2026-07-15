@@ -1,0 +1,15 @@
+{
+  "productionUrl": "https://kalmcollective.co.za",
+  "performance": 96.0,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "lcp": 1791.3825,
+  "lcpDisplay": "1.8\u00a0s",
+  "cls": 0,
+  "tbt": 103,
+  "speedIndex": 4522.060008001833,
+  "fcp": 1082.3825,
+  "bytes": 247078,
+  "requestCount": 10
+}
