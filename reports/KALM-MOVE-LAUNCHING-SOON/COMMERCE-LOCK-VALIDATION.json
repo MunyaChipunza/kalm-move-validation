@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-15T14:28:23.476Z",
+  "branch": "codex/kalm-move-launching-soon-preview-20260715",
+  "passed": true,
+  "errors": [],
+  "checks": {
+    "noKalmMoveAddToBagOnPdp": true,
+    "bagRestorationPurged": true,
+    "noOfferForLaunchingSoon": true,
+    "noKalmMoveProductSitemapLinks": true,
+    "otherFutureBrandsInaccessible": true
+  }
+}

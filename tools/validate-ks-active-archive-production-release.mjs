@@ -45,6 +45,6 @@ assert(publicKs.filter((product) => ["P002", "P003", "P010", "P012", "P019", "P0
 assert(!fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").includes("ks-high-waist-seamless-leggings") && publicKs.every((product) => fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").includes(`/products/${product.slug}`)), "sitemap excludes legacy KS Active routes and includes all Archive routes");
 
 const result = { schemaVersion: 1, validator: "tools/validate-ks-active-archive-production-release.mjs", passed: errors.length === 0, checks, errors };
-fs.writeFileSync(path.join(root, "reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/LOCAL-CATALOGUE-VALIDATION.json"), `${JSON.stringify(result, null, 2)}\n`);
+if (process.env.KALM_VALIDATION_NO_WRITE !== "1") fs.writeFileSync(path.join(root, "reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/LOCAL-CATALOGUE-VALIDATION.json"), `${JSON.stringify(result, null, 2)}\n`);
 if (errors.length) { console.error(JSON.stringify(result, null, 2)); process.exit(1); }
 console.log(JSON.stringify(result, null, 2));

@@ -16,6 +16,7 @@ const check = (name, condition, detail = "") => {
 };
 
 const data = JSON.parse(read("products.json"));
+const movePreviewPrices = JSON.parse(read("data/kalm-move-preview-prices.json"));
 const sandbox = { window: {} };
 vm.runInNewContext(read("merchandising.js"), sandbox, { filename: "merchandising.js" });
 const config = sandbox.window.KALM_MERCHANDISING;
@@ -104,8 +105,10 @@ check("Product pages honor intended display colour", script.includes("params.get
 check("Product, Organization, WebSite and Collection structured data are implemented", script.includes('"@type": "Product"') && script.includes('"@type": "Organization"') && script.includes('"@type": "WebSite"') && script.includes('"@type": "CollectionPage"'));
 check("Coming-soon or unavailable products do not publish offers", script.includes("const purchasable = !comingSoon"));
 check("robots.txt permits standard crawling and points to the sitemap", /User-agent:\s*\*/.test(robots) && /Allow:\s*\//.test(robots) && /Sitemap:\s*https:\/\/kalmcollective\.co\.za\/sitemap\.xml/.test(robots));
-check("Sitemap includes all public products", data.products.filter((product) => (product.status || "published") === "published" && (product.visibility || "visible") === "visible").every((product) => sitemap.includes(`/products/${encodeURIComponent(product.slug)}`)));
-check("Sitemap includes collection routes", ["new-in", "activewear", "wellness", "home", "outdoor", "sale"].every((category) => sitemap.includes(`/collections/${category}`)));
+const commerceProducts = data.products.filter((product) => (product.status || "published") === "published" && (product.visibility || "visible") === "visible" && product.brandId === "ks-active");
+check("Sitemap includes all current commerce products", commerceProducts.every((product) => sitemap.includes(`/products/${encodeURIComponent(product.slug)}`)));
+check("KALM Move has a preview collection sitemap route without commerce PDP links", movePreviewPrices.some((entry) => entry.status === "launching-soon") && sitemap.includes("/brand/kalm-move") && !sitemap.includes("/products/kalm-move-"));
+check("Sitemap includes current primary collection routes", ["new-in", "activewear", "sale"].every((category) => sitemap.includes(`/collections/${category}`)));
 check("llms.txt contains factual discovery guidance without credentials", llms.includes("KALM Collective") && !/(api[_-]?key|token|secret)/i.test(llms));
 check("No Drive path is exposed in public source", ![indexHtml, script, read("merchandising.js")].some((text) => /[A-Z]:\\|G:\\My Drive/i.test(text)));
 
@@ -117,7 +120,7 @@ const result = {
   campaignFiles: campaigns.map((path) => ({ path, bytes: statSync(resolve(root, path)).size, sha256: hash(path) })),
   failures
 };
-writeFileSync(resolve(root, outputPath), `${JSON.stringify(result, null, 2)}\n`);
+if (process.env.KALM_VALIDATION_NO_WRITE !== "1") writeFileSync(resolve(root, outputPath), `${JSON.stringify(result, null, 2)}\n`);
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);

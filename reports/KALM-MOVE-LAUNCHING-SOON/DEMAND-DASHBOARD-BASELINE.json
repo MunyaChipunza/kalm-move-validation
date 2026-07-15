@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-07-15T14:28:22.701Z",
+  "title": "KALM Move Launching Soon demand dashboard baseline",
+  "access": "Authenticated Netlify Forms owner export processed locally; this source-only report is blocked from Netlify public paths.",
+  "collector": "Netlify Form: kalm-move-launch-interest",
+  "dataStatus": "No customer event export has been processed for this preview baseline.",
+  "totals": {
+    "wishlistSaves": 0,
+    "uniqueInterestedVisitors": 0,
+    "notifyMeRegistrations": 0,
+    "productViewToWishlistConversion": 0,
+    "wishlistToNotifyConversion": 0
+  },
+  "dimensions": [
+    "product",
+    "displayed price",
+    "colour",
+    "size",
+    "women's or men's range",
+    "date"
+  ],
+  "duplicateAndSuspiciousActivityFilters": {
+    "eventId": "Discard duplicate event_id values.",
+    "wishlist": "Keep one wishlist save per anonymous_session_id, product_id, colour and size per 24 hours.",
+    "notify": "Keep one notify registration per normalized email, product_id, colour and size per 24 hours.",
+    "suspicious": "Flag sessions with more than 30 wishlist events in five minutes or malformed product/price mappings for review."
+  },
+  "csvExport": {
+    "command": "node tools/export-kalm-move-demand.mjs <authenticated-netlify-forms-export.json>",
+    "outputs": [
+      "DEMAND-DASHBOARD.json",
+      "DEMAND-EVENTS-RECONCILED.csv"
+    ]
+  },
+  "privacy": "No customer email addresses are included in this report. Email is retained only in the authenticated collection export for launch communication."
+}

@@ -1,0 +1,2247 @@
+{
+  "generatedAt": "2026-07-15T14:28:22.696Z",
+  "source": "products.json",
+  "scope": "Existing KALM Move products only",
+  "totalExistingKalmMoveProducts": 34,
+  "visibleLaunchingSoonProducts": 33,
+  "excludedProducts": 1,
+  "products": [
+    {
+      "currentProductId": "kalm-move-align-strappy-jumpsuit",
+      "currentName": "KALM Move Align Halter Legging Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Set",
+      "currentColours": [
+        "Black",
+        "Pink Drink",
+        "Grayish Blue",
+        "Delicate Red",
+        "Date Brown"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
+        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/angle.webp",
+        "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/back.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/angle.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/angle.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/back.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/angle.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/grayish-blue/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/back.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/angle.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/delicate-red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/angle.webp",
+            "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 599,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-align-halter-legging-set",
+      "proposedNewPrice": 1799,
+      "previewCategory": "Two-piece top-and-legging set",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-ease-flare-set",
+      "currentName": "KALM Move Ease Flare Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Set",
+      "currentColours": [
+        "Sage",
+        "Black",
+        "Taupe",
+        "Espresso",
+        "Cream"
+      ],
+      "currentSizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
+        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/angle.webp",
+        "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/back.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/sage/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/back.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/back.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/angle.webp",
+            "assets/images/products/kalm-move/women/ease-flare-set-v4/cream/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 649,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-ease-flare-set",
+      "proposedNewPrice": 1799,
+      "previewCategory": "Two-piece top-and-legging set",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-form-short-set",
+      "currentName": "KALM Move Form Short Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Short Set",
+      "currentColours": [
+        "White",
+        "Brown",
+        "Khaki",
+        "Dark Purple",
+        "Sky Blue",
+        "Yellow",
+        "Black",
+        "Pink",
+        "Orange",
+        "Dark Red"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp",
+        "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/brown/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/khaki/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/sky-blue/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/yellow/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/orange/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/back.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/angle.webp",
+            "assets/images/products/kalm-move/women/form-short-set-v2/dark-red/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 449,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-form-short-set",
+      "proposedNewPrice": 1399,
+      "previewCategory": "Two-piece bra-and-short set",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-pulse-crop-short-set",
+      "currentName": "KALM Move Pulse Crop Short Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Short Set",
+      "currentColours": [
+        "Black"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
+        "assets/images/products/kalm-move/women/pulse-crop-short-set/black/angle.webp",
+        "assets/images/products/kalm-move/women/pulse-crop-short-set/black/movement.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp",
+            "assets/images/products/kalm-move/women/pulse-crop-short-set/black/angle.webp",
+            "assets/images/products/kalm-move/women/pulse-crop-short-set/black/movement.webp"
+          ]
+        }
+      ],
+      "currentPrice": 499,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-pulse-crop-short-set",
+      "proposedNewPrice": 1399,
+      "previewCategory": "Two-piece bra-and-short set",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-wide-leg-yoga-pant",
+      "currentName": "KALM Move Wide-Leg Yoga Pant",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Pant",
+      "currentColours": [
+        "Light Blue",
+        "Gray",
+        "Cream Yellow",
+        "Gray Blue",
+        "Pink",
+        "Dark Purple",
+        "Black",
+        "Burgundy Red",
+        "Brown",
+        "Rose Red",
+        "Light Grey",
+        "Blue"
+      ],
+      "currentSizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp",
+        "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/angle.webp",
+        "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/back.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-blue/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/cream-yellow/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray-blue/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/pink/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/dark-purple/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/black/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/brown/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/rose-red/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/light-grey/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/front.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/angle.webp",
+            "assets/images/products/kalm-move/women/wide-leg-yoga-pant/blue/back.webp"
+          ]
+        }
+      ],
+      "currentPrice": 549,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-wide-leg-yoga-pant",
+      "proposedNewPrice": 1099,
+      "previewCategory": "Flared leggings",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-balance-strappy-set",
+      "currentName": "KALM Move Balance X-Back Legging Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Set",
+      "currentColours": [
+        "Van Dyke Brown",
+        "Dress Blues",
+        "Fawn",
+        "Crushed Limestone",
+        "Magic Forest Green",
+        "Lemon Yellow",
+        "Coffee Brown",
+        "Bluebird",
+        "Blossom Pink",
+        "Pomegranate Red"
+      ],
+      "currentSizes": [
+        "One Size",
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
+        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/angle.webp",
+        "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/van-dyke-brown/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/dress-blues/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/fawn/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/crushed-limestone/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/lemon-yellow/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/coffee-brown/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/blossom-pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/back.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/angle.webp",
+            "assets/images/products/kalm-move/women/balance-x-back-legging-set/pomegranate-red/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 699,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-balance-x-back-legging-set",
+      "proposedNewPrice": 1699,
+      "previewCategory": "Two-piece bra-and-legging set",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-halter-biker-short-set",
+      "currentName": "KALM Move Halter Biker Short Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Short Set",
+      "currentColours": [
+        "Black",
+        "White",
+        "Pink",
+        "Red",
+        "Blue",
+        "Brown",
+        "Grey"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
+        "assets/images/products/kalm-move/women/halter-biker-short-set/black/angle.webp",
+        "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/black/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/black/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/white/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/white/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/white/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/pink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/red/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/blue/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/brown/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/brown/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/halter-biker-short-set/grey/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/back.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/angle.webp",
+            "assets/images/products/kalm-move/women/halter-biker-short-set/grey/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 449,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-halter-biker-short-set",
+      "proposedNewPrice": 1399,
+      "previewCategory": "Two-piece bra-and-short set",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-rise-long-sleeve-set",
+      "currentName": "KALM Move Rise Zip Jacket Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Layer Set",
+      "currentColours": [
+        "Black",
+        "Apricot",
+        "Blue",
+        "Rose Red",
+        "Light Blue",
+        "Coffee",
+        "Green",
+        "Navy",
+        "Grey",
+        "Magenta",
+        "Light Grey"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp",
+        "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/angle.webp",
+        "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/back.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/black/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/blue/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/rose-red/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-blue/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/green/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/navy/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/grey/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/magenta/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/front.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/angle.webp",
+            "assets/images/products/kalm-move/women/rise-zip-jacket-set/light-grey/back.webp"
+          ]
+        }
+      ],
+      "currentPrice": 799,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-rise-zip-jacket-set",
+      "proposedNewPrice": 1499,
+      "previewCategory": "Premium jackets",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-lightweight-windbreaker-set",
+      "currentName": "KALM Move Lightweight Windbreaker Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Layer Set",
+      "currentColours": [
+        "Light Blue"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp",
+        "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/angle.webp",
+        "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/back.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp",
+            "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/angle.webp",
+            "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/back.webp"
+          ]
+        }
+      ],
+      "currentPrice": 749,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-lightweight-windbreaker-set",
+      "proposedNewPrice": 1299,
+      "previewCategory": "Lightweight training jackets",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-cropped-zip-yoga-jacket",
+      "currentName": "KALM Move Cropped Zip Yoga Jacket",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Jacket",
+      "currentColours": [
+        "Dark Green"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp",
+        "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/angle.webp",
+        "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/back.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/front.webp",
+            "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/angle.webp",
+            "assets/images/products/kalm-move/women/cropped-zip-yoga-jacket/dark-green/back.webp"
+          ]
+        }
+      ],
+      "currentPrice": 599,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-cropped-zip-yoga-jacket",
+      "proposedNewPrice": 1299,
+      "previewCategory": "Lightweight training jackets",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-core-seamless-tank",
+      "currentName": "KALM Move Core Short Unitard",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Unitard",
+      "currentColours": [
+        "Black",
+        "White",
+        "Charcoal",
+        "Pine",
+        "Peony",
+        "Coco",
+        "Berry Red",
+        "Wine Red",
+        "Pink",
+        "Yellow"
+      ],
+      "currentSizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
+        "assets/images/products/kalm-move/women/core-short-unitard/black/angle.webp",
+        "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/black/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/black/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/white/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/white/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/white/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/charcoal/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/pine/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/pine/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/pine/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/pine/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/peony/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/peony/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/peony/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/peony/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/coco/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/coco/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/coco/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/coco/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/berry-red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/berry-red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/wine-red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/wine-red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/pink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/pink/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/pink/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/core-short-unitard/yellow/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/core-short-unitard/yellow/back.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/yellow/angle.webp",
+            "assets/images/products/kalm-move/women/core-short-unitard/yellow/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 399,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-core-short-unitard",
+      "proposedNewPrice": 1199,
+      "previewCategory": "One-piece suits and rompers",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-align-ruched-short",
+      "currentName": "KALM Move Align Ruched Short",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Short",
+      "currentColours": [
+        "Black",
+        "Red",
+        "Blue",
+        "Pink",
+        "Purple",
+        "Brown",
+        "Charcoal Gray",
+        "White"
+      ],
+      "currentSizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
+        "assets/images/products/kalm-move/women/align-ruched-short/black/angle.webp",
+        "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/black/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/black/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/red/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/red/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/red/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/blue/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/blue/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/blue/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/blue/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/pink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/pink/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/pink/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/purple/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/purple/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/purple/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/purple/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/brown/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/brown/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/brown/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/brown/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/charcoal-gray/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/align-ruched-short/white/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/align-ruched-short/white/back.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/white/angle.webp",
+            "assets/images/products/kalm-move/women/align-ruched-short/white/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 349,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-align-ruched-short",
+      "proposedNewPrice": 799,
+      "previewCategory": "Biker shorts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-loose-split-running-short",
+      "currentName": "KALM Move Loose Split Running Short",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Short",
+      "currentColours": [
+        "Brown",
+        "Olive Taupe",
+        "Pink"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp",
+        "assets/images/products/kalm-move/women/loose-split-running-short/brown/angle.webp",
+        "assets/images/products/kalm-move/women/loose-split-running-short/brown/back.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/loose-split-running-short/brown/front.webp",
+            "assets/images/products/kalm-move/women/loose-split-running-short/brown/angle.webp",
+            "assets/images/products/kalm-move/women/loose-split-running-short/brown/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/front.webp",
+            "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/angle.webp",
+            "assets/images/products/kalm-move/women/loose-split-running-short/olive-taupe/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/loose-split-running-short/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/loose-split-running-short/pink/front.webp",
+            "assets/images/products/kalm-move/women/loose-split-running-short/pink/angle.webp",
+            "assets/images/products/kalm-move/women/loose-split-running-short/pink/back.webp"
+          ]
+        }
+      ],
+      "currentPrice": 329,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-loose-split-running-short",
+      "proposedNewPrice": 749,
+      "previewCategory": "Shorts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-split-running-skort",
+      "currentName": "KALM Move Split Running Skort",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Skort",
+      "currentColours": [
+        "Pink",
+        "Coral Orange",
+        "Neon Green"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/split-running-skort/pink/front.webp",
+        "assets/images/products/kalm-move/women/split-running-skort/pink/angle.webp",
+        "assets/images/products/kalm-move/women/split-running-skort/pink/back.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/split-running-skort/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/split-running-skort/pink/front.webp",
+            "assets/images/products/kalm-move/women/split-running-skort/pink/angle.webp",
+            "assets/images/products/kalm-move/women/split-running-skort/pink/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/split-running-skort/coral-orange/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/split-running-skort/coral-orange/front.webp",
+            "assets/images/products/kalm-move/women/split-running-skort/coral-orange/angle.webp",
+            "assets/images/products/kalm-move/women/split-running-skort/coral-orange/back.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/split-running-skort/neon-green/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/split-running-skort/neon-green/front.webp",
+            "assets/images/products/kalm-move/women/split-running-skort/neon-green/angle.webp",
+            "assets/images/products/kalm-move/women/split-running-skort/neon-green/back.webp"
+          ]
+        }
+      ],
+      "currentPrice": 379,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-split-running-skort",
+      "proposedNewPrice": 849,
+      "previewCategory": "Skirts and skorts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-open-back-short-romper",
+      "currentName": "KALM Move Open Back Short Romper",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Romper",
+      "currentColours": [
+        "Black",
+        "Pink",
+        "Blue",
+        "Army Green",
+        "Navy",
+        "Apricot"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp",
+        "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/back.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/back.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/back.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/angle.webp",
+            "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 499,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-open-back-short-romper",
+      "proposedNewPrice": 1199,
+      "previewCategory": "One-piece suits and rompers",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-flow-training-short",
+      "currentName": "KALM Move Flow Training Short",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Training short",
+      "currentColours": [
+        "Black",
+        "Charcoal",
+        "Navy",
+        "Olive"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/flow-training-short-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/flow-training-short-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/flow-training-short-v4/navy/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 499,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-flow-training-short",
+      "proposedNewPrice": 799,
+      "previewCategory": "Men’s shorts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-sprint-running-short",
+      "currentName": "KALM Move Sprint Running Short",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Running short",
+      "currentColours": [
+        "Black",
+        "Navy",
+        "Cobalt",
+        "Charcoal"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/navy/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/sprint-running-short-v4/charcoal/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 459,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-sprint-running-short",
+      "proposedNewPrice": 799,
+      "previewCategory": "Men’s shorts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-core-performance-tee",
+      "currentName": "KALM Move Core Performance Tee",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Performance tee",
+      "currentColours": [
+        "Black",
+        "White",
+        "Charcoal",
+        "Navy",
+        "Olive"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/navy/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/core-performance-tee-v4/olive/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 399,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-core-performance-tee",
+      "proposedNewPrice": 749,
+      "previewCategory": "Men’s performance T-shirts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-lift-tank",
+      "currentName": "KALM Move Lift Tank",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Training tank",
+      "currentColours": [
+        "Black",
+        "White",
+        "Charcoal",
+        "Navy"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/lift-tank-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/lift-tank-v4/white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/lift-tank-v4/navy/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 349,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-lift-tank",
+      "proposedNewPrice": 649,
+      "previewCategory": "Men’s tanks",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-pace-jogger",
+      "currentName": "KALM Move Pace Jogger",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Jogger",
+      "currentColours": [
+        "Black",
+        "Charcoal",
+        "Stone",
+        "Navy",
+        "Olive"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/pace-jogger-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/pace-jogger-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/pace-jogger-v4/stone/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/pace-jogger-v4/olive/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 749,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-pace-jogger",
+      "proposedNewPrice": 1099,
+      "previewCategory": "Men’s joggers",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-motion-hoodie",
+      "currentName": "KALM Move Motion Hoodie",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Hoodie",
+      "currentColours": [
+        "Black",
+        "Charcoal",
+        "Stone",
+        "Olive",
+        "Navy"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/olive/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/motion-hoodie-v4/navy/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 899,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-motion-hoodie",
+      "proposedNewPrice": 1399,
+      "previewCategory": "Men’s jackets and hoodies",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-base-compression-short",
+      "currentName": "KALM Move Base Compression Short",
+      "genderOrCollection": "KALM Move Men",
+      "category": "Compression short",
+      "currentColours": [
+        "Black",
+        "Charcoal",
+        "Navy"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/base-compression-short-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/base-compression-short-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/base-compression-short-v4/navy/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 399,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-base-compression-short",
+      "proposedNewPrice": 799,
+      "previewCategory": "Men’s shorts",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-cap",
+      "currentName": "KALM Move Cap",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Cap",
+      "currentColours": [
+        "Black",
+        "White",
+        "Navy",
+        "Olive",
+        "Charcoal"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/cap-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/cap-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/cap-v4/white/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/cap-v4/white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/cap-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/cap-v4/navy/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/cap-v4/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/cap-v4/olive/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/cap-v4/charcoal/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 299,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-cap",
+      "proposedNewPrice": 599,
+      "previewCategory": "Caps",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-training-sock-3-pack",
+      "currentName": "KALM Move Training Sock 3-Pack",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Socks",
+      "currentColours": [
+        "Black Pack",
+        "White Pack",
+        "Mixed Neutral Pack"
+      ],
+      "currentSizes": [
+        "S-M",
+        "L-XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/training-sock-3-pack-v4/black-pack/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/training-sock-3-pack-v4/white-pack/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/training-sock-3-pack-v4/mixed-neutral-pack/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 249,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-training-sock-3-pack",
+      "proposedNewPrice": null,
+      "previewCategory": "Other premium accessories",
+      "previewStatus": "excluded-pending-review",
+      "excludedReason": "A simple training-sock 3-pack is not priced in the Launching Soon collection until a credible R599 premium-accessory position is approved."
+    },
+    {
+      "currentProductId": "kalm-move-utility-gym-bag",
+      "currentName": "KALM Move Utility Gym Bag",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Gym bag",
+      "currentColours": [
+        "Black",
+        "Charcoal",
+        "Olive",
+        "Navy"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/charcoal/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/olive/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/men/utility-gym-bag-v4/navy/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 899,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-utility-gym-bag",
+      "proposedNewPrice": 899,
+      "previewCategory": "Gym bags",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-protein-shaker-bottle",
+      "currentName": "KALM Move Protein Shaker Bottle",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Shaker bottle",
+      "currentColours": [
+        "Black",
+        "Charcoal",
+        "Navy",
+        "Smoke Grey"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/angle.webp",
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/black/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/charcoal/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/navy/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/angle.webp"
+          ]
+        }
+      ],
+      "currentPrice": 249,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-protein-shaker-bottle",
+      "proposedNewPrice": 249,
+      "previewCategory": "Bottles",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-pocket-racerback-crop-bra",
+      "currentName": "KALM Move Pocket Racerback Crop Bra",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Top",
+      "currentColours": [
+        "Red",
+        "Brown"
+      ],
+      "currentSizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 399,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-pocket-racerback-crop-bra",
+      "proposedNewPrice": 649,
+      "previewCategory": "Sports bras",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-contrast-flare-set",
+      "currentName": "KALM Move Contrast Flare Set",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Set",
+      "currentColours": [
+        "Gray",
+        "Pink",
+        "Purple",
+        "Green"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/gray/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/contrast-flare-set/green/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 699,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-contrast-flare-set",
+      "proposedNewPrice": 1799,
+      "previewCategory": "Two-piece top-and-legging sets",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-crossline-legging",
+      "currentName": "KALM Move Crossline Legging",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Legging",
+      "currentColours": [
+        "Red",
+        "Blue",
+        "Black",
+        "Pink"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/crossline-legging/red/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/black/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/crossline-legging/pink/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 429,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-crossline-legging",
+      "proposedNewPrice": 999,
+      "previewCategory": "Standard leggings",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-drift-crop-wide-pant",
+      "currentName": "KALM Move Drift Crop Wide Pant",
+      "genderOrCollection": "KALM Move Women",
+      "category": "Pant",
+      "currentColours": [
+        "Cream White",
+        "Sunny Orange",
+        "Millennial Pink",
+        "Wine Red",
+        "Black"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp",
+        {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/cream-white/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/sunny-orange/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/millennial-pink/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/women/drift-crop-wide-pant/black/front.webp"
+          ]
+        }
+      ],
+      "currentPrice": 499,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-drift-crop-wide-pant",
+      "proposedNewPrice": 1099,
+      "previewCategory": "Flared leggings",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-everyday-bottle",
+      "currentName": "KALM Move Everyday Bottle",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Bottle",
+      "currentColours": [
+        "Black",
+        "Cream",
+        "Lilac",
+        "Sky Blue"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/angle.webp",
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/black/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/cream/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/everyday-bottle/sky-blue/angle.webp"
+          ]
+        }
+      ],
+      "currentPrice": 279,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-everyday-bottle",
+      "proposedNewPrice": 249,
+      "previewCategory": "Bottles",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-slim-wellness-bottle",
+      "currentName": "KALM Move Slim Wellness Bottle",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Bottle",
+      "currentColours": [
+        "Matte White",
+        "Stone",
+        "Soft Pink",
+        "Sage"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp",
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/angle.webp"
+          ]
+        }
+      ],
+      "currentPrice": 299,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-slim-wellness-bottle",
+      "proposedNewPrice": 249,
+      "previewCategory": "Bottles",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-studio-bottle",
+      "currentName": "KALM Move Studio Bottle",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Bottle",
+      "currentColours": [
+        "Black",
+        "Stone",
+        "Lilac",
+        "Sky Blue"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/angle.webp",
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/black/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/stone/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/lilac/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/angle.webp"
+          ]
+        }
+      ],
+      "currentPrice": 329,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-move-studio-bottle",
+      "proposedNewPrice": 249,
+      "previewCategory": "Bottles",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "kalm-move-all-day-straw-tumbler",
+      "currentName": "KALM Move All-Day Straw Tumbler",
+      "genderOrCollection": "KALM Move Accessories",
+      "category": "Straw tumbler",
+      "currentColours": [
+        "Black",
+        "Cream",
+        "Lilac",
+        "Sky Blue"
+      ],
+      "currentSizes": [
+        "One size"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/angle.webp",
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/black/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/cream/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/lilac/angle.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/front.webp",
+          "gallery": [
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/all-day-straw-tumbler/sky-blue/angle.webp"
+          ]
+        }
+      ],
+      "currentPrice": null,
+      "currentPurchasability": false,
+      "currentPublicRoute": "/products/kalm-move-all-day-straw-tumbler",
+      "proposedNewPrice": 249,
+      "previewCategory": "Bottles",
+      "previewStatus": "launching-soon",
+      "excludedReason": null
+    }
+  ]
+}

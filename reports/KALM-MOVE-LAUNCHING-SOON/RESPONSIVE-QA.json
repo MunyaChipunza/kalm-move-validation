@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-07-15T14:28:23.476Z",
+  "branch": "codex/kalm-move-launching-soon-preview-20260715",
+  "passed": true,
+  "errors": [],
+  "checks": {
+    "desktopNavigation": true,
+    "mobileNavigation": true,
+    "mobileLaunchLayout": true,
+    "priceLineResponsive": true,
+    "wishlistTarget": true
+  },
+  "browserEvidence": {
+    "desktop": {
+      "viewport": "1440x1000",
+      "screenshot": "reports/KALM-MOVE-LAUNCHING-SOON/DESKTOP-HOMEPAGE-QA.png",
+      "result": "passed"
+    },
+    "mobile": {
+      "viewport": "375x812",
+      "screenshot": "reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-PRODUCT-QA.png",
+      "result": "passed"
+    }
+  }
+}

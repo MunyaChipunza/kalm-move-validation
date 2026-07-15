@@ -16,7 +16,11 @@ const state = {
   currentRouteKey: "",
   scrollPositions: new Map(),
   activeLightbox: null,
-  waitlistSubmissions: new Set()
+  waitlistSubmissions: new Set(),
+  movePreviewPrices: new Map(),
+  moveWishlist: loadMoveWishlist(),
+  moveDemandEvents: loadMoveDemandEvents(),
+  moveNotifySubmissions: new Set()
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -49,8 +53,15 @@ async function init() {
   bindChrome();
   try {
     if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
-    const response = await fetch("products.json", { cache: "no-cache" });
-    state.data = await response.json();
+    const [catalogueResponse, movePriceResponse] = await Promise.all([
+      fetch("products.json", { cache: "no-cache" }),
+      fetch("data/kalm-move-preview-prices.json", { cache: "no-cache" })
+    ]);
+    if (!catalogueResponse.ok || !movePriceResponse.ok) throw new Error("The KALM Move preview catalogue could not load.");
+    state.data = await catalogueResponse.json();
+    const movePriceEntries = await movePriceResponse.json();
+    state.movePreviewPrices = new Map(movePriceEntries.map((entry) => [entry.productId, entry]));
+    sanitizeMoveProductsFromBag();
     window.addEventListener("hashchange", renderRoute);
     window.addEventListener("popstate", renderRoute);
     renderRoute();
@@ -99,6 +110,33 @@ function bindChrome() {
         const product = findProduct(productId);
         addButton.textContent = product?.ctaLabel || "Add to bag";
       }, 1200);
+    }
+
+    const moveWishlistButton = event.target.closest("[data-move-wishlist-save]");
+    if (moveWishlistButton) {
+      const scope = moveWishlistButton.closest("[data-product-scope]");
+      saveMoveWishlistFromScope(scope, moveWishlistButton);
+    }
+
+    const moveCardWishlistButton = event.target.closest("[data-move-card-wishlist]");
+    if (moveCardWishlistButton) {
+      const product = findProduct(moveCardWishlistButton.getAttribute("data-move-card-wishlist"));
+      if (product) {
+        const colour = moveCardWishlistButton.getAttribute("data-display-colour") || getDefaultColor(product);
+        const size = product.sizes?.[0] || "One size";
+        saveMoveWishlist(product, colour, size, "card_default", moveCardWishlistButton);
+      }
+    }
+
+    const moveNotifyToggle = event.target.closest("[data-move-notify-toggle]");
+    if (moveNotifyToggle) {
+      const scope = moveNotifyToggle.closest("[data-product-scope]");
+      const form = scope?.querySelector("[data-move-notify-form]");
+      if (form) {
+        form.hidden = false;
+        syncMoveInterestForm(form, scope);
+        form.querySelector("input[type='email']")?.focus();
+      }
     }
 
     const qtyButton = event.target.closest("[data-qty]");
@@ -162,12 +200,15 @@ function bindChrome() {
   });
 
   document.addEventListener("change", (event) => {
-    const field = event.target.closest("[data-color-select], [data-size-select]");
+    const field = event.target.closest("[data-color-select], [data-size-select], [data-move-device-consent]");
     if (!field) return;
     const scope = field.closest("[data-product-scope]");
+    const notifyForm = scope?.querySelector("[data-move-notify-form]");
+    if (notifyForm) syncMoveInterestForm(notifyForm, scope);
     clearVariantError(scope);
     if (field.matches("[data-color-select]")) updateVariantImage(scope, field.value);
     updateProductAvailabilityState(scope);
+    updateMoveWishlistControls(scope);
   });
 
   document.addEventListener("keydown", (event) => {
@@ -241,9 +282,7 @@ function renderRoute() {
   navToggle?.setAttribute("aria-expanded", "false");
   restoreRouteScroll(route, routeKey);
 
-  if (isHomeRoute) return renderHome({
-    preserveHero: isFirstRoute && Boolean(app.querySelector(".hero-shell"))
-  });
+  if (isHomeRoute) return renderHome();
   if (route.path === "/shop") return renderShop(route.params);
   if (route.path === "/brands") return renderBrands();
   if (route.path.startsWith("/brand/")) {
@@ -466,31 +505,27 @@ function scheduleHomeSections(sections) {
 }
 
 function renderHome({ preserveHero = false } = {}) {
-  const { meta, brands } = state.data;
+  const { meta } = state.data;
   const config = merchandising();
-  const home = config.homepage || {};
   setDocumentMeta(
-    "KALM Collective | Premium Movement, Outdoor, Wellness and Home",
-    "Shop KALM Collective across KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home.",
+    "KALM Collective | KS Active Archive and KALM Move",
+    "Shop the available KS Active Archive and explore KALM Move, launching soon.",
     "/"
   );
   setStructuredData({ type: "website" });
-  const findYourEdit = getMerchandisingEntries(home.findYourEdit);
-  const featuredEdit = getMerchandisingEntries(home.featuredEdit);
-  const archiveSale = getMerchandisingEntries(home.archiveSale);
-  const mostWanted = getMerchandisingEntries(home.mostWanted);
+  const archiveProducts = getPublicProducts().filter((product) => product.brandId === "ks-active").slice(0, 4);
+  const moveProducts = getPublicProducts().filter(isMoveLaunchingSoonProduct).slice(0, 4);
   const heroCampaign = config.campaigns?.homeHero || {};
-  const collectionCampaign = config.campaigns?.featuredCollection || {};
 
   const hero = `
     <section class="hero-shell">
       <div class="hero-copy">
         <img class="hero-brand-logo" src="${escapeHtml(meta.logo)}" alt="${escapeAttribute(meta.logoAlt || "KALM Collective")}" width="1120" height="260" decoding="async">
-        <h1>Premium essentials for movement, outdoor routines and everyday living.</h1>
-        <p>Shop activewear, outdoor staples, wellness accessories and home essentials from the KALM brand family.</p>
+        <h1>Movement, styled for what comes next.</h1>
+        <p>Shop the available KS Active Archive, then explore the next KALM Move collection.</p>
         <div class="hero-actions">
-          <a class="button primary" href="${collectionRoute("new-in")}">Shop new arrivals</a>
-          <a class="button secondary" href="/brands">Explore brands</a>
+          <a class="button primary" href="${collectionRoute("sale")}">Shop KS Active Archive</a>
+          <a class="button secondary" href="/brand/kalm-move">Explore KALM Move</a>
         </div>
       </div>
       <a class="hero-media" href="${collectionRoute("activewear")}" aria-label="Shop KALM Move activewear">
@@ -503,40 +538,9 @@ function renderHome({ preserveHero = false } = {}) {
     </section>`;
 
   const sections = `
-    <section class="section-block category-section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Shop by category</p>
-          <h2>Find your edit</h2>
-        </div>
-        <a class="text-link" href="/collections/new-in">Shop all</a>
-      </div>
-      <div class="category-grid">
-        ${findYourEdit.map(renderCategoryTile).join("")}
-      </div>
-    </section>
-
-    <section class="brand-ribbon" aria-label="Featured brands">
-      ${brands.map(renderBrandLogoCard).join("")}
-    </section>
-
-    ${renderEditorialEdits(featuredEdit)}
-
-    <section class="feature-band">
-      <div>
-        <p class="eyebrow">Featured collection</p>
-        <h2>KALM Move Performance Essentials.</h2>
-        <p>Core performance layers and training shorts selected from the current KALM Move men’s collection.</p>
-        <a class="button primary" href="${hashShopRoute({ brand: "kalm-move", audience: "men", moveCategory: "tops" })}">Shop performance essentials</a>
-      </div>
-      <picture>
-        <source media="(max-width: 760px)" srcset="${escapeHtml(collectionCampaign.mobile)}">
-        <img src="${transparentPixel}" data-src="${escapeHtml(collectionCampaign.desktop)}" alt="${escapeAttribute(collectionCampaign.alt || "KALM Move performance essentials")}" width="1920" height="1080" loading="lazy" decoding="async" fetchpriority="low">
-      </picture>
-    </section>
-
-    ${renderProductRail("KS Active Archive Sale", archiveSale, collectionRoute("sale"), "KS Active archive stock")}
-    ${renderProductRail("Most Wanted", mostWanted, collectionRoute("new-in"))}
+    ${renderProductRail("KS Active Archive", archiveProducts, collectionRoute("sale"), "Available now")}
+    ${renderMoveLaunchTeaser(heroCampaign, moveProducts)}
+    ${renderProductRail("KALM Move", moveProducts, "/brand/kalm-move", "Launching soon")}
 
     ${renderTrustStrip()}
 
@@ -575,6 +579,25 @@ function renderHome({ preserveHero = false } = {}) {
     bindNetlifyForms(app);
     hydrateDeferredImages(app);
   }
+}
+
+function renderMoveLaunchTeaser(heroCampaign, moveProducts) {
+  const image = heroCampaign.desktop || "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp";
+  return `
+    <section class="move-launch-teaser">
+      <div class="move-launch-copy">
+        <p class="eyebrow">KALM MOVE</p>
+        <p class="launching-soon-label">LAUNCHING SOON</p>
+        <h2>Designed for movement. Made for what comes next.</h2>
+        <p>A new chapter in movement is coming. Explore the collection, save your favourites and be the first to know when KALM Move arrives.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="/brand/kalm-move">EXPLORE THE COLLECTION</a>
+          ${moveProducts[0] ? `<a class="button secondary" href="${productRoute(moveProducts[0])}">SAVE TO WISHLIST</a>` : ""}
+        </div>
+      </div>
+      <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(heroCampaign.alt || "KALM Move campaign")}" width="1600" height="900" loading="lazy" decoding="async" fetchpriority="low">
+    </section>
+  `;
 }
 
 function renderEditorialEdits(entries = []) {
@@ -828,7 +851,9 @@ function renderBrands() {
 function renderBrand(brandId) {
   const brand = state.data.brands.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
+  if (!["ks-active", "kalm-move"].includes(brand.id)) return renderNotFound();
   if (brand.id === "kalm-outdoor") return renderKalmOutdoorExperience(brand);
+  if (brand.id === "kalm-move") return renderKalmMoveLaunchCollection(brand);
   const products = getPublicProducts().filter((product) => product.brandId === brand.id);
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
@@ -853,6 +878,46 @@ function renderBrand(brandId) {
       </div>
       <div class="product-grid">
         ${products.map((product, index) => renderProductCard(product, { eager: index < 20 })).join("")}
+      </div>
+    </section>
+
+    ${renderFooter()}
+  `;
+  hydrateDeferredImages(app);
+}
+
+function renderKalmMoveLaunchCollection(brand) {
+  const products = getPublicProducts().filter(isMoveLaunchingSoonProduct);
+  setDocumentMeta(
+    "KALM Move | Launching Soon",
+    "A new chapter in movement is coming. Explore KALM Move, save your favourites and be the first to know when it arrives.",
+    "/brand/kalm-move"
+  );
+  setStructuredData({ type: "collection", title: "KALM Move | Launching Soon", entries: products.map((product) => ({ product, color: getDefaultColor(product) })) });
+  app.innerHTML = `
+    <section class="move-launch-hero">
+      <div>
+        <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
+        <p class="launching-soon-label">LAUNCHING SOON</p>
+        <h1>KALM MOVE</h1>
+        <p>A new chapter in movement is coming.</p>
+        <p>Explore the collection, save your favourites and be the first to know when KALM Move arrives.</p>
+        <a class="button primary" href="#kalm-move-collection">EXPLORE THE COLLECTION</a>
+      </div>
+      <img src="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp" alt="KALM Move campaign" width="1600" height="900" decoding="async" fetchpriority="high">
+    </section>
+
+    ${renderKalmMoveSubcategories()}
+
+    <section id="kalm-move-collection" class="section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">KALM Move</p>
+          <h2>Explore the collection</h2>
+        </div>
+      </div>
+      <div class="product-grid">
+        ${products.map((product, index) => renderProductCard(product, { eager: index < 12 })).join("")}
       </div>
     </section>
 
@@ -999,6 +1064,7 @@ function renderKalmMoveSubcategories() {
 function renderProduct(slug, params = new URLSearchParams()) {
   const product = state.data.products.find((item) => item.slug === slug);
   if (!product || !isProductPublic(product)) return renderNotFound();
+  if (isMoveLaunchingSoonProduct(product)) return renderMoveLaunchingSoonProduct(product, params);
   const comingSoon = isComingSoonProduct(product);
   const comingSoonMessage = product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.";
   const requestedColor = params.get("colour") || params.get("color") || "";
@@ -1114,6 +1180,105 @@ function renderProduct(slug, params = new URLSearchParams()) {
   const scope = app.querySelector("[data-product-scope]");
   bindProductGallery(scope);
   if (!comingSoon) updateProductAvailabilityState(scope);
+}
+
+function renderMoveLaunchingSoonProduct(product, params = new URLSearchParams()) {
+  const requestedColor = params.get("colour") || params.get("color") || "";
+  const defaultColor = product.colors.includes(requestedColor) ? requestedColor : getDefaultColor(product);
+  const defaultImages = getVariantImages(product, defaultColor);
+  const details = product.features || product.detailBullets || [];
+  const related = getPublicProducts().filter((item) => isMoveLaunchingSoonProduct(item) && item.id !== product.id).slice(0, 4);
+  setDocumentMeta(
+    `${product.title} | KALM Move Launching Soon`,
+    product.metaDescription || product.description,
+    productRoute(product, defaultColor)
+  );
+  setStructuredData({ type: "product", product, color: defaultColor });
+
+  app.innerHTML = `
+    <section class="product-detail move-launch-product" data-product-scope data-product-id="${product.id}">
+      ${renderProductGallery(product, defaultImages)}
+      <div class="product-info">
+        <a class="eyebrow" href="/brand/kalm-move">KALM Move</a>
+        <p class="launching-soon-label">LAUNCHING SOON</p>
+        <h1>${escapeHtml(product.title)}</h1>
+        <div class="price-line move-launch-price"><strong>${formatPrice(getDisplayPrice(product))}</strong></div>
+        <div class="selector-row move-launch-selectors">
+          <label>Colour
+            <select data-color-select>
+              ${product.colors.map((color) => `<option value="${escapeAttribute(color)}" ${color === defaultColor ? "selected" : ""}>${escapeHtml(color)}</option>`).join("")}
+            </select>
+          </label>
+          <label>Size
+            <select data-size-select>
+              <option value="">Choose size</option>
+              ${product.sizes.map((size) => `<option value="${escapeAttribute(size)}">${escapeHtml(size)}</option>`).join("")}
+            </select>
+          </label>
+        </div>
+        ${renderVariantPreviews(product)}
+        <p class="variant-error" data-variant-error role="status" aria-live="polite"></p>
+        <div class="move-launch-actions">
+          <button class="button secondary full wishlist-button" type="button" data-move-wishlist-save aria-pressed="false">SAVE TO WISHLIST</button>
+          <button class="button primary full" type="button" data-move-notify-toggle>GET LAUNCH ACCESS</button>
+        </div>
+        ${renderMoveNotifyForm(product)}
+        <p>${escapeHtml(product.longDescription || product.description)}</p>
+        <div class="accordion-list">
+          <details open>
+            <summary>Product details</summary>
+            <ul>${details.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+          </details>
+          <details>
+            <summary>Fit and fabric</summary>
+            <p>${escapeHtml(product.fitNotes || "Details will be shared with the launch collection.")}</p>
+            <p>${escapeHtml(product.fabric || "")}</p>
+          </details>
+          <details>
+            <summary>Care</summary>
+            <p>${escapeHtml(product.care || "Care guidance will be included with the collection.")}</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    ${renderProductRail("More from KALM Move", related, "/brand/kalm-move", "Launching soon")}
+    ${renderFooter()}
+  `;
+  bindNetlifyForms(app);
+  hydrateDeferredImages(app);
+  const scope = app.querySelector("[data-product-scope]");
+  bindProductGallery(scope);
+  updateMoveWishlistControls(scope);
+  recordMoveProductView(product, defaultColor);
+}
+
+function renderMoveNotifyForm(product) {
+  return `
+    <form class="move-notify-form" name="kalm-move-launch-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-move-notify-form hidden>
+      <input type="hidden" name="form-name" value="kalm-move-launch-interest">
+      <input type="hidden" name="bot-field">
+      <input type="hidden" name="event_id">
+      <input type="hidden" name="event_type" value="notify_registration">
+      <input type="hidden" name="timestamp">
+      <input type="hidden" name="anonymous_session_id">
+      <input type="hidden" name="customer_id">
+      <input type="hidden" name="product_id" value="${escapeAttribute(product.id)}">
+      <input type="hidden" name="product_name" value="${escapeAttribute(product.title)}">
+      <input type="hidden" name="displayed_price" value="${escapeAttribute(formatPrice(getDisplayPrice(product)))}">
+      <input type="hidden" name="preferred_colour">
+      <input type="hidden" name="preferred_size">
+      <input type="hidden" name="source_page" value="${escapeAttribute(productRoute(product))}">
+      <input type="hidden" name="device_category">
+      <input type="hidden" name="selection_source" value="product_page">
+      <p class="form-intro">Get launch access</p>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label class="consent"><input type="checkbox" name="notification_consent" value="yes" required> <span>I agree to receive KALM Move launch updates for this product.</span></label>
+      <label class="consent"><input type="checkbox" name="device_category_consent" value="yes" data-move-device-consent> <span>Allow KALM Collective to include my device category in anonymous launch-interest reporting.</span></label>
+      <label class="consent"><input type="checkbox" name="marketing_consent" value="yes"> <span>I would also like KALM Collective news and offers.</span></label>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <button class="button primary full" type="submit">NOTIFY ME</button>
+    </form>
+  `;
 }
 
 function renderCartPage() {
@@ -1342,6 +1507,23 @@ function getPublicProducts() {
   return (state.data?.products || []).filter(isProductPublic);
 }
 
+function getMovePreviewEntry(product) {
+  return product?.brandId === "kalm-move" ? state.movePreviewPrices.get(product.id) || null : null;
+}
+
+function isMoveLaunchingSoonProduct(product) {
+  return getMovePreviewEntry(product)?.status === "launching-soon";
+}
+
+function isMovePreviewExcluded(product) {
+  return product?.brandId === "kalm-move" && Boolean(getMovePreviewEntry(product)) && !isMoveLaunchingSoonProduct(product);
+}
+
+function getDisplayPrice(product) {
+  const preview = getMovePreviewEntry(product);
+  return isMoveLaunchingSoonProduct(product) && Number.isFinite(preview?.price) ? preview.price : product?.price;
+}
+
 function productMatchesAudience(product, audience = "all") {
   return audience === "all"
     || product?.audience === audience
@@ -1349,11 +1531,13 @@ function productMatchesAudience(product, audience = "all") {
 }
 
 function isComingSoonProduct(product) {
-  return Boolean(product?.comingSoon) || product?.availability === "coming_soon";
+  return isMoveLaunchingSoonProduct(product) || Boolean(product?.comingSoon) || product?.availability === "coming_soon";
 }
 
 function isProductPublic(product) {
   if (!product) return false;
+  if (!["ks-active", "kalm-move"].includes(product.brandId)) return false;
+  if (isMovePreviewExcluded(product)) return false;
   const status = product.publicationStatus || "published";
   const visibility = product.visibility || "visible";
   return status === "published" && visibility === "visible";
@@ -1547,6 +1731,15 @@ function updateProductAvailabilityState(scope) {
   const color = scope.querySelector("[data-color-select]")?.value || getDefaultColor(product);
   const size = scope.querySelector("[data-size-select]")?.value || "";
   const sizeSelect = scope.querySelector("[data-size-select]");
+  if (isMoveLaunchingSoonProduct(product)) {
+    if (sizeSelect && document.activeElement !== sizeSelect) {
+      const current = sizeSelect.value;
+      sizeSelect.innerHTML = `<option value="">Choose size</option>${product.sizes.map((item) => `<option value="${escapeAttribute(item)}">${escapeHtml(item)}</option>`).join("")}`;
+      if ([...sizeSelect.options].some((option) => option.value === current)) sizeSelect.value = current;
+    }
+    scope.querySelector("[data-stock-status]")?.replaceChildren();
+    return;
+  }
   if (sizeSelect && document.activeElement !== sizeSelect) {
     const current = sizeSelect.value;
     sizeSelect.innerHTML = `<option value="">Choose size</option>${renderSizeOptions(product, color)}`;
@@ -1645,6 +1838,7 @@ function renderSpecifications(specifications) {
 }
 
 function renderProductCard(product, options = {}) {
+  if (isMoveLaunchingSoonProduct(product)) return renderMoveLaunchingSoonCard(product, options);
   const comingSoon = isComingSoonProduct(product);
   const availability = getProductAvailability(product);
   const isUnavailable = availability === "out_of_stock" || availability === "discontinued";
@@ -1684,11 +1878,45 @@ function renderProductCard(product, options = {}) {
   `;
 }
 
-function renderPrice(product) {
-  if (isComingSoonProduct(product) || typeof product.price !== "number") return "";
+function renderMoveLaunchingSoonCard(product, options = {}) {
+  const defaultColour = options.displayColour && product.colors.includes(options.displayColour)
+    ? options.displayColour
+    : getDefaultColor(product);
+  const productHref = productRoute(product, defaultColour);
+  const displayImage = getVariantImage(product, defaultColour) || product.image;
+  const defaultSize = product.sizes?.[0] || "One size";
+  const saved = isMoveWishlisted(product, defaultColour, defaultSize);
+  const imageMarkup = options.eager
+    ? `src="${escapeHtml(displayImage)}" decoding="async"`
+    : `src="${escapeHtml(displayImage)}" loading="lazy" decoding="async" fetchpriority="low"`;
   return `
-    <strong>${formatPrice(product.price)}</strong>
-    ${product.compareAtPrice ? `<s>${formatPrice(product.compareAtPrice)}</s>` : ""}
+    <article class="product-card move-launch-card" data-product-scope data-product-id="${product.id}" data-display-colour="${escapeAttribute(defaultColour)}">
+      <a class="product-media" href="${productHref}" aria-label="${escapeAttribute(`${product.title} in ${defaultColour}`)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
+        <span class="product-badge launching-soon-badge">LAUNCHING SOON</span>
+        <img ${imageMarkup} ${renderResponsiveCardAttributes(product, defaultColour)} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>
+      </a>
+      <div class="product-card-body">
+        <a class="product-brand" href="/brand/kalm-move">KALM Move</a>
+        <div class="move-card-title-row">
+          <h3><a href="${productHref}">${escapeHtml(product.title)}</a></h3>
+          <button class="wishlist-heart" type="button" data-move-card-wishlist="${escapeAttribute(product.id)}" data-display-colour="${escapeAttribute(defaultColour)}" aria-label="${escapeAttribute(saved ? `${product.title} is on your wishlist` : `Save ${product.title} to wishlist`)}" aria-pressed="${saved}">${saved ? "♥" : "♡"}</button>
+        </div>
+        <div class="price-line"><strong>${formatPrice(getDisplayPrice(product))}</strong></div>
+        <p class="card-display-colour">Colour: ${escapeHtml(defaultColour)}</p>
+        <div class="swatches" aria-label="Available colours">
+          ${product.colors.slice(0, 4).map((color) => `<button type="button" data-variant-preview="${escapeAttribute(color)}" title="${escapeAttribute(color)}" aria-label="Preview ${escapeAttribute(color)}" style="--swatch:${swatch(color)}"></button>`).join("")}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderPrice(product) {
+  const displayPrice = getDisplayPrice(product);
+  if (!isMoveLaunchingSoonProduct(product) && (isComingSoonProduct(product) || typeof displayPrice !== "number")) return "";
+  return `
+    <strong>${formatPrice(displayPrice)}</strong>
+    ${!isMoveLaunchingSoonProduct(product) && product.compareAtPrice ? `<s>${formatPrice(product.compareAtPrice)}</s>` : ""}
   `;
 }
 
@@ -1707,7 +1935,9 @@ function updateVariantImage(scope, color) {
     const image = scope.querySelector("[data-product-image]");
     if (image) setProductImage(image, imagePath, altText, product, color);
   }
+  scope.querySelector("[data-move-card-wishlist]")?.setAttribute("data-display-colour", color || getDefaultColor(product));
   updateProductAvailabilityState(scope);
+  updateMoveWishlistControls(scope);
 }
 
 function setFilterSheetOpen(open) {
@@ -2100,8 +2330,8 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
 
 function sortProducts(products, sort) {
   const items = [...products];
-  if (sort === "price-asc") return items.sort((a, b) => (Number.isFinite(a.price) ? a.price : Number.POSITIVE_INFINITY) - (Number.isFinite(b.price) ? b.price : Number.POSITIVE_INFINITY));
-  if (sort === "price-desc") return items.sort((a, b) => (Number.isFinite(b.price) ? b.price : Number.NEGATIVE_INFINITY) - (Number.isFinite(a.price) ? a.price : Number.NEGATIVE_INFINITY));
+  if (sort === "price-asc") return items.sort((a, b) => (Number.isFinite(getDisplayPrice(a)) ? getDisplayPrice(a) : Number.POSITIVE_INFINITY) - (Number.isFinite(getDisplayPrice(b)) ? getDisplayPrice(b) : Number.POSITIVE_INFINITY));
+  if (sort === "price-desc") return items.sort((a, b) => (Number.isFinite(getDisplayPrice(b)) ? getDisplayPrice(b) : Number.NEGATIVE_INFINITY) - (Number.isFinite(getDisplayPrice(a)) ? getDisplayPrice(a) : Number.NEGATIVE_INFINITY));
   if (sort === "newest") return items.sort((a, b) => Number(b.tags.includes("new-in")) - Number(a.tags.includes("new-in")));
   return items;
 }
@@ -2154,6 +2384,221 @@ function bindNetlifyForms(root = document) {
   });
 }
 
+function getMoveSessionId() {
+  const key = "kalmMoveLaunchSessionId";
+  let id = localStorage.getItem(key);
+  if (!id) {
+    id = globalThis.crypto?.randomUUID?.() || `move-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    localStorage.setItem(key, id);
+  }
+  return id;
+}
+
+function loadMoveWishlist() {
+  try {
+    return JSON.parse(localStorage.getItem("kalmMoveLaunchWishlist") || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function saveMoveWishlistState() {
+  localStorage.setItem("kalmMoveLaunchWishlist", JSON.stringify(state.moveWishlist));
+}
+
+function loadMoveDemandEvents() {
+  try {
+    return JSON.parse(localStorage.getItem("kalmMoveLaunchDemandEvents") || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function saveMoveDemandEvents() {
+  localStorage.setItem("kalmMoveLaunchDemandEvents", JSON.stringify(state.moveDemandEvents.slice(-500)));
+}
+
+function moveDeviceCategory() {
+  const width = window.innerWidth || 0;
+  if (width <= 640) return "mobile";
+  if (width <= 1024) return "tablet";
+  return "desktop";
+}
+
+function moveWishlistKey(productId, colour, size) {
+  return `${productId}::${colour}::${size}`;
+}
+
+function isMoveWishlisted(product, colour, size) {
+  return Boolean(product && colour && size && state.moveWishlist.some((entry) => entry.key === moveWishlistKey(product.id, colour, size)));
+}
+
+function updateMoveWishlistControls(scope) {
+  const product = findProduct(scope?.getAttribute("data-product-id"));
+  if (!product || !isMoveLaunchingSoonProduct(product) || !scope) return;
+  const colour = scope.querySelector("[data-color-select]")?.value || scope.getAttribute("data-display-colour") || getDefaultColor(product);
+  const sizeSelector = scope.querySelector("[data-size-select]");
+  const size = sizeSelector ? sizeSelector.value : (product.sizes?.[0] || "One size");
+  const saved = isMoveWishlisted(product, colour, size);
+  const productButton = scope.querySelector("[data-move-wishlist-save]");
+  if (productButton) {
+    productButton.setAttribute("aria-pressed", String(saved));
+    productButton.textContent = saved ? "ON YOUR WISHLIST" : "SAVE TO WISHLIST";
+  }
+  const cardButton = scope.querySelector("[data-move-card-wishlist]");
+  if (cardButton) {
+    cardButton.setAttribute("aria-pressed", String(saved));
+    cardButton.textContent = saved ? "♥" : "♡";
+    cardButton.setAttribute("aria-label", saved ? `${product.title} is on your wishlist` : `Save ${product.title} to wishlist`);
+  }
+}
+
+function getMoveCustomerId() {
+  return localStorage.getItem("kalmCollectiveCustomerId") || "";
+}
+
+function recordMoveProductView(product, colour) {
+  const key = `kalmMoveLaunchViewed:${product.id}:${colour}`;
+  if (sessionStorage.getItem(key)) return;
+  sessionStorage.setItem(key, "true");
+  logMoveDemandEvent("product_view", product, colour, "", "product_page", { submit: false });
+}
+
+function logMoveDemandEvent(eventType, product, colour, size, selectionSource, { email = "", deviceCategoryConsent = false, submit = true } = {}) {
+  const event = {
+    eventId: globalThis.crypto?.randomUUID?.() || `move-event-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    eventType,
+    timestamp: new Date().toISOString(),
+    anonymousSessionId: getMoveSessionId(),
+    customerId: getMoveCustomerId(),
+    productId: product.id,
+    productName: product.title,
+    displayedPrice: formatPrice(getDisplayPrice(product)),
+    preferredColour: colour,
+    preferredSize: size,
+    email,
+    sourcePage: `${window.location.pathname}${window.location.hash}`,
+    deviceCategory: deviceCategoryConsent ? moveDeviceCategory() : "",
+    deviceCategoryConsent: deviceCategoryConsent ? "yes" : "",
+    selectionSource
+  };
+  state.moveDemandEvents = [...state.moveDemandEvents, event].slice(-500);
+  saveMoveDemandEvents();
+  if (submit) submitMoveDemandEvent(event);
+  return event;
+}
+
+function submitMoveDemandEvent(event) {
+  const fields = {
+    "form-name": "kalm-move-launch-interest",
+    event_id: event.eventId,
+    event_type: event.eventType,
+    timestamp: event.timestamp,
+    anonymous_session_id: event.anonymousSessionId,
+    customer_id: event.customerId,
+    product_id: event.productId,
+    product_name: event.productName,
+    displayed_price: event.displayedPrice,
+    preferred_colour: event.preferredColour,
+    preferred_size: event.preferredSize,
+    email: event.email,
+    source_page: event.sourcePage,
+    device_category: event.deviceCategory,
+    device_category_consent: event.deviceCategoryConsent,
+    selection_source: event.selectionSource
+  };
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(fields).toString()
+  }).catch(() => {});
+}
+
+function saveMoveWishlistFromScope(scope, button) {
+  const product = findProduct(scope?.getAttribute("data-product-id"));
+  if (!product) return;
+  const colour = scope.querySelector("[data-color-select]")?.value || getDefaultColor(product);
+  const size = scope.querySelector("[data-size-select]")?.value || "";
+  if (!size) {
+    const error = scope.querySelector("[data-variant-error]");
+    if (error) error.textContent = "Choose a size to save this product to your wishlist.";
+    scope.querySelector("[data-size-select]")?.setAttribute("aria-invalid", "true");
+    return;
+  }
+  saveMoveWishlist(product, colour, size, "product_page", button);
+}
+
+function saveMoveWishlist(product, colour, size, selectionSource, button = null) {
+  const key = moveWishlistKey(product.id, colour, size);
+  const existing = state.moveWishlist.some((entry) => entry.key === key);
+  if (!existing) {
+    state.moveWishlist.push({
+      key,
+      productId: product.id,
+      productName: product.title,
+      displayedPrice: getDisplayPrice(product),
+      colour,
+      size,
+      savedAt: new Date().toISOString(),
+      anonymousSessionId: getMoveSessionId(),
+      selectionSource
+    });
+    saveMoveWishlistState();
+    logMoveDemandEvent("wishlist_save", product, colour, size, selectionSource);
+  }
+  if (button) {
+    button.setAttribute("aria-pressed", "true");
+    if (button.matches("[data-move-card-wishlist]")) {
+      button.textContent = "♥";
+      button.setAttribute("aria-label", `${product.title} is on your wishlist`);
+    } else {
+      button.textContent = "ON YOUR WISHLIST";
+    }
+  }
+}
+
+function syncMoveInterestForm(form, scope) {
+  if (!form || !scope) return;
+  const product = findProduct(scope.getAttribute("data-product-id"));
+  if (!product) return;
+  const colour = scope.querySelector("[data-color-select]")?.value || getDefaultColor(product);
+  const size = scope.querySelector("[data-size-select]")?.value || "";
+  const consent = form.querySelector("[data-move-device-consent]")?.checked;
+  const setValue = (name, value) => {
+    const field = form.querySelector(`[name="${name}"]`);
+    if (field) field.value = value;
+  };
+  setValue("event_id", globalThis.crypto?.randomUUID?.() || `move-notify-${Date.now()}`);
+  setValue("timestamp", new Date().toISOString());
+  setValue("anonymous_session_id", getMoveSessionId());
+  setValue("customer_id", getMoveCustomerId());
+  setValue("preferred_colour", colour);
+  setValue("preferred_size", size);
+  setValue("device_category", consent ? moveDeviceCategory() : "");
+  setValue("source_page", `${window.location.pathname}${window.location.hash}`);
+}
+
+function getMoveNotifySubmissionKey(form) {
+  if (!form?.matches("[data-move-notify-form]")) return "";
+  const data = new FormData(form);
+  const email = String(data.get("email") || "").trim().toLowerCase();
+  const productId = String(data.get("product_id") || "");
+  const colour = String(data.get("preferred_colour") || "");
+  const size = String(data.get("preferred_size") || "");
+  return email && productId && colour && size ? `${email}::${productId}::${colour}::${size}` : "";
+}
+
+function recordMoveNotifyRegistration(form) {
+  const data = new FormData(form);
+  const product = findProduct(String(data.get("product_id") || ""));
+  if (!product) return;
+  logMoveDemandEvent("notify_registration", product, String(data.get("preferred_colour") || ""), String(data.get("preferred_size") || ""), "product_page", {
+    email: String(data.get("email") || ""),
+    deviceCategoryConsent: data.get("device_category_consent") === "yes",
+    submit: false
+  });
+}
+
 function getWaitlistSubmissionKey(form) {
   if (!form?.matches("[data-waitlist-form]")) return "";
   const data = new FormData(form);
@@ -2171,9 +2616,14 @@ async function submitNetlifyForm(event) {
   const originalLabel = button?.textContent || "";
   const successMessage = form.dataset.successMessage || "Thanks. Your message has been received.";
   const waitlistSubmissionKey = getWaitlistSubmissionKey(form);
+  const moveNotifySubmissionKey = getMoveNotifySubmissionKey(form);
 
   if (waitlistSubmissionKey && state.waitlistSubmissions.has(waitlistSubmissionKey)) {
     if (status) status.textContent = "You are already on this waitlist in this browser session.";
+    return;
+  }
+  if (moveNotifySubmissionKey && state.moveNotifySubmissions.has(moveNotifySubmissionKey)) {
+    if (status) status.textContent = "You’re already on the list for this selection in this browser session.";
     return;
   }
 
@@ -2191,7 +2641,11 @@ async function submitNetlifyForm(event) {
       body: new URLSearchParams(formData).toString()
     });
     if (!response.ok) throw new Error(`Form post failed with ${response.status}`);
-    if (status) status.textContent = successMessage;
+    if (form.matches("[data-move-notify-form]")) {
+      recordMoveNotifyRegistration(form);
+      state.moveNotifySubmissions.add(moveNotifySubmissionKey);
+      if (status) status.textContent = "You’re on the list. We’ll let you know when KALM Move launches.";
+    } else if (status) status.textContent = successMessage;
     if (waitlistSubmissionKey) state.waitlistSubmissions.add(waitlistSubmissionKey);
     if (form.dataset.clearBag === "true") {
       state.bag = [];
@@ -2240,6 +2694,12 @@ function loadBag() {
   } catch {
     return [];
   }
+}
+
+function sanitizeMoveProductsFromBag() {
+  const originalLength = state.bag.length;
+  state.bag = state.bag.filter((item) => !isMoveLaunchingSoonProduct(findProduct(item.productId)));
+  if (state.bag.length !== originalLength) saveBag();
 }
 
 function saveBag() {
@@ -2292,13 +2752,12 @@ function renderFooter() {
         ${footerSection("Shop", `
           <a href="#/shop?category=new-in">New In</a>
           <a href="#/shop?category=activewear">Activewear</a>
-          <a href="#/shop?category=wellness">Wellness</a>
-          <a href="#/shop?category=home">Home</a>
-          <a href="#/shop?category=outdoor">Outdoor</a>
-          <a href="#/shop?category=sale">Sale</a>
+          <a href="/brand/kalm-move">KALM Move</a>
+          <a href="#/shop?category=sale">Archive Sale</a>
         `)}
         ${footerSection("Brands", `
-          ${state.data.brands.map((brand) => `<a href="#/brand/${brand.id}">${escapeHtml(brand.name)}</a>`).join("")}
+          <a href="#/brand/ks-active">KS Active</a>
+          <a href="/brand/kalm-move">KALM Move</a>
         `)}
         ${footerSection("Customer care", `
           <a href="#/contact">Help</a>
