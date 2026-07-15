@@ -34,7 +34,6 @@ const moveAudiences = [
   { id: "men", name: "Men" }
 ];
 const moveCategories = [
-  { id: "new-in", name: "New In" },
   { id: "sets", name: "Sets" },
   { id: "leggings", name: "Leggings" },
   { id: "sports-bras", name: "Sports Bras" },
@@ -534,36 +533,38 @@ function renderHome({ preserveHero = false } = {}) {
     "/"
   );
   setStructuredData({ type: "website" });
-  const archiveProducts = getPublicProducts().filter((product) => product.brandId === "ks-active").slice(0, 4);
+  const featuredKsActive = getMerchandisingEntries(config.homepage?.featuredKsActive).filter(({ product }) => product.brandId === "ks-active");
+  const finalPieces = getMerchandisingEntries(config.homepage?.finalPieces).filter(({ product }) => product.brandId === "ks-active");
   const moveProducts = getPublicProducts().filter(isMoveLaunchingSoonProduct).slice(0, 4);
-  const heroCampaign = config.campaigns?.homeHero || {};
+  const ksActiveHero = config.campaigns?.ksActiveHero || {};
+  const moveCampaign = config.campaigns?.kalmMoveTeaser || {};
 
   const hero = `
-    <section class="hero-shell">
+    <section class="hero-shell ks-active-hero">
       <div class="hero-copy">
         <img class="hero-brand-logo" src="${escapeHtml(meta.logo)}" alt="${escapeAttribute(meta.logoAlt || "KALM Collective")}" width="1120" height="260" decoding="async">
-        <h1>Movement, styled for what comes next.</h1>
-        <p>Shop the available KS Active Archive, then explore the next KALM Move collection.</p>
+        <p class="eyebrow">KS ACTIVE ARCHIVE</p>
+        <h1>THE FINAL COLLECTION</h1>
+        <p>Limited pieces. Available now through KALM Collective.</p>
         <div class="hero-actions">
-          <a class="button primary" href="${collectionRoute("sale")}">Shop KS Active Archive</a>
-          <a class="button secondary" href="/brand/kalm-move">Explore KALM Move</a>
+          <a class="button primary" href="${collectionRoute("ks-active")}">SHOP KS ACTIVE</a>
+          <a class="button secondary" href="${collectionRoute("sale")}">SHOP THE ARCHIVE SALE</a>
         </div>
       </div>
-      <a class="hero-media" href="${collectionRoute("activewear")}" aria-label="Shop KALM Move activewear">
+      <a class="hero-media" href="${collectionRoute("ks-active")}" aria-label="Shop the KS Active Archive">
         <picture>
-          <source media="(max-width: 640px)" srcset="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp">
-          <source media="(max-width: 1100px)" srcset="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet-perf-20260715.webp">
-          <img src="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp" alt="${escapeAttribute(heroCampaign.alt || "KALM Move adults enjoying a relaxed movement moment")}" width="1600" height="900" fetchpriority="high" decoding="async">
+          <source media="(max-width: 640px)" srcset="${escapeHtml(ksActiveHero.mobile || ksActiveHero.desktop)}">
+          <img src="${escapeHtml(ksActiveHero.desktop)}" alt="${escapeAttribute(ksActiveHero.alt || "KS Active Archive model")}" width="1200" height="1500" fetchpriority="high" decoding="async">
         </picture>
       </a>
     </section>`;
 
   const sections = `
-    ${renderProductRail("KS Active Archive", archiveProducts, collectionRoute("sale"), "Available now")}
-    ${renderMoveLaunchTeaser(heroCampaign, moveProducts)}
-    ${renderProductRail("KALM Move", moveProducts, "/brand/kalm-move", "Launching soon")}
-
+    ${renderProductRail("SHOP KS ACTIVE", featuredKsActive, collectionRoute("ks-active"), "AVAILABLE NOW", "VIEW THE COLLECTION")}
+    ${renderProductRail("FINAL PIECES", finalPieces, collectionRoute("sale"), "KS ACTIVE ARCHIVE", "SHOP THE ARCHIVE")}
     ${renderTrustStrip()}
+    ${renderMoveLaunchTeaser(moveCampaign, moveProducts)}
+    ${renderProductRail("KALM MOVE", moveProducts, "/brand/kalm-move", "LAUNCHING SOON", "EXPLORE KALM MOVE")}
 
     <section class="newsletter-panel">
       <div>
@@ -610,10 +611,10 @@ function renderMoveLaunchTeaser(heroCampaign, moveProducts) {
         <p class="eyebrow">KALM MOVE</p>
         <p class="launching-soon-label">LAUNCHING SOON</p>
         <h2>Designed for movement. Made for what comes next.</h2>
-        <p>A new chapter in movement is coming. Explore the collection, save your favourites and be the first to know when KALM Move arrives.</p>
+        <p>Explore the collection, save your favourites and be first to know when KALM Move arrives.</p>
         <div class="hero-actions">
-          <a class="button primary" href="/brand/kalm-move">EXPLORE THE COLLECTION</a>
-          ${moveProducts[0] ? `<a class="button secondary" href="${productRoute(moveProducts[0])}">SAVE TO WISHLIST</a>` : ""}
+          <a class="button primary" href="/brand/kalm-move">EXPLORE KALM MOVE</a>
+          ${moveProducts[0] ? `<a class="button secondary" href="${productRoute(moveProducts[0])}">GET LAUNCH ACCESS</a>` : ""}
         </div>
       </div>
       <img src="${transparentPixel}" data-src="${escapeHtml(image)}" alt="${escapeAttribute(heroCampaign.alt || "KALM Move campaign")}" width="1600" height="900" loading="lazy" decoding="async" fetchpriority="low">
@@ -662,7 +663,7 @@ function renderTrustStrip() {
   `;
 }
 
-function renderProductRail(title, entries, href, eyebrow = "KALM Collective") {
+function renderProductRail(title, entries, href, eyebrow = "KALM Collective", ctaLabel = "VIEW ALL") {
   if (!entries.length) return "";
   return `
     <section class="section-block">
@@ -671,7 +672,7 @@ function renderProductRail(title, entries, href, eyebrow = "KALM Collective") {
           <p class="eyebrow">${escapeHtml(eyebrow)}</p>
           <h2>${escapeHtml(title)}</h2>
         </div>
-        <a class="text-link" href="${href}">View all</a>
+        <a class="text-link" href="${href}">${escapeHtml(ctaLabel)}</a>
       </div>
       <div class="product-grid rail-grid">
         ${entries.map((entry, index) => renderProductCard(entry.product || entry, { eager: index < 4, displayColour: entry.color || entry.colour || "" })).join("")}
@@ -730,9 +731,13 @@ function renderShop(params = new URLSearchParams()) {
     displayEntries = sortProducts(displayEntries.map((entry) => entry.product), sort).map((product) => byProduct.get(product.id)).filter(Boolean);
   }
   const heading = shopHeading({ brand, category, audience, moveCategory, search });
-  const relevantProducts = filterProducts({ brand, category, audience, moveCategory, size: "all", color: "all", availability: "all", appliance, search });
+  const collectionPresentation = getCollectionPresentation(category);
+  const relevantProducts = configuredEntries.length
+    ? displayEntries.map(({ product }) => product)
+    : filterProducts({ ...collectionFilterState, size: "all", color: "all", availability: "all" });
   const moveAudience = brand === "kalm-move" ? audience : "all";
   const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, appliance, sort, search });
+  const genericSearch = Boolean(search.trim()) && brand === "all" && category === "all";
   setDocumentMeta(
     `${heading} | KALM Collective`,
     "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear.",
@@ -742,9 +747,9 @@ function renderShop(params = new URLSearchParams()) {
 
   app.innerHTML = `
     <section class="page-hero compact">
-      <p class="eyebrow">Shop</p>
+      <p class="eyebrow">${escapeHtml(collectionPresentation.eyebrow)}</p>
       <h1>${escapeHtml(heading)}</h1>
-      <p>Curated essentials for movement, wellness, home and outdoor living.</p>
+      <p>${escapeHtml(collectionPresentation.copy)}</p>
     </section>
 
     ${brand === "kalm-move" ? renderMoveShoppingHeader(moveAudience, moveCategory) : ""}
@@ -762,14 +767,16 @@ function renderShop(params = new URLSearchParams()) {
         <form data-filter-form>
           <label>Brand
             <select name="brand">
-              <option value="all">All brands</option>
-              ${state.data.brands.map((item) => `<option value="${item.id}" ${brand === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
+              <option value="all">Available and Launching Soon</option>
+              <option value="ks-active" ${brand === "ks-active" ? "selected" : ""}>KS Active</option>
+              <option value="kalm-move" ${brand === "kalm-move" ? "selected" : ""}>KALM Move — Launching Soon</option>
             </select>
           </label>
           <label>Category
             <select name="category">
-              <option value="all">All categories</option>
-              ${state.data.categories.map((item) => `<option value="${item.id}" ${category === item.id ? "selected" : ""}>${escapeHtml(item.name)}</option>`).join("")}
+              <option value="all">All catalogues</option>
+              <option value="ks-active" ${category === "ks-active" ? "selected" : ""}>KS Active Archive</option>
+              <option value="sale" ${category === "sale" ? "selected" : ""}>Archive Sale</option>
             </select>
           </label>
           ${brand === "kalm-move" ? `
@@ -812,16 +819,14 @@ function renderShop(params = new URLSearchParams()) {
           </label>
         </form>
       </aside>
-      <div>
-        <div class="shop-toolbar">
-          <span>${displayEntries.length} styles</span>
-          <a href="#/shop">Clear filters</a>
+        <div>
+          <div class="shop-toolbar">
+            <span>${displayEntries.length} styles</span>
+            <a href="#/shop">Clear filters</a>
+          </div>
+          ${activeFilters.length ? `<div class="active-filter-row">${activeFilters.map((item) => `<a href="${item.href}">${escapeHtml(item.label)} x</a>`).join("")}</div>` : ""}
+          ${renderShopResults(displayEntries, { genericSearch })}
         </div>
-        ${activeFilters.length ? `<div class="active-filter-row">${activeFilters.map((item) => `<a href="${item.href}">${escapeHtml(item.label)} x</a>`).join("")}</div>` : ""}
-        <div class="product-grid">
-          ${displayEntries.length ? displayEntries.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("") : renderEmptyState("No products match those filters.")}
-        </div>
-      </div>
     </section>
 
     ${renderFooter()}
@@ -905,6 +910,46 @@ function renderBrand(brandId) {
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+}
+
+function getCollectionPresentation(category) {
+  if (category === "ks-active") {
+    return {
+      eyebrow: "AVAILABLE NOW",
+      copy: "The final KS Active collection, available exclusively through KALM Collective while stock lasts."
+    };
+  }
+  if (category === "sale") {
+    return {
+      eyebrow: "KS ACTIVE ARCHIVE",
+      copy: "Final pieces. Limited sizes. Once they’re gone, they’re gone."
+    };
+  }
+  return {
+    eyebrow: "KALM COLLECTIVE",
+    copy: "Shop KS Active Archive, then explore KALM Move, launching soon."
+  };
+}
+
+function renderShopResults(entries, { genericSearch = false } = {}) {
+  if (!entries.length) return renderEmptyState("No products match those filters.");
+  if (!genericSearch) {
+    return `<div class="product-grid">${entries.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>`;
+  }
+  const availableNow = entries.filter((entry) => entry.product.brandId === "ks-active");
+  const launchingSoon = entries.filter((entry) => entry.product.brandId === "kalm-move");
+  return `
+    ${availableNow.length ? `
+      <section class="search-result-group" aria-labelledby="available-search-results">
+        <div class="section-head compact-head"><div><p class="eyebrow">AVAILABLE NOW</p><h2 id="available-search-results">KS Active results</h2></div></div>
+        <div class="product-grid">${availableNow.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>
+      </section>` : ""}
+    ${launchingSoon.length ? `
+      <section class="search-result-group move-search-results" aria-labelledby="move-search-results">
+        <div class="section-head compact-head"><div><p class="eyebrow">LAUNCHING SOON</p><h2 id="move-search-results">KALM Move preview</h2></div></div>
+        <div class="product-grid">${launchingSoon.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>
+      </section>` : ""}
+  `;
 }
 
 function renderKalmMoveLaunchCollection(brand) {
@@ -1072,7 +1117,6 @@ function renderKalmMoveSubcategories() {
         </a>
       </div>
       <div class="move-category-links" aria-label="KALM Move categories">
-        <a href="#/shop?brand=kalm-move&category=new-in">New In</a>
         <a href="#/shop?brand=kalm-move">Shop All</a>
         ${links.map((category) => `
           <a href="#/shop?brand=kalm-move&audience=${category.audience}&moveCategory=${category.id}">${escapeHtml(moveAudienceName(category.audience))} ${escapeHtml(category.name)}</a>
@@ -1866,6 +1910,7 @@ function renderProductCard(product, options = {}) {
   const defaultColour = options.displayColour && product.colors.includes(options.displayColour)
     ? options.displayColour
     : getDefaultColor(product);
+  const badge = isUnavailable ? "Sold out" : product.brandId === "ks-active" ? "AVAILABLE NOW" : product.badge;
   const productHref = productRoute(product, defaultColour);
   const displayImage = getVariantImage(product, defaultColour) || product.image;
   const imageMarkup = options.eager
@@ -1875,7 +1920,7 @@ function renderProductCard(product, options = {}) {
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}" data-display-colour="${escapeAttribute(defaultColour)}">
       <a class="product-media" href="${productHref}" aria-label="${escapeAttribute(`${product.title} in ${defaultColour}`)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
-        ${isUnavailable ? `<span class="product-badge sold-out">Sold out</span>` : product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
+        ${badge ? `<span class="product-badge ${isUnavailable ? "sold-out" : ""}">${escapeHtml(badge)}</span>` : ""}
         ${!product.image ? renderComingSoonMedia("card-coming-soon-media") : `<img ${imageMarkup} ${responsiveAttributes} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
@@ -2379,6 +2424,8 @@ function updateShopFromForm(event) {
 
 function shopHeading({ brand, category, audience, moveCategory, search }) {
   if (search) return `Search results for "${search}"`;
+  if (category === "ks-active") return "KS ACTIVE ARCHIVE";
+  if (category === "sale") return "KS ACTIVE ARCHIVE SALE";
   if (brand === "kalm-move" && audience !== "all" && moveCategory !== "all") {
     return `KALM Move ${moveAudienceName(audience)} ${moveCategoryName(moveCategory)}`.trim();
   }
@@ -2781,10 +2828,9 @@ function renderFooter() {
           <p>Premium essentials for movement, outdoor routines and everyday living.</p>
         </div>
         ${footerSection("Shop", `
-          <a href="#/shop?category=new-in">New In</a>
-          <a href="#/shop?category=activewear">Activewear</a>
+          <a href="/collections/ks-active">KS Active</a>
+          <a href="/collections/sale">Archive Sale</a>
           <a href="/brand/kalm-move">KALM Move</a>
-          <a href="#/shop?category=sale">Archive Sale</a>
         `)}
         ${footerSection("Brands", `
           <a href="#/brand/ks-active">KS Active</a>

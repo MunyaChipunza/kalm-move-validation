@@ -5,10 +5,9 @@ KALM Collective is a South African retail storefront for the available KS Active
 ## Primary pages
 
 - https://kalmcollective.co.za/
-- https://kalmcollective.co.za/collections/new-in
-- https://kalmcollective.co.za/collections/activewear
-- https://kalmcollective.co.za/brand/kalm-move
+- https://kalmcollective.co.za/collections/ks-active
 - https://kalmcollective.co.za/collections/sale
+- https://kalmcollective.co.za/brand/kalm-move
 
 ## Product information
 

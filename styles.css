@@ -401,6 +401,14 @@ button {
   object-fit: contain;
 }
 
+.ks-active-hero .hero-media {
+  background: #efede8;
+}
+
+.ks-active-hero .hero-media img {
+  object-position: center;
+}
+
 .brand-ribbon {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -578,6 +586,16 @@ button {
 .price-line s {
   color: var(--muted);
   font-size: 13px;
+}
+
+.search-result-group + .search-result-group {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.compact-head {
+  margin-bottom: 22px;
 }
 
 .launching-soon-badge,

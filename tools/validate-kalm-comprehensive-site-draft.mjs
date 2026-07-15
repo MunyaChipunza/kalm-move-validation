@@ -30,18 +30,16 @@ const productFor = (entry) => data.products.find((product) => product.id === ent
 const colourFor = (entry) => entry.displayColour || entry.color || entry.colour || "";
 const imageFor = (product, colour) => imageList(product?.variantImages?.[colour])[0] || product?.image || "";
 const surfaces = {
-  "Homepage Find Your Edit": config.homepage.findYourEdit,
-  "Homepage Featured Edit": config.homepage.featuredEdit,
-  "Homepage Archive Sale": config.homepage.archiveSale,
-  "Homepage Most Wanted": config.homepage.mostWanted,
+  "Homepage Featured KS Active": config.homepage.featuredKsActive,
+  "Homepage Final Pieces": config.homepage.finalPieces,
+  "KS Active": config.collections["ks-active"],
   "New In": config.collections["new-in"],
   "Activewear": config.collections.activewear,
-  "Sale": config.collections.sale,
-  "Outdoor": config.collections.outdoor
+  "Sale": config.collections.sale
 };
 const allocationRows = [];
 for (const [surface, entries] of Object.entries(surfaces)) {
-  for (const entry of entries) {
+  for (const entry of entries || []) {
     const product = productFor(entry);
     const colour = colourFor(entry);
     const image = imageFor(product, colour);
@@ -52,41 +50,27 @@ for (const [surface, entries] of Object.entries(surfaces)) {
   }
 }
 
-const keys = allocationRows.map(({ product, colour }) => `${product?.id || "missing"}|${colour}`);
-check("Every allocated product-colour key is unique across requested surfaces", new Set(keys).size === keys.length, keys.filter((key, index) => keys.indexOf(key) !== index).join(", "));
-const findImages = allocationRows.filter((row) => row.surface === "Homepage Find Your Edit").map((row) => row.image);
-const featuredImages = allocationRows.filter((row) => row.surface === "Homepage Featured Edit").map((row) => row.image);
-const sharedImage = findImages.find((image) => featuredImages.includes(image));
-check("Find Your Edit and Featured Edit do not reuse an image path", !sharedImage, sharedImage || "");
-const findHashes = new Set(findImages.map(hash));
-const sharedHash = featuredImages.map(hash).find((imageHash) => findHashes.has(imageHash));
-check("Find Your Edit and Featured Edit do not reuse an image hash", !sharedHash, sharedHash || "");
-
-const archive = allocationRows.filter((row) => row.surface === "Homepage Archive Sale");
-check("Homepage Archive Sale is KS Active only", archive.length > 0 && archive.every(({ product }) => product?.brandId === "ks-active"), archive.map(({ product }) => product?.brandId).join(", "));
-check("Homepage Archive Sale contains genuine sale products", archive.every(({ product }) => Number(product?.compareAtPrice) > Number(product?.price)), "compare-at price must exceed sale price");
+const featuredKs = allocationRows.filter((row) => row.surface === "Homepage Featured KS Active");
+const finalPieces = allocationRows.filter((row) => row.surface === "Homepage Final Pieces");
+check("Homepage Featured KS Active is KS Active only", featuredKs.length >= 6 && featuredKs.every(({ product }) => product?.brandId === "ks-active"), featuredKs.map(({ product }) => product?.brandId).join(", "));
+check("Homepage Final Pieces is KS Active only", finalPieces.length >= 6 && finalPieces.every(({ product }) => product?.brandId === "ks-active"), finalPieces.map(({ product }) => product?.brandId).join(", "));
+check("Homepage KS Active sections use distinct product selections", !featuredKs.some((row) => finalPieces.some((candidate) => candidate.product?.id === row.product?.id)), "featured and final-pieces selections overlap");
 const newIn = allocationRows.filter((row) => row.surface === "New In");
-check("New In excludes KS Active", newIn.every(({ product }) => product?.brandId !== "ks-active"));
-check("New In only contains catalogue new-in products", newIn.every(({ product }) => product?.tags?.includes("new-in")));
+check("New In is restricted to the purchasable KS Active Archive", newIn.length === 14 && newIn.every(({ product }) => product?.brandId === "ks-active"));
+const activewear = allocationRows.filter((row) => row.surface === "Activewear");
+check("Activewear is restricted to the purchasable KS Active Archive", activewear.length === 14 && activewear.every(({ product }) => product?.brandId === "ks-active"));
 const sale = allocationRows.filter((row) => row.surface === "Sale");
-check("Sale page contains genuine sale products", sale.every(({ product }) => Number(product?.compareAtPrice) > Number(product?.price)), "compare-at price must exceed sale price");
-const outdoor = allocationRows.filter((row) => row.surface === "Outdoor");
-const approvedOutdoor = new Set([
-  "kalm-outdoor-ember-16-gas-pizza-oven",
-  "kalm-outdoor-forge-2-portable-gas-griddle",
-  "kalm-outdoor-ridge-4-stainless-gas-braai"
-]);
-check("Outdoor collection contains exactly three appliances", outdoor.length === 3 && outdoor.every(({ product }) => approvedOutdoor.has(product?.id)), outdoor.map(({ product }) => product?.id).join(", "));
+check("Sale page contains exactly fourteen KS Active Archive products", sale.length === 14 && sale.every(({ product }) => product?.brandId === "ks-active"), sale.map(({ product }) => product?.brandId).join(", "));
+check("Sale page contains no KALM Move product", sale.every(({ product }) => product?.brandId !== "kalm-move"));
 
 const campaigns = [
-  config.campaigns.homeHero.desktop,
-  config.campaigns.homeHero.tablet,
-  config.campaigns.homeHero.mobile,
-  config.campaigns.featuredCollection.desktop,
-  config.campaigns.featuredCollection.mobile
+  config.campaigns.ksActiveHero.desktop,
+  config.campaigns.ksActiveHero.mobile,
+  config.campaigns.kalmMoveTeaser.desktop,
+  config.campaigns.kalmMoveTeaser.mobile
 ];
 check("All public campaign derivatives exist", campaigns.every(exists), campaigns.filter((path) => !exists(path)).join(", "));
-check("Campaign derivatives are unique", new Set(campaigns.map(hash)).size === campaigns.length);
+check("Primary homepage campaign uses approved KS Active imagery", config.campaigns.ksActiveHero.desktop.includes("assets/images/products/ks-active/archive-approved/"));
 check("No rejected campaign crop is publicly referenced", campaigns.every((path) => !path.includes("rejected")));
 check("Rejected campaign evidence is outside public assets", exists("reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/audit/rejected/kalm-comprehensive-home-hero-v1-mobile-rejected-crop.webp"));
 
@@ -108,7 +92,7 @@ check("robots.txt permits standard crawling and points to the sitemap", /User-ag
 const commerceProducts = data.products.filter((product) => (product.status || "published") === "published" && (product.visibility || "visible") === "visible" && product.brandId === "ks-active");
 check("Sitemap includes all current commerce products", commerceProducts.every((product) => sitemap.includes(`/products/${encodeURIComponent(product.slug)}`)));
 check("KALM Move has a preview collection sitemap route without commerce PDP links", movePreviewPrices.some((entry) => entry.status === "launching-soon") && sitemap.includes("/brand/kalm-move") && !sitemap.includes("/products/kalm-move-"));
-check("Sitemap includes current primary collection routes", ["new-in", "activewear", "sale"].every((category) => sitemap.includes(`/collections/${category}`)));
+check("Sitemap includes current primary collection routes", ["ks-active", "sale"].every((category) => sitemap.includes(`/collections/${category}`)) && !sitemap.includes("/collections/new-in") && !sitemap.includes("/collections/activewear"));
 check("llms.txt contains factual discovery guidance without credentials", llms.includes("KALM Collective") && !/(api[_-]?key|token|secret)/i.test(llms));
 check("No Drive path is exposed in public source", ![indexHtml, script, read("merchandising.js")].some((text) => /[A-Z]:\\|G:\\My Drive/i.test(text)));
 

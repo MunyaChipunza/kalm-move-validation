@@ -1,86 +1,57 @@
-/* Central merchandising source of truth for the comprehensive site draft. */
+/* Central merchandising source of truth for the KS Active-first storefront preview. */
+const ksActiveArchive = [
+  { productSlug: "ks-active-halter-back-romper", displayColour: "Army Green" },
+  { productSlug: "ks-active-rib-scrunch-legging", displayColour: "Ash Gray" },
+  { productSlug: "ks-active-cutout-crossback-bra", displayColour: "Imperial Red" },
+  { productSlug: "ks-active-scrunch-seamless-short", displayColour: "Egyptian Blue" },
+  { productSlug: "ks-active-cutout-seamless-bra", displayColour: "Black" },
+  { productSlug: "ks-active-crossback-seamless-bra", displayColour: "Apricot" },
+  { productSlug: "ks-active-high-waist-seamless-short", displayColour: "Electric Violet" },
+  { productSlug: "ks-active-curve-seam-legging", displayColour: "Espresso" },
+  { productSlug: "ks-active-high-waist-seamless-legging", displayColour: "Electric Violet" },
+  { productSlug: "ks-active-crisscross-back-bra", displayColour: "Black" },
+  { productSlug: "ks-active-panel-seamless-legging", displayColour: "Azure Blue" },
+  { productSlug: "ks-active-scrunch-seamless-legging", displayColour: "Imperial Red" },
+  { productSlug: "ks-active-rib-contour-legging", displayColour: "Bright Green" },
+  { productSlug: "ks-active-racer-knit-bra", displayColour: "Dark Green" }
+];
+
 window.KALM_MERCHANDISING = {
-  version: "2026-07-12",
+  version: "2026-07-15-ks-active-first-preview",
   campaigns: {
-    homeHero: {
-      desktop: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp",
-      tablet: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp",
-      mobile: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp",
-      alt: "Six adults in varied KALM Move training looks sharing a relaxed movement moment outdoors"
+    ksActiveHero: {
+      desktop: "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+      mobile: "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+      alt: "Model wearing the KS Active Panel Seamless Legging in Azure Blue"
     },
-    featuredCollection: {
-      desktop: "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-desktop.webp",
-      mobile: "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-mobile.webp",
-      alt: "KALM Move performance essentials in a calm outdoor training setting"
+    kalmMoveTeaser: {
+      desktop: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp",
+      mobile: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp",
+      alt: "KALM Move adults sharing a relaxed movement moment outdoors"
     }
   },
   homepage: {
-    findYourEdit: [
-      { productSlug: "kalm-move-form-short-set", displayColour: "Khaki", title: "Activewear", copy: "Movement pieces with a softer everyday finish." },
-      { productSlug: "kalm-wellness-breathe-mat", displayColour: "Sand", title: "Wellness", copy: "Quiet tools for a more intentional routine." },
-      { productSlug: "kalm-home-white-cotton-bedding-set", displayColour: "White", title: "Home", copy: "Clean layers for the spaces you reset in." },
-      { productSlug: "kalm-outdoor-weather-ready-picnic-blanket", displayColour: "Charcoal", title: "Outdoor", copy: "Considered essentials for time outside." }
+    featuredKsActive: [
+      ksActiveArchive[0],
+      ksActiveArchive[1],
+      ksActiveArchive[5],
+      ksActiveArchive[10],
+      ksActiveArchive[12],
+      ksActiveArchive[13]
     ],
-    featuredEdit: [
-      { productSlug: "kalm-move-open-back-short-romper", displayColour: "Navy", title: "Easy movement", copy: "A one-piece studio layer for unhurried plans." },
-      { productSlug: "kalm-wellness-ground-bottle", displayColour: "Olive", title: "Grounded hydration", copy: "A tactile daily piece for desk, studio and commute." },
-      { productSlug: "kalm-home-black-reed-diffuser", displayColour: "Smoke black", title: "After-hours calm", copy: "A simple finishing note for a slower room." }
-    ],
-    archiveSale: [
-      { productSlug: "ks-high-waist-seamless-leggings", displayColour: "Wine" },
-      { productSlug: "ks-high-waist-seamless-shorts", displayColour: "Deep Plum" }
-    ],
-    mostWanted: [
-      { productSlug: "kalm-move-flow-training-short", displayColour: "Olive" },
-      { productSlug: "kalm-move-rise-zip-jacket-set", displayColour: "Apricot" },
-      { productSlug: "kalm-wellness-restore-towel", displayColour: "Dusty Rose" },
-      { productSlug: "kalm-home-charcoal-bath-towel-stack", displayColour: "Charcoal" }
+    finalPieces: [
+      ksActiveArchive[8],
+      ksActiveArchive[9],
+      ksActiveArchive[6],
+      ksActiveArchive[11],
+      ksActiveArchive[2],
+      ksActiveArchive[4]
     ]
   },
   collections: {
-    "new-in": [
-      { productSlug: "kalm-move-align-halter-legging-set", displayColour: "Pink Drink" },
-      { productSlug: "kalm-move-ease-flare-set", displayColour: "Taupe" },
-      { productSlug: "kalm-move-wide-leg-yoga-pant", displayColour: "Burgundy Red" },
-      { productSlug: "kalm-move-motion-hoodie", displayColour: "Stone" },
-      { productSlug: "kalm-move-everyday-bottle", displayColour: "Lilac" },
-      { productSlug: "kalm-move-slim-wellness-bottle", displayColour: "Soft Pink" },
-      { productSlug: "kalm-wellness-ritual-set", displayColour: "Natural Oat" },
-      { productSlug: "kalm-wellness-pause-journal", displayColour: "Blush" },
-      { productSlug: "kalm-move-open-back-short-romper", displayColour: "Apricot" }
-    ],
-    activewear: [
-      { productSlug: "kalm-move-form-short-set", displayColour: "Dark Purple" },
-      { productSlug: "kalm-move-pulse-crop-short-set", displayColour: "Black" },
-      { productSlug: "kalm-move-balance-x-back-legging-set", displayColour: "Magic Forest Green" },
-      { productSlug: "kalm-move-halter-biker-short-set", displayColour: "Blue" },
-      { productSlug: "kalm-move-core-performance-tee", displayColour: "White" },
-      { productSlug: "kalm-move-sprint-running-short", displayColour: "Cobalt" },
-      { productSlug: "kalm-move-lift-tank", displayColour: "Charcoal" },
-      { productSlug: "kalm-move-pace-jogger", displayColour: "Navy" },
-      { productSlug: "kalm-move-protein-shaker-bottle", displayColour: "Smoke Grey" },
-      { productSlug: "kalm-move-studio-bottle", displayColour: "Sky Blue" }
-    ],
-    sale: [
-      { productSlug: "ks-high-waist-seamless-leggings", displayColour: "Deep Plum" },
-      { productSlug: "ks-high-waist-seamless-shorts", displayColour: "Wine" },
-      { productSlug: "kalm-move-align-halter-legging-set", displayColour: "Date Brown" },
-      { productSlug: "kalm-move-ease-flare-set", displayColour: "Espresso" },
-      { productSlug: "kalm-move-form-short-set", displayColour: "Orange" },
-      { productSlug: "kalm-move-wide-leg-yoga-pant", displayColour: "Gray" },
-      { productSlug: "kalm-move-balance-x-back-legging-set", displayColour: "Bluebird" },
-      { productSlug: "kalm-move-halter-biker-short-set", displayColour: "Red" },
-      { productSlug: "kalm-move-rise-zip-jacket-set", displayColour: "Coffee" },
-      { productSlug: "kalm-move-open-back-short-romper", displayColour: "Army Green" },
-      { productSlug: "kalm-move-pocket-racerback-crop-bra", displayColour: "Brown" },
-      { productSlug: "kalm-move-contrast-flare-set", displayColour: "Purple" },
-      { productSlug: "kalm-move-crossline-legging", displayColour: "Blue" },
-      { productSlug: "kalm-move-drift-crop-wide-pant", displayColour: "Wine Red" }
-    ],
-    outdoor: [
-      { productSlug: "kalm-outdoor-ember-16-gas-pizza-oven", displayColour: "Matte Black" },
-      { productSlug: "kalm-outdoor-forge-2-portable-gas-griddle", displayColour: "Matte Black" },
-      { productSlug: "kalm-outdoor-ridge-4-stainless-gas-braai", displayColour: "Stainless / Black" }
-    ]
+    "ks-active": ksActiveArchive,
+    sale: [...ksActiveArchive],
+    activewear: [...ksActiveArchive],
+    "new-in": [...ksActiveArchive]
   }
 };

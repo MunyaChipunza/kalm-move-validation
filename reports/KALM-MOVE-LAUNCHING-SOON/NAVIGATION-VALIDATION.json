@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-07-15T16:01:36.425Z",
+  "branch": "codex/kalm-move-launching-soon-preview-20260715",
+  "previewOnly": true,
+  "protectedReleaseCommit": "53e3dd3bbdd15ebec6ddcf3a0418d8da6ae23c04",
+  "browserEvidence": {
+    "desktopHomepage": "reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-DESKTOP.png",
+    "mobileHomepage": "reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-MOBILE.png"
+  },
+  "checks": {
+    "desktopPrimaryOrder": true,
+    "mobileMenuUsesPrimaryNavigation": true,
+    "footerShoppingOrder": true,
+    "newInAbsentFromPrimaryNavigation": true,
+    "activewearAbsentFromPrimaryNavigation": true,
+    "futureBrandsAbsentFromPrimaryNavigation": true
+  },
+  "errors": [],
+  "passed": true
+}

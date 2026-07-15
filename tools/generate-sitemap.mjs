@@ -8,10 +8,9 @@ const movePreviewIds = new Set(movePrices.filter((entry) => entry.status === "la
 if (!movePreviewIds.size) throw new Error("KALM Move preview price data is missing.");
 const routes = [
   "/",
-  "/collections/new-in",
-  "/collections/activewear",
-  "/brand/kalm-move",
+  "/collections/ks-active",
   "/collections/sale",
+  "/brand/kalm-move",
   "/contact",
   "/policies"
 ];
