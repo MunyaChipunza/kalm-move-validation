@@ -1,0 +1,61 @@
+{
+  "asOf": "2026-07-16",
+  "evidence": [
+    {
+      "id": "tct-home",
+      "source": "T-Shirts Cape Town home page",
+      "url": "https://tshirtscapetown.com/",
+      "status": "currently_verified_page",
+      "captured": "reports/KALM-ODO-PILOT/evidence/tshirtscapetown-home-20260716.png",
+      "finding": "Supplier website, public contact and Woodstock location observed."
+    },
+    {
+      "id": "tct-price-list",
+      "source": "T-Shirts Cape Town price list",
+      "url": "https://tshirtscapetown.com/price-list/",
+      "status": "currently_verified_page",
+      "captured": "reports/KALM-ODO-PILOT/evidence/tshirtscapetown-price-list-20260716.png",
+      "finding": "Displayed 2026 price-list values; one 220gsm price conflict is recorded rather than resolved by assumption."
+    },
+    {
+      "id": "tct-product-range",
+      "source": "T-Shirts Cape Town plain T-shirt catalogue",
+      "url": "https://tshirtscapetown.com/plain-t-shirts-cape-town/",
+      "status": "currently_verified_page",
+      "captured": "reports/KALM-ODO-PILOT/evidence/tshirtscapetown-product-range-20260716.jpg",
+      "finding": "300gsm, 240gsm and 220gsm product descriptions, fit labels and displayed prices observed."
+    },
+    {
+      "id": "bulkalot-product",
+      "source": "Bulkalot 300gsm oversized T-shirt",
+      "url": "https://www.bulkalot.co.za/products/300gsm-oversized-t-shirt",
+      "status": "currently_verified_page",
+      "captured": "reports/KALM-ODO-PILOT/evidence/bulkalot-300gsm-oversized-20260716.png",
+      "finding": "Live catalogue page, 300gsm 50/50 polycotton, MOQ and displayed tiers observed; stock and VAT treatment remain unverified."
+    },
+    {
+      "id": "odo-current-supplier-application",
+      "source": "OneDayOnly supplier application",
+      "url": "https://www.onedayonly.co.za/become-a-supplier",
+      "status": "currently_verified_page",
+      "captured": "reports/KALM-ODO-PILOT/evidence/onedayonly-supplier-application-current-20260716.jpg",
+      "finding": "Current application fields observed; no field was entered and no application was submitted."
+    },
+    {
+      "id": "odo-current-process",
+      "source": "OneDayOnly Sell With Us",
+      "url": "https://www.onedayonly.co.za/sell-with-us",
+      "status": "currently_verified_page",
+      "captured": "reports/KALM-ODO-PILOT/evidence/onedayonly-sell-with-us-20260716.jpg",
+      "finding": "Public sequence observed: application, onboarding, deal sign-off, purchase order and warehouse delivery within three days."
+    },
+    {
+      "id": "odo-customer-terms",
+      "source": "OneDayOnly Terms and Conditions",
+      "url": "https://help.onedayonly.co.za/hc/en-us/articles/4407654234644-Terms-and-Conditions",
+      "status": "currently_verified_customer_terms_only",
+      "captured": "reports/KALM-ODO-PILOT/evidence/onedayonly-terms-current-20260716.jpg",
+      "finding": "Current publicly available customer terms reviewed; not treated as current supplier commercial terms."
+    }
+  ]
+}

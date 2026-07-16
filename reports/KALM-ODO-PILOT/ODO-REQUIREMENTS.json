@@ -1,0 +1,35 @@
+{
+  "asOf": "2026-07-16",
+  "currentPublicProcess": {
+    "source": "https://www.onedayonly.co.za/sell-with-us",
+    "application": true,
+    "approvalAndOnboarding": true,
+    "electronicDealSignoff": true,
+    "dealDuration": "24 hours stated on current public overview",
+    "purchaseOrderTiming": "following day stated on current public overview",
+    "warehouseDelivery": "within three days stated on current public overview",
+    "payment": "after stock delivery and checking stated on current public overview"
+  },
+  "applicationFieldsObserved": [
+    "Company and contact details",
+    "Company name and web/social reference",
+    "VAT status",
+    "Category",
+    "Company and product summary",
+    "Available stock",
+    "Retail price",
+    "Sample availability",
+    "Product image and video links"
+  ],
+  "unresolvedCommercialRequirements": [
+    "Minimum deal quantity",
+    "Supplier margin / commercial structure",
+    "Stock-freezing policy",
+    "Reserved blank eligibility",
+    "Made-to-order embroidery acceptance",
+    "Apparel-specific lead time and sample requirements",
+    "Returns and credit obligations",
+    "Current supplier legal terms"
+  ],
+  "applicationState": "not_started_no_fields_entered_no_submission"
+}

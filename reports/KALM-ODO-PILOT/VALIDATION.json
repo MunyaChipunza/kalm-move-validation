@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-07-16",
+  "passed": true,
+  "checks": {
+    "pilotReviewRoute": "passed — 15 focused controls",
+    "catalogueValidation": "passed — 84 products, 820 variants, 0 errors, 0 warnings",
+    "protectedCatalogueData": "passed — products.json, merchandising.js and KALM Move price data unchanged against origin/master",
+    "javascriptSyntax": "passed",
+    "pilotJsonParsing": "passed",
+    "spreadsheetFormulaScan": "passed — 0 formula error matches in both review workbooks",
+    "spreadsheetVisualReview": "passed — scorecard and economics cover/scenario render previews inspected",
+    "privateEvidenceExposure": "passed — product data and product renderer contain no supplier, OneDayOnly, private-source or Kuhle disclosure",
+    "pilotCommerceLock": "passed — no Add to Bag, no Product Offer structured data, no sitemap entry and noindex controls present"
+  },
+  "notRun": [
+    "The inherited KALM Move Launching Soon validator writes into existing KALM Move evidence and compares against a stale local master ref. It was inspected but not used to overwrite the existing report set. The protected KALM Move source inputs are instead directly verified unchanged against origin/master."
+  ],
+  "production": "unchanged",
+  "protectedKsActiveRelease": "unchanged",
+  "munyaTaskApplication": "not modified"
+}

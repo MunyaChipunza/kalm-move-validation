@@ -1,0 +1,36 @@
+{
+  "asOf": "2026-07-16",
+  "result": "NO_GO",
+  "scope": "draft-only commercial preparation",
+  "completed": [
+    "Public supplier-page evidence captured",
+    "Historical versus current OneDayOnly findings separated",
+    "Product shortlist and scorecard prepared",
+    "Formula-driven unit-economics workbook prepared",
+    "Review-only product route prepared",
+    "Four unsent Gmail drafts saved",
+    "Application answer sheet prepared without submission",
+    "Three-day fulfilment plan prepared"
+  ],
+  "blockingGates": [
+    "T-Shirts Cape Town live colour-size stock and written reservation",
+    "Supplier invoice and final price confirmation",
+    "Sample blanks and physical embroidered sample",
+    "Fit/shrinkage/wash test",
+    "Yolanda written stitch scope, capacity, turnaround and rework policy",
+    "Packaging, transport, reject, returns and administration quotes",
+    "Current OneDayOnly buyer requirements and commercial terms",
+    "Final profitable economics inclusive of pending costs",
+    "Munya approval to reserve stock, order samples and submit application"
+  ],
+  "prohibitedActionsNotTaken": [
+    "No supplier email sent",
+    "No OneDayOnly application submitted",
+    "No terms accepted or personal surety signed",
+    "No stock reserved",
+    "No sample ordered",
+    "No payment made",
+    "No embroidery commissioned",
+    "No production deployment"
+  ]
+}

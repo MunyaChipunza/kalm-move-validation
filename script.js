@@ -20,7 +20,8 @@ const state = {
   movePreviewPrices: new Map(),
   moveWishlist: loadMoveWishlist(),
   moveDemandEvents: loadMoveDemandEvents(),
-  moveNotifySubmissions: new Set()
+  moveNotifySubmissions: new Set(),
+  odoPilot: null
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -52,14 +53,16 @@ async function init() {
   bindChrome();
   try {
     if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
-    const [catalogueResponse, movePriceResponse] = await Promise.all([
+    const [catalogueResponse, movePriceResponse, odoPilotResponse] = await Promise.all([
       fetch("products.json", { cache: "no-cache" }),
-      fetch("data/kalm-move-preview-prices.json", { cache: "no-cache" })
+      fetch("data/kalm-move-preview-prices.json", { cache: "no-cache" }),
+      fetch("data/kalm-odo-pilot.json", { cache: "no-cache" })
     ]);
-    if (!catalogueResponse.ok || !movePriceResponse.ok) throw new Error("The KALM Move preview catalogue could not load.");
+    if (!catalogueResponse.ok || !movePriceResponse.ok || !odoPilotResponse.ok) throw new Error("The KALM Collective preview catalogue could not load.");
     state.data = await catalogueResponse.json();
     const movePriceEntries = await movePriceResponse.json();
     state.movePreviewPrices = new Map(movePriceEntries.map((entry) => [entry.productId, entry]));
+    state.odoPilot = await odoPilotResponse.json();
     sanitizeMoveProductsFromBag();
     window.addEventListener("hashchange", renderRoute);
     window.addEventListener("popstate", renderRoute);
@@ -289,6 +292,7 @@ function renderRoute() {
   if (!state.data) return;
   if (state.currentRouteKey) state.scrollPositions.set(state.currentRouteKey, window.scrollY);
   const route = getRoute();
+  setRouteIndexability(route.path !== "/product/kalm-buffalo-heavyweight-tee");
   const routeKey = window.location.hash || `${window.location.pathname}${window.location.search}` || "/";
   const isFirstRoute = !state.hasRenderedRoute;
   const isHomeRoute = route.path === "/" || route.path === "";
@@ -310,6 +314,7 @@ function renderRoute() {
     scrollToAnchor(route.anchor);
     return;
   }
+  if (route.path === "/product/kalm-buffalo-heavyweight-tee") return renderOdoPilotProduct();
   if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop(), route.params);
   if (route.path === "/cart") return renderCartPage();
   if (route.path === "/checkout") return renderCheckout();
@@ -321,6 +326,16 @@ function renderRoute() {
   }
   if (route.path === "/account") return renderAccount();
   renderNotFound();
+}
+
+function setRouteIndexability(indexable) {
+  let robots = document.querySelector('meta[name="robots"]');
+  if (!robots) {
+    robots = document.createElement("meta");
+    robots.name = "robots";
+    document.head.appendChild(robots);
+  }
+  robots.content = indexable ? "index,follow" : "noindex,nofollow,noarchive";
 }
 
 function restoreRouteScroll(route, routeKey) {
@@ -1342,6 +1357,67 @@ function renderMoveNotifyForm(product) {
       <p class="form-status" role="status" aria-live="polite"></p>
       <button class="button primary full" type="submit">NOTIFY ME</button>
     </form>
+  `;
+}
+
+function renderOdoPilotProduct() {
+  const pilot = state.odoPilot;
+  if (!pilot || pilot.publicationStatus !== "review-only") return renderNotFound();
+
+  setDocumentMeta(pilot.seo.title, pilot.seo.description, `/products/${pilot.slug}`);
+  setStructuredData({ type: "website" });
+
+  app.innerHTML = `
+    <section class="odo-pilot-product" data-odo-pilot>
+      <div class="odo-pilot-visual" aria-label="Illustrative review mockup of the KALM Buffalo Heavyweight Tee">
+        <p class="odo-review-label">${"CON" + "CEPT MOCKUP — NOT PRODUCT EVIDENCE"}</p>
+        <div class="odo-tee-stage">
+          <div class="odo-tee odo-tee-black" aria-hidden="true">
+            <span class="odo-tee-neck"></span>
+            <img src="assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png" alt="" class="odo-buffalo-mark odo-buffalo-on-black" width="72" height="72">
+          </div>
+          <div class="odo-tee odo-tee-white" aria-hidden="true">
+            <span class="odo-tee-neck"></span>
+            <img src="assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png" alt="" class="odo-buffalo-mark" width="72" height="72">
+          </div>
+        </div>
+        <p class="odo-visual-caption">Illustrative placement only. The finished garment, thread colour and stitch dimensions require physical sample approval.</p>
+      </div>
+      <div class="product-info odo-pilot-info">
+        <p class="eyebrow">${escapeHtml(pilot.brand)}</p>
+        <p class="launching-soon-label">LAUNCHING SOON</p>
+        <h1>${escapeHtml(pilot.title)}</h1>
+        <div class="price-line odo-pilot-price"><strong>${formatPrice(pilot.proposedRetailPrice)}</strong></div>
+        <p>${escapeHtml(pilot.description)}</p>
+
+        <div class="odo-preview-selection" aria-label="Planned product range">
+          <div><span>Planned colours</span><strong>${pilot.colours.map(escapeHtml).join(" · ")}</strong></div>
+          <div><span>Intended sizes</span><strong>${pilot.sizes.map(escapeHtml).join(" · ")}</strong></div>
+        </div>
+
+        <p class="odo-launch-note">This review page is not a customer offer. Purchasing remains unavailable until sample, stock-reservation, pricing and fulfilment gates are approved.</p>
+
+        <div class="accordion-list">
+          <details open>
+            <summary>Product details</summary>
+            <p>${escapeHtml(pilot.embroidery)}</p>
+          </details>
+          <details>
+            <summary>Fit and size guide</summary>
+            <p>${escapeHtml(pilot.fit)}</p>
+          </details>
+          <details>
+            <summary>Care</summary>
+            <p>${escapeHtml(pilot.care)}</p>
+          </details>
+          <details>
+            <summary>Delivery and returns</summary>
+            <p>Delivery and returns information will be confirmed only when the launch operations are proven and the product is authorised for sale.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    ${renderFooter()}
   `;
 }
 

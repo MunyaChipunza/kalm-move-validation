@@ -1,0 +1,32 @@
+{
+  "status": "draft_only_not_release_authorised",
+  "knownInputs": {
+    "blankCostInclVat": {
+      "300gsmOversizedCotton": 189,
+      "240gsmOversized": 125,
+      "220gsmCottonProductPage": 105
+    },
+    "embroideryCostInclVat": 85,
+    "odoWarehouseCourierCost": 0,
+    "retailPriceCandidates": [599, 649, 699, 749],
+    "odoCustomerPriceCandidates": [349, 399, 449, 499],
+    "odoMarginCandidates": [0.2, 0.25, 0.3, 0.35]
+  },
+  "pendingCostsExcluded": [
+    "packaging",
+    "hang tag / size sticker / label",
+    "collection transport",
+    "embroidery transport",
+    "quality control and rejected blank allowance",
+    "embroidery reject / replacement allowance",
+    "ODO returns / credit allowance",
+    "administrative handling"
+  ],
+  "illustrative300gsmAt449": [
+    { "odoMargin": 0.2, "supplierProceeds": 359.2, "knownBaseCost": 274, "provisionalContributionPerUnit": 85.2 },
+    { "odoMargin": 0.25, "supplierProceeds": 336.75, "knownBaseCost": 274, "provisionalContributionPerUnit": 62.75 },
+    { "odoMargin": 0.3, "supplierProceeds": 314.3, "knownBaseCost": 274, "provisionalContributionPerUnit": 40.3 },
+    { "odoMargin": 0.35, "supplierProceeds": 291.85, "knownBaseCost": 274, "provisionalContributionPerUnit": 17.85 }
+  ],
+  "recommendation": "Do not choose an ODO price or accept a deal until written ODO terms and every pending cost are included."
+}

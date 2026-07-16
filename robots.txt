@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /products/kalm-buffalo-heavyweight-tee
 
 Sitemap: https://kalmcollective.co.za/sitemap.xml

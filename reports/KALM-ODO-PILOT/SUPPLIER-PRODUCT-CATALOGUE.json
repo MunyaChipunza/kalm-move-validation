@@ -1,0 +1,101 @@
+{
+  "asOf": "2026-07-16",
+  "currency": "ZAR",
+  "purpose": "Draft-only supplier website baseline. Catalogue pages do not prove live stock, stock holds, trade pricing, VAT treatment beyond the displayed label, or resale permission.",
+  "suppliers": [
+    {
+      "name": "T-Shirts Cape Town",
+      "role": "primary working supplier",
+      "website": "https://tshirtscapetown.com/",
+      "location": "Shop 1, 252 Albert Road, Woodstock, Cape Town, 7915",
+      "orderProcessObserved": [
+        "Supplier checks stock",
+        "Supplier issues invoice",
+        "Stock is reserved after payment",
+        "Collection is available"
+      ],
+      "options": [
+        {
+          "id": "tct-300-cotton-oversized",
+          "description": "300gsm Oversized Short Sleeve Cotton T-Shirt",
+          "url": "https://tshirtscapetown.com/plain-t-shirts-cape-town/",
+          "priceIncludingVAT": 189,
+          "priceExcludingVAT": 164.34,
+          "gsm": 300,
+          "fabric": "Carded cotton stated on current product page",
+          "fit": "Adult unisex oversized crew-neck, short sleeve",
+          "listedColours": ["Black", "White"],
+          "listedSizes": ["S", "M", "L", "XL", "2XL"],
+          "pageSizeConflict": "Current product page shows a wider range than the price-list reference; live S–2XL allocation is unverified.",
+          "commercialStatus": "requires_written_confirmation"
+        },
+        {
+          "id": "tct-300-polycotton-oversized",
+          "description": "300gsm Oversized Short Sleeve Polycotton T-Shirt",
+          "url": "https://tshirtscapetown.com/plain-t-shirts-cape-town/",
+          "priceIncludingVAT": 189,
+          "priceExcludingVAT": 164.34,
+          "gsm": 300,
+          "fabric": "Polycotton; current supplier page must be confirmed in writing",
+          "fit": "Adult unisex oversized crew-neck, short sleeve",
+          "listedColours": ["Black", "White", "Other listed colours"],
+          "listedSizes": ["S", "M", "L", "XL", "2XL", "Supplier page shows wider range"],
+          "commercialStatus": "requires_written_confirmation"
+        },
+        {
+          "id": "tct-240-oversized",
+          "description": "240gsm Oversized Short Sleeve T-Shirt",
+          "url": "https://tshirtscapetown.com/plain-t-shirts-cape-town/",
+          "priceIncludingVAT": 125,
+          "priceExcludingVAT": 108.69,
+          "gsm": 240,
+          "fabric": "Carded cotton stated on current product page",
+          "fit": "Adult unisex oversized crew-neck, short sleeve",
+          "listedColours": ["Black", "White", "Other listed colours"],
+          "listedSizes": ["S", "M", "L", "XL", "2XL", "3XL", "Supplier page shows wider range"],
+          "commercialStatus": "requires_written_confirmation"
+        },
+        {
+          "id": "tct-220-cotton",
+          "description": "220gsm Short Sleeve Cotton T-Shirt",
+          "url": "https://tshirtscapetown.com/plain-t-shirts-cape-town/",
+          "priceIncludingVAT": 105,
+          "priceExcludingVAT": null,
+          "priceConflict": "Current product page shows R105 including VAT; the current price-list reference showed R165 including VAT. A written quotation is required before use in costing.",
+          "gsm": 220,
+          "fabric": "Combed cotton stated on current product page",
+          "fit": "Adult unisex regular crew-neck, short sleeve",
+          "listedColours": ["Black", "White", "Other listed colours"],
+          "listedSizes": ["S", "M", "L", "XL", "2XL", "3XL", "Supplier page shows wider range"],
+          "commercialStatus": "requires_written_confirmation"
+        }
+      ]
+    },
+    {
+      "name": "Bulkalot",
+      "role": "secondary benchmark only",
+      "website": "https://www.bulkalot.co.za/",
+      "websiteStatus": "live_catalogue_observed",
+      "options": [
+        {
+          "id": "bulkalot-300gsm-oversized",
+          "description": "300gsm Plain Oversized T-shirt",
+          "url": "https://www.bulkalot.co.za/products/300gsm-oversized-t-shirt",
+          "gsm": 300,
+          "fabric": "50/50 polycotton stated on current product page",
+          "fit": "Oversized crew with neck ribbing; short sleeve; double stitching stated",
+          "listedColours": ["Black", "White", "Ash Grey", "Baby Pink", "Red"],
+          "listedSizes": ["S", "M", "L", "XL", "XXL"],
+          "minimumOrderQuantity": 5,
+          "displayedPriceTiers": [
+            { "quantity": "5-30", "price": 195 },
+            { "quantity": "31-100", "price": 185 },
+            { "quantity": "101+", "price": 170 }
+          ],
+          "vatTreatment": "not confirmed on the current product page",
+          "commercialStatus": "unverified_not_usable_for_costing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "route": [
+    "T-Shirts Cape Town, Woodstock",
+    "Yolanda embroidery location — to be confirmed",
+    "OneDayOnly, Oude Molen Park, Ndabeni"
+  ],
+  "deliveryToODO": {
+    "method": "Munya personal delivery",
+    "odoWarehouseCourierCost": 0,
+    "transportCostToSupplierAndEmbroiderer": "PENDING QUOTE / route log"
+  },
+  "capacityStatus": "CONDITIONAL",
+  "capacityProofMissing": [
+    "Supplier size-level reserved stock",
+    "Yolanda daily capacity and 48-hour turnaround",
+    "Replacement sequence",
+    "Packaging and warehouse-intake confirmation",
+    "ODO apparel commercial requirements"
+  ]
+}
