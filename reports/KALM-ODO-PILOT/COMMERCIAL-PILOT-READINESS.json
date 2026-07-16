@@ -1,36 +1,38 @@
 {
   "asOf": "2026-07-16",
-  "result": "NO_GO",
-  "scope": "draft-only commercial preparation",
+  "result": "AUTHORISED_FOR_SUBMISSION",
+  "scope": "current storefront update and initial OneDayOnly supplier application",
   "completed": [
     "Public supplier-page evidence captured",
     "Historical versus current OneDayOnly findings separated",
     "Product shortlist and scorecard prepared",
     "Formula-driven unit-economics workbook prepared",
-    "Review-only product route prepared",
-    "Four unsent Gmail drafts saved",
-    "Application answer sheet prepared without submission",
-    "Three-day fulfilment plan prepared"
+    "KALM Signature Oversized Tee storefront product prepared",
+    "Approved black and white ecommerce image set prepared",
+    "Application answer sheet updated to the live OneDayOnly fields",
+    "Initial deal quantity and normal KALM retail price confirmed by Munya"
   ],
-  "blockingGates": [
-    "T-Shirts Cape Town live colour-size stock and written reservation",
-    "Supplier invoice and final price confirmation",
-    "Sample blanks and physical embroidered sample",
-    "Fit/shrinkage/wash test",
-    "Yolanda written stitch scope, capacity, turnaround and rework policy",
-    "Packaging, transport, reject, returns and administration quotes",
-    "Current OneDayOnly buyer requirements and commercial terms",
-    "Final profitable economics inclusive of pending costs",
-    "Munya approval to reserve stock, order samples and submit application"
-  ],
+  "blockingGates": [],
   "prohibitedActionsNotTaken": [
     "No supplier email sent",
-    "No OneDayOnly application submitted",
+    "No supplier contract accepted or personal surety signed",
     "No terms accepted or personal surety signed",
     "No stock reserved",
     "No sample ordered",
     "No payment made",
     "No embroidery commissioned",
     "No production deployment"
-  ]
+  ],
+  "historicalNoGo": {
+    "recordedOn": "2026-07-16",
+    "status": "PRESERVED",
+    "summary": "The original NO GO decision applied before Munya's verbal supplier-availability and production-support confirmation."
+  },
+  "decisionUpdate": {
+    "date": "2026-07-16",
+    "status": "AUTHORISED FOR SUBMISSION",
+    "reason": "Munya verbally confirmed supplier availability and production support, approved the R699 retail price, two-colour product range and initial 100-unit OneDayOnly deal capacity.",
+    "product": "KALM Signature Oversized Tee",
+    "applicationStatus": "AUTHORISED FOR SUBMISSION"
+  }
 }

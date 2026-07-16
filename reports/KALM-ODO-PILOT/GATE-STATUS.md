@@ -1,4 +1,25 @@
-# Commercial pilot gate status — 16 July 2026
+# Commercial pilot decision update — 16 July 2026
+
+## Historical NO GO preserved
+
+The original draft-only NO GO is retained below as historical commercial diligence. Its status changed after Munya verbally confirmed supplier availability and production support, authorised the product at R699 and approved submission of the current OneDayOnly initial supplier application for 100 units.
+
+**Current status: AUTHORISED FOR SUBMISSION.** After submission, this record will state **APPLICATION SUBMITTED, AWAITING ODO REVIEW.**
+
+| Confirmed launch input | Current record |
+|---|---|
+| Product | KALM Signature Oversized Tee |
+| Colours | Black and White |
+| Sizes | S, M, L, XL, 2XL |
+| Normal KALM retail price | R699 |
+| Initial deal capacity | 100 units |
+| Embroidery input | R85 including VAT |
+| ODO warehouse delivery | Munya personally delivers to Ndabeni |
+| ODO warehouse courier cost | R0 |
+| Supplier availability | Confirmed verbally by Munya |
+| Production support | Confirmed verbally by Munya |
+
+## Historical gate table
 
 | Gate | Status | Evidence / blocker |
 |---|---|---|
@@ -21,6 +42,6 @@
 | Current ODO terms reviewed | CONDITIONAL | Current public process and customer terms reviewed; supplier terms pending. |
 | Application answer sheet complete | CONDITIONAL | Fields prepared; stock and sample answers blocked. |
 | Three-day fulfilment proven | FAILED | Plan only; no capacity evidence. |
-| Munya approval to reserve/order/submit | FAILED | Not granted in this instruction. |
+| Munya approval to reserve/order/submit | SUPERSEDED | Munya authorises the initial supplier application submission; no contract, personal surety, purchase or payment is authorised. |
 
-**Result: NO GO for ordering, reserving, submitting, selling or launching.** The preparation package is fit for commercial review and supplier responses only.
+**Historical result: NO GO before the dated decision update above.** It remains evidence of the original diligence and is not deleted.

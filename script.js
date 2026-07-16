@@ -53,16 +53,14 @@ async function init() {
   bindChrome();
   try {
     if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
-    const [catalogueResponse, movePriceResponse, odoPilotResponse] = await Promise.all([
+    const [catalogueResponse, movePriceResponse] = await Promise.all([
       fetch("products.json", { cache: "no-cache" }),
-      fetch("data/kalm-move-preview-prices.json", { cache: "no-cache" }),
-      fetch("data/kalm-odo-pilot.json", { cache: "no-cache" })
+      fetch("data/kalm-move-preview-prices.json", { cache: "no-cache" })
     ]);
-    if (!catalogueResponse.ok || !movePriceResponse.ok || !odoPilotResponse.ok) throw new Error("The KALM Collective preview catalogue could not load.");
+    if (!catalogueResponse.ok || !movePriceResponse.ok) throw new Error("The KALM Collective preview catalogue could not load.");
     state.data = await catalogueResponse.json();
     const movePriceEntries = await movePriceResponse.json();
     state.movePreviewPrices = new Map(movePriceEntries.map((entry) => [entry.productId, entry]));
-    state.odoPilot = await odoPilotResponse.json();
     sanitizeMoveProductsFromBag();
     window.addEventListener("hashchange", renderRoute);
     window.addEventListener("popstate", renderRoute);
@@ -292,7 +290,7 @@ function renderRoute() {
   if (!state.data) return;
   if (state.currentRouteKey) state.scrollPositions.set(state.currentRouteKey, window.scrollY);
   const route = getRoute();
-  setRouteIndexability(route.path !== "/product/kalm-buffalo-heavyweight-tee");
+  setRouteIndexability(true);
   const routeKey = window.location.hash || `${window.location.pathname}${window.location.search}` || "/";
   const isFirstRoute = !state.hasRenderedRoute;
   const isHomeRoute = route.path === "/" || route.path === "";
@@ -314,7 +312,6 @@ function renderRoute() {
     scrollToAnchor(route.anchor);
     return;
   }
-  if (route.path === "/product/kalm-buffalo-heavyweight-tee") return renderOdoPilotProduct();
   if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop(), route.params);
   if (route.path === "/cart") return renderCartPage();
   if (route.path === "/checkout") return renderCheckout();
@@ -550,6 +547,7 @@ function renderHome({ preserveHero = false } = {}) {
   setStructuredData({ type: "website" });
   const featuredKsActive = getMerchandisingEntries(config.homepage?.featuredKsActive).filter(({ product }) => product.brandId === "ks-active");
   const finalPieces = getMerchandisingEntries(config.homepage?.finalPieces).filter(({ product }) => product.brandId === "ks-active");
+  const signatureTee = getPublicProducts().filter((product) => product.id === "KALM-TEE-SIGNATURE-001");
   const moveProducts = getPublicProducts().filter(isMoveLaunchingSoonProduct).slice(0, 4);
   const ksActiveHero = config.campaigns?.ksActiveHero || {};
   const moveCampaign = config.campaigns?.kalmMoveTeaser || {};
@@ -576,6 +574,7 @@ function renderHome({ preserveHero = false } = {}) {
   const sections = `
     ${renderProductRail("SHOP KS ACTIVE", featuredKsActive, collectionRoute("ks-active"), "AVAILABLE NOW", "VIEW THE COLLECTION")}
     ${renderProductRail("FINAL PIECES", finalPieces, collectionRoute("sale"), "KS ACTIVE ARCHIVE", "SHOP THE ARCHIVE")}
+    ${renderProductRail("KALM SIGNATURE TEE", signatureTee, productRoute(signatureTee[0]), "KALM COLLECTIVE", "SHOP THE TEE")}
     ${renderTrustStrip()}
     ${renderMoveLaunchTeaser(moveCampaign, moveProducts)}
     ${renderProductRail("KALM MOVE", moveProducts, "/brand/kalm-move", "LAUNCHING SOON", "EXPLORE KALM MOVE")}
@@ -1233,6 +1232,19 @@ function renderProduct(slug, params = new URLSearchParams()) {
             <summary>Care</summary>
             <p>${escapeHtml(product.care)}</p>
           </details>
+          ${product.sizeGuide ? `
+            <details>
+              <summary>Size guide</summary>
+              <p>${escapeHtml(product.sizeGuide)}</p>
+            </details>
+          ` : ""}
+          ${product.deliveryGuidance || product.returnsGuidance ? `
+            <details>
+              <summary>Delivery and returns</summary>
+              ${product.deliveryGuidance ? `<p>${escapeHtml(product.deliveryGuidance)}</p>` : ""}
+              ${product.returnsGuidance ? `<p>${escapeHtml(product.returnsGuidance)}</p>` : ""}
+            </details>
+          ` : ""}
           <details>
             <summary>Product help</summary>
             <form class="inline-help-form" name="kalm-collective-product-help" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-success-message="Thanks. Customer care will reply to your product question.">
@@ -1357,67 +1369,6 @@ function renderMoveNotifyForm(product) {
       <p class="form-status" role="status" aria-live="polite"></p>
       <button class="button primary full" type="submit">NOTIFY ME</button>
     </form>
-  `;
-}
-
-function renderOdoPilotProduct() {
-  const pilot = state.odoPilot;
-  if (!pilot || pilot.publicationStatus !== "review-only") return renderNotFound();
-
-  setDocumentMeta(pilot.seo.title, pilot.seo.description, `/products/${pilot.slug}`);
-  setStructuredData({ type: "website" });
-
-  app.innerHTML = `
-    <section class="odo-pilot-product" data-odo-pilot>
-      <div class="odo-pilot-visual" aria-label="Illustrative review mockup of the KALM Buffalo Heavyweight Tee">
-        <p class="odo-review-label">${"CON" + "CEPT MOCKUP — NOT PRODUCT EVIDENCE"}</p>
-        <div class="odo-tee-stage">
-          <div class="odo-tee odo-tee-black" aria-hidden="true">
-            <span class="odo-tee-neck"></span>
-            <img src="assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png" alt="" class="odo-buffalo-mark odo-buffalo-on-black" width="72" height="72">
-          </div>
-          <div class="odo-tee odo-tee-white" aria-hidden="true">
-            <span class="odo-tee-neck"></span>
-            <img src="assets/branding/kalm-buffalo/kalm-buffalo-mark-cropped.png" alt="" class="odo-buffalo-mark" width="72" height="72">
-          </div>
-        </div>
-        <p class="odo-visual-caption">Illustrative placement only. The finished garment, thread colour and stitch dimensions require physical sample approval.</p>
-      </div>
-      <div class="product-info odo-pilot-info">
-        <p class="eyebrow">${escapeHtml(pilot.brand)}</p>
-        <p class="launching-soon-label">LAUNCHING SOON</p>
-        <h1>${escapeHtml(pilot.title)}</h1>
-        <div class="price-line odo-pilot-price"><strong>${formatPrice(pilot.proposedRetailPrice)}</strong></div>
-        <p>${escapeHtml(pilot.description)}</p>
-
-        <div class="odo-preview-selection" aria-label="Planned product range">
-          <div><span>Planned colours</span><strong>${pilot.colours.map(escapeHtml).join(" · ")}</strong></div>
-          <div><span>Intended sizes</span><strong>${pilot.sizes.map(escapeHtml).join(" · ")}</strong></div>
-        </div>
-
-        <p class="odo-launch-note">This review page is not a customer offer. Purchasing remains unavailable until sample, stock-reservation, pricing and fulfilment gates are approved.</p>
-
-        <div class="accordion-list">
-          <details open>
-            <summary>Product details</summary>
-            <p>${escapeHtml(pilot.embroidery)}</p>
-          </details>
-          <details>
-            <summary>Fit and size guide</summary>
-            <p>${escapeHtml(pilot.fit)}</p>
-          </details>
-          <details>
-            <summary>Care</summary>
-            <p>${escapeHtml(pilot.care)}</p>
-          </details>
-          <details>
-            <summary>Delivery and returns</summary>
-            <p>Delivery and returns information will be confirmed only when the launch operations are proven and the product is authorised for sale.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-    ${renderFooter()}
   `;
 }
 
@@ -1676,7 +1627,7 @@ function isComingSoonProduct(product) {
 
 function isProductPublic(product) {
   if (!product) return false;
-  if (!["ks-active", "kalm-move"].includes(product.brandId)) return false;
+  if (!["ks-active", "kalm-move", "kalm-collective"].includes(product.brandId)) return false;
   if (isMovePreviewExcluded(product)) return false;
   const status = product.publicationStatus || "published";
   const visibility = product.visibility || "visible";
@@ -1945,7 +1896,7 @@ function renderProductGallery(product, inputImages = getProductGalleryImages(pro
 function renderGallerySlides(product, images) {
   return images.map((image, index) => `
     <figure class="gallery-slide" data-gallery-slide data-gallery-image="${escapeAttribute(image)}" aria-label="Image ${index + 1} of ${images.length}">
-      <img ${index === 0 ? `src="${escapeHtml(image)}" fetchpriority="high"` : `src="${escapeHtml(image)}" loading="lazy" fetchpriority="low"`} alt="${escapeAttribute(product.title)} image ${index + 1}" width="1200" height="1500" decoding="async" data-product-image>
+      <img ${index === 0 ? `src="${escapeHtml(image)}" fetchpriority="high"` : `src="${escapeHtml(image)}" loading="lazy" fetchpriority="low"`} alt="${escapeAttribute(getGalleryImageAlt(product, image, index))}" width="1200" height="1500" decoding="async" data-product-image>
     </figure>
   `).join("");
 }
@@ -1959,9 +1910,13 @@ function renderGalleryDots(images) {
 function renderGalleryThumbs(product, images) {
   return images.map((image, index) => `
     <button type="button" data-gallery-image="${escapeAttribute(image)}" aria-label="View image ${index + 1} for ${escapeAttribute(product.title)}" ${index === 0 ? 'aria-current="true"' : ""}>
-      <img src="${escapeHtml(image)}" alt="${escapeAttribute(product.title)} image ${index + 1}" width="116" height="136" decoding="async">
+      <img src="${escapeHtml(image)}" alt="${escapeAttribute(getGalleryImageAlt(product, image, index))}" width="116" height="136" decoding="async">
     </button>
   `).join("");
+}
+
+function getGalleryImageAlt(product, image, index) {
+  return product?.galleryAlt?.[image] || `${product?.title || "Product"} image ${index + 1}`;
 }
 
 function renderSpecifications(specifications) {

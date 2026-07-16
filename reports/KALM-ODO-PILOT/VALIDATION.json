@@ -2,20 +2,20 @@
   "generatedAt": "2026-07-16",
   "passed": true,
   "checks": {
-    "pilotReviewRoute": "passed — 15 focused controls",
-    "catalogueValidation": "passed — 84 products, 820 variants, 0 errors, 0 warnings",
-    "protectedCatalogueData": "passed — products.json, merchandising.js and KALM Move price data unchanged against origin/master",
+    "signatureTeeValidation": "passed — 14 focused controls",
+    "catalogueValidation": "passed — 85 products, 830 variants, 0 errors, 0 warnings",
+    "protectedKsActiveAndKalmMove": "passed — both catalogues and KALM Move price data unchanged from the protected pilot base",
     "javascriptSyntax": "passed",
-    "pilotJsonParsing": "passed",
-    "spreadsheetFormulaScan": "passed — 0 formula error matches in both review workbooks",
-    "spreadsheetVisualReview": "passed — scorecard and economics cover/scenario render previews inspected",
-    "privateEvidenceExposure": "passed — product data and product renderer contain no supplier, OneDayOnly, private-source or Kuhle disclosure",
-    "pilotCommerceLock": "passed — no Add to Bag, no Product Offer structured data, no sitemap entry and noindex controls present"
+    "productDataParsing": "passed",
+    "imageAssetCount": "passed — 27 public WebP files, 13 black gallery assets, 13 white gallery assets and one paired campaign image",
+    "imageDimensions": "passed — public product images meet the current image-dimensions validator",
+    "privateEvidenceExposure": "passed — public product data, sitemap, renderer and imagery paths contain no supplier, OneDayOnly, private-source or personal-likeness disclosure",
+    "reportAccessControl": "passed — reports/KALM-ODO-PILOT is blocked from Netlify public paths",
+    "standardCommerce": "passed — normal colour, size, bag and checkout behaviour with no public stock count"
   },
-  "notRun": [
-    "The inherited KALM Move Launching Soon validator writes into existing KALM Move evidence and compares against a stale local master ref. It was inspected but not used to overwrite the existing report set. The protected KALM Move source inputs are instead directly verified unchanged against origin/master."
-  ],
+  "applicationStatus": "AUTHORISED FOR SUBMISSION",
   "production": "unchanged",
   "protectedKsActiveRelease": "unchanged",
+  "kalmMove": "unchanged",
   "munyaTaskApplication": "not modified"
 }

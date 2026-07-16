@@ -1,26 +1,25 @@
-# OneDayOnly application answer sheet — unsaved draft only
+# OneDayOnly application answer sheet — authorised current submission
 
-No OneDayOnly application field has been entered, no form has been saved and no application has been submitted.
+Use only the live fields appearing on the current OneDayOnly initial supplier application.
 
-| Current application field | Proposed answer | Evidence | Confidence | Blocker |
-|---|---|---|---|---|
-| Company name | KALM COLLECTIVE (PTY) LTD | Munya instruction | High | None for wording; company records must be used at submission. |
-| Product category | Apparel, Footwear and Fashion Accessories (nearest current option) | Current application options | High | Confirm final category label at submission. |
-| Brand | KALM Collective | Munya instruction | High | None. |
-| Product name | KALM Buffalo Heavyweight Tee | Product-identity recommendation | Medium | Physical sample and commercial approval still pending. |
-| Company summary | KALM Collective is preparing a premium embroidered adult apparel pilot. | Draft-only product package | Medium | Do not submit until supplier/operational gates pass. |
-| Product summary | Heavyweight crew-neck tee with approved buffalo embroidery, proposed black/white and S–2XL. | Supplier baseline and embroidery spec | Medium | Final cut, measurements and artwork placement require sample approval. |
-| Available stock | **Do not state a quantity.** | Supplier reservation gate | High | T-Shirts Cape Town stock/reservation, Yolanda capacity and final deal cap not confirmed. |
-| Retail price | Proposed genuine KALM retail R699 | Unit-economics review model | Medium | Final commercial approval required; must become a genuine KALM normal price before use. |
-| Sample availability | Not yet available | Sample plan | High | Samples not ordered. |
-| Images | No final product images available | Image plan | High | Physical embroidered sample photography required before public evidence. |
-| VAT status | Use verified company records at submission; current form permits non-VAT supplier route. | Current application page / NCC context | Medium | Reconfirm company record before submission. |
+| Current application field | Approved answer |
+|---|---|
+| Company name | KALM COLLECTIVE (PTY) LTD |
+| Company website or social link | https://kalmcollective.co.za |
+| VAT registered | No |
+| Category | Adult Apparel, Footwear and Fashion Accessories |
+| Company description | KALM Collective is a South African multi-brand lifestyle retailer offering considered apparel, movement and everyday essentials. |
+| Product description | KALM Collective offers premium everyday apparel with a clean, considered aesthetic. The KALM Signature Oversized Tee is a heavyweight unisex T-shirt featuring KALM’s signature embroidered chest emblem. |
+| Number of unique products | 1 |
+| Retail outlet | No |
+| Supply other retail outlets and online stores | No |
+| Product name | KALM Signature Oversized Tee |
+| Stock currently available | 100 |
+| Retail price in the market/store | R699 |
+| Sample available | No |
+| Website link to exact product | https://6a58e79748d4224c6cea3fe7--kalm-collective-storefront.netlify.app/products/kalm-signature-oversized-tee |
+| Image link | https://6a58e79748d4224c6cea3fe7--kalm-collective-storefront.netlify.app/assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp |
+| Video link | Blank |
+| Other products | No |
 
-## Submission blockers
-
-- No written blank-stock reservation or supplier invoice.
-- No physical black/white heavyweight sample or 220gsm comparison sample.
-- No embroidered sample, shrinkage result or approved care/size guide.
-- No written embroidery capacity, turnaround, rework or packaging confirmation.
-- No current OneDayOnly buyer/commercial requirements confirmation.
-- No final unit economics inclusive of pending costs.
+**Status: AUTHORISED FOR SUBMISSION.** Do not add supplier, production, fulfilment, cost or margin information to the application.

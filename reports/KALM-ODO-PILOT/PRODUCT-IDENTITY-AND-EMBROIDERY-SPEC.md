@@ -1,41 +1,29 @@
-# KALM Buffalo Heavyweight Tee — product identity and embroidery specification
+# KALM Signature Oversized Tee — product identity and embroidery specification
 
-## Name review
+## Approved customer-facing identity
 
-| Name | Assessment |
-|---|---|
-| KALM Nyati Heavyweight Tee | Strong brand connection, but less immediately clear to a broad customer. |
-| **KALM Buffalo Heavyweight Tee** | **Recommended:** directly communicates the approved buffalo emblem and heavyweight intent without unsupported fabric claims. |
-| KALM Buffalo Crest Tee | Clean, but "crest" can imply a badge construction not yet physically evidenced. |
+**Title:** KALM Signature Oversized Tee
 
-## Customer-facing draft copy
+**Short description:** A considered oversized essential finished with KALM’s signature embroidered emblem.
 
-**Title:** KALM Buffalo Heavyweight Tee
+**Product story:** The KALM Signature Oversized Tee is cut in a relaxed unisex silhouette with dropped shoulders, a clean crew neckline and a premium heavyweight feel. Finished with KALM’s signature buffalo emblem embroidered at the chest, it is designed as a versatile everyday essential in black and white.
 
-**Short description:** A heavyweight crew-neck tee planned around a small, left-chest KALM buffalo embroidery.
+**Feature bullets:** 300gsm cotton T-shirt; oversized unisex fit; crew neckline; dropped shoulders; small embroidered chest emblem; black and white; sizes S–2XL.
 
-**Product story:** A considered KALM Collective staple designed to carry the approved buffalo mark with restraint. Final fabric, fit and care information will be issued only after physical sample testing.
+No claim is made that the garment is organic, sustainable, shrink-resistant, ethically made or locally manufactured.
 
-**ODO deal title:** KALM Collective Buffalo Heavyweight Tee
+## Approved SKU structure
 
-**ODO promotional copy:** A clean, heavyweight crew-neck tee finished with a small KALM buffalo embroidery. Proposed black and white colourway, S–2XL. Subject to current supplier and sample approval.
-**Feature bullets:** Small left-chest KALM buffalo embroidery; crew-neck silhouette; proposed black and white range; intended S–2XL size range.
+`KALM-TEE-SIGNATURE-001-[BLK|WHT]-[S|M|L|XL|2XL]`
 
-No claim is made that the garment is combed, luxury, organic, sustainable, shrink-resistant, ethically made or locally manufactured.
+The storefront records product availability without displaying fabricated size-level stock quantities.
 
-## Proposed SKU structure
+## Embroidery specification
 
-`KALM-BHT-[BLK|WHT]-[S|M|L|XL|2XL]`
+- Artwork: existing approved KALM buffalo emblem only; no redraw or reinterpretation.
+- Placement: small left chest, visually consistent in the approved image set.
+- Black garment: light or white embroidered thread.
+- White garment: black embroidered thread.
+- Finish: a small raised embroidered-thread appearance, never a print, badge or oversized centre-chest mark.
 
-SKU allocation is draft only and must not create inventory before stock is reserved and reconciled.
-
-## Embroidery review specification
-
-- Artwork: existing approved KALM buffalo mark only; no redraw or reinterpretation.
-- Proposed placement: left chest, centre of mark approximately 85–100 mm below high-point shoulder and 75–90 mm from centre front. Final placement must be sampled on each size.
-- Proposed finished width: 32–38 mm; final stitch dimensions and density are pending Yolanda's written scope.
-- White garment: black thread or approved dark contrast, subject to thread proof.
-- Black garment: white or approved contrast thread, subject to thread proof.
-- Required controls: appropriate backing, tension test, minimum line thickness assessment, wash test, puckering check, alignment check and logo-accuracy sign-off.
-
-The review page renders a clearly labelled graphic placement mockup with the approved mark. It is **CONCEPT MOCKUP — NOT PRODUCT EVIDENCE** and not a photograph or manufacture claim.
+The approved public image set uses adult male and female ecommerce views, product-only views and embroidery/fabric detail views in black and white.

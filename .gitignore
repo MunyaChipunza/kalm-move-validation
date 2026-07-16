@@ -1,5 +1,6 @@
 .qa/
 .netlify/
+.netlify-runtime/
 .env
 .env.*
 !.env.example
@@ -7,3 +8,4 @@
 Thumbs.db
 tools/local-image-pipeline/.venv/
 __pycache__/
+tmp/

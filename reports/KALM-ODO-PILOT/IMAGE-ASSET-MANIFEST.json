@@ -1,0 +1,58 @@
+{
+  "productId": "KALM-TEE-SIGNATURE-001",
+  "productName": "KALM Signature Oversized Tee",
+  "publicAssetRoot": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/",
+  "format": "webp",
+  "dimensions": "1122x1402",
+  "assetCount": 27,
+  "imageSet": {
+    "black": [
+      "black/male-front.webp",
+      "black/male-three-quarter.webp",
+      "black/male-side.webp",
+      "black/male-back.webp",
+      "black/female-front.webp",
+      "black/female-three-quarter.webp",
+      "black/female-side.webp",
+      "black/female-back.webp",
+      "black/product-front.webp",
+      "black/product-back.webp",
+      "black/flat-lay.webp",
+      "black/embroidery-detail.webp",
+      "black/fabric-detail.webp"
+    ],
+    "white": [
+      "white/male-front.webp",
+      "white/male-three-quarter.webp",
+      "white/male-side.webp",
+      "white/male-back.webp",
+      "white/female-front.webp",
+      "white/female-three-quarter.webp",
+      "white/female-side.webp",
+      "white/female-back.webp",
+      "white/product-front.webp",
+      "white/product-back.webp",
+      "white/flat-lay.webp",
+      "white/embroidery-detail.webp",
+      "white/fabric-detail.webp"
+    ],
+    "campaign": [
+      "campaign/black-white-pair.webp"
+    ]
+  },
+  "qa": {
+    "adultMaleModelViews": true,
+    "adultFemaleModelViews": true,
+    "blackAndWhiteColourways": true,
+    "embroideredEmblemVisible": true,
+    "nonTextileSupportingStylingOnly": true,
+    "privateSourceImagesExcluded": true,
+    "supplierReferencesExcluded": true
+  },
+  "publicMetadata": {
+    "containsSupplierIdentity": false,
+    "containsPrivateSourceFilenames": false,
+    "containsGenerationPrompts": false,
+    "containsInternalCommercialTerms": false
+  }
+}

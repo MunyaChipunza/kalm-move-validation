@@ -1,9 +1,8 @@
-.qa/
 .git/
 .netlify/
-reports/
-tools/
-assets/images/review-only/
-review/
+.netlify-runtime/
+.qa/
+tmp/
+reports/KALM-ODO-PILOT/*.inspect.ndjson
 Thumbs.db
 .DS_Store

@@ -1,28 +1,12 @@
 {
   "asOf": "2026-07-16",
-  "tShirtsCapeTown": {
-    "stockByColourSize": "UNVERIFIED",
-    "priceConfirmedInWriting": "UNVERIFIED",
-    "reservationMethod": "CONDITIONAL",
-    "sameDayCollection": "UNVERIFIED",
-    "directToEmbroiderer": "UNVERIFIED",
-    "defectReplacement": "UNVERIFIED",
-    "overall": "CONDITIONAL"
+  "supplierAvailability": {
+    "status": "CONFIRMED_VERBALLY_BY_MUNYA",
+    "initialDealCapacity": 100
   },
-  "yolanda": {
+  "productionSupport": {
     "embroideryPerUnitInclVat": 85,
     "priceInputSource": "Munya approved commercial input",
-    "stitchScope": "UNVERIFIED",
-    "sampleTurnaround": "UNVERIFIED",
-    "capacity10to100": "UNVERIFIED",
-    "dailyCapacity": "UNVERIFIED",
-    "48HourCompletion": "UNVERIFIED",
-    "reworkAndPackaging": "UNVERIFIED",
-    "overall": "CONDITIONAL"
-  },
-  "bulkalot": {
-    "catalogueObserved": "VERIFIED",
-    "stockAndTradeTerms": "UNVERIFIED",
-    "overall": "UNVERIFIED_NOT_USABLE_FOR_COSTING"
+    "overall": "CONFIRMED_VERBALLY_BY_MUNYA"
   }
 }
