@@ -4,7 +4,7 @@
 
 The original draft-only NO GO is retained below as historical commercial diligence. Its status changed after Munya verbally confirmed supplier availability and production support, authorised the product at R699 and approved submission of the current OneDayOnly initial supplier application for 100 units.
 
-**Current status: AUTHORISED FOR SUBMISSION.** After submission, this record will state **APPLICATION SUBMITTED, AWAITING ODO REVIEW.**
+**Current status: APPLICATION SUBMITTED, AWAITING ODO REVIEW.** The live form accepted the authorised answers and returned to OneDayOnly's home page after submission. No reference number or confirmation email was issued immediately.
 
 | Confirmed launch input | Current record |
 |---|---|
@@ -38,7 +38,7 @@ The original draft-only NO GO is retained below as historical commercial diligen
 | Genuine KALM retail price approved | CONDITIONAL | R699 proposed only. |
 | Proposed ODO price defensible | CONDITIONAL | R399–R499 review range, pending ODO terms and full costs. |
 | ODO margin confirmed | FAILED | Sensitivity only. |
-| Website product page ready | VERIFIED | Review-only route; no stock or purchasing. |
+| Website product page ready | VERIFIED | Live KALM Collective product route with normal customer purchasing controls. |
 | Current ODO terms reviewed | CONDITIONAL | Current public process and customer terms reviewed; supplier terms pending. |
 | Application answer sheet complete | CONDITIONAL | Fields prepared; stock and sample answers blocked. |
 | Three-day fulfilment proven | FAILED | Plan only; no capacity evidence. |

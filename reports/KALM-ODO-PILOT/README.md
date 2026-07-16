@@ -13,4 +13,4 @@ This access-controlled directory records the KALM Signature Oversized Tee storef
 - Warehouse delivery: Munya personally delivers to Ndabeni; courier cost R0
 - Supplier availability and production support: confirmed verbally by Munya
 
-No supplier contract, personal surety, banking document, production deployment or merge is authorised by this record.
+No supplier contract, personal surety or banking document was accepted or submitted. The current KALM Collective production publication was separately authorised by Munya; the OneDayOnly application remains awaiting review.

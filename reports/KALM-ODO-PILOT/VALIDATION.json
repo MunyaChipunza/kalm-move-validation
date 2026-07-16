@@ -13,8 +13,8 @@
     "reportAccessControl": "passed — reports/KALM-ODO-PILOT is blocked from Netlify public paths",
     "standardCommerce": "passed — normal colour, size, bag and checkout behaviour with no public stock count"
   },
-  "applicationStatus": "AUTHORISED FOR SUBMISSION",
-  "production": "unchanged",
+  "applicationStatus": "APPLICATION SUBMITTED, AWAITING ODO REVIEW — form returned to OneDayOnly home; no reference number or confirmation email observed immediately",
+  "production": "deployed to kalmcollective.co.za after focused validation and model-first gallery verification",
   "protectedKsActiveRelease": "unchanged",
   "kalmMove": "unchanged",
   "munyaTaskApplication": "not modified"
