@@ -41,7 +41,7 @@ The Paystack dashboard was not authenticated in the available Chrome session. No
 
 ## Draft verification
 
-Draft deploy: `6a5a08b3ff5664009f7c074d`  
+Draft deploy: `6a5a08b3ff5664009f7c074d`
 Draft URL: `https://6a5a08b3ff5664009f7c074d--kalm-collective-storefront.netlify.app`
 
 - The safe configuration endpoint returned `mode=test`, `checkoutState=configuration_required` and no key material.
