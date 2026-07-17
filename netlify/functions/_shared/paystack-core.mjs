@@ -16,6 +16,15 @@ const MAX_LINE_QUANTITY = 5;
 const MAX_CART_LINES = 15;
 const PENDING_ORDER_TTL_MS = 24 * 60 * 60 * 1000;
 const REFERENCE_PATTERN = /^[A-Za-z0-9.=-]+$/;
+// The existing storefront checkout charged no delivery amount. Keep that
+// configured amount explicit so it cannot be supplied or changed by a browser.
+export const STANDARD_COURIER_FEE_CENTS = 0;
+export const STANDARD_COURIER = Object.freeze({
+  method: "standard_courier",
+  label: "Standard courier",
+  estimate: "2 to 5 business days",
+  feeCents: STANDARD_COURIER_FEE_CENTS
+});
 
 export class PaymentError extends Error {
   constructor(code, message, status = 400) {
@@ -177,6 +186,13 @@ export function validateCheckoutPayload(payload, catalogue) {
     throw new PaymentError("invalid_request", "Please review the checkout details and try again.");
   }
   const customerInput = payload.customer || {};
+  const requestedShippingMethod = String(payload.shippingMethod || "").trim().toLowerCase();
+  if (requestedShippingMethod && requestedShippingMethod !== STANDARD_COURIER.method) {
+    throw new PaymentError("unsupported_shipping_method", "Standard courier is the only available delivery method.");
+  }
+  if (Object.hasOwn(payload, "shippingFeeCents") && Number(payload.shippingFeeCents) !== STANDARD_COURIER_FEE_CENTS) {
+    throw new PaymentError("invalid_shipping_fee", "Delivery charges are calculated securely at checkout.");
+  }
   const customer = {
     firstName: text(customerInput.firstName, "first name", { max: 80 }),
     lastName: text(customerInput.lastName, "last name", { max: 80 }),
@@ -234,8 +250,9 @@ export function validateCheckoutPayload(payload, catalogue) {
     customer,
     items,
     subtotalCents,
-    deliveryCents: 0,
-    amountCents: subtotalCents,
+    shipping: STANDARD_COURIER,
+    deliveryCents: STANDARD_COURIER_FEE_CENTS,
+    amountCents: subtotalCents + STANDARD_COURIER_FEE_CENTS,
     currency: "ZAR"
   };
 }
@@ -266,6 +283,7 @@ export async function createPendingOrder({ payload, catalogue, repository, mode,
     customer: trusted.customer,
     items: trusted.items,
     subtotalCents: trusted.subtotalCents,
+    shipping: trusted.shipping,
     deliveryCents: trusted.deliveryCents,
     amountCents: trusted.amountCents,
     currency: trusted.currency,
@@ -320,7 +338,9 @@ export async function initializeTransaction({ order, config, callbackUrl, fetchI
           kalm_order_id: order.id,
           item_count: order.items.reduce((count, item) => count + item.quantity, 0),
           sales_channel: "kalm_collective_storefront",
-          payment_mode: config.mode
+          payment_mode: config.mode,
+          shipping_method: order.shipping?.method || STANDARD_COURIER.method,
+          shipping_fee_cents: order.deliveryCents
         })
       })
     });
@@ -439,6 +459,10 @@ export function safeCustomerOrder(order) {
     currency: order.currency,
     items: order.items.map(({ productName, colour, size, quantity, lineAmountCents }) => ({ productName, colour, size, quantity, lineAmountCents })),
     delivery: {
+      method: order.shipping?.method || STANDARD_COURIER.method,
+      label: order.shipping?.label || STANDARD_COURIER.label,
+      estimate: order.shipping?.estimate || STANDARD_COURIER.estimate,
+      feeCents: Number.isSafeInteger(order.deliveryCents) ? order.deliveryCents : STANDARD_COURIER_FEE_CENTS,
       address: order.customer.address,
       suburb: order.customer.suburb,
       city: order.customer.city,

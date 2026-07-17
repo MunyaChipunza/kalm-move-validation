@@ -7,6 +7,12 @@ const cartCountEls = document.querySelectorAll("[data-cart-count]");
 const cartSubtotalEl = document.querySelector("[data-cart-subtotal]");
 const searchPanel = document.querySelector("[data-search-panel]");
 const siteSearch = document.querySelector("[data-site-search]");
+const STANDARD_COURIER = globalThis.KALM_CHECKOUT_SHIPPING?.standardCourier || Object.freeze({
+  method: "standard_courier",
+  label: "Standard courier",
+  estimate: "2 to 5 business days",
+  fee: 0
+});
 
 const state = {
   data: null,
@@ -1389,7 +1395,7 @@ function renderCartPage() {
       <aside class="checkout-card">
         <h2>Order Summary</h2>
         <div class="summary-row"><span>Subtotal</span><strong>${formatPrice(getSubtotal())}</strong></div>
-        <div class="summary-row"><span>Delivery</span><strong>Calculated at checkout</strong></div>
+        <div class="summary-row"><span>Delivery</span><strong>${STANDARD_COURIER.label} · ${STANDARD_COURIER.estimate}</strong></div>
         <a class="button primary full" href="#/checkout">Checkout</a>
         <a class="button secondary full" href="#/shop">Continue shopping</a>
       </aside>
@@ -1401,22 +1407,18 @@ function renderCartPage() {
 
 function renderCheckout() {
   const subtotal = getSubtotal();
+  const orderTotal = getCheckoutTotal();
   setDocumentMeta("Checkout | KALM Collective", "Complete your KALM Collective order with delivery details, order notes and payment selection.");
   state.paystackCheckout = null;
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Checkout</p>
       <h1>Complete your order.</h1>
-      <p>Enter your details, choose delivery and complete your order through secure payment when it is enabled.</p>
+      <p>Enter your delivery details and complete your order through secure payment when it is enabled.</p>
     </section>
 
     <section class="checkout-layout">
-      <form class="checkout-form panel" name="kalm-collective-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-order-form data-netlify-ajax data-clear-bag="true" data-redirect="/thanks.html" data-success-message="Order received.">
-        <input type="hidden" name="form-name" value="kalm-collective-order">
-        <input type="hidden" name="bot-field">
-        <input type="hidden" name="name">
-        <input type="hidden" name="cart_summary" value="${escapeAttribute(getCartSummary())}">
-        <input type="hidden" name="order_total" value="${subtotal}">
+      <form class="checkout-form panel" data-order-form>
 
         <h2>Contact details</h2>
         <div class="form-grid two">
@@ -1435,17 +1437,17 @@ function renderCheckout() {
           <label>Postal code<input name="postal_code" autocomplete="postal-code" inputmode="numeric" required></label>
         </div>
 
-        <h2>Shipping method</h2>
-        <div class="option-grid">
-          <label class="option-card"><input type="radio" name="shipping_method" value="Standard courier" checked><span><strong>Standard courier</strong><small>2 to 5 business days</small></span></label>
-          <label class="option-card"><input type="radio" name="shipping_method" value="Express courier"><span><strong>Express courier</strong><small>1 to 2 business days</small></span></label>
-          <label class="option-card"><input type="radio" name="shipping_method" value="Collection"><span><strong>Collection</strong><small>Store pickup arrangement</small></span></label>
-        </div>
+        <section class="checkout-fixed-summary" aria-label="Delivery method">
+          <span>Delivery</span>
+          <strong>${STANDARD_COURIER.label}</strong>
+          <small>${STANDARD_COURIER.estimate}</small>
+        </section>
 
-        <h2>Payment</h2>
-        <div class="option-grid" data-payment-options>
-          <label class="option-card"><input type="radio" name="payment_method" value="Paystack" checked><span><strong>Paystack</strong><small>Secure card checkout</small></span></label>
-        </div>
+        <section class="checkout-fixed-summary" aria-label="Payment method" data-payment-options>
+          <span>Payment</span>
+          <strong>Paystack</strong>
+          <small>Secure online payment</small>
+        </section>
         <div class="paystack-test-banner" data-paystack-test-banner hidden>
           <strong>PAYSTACK TEST MODE</strong>
           <span>No real payment will be taken.</span>
@@ -1462,6 +1464,8 @@ function renderCheckout() {
         <h2>Order Summary</h2>
         <div class="order-list">${state.bag.length ? state.bag.map(renderOrderLine).join("") : renderEmptyState("Your bag is empty.")}</div>
         <div class="summary-row"><span>Subtotal</span><strong>${formatPrice(subtotal)}</strong></div>
+        <div class="summary-row"><span>Delivery</span><strong>${formatPrice(STANDARD_COURIER.fee)}</strong></div>
+        <div class="summary-row total"><span>Total</span><strong>${formatPrice(orderTotal)}</strong></div>
         <a class="text-link" href="#/cart">Edit bag</a>
       </aside>
     </section>
@@ -1470,7 +1474,6 @@ function renderCheckout() {
 
   const checkoutForm = document.querySelector("[data-order-form]");
   checkoutForm?.addEventListener("submit", handleCheckoutSubmit);
-  bindNetlifyForms(app);
   hydrateDeferredImages(app);
   loadPaystackCheckoutConfig(checkoutForm);
 }
@@ -1485,7 +1488,7 @@ async function loadPaystackCheckoutConfig(form) {
   } catch {
     state.paystackCheckout = {
       checkoutEnabled: false,
-      checkoutState: window.location.hostname === "kalmcollective.co.za" ? "production_fallback" : "configuration_required",
+      checkoutState: "configuration_required",
       testMode: true,
       message: "Secure test checkout needs configuration. No payment can be taken."
     };
@@ -1494,14 +1497,12 @@ async function loadPaystackCheckoutConfig(form) {
 }
 
 function applyPaystackCheckoutPresentation(form, config) {
-  const options = form.querySelector("[data-payment-options]");
   const banner = form.querySelector("[data-paystack-test-banner]");
   const message = form.querySelector("[data-paystack-checkout-message]");
   const button = form.querySelector("[data-paystack-checkout-button]");
-  if (!options || !banner || !message || !button) return;
+  if (!banner || !message || !button) return;
 
   if (config.checkoutEnabled) {
-    options.innerHTML = `<label class="option-card"><input type="radio" name="payment_method" value="Paystack" checked><span><strong>Pay securely with Paystack</strong><small>Secure card checkout</small></span></label>`;
     banner.hidden = !config.testMode;
     message.textContent = config.message;
     button.textContent = "Pay securely with Paystack";
@@ -1510,21 +1511,6 @@ function applyPaystackCheckoutPresentation(form, config) {
     return;
   }
 
-  if (config.checkoutState === "production_fallback") {
-    options.innerHTML = `
-      <label class="option-card"><input type="radio" name="payment_method" value="PayFast" checked><span><strong>PayFast</strong><small>Card and instant EFT</small></span></label>
-      <label class="option-card"><input type="radio" name="payment_method" value="Ozow"><span><strong>Ozow</strong><small>Instant EFT</small></span></label>
-      <label class="option-card"><input type="radio" name="payment_method" value="EFT"><span><strong>EFT</strong><small>Bank transfer</small></span></label>
-    `;
-    banner.hidden = true;
-    message.textContent = "Payment instructions will be confirmed after order review. Card details are not collected on this page.";
-    button.textContent = "Place order";
-    button.disabled = false;
-    form.dataset.checkoutMode = "order-enquiry";
-    return;
-  }
-
-  options.innerHTML = `<label class="option-card"><input type="radio" name="payment_method" value="Paystack" checked disabled><span><strong>Paystack</strong><small>Secure test checkout</small></span></label>`;
   banner.hidden = false;
   message.textContent = config.message || "Secure test checkout needs configuration. No payment can be taken.";
   button.textContent = "Pay securely with Paystack";
@@ -1551,10 +1537,6 @@ async function handleCheckoutSubmit(event) {
     status.textContent = "Add at least one item to your bag before checkout.";
     return;
   }
-  form.cart_summary.value = getCartSummary();
-  form.order_total.value = String(getSubtotal());
-  form.name.value = `${form.first_name.value.trim()} ${form.last_name.value.trim()}`.trim();
-
   const config = state.paystackCheckout;
   if (!config) {
     event.preventDefault();
@@ -1562,8 +1544,6 @@ async function handleCheckoutSubmit(event) {
     status.textContent = "Secure checkout is still loading. Please try again in a moment.";
     return;
   }
-  if (config.checkoutState === "production_fallback") return;
-
   event.preventDefault();
   event.stopImmediatePropagation();
   if (!config.checkoutEnabled) {
@@ -1592,7 +1572,8 @@ async function handleCheckoutSubmit(event) {
           postalCode: form.postal_code.value,
           notes: form.notes.value
         },
-        items: checkoutItemsForPayment()
+        items: checkoutItemsForPayment(),
+        shippingMethod: STANDARD_COURIER.method
       })
     });
     const result = await response.json().catch(() => ({}));
@@ -1639,7 +1620,8 @@ async function verifyPaymentResult(reference) {
       state.bag = [];
       saveBag();
       renderBag();
-      updatePaymentResult("Payment confirmed", `Your KALM order ${result.order.orderNumber} has been verified for ${amount}. ${result.order.testMode ? "TEST PAYMENT — NO REAL MONEY — DO NOT FULFIL." : ""}`, true);
+      const delivery = result.order.delivery ? `${result.order.delivery.label} (${result.order.delivery.estimate})` : STANDARD_COURIER.label;
+      updatePaymentResult("Payment confirmed", `Your KALM order ${result.order.orderNumber} has been verified for ${amount}. Delivery: ${delivery}. ${result.order.testMode ? "TEST PAYMENT — NO REAL MONEY — DO NOT FULFIL." : ""}`, true);
       return;
     }
     if (result.paymentStatus === "payment_processing") {
@@ -1721,7 +1703,7 @@ function renderPolicies() {
       <p>Delivery, returns, payment and privacy details for shopping with KALM Collective.</p>
     </section>
     <section class="policy-grid">
-      <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Courier delivery is available across South Africa. Standard delivery takes 2 to 5 business days after order confirmation, with express delivery available in selected areas.</p></article>
+      <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Standard courier delivery is available across South Africa and takes 2 to 5 business days after order confirmation.</p></article>
       <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused home or wellness items in their original condition and packaging.</p></article>
       <article class="policy-card"><h2>Payment</h2><p>Secure checkout is handled by Paystack when enabled. KALM Collective does not collect card details on this page.</p></article>
       <article class="policy-card"><h2>Privacy</h2><p>KALM Collective processes customer information for orders, delivery, customer care and opt-in marketing in line with POPIA.</p></article>
@@ -2982,6 +2964,10 @@ function getSubtotal() {
   }, 0);
 }
 
+function getCheckoutTotal() {
+  return getSubtotal() + STANDARD_COURIER.fee;
+}
+
 function getCartSummary() {
   return state.bag.map((item) => {
     const product = findProduct(item.productId);
@@ -2991,10 +2977,20 @@ function getCartSummary() {
 
 function loadBag() {
   try {
-    return JSON.parse(localStorage.getItem("kalmCollectiveBag") || "[]");
+    const stored = JSON.parse(localStorage.getItem("kalmCollectiveBag") || "[]");
+    if (!Array.isArray(stored)) return [];
+    const migrated = stored.map((item) => migrateStoredCartItem(item));
+    if (JSON.stringify(migrated) !== JSON.stringify(stored)) {
+      localStorage.setItem("kalmCollectiveBag", JSON.stringify(migrated));
+    }
+    return migrated;
   } catch {
     return [];
   }
+}
+
+function migrateStoredCartItem(item) {
+  return globalThis.KALM_CHECKOUT_SHIPPING?.migrateStoredCartItem?.(item) || item;
 }
 
 function sanitizeMoveProductsFromBag() {

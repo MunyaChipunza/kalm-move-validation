@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node tools/build-netlify-static.mjs",
-    "test:paystack": "node tests/paystack-core.test.mjs",
+    "test:paystack": "node tests/paystack-core.test.mjs && node tests/paystack-shipping.test.mjs",
     "validate:paystack": "node tools/validate-paystack-test-integration.mjs"
   },
   "dependencies": {

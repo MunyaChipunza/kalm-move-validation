@@ -2290,6 +2290,38 @@ body.lightbox-open {
   letter-spacing: .08em;
 }
 
+.checkout-fixed-summary {
+  display: grid;
+  gap: 4px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+
+.checkout-fixed-summary > span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.checkout-fixed-summary strong {
+  color: var(--ink);
+}
+
+.checkout-fixed-summary small {
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.summary-row.total {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 17px;
+}
+
 .payment-result-actions {
   display: flex;
   flex-wrap: wrap;

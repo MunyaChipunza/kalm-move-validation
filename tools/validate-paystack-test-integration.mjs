@@ -30,6 +30,10 @@ const checks = [
   ["public reports are blocked", read("netlify.toml").includes("/reports/PAYSTACK/*")],
   ["payment result route exists", read("script.js").includes("renderPaymentResult")],
   ["test-mode banner exists", read("script.js").includes("PAYSTACK TEST MODE")],
+  ["checkout uses a fixed Standard Courier summary", read("script.js").includes("checkout-fixed-summary") && read("script.js").includes("standard_courier")],
+  ["checkout has no Express or Collection shipping choices", !/Express courier|Store pickup arrangement/.test(read("script.js"))],
+  ["checkout has no selectable payment radios", !/name=\\"payment_method\\"/.test(read("script.js"))],
+  ["server assigns trusted Standard Courier delivery", text.includes("STANDARD_COURIER") && text.includes("unsupported_shipping_method")],
   ["no secret key literal is present", !/sk_(?:test|live)_[A-Za-z0-9_-]{8,}/.test(text)],
   ["no server secret is sent to the browser", !/activeSecretKey[^\n]{0,100}authorizationUrl/.test(read("script.js"))]
 ].map(([name, passed]) => ({ name, passed }));
