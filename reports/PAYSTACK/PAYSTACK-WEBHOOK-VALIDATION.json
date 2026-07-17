@@ -2,7 +2,7 @@
   "date": "2026-07-17",
   "mode": "test",
   "endpoint": "/api/payments/paystack/webhook",
-  "draftWebhookUrl": "https://6a5a08b3ff5664009f7c074d--kalm-collective-storefront.netlify.app/api/payments/paystack/webhook",
+  "draftWebhookUrl": "https://6a5a284cd949eb7b33d435a9--kalm-collective-storefront.netlify.app/api/payments/paystack/webhook",
   "signature": {
     "header": "x-paystack-signature",
     "algorithm": "HMAC SHA-512",
@@ -17,7 +17,11 @@
     "safeEventRecord": true,
     "rawGatewayPayloadStored": false
   },
-  "paystackDashboardWebhookConfigured": false,
-  "status": "blocked_pending_authenticated_paystack_dashboard_and_test_secret",
-  "requiredNextStep": "Configure the deployed draft callback endpoint in the Paystack test dashboard after PAYSTACK_TEST_SECRET_KEY is securely added to Netlify."
+  "paystackDashboardWebhookConfigured": true,
+  "paystackDashboardCallbackConfigured": true,
+  "externalWebhookInvocation": "passed",
+  "externalDuplicateDelivery": "passed_idempotent",
+  "externalInvalidSignature": "passed_http_401",
+  "status": "passed_test_mode_only",
+  "requiredNextStep": "Keep this draft-only configuration isolated until a separately approved live-payment release."
 }

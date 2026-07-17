@@ -35,19 +35,21 @@ Scope: KALM Collective storefront draft integration only
 
 ## External acceptance state
 
-The Paystack dashboard was not authenticated in the available Chrome session. No Paystack key was read or stored, and no live payment capability was enabled. Local mocked provider tests pass; a real Paystack test transaction, callback and webhook configuration remain blocked until secure test environment variables are added in Netlify.
+The authenticated Paystack dashboard was used in Test Mode only. The callback and signed webhook endpoints are configured for the draft deployment, while the test public and secret credentials are stored only in the Netlify Deploy Previews context. The existing test credential remains in place: key rotation was not performed because Paystack's rotation dialog requires an account-password confirmation. No live payment capability was enabled.
 
 `npm audit --omit=dev --audit-level=high` reported no high or critical advisory, but six moderate transitive OpenTelemetry advisories under the current Netlify Blobs dependency chain. This is recorded as a dependency warning and must be reviewed before any live-payment release.
 
 ## Draft verification
 
-Draft deploy: `6a5a08b3ff5664009f7c074d`
-Draft URL: `https://6a5a08b3ff5664009f7c074d--kalm-collective-storefront.netlify.app`
+Draft deploy: `6a5a284cd949eb7b33d435a9`
+Draft URL: `https://6a5a284cd949eb7b33d435a9--kalm-collective-storefront.netlify.app`
 
-- The safe configuration endpoint returned `mode=test`, `checkoutState=configuration_required` and no key material.
-- A direct initialise request returned HTTP 503 before any order or gateway call because test keys are absent.
+- The safe configuration endpoint returned `mode=test`, `checkoutState=available` and no key material.
+- A genuine Paystack test transaction for a Black, M KALM Signature Oversized Tee completed, returned through the callback verification route and was visibly marked `TEST PAYMENT — NO REAL MONEY — DO NOT FULFIL`.
+- Paystack's Test Mode Declined option was rejected without a paid transition. Closing either a declined or an abandoned hosted checkout now returns to the unchanged bag and restores the payment button.
+- The dashboard-delivered signed webhook and a duplicate signed webhook were independently accepted and recorded idempotently. An invalid signature received HTTP 401.
 - Function source and private Paystack report URLs both returned HTTP 404.
-- Mobile (375 × 812) and desktop (1280 × 720) checkout checks showed no horizontal overflow, a visible test-mode notice and a disabled pay button.
+- Mobile (375 × 812) and desktop (1280 × 720) checkout checks showed the fixed Standard Courier summary, a visible test-mode notice and a usable Paystack test button.
 - The public production homepage remained HTTP 200 and has no Paystack configuration route. The separate Munya task application was not modified.
 
 ## Scope protection

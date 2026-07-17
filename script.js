@@ -1528,6 +1528,23 @@ function checkoutItemsForPayment() {
   }));
 }
 
+function restorePaystackCheckoutAfterReturn(form) {
+  const button = form?.querySelector("[data-paystack-checkout-button]");
+  const status = form?.querySelector("[data-order-status]");
+  if (!button || !status) return;
+
+  const restore = () => {
+    button.disabled = false;
+    button.textContent = "Pay securely with Paystack";
+    status.textContent = "Secure checkout was closed before payment. Your bag is unchanged.";
+  };
+
+  // A hosted checkout normally replaces this page. When the customer closes it
+  // instead, focus returns here and the form must not remain permanently busy.
+  window.addEventListener("focus", restore, { once: true });
+  window.addEventListener("pageshow", restore, { once: true });
+}
+
 async function handleCheckoutSubmit(event) {
   const form = event.currentTarget;
   const status = form.querySelector("[data-order-status]");
@@ -1578,6 +1595,7 @@ async function handleCheckoutSubmit(event) {
     });
     const result = await response.json().catch(() => ({}));
     if (!response.ok || !result?.authorizationUrl) throw new Error(result?.message || "Secure payment could not be started.");
+    restorePaystackCheckoutAfterReturn(form);
     window.location.assign(result.authorizationUrl);
   } catch (error) {
     status.textContent = error.message || "Secure payment could not be started. Please try again.";
