@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-17",
+  "passed": true,
+  "checks": [
+    { "name": "Paystack secret keys server-side only", "passed": true },
+    { "name": "server calculates amount from authoritative catalogue", "passed": true },
+    { "name": "unique high-entropy payment references", "passed": true },
+    { "name": "signed raw-body HMAC SHA-512 webhook validation", "passed": true },
+    { "name": "idempotent paid state processing", "passed": true },
+    { "name": "initialise and verify rate limits", "passed": true },
+    { "name": "customer, cart, SKU, variant and quantity input validation", "passed": true },
+    { "name": "no raw gateway payload returned to browser", "passed": true },
+    { "name": "test orders cannot affect real inventory, Zoho or fulfilment", "passed": true },
+    { "name": "production host fails closed for test checkout", "passed": true },
+    { "name": "secret-literal scan", "passed": true },
+    { "name": "private Paystack reports blocked from public routes", "passed": true }
+  ],
+  "secretScan": {
+    "patterns": ["sk_test_", "sk_live_"],
+    "actualSecretFound": false
+  },
+  "dependencyAudit": {
+    "command": "npm audit --omit=dev --audit-level=high",
+    "highOrCriticalVulnerabilities": 0,
+    "moderateVulnerabilities": 6,
+    "status": "warning",
+    "detail": "The current @netlify/blobs transitive OpenTelemetry chain reports six moderate advisories. No high or critical advisory was reported; do not enable live payment until dependency remediation is reviewed."
+  },
+  "zohoPostingEnabled": false,
+  "livePaymentEnabled": false
+}

@@ -21,7 +21,8 @@ const state = {
   moveWishlist: loadMoveWishlist(),
   moveDemandEvents: loadMoveDemandEvents(),
   moveNotifySubmissions: new Set(),
-  odoPilot: null
+  odoPilot: null,
+  paystackCheckout: null
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -314,6 +315,7 @@ function renderRoute() {
   }
   if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop(), route.params);
   if (route.path === "/cart") return renderCartPage();
+  if (route.path === "/checkout/payment-result") return renderPaymentResult(route.params);
   if (route.path === "/checkout") return renderCheckout();
   if (route.path === "/contact") return renderContact();
   if (route.path === "/policies") {
@@ -1400,23 +1402,26 @@ function renderCartPage() {
 function renderCheckout() {
   const subtotal = getSubtotal();
   setDocumentMeta("Checkout | KALM Collective", "Complete your KALM Collective order with delivery details, order notes and payment selection.");
+  state.paystackCheckout = null;
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Checkout</p>
       <h1>Complete your order.</h1>
-      <p>Enter your details, choose delivery and select a payment method. Payment instructions will be confirmed after order review.</p>
+      <p>Enter your details, choose delivery and complete your order through secure payment when it is enabled.</p>
     </section>
 
     <section class="checkout-layout">
       <form class="checkout-form panel" name="kalm-collective-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-order-form data-netlify-ajax data-clear-bag="true" data-redirect="/thanks.html" data-success-message="Order received.">
         <input type="hidden" name="form-name" value="kalm-collective-order">
         <input type="hidden" name="bot-field">
+        <input type="hidden" name="name">
         <input type="hidden" name="cart_summary" value="${escapeAttribute(getCartSummary())}">
         <input type="hidden" name="order_total" value="${subtotal}">
 
         <h2>Contact details</h2>
         <div class="form-grid two">
-          <label>Full name<input name="name" autocomplete="name" required></label>
+          <label>First name<input name="first_name" autocomplete="given-name" required></label>
+          <label>Last name<input name="last_name" autocomplete="family-name" required></label>
           <label>Email address<input name="email" type="email" autocomplete="email" required></label>
           <label>Phone number<input name="phone" autocomplete="tel" inputmode="tel" required></label>
         </div>
@@ -1437,18 +1442,20 @@ function renderCheckout() {
           <label class="option-card"><input type="radio" name="shipping_method" value="Collection"><span><strong>Collection</strong><small>Store pickup arrangement</small></span></label>
         </div>
 
-        <h2>Payment method</h2>
-        <div class="option-grid">
-          <label class="option-card"><input type="radio" name="payment_method" value="PayFast" checked><span><strong>PayFast</strong><small>Card and instant EFT</small></span></label>
-          <label class="option-card"><input type="radio" name="payment_method" value="Ozow"><span><strong>Ozow</strong><small>Instant EFT</small></span></label>
-          <label class="option-card"><input type="radio" name="payment_method" value="EFT"><span><strong>EFT</strong><small>Bank transfer</small></span></label>
+        <h2>Payment</h2>
+        <div class="option-grid" data-payment-options>
+          <label class="option-card"><input type="radio" name="payment_method" value="Paystack" checked><span><strong>Paystack</strong><small>Secure card checkout</small></span></label>
         </div>
-        <p class="payment-note">Payment instructions will be confirmed after order review. Card details are not collected on this page.</p>
+        <div class="paystack-test-banner" data-paystack-test-banner hidden>
+          <strong>PAYSTACK TEST MODE</strong>
+          <span>No real payment will be taken.</span>
+        </div>
+        <p class="payment-note" data-paystack-checkout-message>Checking secure checkout availability.</p>
 
         <label>Order notes<textarea name="notes" rows="4"></textarea></label>
         <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may process my details to complete this order and provide customer care.</span></label>
         <p class="form-status" data-order-status></p>
-        <button class="button primary full" type="submit">Place order</button>
+        <button class="button primary full" type="submit" data-paystack-checkout-button disabled>Loading secure checkout</button>
       </form>
 
       <aside class="checkout-card">
@@ -1461,18 +1468,204 @@ function renderCheckout() {
     ${renderFooter()}
   `;
 
-  document.querySelector("[data-order-form]")?.addEventListener("submit", (event) => {
-    const status = document.querySelector("[data-order-status]");
-    if (!state.bag.length) {
-      event.preventDefault();
-      status.textContent = "Add at least one item to your bag before checkout.";
-      return;
-    }
-    event.currentTarget.cart_summary.value = getCartSummary();
-    event.currentTarget.order_total.value = String(getSubtotal());
-  });
+  const checkoutForm = document.querySelector("[data-order-form]");
+  checkoutForm?.addEventListener("submit", handleCheckoutSubmit);
   bindNetlifyForms(app);
   hydrateDeferredImages(app);
+  loadPaystackCheckoutConfig(checkoutForm);
+}
+
+async function loadPaystackCheckoutConfig(form) {
+  if (!form) return;
+  try {
+    const response = await fetch("/api/payments/paystack/config", { headers: { accept: "application/json" }, cache: "no-store" });
+    const config = await response.json();
+    if (!response.ok || !config?.ok) throw new Error("Payment configuration could not load.");
+    state.paystackCheckout = config;
+  } catch {
+    state.paystackCheckout = {
+      checkoutEnabled: false,
+      checkoutState: window.location.hostname === "kalmcollective.co.za" ? "production_fallback" : "configuration_required",
+      testMode: true,
+      message: "Secure test checkout needs configuration. No payment can be taken."
+    };
+  }
+  applyPaystackCheckoutPresentation(form, state.paystackCheckout);
+}
+
+function applyPaystackCheckoutPresentation(form, config) {
+  const options = form.querySelector("[data-payment-options]");
+  const banner = form.querySelector("[data-paystack-test-banner]");
+  const message = form.querySelector("[data-paystack-checkout-message]");
+  const button = form.querySelector("[data-paystack-checkout-button]");
+  if (!options || !banner || !message || !button) return;
+
+  if (config.checkoutEnabled) {
+    options.innerHTML = `<label class="option-card"><input type="radio" name="payment_method" value="Paystack" checked><span><strong>Pay securely with Paystack</strong><small>Secure card checkout</small></span></label>`;
+    banner.hidden = !config.testMode;
+    message.textContent = config.message;
+    button.textContent = "Pay securely with Paystack";
+    button.disabled = false;
+    form.dataset.checkoutMode = "paystack";
+    return;
+  }
+
+  if (config.checkoutState === "production_fallback") {
+    options.innerHTML = `
+      <label class="option-card"><input type="radio" name="payment_method" value="PayFast" checked><span><strong>PayFast</strong><small>Card and instant EFT</small></span></label>
+      <label class="option-card"><input type="radio" name="payment_method" value="Ozow"><span><strong>Ozow</strong><small>Instant EFT</small></span></label>
+      <label class="option-card"><input type="radio" name="payment_method" value="EFT"><span><strong>EFT</strong><small>Bank transfer</small></span></label>
+    `;
+    banner.hidden = true;
+    message.textContent = "Payment instructions will be confirmed after order review. Card details are not collected on this page.";
+    button.textContent = "Place order";
+    button.disabled = false;
+    form.dataset.checkoutMode = "order-enquiry";
+    return;
+  }
+
+  options.innerHTML = `<label class="option-card"><input type="radio" name="payment_method" value="Paystack" checked disabled><span><strong>Paystack</strong><small>Secure test checkout</small></span></label>`;
+  banner.hidden = false;
+  message.textContent = config.message || "Secure test checkout needs configuration. No payment can be taken.";
+  button.textContent = "Pay securely with Paystack";
+  button.disabled = true;
+  form.dataset.checkoutMode = "configuration-required";
+}
+
+function checkoutItemsForPayment() {
+  return state.bag.map((item) => ({
+    productId: item.productId,
+    sku: item.sku,
+    colour: item.color,
+    size: item.size,
+    quantity: item.qty
+  }));
+}
+
+async function handleCheckoutSubmit(event) {
+  const form = event.currentTarget;
+  const status = form.querySelector("[data-order-status]");
+  if (!state.bag.length) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    status.textContent = "Add at least one item to your bag before checkout.";
+    return;
+  }
+  form.cart_summary.value = getCartSummary();
+  form.order_total.value = String(getSubtotal());
+  form.name.value = `${form.first_name.value.trim()} ${form.last_name.value.trim()}`.trim();
+
+  const config = state.paystackCheckout;
+  if (!config) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    status.textContent = "Secure checkout is still loading. Please try again in a moment.";
+    return;
+  }
+  if (config.checkoutState === "production_fallback") return;
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  if (!config.checkoutEnabled) {
+    status.textContent = config.message || "Secure test checkout needs configuration. No payment can be taken.";
+    return;
+  }
+
+  const button = form.querySelector("[data-paystack-checkout-button]");
+  button.disabled = true;
+  button.textContent = "Starting secure checkout…";
+  status.textContent = "";
+  try {
+    const response = await fetch("/api/payments/paystack/initialize", {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify({
+        customer: {
+          firstName: form.first_name.value,
+          lastName: form.last_name.value,
+          email: form.email.value,
+          phone: form.phone.value,
+          address: form.address.value,
+          suburb: form.suburb.value,
+          city: form.city.value,
+          province: form.province.value,
+          postalCode: form.postal_code.value,
+          notes: form.notes.value
+        },
+        items: checkoutItemsForPayment()
+      })
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || !result?.authorizationUrl) throw new Error(result?.message || "Secure payment could not be started.");
+    window.location.assign(result.authorizationUrl);
+  } catch (error) {
+    status.textContent = error.message || "Secure payment could not be started. Please try again.";
+    button.disabled = false;
+    button.textContent = "Pay securely with Paystack";
+  }
+}
+
+function renderPaymentResult(params) {
+  setRouteIndexability(false);
+  setDocumentMeta("Payment result | KALM Collective", "Secure payment verification for your KALM Collective order.");
+  const reference = String(params?.get("reference") || "").trim();
+  app.innerHTML = `
+    <section class="page-hero compact payment-result" data-payment-result>
+      <p class="eyebrow">Secure payment</p>
+      <h1>Verifying your payment</h1>
+      <p data-payment-result-message>Please wait while KALM Collective verifies the transaction directly with Paystack.</p>
+      <div class="payment-result-actions" data-payment-result-actions hidden></div>
+    </section>
+    ${renderFooter()}
+  `;
+  if (!reference) {
+    updatePaymentResult("Unable to verify", "We could not find a payment reference. Your order has not been marked as paid.");
+    return;
+  }
+  verifyPaymentResult(reference);
+}
+
+async function verifyPaymentResult(reference) {
+  try {
+    const response = await fetch("/api/payments/paystack/verify", {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify({ reference })
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || !result?.ok) throw new Error(result?.message || "We could not verify this payment yet.");
+    const amount = result.order ? formatPrice(Number(result.order.paidAmountCents || 0) / 100) : "";
+    if (result.paymentStatus === "paid") {
+      state.bag = [];
+      saveBag();
+      renderBag();
+      updatePaymentResult("Payment confirmed", `Your KALM order ${result.order.orderNumber} has been verified for ${amount}. ${result.order.testMode ? "TEST PAYMENT — NO REAL MONEY — DO NOT FULFIL." : ""}`, true);
+      return;
+    }
+    if (result.paymentStatus === "payment_processing") {
+      updatePaymentResult("Payment pending", "Your payment is still being processed. Your order has not been marked as paid yet.");
+      return;
+    }
+    if (result.paymentStatus === "payment_failed") {
+      updatePaymentResult("Payment failed", "Your order has not been marked as paid. You can return to your bag and try again.");
+      return;
+    }
+    updatePaymentResult("Unable to verify", "Your order has not been marked as paid. Please contact KALM Collective if this persists.");
+  } catch (error) {
+    updatePaymentResult("Unable to verify", error.message || "Your order has not been marked as paid. Please try again.");
+  }
+}
+
+function updatePaymentResult(title, message, confirmed = false) {
+  const shell = app.querySelector("[data-payment-result]");
+  if (!shell) return;
+  shell.querySelector("h1").textContent = title;
+  shell.querySelector("[data-payment-result-message]").textContent = message;
+  const actions = shell.querySelector("[data-payment-result-actions]");
+  actions.hidden = false;
+  actions.innerHTML = confirmed
+    ? `<a class="button primary" href="#/shop">Continue shopping</a>`
+    : `<a class="button primary" href="#/cart">Return to bag</a><a class="button secondary" href="#/contact">Contact customer care</a>`;
 }
 
 function renderContact() {
@@ -1530,7 +1723,7 @@ function renderPolicies() {
     <section class="policy-grid">
       <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Courier delivery is available across South Africa. Standard delivery takes 2 to 5 business days after order confirmation, with express delivery available in selected areas.</p></article>
       <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused home or wellness items in their original condition and packaging.</p></article>
-      <article class="policy-card"><h2>Payment</h2><p>Checkout supports PayFast, Ozow and EFT selections. Payment instructions are confirmed after order review, and card details are not collected on this page.</p></article>
+      <article class="policy-card"><h2>Payment</h2><p>Secure checkout is handled by Paystack when enabled. KALM Collective does not collect card details on this page.</p></article>
       <article class="policy-card"><h2>Privacy</h2><p>KALM Collective processes customer information for orders, delivery, customer care and opt-in marketing in line with POPIA.</p></article>
     </section>
     ${renderFooter()}

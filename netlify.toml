@@ -1,6 +1,10 @@
 [build]
   publish = "."
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 # Review and source-lock material is never a public storefront asset. The
 # underlying audit history remains in Git, while these request paths are
 # explicitly unavailable from every production or preview deployment.
@@ -24,6 +28,12 @@
 
 [[redirects]]
   from = "/reports/KALM-ODO-PILOT/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/reports/PAYSTACK/*"
   to = "/404.html"
   status = 404
   force = true
@@ -102,6 +112,11 @@
 
 [[redirects]]
   from = "/checkout"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/checkout/payment-result"
   to = "/index.html"
   status = 200
 

@@ -1,0 +1,12 @@
+{
+  "name": "kalm-collective-storefront",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:paystack": "node tests/paystack-core.test.mjs",
+    "validate:paystack": "node tools/validate-paystack-test-integration.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.9"
+  }
+}
