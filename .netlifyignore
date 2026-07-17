@@ -1,8 +1,11 @@
 .git/
 .netlify/
 .netlify-runtime/
+.netlify/functions/
+node_modules/
 .qa/
 tmp/
+reports/PAYSTACK/
 reports/KALM-ODO-PILOT/*.inspect.ndjson
 Thumbs.db
 .DS_Store
