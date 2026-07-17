@@ -18,6 +18,8 @@ const text = [
 
 const checks = [
   ["functions directory configured", /\[functions\][\s\S]*directory = "netlify\/functions"/.test(read("netlify.toml"))],
+  ["static publish output is separated from function source", /publish = "dist"/.test(read("netlify.toml")) && exists("tools/build-netlify-static.mjs")],
+  ["static build excludes Git metadata", !exists("dist/.git")],
   ["initialise endpoint exists", text.includes("/api/payments/paystack/initialize")],
   ["verify endpoint exists", text.includes("/api/payments/paystack/verify")],
   ["webhook endpoint exists", text.includes("/api/payments/paystack/webhook")],

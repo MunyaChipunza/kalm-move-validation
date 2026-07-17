@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  command = "node tools/build-netlify-static.mjs"
+  publish = "dist"
 
 [functions]
   directory = "netlify/functions"
