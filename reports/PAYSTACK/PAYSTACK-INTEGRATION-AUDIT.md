@@ -39,6 +39,17 @@ The Paystack dashboard was not authenticated in the available Chrome session. No
 
 `npm audit --omit=dev --audit-level=high` reported no high or critical advisory, but six moderate transitive OpenTelemetry advisories under the current Netlify Blobs dependency chain. This is recorded as a dependency warning and must be reviewed before any live-payment release.
 
+## Draft verification
+
+Draft deploy: `6a5a08b3ff5664009f7c074d`  
+Draft URL: `https://6a5a08b3ff5664009f7c074d--kalm-collective-storefront.netlify.app`
+
+- The safe configuration endpoint returned `mode=test`, `checkoutState=configuration_required` and no key material.
+- A direct initialise request returned HTTP 503 before any order or gateway call because test keys are absent.
+- Function source and private Paystack report URLs both returned HTTP 404.
+- Mobile (375 × 812) and desktop (1280 × 720) checkout checks showed no horizontal overflow, a visible test-mode notice and a disabled pay button.
+- The public production homepage remained HTTP 200 and has no Paystack configuration route. The separate Munya task application was not modified.
+
 ## Scope protection
 
 This branch does not merge to production, does not deploy production, and does not change the Munya task application.

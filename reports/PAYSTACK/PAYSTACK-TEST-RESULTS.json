@@ -8,6 +8,15 @@
   },
   "externalPaystackTestState": "blocked_pending_secure_test_keys",
   "blocker": "PAYSTACK_TEST_PUBLIC_KEY and PAYSTACK_TEST_SECRET_KEY are not configured in Netlify because the available Paystack dashboard session was not authenticated.",
+  "draftVerification": {
+    "deployId": "6a5a08b3ff5664009f7c074d",
+    "configEndpoint": "passed_configuration_required_no_key_exposure",
+    "initialiseWithoutKeys": "passed_http_503_fail_closed",
+    "mobile375x812": "passed_no_horizontal_overflow_banner_visible_button_disabled",
+    "desktop1280x720": "passed_no_horizontal_overflow_banner_visible_button_disabled",
+    "privateFunctionSource": "passed_http_404",
+    "privateReport": "passed_http_404"
+  },
   "scenarios": [
     { "id": 1, "name": "successful test payment", "local": "passed_mocked_provider", "external": "blocked" },
     { "id": 2, "name": "failed test payment", "local": "passed_mocked_provider", "external": "blocked" },

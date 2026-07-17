@@ -2,6 +2,7 @@
   "date": "2026-07-17",
   "mode": "test",
   "endpoint": "/api/payments/paystack/webhook",
+  "draftWebhookUrl": "https://6a5a08b3ff5664009f7c074d--kalm-collective-storefront.netlify.app/api/payments/paystack/webhook",
   "signature": {
     "header": "x-paystack-signature",
     "algorithm": "HMAC SHA-512",
