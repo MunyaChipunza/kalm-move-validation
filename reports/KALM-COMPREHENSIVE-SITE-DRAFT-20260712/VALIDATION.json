@@ -1,786 +1,1061 @@
 {
-  "generatedAt": "2026-07-13T17:51:33.688Z",
+  "generatedAt": "2026-07-20T13:17:30.565Z",
   "status": "pass",
   "checks": [
     {
-      "name": "Homepage Find Your Edit product exists: kalm-move-form-short-set",
+      "name": "Homepage Featured KS Active product exists: ks-active-halter-back-romper",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit colour exists: kalm-move-form-short-set / Khaki",
+      "name": "Homepage Featured KS Active colour exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit hero image exists: kalm-move-form-short-set / Khaki",
+      "name": "Homepage Featured KS Active hero image exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/khaki/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg"
     },
     {
-      "name": "Homepage Find Your Edit product exists: kalm-wellness-breathe-mat",
+      "name": "Homepage Featured KS Active product exists: ks-active-rib-scrunch-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit colour exists: kalm-wellness-breathe-mat / Sand",
+      "name": "Homepage Featured KS Active colour exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit hero image exists: kalm-wellness-breathe-mat / Sand",
+      "name": "Homepage Featured KS Active hero image exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
-      "detail": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg"
     },
     {
-      "name": "Homepage Find Your Edit product exists: kalm-home-white-cotton-bedding-set",
+      "name": "Homepage Featured KS Active product exists: ks-active-crossback-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit colour exists: kalm-home-white-cotton-bedding-set / White",
+      "name": "Homepage Featured KS Active colour exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit hero image exists: kalm-home-white-cotton-bedding-set / White",
+      "name": "Homepage Featured KS Active hero image exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
-      "detail": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg"
     },
     {
-      "name": "Homepage Find Your Edit product exists: kalm-outdoor-weather-ready-picnic-blanket",
+      "name": "Homepage Featured KS Active product exists: ks-active-panel-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit colour exists: kalm-outdoor-weather-ready-picnic-blanket / Charcoal",
+      "name": "Homepage Featured KS Active colour exists: ks-active-panel-seamless-legging / Azure Blue",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Find Your Edit hero image exists: kalm-outdoor-weather-ready-picnic-blanket / Charcoal",
+      "name": "Homepage Featured KS Active hero image exists: ks-active-panel-seamless-legging / Azure Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg"
     },
     {
-      "name": "Homepage Featured Edit product exists: kalm-move-open-back-short-romper",
+      "name": "Homepage Featured KS Active product exists: ks-active-rib-contour-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Featured Edit colour exists: kalm-move-open-back-short-romper / Navy",
+      "name": "Homepage Featured KS Active colour exists: ks-active-rib-contour-legging / Bright Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Featured Edit hero image exists: kalm-move-open-back-short-romper / Navy",
+      "name": "Homepage Featured KS Active hero image exists: ks-active-rib-contour-legging / Bright Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/navy/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png"
     },
     {
-      "name": "Homepage Featured Edit product exists: kalm-wellness-ground-bottle",
+      "name": "Homepage Featured KS Active product exists: ks-active-racer-knit-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Featured Edit colour exists: kalm-wellness-ground-bottle / Olive",
+      "name": "Homepage Featured KS Active colour exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Featured Edit hero image exists: kalm-wellness-ground-bottle / Olive",
+      "name": "Homepage Featured KS Active hero image exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png"
     },
     {
-      "name": "Homepage Featured Edit product exists: kalm-home-black-reed-diffuser",
+      "name": "Homepage Final Pieces product exists: ks-active-high-waist-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Featured Edit colour exists: kalm-home-black-reed-diffuser / Smoke black",
+      "name": "Homepage Final Pieces colour exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Featured Edit hero image exists: kalm-home-black-reed-diffuser / Smoke black",
+      "name": "Homepage Final Pieces hero image exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "Homepage Archive Sale product exists: ks-high-waist-seamless-leggings",
+      "name": "Homepage Final Pieces product exists: ks-active-crisscross-back-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Archive Sale colour exists: ks-high-waist-seamless-leggings / Wine",
+      "name": "Homepage Final Pieces colour exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Archive Sale hero image exists: ks-high-waist-seamless-leggings / Wine",
+      "name": "Homepage Final Pieces hero image exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/wine/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg"
     },
     {
-      "name": "Homepage Archive Sale product exists: ks-high-waist-seamless-shorts",
+      "name": "Homepage Final Pieces product exists: ks-active-high-waist-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Archive Sale colour exists: ks-high-waist-seamless-shorts / Deep Plum",
+      "name": "Homepage Final Pieces colour exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Archive Sale hero image exists: ks-high-waist-seamless-shorts / Deep Plum",
+      "name": "Homepage Final Pieces hero image exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/deep-plum/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "Homepage Most Wanted product exists: kalm-move-flow-training-short",
+      "name": "Homepage Final Pieces product exists: ks-active-scrunch-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted colour exists: kalm-move-flow-training-short / Olive",
+      "name": "Homepage Final Pieces colour exists: ks-active-scrunch-seamless-legging / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted hero image exists: kalm-move-flow-training-short / Olive",
+      "name": "Homepage Final Pieces hero image exists: ks-active-scrunch-seamless-legging / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/men/flow-training-short-v4/olive/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg"
     },
     {
-      "name": "Homepage Most Wanted product exists: kalm-move-rise-zip-jacket-set",
+      "name": "Homepage Final Pieces product exists: ks-active-cutout-crossback-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted colour exists: kalm-move-rise-zip-jacket-set / Apricot",
+      "name": "Homepage Final Pieces colour exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted hero image exists: kalm-move-rise-zip-jacket-set / Apricot",
+      "name": "Homepage Final Pieces hero image exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/rise-zip-jacket-set/apricot/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg"
     },
     {
-      "name": "Homepage Most Wanted product exists: kalm-wellness-restore-towel",
+      "name": "Homepage Final Pieces product exists: ks-active-cutout-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted colour exists: kalm-wellness-restore-towel / Dusty Rose",
+      "name": "Homepage Final Pieces colour exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted hero image exists: kalm-wellness-restore-towel / Dusty Rose",
+      "name": "Homepage Final Pieces hero image exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg"
     },
     {
-      "name": "Homepage Most Wanted product exists: kalm-home-charcoal-bath-towel-stack",
+      "name": "KS Active product exists: ks-active-halter-back-romper",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted colour exists: kalm-home-charcoal-bath-towel-stack / Charcoal",
+      "name": "KS Active colour exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Most Wanted hero image exists: kalm-home-charcoal-bath-towel-stack / Charcoal",
+      "name": "KS Active hero image exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-align-halter-legging-set",
+      "name": "KS Active product exists: ks-active-rib-scrunch-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-align-halter-legging-set / Pink Drink",
+      "name": "KS Active colour exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-align-halter-legging-set / Pink Drink",
+      "name": "KS Active hero image exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/pink-drink/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-ease-flare-set",
+      "name": "KS Active product exists: ks-active-cutout-crossback-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-ease-flare-set / Taupe",
+      "name": "KS Active colour exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-ease-flare-set / Taupe",
+      "name": "KS Active hero image exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/taupe/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-wide-leg-yoga-pant",
+      "name": "KS Active product exists: ks-active-scrunch-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-wide-leg-yoga-pant / Burgundy Red",
+      "name": "KS Active colour exists: ks-active-scrunch-seamless-short / Egyptian Blue",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-wide-leg-yoga-pant / Burgundy Red",
+      "name": "KS Active hero image exists: ks-active-scrunch-seamless-short / Egyptian Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/burgundy-red/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-motion-hoodie",
+      "name": "KS Active product exists: ks-active-cutout-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-motion-hoodie / Stone",
+      "name": "KS Active colour exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-motion-hoodie / Stone",
+      "name": "KS Active hero image exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/men/motion-hoodie-v4/stone/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-everyday-bottle",
+      "name": "KS Active product exists: ks-active-crossback-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-everyday-bottle / Lilac",
+      "name": "KS Active colour exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-everyday-bottle / Lilac",
+      "name": "KS Active hero image exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v4/everyday-bottle/lilac/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-slim-wellness-bottle",
+      "name": "KS Active product exists: ks-active-high-waist-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-slim-wellness-bottle / Soft Pink",
+      "name": "KS Active colour exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-slim-wellness-bottle / Soft Pink",
+      "name": "KS Active hero image exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "New In product exists: kalm-wellness-ritual-set",
+      "name": "KS Active product exists: ks-active-curve-seam-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-wellness-ritual-set / Natural Oat",
+      "name": "KS Active colour exists: ks-active-curve-seam-legging / Espresso",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-wellness-ritual-set / Natural Oat",
+      "name": "KS Active hero image exists: ks-active-curve-seam-legging / Espresso",
       "status": "pass",
-      "detail": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg"
     },
     {
-      "name": "New In product exists: kalm-wellness-pause-journal",
+      "name": "KS Active product exists: ks-active-high-waist-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-wellness-pause-journal / Blush",
+      "name": "KS Active colour exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-wellness-pause-journal / Blush",
+      "name": "KS Active hero image exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "New In product exists: kalm-move-open-back-short-romper",
+      "name": "KS Active product exists: ks-active-crisscross-back-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In colour exists: kalm-move-open-back-short-romper / Apricot",
+      "name": "KS Active colour exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In hero image exists: kalm-move-open-back-short-romper / Apricot",
+      "name": "KS Active hero image exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/apricot/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-form-short-set",
+      "name": "KS Active product exists: ks-active-panel-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-form-short-set / Dark Purple",
+      "name": "KS Active colour exists: ks-active-panel-seamless-legging / Azure Blue",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-form-short-set / Dark Purple",
+      "name": "KS Active hero image exists: ks-active-panel-seamless-legging / Azure Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/dark-purple/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-pulse-crop-short-set",
+      "name": "KS Active product exists: ks-active-scrunch-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-pulse-crop-short-set / Black",
+      "name": "KS Active colour exists: ks-active-scrunch-seamless-legging / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-pulse-crop-short-set / Black",
+      "name": "KS Active hero image exists: ks-active-scrunch-seamless-legging / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/pulse-crop-short-set/black/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-balance-x-back-legging-set",
+      "name": "KS Active product exists: ks-active-rib-contour-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-balance-x-back-legging-set / Magic Forest Green",
+      "name": "KS Active colour exists: ks-active-rib-contour-legging / Bright Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-balance-x-back-legging-set / Magic Forest Green",
+      "name": "KS Active hero image exists: ks-active-rib-contour-legging / Bright Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/magic-forest-green/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png"
     },
     {
-      "name": "Activewear product exists: kalm-move-halter-biker-short-set",
+      "name": "KS Active product exists: ks-active-racer-knit-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-halter-biker-short-set / Blue",
+      "name": "KS Active colour exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-halter-biker-short-set / Blue",
+      "name": "KS Active hero image exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/blue/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png"
     },
     {
-      "name": "Activewear product exists: kalm-move-core-performance-tee",
+      "name": "New In product exists: ks-active-halter-back-romper",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-core-performance-tee / White",
+      "name": "New In colour exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-core-performance-tee / White",
+      "name": "New In hero image exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/men/core-performance-tee-v4/white/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-sprint-running-short",
+      "name": "New In product exists: ks-active-rib-scrunch-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-sprint-running-short / Cobalt",
+      "name": "New In colour exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-sprint-running-short / Cobalt",
+      "name": "New In hero image exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/men/sprint-running-short-v4/cobalt/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-lift-tank",
+      "name": "New In product exists: ks-active-cutout-crossback-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-lift-tank / Charcoal",
+      "name": "New In colour exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-lift-tank / Charcoal",
+      "name": "New In hero image exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/men/lift-tank-v4/charcoal/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-pace-jogger",
+      "name": "New In product exists: ks-active-scrunch-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-pace-jogger / Navy",
+      "name": "New In colour exists: ks-active-scrunch-seamless-short / Egyptian Blue",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-pace-jogger / Navy",
+      "name": "New In hero image exists: ks-active-scrunch-seamless-short / Egyptian Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/men/pace-jogger-v4/navy/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-protein-shaker-bottle",
+      "name": "New In product exists: ks-active-cutout-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-protein-shaker-bottle / Smoke Grey",
+      "name": "New In colour exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-protein-shaker-bottle / Smoke Grey",
+      "name": "New In hero image exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v4/protein-shaker-bottle/smoke-grey/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg"
     },
     {
-      "name": "Activewear product exists: kalm-move-studio-bottle",
+      "name": "New In product exists: ks-active-crossback-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear colour exists: kalm-move-studio-bottle / Sky Blue",
+      "name": "New In colour exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Activewear hero image exists: kalm-move-studio-bottle / Sky Blue",
+      "name": "New In hero image exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/bottles-v4/studio-bottle/sky-blue/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg"
     },
     {
-      "name": "Sale product exists: ks-high-waist-seamless-leggings",
+      "name": "New In product exists: ks-active-high-waist-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: ks-high-waist-seamless-leggings / Deep Plum",
+      "name": "New In colour exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: ks-high-waist-seamless-leggings / Deep Plum",
+      "name": "New In hero image exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-leggings/deep-plum/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "Sale product exists: ks-high-waist-seamless-shorts",
+      "name": "New In product exists: ks-active-curve-seam-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: ks-high-waist-seamless-shorts / Wine",
+      "name": "New In colour exists: ks-active-curve-seam-legging / Espresso",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: ks-high-waist-seamless-shorts / Wine",
+      "name": "New In hero image exists: ks-active-curve-seam-legging / Espresso",
       "status": "pass",
-      "detail": "assets/images/products/ks-active/model-shoot/ks-high-waist-seamless-shorts/wine/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-align-halter-legging-set",
+      "name": "New In product exists: ks-active-high-waist-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-align-halter-legging-set / Date Brown",
+      "name": "New In colour exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-align-halter-legging-set / Date Brown",
+      "name": "New In hero image exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/align-halter-legging-set-v2/date-brown/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-ease-flare-set",
+      "name": "New In product exists: ks-active-crisscross-back-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-ease-flare-set / Espresso",
+      "name": "New In colour exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-ease-flare-set / Espresso",
+      "name": "New In hero image exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/ease-flare-set-v4/espresso/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-form-short-set",
+      "name": "New In product exists: ks-active-panel-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-form-short-set / Orange",
+      "name": "New In colour exists: ks-active-panel-seamless-legging / Azure Blue",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-form-short-set / Orange",
+      "name": "New In hero image exists: ks-active-panel-seamless-legging / Azure Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/form-short-set-v2/orange/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-wide-leg-yoga-pant",
+      "name": "New In product exists: ks-active-scrunch-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-wide-leg-yoga-pant / Gray",
+      "name": "New In colour exists: ks-active-scrunch-seamless-legging / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-wide-leg-yoga-pant / Gray",
+      "name": "New In hero image exists: ks-active-scrunch-seamless-legging / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/wide-leg-yoga-pant/gray/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-balance-x-back-legging-set",
+      "name": "New In product exists: ks-active-rib-contour-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-balance-x-back-legging-set / Bluebird",
+      "name": "New In colour exists: ks-active-rib-contour-legging / Bright Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-balance-x-back-legging-set / Bluebird",
+      "name": "New In hero image exists: ks-active-rib-contour-legging / Bright Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/balance-x-back-legging-set/bluebird/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png"
     },
     {
-      "name": "Sale product exists: kalm-move-halter-biker-short-set",
+      "name": "New In product exists: ks-active-racer-knit-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-halter-biker-short-set / Red",
+      "name": "New In colour exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-halter-biker-short-set / Red",
+      "name": "New In hero image exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/halter-biker-short-set/red/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png"
     },
     {
-      "name": "Sale product exists: kalm-move-rise-zip-jacket-set",
+      "name": "Activewear product exists: ks-active-halter-back-romper",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-rise-zip-jacket-set / Coffee",
+      "name": "Activewear colour exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-rise-zip-jacket-set / Coffee",
+      "name": "Activewear hero image exists: ks-active-halter-back-romper / Army Green",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/rise-zip-jacket-set/coffee/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-open-back-short-romper",
+      "name": "Activewear product exists: ks-active-rib-scrunch-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-open-back-short-romper / Army Green",
+      "name": "Activewear colour exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-open-back-short-romper / Army Green",
+      "name": "Activewear hero image exists: ks-active-rib-scrunch-legging / Ash Gray",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/open-back-short-romper-v1/army-green/back.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-pocket-racerback-crop-bra",
+      "name": "Activewear product exists: ks-active-cutout-crossback-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-pocket-racerback-crop-bra / Brown",
+      "name": "Activewear colour exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-pocket-racerback-crop-bra / Brown",
+      "name": "Activewear hero image exists: ks-active-cutout-crossback-bra / Imperial Red",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/pocket-racerback-crop-bra/brown/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-contrast-flare-set",
+      "name": "Activewear product exists: ks-active-scrunch-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-contrast-flare-set / Purple",
+      "name": "Activewear colour exists: ks-active-scrunch-seamless-short / Egyptian Blue",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-contrast-flare-set / Purple",
+      "name": "Activewear hero image exists: ks-active-scrunch-seamless-short / Egyptian Blue",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/contrast-flare-set/purple/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-crossline-legging",
+      "name": "Activewear product exists: ks-active-cutout-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-crossline-legging / Blue",
+      "name": "Activewear colour exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-crossline-legging / Blue",
+      "name": "Activewear hero image exists: ks-active-cutout-seamless-bra / Black",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/crossline-legging/blue/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg"
     },
     {
-      "name": "Sale product exists: kalm-move-drift-crop-wide-pant",
+      "name": "Activewear product exists: ks-active-crossback-seamless-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale colour exists: kalm-move-drift-crop-wide-pant / Wine Red",
+      "name": "Activewear colour exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale hero image exists: kalm-move-drift-crop-wide-pant / Wine Red",
+      "name": "Activewear hero image exists: ks-active-crossback-seamless-bra / Apricot",
       "status": "pass",
-      "detail": "assets/images/products/kalm-move/women/drift-crop-wide-pant/wine-red/front.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg"
     },
     {
-      "name": "Outdoor product exists: kalm-outdoor-ember-16-gas-pizza-oven",
+      "name": "Activewear product exists: ks-active-high-waist-seamless-short",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Outdoor colour exists: kalm-outdoor-ember-16-gas-pizza-oven / Matte Black",
+      "name": "Activewear colour exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Outdoor hero image exists: kalm-outdoor-ember-16-gas-pizza-oven / Matte Black",
+      "name": "Activewear hero image exists: ks-active-high-waist-seamless-short / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "Outdoor product exists: kalm-outdoor-forge-2-portable-gas-griddle",
+      "name": "Activewear product exists: ks-active-curve-seam-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Outdoor colour exists: kalm-outdoor-forge-2-portable-gas-griddle / Matte Black",
+      "name": "Activewear colour exists: ks-active-curve-seam-legging / Espresso",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Outdoor hero image exists: kalm-outdoor-forge-2-portable-gas-griddle / Matte Black",
+      "name": "Activewear hero image exists: ks-active-curve-seam-legging / Espresso",
       "status": "pass",
-      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg"
     },
     {
-      "name": "Outdoor product exists: kalm-outdoor-ridge-4-stainless-gas-braai",
+      "name": "Activewear product exists: ks-active-high-waist-seamless-legging",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Outdoor colour exists: kalm-outdoor-ridge-4-stainless-gas-braai / Stainless / Black",
+      "name": "Activewear colour exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Outdoor hero image exists: kalm-outdoor-ridge-4-stainless-gas-braai / Stainless / Black",
+      "name": "Activewear hero image exists: ks-active-high-waist-seamless-legging / Electric Violet",
       "status": "pass",
-      "detail": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg"
     },
     {
-      "name": "Every allocated product-colour key is unique across requested surfaces",
+      "name": "Activewear product exists: ks-active-crisscross-back-bra",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Find Your Edit and Featured Edit do not reuse an image path",
+      "name": "Activewear colour exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Find Your Edit and Featured Edit do not reuse an image hash",
+      "name": "Activewear hero image exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg"
+    },
+    {
+      "name": "Activewear product exists: ks-active-panel-seamless-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: ks-active-panel-seamless-legging / Azure Blue",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: ks-active-panel-seamless-legging / Azure Blue",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg"
+    },
+    {
+      "name": "Activewear product exists: ks-active-scrunch-seamless-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: ks-active-scrunch-seamless-legging / Imperial Red",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: ks-active-scrunch-seamless-legging / Imperial Red",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg"
+    },
+    {
+      "name": "Activewear product exists: ks-active-rib-contour-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: ks-active-rib-contour-legging / Bright Green",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: ks-active-rib-contour-legging / Bright Green",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png"
+    },
+    {
+      "name": "Activewear product exists: ks-active-racer-knit-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear colour exists: ks-active-racer-knit-bra / Dark Green",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Activewear hero image exists: ks-active-racer-knit-bra / Dark Green",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png"
+    },
+    {
+      "name": "Sale product exists: ks-active-halter-back-romper",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-halter-back-romper / Army Green",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-halter-back-romper / Army Green",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-halter-back-romper/army-green/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-rib-scrunch-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-rib-scrunch-legging / Ash Gray",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-rib-scrunch-legging / Ash Gray",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-rib-scrunch-legging/ash-gray/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-cutout-crossback-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-cutout-crossback-bra / Imperial Red",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-cutout-crossback-bra / Imperial Red",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-crossback-bra/imperial-red/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-scrunch-seamless-short",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-scrunch-seamless-short / Egyptian Blue",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-scrunch-seamless-short / Egyptian Blue",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-short/egyptian-blue/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-cutout-seamless-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-cutout-seamless-bra / Black",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-cutout-seamless-bra / Black",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-cutout-seamless-bra/black/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-crossback-seamless-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-crossback-seamless-bra / Apricot",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-crossback-seamless-bra / Apricot",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crossback-seamless-bra/apricot/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-high-waist-seamless-short",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-high-waist-seamless-short / Electric Violet",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-high-waist-seamless-short / Electric Violet",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-short/electric-violet/hero-three-quarter.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-curve-seam-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-curve-seam-legging / Espresso",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-curve-seam-legging / Espresso",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-curve-seam-legging/espresso/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-high-waist-seamless-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-high-waist-seamless-legging / Electric Violet",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-high-waist-seamless-legging / Electric Violet",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-high-waist-seamless-legging/electric-violet/hero-three-quarter.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-crisscross-back-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-crisscross-back-bra / Black",
+      "status": "pass",
       "detail": ""
     },
     {
-      "name": "Homepage Archive Sale is KS Active only",
+      "name": "Sale hero image exists: ks-active-crisscross-back-bra / Black",
       "status": "pass",
-      "detail": "ks-active, ks-active"
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-crisscross-back-bra/black/back.jpg"
     },
     {
-      "name": "Homepage Archive Sale contains genuine sale products",
+      "name": "Sale product exists: ks-active-panel-seamless-legging",
       "status": "pass",
-      "detail": "compare-at price must exceed sale price"
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-panel-seamless-legging / Azure Blue",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-panel-seamless-legging / Azure Blue",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-scrunch-seamless-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-scrunch-seamless-legging / Imperial Red",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-scrunch-seamless-legging / Imperial Red",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/ks-active-scrunch-seamless-legging/imperial-red/back.jpg"
+    },
+    {
+      "name": "Sale product exists: ks-active-rib-contour-legging",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-rib-contour-legging / Bright Green",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale hero image exists: ks-active-rib-contour-legging / Bright Green",
+      "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/p049-rib-contour-legging/bright-green-hero-three-quarter.png"
+    },
+    {
+      "name": "Sale product exists: ks-active-racer-knit-bra",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sale colour exists: ks-active-racer-knit-bra / Dark Green",
+      "status": "pass",
+      "detail": ""
     },
     {
-      "name": "New In excludes KS Active",
+      "name": "Sale hero image exists: ks-active-racer-knit-bra / Dark Green",
       "status": "pass",
+      "detail": "assets/images/products/ks-active/archive-approved/p050-racer-knit-bra/dark-green-back.png"
+    },
+    {
+      "name": "Homepage Featured KS Active is KS Active only",
+      "status": "pass",
+      "detail": "ks-active, ks-active, ks-active, ks-active, ks-active, ks-active"
+    },
+    {
+      "name": "Homepage Final Pieces is KS Active only",
+      "status": "pass",
+      "detail": "ks-active, ks-active, ks-active, ks-active, ks-active, ks-active"
+    },
+    {
+      "name": "Homepage KS Active sections use distinct product selections",
+      "status": "pass",
+      "detail": "featured and final-pieces selections overlap"
+    },
+    {
+      "name": "New In is restricted to the purchasable KS Active Archive",
+      "status": "pass",
       "detail": ""
     },
     {
-      "name": "New In only contains catalogue new-in products",
+      "name": "Activewear is restricted to the purchasable KS Active Archive",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sale page contains genuine sale products",
+      "name": "Sale page contains exactly fourteen KS Active Archive products",
       "status": "pass",
-      "detail": "compare-at price must exceed sale price"
+      "detail": "ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active, ks-active"
     },
     {
-      "name": "Outdoor collection contains exactly three appliances",
+      "name": "Sale page contains no KALM Move product",
       "status": "pass",
-      "detail": "kalm-outdoor-ember-16-gas-pizza-oven, kalm-outdoor-forge-2-portable-gas-griddle, kalm-outdoor-ridge-4-stainless-gas-braai"
+      "detail": ""
     },
     {
       "name": "All public campaign derivatives exist",
@@ -788,7 +1063,7 @@
       "detail": ""
     },
     {
-      "name": "Campaign derivatives are unique",
+      "name": "Primary homepage campaign uses approved KS Active imagery",
       "status": "pass",
       "detail": ""
     },
@@ -848,12 +1123,17 @@
       "detail": ""
     },
     {
-      "name": "Sitemap includes all public products",
+      "name": "Sitemap includes all current commerce products",
       "status": "pass",
       "detail": ""
     },
     {
-      "name": "Sitemap includes collection routes",
+      "name": "KALM Move has a preview collection sitemap route without commerce PDP links",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "name": "Sitemap includes current primary collection routes",
       "status": "pass",
       "detail": ""
     },
@@ -868,32 +1148,27 @@
       "detail": ""
     }
   ],
-  "allocationCount": 49,
+  "allocationCount": 68,
   "campaignFiles": [
     {
-      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop.webp",
-      "bytes": 602724,
-      "sha256": "07ba73994b91b97593b14c3d8ee79b188bca5e50ee120c7bcb8917aaec39d4ae"
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+      "bytes": 64768,
+      "sha256": "1dbdd9fd872d46b0e6d5e68cc9914a855ffd1c622f59aa26dc8ba828291acbaa"
     },
     {
-      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-tablet.webp",
-      "bytes": 500196,
-      "sha256": "0d37a64b731eed9c8135a6d2bfc431e4f25d12d8f66ccbcd261c788ed1411e2f"
+      "path": "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
+      "bytes": 64768,
+      "sha256": "1dbdd9fd872d46b0e6d5e68cc9914a855ffd1c622f59aa26dc8ba828291acbaa"
     },
     {
-      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile.webp",
-      "bytes": 524854,
-      "sha256": "f29dff504d0df299ef38ddc2fc7403d47120b009ad623974c663e21ddf9d0196"
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp",
+      "bytes": 195370,
+      "sha256": "5791173bfb55d3566f50044d41003ab7b0e00a061637176413e901a6d5155ab6"
     },
     {
-      "path": "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-desktop.webp",
-      "bytes": 1264664,
-      "sha256": "d64ce1be21bc6423cf4eeb229fc761dfe882f69163e9069cddf43dab692917c6"
-    },
-    {
-      "path": "assets/images/recovered/campaigns-v2/kalm-final-move-performance-v2-mobile.webp",
-      "bytes": 796106,
-      "sha256": "402a690fbb4de984d134e8fd8f2451fcd9eb86bda37cc4dc422bdda9917a7689"
+      "path": "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp",
+      "bytes": 100270,
+      "sha256": "f09ca92211f52ae8635da888130f07b5dabd23c742abcab522f924265fdb53fb"
     }
   ],
   "failures": []

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T13:07:58.279Z",
+  "generatedAt": "2026-07-20T13:17:35.942Z",
   "branch": "codex/kalm-move-signature-tee-merchandising-20260720",
   "sourceMaster": "91511c00c080dd7b6148df950191af525316a297",
   "previewOnly": true,
@@ -89,7 +89,7 @@
     {
       "name": "Paystack, courier and checkout implementation are untouched by this correction",
       "passed": true,
-      "detail": "script.js, tools/validate-kalm-move-signature-tee-merchandising.mjs"
+      "detail": "reports/KALM-COMPREHENSIVE-SITE-DRAFT-20260712/VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/COMMERCE-LOCK-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/HOMEPAGE-ORDER-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/KS-ACTIVE-COLLECTION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-HERO-SPACING-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-LOGO-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/NAVIGATION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/PRICE-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/PRODUCT-BADGE-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/RESPONSIVE-QA.json, reports/KALM-MOVE-LAUNCHING-SOON/WISHLIST-VALIDATION.json"
     },
     {
       "name": "review reports are blocked from public Netlify paths",
