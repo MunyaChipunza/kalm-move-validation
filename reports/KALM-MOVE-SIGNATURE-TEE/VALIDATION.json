@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-20T12:54:09.531Z",
+  "generatedAt": "2026-07-20T13:07:58.279Z",
   "branch": "codex/kalm-move-signature-tee-merchandising-20260720",
   "sourceMaster": "91511c00c080dd7b6148df950191af525316a297",
   "previewOnly": true,
   "passed": true,
-  "checkCount": 19,
+  "checkCount": 20,
   "checks": [
     {
       "name": "Signature Tee record exists once",
@@ -47,9 +47,14 @@
       "detail": "available-now section precedes the launching-soon grid with concise merchandising"
     },
     {
-      "name": "KALM Move Men ranks the purchasable Tee before Launching Soon products",
+      "name": "KALM Move Men and Women rank the purchasable Tee before Launching Soon products",
       "passed": true,
-      "detail": "Men’s default featured order prioritises available-now KALM Move product(s)"
+      "detail": "Men’s and Women’s default featured order prioritises available-now KALM Move product(s)"
+    },
+    {
+      "name": "KALM Move Women displays the available Tee in its approved female White model image",
+      "passed": true,
+      "detail": "Women’s Tee card uses White with the approved female front image"
     },
     {
       "name": "PDP breadcrumb and brand route lead to KALM Move",
@@ -84,7 +89,7 @@
     {
       "name": "Paystack, courier and checkout implementation are untouched by this correction",
       "passed": true,
-      "detail": "reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/HOMEPAGE-ORDER-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/KS-ACTIVE-COLLECTION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/NAVIGATION-VALIDATION.json, reports/KALM-MOVE-SIGNATURE-TEE/VALIDATION.json, script.js, styles.css, tools/validate-kalm-move-signature-tee-merchandising.mjs"
+      "detail": "script.js, tools/validate-kalm-move-signature-tee-merchandising.mjs"
     },
     {
       "name": "review reports are blocked from public Netlify paths",

@@ -773,8 +773,15 @@ function renderShop(params = new URLSearchParams()) {
   const filteredProducts = filterProducts(collectionFilterState);
   let displayEntries = configuredEntries.length
     ? configuredEntries.filter(({ product, color: displayColour }) => filteredProducts.some((item) => item.id === product.id) && (color === "all" || color === displayColour))
-    : filteredProducts.map((product) => ({ product, color: getDefaultColor(product) }));
-  if (brand === "kalm-move" && audience === "men" && sort === "featured" && !configuredEntries.length) {
+    : filteredProducts.map((product) => {
+      const useFemaleTeeCard = brand === "kalm-move" && audience === "women" && isKalmMoveAvailableNowProduct(product) && product.colors.includes("White");
+      const color = useFemaleTeeCard ? "White" : getDefaultColor(product);
+      const displayImage = useFemaleTeeCard
+        ? getVariantImages(product, color).find((image) => /female-front\./i.test(image)) || getVariantImage(product, color)
+        : "";
+      return { product, color, displayImage };
+    });
+  if (brand === "kalm-move" && ["men", "women"].includes(audience) && sort === "featured" && !configuredEntries.length) {
     displayEntries.sort((left, right) => {
       const availabilityOrder = Number(isKalmMoveAvailableNowProduct(right.product)) - Number(isKalmMoveAvailableNowProduct(left.product));
       if (availabilityOrder) return availabilityOrder;
@@ -989,7 +996,7 @@ function getCollectionPresentation(category) {
 function renderShopResults(entries, { genericSearch = false } = {}) {
   if (!entries.length) return renderEmptyState("No products match those filters.");
   if (!genericSearch) {
-    return `<div class="product-grid">${entries.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>`;
+    return `<div class="product-grid">${entries.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color, displayImage: entry.displayImage })).join("")}</div>`;
   }
   const availableNow = entries.filter((entry) => entry.product.brandId === "ks-active" || isKalmMoveAvailableNowProduct(entry.product));
   const launchingSoon = entries.filter((entry) => isMoveLaunchingSoonProduct(entry.product));
@@ -997,12 +1004,12 @@ function renderShopResults(entries, { genericSearch = false } = {}) {
     ${availableNow.length ? `
       <section class="search-result-group" aria-labelledby="available-search-results">
         <div class="section-head compact-head"><div><p class="eyebrow">AVAILABLE NOW</p><h2 id="available-search-results">Available products</h2></div></div>
-        <div class="product-grid">${availableNow.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>
+        <div class="product-grid">${availableNow.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color, displayImage: entry.displayImage })).join("")}</div>
       </section>` : ""}
     ${launchingSoon.length ? `
       <section class="search-result-group move-search-results" aria-labelledby="move-search-results">
         <div class="section-head compact-head"><div><p class="eyebrow">LAUNCHING SOON</p><h2 id="move-search-results">KALM Move preview</h2></div></div>
-        <div class="product-grid">${launchingSoon.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>
+        <div class="product-grid">${launchingSoon.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color, displayImage: entry.displayImage })).join("")}</div>
       </section>` : ""}
   `;
 }
@@ -2022,11 +2029,11 @@ function renderProductCard(product, options = {}) {
     : getDefaultColor(product);
   const badge = isUnavailable ? "Sold out" : product.brandId === "ks-active" ? "" : product.badge;
   const productHref = productRoute(product, defaultColour);
-  const displayImage = getVariantImage(product, defaultColour) || product.image;
+  const displayImage = options.displayImage || getVariantImage(product, defaultColour) || product.image;
   const imageMarkup = options.eager
     ? `src="${escapeHtml(displayImage)}" decoding="async"`
     : `src="${escapeHtml(displayImage)}" loading="lazy" decoding="async" fetchpriority="low"`;
-  const responsiveAttributes = renderResponsiveCardAttributes(product, defaultColour);
+  const responsiveAttributes = options.displayImage ? "" : renderResponsiveCardAttributes(product, defaultColour);
   return `
     <article class="product-card" data-product-scope data-product-id="${product.id}" data-display-colour="${escapeAttribute(defaultColour)}">
       <a class="product-media" href="${productHref}" aria-label="${escapeAttribute(`${product.title} in ${defaultColour}`)}" data-card-colour="${escapeAttribute(defaultColour)}" ${mediaPresentationStyle(product, "card")}>
