@@ -1020,7 +1020,7 @@ function renderKalmMoveLaunchCollection(brand) {
         <h1>KALM MOVE</h1>
         <p>A new chapter in movement is coming.</p>
         <p>Explore the collection, save your favourites and be the first to know when KALM Move arrives.</p>
-        <a class="button primary" href="#kalm-move-collection">EXPLORE THE COLLECTION</a>
+        <a class="button primary" href="#/brand/kalm-move#kalm-move-collection">EXPLORE THE COLLECTION</a>
       </div>
       <img src="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp" alt="KALM Move campaign" width="1600" height="900" decoding="async" fetchpriority="high">
     </section>
