@@ -9,3 +9,4 @@ Thumbs.db
 tools/local-image-pipeline/.venv/
 __pycache__/
 tmp/
+review/kalm-image-system/

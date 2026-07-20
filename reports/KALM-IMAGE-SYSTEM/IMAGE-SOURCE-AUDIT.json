@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-07-20T14:41:55+00:00",
+  "repo": "C:\\CodexWork\\kalm-image-library-inventory-thumbnails",
+  "scannedImageCount": 3678,
+  "classificationCounts": {
+    "unclassified": 2403,
+    "campaign": 31,
+    "ecommerce": 581,
+    "rejected": 134,
+    "approved ecommerce": 224,
+    "internal or private evidence": 301,
+    "supplier or source reference": 4
+  },
+  "approvalCounts": {
+    "needs review": 2434,
+    "approved": 805,
+    "rejected": 134,
+    "restricted": 301,
+    "uncertain": 4
+  },
+  "visibleKSActiveProducts": 14,
+  "visibleKALMMoveProducts": 35,
+  "selectedSocialExports": 153,
+  "generatedIntranetThumbnails": 112,
+  "inventoryRecordCount": 104,
+  "publicAssetManifestLocation": "Google Drive Image Registers (private; not stored in deployable website code)"
+}

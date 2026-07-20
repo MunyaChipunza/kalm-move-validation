@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-07-20T14:57:03+00:00",
+  "driveLibrary": {
+    "root": "https://drive.google.com/drive/folders/14tjk_QqPopeu85bKqxeDucWrboUFWGBX",
+    "imageRegisters": "https://drive.google.com/drive/folders/1XEkMKRMFISKa7opZKSGYJdO7TeZBZJ3Q",
+    "ksActiveProductFolders": 14,
+    "signatureTeeFolder": true
+  },
+  "catalogue": {
+    "visibleKSActiveProducts": 14,
+    "visibleKALMMoveProducts": 35,
+    "exactInventorySkuMatches": 104
+  },
+  "derivatives": {
+    "socialExports": 153,
+    "intranetThumbnails": 112,
+    "contactSheetSha256": "0141A83D0068B17D62F067BC56A40CBF188E628EDA50F62580525483DD53C105"
+  },
+  "checks": {
+    "noCommercialFieldsChanged": {
+      "status": "pass"
+    },
+    "exactSkuMappingOnly": {
+      "status": "pass",
+      "count": 104
+    },
+    "frontViewPreferredForInventory": {
+      "status": "pass"
+    },
+    "publicImageManifestKeptOutOfDeployableCode": {
+      "status": "pass"
+    },
+    "intranetTypeScript": {
+      "status": "pass"
+    },
+    "zohoImageAttachments": {
+      "status": "blocked",
+      "reason": "Current Chrome bridge has no file-upload primitive; no unverified update made."
+    },
+    "intranetPreview": {
+      "status": "blocked",
+      "reason": "Vite watcher receives EINVAL from the Google Drive dependency tree; no production intranet change made."
+    },
+    "production": {
+      "status": "unchanged"
+    }
+  }
+}
