@@ -1146,17 +1146,6 @@ button {
   object-fit: cover;
 }
 
-.signature-tee-grid {
-  grid-column: 1 / -1;
-  margin: 0;
-  padding: 28px 42px 42px;
-  background: #fff;
-}
-
-.signature-tee-grid .product-card {
-  max-width: 360px;
-}
-
 .move-launch-copy,
 .move-launch-hero > div {
   display: grid;
@@ -2621,10 +2610,6 @@ body.lightbox-open {
   .signature-tee-images img {
     min-height: 0;
     aspect-ratio: 4 / 5;
-  }
-
-  .signature-tee-grid {
-    padding: 18px;
   }
 
   .hero-shell {

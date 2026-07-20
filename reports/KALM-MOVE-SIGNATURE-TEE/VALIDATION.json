@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-20T12:08:12.039Z",
+  "generatedAt": "2026-07-20T12:54:09.531Z",
   "branch": "codex/kalm-move-signature-tee-merchandising-20260720",
   "sourceMaster": "91511c00c080dd7b6148df950191af525316a297",
   "previewOnly": true,
   "passed": true,
-  "checkCount": 18,
+  "checkCount": 19,
   "checks": [
     {
       "name": "Signature Tee record exists once",
@@ -37,14 +37,19 @@
       "detail": "feature renderer is immediate and precedes product rails"
     },
     {
-      "name": "homepage feature carries approved content and model imagery",
+      "name": "homepage feature carries mixed-gender model imagery without a duplicate product card",
       "passed": true,
-      "detail": "approved feature content present"
+      "detail": "Black uses the male model; White uses the approved female model; no redundant card follows the feature"
     },
     {
-      "name": "KALM Move page leads with the available tee",
+      "name": "KALM Move page leads with the available tee without redundant explanatory copy",
       "passed": true,
-      "detail": "available-now section precedes the launching-soon grid"
+      "detail": "available-now section precedes the launching-soon grid with concise merchandising"
+    },
+    {
+      "name": "KALM Move Men ranks the purchasable Tee before Launching Soon products",
+      "passed": true,
+      "detail": "Men’s default featured order prioritises available-now KALM Move product(s)"
     },
     {
       "name": "PDP breadcrumb and brand route lead to KALM Move",
@@ -77,9 +82,9 @@
       "detail": "20 KS Active records"
     },
     {
-      "name": "Paystack, courier and checkout implementation are untouched",
+      "name": "Paystack, courier and checkout implementation are untouched by this correction",
       "passed": true,
-      "detail": "index.html, merchandising.js, netlify.toml, products.json, reports/KALM-MOVE-LAUNCHING-SOON/COMMERCE-LOCK-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/DEMAND-DASHBOARD-BASELINE.json, reports/KALM-MOVE-LAUNCHING-SOON/HOMEPAGE-ORDER-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/KALM-MOVE-CATALOGUE-AUDIT.json, reports/KALM-MOVE-LAUNCHING-SOON/KS-ACTIVE-COLLECTION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-HERO-SPACING-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-LOGO-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/NAVIGATION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/PRICE-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/PRODUCT-BADGE-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/RESPONSIVE-QA.json, reports/KALM-MOVE-LAUNCHING-SOON/WISHLIST-VALIDATION.json, reports/KALM-MOVE-SIGNATURE-TEE/CHANGE-REGISTER.md, reports/KALM-MOVE-SIGNATURE-TEE/INTERNAL-ODO-BRAND-MAPPING.md, reports/KALM-MOVE-SIGNATURE-TEE/SCREENSHOT-INDEX.md, reports/KALM-MOVE-SIGNATURE-TEE/VALIDATION.json, reports/KALM-MOVE-SIGNATURE-TEE/WEBSITE-AUDIT.md, reports/KALM-MOVE-SIGNATURE-TEE/screenshots/before-production-home-desktop-1440x1000.png, reports/KALM-MOVE-SIGNATURE-TEE/screenshots/before-production-tee-desktop-1440x1000.png, script.js, styles.css, tools/build-kalm-move-launching-soon-reports.mjs, tools/validate-kalm-commercial-hierarchy.mjs, tools/validate-kalm-mobile-visual-correction.mjs, tools/validate-kalm-move-launching-soon.mjs, tools/validate-kalm-move-signature-tee-merchandising.mjs, tools/validate-kalm-odo-pilot.mjs, tools/validate-kalm-signature-tee-release.mjs, tools/validate-rejected-assets.mjs"
+      "detail": "reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/HOMEPAGE-ORDER-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/KS-ACTIVE-COLLECTION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/NAVIGATION-VALIDATION.json, reports/KALM-MOVE-SIGNATURE-TEE/VALIDATION.json, script.js, styles.css, tools/validate-kalm-move-signature-tee-merchandising.mjs"
     },
     {
       "name": "review reports are blocked from public Netlify paths",

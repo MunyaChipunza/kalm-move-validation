@@ -623,7 +623,9 @@ function renderHome({ preserveHero = false } = {}) {
 function renderSignatureTeeFeature(product) {
   if (!product) return "";
   const blackImage = getVariantImage(product, "Black") || product.image;
-  const whiteImage = getVariantImage(product, "White") || product.image;
+  const whiteImage = (product.variantImages?.White?.gallery || []).find((image) => /female-front\./i.test(image))
+    || getVariantImage(product, "White")
+    || product.image;
   const productHref = productRoute(product, "Black");
   return `
     <section class="signature-tee-feature" aria-labelledby="signature-tee-heading">
@@ -644,9 +646,6 @@ function renderSignatureTeeFeature(product) {
         <a href="${productRoute(product, "White")}" aria-label="Shop the White KALM Signature Oversized Tee">
           <img src="${escapeHtml(whiteImage)}" alt="Adult female model wearing the White KALM Signature Oversized Tee" width="1200" height="1500" fetchpriority="high" decoding="async">
         </a>
-      </div>
-      <div class="signature-tee-grid product-grid" aria-label="KALM Move Signature Tee product grid">
-        ${renderProductCard(product, { eager: true, displayColour: "Black" })}
       </div>
     </section>
   `;
@@ -775,6 +774,13 @@ function renderShop(params = new URLSearchParams()) {
   let displayEntries = configuredEntries.length
     ? configuredEntries.filter(({ product, color: displayColour }) => filteredProducts.some((item) => item.id === product.id) && (color === "all" || color === displayColour))
     : filteredProducts.map((product) => ({ product, color: getDefaultColor(product) }));
+  if (brand === "kalm-move" && audience === "men" && sort === "featured" && !configuredEntries.length) {
+    displayEntries.sort((left, right) => {
+      const availabilityOrder = Number(isKalmMoveAvailableNowProduct(right.product)) - Number(isKalmMoveAvailableNowProduct(left.product));
+      if (availabilityOrder) return availabilityOrder;
+      return (left.product.kalmMovePriority || Number.MAX_SAFE_INTEGER) - (right.product.kalmMovePriority || Number.MAX_SAFE_INTEGER);
+    });
+  }
   if (sort !== "featured") {
     const byProduct = new Map(displayEntries.map((entry) => [entry.product.id, entry]));
     displayEntries = sortProducts(displayEntries.map((entry) => entry.product), sort).map((product) => byProduct.get(product.id)).filter(Boolean);
@@ -818,7 +824,7 @@ function renderShop(params = new URLSearchParams()) {
             <select name="brand">
               <option value="all">Available and Launching Soon</option>
               <option value="ks-active" ${brand === "ks-active" ? "selected" : ""}>KS Active</option>
-              <option value="kalm-move" ${brand === "kalm-move" ? "selected" : ""}>KALM Move — Launching Soon</option>
+              <option value="kalm-move" ${brand === "kalm-move" ? "selected" : ""}>KALM Move</option>
             </select>
           </label>
           <label>Category
@@ -1032,7 +1038,6 @@ function renderKalmMoveLaunchCollection(brand) {
         <div>
           <p class="eyebrow">AVAILABLE NOW</p>
           <h2 id="kalm-move-available-now-title">KALM Signature Oversized Tee</h2>
-          <p class="section-copy">The first available piece from KALM Move. A premium oversized unisex tee in Black and White, finished with KALM’s signature embroidered emblem.</p>
         </div>
         ${availableNowProducts[0] ? `<a class="button primary" href="${productRoute(availableNowProducts[0], "Black")}">SHOP NOW</a>` : ""}
       </div>
