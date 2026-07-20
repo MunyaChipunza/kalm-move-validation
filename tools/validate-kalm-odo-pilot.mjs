@@ -32,7 +32,7 @@ const rejectedNames = [
 
 check("product exists", Boolean(product), "KALM-TEE-SIGNATURE-001");
 check("approved identity", product?.title === "KALM Signature Oversized Tee" && product?.slug === "kalm-signature-oversized-tee", `${product?.title} / ${product?.slug}`);
-check("brand and price", product?.brand === "KALM Collective" && product?.price === 699 && product?.currency === "ZAR", `R${product?.price} ${product?.currency}`);
+check("brand, umbrella and price", product?.brand === "KALM Move" && product?.parentBrand === "KALM Collective" && product?.price === 699 && product?.currency === "ZAR", `KALM Move / R${product?.price} ${product?.currency}`);
 check("approved colours and sizes", JSON.stringify(product?.colors) === JSON.stringify(["Black", "White"]) && JSON.stringify(product?.sizes) === JSON.stringify(["S", "M", "L", "XL", "2XL"]), `${product?.colors?.join(", ")} / ${product?.sizes?.join(", ")}`);
 check("ten standard commerce variants", product?.variants?.length === 10 && product?.variants?.every((variant) => variant.quantity === null && variant.availability === "in_stock" && variant.enabled === true), `${product?.variants?.length || 0} variants`);
 check("black and white galleries each have thirteen assets", product?.variantImages?.Black?.gallery?.length === 13 && product?.variantImages?.White?.gallery?.length === 13, `${product?.variantImages?.Black?.gallery?.length || 0} black / ${product?.variantImages?.White?.gallery?.length || 0} white`);

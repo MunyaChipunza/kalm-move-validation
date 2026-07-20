@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-15T19:34:25.358Z",
-  "branch": "codex/kalm-move-launching-soon-preview-20260715",
+  "generatedAt": "2026-07-20T11:27:08.250Z",
+  "branch": "codex/kalm-move-signature-tee-merchandising-20260720",
   "previewOnly": true,
   "protectedReleaseCommit": "53e3dd3bbdd15ebec6ddcf3a0418d8da6ae23c04",
   "browserEvidence": {
@@ -8,7 +8,7 @@
     "mobileHomepage": "reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-MOBILE.png"
   },
   "checks": {
-    "searchSeparatesPurchasableKsActiveFromMovePreview": true,
+    "searchSeparatesPurchasableProductsFromMovePreview": true,
     "kalmMoveWishlistPreserved": true,
     "kalmMoveNotifyPreserved": true,
     "kalmMoveCommerceLockPreserved": true,

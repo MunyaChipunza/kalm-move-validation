@@ -5,18 +5,22 @@ const reportDirectory = new URL("../reports/KALM-MOVE-LAUNCHING-SOON/", import.m
 const products = JSON.parse(await readFile(new URL("products.json", root), "utf8")).products;
 const priceEntries = JSON.parse(await readFile(new URL("data/kalm-move-preview-prices.json", root), "utf8"));
 const prices = new Map(priceEntries.map((entry) => [entry.productId, entry]));
-const moveProducts = products.filter((product) => product.brandId === "kalm-move");
+const allMoveProducts = products.filter((product) => product.brandId === "kalm-move");
+const availableNowProducts = allMoveProducts.filter((product) => product.launchStatus === "available-now");
+const moveProducts = allMoveProducts.filter((product) => product.launchStatus !== "available-now");
 
 await mkdir(reportDirectory, { recursive: true });
 
 const audit = {
   generatedAt: new Date().toISOString(),
   source: "products.json",
-  scope: "Existing KALM Move products only",
-  totalExistingKalmMoveProducts: moveProducts.length,
+  scope: "KALM Move Launching Soon products plus the available-now Signature Tee",
+  totalKalmMoveProducts: allMoveProducts.length,
+  totalExistingLaunchingSoonKalmMoveProducts: moveProducts.length,
+  availableNowKalmMoveProducts: availableNowProducts.length,
   visibleLaunchingSoonProducts: moveProducts.filter((product) => prices.get(product.id)?.status === "launching-soon").length,
   excludedProducts: moveProducts.filter((product) => prices.get(product.id)?.status !== "launching-soon").length,
-  products: moveProducts.map((product) => {
+  products: allMoveProducts.map((product) => {
     const price = prices.get(product.id) || null;
     return {
       currentProductId: product.id,
@@ -29,9 +33,9 @@ const audit = {
       currentPrice: product.price,
       currentPurchasability: !product.comingSoon && product.availability !== "coming_soon",
       currentPublicRoute: `/products/${product.slug}`,
-      proposedNewPrice: price?.price ?? null,
-      previewCategory: price?.category ?? null,
-      previewStatus: price?.status ?? "missing-price-mapping",
+      proposedNewPrice: price?.price ?? product.price,
+      previewCategory: price?.category ?? product.category,
+      previewStatus: price?.status ?? (product.launchStatus === "available-now" ? "available-now" : "missing-price-mapping"),
       excludedReason: price?.exclusionReason ?? null
     };
   })
@@ -66,4 +70,4 @@ const demandDashboardBaseline = {
 
 await writeFile(new URL("KALM-MOVE-CATALOGUE-AUDIT.json", reportDirectory), `${JSON.stringify(audit, null, 2)}\n`);
 await writeFile(new URL("DEMAND-DASHBOARD-BASELINE.json", reportDirectory), `${JSON.stringify(demandDashboardBaseline, null, 2)}\n`);
-console.log(`Created KALM Move catalogue audit for ${audit.totalExistingKalmMoveProducts} existing products.`);
+console.log(`Created KALM Move catalogue audit for ${audit.totalKalmMoveProducts} KALM Move products.`);

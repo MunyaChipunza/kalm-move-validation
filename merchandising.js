@@ -16,6 +16,11 @@ const ksActiveArchive = [
   { productSlug: "ks-active-racer-knit-bra", displayColour: "Dark Green" }
 ];
 
+const kalmMoveSignatureTee = {
+  productSlug: "kalm-signature-oversized-tee",
+  displayColour: "Black"
+};
+
 window.KALM_MERCHANDISING = {
   version: "2026-07-15-ks-active-first-preview",
   campaigns: {
@@ -31,6 +36,7 @@ window.KALM_MERCHANDISING = {
     }
   },
   homepage: {
+    signatureTee: kalmMoveSignatureTee,
     featuredKsActive: [
       ksActiveArchive[0],
       ksActiveArchive[1],

@@ -1080,6 +1080,83 @@ button {
   color: #fff;
 }
 
+.signature-tee-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) repeat(2, minmax(0, 0.65fr));
+  gap: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+  background: #f4f1eb;
+}
+
+.signature-tee-copy {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  padding: clamp(30px, 5vw, 72px);
+}
+
+.signature-tee-copy h2 {
+  max-width: 10ch;
+  margin: 0;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.02;
+}
+
+.signature-tee-copy > p:not(.eyebrow):not(.signature-tee-price) {
+  max-width: 36ch;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.signature-tee-price {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+}
+
+.signature-tee-price strong {
+  font-size: 24px;
+}
+
+.signature-tee-price span {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.signature-tee-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.signature-tee-images a {
+  display: block;
+  min-height: 100%;
+  background: #e9e5de;
+}
+
+.signature-tee-images img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+.signature-tee-grid {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 28px 42px 42px;
+  background: #fff;
+}
+
+.signature-tee-grid .product-card {
+  max-width: 360px;
+}
+
 .move-launch-copy,
 .move-launch-hero > div {
   display: grid;
@@ -2531,6 +2608,23 @@ body.lightbox-open {
   .checkout-layout,
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .signature-tee-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-tee-copy {
+    padding: 32px 20px;
+  }
+
+  .signature-tee-images img {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .signature-tee-grid {
+    padding: 18px;
   }
 
   .hero-shell {

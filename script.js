@@ -547,7 +547,7 @@ function renderHome({ preserveHero = false } = {}) {
   setStructuredData({ type: "website" });
   const featuredKsActive = getMerchandisingEntries(config.homepage?.featuredKsActive).filter(({ product }) => product.brandId === "ks-active");
   const finalPieces = getMerchandisingEntries(config.homepage?.finalPieces).filter(({ product }) => product.brandId === "ks-active");
-  const signatureTee = getPublicProducts().filter((product) => product.id === "KALM-TEE-SIGNATURE-001");
+  const signatureTee = getMerchandisingEntries([config.homepage?.signatureTee || {}]);
   const moveProducts = getPublicProducts().filter(isMoveLaunchingSoonProduct).slice(0, 4);
   const ksActiveHero = config.campaigns?.ksActiveHero || {};
   const moveCampaign = config.campaigns?.kalmMoveTeaser || {};
@@ -571,10 +571,10 @@ function renderHome({ preserveHero = false } = {}) {
       </a>
     </section>`;
 
+  const signatureTeeFeature = renderSignatureTeeFeature(signatureTee[0]?.product || null);
   const sections = `
     ${renderProductRail("SHOP KS ACTIVE", featuredKsActive, collectionRoute("ks-active"), "AVAILABLE NOW", "VIEW THE COLLECTION")}
     ${renderProductRail("FINAL PIECES", finalPieces, collectionRoute("sale"), "KS ACTIVE ARCHIVE", "SHOP THE ARCHIVE")}
-    ${renderProductRail("KALM SIGNATURE TEE", signatureTee, productRoute(signatureTee[0]), "KALM COLLECTIVE", "SHOP THE TEE")}
     ${renderTrustStrip()}
     ${renderMoveLaunchTeaser(moveCampaign, moveProducts)}
     ${renderProductRail("KALM MOVE", moveProducts, "/brand/kalm-move", "LAUNCHING SOON", "EXPLORE KALM MOVE")}
@@ -602,18 +602,54 @@ function renderHome({ preserveHero = false } = {}) {
   if (preserveHero) {
     const initialHero = app.querySelector(".hero-shell");
     if (initialHero) {
+      if (!app.querySelector(".signature-tee-feature")) {
+        app.insertAdjacentHTML("beforeend", signatureTeeFeature);
+        hydrateDeferredImages(app);
+      }
       scheduleHomeSections(sections);
     } else {
-      app.innerHTML = `${hero}${sections}`;
+      app.innerHTML = `${hero}${signatureTeeFeature}${sections}`;
       bindNetlifyForms(app);
       hydrateDeferredImages(app);
     }
   } else {
     clearHomeSectionSchedule();
-    app.innerHTML = `${hero}${sections}`;
+    app.innerHTML = `${hero}${signatureTeeFeature}${sections}`;
     bindNetlifyForms(app);
     hydrateDeferredImages(app);
   }
+}
+
+function renderSignatureTeeFeature(product) {
+  if (!product) return "";
+  const blackImage = getVariantImage(product, "Black") || product.image;
+  const whiteImage = getVariantImage(product, "White") || product.image;
+  const productHref = productRoute(product, "Black");
+  return `
+    <section class="signature-tee-feature" aria-labelledby="signature-tee-heading">
+      <div class="signature-tee-copy">
+        <p class="eyebrow">KALM MOVE</p>
+        <h2 id="signature-tee-heading">THE SIGNATURE TEE</h2>
+        <p>An oversized everyday essential in Black and White, finished with KALM’s embroidered signature emblem.</p>
+        <p class="signature-tee-price"><strong>${formatPrice(product.price)}</strong><span>Black and White</span></p>
+        <div class="hero-actions">
+          <a class="button primary" href="${productHref}">SHOP THE SIGNATURE TEE</a>
+          <a class="button secondary" href="/brand/kalm-move">EXPLORE KALM MOVE</a>
+        </div>
+      </div>
+      <div class="signature-tee-images" aria-label="KALM Signature Oversized Tee in Black and White">
+        <a href="${productHref}" aria-label="Shop the Black KALM Signature Oversized Tee">
+          <img src="${escapeHtml(blackImage)}" alt="Adult male model wearing the Black KALM Signature Oversized Tee" width="1200" height="1500" fetchpriority="high" decoding="async">
+        </a>
+        <a href="${productRoute(product, "White")}" aria-label="Shop the White KALM Signature Oversized Tee">
+          <img src="${escapeHtml(whiteImage)}" alt="Adult female model wearing the White KALM Signature Oversized Tee" width="1200" height="1500" fetchpriority="high" decoding="async">
+        </a>
+      </div>
+      <div class="signature-tee-grid product-grid" aria-label="KALM Move Signature Tee product grid">
+        ${renderProductCard(product, { eager: true, displayColour: "Black" })}
+      </div>
+    </section>
+  `;
 }
 
 function renderMoveLaunchTeaser(heroCampaign, moveProducts) {
@@ -949,12 +985,12 @@ function renderShopResults(entries, { genericSearch = false } = {}) {
   if (!genericSearch) {
     return `<div class="product-grid">${entries.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>`;
   }
-  const availableNow = entries.filter((entry) => entry.product.brandId === "ks-active");
-  const launchingSoon = entries.filter((entry) => entry.product.brandId === "kalm-move");
+  const availableNow = entries.filter((entry) => entry.product.brandId === "ks-active" || isKalmMoveAvailableNowProduct(entry.product));
+  const launchingSoon = entries.filter((entry) => isMoveLaunchingSoonProduct(entry.product));
   return `
     ${availableNow.length ? `
       <section class="search-result-group" aria-labelledby="available-search-results">
-        <div class="section-head compact-head"><div><p class="eyebrow">AVAILABLE NOW</p><h2 id="available-search-results">KS Active results</h2></div></div>
+        <div class="section-head compact-head"><div><p class="eyebrow">AVAILABLE NOW</p><h2 id="available-search-results">Available products</h2></div></div>
         <div class="product-grid">${availableNow.map((entry, index) => renderProductCard(entry.product, { eager: index < 12, displayColour: entry.color })).join("")}</div>
       </section>` : ""}
     ${launchingSoon.length ? `
@@ -966,13 +1002,16 @@ function renderShopResults(entries, { genericSearch = false } = {}) {
 }
 
 function renderKalmMoveLaunchCollection(brand) {
+  const availableNowProducts = getPublicProducts()
+    .filter(isKalmMoveAvailableNowProduct)
+    .sort((left, right) => (left.kalmMovePriority || Number.MAX_SAFE_INTEGER) - (right.kalmMovePriority || Number.MAX_SAFE_INTEGER));
   const products = getPublicProducts().filter(isMoveLaunchingSoonProduct);
   setDocumentMeta(
     "KALM Move | Launching Soon",
     "A new chapter in movement is coming. Explore KALM Move, save your favourites and be the first to know when it arrives.",
     "/brand/kalm-move"
   );
-  setStructuredData({ type: "collection", title: "KALM Move | Launching Soon", entries: products.map((product) => ({ product, color: getDefaultColor(product) })) });
+  setStructuredData({ type: "collection", title: "KALM Move", entries: [...availableNowProducts, ...products].map((product) => ({ product, color: getDefaultColor(product) })) });
   app.innerHTML = `
     <section class="move-launch-hero">
       <div>
@@ -988,10 +1027,24 @@ function renderKalmMoveLaunchCollection(brand) {
 
     ${renderKalmMoveSubcategories()}
 
+    <section class="section-block move-available-now" aria-labelledby="kalm-move-available-now-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">AVAILABLE NOW</p>
+          <h2 id="kalm-move-available-now-title">KALM Signature Oversized Tee</h2>
+          <p class="section-copy">The first available piece from KALM Move. A premium oversized unisex tee in Black and White, finished with KALM’s signature embroidered emblem.</p>
+        </div>
+        ${availableNowProducts[0] ? `<a class="button primary" href="${productRoute(availableNowProducts[0], "Black")}">SHOP NOW</a>` : ""}
+      </div>
+      <div class="product-grid">
+        ${availableNowProducts.map((product, index) => renderProductCard(product, { eager: index < 4, displayColour: index === 0 ? "Black" : "" })).join("")}
+      </div>
+    </section>
+
     <section id="kalm-move-collection" class="section-block">
       <div class="section-head">
         <div>
-          <p class="eyebrow">KALM Move</p>
+          <p class="eyebrow">LAUNCHING SOON</p>
           <h2>Explore the collection</h2>
         </div>
       </div>
@@ -1169,7 +1222,14 @@ function renderProduct(slug, params = new URLSearchParams()) {
     <section class="product-detail" data-product-scope data-product-id="${product.id}">
       ${comingSoon && !defaultImages.length ? renderComingSoonMedia("product-coming-soon-media") : renderProductGallery(product, defaultImages)}
       <div class="product-info">
-        <a class="eyebrow" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="${escapeHtml(getProductBrandRoute(product))}">${escapeHtml(product.brand)}</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">${escapeHtml(product.title)}</span>
+        </nav>
+        <a class="eyebrow" href="${escapeHtml(getProductBrandRoute(product))}">${escapeHtml(product.brand)}</a>
         <h1>${escapeHtml(product.title)}</h1>
         ${comingSoon ? `
           <div class="coming-soon-detail-status">
@@ -1263,7 +1323,12 @@ function renderProduct(slug, params = new URLSearchParams()) {
       </div>
     </section>
 
-    ${renderProductRail("More from " + product.brand, related, "#/shop?brand=" + product.brandId)}
+    ${renderProductRail(
+      product.brandId === "kalm-move" ? "More from KALM Move" : "More from " + product.brand,
+      related,
+      product.brandId === "kalm-move" ? "/brand/kalm-move" : "#/shop?brand=" + product.brandId,
+      product.brandId === "kalm-move" ? "LAUNCHING SOON" : product.brand
+    )}
     ${renderFooter()}
   `;
   bindNetlifyForms(app);
@@ -1278,6 +1343,7 @@ function renderMoveLaunchingSoonProduct(product, params = new URLSearchParams())
   const defaultColor = product.colors.includes(requestedColor) ? requestedColor : getDefaultColor(product);
   const defaultImages = getVariantImages(product, defaultColor);
   const details = product.features || product.detailBullets || [];
+  const availableNow = getPublicProducts().filter(isKalmMoveAvailableNowProduct).slice(0, 1);
   const related = getPublicProducts().filter((item) => isMoveLaunchingSoonProduct(item) && item.id !== product.id).slice(0, 4);
   setDocumentMeta(
     `${product.title} | KALM Move Launching Soon`,
@@ -1332,7 +1398,8 @@ function renderMoveLaunchingSoonProduct(product, params = new URLSearchParams())
         </div>
       </div>
     </section>
-    ${renderProductRail("More from KALM Move", related, "/brand/kalm-move", "Launching soon")}
+    ${renderProductRail("Available now from KALM Move", availableNow, "/brand/kalm-move", "AVAILABLE NOW", "SHOP NOW")}
+    ${renderProductRail("More from KALM Move", related, "/brand/kalm-move", "LAUNCHING SOON")}
     ${renderFooter()}
   `;
   bindNetlifyForms(app);
@@ -1602,6 +1669,10 @@ function getMovePreviewEntry(product) {
   return product?.brandId === "kalm-move" ? state.movePreviewPrices.get(product.id) || null : null;
 }
 
+function isKalmMoveAvailableNowProduct(product) {
+  return product?.brandId === "kalm-move" && product?.launchStatus === "available-now";
+}
+
 function isMoveLaunchingSoonProduct(product) {
   return getMovePreviewEntry(product)?.status === "launching-soon";
 }
@@ -1627,11 +1698,15 @@ function isComingSoonProduct(product) {
 
 function isProductPublic(product) {
   if (!product) return false;
-  if (!["ks-active", "kalm-move", "kalm-collective"].includes(product.brandId)) return false;
+  if (!["ks-active", "kalm-move"].includes(product.brandId)) return false;
   if (isMovePreviewExcluded(product)) return false;
   const status = product.publicationStatus || "published";
   const visibility = product.visibility || "visible";
   return status === "published" && visibility === "visible";
+}
+
+function getProductBrandRoute(product) {
+  return product?.brandId === "kalm-move" ? "/brand/kalm-move" : `#/brand/${product?.brandId || "kalm-collective"}`;
 }
 
 function getDefaultColor(product) {
@@ -1954,7 +2029,7 @@ function renderProductCard(product, options = {}) {
         ${!product.image ? renderComingSoonMedia("card-coming-soon-media") : `<img ${imageMarkup} ${responsiveAttributes} alt="${escapeAttribute(product.title)}" width="640" height="800" data-product-image>`}
       </a>
       <div class="product-card-body">
-        <a class="product-brand" href="#/brand/${product.brandId}">${escapeHtml(product.brand)}</a>
+        <a class="product-brand" href="${escapeAttribute(getProductBrandRoute(product))}">${escapeHtml(product.brand)}</a>
         <h3><a href="${productHref}">${escapeHtml(product.title)}</a></h3>
         ${comingSoon ? `
           <p class="card-photo-status">${escapeHtml(product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.")}</p>
@@ -2425,6 +2500,8 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
       product.shortDescription,
       product.longDescription,
       product.sku,
+      (product.colors || []).join(" "),
+      (product.sizes || []).join(" "),
       (product.features || []).join(" "),
       (product.specifications || []).map((item) => `${item.label} ${item.value}`).join(" "),
       tags.join(" ")

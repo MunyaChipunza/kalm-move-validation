@@ -14,7 +14,9 @@ const [catalogueText, priceText, script, index, styles, sitemap] = await Promise
 ]);
 const catalogue = JSON.parse(catalogueText);
 const prices = JSON.parse(priceText);
-const moveProducts = catalogue.products.filter((product) => product.brandId === "kalm-move");
+const allMoveProducts = catalogue.products.filter((product) => product.brandId === "kalm-move");
+const availableNowMoveProducts = allMoveProducts.filter((product) => product.launchStatus === "available-now");
+const moveProducts = allMoveProducts.filter((product) => product.launchStatus !== "available-now");
 const priceById = new Map(prices.map((entry) => [entry.productId, entry]));
 const launchEntries = prices.filter((entry) => entry.status === "launching-soon");
 const errors = [];
@@ -29,6 +31,7 @@ const bottleIds = new Set([
 
 expect(moveProducts.length === 34, `Expected 34 KALM Move products, found ${moveProducts.length}.`);
 expect(prices.length === moveProducts.length, "Every existing KALM Move product requires one preview-price audit record.");
+expect(availableNowMoveProducts.length === 1 && availableNowMoveProducts[0]?.id === "KALM-TEE-SIGNATURE-001", "The Signature Tee must be the sole available-now KALM Move product.");
 for (const product of moveProducts) {
   const entry = priceById.get(product.id);
   expect(Boolean(entry), `Missing price record for ${product.id}.`);
@@ -80,15 +83,10 @@ for (const hiddenNav of [">Wellness<", ">Home<", ">Outdoor<", ">Brands<"]) expec
 expect(script.includes('["ks-active", "kalm-move"].includes(product.brandId)'), "Only KS Active and KALM Move may be customer-visible in this preview.");
 expect(!["/collections/wellness", "/collections/home", "/collections/outdoor"].some((route) => sitemap.includes(route)), "Future-brand collection routes must not be public sitemap entries in this preview.");
 expect(styles.includes(".move-launch-teaser") && styles.includes("@media (max-width: 900px)"), "Responsive KALM Move styling is incomplete.");
-const ksChanged = (() => {
-  try {
-    execFileSync("git", ["diff", "--quiet", "master", "--", "products.json"], { cwd: new URL("../", import.meta.url), stdio: "ignore" });
-    return false;
-  } catch {
-    return true;
-  }
-})();
-expect(!ksChanged, "products.json changed; the protected KS Active release must remain unchanged.");
+const baselineCatalogue = JSON.parse(execFileSync("git", ["show", "origin/master:products.json"], { cwd: new URL("../", import.meta.url), encoding: "utf8" }));
+const currentKsActive = catalogue.products.filter((product) => product.brandId === "ks-active");
+const baselineKsActive = baselineCatalogue.products.filter((product) => product.brandId === "ks-active");
+expect(JSON.stringify(currentKsActive) === JSON.stringify(baselineKsActive), "The protected KS Active catalogue must remain unchanged.");
 const staged = execFileSync("git", ["status", "--short"], { cwd: new URL("../", import.meta.url), encoding: "utf8" });
 expect(!staged.includes(".netlify-runtime"), ".netlify-runtime must not be staged or committed.");
 
@@ -101,7 +99,7 @@ const base = {
 const reports = {
   "PRICE-VALIDATION.json": {
     ...base,
-    checks: { existingKalmMoveProducts: moveProducts.length, launchProducts: launchEntries.length, excludedProducts: prices.filter((entry) => entry.status !== "launching-soon").length, bottlesAtR249: [...bottleIds].every((id) => priceById.get(id)?.price === 249), apparelAtOrAboveR599: launchEntries.filter((entry) => !bottleIds.has(entry.productId)).every((entry) => entry.price >= 599), noFromOrExpectedCopy: !moveLaunchSource.includes("from r") && !moveLaunchSource.includes("expected price") }
+    checks: { existingLaunchingSoonKalmMoveProducts: moveProducts.length, availableNowKalmMoveProducts: availableNowMoveProducts.length, launchProducts: launchEntries.length, excludedProducts: prices.filter((entry) => entry.status !== "launching-soon").length, bottlesAtR249: [...bottleIds].every((id) => priceById.get(id)?.price === 249), apparelAtOrAboveR599: launchEntries.filter((entry) => !bottleIds.has(entry.productId)).every((entry) => entry.price >= 599), noFromOrExpectedCopy: !moveLaunchSource.includes("from r") && !moveLaunchSource.includes("expected price") }
   },
   "COMMERCE-LOCK-VALIDATION.json": {
     ...base,

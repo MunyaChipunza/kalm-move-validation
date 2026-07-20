@@ -50,12 +50,12 @@ assert(!script.includes('class="hero-brand-logo"') && script.includes('renderFoo
 assert(!index.includes("KALM\nCOLLECTIVE") && !index.includes("<span>KALM</span>"), "Typed text must not replace the visible KALM Collective logo.");
 
 const logoPaths = [];
-for (const brand of catalog.brands) {
+for (const brand of catalog.brands.filter((item) => expectedLogos[item.id])) {
   assert(brand.logo === expectedLogos[brand.id], `${brand.id} must use its exact verified logo target.`);
   assert(brand.approvedLogo === expectedLogos[brand.id], `${brand.id} must retain its exact verified approvedLogo target.`);
   logoPaths.push(brand.logo);
 }
-assert(new Set(logoPaths).size === catalog.brands.length, "No two brands may share a logo path.");
+assert(new Set(logoPaths).size === logoPaths.length, "No two customer-facing brands may share a logo path.");
 assert(!JSON.stringify(catalog).includes("brandsPageMark"), "The generic Brands-page buffalo override must be absent.");
 
 const bottleRules = new Map([

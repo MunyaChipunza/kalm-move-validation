@@ -39,12 +39,10 @@ const protectedReleaseIsAncestor = (() => {
   }
 })();
 const protectedProductsUnchanged = (() => {
-  try {
-    execFileSync("git", ["diff", "--quiet", `${protectedCommit}..HEAD`, "--", "products.json"], { cwd: root, stdio: "ignore" });
-    return true;
-  } catch {
-    return false;
-  }
+  const baseline = JSON.parse(execFileSync("git", ["show", "origin/master:products.json"], { cwd: root, encoding: "utf8" }));
+  const currentKs = data.products.filter((product) => product.brandId === "ks-active");
+  const baselineKs = baseline.products.filter((product) => product.brandId === "ks-active");
+  return JSON.stringify(currentKs) === JSON.stringify(baselineKs);
 })();
 const moveProductRenderer = script.slice(script.indexOf("function renderMoveLaunchingSoonProduct"), script.indexOf("function renderMoveNotifyForm"));
 const runtimeUnstaged = !runGit("diff", "--cached", "--name-only").split(/\r?\n/).some((path) => path.startsWith(".netlify-runtime/"));
@@ -100,7 +98,7 @@ const reports = {
   "COMMERCIAL-HIERARCHY-VALIDATION.json": {
     ...base,
     checks: {
-      searchSeparatesPurchasableKsActiveFromMovePreview: script.includes("function renderShopResults") && script.includes("KS Active results") && script.includes("KALM Move preview"),
+      searchSeparatesPurchasableProductsFromMovePreview: script.includes("function renderShopResults") && script.includes("Available products") && script.includes("KALM Move preview"),
       kalmMoveWishlistPreserved: script.includes("kalmMoveLaunchWishlist") && script.includes("card_selected_preference"),
       kalmMoveNotifyPreserved: script.includes("kalm-move-launch-interest") && script.includes("NOTIFY ME"),
       kalmMoveCommerceLockPreserved: moveProductRenderer.includes("data-move-wishlist-save") && !moveProductRenderer.includes("data-add-to-bag"),

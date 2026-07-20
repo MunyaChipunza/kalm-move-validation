@@ -15236,10 +15236,13 @@
     },
     {
       "id": "KALM-TEE-SIGNATURE-001",
-      "brand": "KALM Collective",
-      "brandId": "kalm-collective",
-      "collection": "KALM Collective Essentials",
-      "category": "apparel",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "parentBrand": "KALM Collective",
+      "collection": "KALM Move",
+      "category": "Oversized T-shirts",
+      "department": "Move",
+      "gender": "Unisex",
       "type": "Premium oversized unisex T-shirt",
       "audiences": [
         "women",
@@ -15262,9 +15265,14 @@
         "2XL"
       ],
       "stockLabel": "AVAILABLE TO ORDER",
+      "launchStatus": "available-now",
+      "featuredHome": true,
+      "featuredKalmMove": true,
+      "homePriority": 1,
+      "kalmMovePriority": 1,
       "image": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",
-      "description": "A considered oversized essential finished with KALM’s signature embroidered emblem.",
-      "longDescription": "The KALM Signature Oversized Tee is cut in a relaxed unisex silhouette with dropped shoulders, a clean crew neckline and a premium heavyweight feel. Finished with KALM’s signature buffalo emblem embroidered at the chest, it is designed as a versatile everyday essential in black and white.",
+      "description": "A considered oversized essential from KALM Move, finished with KALM’s signature embroidered emblem.",
+      "longDescription": "The KALM Signature Oversized Tee is the first available piece from KALM Move. It is cut in a relaxed unisex silhouette with dropped shoulders and a clean crew neckline, then finished with KALM’s signature embroidered emblem at the chest. Available in Black and White, it is designed as a versatile everyday essential.",
       "detailBullets": [
         "300gsm cotton T-shirt",
         "Oversized unisex fit",
@@ -15280,13 +15288,17 @@
       "tags": [
         "apparel",
         "t-shirt",
-        "kalm-collective",
-        "signature-tee"
+        "kalm-move",
+        "signature-tee",
+        "t-shirts",
+        "unisex",
+        "available-now",
+        "new-in"
       ],
       "badge": null,
       "ctaLabel": "Add to bag",
-      "metaTitle": "KALM Signature Oversized Tee | KALM Collective",
-      "metaDescription": "Shop the KALM Signature Oversized Tee in black and white. A 300gsm oversized unisex cotton T-shirt with KALM’s embroidered chest emblem.",
+      "metaTitle": "KALM Signature Oversized Tee | KALM Move",
+      "metaDescription": "Shop the KALM Signature Oversized Tee from KALM Move. A premium oversized unisex tee with KALM’s embroidered signature emblem, available in Black and White.",
       "variantImages": {
         "Black": {
           "hero": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",

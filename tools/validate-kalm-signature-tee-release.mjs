@@ -17,10 +17,11 @@ const matchingBrand = (catalogue, id) => catalogue.products.filter((item) => ite
 const sameJson = (left, right) => JSON.stringify(left) === JSON.stringify(right);
 
 check("KS Active catalogue unchanged", sameJson(matchingBrand(current, "ks-active"), matchingBrand(baseline, "ks-active")), "Compared against protected pilot base");
-check("KALM Move catalogue unchanged", sameJson(matchingBrand(current, "kalm-move"), matchingBrand(baseline, "kalm-move")), "Compared against protected pilot base");
+check("KALM Move Launching Soon catalogue unchanged", sameJson(matchingBrand(current, "kalm-move").filter((item) => item.id !== "KALM-TEE-SIGNATURE-001"), matchingBrand(baseline, "kalm-move")), "Compared against protected pilot base; the Signature Tee is intentionally customer-facing KALM Move");
 check("KALM Move preview prices unchanged", read("data/kalm-move-preview-prices.json") === execFileSync("git", ["show", "52a0e1d4ddde20b7766a1a4a6b63faa6ac0efcb2:data/kalm-move-preview-prices.json"], { cwd: root, encoding: "utf8" }), "Compared against protected pilot base");
 check("primary navigation unchanged", /KS Active[\s\S]*Archive Sale[\s\S]*KALM Move/.test(index), "KS Active → Archive Sale → KALM Move");
 check("tee uses normal commerce controls", product?.ctaLabel === "Add to bag" && script.includes("data-add-to-bag"), "normal product renderer and bag control");
+check("tee uses KALM Move customer branding", product?.brand === "KALM Move" && product?.brandId === "kalm-move" && product?.parentBrand === "KALM Collective", "customer brand is KALM Move; KALM Collective remains the umbrella");
 check("tee does not display a count", product?.trackInventory === false && product?.variants?.every((variant) => variant.quantity === null), "quantity hidden in public product data");
 check("delivery and returns guidance present", Boolean(product?.deliveryGuidance) && Boolean(product?.returnsGuidance) && Boolean(product?.sizeGuide), "size, delivery and returns properties set");
 check("adult male and female views supplied", ["male-front.webp", "female-front.webp", "male-back.webp", "female-back.webp"].every((name) => ["black", "white"].every((colour) => exists(`assets/images/products/kalm-collective/kalm-signature-oversized-tee/${colour}/${name}`))), "both colours include adult male and female views");

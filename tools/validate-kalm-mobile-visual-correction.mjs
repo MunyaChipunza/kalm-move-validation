@@ -32,8 +32,10 @@ const runGit = (...args) => execFileSync("git", args, { cwd: root, encoding: "ut
 const protectedReleaseRemainsUnchanged = (() => {
   try {
     execFileSync("git", ["merge-base", "--is-ancestor", protectedCommit, "HEAD"], { cwd: root, stdio: "ignore" });
-    execFileSync("git", ["diff", "--quiet", `${protectedCommit}..HEAD`, "--", "products.json"], { cwd: root, stdio: "ignore" });
-    return true;
+    const baseline = JSON.parse(execFileSync("git", ["show", "origin/master:products.json"], { cwd: root, encoding: "utf8" }));
+    const currentKs = catalogue.products.filter((product) => product.brandId === "ks-active");
+    const baselineKs = baseline.products.filter((product) => product.brandId === "ks-active");
+    return JSON.stringify(currentKs) === JSON.stringify(baselineKs);
   } catch {
     return false;
   }

@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-07-20T11:27:24.689Z",
+  "branch": "codex/kalm-move-signature-tee-merchandising-20260720",
+  "sourceMaster": "91511c00c080dd7b6148df950191af525316a297",
+  "previewOnly": true,
+  "passed": true,
+  "checkCount": 17,
+  "checks": [
+    {
+      "name": "Signature Tee record exists once",
+      "passed": true,
+      "detail": "KALM-TEE-SIGNATURE-001"
+    },
+    {
+      "name": "customer-facing brand is KALM Move",
+      "passed": true,
+      "detail": "KALM Move / KALM Collective"
+    },
+    {
+      "name": "name, URL, price, variants, availability, images and embroidery source remain unchanged",
+      "passed": true,
+      "detail": "Compared against master for all non-merchandising commerce and image fields"
+    },
+    {
+      "name": "KALM Move merchandising fields are complete",
+      "passed": true,
+      "detail": "KALM Move / Oversized T-shirts / Move / Unisex"
+    },
+    {
+      "name": "approved PDP copy and SEO are exact",
+      "passed": true,
+      "detail": "PDP description, title and description metadata"
+    },
+    {
+      "name": "homepage feature is immediately after the KS Active hero",
+      "passed": true,
+      "detail": "feature renderer is immediate and precedes product rails"
+    },
+    {
+      "name": "homepage feature carries approved content and model imagery",
+      "passed": true,
+      "detail": "approved feature content present"
+    },
+    {
+      "name": "KALM Move page leads with the available tee",
+      "passed": true,
+      "detail": "available-now section precedes the launching-soon grid"
+    },
+    {
+      "name": "PDP breadcrumb and brand route lead to KALM Move",
+      "passed": true,
+      "detail": "Home / KALM Move / product route support"
+    },
+    {
+      "name": "KALM Move search terms include tee, colour and audience data",
+      "passed": true,
+      "detail": "search source and tee tags cover requested discovery terms"
+    },
+    {
+      "name": "34 Launching Soon KALM Move products remain unchanged",
+      "passed": true,
+      "detail": "34 current / 34 baseline"
+    },
+    {
+      "name": "Launching Soon commerce lock remains scoped to preview products",
+      "passed": true,
+      "detail": "wishlist, notify and bag lock remain present"
+    },
+    {
+      "name": "KS Active catalogue remains unchanged",
+      "passed": true,
+      "detail": "20 KS Active records"
+    },
+    {
+      "name": "Paystack, courier and checkout implementation are untouched",
+      "passed": true,
+      "detail": "merchandising.js, netlify.toml, products.json, reports/KALM-MOVE-LAUNCHING-SOON/COMMERCE-LOCK-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/COMMERCIAL-HIERARCHY-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/DEMAND-DASHBOARD-BASELINE.json, reports/KALM-MOVE-LAUNCHING-SOON/HOMEPAGE-ORDER-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/KALM-MOVE-CATALOGUE-AUDIT.json, reports/KALM-MOVE-LAUNCHING-SOON/KS-ACTIVE-COLLECTION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-HERO-SPACING-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/MOBILE-LOGO-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/NAVIGATION-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/PRICE-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/PRODUCT-BADGE-VALIDATION.json, reports/KALM-MOVE-LAUNCHING-SOON/RESPONSIVE-QA.json, reports/KALM-MOVE-LAUNCHING-SOON/WISHLIST-VALIDATION.json, script.js, styles.css, tools/build-kalm-move-launching-soon-reports.mjs, tools/validate-kalm-commercial-hierarchy.mjs, tools/validate-kalm-mobile-visual-correction.mjs, tools/validate-kalm-move-launching-soon.mjs, tools/validate-kalm-odo-pilot.mjs, tools/validate-kalm-signature-tee-release.mjs, tools/validate-rejected-assets.mjs"
+    },
+    {
+      "name": "review reports are blocked from public Netlify paths",
+      "passed": true,
+      "detail": "Netlify 404 redirect present"
+    },
+    {
+      "name": "task application is not targeted",
+      "passed": true,
+      "detail": "no task-application destination or configuration"
+    },
+    {
+      "name": "tee remains indexable at the same public route",
+      "passed": true,
+      "detail": "sitemap product route unchanged"
+    }
+  ],
+  "failed": []
+}

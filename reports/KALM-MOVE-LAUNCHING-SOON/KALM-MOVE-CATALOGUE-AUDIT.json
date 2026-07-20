@@ -1,8 +1,10 @@
 {
-  "generatedAt": "2026-07-15T14:42:35.559Z",
+  "generatedAt": "2026-07-20T11:18:36.711Z",
   "source": "products.json",
-  "scope": "Existing KALM Move products only",
-  "totalExistingKalmMoveProducts": 34,
+  "scope": "KALM Move Launching Soon products plus the available-now Signature Tee",
+  "totalKalmMoveProducts": 35,
+  "totalExistingLaunchingSoonKalmMoveProducts": 34,
+  "availableNowKalmMoveProducts": 1,
   "visibleLaunchingSoonProducts": 33,
   "excludedProducts": 1,
   "products": [
@@ -1716,7 +1718,7 @@
       "currentPrice": 249,
       "currentPurchasability": true,
       "currentPublicRoute": "/products/kalm-move-training-sock-3-pack",
-      "proposedNewPrice": null,
+      "proposedNewPrice": 249,
       "previewCategory": "Other premium accessories",
       "previewStatus": "excluded-pending-review",
       "excludedReason": "A simple training-sock 3-pack is not priced in the Launching Soon collection until a credible R599 premium-accessory position is approved."
@@ -2241,6 +2243,72 @@
       "proposedNewPrice": 249,
       "previewCategory": "Bottles",
       "previewStatus": "launching-soon",
+      "excludedReason": null
+    },
+    {
+      "currentProductId": "KALM-TEE-SIGNATURE-001",
+      "currentName": "KALM Signature Oversized Tee",
+      "genderOrCollection": "KALM Move",
+      "category": "Premium oversized unisex T-shirt",
+      "currentColours": [
+        "Black",
+        "White"
+      ],
+      "currentSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "currentImages": [
+        "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",
+        "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-front.webp",
+        "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/product-front.webp",
+        "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/embroidery-detail.webp",
+        {
+          "hero": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",
+          "gallery": [
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-front.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/product-front.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-three-quarter.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-three-quarter.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-side.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-side.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-back.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-back.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/product-back.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/flat-lay.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/embroidery-detail.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/fabric-detail.webp"
+          ]
+        },
+        {
+          "hero": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-front.webp",
+          "gallery": [
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-front.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-front.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/product-front.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-three-quarter.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-three-quarter.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-side.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-side.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-back.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-back.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/product-back.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/flat-lay.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/embroidery-detail.webp",
+            "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/fabric-detail.webp"
+          ]
+        }
+      ],
+      "currentPrice": 699,
+      "currentPurchasability": true,
+      "currentPublicRoute": "/products/kalm-signature-oversized-tee",
+      "proposedNewPrice": 699,
+      "previewCategory": "Oversized T-shirts",
+      "previewStatus": "available-now",
       "excludedReason": null
     }
   ]
