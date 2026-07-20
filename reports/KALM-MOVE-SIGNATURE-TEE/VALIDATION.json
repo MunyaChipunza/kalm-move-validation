@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-20T11:43:33.585Z",
+  "generatedAt": "2026-07-20T11:51:47.286Z",
   "branch": "codex/kalm-move-signature-tee-merchandising-20260720",
   "sourceMaster": "91511c00c080dd7b6148df950191af525316a297",
   "previewOnly": true,
   "passed": true,
-  "checkCount": 17,
+  "checkCount": 18,
   "checks": [
     {
       "name": "Signature Tee record exists once",
@@ -54,7 +54,12 @@
     {
       "name": "KALM Move search terms include tee, colour and audience data",
       "passed": true,
-      "detail": "search source and tee tags cover requested discovery terms"
+      "detail": "search source, token matching and tee tags cover requested discovery terms"
+    },
+    {
+      "name": "KALM Move collection CTA preserves its in-page destination",
+      "passed": true,
+      "detail": "explore CTA retains the KALM Move route and collection anchor"
     },
     {
       "name": "34 Launching Soon KALM Move products remain unchanged",

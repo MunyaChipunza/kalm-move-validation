@@ -2491,7 +2491,7 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
     const colorMatch = color === "all" || (product.colors || []).includes(color);
     const availabilityMatch = availability === "all" || getProductAvailability(product) === availability;
     const applianceMatch = appliance === "all" || (product.compatibleAppliances || []).includes(appliance) || product.id === appliance;
-    const searchMatch = !term || [
+    const searchableText = [
       product.title,
       product.brand,
       product.collection,
@@ -2505,7 +2505,8 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
       (product.features || []).join(" "),
       (product.specifications || []).map((item) => `${item.label} ${item.value}`).join(" "),
       tags.join(" ")
-    ].join(" ").toLowerCase().includes(term);
+    ].join(" ").toLowerCase();
+    const searchMatch = !term || term.split(/\s+/).every((token) => searchableText.includes(token));
     return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && sizeMatch && colorMatch && availabilityMatch && applianceMatch && searchMatch;
   });
 }
