@@ -24,29 +24,29 @@ const kalmMoveSignatureTee = {
 const kalmMoveSignatureTeeHero = {
   slides: [
     {
-      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp",
-      alt: "Male and female models wearing the black and white KALM Signature Oversized Tee with the KALM buffalo emblem",
-      position: "center 32%"
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-29d3ffd1-4757-4dde-8add-2e28b2ca2a0b.png",
+      alt: "Two women wearing black and fuchsia KALM Move active sets in a dark modern courtyard",
+      position: "center center"
     },
     {
-      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-three-quarter.webp",
-      alt: "Male model wearing the black KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
-      position: "center 24%"
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-18d64701-4d74-4aac-9056-23d4c881f8f2.png",
+      alt: "Two women wearing sage and black KALM Move active sets outdoors",
+      position: "center center"
     },
     {
-      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-three-quarter.webp",
-      alt: "Female model wearing the black KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
-      position: "center 24%"
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-07e4d8ff-9cbf-4a69-a9d9-4e8e6effb59a.png",
+      alt: "Two men wearing navy and black KALM Move training looks",
+      position: "center center"
     },
     {
-      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-three-quarter.webp",
-      alt: "Male model wearing the white KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
-      position: "center 24%"
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-eb2f6ccd-c6c5-4820-905d-6617763c2043.png",
+      alt: "Two women in black and pink KALM Move looks moving through an urban setting",
+      position: "center center"
     },
     {
-      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-three-quarter.webp",
-      alt: "Female model wearing the white KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
-      position: "center 24%"
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-4b2fbb8b-cf73-4c56-abc7-501b03c4bb51.png",
+      alt: "KALM Move group wearing black, light blue and navy activewear",
+      position: "center center"
     }
   ]
 };
