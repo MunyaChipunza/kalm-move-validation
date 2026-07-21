@@ -7,10 +7,13 @@
     "check:legacy-storefront": "node scripts/check-forbidden-legacy-storefront.mjs --root .",
     "release:preflight": "node tools/kalm-production-release.mjs --mode preflight",
     "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy",
-    "release:verify-controls": "node tools/kalm-production-release.mjs --mode verify-controls"
+    "release:verify-controls": "node tools/kalm-production-release.mjs --mode verify-controls",
+    "release:test-controls": "node tools/kalm-release-control-tests.mjs",
+    "release:validate-workflows": "node tools/validate-workflows.mjs"
   },
   "devDependencies": {
     "netlify-cli": "26.2.0",
-    "playwright": "1.55.0"
+    "playwright": "1.55.0",
+    "yaml": "^2.8.1"
   }
 }

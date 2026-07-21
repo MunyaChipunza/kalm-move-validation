@@ -52,6 +52,13 @@ jobs:
           test -n "$TARGET_DEPLOY_ID"
           node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));if(s.netlifySiteId!==process.env.EXPECTED_NETLIFY_SITE_ID) process.exit(1)"
 
+      - name: Verify selected deployment belongs to storefront site
+        id: target
+        run: |
+          deploy="$(npx --no-install netlify api getSiteDeploy --data "{\"deploy_id\":\"$TARGET_DEPLOY_ID\"}")"
+          node -e "const d=JSON.parse(process.argv[1]);const siteId=d.site_id||d.site?.id;if(siteId!==process.env.EXPECTED_NETLIFY_SITE_ID) process.exit(1);console.log(JSON.stringify({deploy_id:d.id,site_id:siteId,commit_ref:d.commit_ref||d.commit_url||d.title||'unknown'}))" "$deploy" > rollback-target.json
+          echo "deploy_id=$TARGET_DEPLOY_ID" >> "$GITHUB_OUTPUT"
+
       - name: Restore selected production deploy
         id: rollback
         run: >-
@@ -70,6 +77,7 @@ jobs:
             echo "- Requested by: \`${{ github.actor }}\`"
             echo "- Rollback reason: \`${{ inputs.rollback_reason }}\`"
             echo "- Target deploy: \`$TARGET_DEPLOY_ID\`"
+            echo "- Target metadata: \`$(cat rollback-target.json)\`"
             echo "- Rollback result: \`${{ steps.rollback.outcome }}\`"
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -79,4 +87,6 @@ jobs:
         with:
           name: kalm-production-rollback-${{ github.run_id }}
           if-no-files-found: warn
-          path: release/kalm-production-smoke.json
+          path: |
+            release/kalm-production-smoke.json
+            rollback-target.json

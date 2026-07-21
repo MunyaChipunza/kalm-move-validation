@@ -56,6 +56,18 @@ async function hashFile(path) {
   return hashBuffer(await readFile(path));
 }
 
+function stableJson(value) {
+  if (Array.isArray(value)) return `[${value.map(stableJson).join(",")}]`;
+  if (value && typeof value === "object") {
+    return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${stableJson(value[key])}`).join(",")}}`;
+  }
+  return JSON.stringify(value);
+}
+
+function hashObject(value) {
+  return hashBuffer(Buffer.from(stableJson(value), "utf8"));
+}
+
 async function listFiles(directory) {
   const files = [];
   async function visit(current) {
@@ -89,13 +101,27 @@ async function copyCandidate() {
   await rm(publishDir, { recursive: true, force: true });
   await mkdir(publishDir, { recursive: true });
   const allowedDirectories = ["assets", "branding", "data"];
-  const allowedRootExtensions = new Set([".html", ".js", ".css", ".json", ".xml", ".txt", ".toml", ".ico", ".webmanifest"]);
+  const allowedRootFiles = new Set([
+    "404.html",
+    "index.html",
+    "thanks.html",
+    "merchandising.js",
+    "route-bootstrap.js",
+    "script.js",
+    "styles.css",
+    "products.json",
+    "netlify.toml",
+    "robots.txt",
+    "sitemap.xml",
+    "site.webmanifest",
+    "llms.txt"
+  ]);
   for (const name of allowedDirectories) {
     const source = join(root, name);
     if (await exists(source)) await cp(source, join(publishDir, name), { recursive: true });
   }
   for (const entry of await readdir(root, { withFileTypes: true })) {
-    if (!entry.isFile() || !allowedRootExtensions.has(extname(entry.name).toLowerCase())) continue;
+    if (!entry.isFile() || !allowedRootFiles.has(entry.name)) continue;
     await copyFile(join(root, entry.name), join(publishDir, entry.name));
   }
 }
@@ -122,9 +148,8 @@ async function inspectReleaseSentinel(failures) {
   return sentinel;
 }
 
-async function writeBuildSignature(sentinel) {
-  if (!sentinel?.expectedBuildSignature) return;
-  await writeFile(join(publishDir, ".kalm-build-signature.json"), JSON.stringify({ signature: sentinel.expectedBuildSignature, source: "canonical-release-root" }, null, 2) + "\n");
+async function writeBuildSignature(signature) {
+  await writeFile(join(publishDir, ".kalm-build-signature.json"), JSON.stringify(signature, null, 2) + "\n");
 }
 
 async function runForbiddenScanner(directory, label, failures) {
@@ -199,13 +224,6 @@ async function inspectCandidate(failures, sentinel) {
     if (await exists(join(root, item))) functionDirectories.push(item);
   }
   const functionsStatus = functionDirectories.length ? "configured" : "none-configured";
-  const signaturePath = join(publishDir, ".kalm-build-signature.json");
-  try {
-    const signature = JSON.parse(await readFile(signaturePath, "utf8"));
-    assert(signature.signature === sentinel?.expectedBuildSignature, "Publish directory does not contain the expected build signature.", failures);
-  } catch {
-    failures.push("Publish directory is missing a readable build signature.");
-  }
   const catalogue = JSON.parse(await readFile(join(publishDir, "products.json"), "utf8"));
   const products = Array.isArray(catalogue) ? catalogue : catalogue.products;
   assert(Array.isArray(products) && products.length > 0, "Catalogue validation failed: products array is missing.", failures);
@@ -314,7 +332,6 @@ async function validatePreflight() {
   const sourceLegacyScan = await runForbiddenScanner(root, "Source", failures);
   const sourceSeparationScan = await sourceSeparationAssertions(root, failures);
   await copyCandidate();
-  await writeBuildSignature(sentinel);
   const candidate = await inspectCandidate(failures, sentinel);
   const outputLegacyScan = await runForbiddenScanner(publishDir, "Generated output", failures);
   const outputSeparationScan = await sourceSeparationAssertions(publishDir, failures);
@@ -323,6 +340,7 @@ async function validatePreflight() {
   try { routes = await renderedChecks(server.baseUrl, failures, { expectRedirects: true }); }
   finally { await new Promise((resolvePromise) => server.server.close(resolvePromise)); }
   const lockFile = await exists(join(root, "package-lock.json")) ? "package-lock.json" : null;
+  const criticalAssetHash = hashObject(candidate.criticalAssetHashes);
   const manifest = {
     repositoryRemote: git.remote,
     netlifySiteId: expectedNetlifySiteId,
@@ -349,12 +367,25 @@ async function validatePreflight() {
     legacyContentScan: { source: sourceLegacyScan, generatedOutput: outputLegacyScan },
     sourceSeparationScan: { source: sourceSeparationScan, generatedOutput: outputSeparationScan },
     criticalAssetHashes: candidate.criticalAssetHashes,
+    criticalAssetHash,
     approvalEvent: args["approval-event"] || (allowNonProductionBranch ? "non-production validation" : "protected Git release event"),
     previousProductionDeployId: args["previous-deploy"] || "unknown",
     renderedRouteChecks: routes,
     validationStatus: failures.length === 0 ? "pass" : "fail",
     failures
   };
+  const signature = {
+    repository: git.remote,
+    sourceCommitSha: git.head,
+    sourceTreeSha: git.treeSha,
+    expectedNetlifySiteId,
+    productionDomain,
+    buildSignature: sentinel?.expectedBuildSignature || "missing",
+    criticalAssetHash,
+    manifestHash: hashObject({ repositoryRemote: git.remote, commitSha: git.head, treeSha: git.treeSha, criticalAssetHashes: candidate.criticalAssetHashes, requiredRoutes }),
+    githubRunId: process.env.GITHUB_RUN_ID || null
+  };
+  await writeBuildSignature(signature);
   await writeManifest(manifest);
   if (failures.length) throw new Error(`Release preflight failed:\n- ${failures.join("\n- ")}`);
 }
@@ -383,6 +414,23 @@ async function validatePostDeploy() {
       if (args.commit) {
         const signature = await fetch(`${baseUrl}/.kalm-build-signature.json`, { redirect: "manual" });
         assert(signature.status === 200, "Production build signature is not publicly verifiable.", attemptFailures);
+        if (signature.status === 200) {
+          const parsed = await signature.json();
+          assert(parsed.repository === productionRemote, "Production signature repository does not match the canonical repository.", attemptFailures);
+          assert(parsed.sourceCommitSha === args.commit, "Production signature source commit does not match the approved source commit.", attemptFailures);
+          assert(/^[a-f0-9]{40}$/i.test(parsed.sourceTreeSha || ""), "Production signature source tree SHA is missing or invalid.", attemptFailures);
+          assert(parsed.expectedNetlifySiteId === expectedNetlifySiteId, "Production signature Netlify site ID does not match.", attemptFailures);
+          assert(parsed.productionDomain === productionDomain, "Production signature domain does not match.", attemptFailures);
+          assert(parsed.buildSignature === "KALM_CANONICAL_STOREFRONT_RELEASE_V1", "Production signature build signature does not match.", attemptFailures);
+          assert(/^[a-f0-9]{64}$/i.test(parsed.criticalAssetHash || ""), "Production signature critical asset hash is missing or invalid.", attemptFailures);
+          const liveCriticalAssetHashes = {};
+          for (const path of ["/index.html", "/script.js", "/styles.css", "/products.json"]) {
+            const asset = await fetch(`${baseUrl}${path}`, { redirect: "manual" });
+            assert(asset.status === 200, `Production critical asset is missing: ${path}`, attemptFailures);
+            if (asset.status === 200) liveCriticalAssetHashes[path.slice(1)] = hashBuffer(Buffer.from(await asset.arrayBuffer()));
+          }
+          assert(hashObject(liveCriticalAssetHashes) === parsed.criticalAssetHash, "Production critical asset hash does not match the live files.", attemptFailures);
+        }
       }
       const privateReport = await fetch(`${baseUrl}/reports/PRODUCTION-INCIDENT-20260720/RESTORATION.md`, { redirect: "manual" });
       assert(privateReport.status !== 200, "Private report is publicly reachable.", attemptFailures);
@@ -402,8 +450,15 @@ async function verifyControls() {
   const failures = [];
   const workflow = await readFile(resolve(root, ".github/workflows/kalm-production-release.yml"), "utf8");
   const rollbackWorkflow = await readFile(resolve(root, ".github/workflows/kalm-production-rollback.yml"), "utf8");
+  const prWorkflow = await readFile(resolve(root, ".github/workflows/kalm-pr-release-control-validation.yml"), "utf8");
   const sentinel = await inspectReleaseSentinel(failures);
   assert(/push:\s*\n\s*branches:\s*\n\s*-\s*master/.test(workflow), "Release workflow does not automatically trigger on master pushes.", failures);
+  for (const expected of ["assets/**", "branding/**", "data/**", "404.html", "index.html", "thanks.html", "merchandising.js", "route-bootstrap.js", "script.js", "styles.css", "products.json", "netlify.toml", "robots.txt", "sitemap.xml", "site.webmanifest", "llms.txt"]) {
+    assert(workflow.includes(`- "${expected}"`), `Release workflow production path filter is missing: ${expected}`, failures);
+  }
+  for (const prohibited of [".github/", "tools/", "scripts/", "*.md"]) {
+    assert(!workflow.includes(`- "${prohibited}`), `Release workflow production path filter includes release-control or documentation input: ${prohibited}`, failures);
+  }
   assert(workflow.includes("workflow_dispatch:"), "Release workflow does not support explicit release dispatch.", failures);
   assert(workflow.includes("environment:\n      name: production"), "Release workflow does not use the production environment for scoped credentials.", failures);
   assert(workflow.includes("EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8"), "Release workflow does not pin the exact storefront Netlify site ID.", failures);
@@ -411,7 +466,16 @@ async function verifyControls() {
   assert(workflow.includes("restoreSiteDeploy"), "Release workflow does not contain automatic rollback after failed smoke tests.", failures);
   assert(!/production-environment approval/.test(workflow), "Release workflow still describes a second GitHub environment approval.", failures);
   assert(rollbackWorkflow.includes("restoreSiteDeploy"), "Emergency rollback workflow is missing Netlify restoreSiteDeploy.", failures);
+  assert(rollbackWorkflow.includes("getSiteDeploy"), "Emergency rollback workflow does not verify the selected deploy before restoring.", failures);
   assert(rollbackWorkflow.includes("6a58f4cdabe29c0e28697f09"), "Emergency rollback workflow does not preserve the known-good deploy default.", failures);
+  assert(prWorkflow.includes("pull_request:"), "PR validation workflow does not run on pull requests.", failures);
+  assert(prWorkflow.includes("npm ci"), "PR validation workflow does not install pinned dependencies.", failures);
+  assert(prWorkflow.includes("release:validate-workflows"), "PR validation workflow does not validate workflow YAML.", failures);
+  assert(prWorkflow.includes("release:test-controls"), "PR validation workflow does not run deterministic release-control tests.", failures);
+  assert(!prWorkflow.includes("environment:"), "PR validation workflow accesses a GitHub environment.", failures);
+  assert(!prWorkflow.includes("NETLIFY_AUTH_TOKEN"), "PR validation workflow references production Netlify secrets.", failures);
+  assert(!prWorkflow.includes("netlify deploy --prod"), "PR validation workflow can deploy production.", failures);
+  assert(!prWorkflow.includes("restoreSiteDeploy"), "PR validation workflow can restore production deploys.", failures);
   assert(sentinel?.knownGoodBaselineCommit === "91511c00c080dd7b6148df950191af525316a297", "Known-good baseline commit is not recorded.", failures);
   const result = { checkedAt: new Date().toISOString(), validationStatus: failures.length === 0 ? "pass" : "fail", failures };
   await mkdir(resolve(root, "release"), { recursive: true });
