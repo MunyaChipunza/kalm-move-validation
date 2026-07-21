@@ -11,98 +11,6 @@
     "favicon": "assets/branding/kalm-collective/kalm-collective-logo.png",
     "socialPreview": "assets/branding/kalm-collective/kalm-collective-logo.png"
   },
-  "brands": [
-    {
-      "id": "kalm-collective",
-      "name": "KALM Collective",
-      "role": "Signature essentials",
-      "summary": "Considered everyday essentials made for a calm, confident wardrobe.",
-      "heroImage": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp",
-      "tileImage": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp",
-      "logo": "assets/branding/kalm-collective/kalm-collective-logo.png",
-      "slug": "kalm-collective",
-      "approvedLogo": "assets/branding/kalm-collective/kalm-collective-logo.png",
-      "logoAlt": "KALM Collective logo",
-      "description": "Signature wardrobe essentials from KALM Collective.",
-      "categoryLink": "/products/kalm-signature-oversized-tee",
-      "homepageTileImage": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp"
-    },
-    {
-      "id": "ks-active",
-      "name": "KS Active",
-      "role": "Performance activewear",
-      "summary": "Supportive stretch staples for training, errands and everyday movement.",
-      "heroImage": "assets/images/ks-active-hero.webp",
-      "tileImage": "assets/images/ks-active-brand-tile.webp",
-      "logo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
-      "slug": "ks-active",
-      "approvedLogo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
-      "logoAlt": "KS Active logo",
-      "description": "Archive activewear and performance essentials from KALM Collective.",
-      "categoryLink": "#/shop?category=activewear",
-      "homepageTileImage": "assets/images/ks-active-brand-tile.webp"
-    },
-    {
-      "id": "kalm-move",
-      "name": "KALM Move",
-      "role": "Movement essentials",
-      "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
-      "heroImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
-      "tileImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp",
-      "logo": "assets/branding/kalm-move/kalm-move-logo.png",
-      "slug": "kalm-move",
-      "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
-      "logoAlt": "KALM Move logo",
-      "description": "Movement and activewear essentials from KALM Collective.",
-      "categoryLink": "#/shop?category=activewear",
-      "homepageTileImage": "assets/images/recovered/brands-v1/kalm-move-brand-hero-lifestyle-v1.webp"
-    },
-    {
-      "id": "kalm-outdoor",
-      "name": "KALM Outdoor",
-      "role": "Outdoor cooking and living",
-      "summary": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
-      "heroImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
-      "tileImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp",
-      "logo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
-      "slug": "kalm-outdoor",
-      "approvedLogo": "assets/branding/kalm-outdoor/kalm-outdoor-logo.png",
-      "logoAlt": "KALM Outdoor logo",
-      "description": "Original outdoor cooking, patio and open-air living pieces for weekend meals and relaxed hosting.",
-      "categoryLink": "#/shop?category=outdoor",
-      "homepageTileImage": "assets/images/recovered/brands-v1/kalm-outdoor-brand-hero-lifestyle-v1.webp"
-    },
-    {
-      "id": "kalm-wellness",
-      "name": "KALM Wellness",
-      "role": "Wellness accessories",
-      "summary": "Premium studio, recovery and ritual essentials with the plain KALM buffalo mark.",
-      "heroImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
-      "tileImage": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-      "logo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
-      "slug": "kalm-wellness",
-      "approvedLogo": "assets/branding/kalm-wellness/kalm-wellness-logo.png",
-      "logoAlt": "KALM Wellness logo",
-      "description": "Studio, recovery and ritual essentials from KALM Wellness.",
-      "categoryLink": "#/shop?category=wellness",
-      "homepageTileImage": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp"
-    },
-    {
-      "id": "kalm-home",
-      "name": "KALM Home",
-      "role": "Home essentials",
-      "summary": "Clean, tactile pieces for bedrooms, bathrooms and calm daily rituals.",
-      "heroImage": "assets/images/generated/brand-tiles/kalm-home-tile.webp",
-      "tileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp",
-      "logo": "assets/branding/kalm-home/kalm-home-logo.png",
-      "slug": "kalm-home",
-      "approvedLogo": "assets/branding/kalm-home/kalm-home-logo.png",
-      "logoAlt": "KALM Home logo",
-      "description": "Home decor, bedding, storage and living essentials from KALM Collective.",
-      "categoryLink": "#/shop?category=home",
-      "homepageTileImage": "assets/images/generated/kalm-home/white-cotton-bedding-set.webp"
-    }
-  ],
   "categories": [
     {
       "id": "new-in",
@@ -113,21 +21,6 @@
       "id": "activewear",
       "name": "Activewear",
       "image": "assets/images/products/kalm-move/women/open-back-short-romper-v1/blue/front.webp"
-    },
-    {
-      "id": "wellness",
-      "name": "Wellness",
-      "image": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp"
-    },
-    {
-      "id": "home",
-      "name": "Home",
-      "image": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp"
-    },
-    {
-      "id": "outdoor",
-      "name": "Outdoor",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp"
     },
     {
       "id": "sale",
@@ -4307,19 +4200,19 @@
       "ctaLabel": "Add to bag",
       "stockLabel": "Selected sizes available",
       "image": "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/front.webp",
-      "description": "A hooded windbreaker and running short set for light outdoor movement.",
-      "shortDescription": "A hooded windbreaker and running short set for light outdoor movement.",
-      "longDescription": "The Lightweight Windbreaker Set pairs a hooded zip layer with matching running shorts. It is an easy throw-on set for walks, travel days and light outdoor sessions.",
+      "description": "A hooded windbreaker and running short set for light Open-air movement.",
+      "shortDescription": "A hooded windbreaker and running short set for light Open-air movement.",
+      "longDescription": "The Lightweight Windbreaker Set pairs a hooded zip layer with matching running shorts. It is an easy throw-on set for walks, travel days and light Open-air sessions.",
       "features": [
         "Hooded windbreaker jacket",
         "Matching running short",
-        "Light outdoor layer",
+        "Light Open-air layer",
         "Clean gathered waist detail"
       ],
       "detailBullets": [
         "Hooded windbreaker jacket",
         "Matching running short",
-        "Light outdoor layer",
+        "Light Open-air layer",
         "Clean gathered waist detail"
       ],
       "fitNotes": "Relaxed active fit through the jacket with an easy short shape.",
@@ -4351,7 +4244,7 @@
         "assets/images/products/kalm-move/women/lightweight-windbreaker-set/light-blue/back.webp"
       ],
       "metaTitle": "KALM Move Lightweight Windbreaker Set | KALM Move",
-      "metaDescription": "A hooded windbreaker and running short set for light outdoor movement.",
+      "metaDescription": "A hooded windbreaker and running short set for light Open-air movement.",
       "publicationStatus": "published",
       "visibility": "visible",
       "trackInventory": true,
@@ -10321,14 +10214,14 @@
       }
     },
     {
-      "id": "kalm-move-slim-wellness-bottle",
+      "id": "kalm-move-slim-bottle",
       "brand": "KALM Move",
       "brandId": "kalm-move",
       "collection": "KALM Move Accessories",
       "category": "activewear",
       "type": "Bottle",
-      "title": "KALM Move Slim Wellness Bottle",
-      "slug": "kalm-move-slim-wellness-bottle",
+      "title": "KALM Move Slim Bottle",
+      "slug": "kalm-move-slim-bottle",
       "price": 299,
       "compareAtPrice": null,
       "colors": [
@@ -10343,20 +10236,20 @@
       "audience": "women",
       "moveCategory": "accessories",
       "stockLabel": "Available for order",
-      "image": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
-      "description": "A sleek wellness bottle with a slim profile and calm studio finish.",
-      "shortDescription": "A sleek wellness bottle with a slim profile and calm studio finish.",
-      "longDescription": "The Slim Wellness Bottle is a refined accessory for studio sessions, walks and daily routines. Its slim profile keeps the look elegant, while the small buffalo mark keeps the KALM Move identity subtle and premium.",
+      "image": "assets/images/products/kalm-move/bottles-v4/slim-bottle/matte-white/front.webp",
+      "description": "A sleek Studio bottle with a slim profile and calm studio finish.",
+      "shortDescription": "A sleek Studio bottle with a slim profile and calm studio finish.",
+      "longDescription": "The Slim Bottle is a refined accessory for studio sessions, walks and daily routines. Its slim profile keeps the look elegant, while the small buffalo mark keeps the KALM Move identity subtle and premium.",
       "detailBullets": [
         "Slim premium profile",
-        "Soft wellness colour palette",
+        "Soft Studio colour palette",
         "Small buffalo logo",
         "Studio and everyday friendly",
         "Easy add-on accessory"
       ],
       "features": [
         "Slim premium profile",
-        "Soft wellness colour palette",
+        "Soft Studio colour palette",
         "Small buffalo logo",
         "Studio and everyday friendly",
         "Easy add-on accessory"
@@ -10377,41 +10270,41 @@
       "ctaLabel": "Add to bag",
       "variantImages": {
         "Matte White": {
-          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-bottle/matte-white/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp"
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/matte-white/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/matte-white/angle.webp"
           ]
         },
         "Stone": {
-          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-bottle/stone/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/front.webp",
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/stone/angle.webp"
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/stone/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/stone/angle.webp"
           ]
         },
         "Soft Pink": {
-          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-bottle/soft-pink/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/front.webp",
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/soft-pink/angle.webp"
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/soft-pink/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/soft-pink/angle.webp"
           ]
         },
         "Sage": {
-          "hero": "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
+          "hero": "assets/images/products/kalm-move/bottles-v4/slim-bottle/sage/front.webp",
           "gallery": [
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/front.webp",
-            "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/sage/angle.webp"
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/sage/front.webp",
+            "assets/images/products/kalm-move/bottles-v4/slim-bottle/sage/angle.webp"
           ]
         }
       },
       "gallery": [
-        "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/front.webp",
-        "assets/images/products/kalm-move/bottles-v4/slim-wellness-bottle/matte-white/angle.webp"
+        "assets/images/products/kalm-move/bottles-v4/slim-bottle/matte-white/front.webp",
+        "assets/images/products/kalm-move/bottles-v4/slim-bottle/matte-white/angle.webp"
       ],
       "relatedProducts": [],
-      "metaTitle": "KALM Move Slim Wellness Bottle | KALM Move",
-      "metaDescription": "A sleek wellness bottle with a slim profile and calm studio finish.",
+      "metaTitle": "KALM Move Slim Bottle | KALM Move",
+      "metaDescription": "A sleek Studio bottle with a slim profile and calm studio finish.",
       "publicationStatus": "published",
       "visibility": "visible",
       "trackInventory": true,
@@ -10420,10 +10313,10 @@
       "availability": "in_stock",
       "updatedAt": "2026-07-12T19:00:00.000+02:00",
       "updatedBy": "kalm-move-bottles-stage2",
-      "skuRoot": "KALM-MOVE-SLIM-WELLNESS-BOTTLE",
+      "skuRoot": "kalm-move-slim-bottle",
       "variants": [
         {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-MATTE-WHITE-ONE-SIZE",
+          "sku": "kalm-move-slim-bottle-MATTE-WHITE-ONE-SIZE",
           "colour": "Matte White",
           "size": "One size",
           "quantity": null,
@@ -10431,7 +10324,7 @@
           "enabled": true
         },
         {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-STONE-ONE-SIZE",
+          "sku": "kalm-move-slim-bottle-STONE-ONE-SIZE",
           "colour": "Stone",
           "size": "One size",
           "quantity": null,
@@ -10439,7 +10332,7 @@
           "enabled": true
         },
         {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-SOFT-PINK-ONE-SIZE",
+          "sku": "kalm-move-slim-bottle-SOFT-PINK-ONE-SIZE",
           "colour": "Soft Pink",
           "size": "One size",
           "quantity": null,
@@ -10447,7 +10340,7 @@
           "enabled": true
         },
         {
-          "sku": "KALM-MOVE-SLIM-WELLNESS-BOTTLE-SAGE-ONE-SIZE",
+          "sku": "kalm-move-slim-bottle-SAGE-ONE-SIZE",
           "colour": "Sage",
           "size": "One size",
           "quantity": null,
@@ -10620,2169 +10513,6 @@
         "galleryPosition": "50% 50%",
         "background": "#f6f5f2"
       }
-    },
-    {
-      "id": "kalm-outdoor-ember-16-gas-pizza-oven",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Cooking",
-      "category": "outdoor",
-      "type": "Gas Pizza Oven",
-      "title": "Ember 16 Gas Pizza Oven",
-      "slug": "kalm-outdoor-ember-16-gas-pizza-oven",
-      "sku": "KO-EMBER16-GPO-BLK",
-      "price": 7999,
-      "compareAtPrice": null,
-      "colors": [
-        "Matte Black"
-      ],
-      "sizes": [
-        "16 inch"
-      ],
-      "stockLabel": "Available for order",
-      "inventoryStatus": "in-stock",
-      "inventoryQuantity": 24,
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp",
-      "description": "A compact 16-inch gas pizza oven for fast patio dinners, open-air hosting and crisp high-heat cooking.",
-      "shortDescription": "Original 16-inch outdoor gas pizza oven with a refined KALM finish.",
-      "longDescription": "The Ember 16 is designed for weekend pizza nights and compact outdoor kitchens. A dark faceted shell, stone-style cooking deck and simple gas control give it a premium KALM Outdoor profile for patios, garden counters and relaxed hosting.",
-      "detailBullets": [
-        "16-inch stone-style cooking deck",
-        "Single side gas control with visible rear flame path",
-        "Compact freestanding body for patio counters",
-        "Matte black exterior with a subtle KALM buffalo mark",
-        "Designed for pizzas, flatbreads and high-heat roasting"
-      ],
-      "features": [
-        "16-inch deck sized for family pizza nights",
-        "Fast gas-fired cooking with one front control",
-        "Stone-style cooking surface for crisp bases",
-        "Low-profile legs for outdoor counters and tables",
-        "Premium graphite finish with KALM buffalo mark"
-      ],
-      "specifications": [
-        {
-          "label": "Cooking area",
-          "value": "16-inch deck"
-        },
-        {
-          "label": "Fuel type",
-          "value": "Outdoor LPG gas"
-        },
-        {
-          "label": "Body finish",
-          "value": "Matte graphite powder-coated steel"
-        },
-        {
-          "label": "Cooking surface",
-          "value": "Stone-style removable deck"
-        },
-        {
-          "label": "Use case",
-          "value": "Outdoor patios, garden counters and covered braai areas"
-        },
-        {
-          "label": "Included",
-          "value": "Oven body, cooking deck and gas connection point"
-        }
-      ],
-      "fitNotes": "Best for covered patios, outdoor counters and braai areas with ventilation.",
-      "fabric": "Powder-coated steel body, stainless control panel and stone-style cooking deck.",
-      "care": "Use outdoors only. Cool completely before cleaning, brush the deck after use and wipe the exterior with a damp cloth.",
-      "tags": [
-        "new-in",
-        "outdoor",
-        "outdoor-cooking",
-        "pizza-oven",
-        "gas-cooking",
-        "braai"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Matte Black": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-front.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-side.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-lifestyle.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-scene.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ember-16-detail.webp"
-      ],
-      "relatedProducts": [
-        "kalm-outdoor-ember-launch-pro-perforated-peel",
-        "kalm-outdoor-ember-turn-pro-turning-peel",
-        "kalm-outdoor-ember-dough-and-heat-kit",
-        "kalm-outdoor-forge-2-portable-gas-griddle"
-      ],
-      "metaTitle": "Ember 16 Gas Pizza Oven | KALM Outdoor",
-      "metaDescription": "Shop the KALM Outdoor Ember 16, an original 16-inch gas pizza oven for patio cooking and open-air hosting.",
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KO-EMBER16-GPO-BLK",
-      "variants": [
-        {
-          "sku": "KO-EMBER16-GPO-BLK-MATTE-BLACK-16-INCH",
-          "colour": "Matte Black",
-          "size": "16 inch",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-forge-2-portable-gas-griddle",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Cooking",
-      "category": "outdoor",
-      "type": "Portable Gas Griddle",
-      "title": "Forge 2 Portable Gas Griddle",
-      "slug": "kalm-outdoor-forge-2-portable-gas-griddle",
-      "sku": "KO-FORGE2-FTG-BLK",
-      "price": 6499,
-      "compareAtPrice": null,
-      "colors": [
-        "Matte Black"
-      ],
-      "sizes": [
-        "Two burner"
-      ],
-      "stockLabel": "Available for order",
-      "inventoryStatus": "in-stock",
-      "inventoryQuantity": 18,
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp",
-      "description": "A two-burner flat-top gas griddle on a rolling frame for breakfasts, burgers and relaxed outdoor cooking.",
-      "shortDescription": "Original two-burner portable flat-top gas griddle with a refined KALM finish.",
-      "longDescription": "The Forge 2 brings flat-top cooking into the KALM Outdoor range with a clean black frame, stainless cooking plate and folding-friendly silhouette. It is built for breakfasts, burgers, vegetables and casual meals around the patio.",
-      "detailBullets": [
-        "Two independent gas controls",
-        "Raised-edge stainless flat-top cooking plate",
-        "Rolling frame with lower shelf",
-        "Side shelf for prep and plating",
-        "Subtle KALM buffalo mark on the front apron and lid detail"
-      ],
-      "features": [
-        "Twin-burner control for split-zone cooking",
-        "Flat-top plate for eggs, vegetables, steak and smash burgers",
-        "Wheeled frame for patio storage and repositioning",
-        "Lower shelf for pans, condiments and serving pieces",
-        "Matte black KALM Outdoor finish"
-      ],
-      "specifications": [
-        {
-          "label": "Burners",
-          "value": "2 gas zones"
-        },
-        {
-          "label": "Cooking surface",
-          "value": "Flat stainless griddle plate with raised rim"
-        },
-        {
-          "label": "Fuel type",
-          "value": "Outdoor LPG gas"
-        },
-        {
-          "label": "Frame",
-          "value": "Powder-coated wheeled cart with lower shelf"
-        },
-        {
-          "label": "Use case",
-          "value": "Patio breakfasts, burgers, vegetables and casual hosting"
-        },
-        {
-          "label": "Included",
-          "value": "Griddle body, rolling frame, side shelf and gas connection point"
-        }
-      ],
-      "fitNotes": "Designed for patios, balconies and compact outdoor entertainment spaces with ventilation.",
-      "fabric": "Powder-coated steel frame with stainless flat-top cooking plate and metal control hardware.",
-      "care": "Season the cooking plate before first use, clean while warm and store covered when not in use.",
-      "tags": [
-        "new-in",
-        "outdoor",
-        "outdoor-cooking",
-        "griddle",
-        "gas-cooking",
-        "braai"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Matte Black": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-front.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-side.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-lifestyle.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-scene.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-forge-2-detail.webp"
-      ],
-      "relatedProducts": [
-        "kalm-outdoor-forge-pro-griddle-tool-roll",
-        "kalm-outdoor-forge-smash-and-steam-kit",
-        "kalm-outdoor-forge-season-and-care-kit",
-        "kalm-outdoor-ember-16-gas-pizza-oven"
-      ],
-      "metaTitle": "Forge 2 Portable Gas Griddle | KALM Outdoor",
-      "metaDescription": "Shop the KALM Outdoor Forge 2, an original two-burner flat-top gas griddle for patio cooking.",
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KO-FORGE2-FTG-BLK",
-      "variants": [
-        {
-          "sku": "KO-FORGE2-FTG-BLK-MATTE-BLACK-TWO-BURNER",
-          "colour": "Matte Black",
-          "size": "Two burner",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-ridge-4-stainless-gas-braai",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Cooking",
-      "category": "outdoor",
-      "type": "Gas Braai",
-      "title": "Ridge 4 Stainless Gas Braai",
-      "slug": "kalm-outdoor-ridge-4-stainless-gas-braai",
-      "sku": "KO-RIDGE4-GBR-SS",
-      "price": 14999,
-      "compareAtPrice": null,
-      "colors": [
-        "Stainless / Black"
-      ],
-      "sizes": [
-        "Four burner"
-      ],
-      "stockLabel": "Available for order",
-      "inventoryStatus": "in-stock",
-      "inventoryQuantity": 12,
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp",
-      "description": "A four-burner stainless cart gas braai for polished outdoor kitchens, family grilling and weekend hosting.",
-      "shortDescription": "Original stainless four-burner cart gas braai with a refined KALM finish.",
-      "longDescription": "The Ridge 4 anchors the KALM Outdoor Cooking range with a stainless hood, black cart frame and open-air hosting presence. It gives larger patios a polished braai setup for family grilling, weekend prep and outdoor meals.",
-      "detailBullets": [
-        "Four front gas controls",
-        "Stainless hood with integrated thermometer",
-        "Side shelves for prep and serving",
-        "Cart cabinet storage with rolling base",
-        "Stainless and black finish with a subtle KALM buffalo mark"
-      ],
-      "features": [
-        "Four-burner cooking surface for full outdoor meals",
-        "Stainless hood supports covered grilling and heat retention",
-        "Side shelves create practical prep space",
-        "Rolling cart with enclosed cabinet storage",
-        "Premium KALM Outdoor buffalo detailing"
-      ],
-      "specifications": [
-        {
-          "label": "Burners",
-          "value": "4 gas zones"
-        },
-        {
-          "label": "Fuel type",
-          "value": "Outdoor LPG gas"
-        },
-        {
-          "label": "Hood",
-          "value": "Stainless steel with temperature gauge"
-        },
-        {
-          "label": "Cooking setup",
-          "value": "Grill grates, warming rack and enclosed cart storage"
-        },
-        {
-          "label": "Use case",
-          "value": "Outdoor kitchens, patios and family braai areas"
-        },
-        {
-          "label": "Included",
-          "value": "Braai body, cart cabinet, side shelves and gas connection point"
-        }
-      ],
-      "fitNotes": "Best for permanent patio setups, outdoor kitchens and larger braai areas with ventilation.",
-      "fabric": "Stainless steel hood and shelves with powder-coated black cart frame and metal control hardware.",
-      "care": "Brush grates after cooking, empty grease tray regularly and keep covered when stored outside.",
-      "tags": [
-        "new-in",
-        "outdoor",
-        "outdoor-cooking",
-        "gas-braai",
-        "grill",
-        "braai"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Stainless / Black": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-front.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-side.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-lifestyle.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-scene.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-ridge-4-detail.webp"
-      ],
-      "relatedProducts": [
-        "kalm-outdoor-ridge-smart-temperature-system",
-        "kalm-outdoor-ridge-pro-rotisserie-kit",
-        "kalm-outdoor-ridge-cast-iron-sear-system",
-        "kalm-outdoor-ember-16-gas-pizza-oven"
-      ],
-      "metaTitle": "Ridge 4 Stainless Gas Braai | KALM Outdoor",
-      "metaDescription": "Shop the KALM Outdoor Ridge 4, an original stainless four-burner gas braai for premium outdoor hosting.",
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KO-RIDGE4-GBR-SS",
-      "variants": [
-        {
-          "sku": "KO-RIDGE4-GBR-SS-STAINLESS-BLACK-FOUR-BURNER",
-          "colour": "Stainless / Black",
-          "size": "Four burner",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-canvas-utility-tote",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Edit",
-      "category": "outdoor",
-      "type": "Tote",
-      "title": "Canvas Utility Tote",
-      "slug": "kalm-outdoor-canvas-utility-tote",
-      "price": 449,
-      "compareAtPrice": null,
-      "colors": [
-        "Black / Natural"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp",
-      "description": "A structured canvas tote for picnic days, markets and relaxed weekend carry.",
-      "detailBullets": [
-        "Structured canvas body",
-        "Interior slip pocket",
-        "Designed for open-air errands"
-      ],
-      "fitNotes": "One size carry-all.",
-      "fabric": "Heavy canvas with reinforced handles.",
-      "care": "Spot clean with a damp cloth and air dry.",
-      "tags": [
-        "new-in",
-        "outdoor",
-        "bags"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Black / Natural": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-canvas-utility-tote-black-natural.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-OUTDOOR-CANVAS-UTILITY-TOTE",
-      "variants": [
-        {
-          "sku": "KALM-OUTDOOR-CANVAS-UTILITY-TOTE-BLACK-NATURAL-ONE-SIZE",
-          "colour": "Black / Natural",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-weather-ready-picnic-blanket",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Edit",
-      "category": "outdoor",
-      "type": "Blanket",
-      "title": "Weather-Ready Picnic Blanket",
-      "slug": "kalm-outdoor-weather-ready-picnic-blanket",
-      "price": 699,
-      "compareAtPrice": null,
-      "colors": [
-        "Charcoal"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp",
-      "description": "A roll-up picnic blanket with a soft top layer and practical outdoor underside.",
-      "detailBullets": [
-        "Roll-and-carry strap",
-        "Soft woven top",
-        "Outdoor-ready backing"
-      ],
-      "fitNotes": "One size picnic blanket.",
-      "fabric": "Woven acrylic-cotton blend with coated underside.",
-      "care": "Shake off debris and spot clean after use.",
-      "tags": [
-        "outdoor",
-        "picnic"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Charcoal": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-weather-ready-picnic-blanket-charcoal.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-OUTDOOR-WEATHER-READY-PICNIC-BLANKET",
-      "variants": [
-        {
-          "sku": "KALM-OUTDOOR-WEATHER-READY-PICNIC-BLANKET-CHARCOAL-ONE-SIZE",
-          "colour": "Charcoal",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-patio-cushion-pair",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Edit",
-      "category": "outdoor",
-      "type": "Cushions",
-      "title": "Patio Cushion Pair",
-      "slug": "kalm-outdoor-patio-cushion-pair",
-      "price": 549,
-      "compareAtPrice": null,
-      "colors": [
-        "Ivory / Black"
-      ],
-      "sizes": [
-        "Pair"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-main.webp",
-      "description": "A two-piece cushion pair for patio chairs, balcony benches and relaxed outdoor corners.",
-      "detailBullets": [
-        "Two cushions included",
-        "Textured outdoor handle",
-        "Neutral monochrome styling"
-      ],
-      "fitNotes": "Pair of outdoor cushions.",
-      "fabric": "Outdoor-feel woven cover with filled insert.",
-      "care": "Spot clean and store indoors during heavy rain.",
-      "tags": [
-        "outdoor",
-        "patio"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Ivory / Black": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-patio-cushion-pair-ivory-black.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-OUTDOOR-PATIO-CUSHION-PAIR",
-      "variants": [
-        {
-          "sku": "KALM-OUTDOOR-PATIO-CUSHION-PAIR-IVORY-BLACK-PAIR",
-          "colour": "Ivory / Black",
-          "size": "Pair",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-matte-camp-lantern",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Edit",
-      "category": "outdoor",
-      "type": "Lantern",
-      "title": "Matte Camp Lantern",
-      "slug": "kalm-outdoor-matte-camp-lantern",
-      "price": 489,
-      "compareAtPrice": null,
-      "colors": [
-        "Black"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-main.webp",
-      "description": "A compact matte lantern for patio evenings, camping tables and load-shedding backup.",
-      "detailBullets": [
-        "Carry handle",
-        "Matte black finish",
-        "Warm ambient glow"
-      ],
-      "fitNotes": "One size lantern.",
-      "fabric": "Powder-coated metal body with LED light source.",
-      "care": "Wipe clean and keep dry when stored.",
-      "tags": [
-        "outdoor",
-        "lighting"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Black": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-matte-camp-lantern-black.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-OUTDOOR-MATTE-CAMP-LANTERN",
-      "variants": [
-        {
-          "sku": "KALM-OUTDOOR-MATTE-CAMP-LANTERN-BLACK-ONE-SIZE",
-          "colour": "Black",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-insulated-carafe-and-tumbler",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Edit",
-      "category": "outdoor",
-      "type": "Drinkware",
-      "title": "Insulated Carafe and Tumbler Set",
-      "slug": "kalm-outdoor-insulated-carafe-and-tumbler",
-      "price": 399,
-      "compareAtPrice": null,
-      "colors": [
-        "Smoke / Steel"
-      ],
-      "sizes": [
-        "Set"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-main.webp",
-      "description": "A durable drinkware set for garden tables, road trips and slow mornings outside.",
-      "detailBullets": [
-        "Carafe and tumbler",
-        "Outdoor-friendly finish",
-        "Designed for hot or cold drinks"
-      ],
-      "fitNotes": "One drinkware set.",
-      "fabric": "Insulated stainless steel with smoke-finish tumbler.",
-      "care": "Hand wash recommended.",
-      "tags": [
-        "outdoor",
-        "drinkware"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Smoke / Steel": [
-          "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-main.webp",
-        "assets/images/products/kalm-outdoor/kalm-outdoor-insulated-carafe-and-tumbler-smoke-steel.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-OUTDOOR-INSULATED-CARAFE-AND-TUMBLER",
-      "variants": [
-        {
-          "sku": "KALM-OUTDOOR-INSULATED-CARAFE-AND-TUMBLER-SMOKE-STEEL-SET",
-          "colour": "Smoke / Steel",
-          "size": "Set",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-home-white-cotton-bedding-set",
-      "brand": "KALM Home",
-      "brandId": "kalm-home",
-      "collection": "KALM Home Core",
-      "category": "home",
-      "type": "Bedding",
-      "title": "White Cotton Bedding Set",
-      "slug": "kalm-home-white-cotton-bedding-set",
-      "price": 1299,
-      "compareAtPrice": null,
-      "colors": [
-        "White"
-      ],
-      "sizes": [
-        "Double",
-        "Queen",
-        "King"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp",
-      "description": "A crisp white bedding set with a clean hotel feel and easy everyday finish.",
-      "detailBullets": [
-        "Duvet cover and pillowcase set",
-        "Fresh white cotton feel",
-        "Available in core bed sizes"
-      ],
-      "fitNotes": "Select bed size.",
-      "fabric": "Cotton-rich percale feel.",
-      "care": "Machine wash cold, line dry or tumble dry low.",
-      "tags": [
-        "new-in",
-        "home",
-        "bedding"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "White": [
-          "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-main.webp",
-        "assets/images/products/kalm-home/kalm-home-white-cotton-bedding-set-white.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-HOME-WHITE-COTTON-BEDDING-SET",
-      "variants": [
-        {
-          "sku": "KALM-HOME-WHITE-COTTON-BEDDING-SET-WHITE-DOUBLE",
-          "colour": "White",
-          "size": "Double",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-HOME-WHITE-COTTON-BEDDING-SET-WHITE-QUEEN",
-          "colour": "White",
-          "size": "Queen",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-HOME-WHITE-COTTON-BEDDING-SET-WHITE-KING",
-          "colour": "White",
-          "size": "King",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-home-charcoal-bath-towel-stack",
-      "brand": "KALM Home",
-      "brandId": "kalm-home",
-      "collection": "KALM Home Core",
-      "category": "home",
-      "type": "Towels",
-      "title": "Charcoal Bath Towel Stack",
-      "slug": "kalm-home-charcoal-bath-towel-stack",
-      "price": 799,
-      "compareAtPrice": null,
-      "colors": [
-        "Charcoal"
-      ],
-      "sizes": [
-        "Set"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp",
-      "description": "A plush charcoal towel stack for bathrooms, guest suites and gym showers.",
-      "detailBullets": [
-        "Bath sheet, bath towel and hand towel mix",
-        "Deep charcoal colour",
-        "Soft absorbent pile"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "home",
-        "bathroom"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Charcoal": [
-          "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-main.webp",
-        "assets/images/products/kalm-home/kalm-home-charcoal-bath-towel-stack-charcoal.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-HOME-CHARCOAL-BATH-TOWEL-STACK",
-      "variants": [
-        {
-          "sku": "KALM-HOME-CHARCOAL-BATH-TOWEL-STACK-CHARCOAL-SET",
-          "colour": "Charcoal",
-          "size": "Set",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-home-ceramic-mug-pair",
-      "brand": "KALM Home",
-      "brandId": "kalm-home",
-      "collection": "KALM Home Core",
-      "category": "home",
-      "type": "Mugs",
-      "title": "Ceramic Mug Pair",
-      "slug": "kalm-home-ceramic-mug-pair",
-      "price": 299,
-      "compareAtPrice": null,
-      "colors": [
-        "Black / Ivory"
-      ],
-      "sizes": [
-        "Pair"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp",
-      "description": "A matte ceramic mug pair for morning coffee and slow evening tea.",
-      "detailBullets": [
-        "Two mugs included",
-        "Matte ceramic finish",
-        "Neutral mix-and-match colours"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "home",
-        "kitchen"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Black / Ivory": [
-          "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-main.webp",
-        "assets/images/products/kalm-home/kalm-home-ceramic-mug-pair-black-ivory.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-HOME-CERAMIC-MUG-PAIR",
-      "variants": [
-        {
-          "sku": "KALM-HOME-CERAMIC-MUG-PAIR-BLACK-IVORY-PAIR",
-          "colour": "Black / Ivory",
-          "size": "Pair",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-home-woven-storage-basket",
-      "brand": "KALM Home",
-      "brandId": "kalm-home",
-      "collection": "KALM Home Core",
-      "category": "home",
-      "type": "Storage",
-      "title": "Woven Storage Basket",
-      "slug": "kalm-home-woven-storage-basket",
-      "price": 599,
-      "compareAtPrice": null,
-      "colors": [
-        "Natural"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-home/kalm-home-woven-storage-basket-main.webp",
-      "description": "A woven storage basket for throws, towels, toys and everyday living-room organization.",
-      "detailBullets": [
-        "Structured woven body",
-        "Side handles",
-        "Works in living rooms and bedrooms"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "home",
-        "storage"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Natural": [
-          "assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-home/kalm-home-woven-storage-basket-main.webp",
-        "assets/images/products/kalm-home/kalm-home-woven-storage-basket-natural.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-HOME-WOVEN-STORAGE-BASKET",
-      "variants": [
-        {
-          "sku": "KALM-HOME-WOVEN-STORAGE-BASKET-NATURAL-ONE-SIZE",
-          "colour": "Natural",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-home-black-reed-diffuser",
-      "brand": "KALM Home",
-      "brandId": "kalm-home",
-      "collection": "KALM Home Core",
-      "category": "home",
-      "type": "Diffuser",
-      "title": "Black Reed Diffuser",
-      "slug": "kalm-home-black-reed-diffuser",
-      "price": 379,
-      "compareAtPrice": null,
-      "colors": [
-        "Smoke black"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected sizes available",
-      "image": "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp",
-      "description": "A black reed diffuser with a clean silhouette for bathrooms, entries and bedside tables.",
-      "detailBullets": [
-        "Glass vessel",
-        "Black reeds",
-        "Low-maintenance scenting"
-      ],
-      "fitNotes": "Designed for an easy true-to-size fit.",
-      "fabric": "Premium stretch fabric selected for comfort and everyday durability.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "home",
-        "home-fragrance"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Smoke black": [
-          "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
-        ]
-      },
-      "gallery": [
-        "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-main.webp",
-        "assets/images/products/kalm-home/kalm-home-black-reed-diffuser-smoke-black.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-HOME-BLACK-REED-DIFFUSER",
-      "variants": [
-        {
-          "sku": "KALM-HOME-BLACK-REED-DIFFUSER-SMOKE-BLACK-ONE-SIZE",
-          "colour": "Smoke black",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-breathe-mat",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Yoga mat",
-      "title": "Breathe Mat",
-      "slug": "kalm-wellness-breathe-mat",
-      "price": 649,
-      "compareAtPrice": null,
-      "colors": [
-        "Sand",
-        "Stone",
-        "Sage"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-      "description": "A softly textured mat for stretching, Pilates and steady daily movement rituals.",
-      "detailBullets": [
-        "Embedded plain buffalo mark",
-        "Soft-grip textured surface",
-        "Rollable studio-ready format"
-      ],
-      "fitNotes": "One size studio mat.",
-      "fabric": "Textured performance mat surface with a soft-touch finish.",
-      "care": "Wipe clean after use and air dry before rolling.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "studio",
-        "mat"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Sand": "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-        "Stone": "assets/images/products/kalm-wellness/breathe-mat-v2/stone/front.webp",
-        "Sage": "assets/images/products/kalm-wellness/breathe-mat-v2/sage/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/front.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/angle.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/detail.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sand/lifestyle.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/front.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/angle.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/detail.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/stone/lifestyle.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/front.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/angle.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/detail.webp",
-        "assets/images/products/kalm-wellness/breathe-mat-v2/sage/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-BREATHE-MAT",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-BREATHE-MAT-SAND-ONE-SIZE",
-          "colour": "Sand",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-BREATHE-MAT-STONE-ONE-SIZE",
-          "colour": "Stone",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-BREATHE-MAT-SAGE-ONE-SIZE",
-          "colour": "Sage",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-restore-towel",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Towel",
-      "title": "Restore Towel",
-      "slug": "kalm-wellness-restore-towel",
-      "price": 349,
-      "compareAtPrice": null,
-      "colors": [
-        "Oat",
-        "Charcoal",
-        "Dusty Rose"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp",
-      "description": "A soft wellness towel for studio sessions, recovery routines and calm daily use.",
-      "detailBullets": [
-        "Embedded plain buffalo mark",
-        "Soft absorbent hand feel",
-        "Foldable studio and travel format"
-      ],
-      "fitNotes": "One size wellness towel.",
-      "fabric": "Soft absorbent towel weave with tonal embedded mark.",
-      "care": "Cold gentle wash, dry in shade, do not bleach.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "studio",
-        "towel"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Oat": "assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp",
-        "Charcoal": "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/front.webp",
-        "Dusty Rose": "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/restore-towel-v2/oat/front.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/oat/angle.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/oat/detail.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/oat/lifestyle.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/front.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/angle.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/detail.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/charcoal/lifestyle.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/front.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/angle.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/detail.webp",
-        "assets/images/products/kalm-wellness/restore-towel-v2/dusty-rose/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-RESTORE-TOWEL",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-RESTORE-TOWEL-OAT-ONE-SIZE",
-          "colour": "Oat",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-RESTORE-TOWEL-CHARCOAL-ONE-SIZE",
-          "colour": "Charcoal",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-RESTORE-TOWEL-DUSTY-ROSE-ONE-SIZE",
-          "colour": "Dusty Rose",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-ground-bottle",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Bottle",
-      "title": "Ground Bottle",
-      "slug": "kalm-wellness-ground-bottle",
-      "price": 329,
-      "compareAtPrice": null,
-      "colors": [
-        "Soft White",
-        "Olive",
-        "Black"
-      ],
-      "sizes": [
-        "750ml"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp",
-      "description": "A matte hydration bottle with a calm studio profile and subtle buffalo mark.",
-      "detailBullets": [
-        "Embedded plain buffalo mark",
-        "Matte finish",
-        "Daily 750ml carry size"
-      ],
-      "fitNotes": "750ml bottle.",
-      "fabric": "Stainless steel body with a matte powder-coated finish.",
-      "care": "Hand wash recommended.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "hydration"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Soft White": "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp",
-        "Olive": "assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp",
-        "Black": "assets/images/products/kalm-wellness/ground-bottle-v2/black/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/front.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/angle.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/detail.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/soft-white/lifestyle.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/front.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/angle.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/detail.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/olive/lifestyle.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/black/front.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/black/angle.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/black/detail.webp",
-        "assets/images/products/kalm-wellness/ground-bottle-v2/black/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-GROUND-BOTTLE",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-GROUND-BOTTLE-SOFT-WHITE-750ML",
-          "colour": "Soft White",
-          "size": "750ml",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-GROUND-BOTTLE-OLIVE-750ML",
-          "colour": "Olive",
-          "size": "750ml",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-GROUND-BOTTLE-BLACK-750ML",
-          "colour": "Black",
-          "size": "750ml",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-pause-journal",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Journal",
-      "title": "Pause Journal",
-      "slug": "kalm-wellness-pause-journal",
-      "price": 189,
-      "compareAtPrice": null,
-      "colors": [
-        "Oat",
-        "Charcoal",
-        "Blush"
-      ],
-      "sizes": [
-        "A5"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp",
-      "description": "A simple wellness journal for reflection, planning and slower daily rituals.",
-      "detailBullets": [
-        "Debossed plain buffalo mark",
-        "Soft-touch cover",
-        "Compact A5 format"
-      ],
-      "fitNotes": "A5 journal.",
-      "fabric": "Soft-touch cover with paper pages.",
-      "care": "Keep dry and store flat.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "journal"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Oat": "assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp",
-        "Charcoal": "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/front.webp",
-        "Blush": "assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/pause-journal-v2/oat/front.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/oat/angle.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/oat/detail.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/oat/lifestyle.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/front.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/angle.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/detail.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/charcoal/lifestyle.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/blush/front.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/blush/angle.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/blush/detail.webp",
-        "assets/images/products/kalm-wellness/pause-journal-v2/blush/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-PAUSE-JOURNAL",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-PAUSE-JOURNAL-OAT-A5",
-          "colour": "Oat",
-          "size": "A5",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-PAUSE-JOURNAL-CHARCOAL-A5",
-          "colour": "Charcoal",
-          "size": "A5",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-PAUSE-JOURNAL-BLUSH-A5",
-          "colour": "Blush",
-          "size": "A5",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-ritual-set",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Wellness set",
-      "title": "Ritual Set",
-      "slug": "kalm-wellness-ritual-set",
-      "price": 699,
-      "compareAtPrice": null,
-      "colors": [
-        "Natural Oat",
-        "Sage",
-        "Charcoal"
-      ],
-      "sizes": [
-        "Set"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
-      "description": "A compact ritual set for quiet resets, travel routines and considered self-care moments.",
-      "detailBullets": [
-        "Embedded plain buffalo mark",
-        "Coordinated pouch-led set",
-        "Neutral premium wellness finish"
-      ],
-      "fitNotes": "Wellness set.",
-      "fabric": "Mixed wellness accessories in soft textile, matte bottle and natural-feel components.",
-      "care": "Spot clean textile pieces; wipe hard components with a soft cloth.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "ritual",
-        "set"
-      ],
-      "badge": "New in",
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Natural Oat": "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
-        "Sage": "assets/images/products/kalm-wellness/ritual-set-v2/sage/front.webp",
-        "Charcoal": "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/front.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/angle.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/detail.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/natural-oat/lifestyle.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/sage/front.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/sage/angle.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/sage/detail.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/sage/lifestyle.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/front.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/angle.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/detail.webp",
-        "assets/images/products/kalm-wellness/ritual-set-v2/charcoal/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-RITUAL-SET",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-RITUAL-SET-NATURAL-OAT-SET",
-          "colour": "Natural Oat",
-          "size": "Set",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-RITUAL-SET-SAGE-SET",
-          "colour": "Sage",
-          "size": "Set",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-RITUAL-SET-CHARCOAL-SET",
-          "colour": "Charcoal",
-          "size": "Set",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-align-block-set",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Yoga blocks",
-      "title": "Align Block Set",
-      "slug": "kalm-wellness-align-block-set",
-      "price": 429,
-      "compareAtPrice": null,
-      "colors": [
-        "Natural Cork",
-        "Sage",
-        "Charcoal"
-      ],
-      "sizes": [
-        "Set of 2"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
-      "description": "A pair of bevelled alignment blocks for stretching, support and steady studio work.",
-      "detailBullets": [
-        "Embedded plain buffalo mark",
-        "Set of two support blocks",
-        "Bevelled edges for comfortable grip"
-      ],
-      "fitNotes": "Set of 2 blocks.",
-      "fabric": "Natural cork or dense matte foam depending on colour.",
-      "care": "Wipe clean with a damp cloth and dry fully before storing.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "studio",
-        "blocks"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Natural Cork": "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
-        "Sage": "assets/images/products/kalm-wellness/align-block-set-v2/sage/front.webp",
-        "Charcoal": "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/front.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/angle.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/detail.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/natural-cork/lifestyle.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/sage/front.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/sage/angle.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/sage/detail.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/sage/lifestyle.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/front.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/angle.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/detail.webp",
-        "assets/images/products/kalm-wellness/align-block-set-v2/charcoal/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-ALIGN-BLOCK-SET",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-ALIGN-BLOCK-SET-NATURAL-CORK-SET-OF-2",
-          "colour": "Natural Cork",
-          "size": "Set of 2",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-ALIGN-BLOCK-SET-SAGE-SET-OF-2",
-          "colour": "Sage",
-          "size": "Set of 2",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-ALIGN-BLOCK-SET-CHARCOAL-SET-OF-2",
-          "colour": "Charcoal",
-          "size": "Set of 2",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-ease-strap",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Yoga strap",
-      "title": "Ease Strap",
-      "slug": "kalm-wellness-ease-strap",
-      "price": 249,
-      "compareAtPrice": null,
-      "colors": [
-        "Oat",
-        "Sage",
-        "Charcoal"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp",
-      "description": "A woven stretch strap with D-ring hardware for mobility, stretching and alignment work.",
-      "detailBullets": [
-        "Woven plain buffalo mark",
-        "Brushed metal D-rings",
-        "Long strap for assisted stretches"
-      ],
-      "fitNotes": "One size stretch strap.",
-      "fabric": "Thick woven cotton webbing with metal D-ring hardware.",
-      "care": "Spot clean and air dry.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "studio",
-        "strap"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Oat": "assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp",
-        "Sage": "assets/images/products/kalm-wellness/ease-strap-v2/sage/front.webp",
-        "Charcoal": "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/ease-strap-v2/oat/front.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/oat/angle.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/oat/detail.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/oat/lifestyle.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/sage/front.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/sage/angle.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/sage/detail.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/sage/lifestyle.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/front.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/angle.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/detail.webp",
-        "assets/images/products/kalm-wellness/ease-strap-v2/charcoal/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-EASE-STRAP",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-EASE-STRAP-OAT-ONE-SIZE",
-          "colour": "Oat",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-EASE-STRAP-SAGE-ONE-SIZE",
-          "colour": "Sage",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-EASE-STRAP-CHARCOAL-ONE-SIZE",
-          "colour": "Charcoal",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-wellness-centre-pouch",
-      "brand": "KALM Wellness",
-      "brandId": "kalm-wellness",
-      "collection": "KALM Wellness Core",
-      "category": "wellness",
-      "type": "Pouch",
-      "title": "Centre Pouch",
-      "slug": "kalm-wellness-centre-pouch",
-      "price": 229,
-      "compareAtPrice": null,
-      "colors": [
-        "Oat",
-        "Sage",
-        "Charcoal"
-      ],
-      "sizes": [
-        "One size"
-      ],
-      "stockLabel": "Selected colours available",
-      "image": "assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp",
-      "description": "A softly structured pouch for carrying small wellness pieces, studio accessories and daily essentials.",
-      "detailBullets": [
-        "Embroidered plain buffalo mark",
-        "Structured zip pouch",
-        "Compact wellness carry size"
-      ],
-      "fitNotes": "One size pouch.",
-      "fabric": "Woven canvas with zip closure and fabric pull tab.",
-      "care": "Spot clean only and air dry.",
-      "tags": [
-        "new-in",
-        "wellness",
-        "pouch",
-        "accessory"
-      ],
-      "badge": null,
-      "ctaLabel": "Add to bag",
-      "variantImages": {
-        "Oat": "assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp",
-        "Sage": "assets/images/products/kalm-wellness/centre-pouch-v2/sage/front.webp",
-        "Charcoal": "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/front.webp"
-      },
-      "gallery": [
-        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/front.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/angle.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/detail.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/oat/lifestyle.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/front.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/angle.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/detail.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/sage/lifestyle.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/front.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/angle.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/detail.webp",
-        "assets/images/products/kalm-wellness/centre-pouch-v2/charcoal/lifestyle.webp"
-      ],
-      "publicationStatus": "published",
-      "visibility": "visible",
-      "trackInventory": true,
-      "inventoryPolicy": "deny",
-      "lowStockThreshold": 3,
-      "availability": "in_stock",
-      "updatedAt": "2026-07-11T00:00:00.000+02:00",
-      "updatedBy": "catalog-migration",
-      "skuRoot": "KALM-WELLNESS-CENTRE-POUCH",
-      "variants": [
-        {
-          "sku": "KALM-WELLNESS-CENTRE-POUCH-OAT-ONE-SIZE",
-          "colour": "Oat",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-CENTRE-POUCH-SAGE-ONE-SIZE",
-          "colour": "Sage",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        },
-        {
-          "sku": "KALM-WELLNESS-CENTRE-POUCH-CHARCOAL-ONE-SIZE",
-          "colour": "Charcoal",
-          "size": "One size",
-          "quantity": null,
-          "availability": "in_stock",
-          "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "kalm-outdoor-ember-launch-pro-perforated-peel",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory",
-      "title": "Ember Launch Pro Perforated Peel",
-      "slug": "kalm-outdoor-ember-launch-pro-perforated-peel",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Ember 16 accessory planned for pizza launch preparation. Final product details are pending supplier approval.",
-      "longDescription": "Supplier specifications are being confirmed. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
-      "features": [
-        "Supplier approval pending",
-        "Supplier specifications pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "ember-16",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-ember-16-gas-pizza-oven"
-      ],
-      "compatibilityNote": "Planned for the Ember 16 Gas Pizza Oven; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-ember-turn-pro-turning-peel",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory",
-      "title": "Ember Turn Pro Turning Peel",
-      "slug": "kalm-outdoor-ember-turn-pro-turning-peel",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Ember 16 accessory planned for pizza turning. Final product details are pending supplier approval.",
-      "longDescription": "Supplier specifications are being confirmed. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
-      "features": [
-        "Supplier approval pending",
-        "Supplier specifications pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "ember-16",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-ember-16-gas-pizza-oven"
-      ],
-      "compatibilityNote": "Planned for the Ember 16 Gas Pizza Oven; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-ember-dough-and-heat-kit",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory kit",
-      "title": "Ember Dough & Heat Kit",
-      "slug": "kalm-outdoor-ember-dough-and-heat-kit",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Ember 16 accessory kit for pizza preparation and high-heat cooking routines. Final contents and photography are in production.",
-      "longDescription": "Photography, contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ember 16 Gas Pizza Oven.",
-      "features": [
-        "Supplier approval pending",
-        "Final kit contents pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "ember-16",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-ember-16-gas-pizza-oven"
-      ],
-      "compatibilityNote": "Planned for the Ember 16 Gas Pizza Oven; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-ridge-smart-temperature-system",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory system",
-      "title": "Ridge Smart Temperature System",
-      "slug": "kalm-outdoor-ridge-smart-temperature-system",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Ridge 4 temperature-management accessory. Final functionality, specifications, and photography are in production.",
-      "longDescription": "Supplier specifications are being confirmed. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
-      "features": [
-        "Supplier approval pending",
-        "Final functionality pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material and technical specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "ridge-4",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-ridge-4-stainless-gas-braai"
-      ],
-      "compatibilityNote": "Planned for the Ridge 4 Stainless Gas Braai; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-ridge-pro-rotisserie-kit",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory kit",
-      "title": "Ridge Pro Rotisserie Kit",
-      "slug": "kalm-outdoor-ridge-pro-rotisserie-kit",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Ridge 4 rotisserie accessory kit. Final contents, specifications, and photography are in production.",
-      "longDescription": "Photography, kit contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
-      "features": [
-        "Supplier approval pending",
-        "Final kit contents pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "ridge-4",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-ridge-4-stainless-gas-braai"
-      ],
-      "compatibilityNote": "Planned for the Ridge 4 Stainless Gas Braai; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-ridge-cast-iron-sear-system",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory system",
-      "title": "Ridge Cast-Iron Sear System",
-      "slug": "kalm-outdoor-ridge-cast-iron-sear-system",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Ridge 4 sear accessory system. Final components, specifications, and photography are in production.",
-      "longDescription": "Photography, components, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Ridge 4 Stainless Gas Braai.",
-      "features": [
-        "Supplier approval pending",
-        "Final components pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "ridge-4",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-ridge-4-stainless-gas-braai"
-      ],
-      "compatibilityNote": "Planned for the Ridge 4 Stainless Gas Braai; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-forge-pro-griddle-tool-roll",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory",
-      "title": "Forge Pro Griddle Tool Roll",
-      "slug": "kalm-outdoor-forge-pro-griddle-tool-roll",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Forge 2 tool roll for outdoor griddle routines. Final contents and photography are in production.",
-      "longDescription": "Photography, contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Forge 2 Portable Gas Griddle.",
-      "features": [
-        "Supplier approval pending",
-        "Final tool contents pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "forge-2",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-forge-2-portable-gas-griddle"
-      ],
-      "compatibilityNote": "Planned for the Forge 2 Portable Gas Griddle; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-forge-smash-and-steam-kit",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory kit",
-      "title": "Forge Smash & Steam Kit",
-      "slug": "kalm-outdoor-forge-smash-and-steam-kit",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Forge 2 accessory kit for griddle cooking routines. Final contents and photography are in production.",
-      "longDescription": "Photography, kit contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Forge 2 Portable Gas Griddle.",
-      "features": [
-        "Supplier approval pending",
-        "Final kit contents pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "forge-2",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-forge-2-portable-gas-griddle"
-      ],
-      "compatibilityNote": "Planned for the Forge 2 Portable Gas Griddle; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
-    },
-    {
-      "id": "kalm-outdoor-forge-season-and-care-kit",
-      "brand": "KALM Outdoor",
-      "brandId": "kalm-outdoor",
-      "collection": "KALM Outdoor Accessories",
-      "category": "outdoor",
-      "type": "Coming-soon accessory kit",
-      "title": "Forge Season & Care Kit",
-      "slug": "kalm-outdoor-forge-season-and-care-kit",
-      "price": null,
-      "compareAtPrice": null,
-      "colors": [],
-      "sizes": [],
-      "description": "A coming-soon Forge 2 care accessory kit. Final contents, care guidance, and photography are in production.",
-      "longDescription": "Photography, kit contents, and supplier specifications are in production. Join the waitlist for launch information and compatibility confirmation for the Forge 2 Portable Gas Griddle.",
-      "features": [
-        "Supplier approval pending",
-        "Final kit contents pending",
-        "Join the waitlist for launch information"
-      ],
-      "fitNotes": "Compatibility confirmation will be shared before release.",
-      "fabric": "Material specifications are being confirmed.",
-      "care": "Care guidance will be provided with approved product documentation.",
-      "tags": [
-        "outdoor",
-        "outdoor-accessories",
-        "forge-2",
-        "coming-soon"
-      ],
-      "badge": "Coming soon",
-      "ctaLabel": "Join waitlist",
-      "publicationStatus": "draft",
-      "visibility": "hidden",
-      "trackInventory": false,
-      "inventoryPolicy": "deny",
-      "availability": "coming_soon",
-      "comingSoon": true,
-      "photographyStatus": "Photography in production. Product images will be published after supplier approval.",
-      "compatibleAppliances": [
-        "kalm-outdoor-forge-2-portable-gas-griddle"
-      ],
-      "compatibilityNote": "Planned for the Forge 2 Portable Gas Griddle; final compatibility will be confirmed before release.",
-      "updatedAt": "2026-07-12T11:00:00.000+02:00",
-      "updatedBy": "kalm-draft-correction",
-      "imageProvenance": "Locally rendered KALM concept imagery; no supplier photography claim."
     },
     {
       "id": "kalm-move-all-day-straw-tumbler",
@@ -15380,86 +13110,119 @@
       "updatedBy": "kalm-odo-buffalo-pilot",
       "skuRoot": "KALM-TEE-SIGNATURE-001",
       "variants": [
-        { "sku": "KALM-TEE-SIGNATURE-001-BLK-S", "colour": "Black", "size": "S", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-BLK-M", "colour": "Black", "size": "M", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-BLK-L", "colour": "Black", "size": "L", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-BLK-XL", "colour": "Black", "size": "XL", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-BLK-2XL", "colour": "Black", "size": "2XL", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-WHT-S", "colour": "White", "size": "S", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-WHT-M", "colour": "White", "size": "M", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-WHT-L", "colour": "White", "size": "L", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-WHT-XL", "colour": "White", "size": "XL", "quantity": null, "availability": "in_stock", "enabled": true },
-        { "sku": "KALM-TEE-SIGNATURE-001-WHT-2XL", "colour": "White", "size": "2XL", "quantity": null, "availability": "in_stock", "enabled": true }
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-BLK-S",
+          "colour": "Black",
+          "size": "S",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-BLK-M",
+          "colour": "Black",
+          "size": "M",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-BLK-L",
+          "colour": "Black",
+          "size": "L",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-BLK-XL",
+          "colour": "Black",
+          "size": "XL",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-BLK-2XL",
+          "colour": "Black",
+          "size": "2XL",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-WHT-S",
+          "colour": "White",
+          "size": "S",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-WHT-M",
+          "colour": "White",
+          "size": "M",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-WHT-L",
+          "colour": "White",
+          "size": "L",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-WHT-XL",
+          "colour": "White",
+          "size": "XL",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        },
+        {
+          "sku": "KALM-TEE-SIGNATURE-001-WHT-2XL",
+          "colour": "White",
+          "size": "2XL",
+          "quantity": null,
+          "availability": "in_stock",
+          "enabled": true
+        }
       ]
     }
   ],
-  "outdoorBundles": [
+  "labels": [
     {
-      "id": "kalm-outdoor-ember-essential",
-      "title": "Ember Essential",
-      "status": "coming_soon",
-      "compatibleAppliance": "kalm-outdoor-ember-16-gas-pizza-oven",
-      "accessoryIds": [
-        "kalm-outdoor-ember-launch-pro-perforated-peel",
-        "kalm-outdoor-ember-turn-pro-turning-peel"
-      ],
-      "description": "A planned Ember 16 setup roadmap. Final contents, price, availability, and photography are pending."
+      "id": "ks-active",
+      "name": "KS Active",
+      "role": "Performance activewear",
+      "summary": "Supportive stretch staples for training, errands and everyday movement.",
+      "heroImage": "assets/images/ks-active-hero.webp",
+      "tileImage": "assets/images/ks-active-brand-tile.webp",
+      "logo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
+      "slug": "ks-active",
+      "approvedLogo": "assets/branding/ks-active/ks-active-logo-transparent-mono.png",
+      "logoAlt": "KS Active logo",
+      "description": "Archive activewear and performance essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=activewear",
+      "homepageTileImage": "assets/images/ks-active-brand-tile.webp"
     },
     {
-      "id": "kalm-outdoor-pizza-night",
-      "title": "Pizza Night",
-      "status": "coming_soon",
-      "compatibleAppliance": "kalm-outdoor-ember-16-gas-pizza-oven",
-      "accessoryIds": [
-        "kalm-outdoor-ember-launch-pro-perforated-peel",
-        "kalm-outdoor-ember-turn-pro-turning-peel",
-        "kalm-outdoor-ember-dough-and-heat-kit"
-      ],
-      "description": "A planned Ember 16 pizza-night roadmap. Final contents, price, availability, and photography are pending."
-    },
-    {
-      "id": "kalm-outdoor-ridge-precision",
-      "title": "Ridge Precision",
-      "status": "coming_soon",
-      "compatibleAppliance": "kalm-outdoor-ridge-4-stainless-gas-braai",
-      "accessoryIds": [
-        "kalm-outdoor-ridge-smart-temperature-system",
-        "kalm-outdoor-ridge-cast-iron-sear-system"
-      ],
-      "description": "A planned Ridge 4 setup roadmap. Final contents, price, availability, and photography are pending."
-    },
-    {
-      "id": "kalm-outdoor-ridge-host",
-      "title": "Ridge Host",
-      "status": "coming_soon",
-      "compatibleAppliance": "kalm-outdoor-ridge-4-stainless-gas-braai",
-      "accessoryIds": [
-        "kalm-outdoor-ridge-pro-rotisserie-kit",
-        "kalm-outdoor-ridge-cast-iron-sear-system"
-      ],
-      "description": "A planned Ridge 4 hosting roadmap. Final contents, price, availability, and photography are pending."
-    },
-    {
-      "id": "kalm-outdoor-forge-essential",
-      "title": "Forge Essential",
-      "status": "coming_soon",
-      "compatibleAppliance": "kalm-outdoor-forge-2-portable-gas-griddle",
-      "accessoryIds": [
-        "kalm-outdoor-forge-pro-griddle-tool-roll",
-        "kalm-outdoor-forge-season-and-care-kit"
-      ],
-      "description": "A planned Forge 2 setup roadmap. Final contents, price, availability, and photography are pending."
-    },
-    {
-      "id": "kalm-outdoor-forge-burger",
-      "title": "Forge Burger",
-      "status": "coming_soon",
-      "compatibleAppliance": "kalm-outdoor-forge-2-portable-gas-griddle",
-      "accessoryIds": [
-        "kalm-outdoor-forge-pro-griddle-tool-roll",
-        "kalm-outdoor-forge-smash-and-steam-kit"
-      ],
-      "description": "A planned Forge 2 burger roadmap. Final contents, price, availability, and photography are pending."
+      "id": "kalm-move",
+      "name": "KALM Move",
+      "role": "Movement essentials",
+      "summary": "Modern active staples built for calm routines, light training and all-day comfort.",
+      "heroImage": "assets/images/recovered/Labels-v1/kalm-move-brand-hero-lifestyle-v1.webp",
+      "tileImage": "assets/images/recovered/Labels-v1/kalm-move-brand-hero-lifestyle-v1.webp",
+      "logo": "assets/branding/kalm-move/kalm-move-logo.png",
+      "slug": "kalm-move",
+      "approvedLogo": "assets/branding/kalm-move/kalm-move-logo.png",
+      "logoAlt": "KALM Move logo",
+      "description": "Movement and activewear essentials from KALM Collective.",
+      "categoryLink": "#/shop?category=activewear",
+      "homepageTileImage": "assets/images/recovered/Labels-v1/kalm-move-brand-hero-lifestyle-v1.webp"
     }
   ]
 }

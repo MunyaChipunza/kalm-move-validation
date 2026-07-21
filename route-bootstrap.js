@@ -1,10 +1,10 @@
 (() => {
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
   const hash = window.location.hash.replace(/^#/, "");
-  const isHome = (path === "/" || path === "/index.html") && (!hash || hash === "/");
-  document.documentElement.dataset.initialRoute = isHome ? "home" : "non-home";
+  const isLanding = (path === "/" || path === "/index.html") && (!hash || hash === "/");
+  document.documentElement.dataset.initialRoute = isLanding ? "landing" : "non-landing";
   document.documentElement.dataset.routeRendered = "false";
-  if (!isHome) return;
+  if (!isLanding) return;
 
   [
     ["(max-width: 640px)", "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp"],

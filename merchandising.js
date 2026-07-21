@@ -21,8 +21,38 @@ const kalmMoveSignatureTee = {
   displayColour: "Black"
 };
 
+const kalmMoveSignatureTeeHero = {
+  slides: [
+    {
+      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp",
+      alt: "Male and female models wearing the black and white KALM Signature Oversized Tee with the KALM buffalo emblem",
+      position: "center 32%"
+    },
+    {
+      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-three-quarter.webp",
+      alt: "Male model wearing the black KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+      position: "center 24%"
+    },
+    {
+      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-three-quarter.webp",
+      alt: "Female model wearing the black KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+      position: "center 24%"
+    },
+    {
+      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-three-quarter.webp",
+      alt: "Male model wearing the white KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+      position: "center 24%"
+    },
+    {
+      src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-three-quarter.webp",
+      alt: "Female model wearing the white KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+      position: "center 24%"
+    }
+  ]
+};
+
 window.KALM_MERCHANDISING = {
-  version: "2026-07-15-ks-active-first-preview",
+  version: "2026-07-21-kalm-move-signature-tee-rebuild",
   campaigns: {
     ksActiveHero: {
       desktop: "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
@@ -33,7 +63,8 @@ window.KALM_MERCHANDISING = {
       desktop: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp",
       mobile: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp",
       alt: "KALM Move adults sharing a relaxed movement moment outdoors"
-    }
+    },
+    kalmMoveSignatureTeeHero
   },
   homepage: {
     signatureTee: kalmMoveSignatureTee,
