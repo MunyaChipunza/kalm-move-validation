@@ -42,3 +42,8 @@ The runner is implemented and builds locally, but cannot be deployed through the
 ## Secret handling
 
 No passwords, refresh tokens, access tokens, client secrets, Netlify tokens, Google credentials or bearer tokens are printed in reports. The local operator token is stored in Windows Credential Manager under `MUNYA_OPS_RUNNER_TOKEN`; the server copy has not been printed or committed.
+
+## Runtime path repair
+
+Because this Codex runtime inherits C:\CodexTools\document-tools but not always C:\CodexTools\kalm-release, additional wrappers were installed at C:\CodexTools\document-tools\munya-auth.cmd and C:\CodexTools\document-tools\munya-ops.cmd. where.exe munya-auth now resolves inside the active Codex shell.
+
