@@ -21,6 +21,8 @@ const state = {
   moveWishlist: loadMoveWishlist(),
   moveDemandEvents: loadMoveDemandEvents(),
   moveNotifySubmissions: new Set(),
+  moveHeroTimer: null,
+  moveHeroCleanup: null,
   odoPilot: null
 };
 
@@ -44,6 +46,28 @@ const moveCategories = [
   { id: "layers", name: "Jackets & Layers" },
   { id: "jumpsuits-rompers", name: "Jumpsuits & Rompers" },
   { id: "accessories", name: "Accessories" }
+];
+const defaultKalmMoveHeroSlides = [
+  {
+    src: "assets/images/campaigns/kalm-move/generated-20260720/exec-18d64701-4d74-4aac-9056-23d4c881f8f2.png",
+    alt: "Two women wearing sage and black KALM Move active sets outdoors",
+    position: "center center"
+  },
+  {
+    src: "assets/images/campaigns/kalm-move/generated-20260720/exec-07e4d8ff-9cbf-4a69-a9d9-4e8e6effb59a.png",
+    alt: "Two men wearing navy and black KALM Move training looks",
+    position: "center center"
+  },
+  {
+    src: "assets/images/campaigns/kalm-move/generated-20260720/exec-eb2f6ccd-c6c5-4820-905d-6617763c2043.png",
+    alt: "Two women in black and pink KALM Move looks moving through an urban setting",
+    position: "center center"
+  },
+  {
+    src: "assets/images/campaigns/kalm-move/generated-20260720/exec-4b2fbb8b-cf73-4c56-abc7-501b03c4bb51.png",
+    alt: "KALM Move group wearing black, light blue and navy activewear",
+    position: "center center"
+  }
 ];
 let deferredImageObserver = null;
 
@@ -288,25 +312,25 @@ function navigateTo(href, { replace = false } = {}) {
 
 function renderRoute() {
   if (!state.data) return;
+  clearKalmMoveHeroSlideshow();
   if (state.currentRouteKey) state.scrollPositions.set(state.currentRouteKey, window.scrollY);
   const route = getRoute();
   setRouteIndexability(true);
   const routeKey = window.location.hash || `${window.location.pathname}${window.location.search}` || "/";
   const isFirstRoute = !state.hasRenderedRoute;
-  const isHomeRoute = route.path === "/" || route.path === "";
+  const isLandingRoute = route.path === "/" || route.path === "";
   state.hasRenderedRoute = true;
   state.currentRouteKey = routeKey;
-  if (!isHomeRoute) clearHomeSectionSchedule();
+  if (!isLandingRoute) clearHomeSectionSchedule();
   document.documentElement.dataset.routeRendered = "true";
-  document.documentElement.dataset.initialRoute = isHomeRoute ? "home" : "non-home";
+  document.documentElement.dataset.initialRoute = isLandingRoute ? "landing" : "non-landing";
   closeBag();
   nav?.classList.remove("open");
   navToggle?.setAttribute("aria-expanded", "false");
   restoreRouteScroll(route, routeKey);
 
-  if (isHomeRoute) return renderHome();
+  if (isLandingRoute) return renderHome();
   if (route.path === "/shop") return renderShop(route.params);
-  if (route.path === "/brands") return renderBrands();
   if (route.path.startsWith("/brand/")) {
     renderBrand(route.path.split("/").pop());
     scrollToAnchor(route.anchor);
@@ -526,8 +550,8 @@ function scheduleHomeSections(sections) {
     window.removeEventListener("pointerdown", loadSections);
     const route = getRoute();
     if (route.path !== "/" && route.path !== "") return;
-    if (app.querySelector("[data-home-sections]")) return;
-    app.insertAdjacentHTML("beforeend", `<div data-home-sections>${sections}</div>`);
+    if (app.querySelector("[data-landing-sections]")) return;
+    app.insertAdjacentHTML("beforeend", `<div data-landing-sections>${sections}</div>`);
     bindNetlifyForms(app);
     hydrateDeferredImages(app);
   };
@@ -603,18 +627,18 @@ function renderHome({ preserveHero = false } = {}) {
     const initialHero = app.querySelector(".hero-shell");
     if (initialHero) {
       if (!app.querySelector(".signature-tee-feature")) {
-        app.insertAdjacentHTML("beforeend", signatureTeeFeature);
+        app.insertAdjacentHTML("afterbegin", signatureTeeFeature);
         hydrateDeferredImages(app);
       }
       scheduleHomeSections(sections);
     } else {
-      app.innerHTML = `${hero}${signatureTeeFeature}${sections}`;
+      app.innerHTML = `${signatureTeeFeature}${hero}${sections}`;
       bindNetlifyForms(app);
       hydrateDeferredImages(app);
     }
   } else {
     clearHomeSectionSchedule();
-    app.innerHTML = `${hero}${signatureTeeFeature}${sections}`;
+    app.innerHTML = `${signatureTeeFeature}${hero}${sections}`;
     bindNetlifyForms(app);
     hydrateDeferredImages(app);
   }
@@ -622,7 +646,9 @@ function renderHome({ preserveHero = false } = {}) {
 
 function renderSignatureTeeFeature(product) {
   if (!product) return "";
-  const blackImage = getVariantImage(product, "Black") || product.image;
+  const blackImage = (product.variantImages?.Black?.gallery || []).find((image) => /male-front\./i.test(image))
+    || getVariantImage(product, "Black")
+    || product.image;
   const whiteImage = (product.variantImages?.White?.gallery || []).find((image) => /female-front\./i.test(image))
     || getVariantImage(product, "White")
     || product.image;
@@ -729,33 +755,6 @@ function renderProductRail(title, entries, href, eyebrow = "KALM Collective", ct
   `;
 }
 
-function renderOutdoorCookingFeature(products) {
-  if (!products.length) return "";
-  const heroProduct = products[0];
-  return `
-    <section class="outdoor-cooking-band">
-      <a class="outdoor-cooking-media" href="#/product/${heroProduct.slug}">
-        <img src="${transparentPixel}" data-src="${escapeHtml(heroProduct.gallery?.[4] || heroProduct.image)}" alt="${escapeAttribute(heroProduct.title)} outdoor cooking scene" width="1200" height="1500" loading="lazy" decoding="async" fetchpriority="low">
-      </a>
-      <div class="outdoor-cooking-copy">
-        <p class="eyebrow">KALM Outdoor Cooking</p>
-        <h2>Original pieces for open-air meals.</h2>
-        <p>Original gas pizza, flat-top and braai products designed for patio counters, weekend hosting and premium outdoor routines.</p>
-        <a class="button primary" href="#/shop?category=outdoor">Shop outdoor cooking</a>
-      </div>
-      <div class="outdoor-cooking-products">
-        ${products.map((product) => `
-          <a href="#/product/${product.slug}">
-            <img src="${transparentPixel}" data-src="${escapeHtml(product.image)}" alt="${escapeAttribute(product.title)}" width="360" height="450" loading="lazy" decoding="async" fetchpriority="low">
-            <span>${escapeHtml(product.title)}</span>
-            <strong>${formatPrice(product.price)}</strong>
-          </a>
-        `).join("")}
-      </div>
-    </section>
-  `;
-}
-
 function renderShop(params = new URLSearchParams()) {
   const brand = params.get("brand") || "all";
   const category = params.get("category") || "all";
@@ -764,20 +763,18 @@ function renderShop(params = new URLSearchParams()) {
   const size = params.get("size") || "all";
   const color = params.get("color") || "all";
   const availability = params.get("availability") || "all";
-  const appliance = params.get("appliance") || "all";
   const sort = params.get("sort") || "featured";
   const search = params.get("search") || "";
-  const filterState = { brand, category, audience, moveCategory, size, color, availability, appliance, search };
+  const filterState = { brand, category, audience, moveCategory, size, color, availability, search };
   const configuredEntries = getMerchandisingEntries(merchandising().collections?.[category]);
   const collectionFilterState = configuredEntries.length ? { ...filterState, category: "all" } : filterState;
   const filteredProducts = filterProducts(collectionFilterState);
   let displayEntries = configuredEntries.length
     ? configuredEntries.filter(({ product, color: displayColour }) => filteredProducts.some((item) => item.id === product.id) && (color === "all" || color === displayColour))
     : filteredProducts.map((product) => {
-      const useFemaleTeeCard = brand === "kalm-move" && audience === "women" && isKalmMoveAvailableNowProduct(product) && product.colors.includes("White");
-      const color = useFemaleTeeCard ? "White" : getDefaultColor(product);
-      const displayImage = useFemaleTeeCard
-        ? getVariantImages(product, color).find((image) => /female-front\./i.test(image)) || getVariantImage(product, color)
+      const color = getDefaultColor(product);
+      const displayImage = brand === "kalm-move"
+        ? getAudienceProductCardImage(product, color, audience)
         : "";
       return { product, color, displayImage };
     });
@@ -798,11 +795,11 @@ function renderShop(params = new URLSearchParams()) {
     ? displayEntries.map(({ product }) => product)
     : filterProducts({ ...collectionFilterState, size: "all", color: "all", availability: "all" });
   const moveAudience = brand === "kalm-move" ? audience : "all";
-  const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, appliance, sort, search });
+  const activeFilters = buildActiveFilters({ brand, category, audience, moveCategory, size, color, availability, sort, search });
   const genericSearch = Boolean(search.trim()) && brand === "all" && category === "all";
   setDocumentMeta(
     `${heading} | KALM Collective`,
-    "Shop KALM Collective essentials across activewear, outdoor cooking, wellness, home and archive activewear.",
+    "Shop KALM Collective activewear and KS Active archive pieces.",
     category !== "all" ? collectionRoute(category) : "/shop"
   );
   setStructuredData({ type: "collection", title: heading, entries: displayEntries });
@@ -855,7 +852,6 @@ function renderShop(params = new URLSearchParams()) {
               </select>
             </label>
           ` : ""}
-          ${brand === "kalm-outdoor" ? renderOutdoorApplianceFilter(appliance) : ""}
           ${renderFilterSelect("size", "Size", size, getAvailableSizes(relevantProducts), "All sizes")}
           ${renderFilterSelect("color", "Colour", color, getAvailableColors(relevantProducts), "All colours")}
           <label>Availability
@@ -902,51 +898,16 @@ function renderShop(params = new URLSearchParams()) {
   hydrateDeferredImages(app);
 }
 
-function renderBrands() {
-  setDocumentMeta(
-    "Brands | KALM Collective",
-    "Explore KS Active, KALM Move, KALM Outdoor, KALM Wellness and KALM Home."
-  );
-  app.innerHTML = `
-    <section class="page-hero">
-      <p class="eyebrow">Brands</p>
-      <h1>The KALM Collective family.</h1>
-      <p>Five connected brands, each built around simple essentials for movement, outdoor routines, wellness and home.</p>
-    </section>
-
-    <section class="brand-grid">
-      ${state.data.brands.map((brand) => {
-        const content = `
-          <div class="brand-content">
-            <img class="brand-card-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || `${brand.name} logo`)}" width="1254" height="1254" loading="eager" decoding="async">
-            <p>${escapeHtml(brand.summary || brand.description || "Explore the collection.")}</p>
-          </div>`;
-        return `
-          <article class="brand-card-large">
-            <a href="#/brand/${brand.id}" aria-label="Shop ${escapeAttribute(brand.name)}">
-              <img class="brand-image" src="${escapeHtml(brand.heroImage)}" alt="${escapeAttribute(brand.name)} lifestyle" width="900" height="660" loading="eager" decoding="async" fetchpriority="high">
-              ${content}
-            </a>
-          </article>`;
-      }).join("")}
-    </section>
-
-    ${renderFooter()}
-  `;
-  hydrateDeferredImages(app);
-}
-
 function renderBrand(brandId) {
-  const brand = state.data.brands.find((item) => item.id === brandId);
+  const brand = state.data.labels.find((item) => item.id === brandId);
   if (!brand) return renderNotFound();
   if (!["ks-active", "kalm-move"].includes(brand.id)) return renderNotFound();
-  if (brand.id === "kalm-outdoor") return renderKalmOutdoorExperience(brand);
   if (brand.id === "kalm-move") return renderKalmMoveLaunchCollection(brand);
   const products = getPublicProducts().filter((product) => product.brandId === brand.id);
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
     <section class="brand-hero">
-      <div>
+      <div class="move-launch-copy">
         <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
@@ -1027,7 +988,7 @@ function renderKalmMoveLaunchCollection(brand) {
   setStructuredData({ type: "collection", title: "KALM Move", entries: [...availableNowProducts, ...products].map((product) => ({ product, color: getDefaultColor(product) })) });
   app.innerHTML = `
     <section class="move-launch-hero">
-      <div>
+      <div class="move-launch-copy">
         <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <p class="launching-soon-label">LAUNCHING SOON</p>
         <h1>KALM MOVE</h1>
@@ -1035,7 +996,7 @@ function renderKalmMoveLaunchCollection(brand) {
         <p>Explore the collection, save your favourites and be the first to know when KALM Move arrives.</p>
         <a class="button primary" href="#/brand/kalm-move#kalm-move-collection">EXPLORE THE COLLECTION</a>
       </div>
-      <img src="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp" alt="KALM Move campaign" width="1600" height="900" decoding="async" fetchpriority="high">
+      ${renderKalmMoveHeroSlideshow()}
     </section>
 
     ${renderKalmMoveSubcategories()}
@@ -1068,94 +1029,99 @@ function renderKalmMoveLaunchCollection(brand) {
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+  bindKalmMoveHeroSlideshow(app);
 }
 
-function getOutdoorAnchorProducts() {
-  const anchorIds = [
-    "kalm-outdoor-ember-16-gas-pizza-oven",
-    "kalm-outdoor-forge-2-portable-gas-griddle",
-    "kalm-outdoor-ridge-4-stainless-gas-braai"
-  ];
-  return anchorIds.map((id) => findProduct(id)).filter((product) => product && isProductPublic(product));
-}
-
-function applianceName(applianceId) {
-  return findProduct(applianceId)?.title || "Compatible appliance to be confirmed";
-}
-
-function renderKalmOutdoorExperience(brand) {
-  const anchors = getOutdoorAnchorProducts();
-  setDocumentMeta(
-    "KALM Outdoor | Premium outdoor cooking appliances",
-    "Discover KALM Outdoor appliances for considered cooking and open-air gatherings."
-  );
-  app.innerHTML = `
-    <section class="outdoor-collection-intro">
-      <img class="outdoor-collection-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
-      <div>
-        <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
-        <p>Considered appliances for pizza nights, everyday grilling and open-air hosting.</p>
-      </div>
-    </section>
-
-    <section class="section-block outdoor-appliance-collection" aria-labelledby="outdoor-appliances-title">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Outdoor cooking</p>
-          <h2 id="outdoor-appliances-title">Appliances</h2>
-        </div>
-      </div>
-      <div class="product-grid">
-        ${anchors.map((product, index) => renderProductCard(product, { eager: index < 3 })).join("")}
-      </div>
-    </section>
-
-    ${renderFooter()}
-  `;
-  hydrateDeferredImages(app);
-}
-
-function getOutdoorWaitlistChoices() {
-  return [
-    ...(state.data.outdoorBundles || []).map((bundle) => ({ label: bundle.title, applianceId: bundle.compatibleAppliance || "" }))
-  ];
-}
-
-function renderOutdoorWaitlistForm({ interest = "", applianceId = "", source = "outdoor-brand-page" } = {}) {
-  const choices = getOutdoorWaitlistChoices();
-  const anchors = getOutdoorAnchorProducts();
-  const selectedInterest = interest || choices[0]?.label || "";
-  const selectedAppliance = applianceId || choices.find((choice) => choice.label === selectedInterest)?.applianceId || anchors[0]?.id || "";
-  const fieldId = `outdoor-waitlist-${source.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}`;
-  const interestField = interest
-    ? `<input type="hidden" name="accessory_or_bundle" value="${escapeAttribute(selectedInterest)}"><p class="waitlist-interest">Interest: <strong>${escapeHtml(selectedInterest)}</strong></p>`
-    : `<label for="${fieldId}-interest">Accessory or bundle<select id="${fieldId}-interest" name="accessory_or_bundle" data-waitlist-interest-select required>${choices.map((choice) => `<option value="${escapeAttribute(choice.label)}" data-appliance-id="${escapeAttribute(choice.applianceId)}" ${choice.label === selectedInterest ? "selected" : ""}>${escapeHtml(choice.label)}</option>`).join("")}</select></label>`;
-  const applianceField = applianceId
-    ? `<input type="hidden" name="compatible_appliance" value="${escapeAttribute(applianceName(selectedAppliance))}"><input type="hidden" name="compatible_appliance_id" value="${escapeAttribute(selectedAppliance)}"><p class="waitlist-interest">Compatible appliance: <strong>${escapeHtml(applianceName(selectedAppliance))}</strong></p>`
-    : `<label for="${fieldId}-appliance">Compatible appliance<select id="${fieldId}-appliance" name="compatible_appliance" data-waitlist-appliance-select required>${anchors.map((anchor) => `<option value="${escapeAttribute(anchor.title)}" data-appliance-id="${escapeAttribute(anchor.id)}" ${anchor.id === selectedAppliance ? "selected" : ""}>${escapeHtml(anchor.title)}</option>`).join("")}</select></label>`;
+function renderKalmMoveHeroSlideshow() {
+  const slides = merchandising().campaigns?.kalmMoveSignatureTeeHero?.slides || defaultKalmMoveHeroSlides;
   return `
-    <form class="outdoor-waitlist-form" name="kalm-outdoor-accessory-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-waitlist-form data-success-message="You are on the KALM Outdoor waitlist. We will share launch and compatibility updates when they are confirmed.">
-      <input type="hidden" name="form-name" value="kalm-outdoor-accessory-waitlist">
-      <input type="hidden" name="bot-field">
-      <input type="hidden" name="source" value="${escapeAttribute(source)}">
-      <div class="form-grid two">
-        <label for="${fieldId}-name">Name<input id="${fieldId}-name" name="name" autocomplete="name" required></label>
-        <label for="${fieldId}-email">Email<input id="${fieldId}-email" name="email" type="email" autocomplete="email" required></label>
-        <label for="${fieldId}-phone">Phone <span class="optional">(optional)</span><input id="${fieldId}-phone" name="phone" type="tel" autocomplete="tel"></label>
-        ${interestField}
-        ${applianceField}
+    <section class="move-hero-slideshow" data-move-hero-slideshow aria-roledescription="carousel" aria-label="KALM Signature Oversized Tee campaign">
+      <div class="move-hero-slides">
+        ${slides.map((slide, index) => `
+          <figure class="move-hero-slide ${index === 0 ? "is-active" : ""}" data-move-hero-slide aria-hidden="${index === 0 ? "false" : "true"}">
+            <img src="${escapeHtml(slide.src)}" alt="${escapeAttribute(slide.alt)}" width="900" height="1350" decoding="async" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} style="--move-hero-object-position: ${slide.position}">
+          </figure>
+        `).join("")}
       </div>
-      <fieldset class="waitlist-ownership">
-        <legend>Do you already own the compatible appliance?</legend>
-        <label><input type="radio" name="owns_compatible_appliance" value="yes" required> Yes</label>
-        <label><input type="radio" name="owns_compatible_appliance" value="no"> No</label>
-        <label><input type="radio" name="owns_compatible_appliance" value="planning"> I am planning my setup</label>
-      </fieldset>
-      <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>I consent to KALM Collective using my details for KALM Outdoor launch and compatibility updates.</span></label>
-      <p class="form-status" role="status" aria-live="polite"></p>
-      <button class="button primary full" type="submit">Join waitlist</button>
-    </form>
+      <div class="move-hero-carousel-controls" aria-label="Choose a KALM Move campaign image">
+        ${slides.map((slide, index) => `<button type="button" class="move-hero-carousel-dot ${index === 0 ? "is-active" : ""}" data-move-hero-slide-to="${index}" aria-label="Show campaign image ${index + 1}: ${escapeAttribute(slide.alt)}" aria-current="${index === 0 ? "true" : "false"}"><span class="sr-only">Campaign image ${index + 1}</span></button>`).join("")}
+      </div>
+      <p class="sr-only" data-move-hero-status aria-live="polite" aria-atomic="true"></p>
+    </section>
   `;
+}
+
+function clearKalmMoveHeroSlideshow() {
+  if (state.moveHeroCleanup) state.moveHeroCleanup();
+  if (state.moveHeroTimer) window.clearInterval(state.moveHeroTimer);
+  state.moveHeroTimer = null;
+  state.moveHeroCleanup = null;
+}
+
+function bindKalmMoveHeroSlideshow(root = app) {
+  const slideshow = root.querySelector("[data-move-hero-slideshow]");
+  if (!slideshow) return;
+  const slides = [...slideshow.querySelectorAll("[data-move-hero-slide]")];
+  const controls = [...slideshow.querySelectorAll("[data-move-hero-slide-to]")];
+  const status = slideshow.querySelector("[data-move-hero-status]");
+  if (slides.length < 2) return;
+
+  const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let activeIndex = 0;
+
+  const updateSlide = (nextIndex, announce = false) => {
+    activeIndex = (nextIndex + slides.length) % slides.length;
+    slides.forEach((slide, index) => {
+      const active = index === activeIndex;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", String(!active));
+    });
+    controls.forEach((control, index) => {
+      const active = index === activeIndex;
+      control.classList.toggle("is-active", active);
+      control.setAttribute("aria-current", String(active));
+    });
+    if (announce && status) status.textContent = `Showing campaign image ${activeIndex + 1} of ${slides.length}.`;
+  };
+
+  const pauseRotation = () => {
+    if (!state.moveHeroTimer) return;
+    window.clearInterval(state.moveHeroTimer);
+    state.moveHeroTimer = null;
+  };
+  const resumeRotation = () => {
+    if (motionQuery.matches || document.hidden || state.moveHeroTimer) return;
+    state.moveHeroTimer = window.setInterval(() => updateSlide(activeIndex + 1), 5500);
+  };
+  const handleVisibilityChange = () => (document.hidden ? pauseRotation() : resumeRotation());
+  const handleMotionChange = () => (motionQuery.matches ? pauseRotation() : resumeRotation());
+  const handlePointerEnter = () => pauseRotation();
+  const handlePointerLeave = () => resumeRotation();
+  const handleFocusIn = () => pauseRotation();
+  const handleFocusOut = (event) => {
+    if (!slideshow.contains(event.relatedTarget)) resumeRotation();
+  };
+
+  controls.forEach((control) => control.addEventListener("click", () => {
+    updateSlide(Number(control.dataset.moveHeroSlideTo), true);
+    resumeRotation();
+  }));
+  slideshow.addEventListener("mouseenter", handlePointerEnter);
+  slideshow.addEventListener("mouseleave", handlePointerLeave);
+  slideshow.addEventListener("focusin", handleFocusIn);
+  slideshow.addEventListener("focusout", handleFocusOut);
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  motionQuery.addEventListener("change", handleMotionChange);
+  state.moveHeroCleanup = () => {
+    pauseRotation();
+    slideshow.removeEventListener("mouseenter", handlePointerEnter);
+    slideshow.removeEventListener("mouseleave", handlePointerLeave);
+    slideshow.removeEventListener("focusin", handleFocusIn);
+    slideshow.removeEventListener("focusout", handleFocusOut);
+    document.removeEventListener("visibilitychange", handleVisibilityChange);
+    motionQuery.removeEventListener("change", handleMotionChange);
+  };
+  resumeRotation();
 }
 
 function renderComingSoonMedia(className = "") {
@@ -1235,7 +1201,7 @@ function renderProduct(slug, params = new URLSearchParams()) {
       ${comingSoon && !defaultImages.length ? renderComingSoonMedia("product-coming-soon-media") : renderProductGallery(product, defaultImages)}
       <div class="product-info">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+          <a href="/">Store</a>
           <span aria-hidden="true">/</span>
           <a href="${escapeHtml(getProductBrandRoute(product))}">${escapeHtml(product.brand)}</a>
           <span aria-hidden="true">/</span>
@@ -1258,11 +1224,7 @@ function renderProduct(slug, params = new URLSearchParams()) {
           </div>
         ` : `<div class="price-line">${renderPrice(product)}</div>`}
 
-        ${comingSoon && product.comingSoonCallToAction !== false ? renderOutdoorWaitlistForm({
-          interest: product.title,
-          applianceId: product.compatibleAppliances?.[0] || "",
-          source: `outdoor-product-${product.slug}`
-        }) : !comingSoon ? `
+        ${!comingSoon ? `
           <div class="selector-row">
             <label>Colour
               <select data-color-select>
@@ -1608,7 +1570,7 @@ function renderPolicies() {
     </section>
     <section class="policy-grid">
       <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Courier delivery is available across South Africa. Standard delivery takes 2 to 5 business days after order confirmation, with express delivery available in selected areas.</p></article>
-      <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused home or wellness items in their original condition and packaging.</p></article>
+      <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused accessories in their original condition and packaging.</p></article>
       <article class="policy-card"><h2>Payment</h2><p>Checkout supports PayFast, Ozow and EFT selections. Payment instructions are confirmed after order review, and card details are not collected on this page.</p></article>
       <article class="policy-card"><h2>Privacy</h2><p>KALM Collective processes customer information for orders, delivery, customer care and opt-in marketing in line with POPIA.</p></article>
     </section>
@@ -1725,6 +1687,12 @@ function getDefaultColor(product) {
   return (product?.colors || []).find((color) => !isColorUnavailable(product, color)) || product?.colors?.[0] || "";
 }
 
+function getAudienceProductCardImage(product, color, audience) {
+  const model = audience === "women" ? "female" : audience === "men" ? "male" : "";
+  if (!model) return "";
+  return getVariantImages(product, color).find((image) => new RegExp(`${model}-front\\.`, "i").test(image)) || "";
+}
+
 function normalizeGalleryImages(images, product) {
   const normalized = normalizeImageList(images);
   return normalized.length ? normalized : [product?.image].filter(Boolean);
@@ -1780,18 +1748,6 @@ function renderMoveShoppingHeader(audience, moveCategory) {
   `;
 }
 
-function renderOutdoorApplianceFilter(appliance) {
-  const anchors = getOutdoorAnchorProducts();
-  return `
-    <label>Compatible appliance
-      <select name="appliance">
-        <option value="all">All Outdoor products</option>
-        ${anchors.map((anchor) => `<option value="${escapeAttribute(anchor.id)}" ${appliance === anchor.id ? "selected" : ""}>${escapeHtml(anchor.title)}</option>`).join("")}
-      </select>
-    </label>
-  `;
-}
-
 function renderFilterSelect(name, label, selected, options, emptyLabel) {
   if (!options.length) return "";
   return `
@@ -1814,11 +1770,10 @@ function getAvailableColors(products) {
 
 function buildActiveFilters(filterState) {
   const labels = {
-    brand: (value) => state.data.brands.find((item) => item.id === value)?.name || value,
+    brand: (value) => state.data.labels.find((item) => item.id === value)?.name || value,
     category: (value) => state.data.categories.find((item) => item.id === value)?.name || value,
     audience: moveAudienceName,
     moveCategory: moveCategoryName,
-    appliance: applianceName,
     size: (value) => `Size ${value}`,
     color: (value) => value,
     availability: (value) => value.replaceAll("_", " "),
@@ -2045,7 +2000,6 @@ function renderProductCard(product, options = {}) {
         <h3><a href="${productHref}">${escapeHtml(product.title)}</a></h3>
         ${comingSoon ? `
           <p class="card-photo-status">${escapeHtml(product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.")}</p>
-          ${product.compatibleAppliances?.[0] ? `<p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances[0]))}</p>` : ""}
           ${product.comingSoonCallToAction !== false ? `<a class="button secondary full card-view-link" href="${productHref}">Join waitlist</a>` : `<a class="button secondary full card-view-link" href="${productHref}">View product</a>`}
         ` : `
           <div class="price-line">${renderPrice(product)}</div>
@@ -2485,7 +2439,7 @@ function closeSearch() {
   searchPanel.hidden = true;
 }
 
-function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", size = "all", color = "all", availability = "all", appliance = "all", search = "" }) {
+function filterProducts({ brand = "all", category = "all", audience = "all", moveCategory = "all", size = "all", color = "all", availability = "all", search = "" }) {
   const term = search.trim().toLowerCase();
   return getPublicProducts().filter((product) => {
     const tags = product.tags || [];
@@ -2502,7 +2456,6 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
     const sizeMatch = size === "all" || (product.sizes || []).includes(size);
     const colorMatch = color === "all" || (product.colors || []).includes(color);
     const availabilityMatch = availability === "all" || getProductAvailability(product) === availability;
-    const applianceMatch = appliance === "all" || (product.compatibleAppliances || []).includes(appliance) || product.id === appliance;
     const searchableText = [
       product.title,
       product.brand,
@@ -2519,7 +2472,7 @@ function filterProducts({ brand = "all", category = "all", audience = "all", mov
       tags.join(" ")
     ].join(" ").toLowerCase();
     const searchMatch = !term || term.split(/\s+/).every((token) => searchableText.includes(token));
-    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && sizeMatch && colorMatch && availabilityMatch && applianceMatch && searchMatch;
+    return brandMatch && categoryMatch && audienceMatch && moveCategoryMatch && sizeMatch && colorMatch && availabilityMatch && searchMatch;
   });
 }
 
@@ -2535,7 +2488,7 @@ function updateShopFromForm(event) {
   const form = event.currentTarget.closest("form") || event.currentTarget;
   const values = new FormData(form);
   const params = new URLSearchParams();
-  for (const key of ["brand", "category", "audience", "moveCategory", "size", "color", "availability", "appliance", "sort", "search"]) {
+  for (const key of ["brand", "category", "audience", "moveCategory", "size", "color", "availability", "sort", "search"]) {
     const value = values.get(key);
     if (value && value !== "all" && value !== "featured") params.set(key, value);
   }
@@ -2551,7 +2504,7 @@ function shopHeading({ brand, category, audience, moveCategory, search }) {
   }
   if (brand === "kalm-move" && audience !== "all") return `KALM Move ${moveAudienceName(audience)}`;
   if (brand === "kalm-move" && moveCategory !== "all") return `KALM Move ${moveCategoryName(moveCategory)}`;
-  if (brand && brand !== "all") return state.data.brands.find((item) => item.id === brand)?.name || "Shop";
+  if (brand && brand !== "all") return state.data.labels.find((item) => item.id === brand)?.name || "Shop";
   if (category && category !== "all") return state.data.categories.find((item) => item.id === category)?.name || "Shop";
   return "Shop All";
 }
@@ -2945,14 +2898,14 @@ function renderFooter() {
       <div class="footer-grid">
         <div>
           <img src="${escapeHtml(logo)}" alt="${escapeAttribute(logoAlt)}" width="1563" height="1563" decoding="async">
-          <p>Premium essentials for movement, outdoor routines and everyday living.</p>
+          <p>Premium essentials for movement and daily life.</p>
         </div>
         ${footerSection("Shop", `
           <a href="/collections/ks-active">KS Active</a>
           <a href="/collections/sale">Archive Sale</a>
           <a href="/brand/kalm-move">KALM Move</a>
         `)}
-        ${footerSection("Brands", `
+        ${footerSection("Explore", `
           <a href="#/brand/ks-active">KS Active</a>
           <a href="/brand/kalm-move">KALM Move</a>
         `)}

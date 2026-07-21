@@ -21,8 +21,33 @@ const kalmMoveSignatureTee = {
   displayColour: "Black"
 };
 
+const kalmMoveSignatureTeeHero = {
+  slides: [
+    {
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-18d64701-4d74-4aac-9056-23d4c881f8f2.png",
+      alt: "Two women wearing sage and black KALM Move active sets outdoors",
+      position: "center center"
+    },
+    {
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-07e4d8ff-9cbf-4a69-a9d9-4e8e6effb59a.png",
+      alt: "Two men wearing navy and black KALM Move training looks",
+      position: "center center"
+    },
+    {
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-eb2f6ccd-c6c5-4820-905d-6617763c2043.png",
+      alt: "Two women in black and pink KALM Move looks moving through an urban setting",
+      position: "center center"
+    },
+    {
+      src: "assets/images/campaigns/kalm-move/generated-20260720/exec-4b2fbb8b-cf73-4c56-abc7-501b03c4bb51.png",
+      alt: "KALM Move group wearing black, light blue and navy activewear",
+      position: "center center"
+    }
+  ]
+};
+
 window.KALM_MERCHANDISING = {
-  version: "2026-07-15-ks-active-first-preview",
+  version: "2026-07-21-kalm-move-signature-tee-rebuild",
   campaigns: {
     ksActiveHero: {
       desktop: "assets/images/products/ks-active/archive-approved/ks-active-panel-seamless-legging/azure-blue/hero-three-quarter.jpg",
@@ -33,7 +58,8 @@ window.KALM_MERCHANDISING = {
       desktop: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp",
       mobile: "assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-mobile-perf-20260715.webp",
       alt: "KALM Move adults sharing a relaxed movement moment outdoors"
-    }
+    },
+    kalmMoveSignatureTeeHero
   },
   homepage: {
     signatureTee: kalmMoveSignatureTee,
