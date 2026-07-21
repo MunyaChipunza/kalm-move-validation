@@ -58,6 +58,7 @@ jobs:
 
       - name: Verify source is the clean current production branch head
         run: |
+          test -f .kalm-approved-release-root
           git fetch origin master --depth=1
           test -z "$(git status --porcelain)"
           test "$(git rev-parse HEAD)" = "$SOURCE_COMMIT"
@@ -75,6 +76,11 @@ jobs:
           node tools/kalm-production-release.mjs --mode preflight --branch master
           --commit "$SOURCE_COMMIT" --previous-deploy "${{ steps.previous.outputs.deploy_id }}"
           --approver "$RELEASE_APPROVER"
+
+      - name: Verify generated release provenance
+        run: |
+          test -f release/kalm-production-manifest.json
+          node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));const m=JSON.parse(fs.readFileSync('release/kalm-production-manifest.json','utf8'));if(m.validationStatus!=='pass'||m.buildSignature!==s.expectedBuildSignature||m.publishDirectory!==s.publishDirectory) process.exit(1)"
 
       - name: Deploy approved release candidate
         id: deploy
