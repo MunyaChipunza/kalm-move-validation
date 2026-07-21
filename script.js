@@ -21,6 +21,8 @@ const state = {
   moveWishlist: loadMoveWishlist(),
   moveDemandEvents: loadMoveDemandEvents(),
   moveNotifySubmissions: new Set(),
+  moveHeroTimer: null,
+  moveHeroCleanup: null,
   odoPilot: null
 };
 
@@ -44,6 +46,33 @@ const moveCategories = [
   { id: "layers", name: "Jackets & Layers" },
   { id: "jumpsuits-rompers", name: "Jumpsuits & Rompers" },
   { id: "accessories", name: "Accessories" }
+];
+const kalmMoveHeroSlides = [
+  {
+    src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/campaign/black-white-pair.webp",
+    alt: "Male and female models wearing the black and white KALM Signature Oversized Tee with the KALM buffalo emblem",
+    position: "center 32%"
+  },
+  {
+    src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-three-quarter.webp",
+    alt: "Male model wearing the black KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+    position: "center 24%"
+  },
+  {
+    src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/female-three-quarter.webp",
+    alt: "Female model wearing the black KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+    position: "center 24%"
+  },
+  {
+    src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/male-three-quarter.webp",
+    alt: "Male model wearing the white KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+    position: "center 24%"
+  },
+  {
+    src: "assets/images/products/kalm-collective/kalm-signature-oversized-tee/white/female-three-quarter.webp",
+    alt: "Female model wearing the white KALM Signature Oversized Tee with the embroidered KALM buffalo emblem",
+    position: "center 24%"
+  }
 ];
 let deferredImageObserver = null;
 
@@ -288,6 +317,7 @@ function navigateTo(href, { replace = false } = {}) {
 
 function renderRoute() {
   if (!state.data) return;
+  clearKalmMoveHeroSlideshow();
   if (state.currentRouteKey) state.scrollPositions.set(state.currentRouteKey, window.scrollY);
   const route = getRoute();
   setRouteIndexability(true);
@@ -774,10 +804,9 @@ function renderShop(params = new URLSearchParams()) {
   let displayEntries = configuredEntries.length
     ? configuredEntries.filter(({ product, color: displayColour }) => filteredProducts.some((item) => item.id === product.id) && (color === "all" || color === displayColour))
     : filteredProducts.map((product) => {
-      const useFemaleTeeCard = brand === "kalm-move" && audience === "women" && isKalmMoveAvailableNowProduct(product) && product.colors.includes("White");
-      const color = useFemaleTeeCard ? "White" : getDefaultColor(product);
-      const displayImage = useFemaleTeeCard
-        ? getVariantImages(product, color).find((image) => /female-front\./i.test(image)) || getVariantImage(product, color)
+      const color = getDefaultColor(product);
+      const displayImage = brand === "kalm-move"
+        ? getAudienceProductCardImage(product, color, audience)
         : "";
       return { product, color, displayImage };
     });
@@ -946,7 +975,7 @@ function renderBrand(brandId) {
   setDocumentMeta(`${brand.name} | KALM Collective`, brand.summary);
   app.innerHTML = `
     <section class="brand-hero">
-      <div>
+      <div class="move-launch-copy">
         <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <h1 class="sr-only">${escapeHtml(brand.name)}</h1>
         <p>${escapeHtml(brand.summary)}</p>
@@ -1027,7 +1056,7 @@ function renderKalmMoveLaunchCollection(brand) {
   setStructuredData({ type: "collection", title: "KALM Move", entries: [...availableNowProducts, ...products].map((product) => ({ product, color: getDefaultColor(product) })) });
   app.innerHTML = `
     <section class="move-launch-hero">
-      <div>
+      <div class="move-launch-copy">
         <img class="brand-hero-logo" src="${escapeHtml(getBrandLogo(brand))}" alt="${escapeAttribute(brand.logoAlt || brand.name)}" width="1254" height="1254">
         <p class="launching-soon-label">LAUNCHING SOON</p>
         <h1>KALM MOVE</h1>
@@ -1035,7 +1064,7 @@ function renderKalmMoveLaunchCollection(brand) {
         <p>Explore the collection, save your favourites and be the first to know when KALM Move arrives.</p>
         <a class="button primary" href="#/brand/kalm-move#kalm-move-collection">EXPLORE THE COLLECTION</a>
       </div>
-      <img src="assets/images/recovered/campaigns-v3/kalm-hero-six-person-v3-desktop-perf-20260715.webp" alt="KALM Move campaign" width="1600" height="900" decoding="async" fetchpriority="high">
+      ${renderKalmMoveHeroSlideshow()}
     </section>
 
     ${renderKalmMoveSubcategories()}
@@ -1068,6 +1097,98 @@ function renderKalmMoveLaunchCollection(brand) {
     ${renderFooter()}
   `;
   hydrateDeferredImages(app);
+  bindKalmMoveHeroSlideshow(app);
+}
+
+function renderKalmMoveHeroSlideshow() {
+  return `
+    <section class="move-hero-slideshow" data-move-hero-slideshow aria-roledescription="carousel" aria-label="KALM Signature Oversized Tee campaign">
+      <div class="move-hero-slides">
+        ${kalmMoveHeroSlides.map((slide, index) => `
+          <figure class="move-hero-slide ${index === 0 ? "is-active" : ""}" data-move-hero-slide aria-hidden="${index === 0 ? "false" : "true"}">
+            <img src="${escapeHtml(slide.src)}" alt="${escapeAttribute(slide.alt)}" width="900" height="1350" decoding="async" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} style="--move-hero-object-position: ${slide.position}">
+          </figure>
+        `).join("")}
+      </div>
+      <div class="move-hero-carousel-controls" aria-label="Choose a KALM Move campaign image">
+        ${kalmMoveHeroSlides.map((slide, index) => `<button type="button" class="move-hero-carousel-dot ${index === 0 ? "is-active" : ""}" data-move-hero-slide-to="${index}" aria-label="Show campaign image ${index + 1}: ${escapeAttribute(slide.alt)}" aria-current="${index === 0 ? "true" : "false"}"><span class="sr-only">Campaign image ${index + 1}</span></button>`).join("")}
+      </div>
+      <p class="sr-only" data-move-hero-status aria-live="polite" aria-atomic="true"></p>
+    </section>
+  `;
+}
+
+function clearKalmMoveHeroSlideshow() {
+  if (state.moveHeroCleanup) state.moveHeroCleanup();
+  if (state.moveHeroTimer) window.clearInterval(state.moveHeroTimer);
+  state.moveHeroTimer = null;
+  state.moveHeroCleanup = null;
+}
+
+function bindKalmMoveHeroSlideshow(root = app) {
+  const slideshow = root.querySelector("[data-move-hero-slideshow]");
+  if (!slideshow) return;
+  const slides = [...slideshow.querySelectorAll("[data-move-hero-slide]")];
+  const controls = [...slideshow.querySelectorAll("[data-move-hero-slide-to]")];
+  const status = slideshow.querySelector("[data-move-hero-status]");
+  if (slides.length < 2) return;
+
+  const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let activeIndex = 0;
+
+  const updateSlide = (nextIndex, announce = false) => {
+    activeIndex = (nextIndex + slides.length) % slides.length;
+    slides.forEach((slide, index) => {
+      const active = index === activeIndex;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", String(!active));
+    });
+    controls.forEach((control, index) => {
+      const active = index === activeIndex;
+      control.classList.toggle("is-active", active);
+      control.setAttribute("aria-current", String(active));
+    });
+    if (announce && status) status.textContent = `Showing campaign image ${activeIndex + 1} of ${slides.length}.`;
+  };
+
+  const pauseRotation = () => {
+    if (!state.moveHeroTimer) return;
+    window.clearInterval(state.moveHeroTimer);
+    state.moveHeroTimer = null;
+  };
+  const resumeRotation = () => {
+    if (motionQuery.matches || document.hidden || state.moveHeroTimer) return;
+    state.moveHeroTimer = window.setInterval(() => updateSlide(activeIndex + 1), 5500);
+  };
+  const handleVisibilityChange = () => (document.hidden ? pauseRotation() : resumeRotation());
+  const handleMotionChange = () => (motionQuery.matches ? pauseRotation() : resumeRotation());
+  const handlePointerEnter = () => pauseRotation();
+  const handlePointerLeave = () => resumeRotation();
+  const handleFocusIn = () => pauseRotation();
+  const handleFocusOut = (event) => {
+    if (!slideshow.contains(event.relatedTarget)) resumeRotation();
+  };
+
+  controls.forEach((control) => control.addEventListener("click", () => {
+    updateSlide(Number(control.dataset.moveHeroSlideTo), true);
+    resumeRotation();
+  }));
+  slideshow.addEventListener("mouseenter", handlePointerEnter);
+  slideshow.addEventListener("mouseleave", handlePointerLeave);
+  slideshow.addEventListener("focusin", handleFocusIn);
+  slideshow.addEventListener("focusout", handleFocusOut);
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  motionQuery.addEventListener("change", handleMotionChange);
+  state.moveHeroCleanup = () => {
+    pauseRotation();
+    slideshow.removeEventListener("mouseenter", handlePointerEnter);
+    slideshow.removeEventListener("mouseleave", handlePointerLeave);
+    slideshow.removeEventListener("focusin", handleFocusIn);
+    slideshow.removeEventListener("focusout", handleFocusOut);
+    document.removeEventListener("visibilitychange", handleVisibilityChange);
+    motionQuery.removeEventListener("change", handleMotionChange);
+  };
+  resumeRotation();
 }
 
 function getOutdoorAnchorProducts() {
@@ -1723,6 +1844,12 @@ function getProductBrandRoute(product) {
 
 function getDefaultColor(product) {
   return (product?.colors || []).find((color) => !isColorUnavailable(product, color)) || product?.colors?.[0] || "";
+}
+
+function getAudienceProductCardImage(product, color, audience) {
+  const model = audience === "women" ? "female" : audience === "men" ? "male" : "";
+  if (!model) return "";
+  return getVariantImages(product, color).find((image) => new RegExp(`${model}-front\\.`, "i").test(image)) || "";
 }
 
 function normalizeGalleryImages(images, product) {
