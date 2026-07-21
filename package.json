@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Reproducible validation tooling for protected KALM production releases.",
   "scripts": {
+    "check:legacy-storefront": "node scripts/check-forbidden-legacy-storefront.mjs --root .",
     "release:preflight": "node tools/kalm-production-release.mjs --mode preflight",
     "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy"
   },

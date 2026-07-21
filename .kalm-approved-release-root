@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "repositoryRemote": "https://github.com/MunyaChipunza/kalm-move-validation",
+  "productionBranch": "master",
+  "productionReleaseWorkflow": ".github/workflows/kalm-production-release.yml",
+  "publishDirectory": ".release-output/kalm-production",
+  "buildCommand": "node tools/kalm-production-release.mjs --mode preflight",
+  "expectedBuildSignature": "KALM_CANONICAL_STOREFRONT_RELEASE_V1"
+}
