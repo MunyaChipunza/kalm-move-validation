@@ -49,11 +49,6 @@ const moveCategories = [
 ];
 const defaultKalmMoveHeroSlides = [
   {
-    src: "assets/images/campaigns/kalm-move/generated-20260720/exec-29d3ffd1-4757-4dde-8add-2e28b2ca2a0b.png",
-    alt: "Two women wearing black and fuchsia KALM Move active sets in a dark modern courtyard",
-    position: "center center"
-  },
-  {
     src: "assets/images/campaigns/kalm-move/generated-20260720/exec-18d64701-4d74-4aac-9056-23d4c881f8f2.png",
     alt: "Two women wearing sage and black KALM Move active sets outdoors",
     position: "center center"
