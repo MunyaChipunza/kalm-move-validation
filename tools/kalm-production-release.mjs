@@ -17,7 +17,11 @@ const productionBranch = args.branch || "master";
 const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee"];
 const forbidden = ["Wellness", "Outdoor", "Home", "Brands", "movement, outdoor routines and everyday living"];
 const productionRemote = "https://github.com/MunyaChipunza/kalm-move-validation";
+const expectedNetlifySiteId = "06334c13-7d82-45f1-b983-4a7295de88d8";
+const expectedNetlifySiteName = "kalm-collective-storefront";
+const productionDomain = "https://kalmcollective.co.za";
 const sentinelPath = resolve(root, ".kalm-approved-release-root");
+const allowNonProductionBranch = Boolean(args["allow-non-production-branch"]);
 
 function parseArgs(argv) {
   const parsed = {};
@@ -65,11 +69,27 @@ async function listFiles(directory) {
   return files;
 }
 
+async function listTextFiles(directory) {
+  const ignored = new Set([".git", "node_modules", ".release-output", "release", "reports", "docs", "review"]);
+  const textExtensions = new Set([".html", ".js", ".css", ".json", ".xml", ".txt", ".toml", ".md", ".webmanifest", ".yml", ".yaml"]);
+  const files = [];
+  async function visit(current) {
+    for (const entry of await readdir(current, { withFileTypes: true })) {
+      if (ignored.has(entry.name)) continue;
+      const full = join(current, entry.name);
+      if (entry.isDirectory()) await visit(full);
+      else if (entry.isFile() && textExtensions.has(extname(entry.name).toLowerCase())) files.push(full);
+    }
+  }
+  await visit(directory);
+  return files;
+}
+
 async function copyCandidate() {
   await rm(publishDir, { recursive: true, force: true });
   await mkdir(publishDir, { recursive: true });
   const allowedDirectories = ["assets", "branding", "data"];
-  const allowedRootExtensions = new Set([".html", ".js", ".css", ".json", ".xml", ".txt", ".ico", ".webmanifest"]);
+  const allowedRootExtensions = new Set([".html", ".js", ".css", ".json", ".xml", ".txt", ".toml", ".ico", ".webmanifest"]);
   for (const name of allowedDirectories) {
     const source = join(root, name);
     if (await exists(source)) await cp(source, join(publishDir, name), { recursive: true });
@@ -88,7 +108,11 @@ async function inspectReleaseSentinel(failures) {
     return null;
   }
   assert(sentinel.repositoryRemote === productionRemote, "Release sentinel has an unexpected canonical remote.", failures);
-  assert(sentinel.productionBranch === productionBranch, "Release sentinel does not match the approved branch.", failures);
+  assert(sentinel.netlifySiteId === expectedNetlifySiteId, "Release sentinel has an unexpected Netlify site ID.", failures);
+  assert(sentinel.netlifySiteName === expectedNetlifySiteName, "Release sentinel has an unexpected Netlify site name.", failures);
+  assert(sentinel.productionDomain === productionDomain, "Release sentinel has an unexpected production domain.", failures);
+  assert(sentinel.productionBranch === "master", "Release sentinel does not preserve master as the approved production branch.", failures);
+  if (!allowNonProductionBranch) assert(sentinel.productionBranch === productionBranch, "Release sentinel does not match the approved branch.", failures);
   assert(sentinel.publishDirectory === ".release-output/kalm-production", "Release sentinel has an unexpected publish directory.", failures);
   assert(sentinel.buildCommand === "node tools/kalm-production-release.mjs --mode preflight", "Release sentinel has an unexpected build command.", failures);
   assert(sentinel.expectedBuildSignature === "KALM_CANONICAL_STOREFRONT_RELEASE_V1", "Release sentinel has an unexpected build signature.", failures);
@@ -123,13 +147,14 @@ async function inspectGit(failures) {
   const remote = normaliseRemote(await shell("git", ["remote", "get-url", "origin"]));
   const head = await shell("git", ["rev-parse", "HEAD"]);
   const expectedCommit = args.commit || head;
-  const originBranch = await shell("git", ["rev-parse", `origin/${productionBranch}`]);
+  const originBranch = allowNonProductionBranch ? null : await shell("git", ["rev-parse", `origin/${productionBranch}`]);
   const treeSha = await shell("git", ["rev-parse", `${head}^{tree}`]);
   assert(status.length === 0, "Working tree is dirty.", failures);
   assert(remote === productionRemote, `Unexpected repository remote: ${remote}`, failures);
   assert(/^[a-f0-9]{40}$/i.test(expectedCommit), "A full 40-character source commit SHA is required.", failures);
   assert(head === expectedCommit, "Checked-out commit does not match the approved source commit.", failures);
-  assert(originBranch === expectedCommit, `Approved source commit is not the current ${productionBranch} head.`, failures);
+  if (!allowNonProductionBranch) assert(originBranch === expectedCommit, `Approved source commit is not the current ${productionBranch} head.`, failures);
+  else assert(productionBranch !== "master", "Non-production validation must not claim to be the master release branch.", failures);
   return { head, treeSha, remote, status: status.length === 0 ? "clean" : "dirty" };
 }
 
@@ -142,18 +167,38 @@ function redirectAssertions(toml, failures) {
   return redirectCount;
 }
 
+async function sourceSeparationAssertions(directory, failures) {
+  const files = await listTextFiles(directory);
+  const findings = [];
+  const paymentPattern = /sk_(?:live|test)_|PAYSTACK_SECRET|secret_key|paystack.*(?:test|live|settlement|webhook|api key)/i;
+  const taskAppPattern = /52adadfd-1d6b-4128-9df1-575614f2f1df|kalm-collective-intranet|munya task application/i;
+  for (const file of files) {
+    const text = await readFile(file, "utf8");
+    const relativeFile = relative(directory, file).replaceAll("\\", "/");
+    if (paymentPattern.test(text)) findings.push(`Paystack/test-payment marker in ${relativeFile}`);
+    if (taskAppPattern.test(text)) findings.push(`Munya task application marker in ${relativeFile}`);
+  }
+  assert(findings.length === 0, findings.join("; "), failures);
+  return { scannedTextFileCount: files.length, status: findings.length === 0 ? "pass" : "fail", findings };
+}
+
 async function inspectCandidate(failures, sentinel) {
   const sourceTomlPath = join(root, "netlify.toml");
   const sourceToml = await exists(sourceTomlPath) ? await readFile(sourceTomlPath, "utf8") : "";
   assert(sourceToml.length > 0, "netlify.toml is missing.", failures);
   const redirectCount = redirectAssertions(sourceToml, failures);
-  const mustExist = ["index.html", "script.js", "styles.css", "products.json", "route-bootstrap.js", "assets"];
+  const mustExist = ["index.html", "script.js", "styles.css", "products.json", "route-bootstrap.js", "netlify.toml", "assets", "branding"];
   for (const item of mustExist) assert(await exists(join(publishDir, item)), `Expected build asset is missing: ${item}`, failures);
   const files = await listFiles(publishDir);
   assert(files.length >= 50, `Candidate has an implausibly small file count (${files.length}).`, failures);
   assert(!(files.length === 1 && relative(publishDir, files[0]) === "index.html"), "Candidate contains only index.html.", failures);
   assert(!files.some((file) => relative(publishDir, file).startsWith("reports")), "Private reports are present in the publish directory.", failures);
   assert(!files.some((file) => file.endsWith(".map")), "Source maps are present in the publish directory.", failures);
+  const functionDirectories = [];
+  for (const item of ["netlify/functions", "functions"]) {
+    if (await exists(join(root, item))) functionDirectories.push(item);
+  }
+  const functionsStatus = functionDirectories.length ? "configured" : "none-configured";
   const signaturePath = join(publishDir, ".kalm-build-signature.json");
   try {
     const signature = JSON.parse(await readFile(signaturePath, "utf8"));
@@ -177,7 +222,7 @@ async function inspectCandidate(failures, sentinel) {
     const path = join(publishDir, asset);
     if (await exists(path)) criticalAssetHashes[asset] = await hashFile(path);
   }
-  return { files, products, variantCount, redirectCount, criticalAssetHashes };
+  return { files, products, variantCount, redirectCount, criticalAssetHashes, functionsStatus };
 }
 
 function contentType(path) {
@@ -267,10 +312,12 @@ async function validatePreflight() {
   const sentinel = await inspectReleaseSentinel(failures);
   const git = await inspectGit(failures);
   const sourceLegacyScan = await runForbiddenScanner(root, "Source", failures);
+  const sourceSeparationScan = await sourceSeparationAssertions(root, failures);
   await copyCandidate();
   await writeBuildSignature(sentinel);
   const candidate = await inspectCandidate(failures, sentinel);
   const outputLegacyScan = await runForbiddenScanner(publishDir, "Generated output", failures);
+  const outputSeparationScan = await sourceSeparationAssertions(publishDir, failures);
   const server = await startStaticServer(publishDir);
   let routes = [];
   try { routes = await renderedChecks(server.baseUrl, failures, { expectRedirects: true }); }
@@ -278,6 +325,9 @@ async function validatePreflight() {
   const lockFile = await exists(join(root, "package-lock.json")) ? "package-lock.json" : null;
   const manifest = {
     repositoryRemote: git.remote,
+    netlifySiteId: expectedNetlifySiteId,
+    netlifySiteName: expectedNetlifySiteName,
+    productionDomain,
     branch: productionBranch,
     commitSha: git.head,
     treeSha: git.treeSha,
@@ -290,14 +340,16 @@ async function validatePreflight() {
     publishDirectory: relative(root, publishDir).replaceAll("\\", "/"),
     fileCount: candidate.files.length,
     totalAssetCount: candidate.files.filter((file) => /\.(avif|gif|jpe?g|png|svg|webp|woff2?)$/i.test(file)).length,
+    functionsStatus: candidate.functionsStatus,
     redirectRuleCount: candidate.redirectCount,
     productCount: candidate.products.length,
     variantCount: candidate.variantCount,
     requiredRoutes,
     forbiddenStrings: forbidden,
     legacyContentScan: { source: sourceLegacyScan, generatedOutput: outputLegacyScan },
+    sourceSeparationScan: { source: sourceSeparationScan, generatedOutput: outputSeparationScan },
     criticalAssetHashes: candidate.criticalAssetHashes,
-    releaseApprover: args.approver || "pending GitHub production-environment approval",
+    approvalEvent: args["approval-event"] || (allowNonProductionBranch ? "non-production validation" : "protected Git release event"),
     previousProductionDeployId: args["previous-deploy"] || "unknown",
     renderedRouteChecks: routes,
     validationStatus: failures.length === 0 ? "pass" : "fail",
@@ -311,6 +363,7 @@ async function validatePostDeploy() {
   const failures = [];
   const baseUrl = String(args["base-url"] || "").replace(/\/$/, "");
   assert(/^https:\/\//.test(baseUrl), "A HTTPS production base URL is required.", failures);
+  assert(baseUrl === productionDomain, "Post-deploy validation must target the canonical production domain.", failures);
   const retries = Number(args.retry || 1);
   let routes = [];
   for (let attempt = 1; attempt <= retries; attempt += 1) {
@@ -327,6 +380,10 @@ async function validatePostDeploy() {
       }
       assert(staticChecks.find((item) => item.path === "/script.js.map").response.status !== 200, "Production source map is publicly available.", attemptFailures);
       routes = await renderedChecks(baseUrl, attemptFailures, { expectRedirects: true });
+      if (args.commit) {
+        const signature = await fetch(`${baseUrl}/.kalm-build-signature.json`, { redirect: "manual" });
+        assert(signature.status === 200, "Production build signature is not publicly verifiable.", attemptFailures);
+      }
       const privateReport = await fetch(`${baseUrl}/reports/PRODUCTION-INCIDENT-20260720/RESTORATION.md`, { redirect: "manual" });
       assert(privateReport.status !== 200, "Private report is publicly reachable.", attemptFailures);
       const notFound = await fetch(`${baseUrl}/__kalm-release-404__`, { redirect: "manual" });
@@ -341,6 +398,28 @@ async function validatePostDeploy() {
   if (failures.length) throw new Error(`Post-deploy smoke test failed:\n- ${failures.join("\n- ")}`);
 }
 
+async function verifyControls() {
+  const failures = [];
+  const workflow = await readFile(resolve(root, ".github/workflows/kalm-production-release.yml"), "utf8");
+  const rollbackWorkflow = await readFile(resolve(root, ".github/workflows/kalm-production-rollback.yml"), "utf8");
+  const sentinel = await inspectReleaseSentinel(failures);
+  assert(/push:\s*\n\s*branches:\s*\n\s*-\s*master/.test(workflow), "Release workflow does not automatically trigger on master pushes.", failures);
+  assert(workflow.includes("workflow_dispatch:"), "Release workflow does not support explicit release dispatch.", failures);
+  assert(workflow.includes("environment:\n      name: production"), "Release workflow does not use the production environment for scoped credentials.", failures);
+  assert(workflow.includes("EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8"), "Release workflow does not pin the exact storefront Netlify site ID.", failures);
+  assert(workflow.includes("concurrency:\n  group: kalm-production-release"), "Release workflow does not use production release concurrency controls.", failures);
+  assert(workflow.includes("restoreSiteDeploy"), "Release workflow does not contain automatic rollback after failed smoke tests.", failures);
+  assert(!/production-environment approval/.test(workflow), "Release workflow still describes a second GitHub environment approval.", failures);
+  assert(rollbackWorkflow.includes("restoreSiteDeploy"), "Emergency rollback workflow is missing Netlify restoreSiteDeploy.", failures);
+  assert(rollbackWorkflow.includes("6a58f4cdabe29c0e28697f09"), "Emergency rollback workflow does not preserve the known-good deploy default.", failures);
+  assert(sentinel?.knownGoodBaselineCommit === "91511c00c080dd7b6148df950191af525316a297", "Known-good baseline commit is not recorded.", failures);
+  const result = { checkedAt: new Date().toISOString(), validationStatus: failures.length === 0 ? "pass" : "fail", failures };
+  await mkdir(resolve(root, "release"), { recursive: true });
+  await writeFile(resolve(root, "release/kalm-release-controls.json"), `${JSON.stringify(result, null, 2)}\n`);
+  if (failures.length) throw new Error(`Release control verification failed:\n- ${failures.join("\n- ")}`);
+}
+
 if (mode === "preflight") await validatePreflight();
 else if (mode === "postdeploy") await validatePostDeploy();
+else if (mode === "verify-controls") await verifyControls();
 else throw new Error(`Unknown mode: ${mode}`);
