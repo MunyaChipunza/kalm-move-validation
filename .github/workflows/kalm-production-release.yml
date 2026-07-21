@@ -1,15 +1,18 @@
 name: KALM production release
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
     inputs:
       source_commit:
-        description: Exact 40-character commit SHA already merged to master
-        required: true
+        description: Exact 40-character commit SHA already merged to master. Defaults to current master.
+        required: false
         type: string
       release_reason:
-        description: Approved release reason / change reference
-        required: true
+        description: Approved release reason / change reference.
+        required: false
         type: string
 
 permissions:
@@ -30,17 +33,20 @@ jobs:
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8
       PRODUCTION_URL: https://kalmcollective.co.za
-      SOURCE_COMMIT: ${{ inputs.source_commit }}
-      RELEASE_APPROVER: ${{ github.actor }}
+      SOURCE_COMMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.source_commit || github.sha }}
+      RELEASE_APPROVAL_EVENT: ${{ github.event_name == 'workflow_dispatch' && format('workflow_dispatch:{0}', github.actor) || format('merge_to_master:{0}', github.sha) }}
+      RELEASE_REASON: ${{ github.event_name == 'workflow_dispatch' && inputs.release_reason || github.event.head_commit.message }}
     steps:
-      - name: Reject incomplete dispatch inputs
+      - name: Reject incomplete or unsafe release inputs
         run: |
-          test -n "$SOURCE_COMMIT"
-          test -n "${{ inputs.release_reason }}"
+          if [ -z "$SOURCE_COMMIT" ]; then SOURCE_COMMIT="$(git ls-remote https://github.com/MunyaChipunza/kalm-move-validation.git refs/heads/master | cut -f1)"; fi
           test "${#SOURCE_COMMIT}" -eq 40
           test -n "$NETLIFY_AUTH_TOKEN"
           test -n "$NETLIFY_SITE_ID"
+          test "$NETLIFY_SITE_ID" = "$EXPECTED_NETLIFY_SITE_ID"
+          test -n "$RELEASE_APPROVAL_EVENT"
 
       - name: Check out the approved commit only
         uses: actions/checkout@v4
@@ -64,10 +70,13 @@ jobs:
           test "$(git rev-parse HEAD)" = "$SOURCE_COMMIT"
           test "$(git rev-parse origin/master)" = "$SOURCE_COMMIT"
           test "$(git remote get-url origin | sed 's#\.git$##')" = "https://github.com/MunyaChipunza/kalm-move-validation"
+          node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));if(s.netlifySiteId!==process.env.EXPECTED_NETLIFY_SITE_ID||s.productionDomain!==process.env.PRODUCTION_URL) process.exit(1)"
 
       - name: Record current production deploy
         id: previous
         run: |
+          site="$(npx --no-install netlify api getSite --data \"{\\\"site_id\\\":\\\"$NETLIFY_SITE_ID\\\"}\")"
+          node -e "const s=JSON.parse(process.argv[1]);if(s.id!==process.env.EXPECTED_NETLIFY_SITE_ID||s.name!=='kalm-collective-storefront') process.exit(1)" "$site"
           previous="$(npx --no-install netlify api getSite --data \"{\\\"site_id\\\":\\\"$NETLIFY_SITE_ID\\\"}\" | node -e \"let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(JSON.parse(s).published_deploy.id))\")"
           echo "deploy_id=$previous" >> "$GITHUB_OUTPUT"
 
@@ -75,7 +84,7 @@ jobs:
         run: >-
           node tools/kalm-production-release.mjs --mode preflight --branch master
           --commit "$SOURCE_COMMIT" --previous-deploy "${{ steps.previous.outputs.deploy_id }}"
-          --approver "$RELEASE_APPROVER"
+          --approval-event "$RELEASE_APPROVAL_EVENT"
 
       - name: Verify generated release provenance
         run: |
@@ -88,7 +97,7 @@ jobs:
 
       - name: Validate the live custom domain
         id: smoke
-        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --retry 12
+        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --commit "$SOURCE_COMMIT" --retry 12
 
       - name: Automatically restore previous verified deploy after failed smoke test
         id: rollback
@@ -109,7 +118,8 @@ jobs:
             echo
             echo "- Approved commit: \`$SOURCE_COMMIT\`"
             echo "- Previous deploy: \`${{ steps.previous.outputs.deploy_id }}\`"
-            echo "- Deployed by: \`$RELEASE_APPROVER\` after GitHub production-environment approval"
+            echo "- Approval event: \`$RELEASE_APPROVAL_EVENT\`"
+            echo "- Release reason: \`$RELEASE_REASON\`"
             echo "- Deploy result: \`${{ steps.deploy.outcome }}\`"
             echo "- Smoke result: \`${{ steps.smoke.outcome }}\`"
             echo "- Rollback result: \`${{ steps.rollback.outcome }}\`"

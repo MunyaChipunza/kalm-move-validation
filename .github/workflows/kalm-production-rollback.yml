@@ -1,0 +1,82 @@
+name: KALM emergency production rollback
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_id:
+        description: Netlify deploy ID to restore. Defaults to the known-good deploy.
+        required: false
+        type: string
+      rollback_reason:
+        description: Emergency rollback reason.
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: kalm-production-release
+  cancel-in-progress: false
+
+jobs:
+  rollback:
+    name: Emergency KALM production rollback
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8
+      PRODUCTION_URL: https://kalmcollective.co.za
+      TARGET_DEPLOY_ID: ${{ inputs.deploy_id || '6a58f4cdabe29c0e28697f09' }}
+    steps:
+      - name: Check out release controls
+        uses: actions/checkout@v4
+
+      - name: Install pinned release dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Reject unsafe rollback target
+        run: |
+          test -n "$NETLIFY_AUTH_TOKEN"
+          test "$NETLIFY_SITE_ID" = "$EXPECTED_NETLIFY_SITE_ID"
+          test -n "$TARGET_DEPLOY_ID"
+          node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));if(s.netlifySiteId!==process.env.EXPECTED_NETLIFY_SITE_ID) process.exit(1)"
+
+      - name: Restore selected production deploy
+        id: rollback
+        run: >-
+          npx --no-install netlify api restoreSiteDeploy
+          --data "{\"site_id\":\"$NETLIFY_SITE_ID\",\"deploy_id\":\"$TARGET_DEPLOY_ID\"}"
+
+      - name: Validate restored production domain
+        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --retry 12
+
+      - name: Publish rollback audit record
+        if: always()
+        run: |
+          {
+            echo "## KALM emergency rollback audit"
+            echo
+            echo "- Requested by: \`${{ github.actor }}\`"
+            echo "- Rollback reason: \`${{ inputs.rollback_reason }}\`"
+            echo "- Target deploy: \`$TARGET_DEPLOY_ID\`"
+            echo "- Rollback result: \`${{ steps.rollback.outcome }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload rollback validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kalm-production-rollback-${{ github.run_id }}
+          if-no-files-found: warn
+          path: release/kalm-production-smoke.json

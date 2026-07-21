@@ -6,7 +6,8 @@
   "scripts": {
     "check:legacy-storefront": "node scripts/check-forbidden-legacy-storefront.mjs --root .",
     "release:preflight": "node tools/kalm-production-release.mjs --mode preflight",
-    "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy"
+    "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy",
+    "release:verify-controls": "node tools/kalm-production-release.mjs --mode verify-controls"
   },
   "devDependencies": {
     "netlify-cli": "26.2.0",

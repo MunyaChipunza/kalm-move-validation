@@ -1,6 +1,11 @@
 {
   "schemaVersion": 1,
   "repositoryRemote": "https://github.com/MunyaChipunza/kalm-move-validation",
+  "netlifySiteName": "kalm-collective-storefront",
+  "netlifySiteId": "06334c13-7d82-45f1-b983-4a7295de88d8",
+  "productionDomain": "https://kalmcollective.co.za",
+  "knownGoodBaselineCommit": "91511c00c080dd7b6148df950191af525316a297",
+  "knownGoodDeployId": "6a58f4cdabe29c0e28697f09",
   "productionBranch": "master",
   "productionReleaseWorkflow": ".github/workflows/kalm-production-release.yml",
   "publishDirectory": ".release-output/kalm-production",
