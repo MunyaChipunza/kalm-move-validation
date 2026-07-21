@@ -17,6 +17,7 @@ const productionBranch = args.branch || "master";
 const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee"];
 const forbidden = ["Wellness", "Outdoor", "Home", "Brands", "movement, outdoor routines and everyday living"];
 const productionRemote = "https://github.com/MunyaChipunza/kalm-move-validation";
+const sentinelPath = resolve(root, ".kalm-approved-release-root");
 
 function parseArgs(argv) {
   const parsed = {};
@@ -79,6 +80,40 @@ async function copyCandidate() {
   }
 }
 
+async function inspectReleaseSentinel(failures) {
+  let sentinel = null;
+  try { sentinel = JSON.parse(await readFile(sentinelPath, "utf8")); }
+  catch {
+    failures.push("The canonical .kalm-approved-release-root sentinel is missing or invalid JSON.");
+    return null;
+  }
+  assert(sentinel.repositoryRemote === productionRemote, "Release sentinel has an unexpected canonical remote.", failures);
+  assert(sentinel.productionBranch === productionBranch, "Release sentinel does not match the approved branch.", failures);
+  assert(sentinel.publishDirectory === ".release-output/kalm-production", "Release sentinel has an unexpected publish directory.", failures);
+  assert(sentinel.buildCommand === "node tools/kalm-production-release.mjs --mode preflight", "Release sentinel has an unexpected build command.", failures);
+  assert(sentinel.expectedBuildSignature === "KALM_CANONICAL_STOREFRONT_RELEASE_V1", "Release sentinel has an unexpected build signature.", failures);
+  assert(resolve(root, sentinel.publishDirectory || "") === publishDir, "Publish directory does not match the canonical sentinel.", failures);
+  const relativePublishDirectory = relative(root, publishDir);
+  assert(relativePublishDirectory.length > 0 && !relativePublishDirectory.startsWith("..") && !relativePublishDirectory.includes(":\\"), "Publish directory is not a child of the canonical repository.", failures);
+  return sentinel;
+}
+
+async function writeBuildSignature(sentinel) {
+  if (!sentinel?.expectedBuildSignature) return;
+  await writeFile(join(publishDir, ".kalm-build-signature.json"), JSON.stringify({ signature: sentinel.expectedBuildSignature, source: "canonical-release-root" }, null, 2) + "\n");
+}
+
+async function runForbiddenScanner(directory, label, failures) {
+  try {
+    const { stdout } = await execFile(process.execPath, [join(root, "scripts", "check-forbidden-legacy-storefront.mjs"), "--root", directory], { cwd: root, windowsHide: true });
+    return JSON.parse(stdout);
+  } catch (error) {
+    const result = String(error.stdout || error.message || "scanner failed").trim();
+    failures.push(label + " legacy-content sentinel failed: " + result);
+    return { status: "fail", detail: result };
+  }
+}
+
 function normaliseRemote(value) {
   return value.trim().replace(/^git@github\.com:/, "https://github.com/").replace(/^https?:\/\/[^@/]+@github\.com\//, "https://github.com/").replace(/\.git$/, "").replace(/\/$/, "");
 }
@@ -107,7 +142,7 @@ function redirectAssertions(toml, failures) {
   return redirectCount;
 }
 
-async function inspectCandidate(failures) {
+async function inspectCandidate(failures, sentinel) {
   const sourceTomlPath = join(root, "netlify.toml");
   const sourceToml = await exists(sourceTomlPath) ? await readFile(sourceTomlPath, "utf8") : "";
   assert(sourceToml.length > 0, "netlify.toml is missing.", failures);
@@ -119,6 +154,13 @@ async function inspectCandidate(failures) {
   assert(!(files.length === 1 && relative(publishDir, files[0]) === "index.html"), "Candidate contains only index.html.", failures);
   assert(!files.some((file) => relative(publishDir, file).startsWith("reports")), "Private reports are present in the publish directory.", failures);
   assert(!files.some((file) => file.endsWith(".map")), "Source maps are present in the publish directory.", failures);
+  const signaturePath = join(publishDir, ".kalm-build-signature.json");
+  try {
+    const signature = JSON.parse(await readFile(signaturePath, "utf8"));
+    assert(signature.signature === sentinel?.expectedBuildSignature, "Publish directory does not contain the expected build signature.", failures);
+  } catch {
+    failures.push("Publish directory is missing a readable build signature.");
+  }
   const catalogue = JSON.parse(await readFile(join(publishDir, "products.json"), "utf8"));
   const products = Array.isArray(catalogue) ? catalogue : catalogue.products;
   assert(Array.isArray(products) && products.length > 0, "Catalogue validation failed: products array is missing.", failures);
@@ -222,9 +264,13 @@ async function writeManifest(manifest) {
 
 async function validatePreflight() {
   const failures = [];
+  const sentinel = await inspectReleaseSentinel(failures);
   const git = await inspectGit(failures);
+  const sourceLegacyScan = await runForbiddenScanner(root, "Source", failures);
   await copyCandidate();
-  const candidate = await inspectCandidate(failures);
+  await writeBuildSignature(sentinel);
+  const candidate = await inspectCandidate(failures, sentinel);
+  const outputLegacyScan = await runForbiddenScanner(publishDir, "Generated output", failures);
   const server = await startStaticServer(publishDir);
   let routes = [];
   try { routes = await renderedChecks(server.baseUrl, failures, { expectRedirects: true }); }
@@ -240,6 +286,7 @@ async function validatePreflight() {
     dependencyLockFile: lockFile,
     dependencyLockFileHash: lockFile ? await hashFile(join(root, lockFile)) : null,
     buildCommand: "node tools/kalm-production-release.mjs --mode preflight",
+    buildSignature: sentinel?.expectedBuildSignature || "missing",
     publishDirectory: relative(root, publishDir).replaceAll("\\", "/"),
     fileCount: candidate.files.length,
     totalAssetCount: candidate.files.filter((file) => /\.(avif|gif|jpe?g|png|svg|webp|woff2?)$/i.test(file)).length,
@@ -248,6 +295,7 @@ async function validatePreflight() {
     variantCount: candidate.variantCount,
     requiredRoutes,
     forbiddenStrings: forbidden,
+    legacyContentScan: { source: sourceLegacyScan, generatedOutput: outputLegacyScan },
     criticalAssetHashes: candidate.criticalAssetHashes,
     releaseApprover: args.approver || "pending GitHub production-environment approval",
     previousProductionDeployId: args["previous-deploy"] || "unknown",
