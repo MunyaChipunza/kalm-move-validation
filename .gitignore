@@ -4,6 +4,7 @@ node_modules/
 .release-output/
 release/kalm-production-manifest.json
 release/kalm-production-smoke.json
+release/kalm-release-controls.json
 .netlify-runtime/
 .env
 .env.*

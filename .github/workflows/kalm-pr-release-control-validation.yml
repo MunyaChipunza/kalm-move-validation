@@ -1,0 +1,45 @@
+name: KALM PR release-control validation
+
+on:
+  pull_request:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kalm-pr-release-control-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate release controls without production access
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+
+      - name: Install pinned dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: JavaScript syntax checks
+        run: |
+          node --check tools/kalm-production-release.mjs
+          node --check tools/kalm-release-control-tests.mjs
+          node --check tools/validate-workflows.mjs
+          node --check scripts/check-forbidden-legacy-storefront.mjs
+
+      - name: Validate workflow YAML and safety rules
+        run: npm run release:validate-workflows
+
+      - name: Verify release-control invariants
+        run: npm run release:verify-controls
+
+      - name: Run deterministic release-control tests
+        run: npm run release:test-controls

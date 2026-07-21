@@ -4,6 +4,23 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "assets/**"
+      - "branding/**"
+      - "data/**"
+      - "404.html"
+      - "index.html"
+      - "thanks.html"
+      - "merchandising.js"
+      - "route-bootstrap.js"
+      - "script.js"
+      - "styles.css"
+      - "products.json"
+      - "netlify.toml"
+      - "robots.txt"
+      - "sitemap.xml"
+      - "site.webmanifest"
+      - "llms.txt"
   workflow_dispatch:
     inputs:
       source_commit:
@@ -35,14 +52,23 @@ jobs:
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8
       PRODUCTION_URL: https://kalmcollective.co.za
-      SOURCE_COMMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.source_commit || github.sha }}
       RELEASE_APPROVAL_EVENT: ${{ github.event_name == 'workflow_dispatch' && format('workflow_dispatch:{0}', github.actor) || format('merge_to_master:{0}', github.sha) }}
       RELEASE_REASON: ${{ github.event_name == 'workflow_dispatch' && inputs.release_reason || github.event.head_commit.message }}
     steps:
+      - name: Resolve approved source commit
+        id: source
+        run: |
+          source_commit="${{ github.event_name == 'workflow_dispatch' && inputs.source_commit || github.sha }}"
+          if [ -z "$source_commit" ]; then
+            source_commit="$(git ls-remote https://github.com/MunyaChipunza/kalm-move-validation.git refs/heads/master | cut -f1)"
+          fi
+          test "${#source_commit}" -eq 40
+          echo "commit=$source_commit" >> "$GITHUB_OUTPUT"
+
       - name: Reject incomplete or unsafe release inputs
         run: |
-          if [ -z "$SOURCE_COMMIT" ]; then SOURCE_COMMIT="$(git ls-remote https://github.com/MunyaChipunza/kalm-move-validation.git refs/heads/master | cut -f1)"; fi
-          test "${#SOURCE_COMMIT}" -eq 40
+          source_commit="${{ steps.source.outputs.commit }}"
+          test "${#source_commit}" -eq 40
           test -n "$NETLIFY_AUTH_TOKEN"
           test -n "$NETLIFY_SITE_ID"
           test "$NETLIFY_SITE_ID" = "$EXPECTED_NETLIFY_SITE_ID"
@@ -51,7 +77,7 @@ jobs:
       - name: Check out the approved commit only
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.source_commit }}
+          ref: ${{ steps.source.outputs.commit }}
           fetch-depth: 0
 
       - name: Install pinned release dependencies
@@ -67,8 +93,8 @@ jobs:
           test -f .kalm-approved-release-root
           git fetch origin master --depth=1
           test -z "$(git status --porcelain)"
-          test "$(git rev-parse HEAD)" = "$SOURCE_COMMIT"
-          test "$(git rev-parse origin/master)" = "$SOURCE_COMMIT"
+          test "$(git rev-parse HEAD)" = "${{ steps.source.outputs.commit }}"
+          test "$(git rev-parse origin/master)" = "${{ steps.source.outputs.commit }}"
           test "$(git remote get-url origin | sed 's#\.git$##')" = "https://github.com/MunyaChipunza/kalm-move-validation"
           node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));if(s.netlifySiteId!==process.env.EXPECTED_NETLIFY_SITE_ID||s.productionDomain!==process.env.PRODUCTION_URL) process.exit(1)"
 
@@ -83,21 +109,22 @@ jobs:
       - name: Build and validate rendered release candidate
         run: >-
           node tools/kalm-production-release.mjs --mode preflight --branch master
-          --commit "$SOURCE_COMMIT" --previous-deploy "${{ steps.previous.outputs.deploy_id }}"
+          --commit "${{ steps.source.outputs.commit }}" --previous-deploy "${{ steps.previous.outputs.deploy_id }}"
           --approval-event "$RELEASE_APPROVAL_EVENT"
 
       - name: Verify generated release provenance
         run: |
           test -f release/kalm-production-manifest.json
-          node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));const m=JSON.parse(fs.readFileSync('release/kalm-production-manifest.json','utf8'));if(m.validationStatus!=='pass'||m.buildSignature!==s.expectedBuildSignature||m.publishDirectory!==s.publishDirectory) process.exit(1)"
+          test -f .release-output/kalm-production/.kalm-build-signature.json
+          node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));const m=JSON.parse(fs.readFileSync('release/kalm-production-manifest.json','utf8'));const p=JSON.parse(fs.readFileSync('.release-output/kalm-production/.kalm-build-signature.json','utf8'));if(m.validationStatus!=='pass'||m.buildSignature!==s.expectedBuildSignature||m.publishDirectory!==s.publishDirectory||p.repository!==s.repositoryRemote||p.sourceCommitSha!=='${{ steps.source.outputs.commit }}'||p.expectedNetlifySiteId!==s.netlifySiteId||p.productionDomain!==s.productionDomain||p.criticalAssetHash!==m.criticalAssetHash) process.exit(1)"
 
       - name: Deploy approved release candidate
         id: deploy
-        run: npx --no-install netlify deploy --prod --dir .release-output/kalm-production --site "$NETLIFY_SITE_ID" --message "GitHub protected release $SOURCE_COMMIT"
+        run: npx --no-install netlify deploy --prod --dir .release-output/kalm-production --site "$NETLIFY_SITE_ID" --message "GitHub protected release ${{ steps.source.outputs.commit }}"
 
       - name: Validate the live custom domain
         id: smoke
-        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --commit "$SOURCE_COMMIT" --retry 12
+        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --commit "${{ steps.source.outputs.commit }}" --retry 12
 
       - name: Automatically restore previous verified deploy after failed smoke test
         id: rollback
@@ -116,7 +143,7 @@ jobs:
           {
             echo "## KALM production release audit"
             echo
-            echo "- Approved commit: \`$SOURCE_COMMIT\`"
+            echo "- Approved commit: \`${{ steps.source.outputs.commit }}\`"
             echo "- Previous deploy: \`${{ steps.previous.outputs.deploy_id }}\`"
             echo "- Approval event: \`$RELEASE_APPROVAL_EVENT\`"
             echo "- Release reason: \`$RELEASE_REASON\`"
