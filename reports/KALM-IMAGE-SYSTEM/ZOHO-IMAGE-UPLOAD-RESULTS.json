@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-07-21T06:26:35.969Z",
+  "mode": "dry-run",
+  "pilot": false,
+  "mappingFile": "C:/CodexWork/kalm-ops-intranet-thumbnail-preview/src/data/inventoryImageMap.ts",
+  "thumbnailRoot": "C:/CodexWork/kalm-ops-intranet-thumbnail-preview/public",
+  "eligibleVerifiedMappings": 104,
+  "selectedMappings": 104,
+  "uniqueZohoItems": 104,
+  "signatureTeeMappingPresent": false,
+  "invalidFiles": [],
+  "uploads": [],
+  "summary": {
+    "reviewed": 0,
+    "uploaded": 0,
+    "verified": 0,
+    "skipped": 0,
+    "failed": 0,
+    "protectedFieldChanges": 0
+  },
+  "blockers": [
+    "Netlify returned masked secret placeholders for required Zoho runtime values: encryptionKey, clientId, clientSecret, organizationId, region."
+  ]
+}

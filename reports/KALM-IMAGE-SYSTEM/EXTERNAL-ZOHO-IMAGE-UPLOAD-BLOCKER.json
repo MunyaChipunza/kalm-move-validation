@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-07-21T08:26:57.0661456+02:00",
+  "status": "blocked_before_zoho_mutation",
+  "operation": "Zoho Inventory item thumbnail upload via official item image API",
+  "requiredEndpoint": "POST /inventory/v1/items/{item_id}/image",
+  "sourceBranch": "codex/kalm-image-library-inventory-thumbnails-20260720",
+  "sourceHead": "c5e9e7747d8f88d2021501e318aeb2c94570dc72",
+  "mapping": {
+    "eligibleVerifiedMappings": 104,
+    "uniqueZohoItems": 104,
+    "missingThumbnailFiles": 0,
+    "signatureTeeVerifiedMappingPresent": false
+  },
+  "oauth": {
+    "userCompletedZohoConsent": true,
+    "callbackReturnedEncryptedBundle": true,
+    "encryptedBundleStoredLocallyInIgnoredTempPath": true,
+    "requestedCreateScope": "ZohoInventory.items.CREATE"
+  },
+  "blocker": {
+    "type": "netlify_secret_masking",
+    "summary": "Netlify secret environment variables are masked in UI and CLI outside Netlify runtime. The local uploader cannot decrypt the encrypted Zoho token bundle or refresh/access the Zoho API without real unmasked runtime values.",
+    "maskedValuesObserved": [
+      "ZOHO_ACCESS_TOKEN_ENCRYPTION_KEY",
+      "ZOHO_CLIENT_ID",
+      "ZOHO_CLIENT_SECRET",
+      "ZOHO_INVENTORY_ORGANIZATION_ID",
+      "ZOHO_INVENTORY_DC_REGION"
+    ],
+    "notPrintedOrCommitted": true
+  },
+  "externalMutations": {
+    "zohoItemsChanged": false,
+    "zohoImagesUploaded": 0,
+    "intranetProductionDeployed": false,
+    "storefrontChanged": false,
+    "munyaTaskApplicationChanged": false
+  },
+  "nextSafeOptions": [
+    "Run the existing uploader with a real unmasked local env file supplied out-of-band and kept ignored.",
+    "Add a narrowly scoped server-side intranet image-upload function and run it in a Netlify context where the existing secrets are available, after explicit approval for that deployment path.",
+    "Use Zoho API credentials from a secure secret manager or direct local environment variable injection without printing or committing them."
+  ]
+}
