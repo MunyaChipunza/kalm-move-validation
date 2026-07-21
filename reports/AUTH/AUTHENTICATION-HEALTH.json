@@ -1,0 +1,30 @@
+{
+    "generatedAt":  "2026-07-21T09:05:10.9188834Z",
+    "github":  {
+                   "service":  "github",
+                   "status":  "healthy",
+                   "account":  "MunyaChipunza",
+                   "remoteFetch":  true
+               },
+    "netlify":  {
+                    "service":  "netlify",
+                    "status":  "healthy",
+                    "site":  "kalm-collective-intranet",
+                    "siteId":  "52adadfd-1d6b-4128-9df1-575614f2f1df",
+                    "taskApplicationSeparate":  true
+                },
+    "zoho":  {
+                 "service":  "zoho",
+                 "status":  "configuration repair required",
+                 "runnerReachable":  false
+             },
+    "drive":  {
+                  "service":  "drive",
+                  "status":  "healthy",
+                  "mountedRoots":  [
+                                       "G:\\My Drive",
+                                       "G:\\.shortcut-targets-by-id"
+                                   ]
+              }
+}
+
