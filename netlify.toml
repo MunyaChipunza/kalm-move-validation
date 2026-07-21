@@ -76,6 +76,24 @@
   to = "/index.html"
   status = 200
 
+# Short approved commercial routes are canonical redirects, not standalone
+# pages. They keep release validation and external links on the supported SPA
+# routes without introducing a second publish source.
+[[redirects]]
+  from = "/ks-active"
+  to = "/collections/ks-active"
+  status = 301
+
+[[redirects]]
+  from = "/archive-sale"
+  to = "/collections/sale"
+  status = 301
+
+[[redirects]]
+  from = "/kalm-move"
+  to = "/brand/kalm-move"
+  status = 301
+
 [[redirects]]
   from = "/brands"
   to = "/index.html"

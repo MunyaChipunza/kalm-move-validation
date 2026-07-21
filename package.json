@@ -1,0 +1,14 @@
+{
+  "name": "kalm-production-release-controls",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reproducible validation tooling for protected KALM production releases.",
+  "scripts": {
+    "release:preflight": "node tools/kalm-production-release.mjs --mode preflight",
+    "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy"
+  },
+  "devDependencies": {
+    "netlify-cli": "26.2.0",
+    "playwright": "1.55.0"
+  }
+}

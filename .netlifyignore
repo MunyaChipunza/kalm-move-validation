@@ -3,6 +3,11 @@
 .netlify-runtime/
 .qa/
 tmp/
+release/
+reports/
+review/
+docs/
+tools/
 reports/KALM-ODO-PILOT/*.inspect.ndjson
 Thumbs.db
 .DS_Store

@@ -1,5 +1,9 @@
 .qa/
 .netlify/
+node_modules/
+.release-output/
+release/kalm-production-manifest.json
+release/kalm-production-smoke.json
 .netlify-runtime/
 .env
 .env.*
