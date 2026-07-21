@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T14:57:03+00:00",
+  "generatedAt": "2026-07-21T09:46:48.7119799+02:00",
   "driveLibrary": {
     "root": "https://drive.google.com/drive/folders/14tjk_QqPopeu85bKqxeDucWrboUFWGBX",
     "imageRegisters": "https://drive.google.com/drive/folders/1XEkMKRMFISKa7opZKSGYJdO7TeZBZJ3Q",
@@ -35,11 +35,22 @@
     },
     "zohoImageAttachments": {
       "status": "blocked",
-      "reason": "Current Chrome bridge has no file-upload primitive; no unverified update made."
+      "reason": "A protected Netlify runtime runner was implemented locally, but branch deploy execution is blocked because non-production Netlify contexts expose no Zoho runtime variables and the clean intranet worktree has no Git remote for a Git-based branch deploy. No Zoho mutation was made."
     },
     "intranetPreview": {
       "status": "blocked",
-      "reason": "Vite watcher receives EINVAL from the Google Drive dependency tree; no production intranet change made."
+      "reason": "Clean local worktree build and tests passed, but Git-based Netlify preview generation is blocked by missing Git remote/branch deploy path. No production intranet change made."
+    },
+    "netlifyRuntimeRunner": {
+      "status": "implemented_local_only",
+      "siteId": "52adadfd-1d6b-4128-9df1-575614f2f1df",
+      "branch": "codex/zoho-image-runtime-upload-20260721",
+      "commit": "d4581872abde441e5af9df4ca1b82683e67cfbf7",
+      "externalEndpointLive": false
+    },
+    "signatureTeeZohoMapping": {
+      "status": "not_found_in_verified_map",
+      "verifiedMappingPresent": false
     },
     "production": {
       "status": "unchanged"

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T06:26:35.969Z",
-  "mode": "dry-run",
+  "generatedAt": "2026-07-21T09:46:48.7119799+02:00",
+  "mode": "netlify-runtime-preflight",
   "pilot": false,
   "mappingFile": "C:/CodexWork/kalm-ops-intranet-thumbnail-preview/src/data/inventoryImageMap.ts",
   "thumbnailRoot": "C:/CodexWork/kalm-ops-intranet-thumbnail-preview/public",
@@ -19,6 +19,17 @@
     "protectedFieldChanges": 0
   },
   "blockers": [
-    "Netlify returned masked secret placeholders for required Zoho runtime values: encryptionKey, clientId, clientSecret, organizationId, region."
-  ]
+    "Netlify non-production contexts currently expose no Zoho runtime variables for deploy-preview or branch-deploy.",
+    "The clean intranet worktree has no Git remote configured, so the required Git-based branch deploy cannot be pushed from this checkout."
+  ],
+  "netlifyRuntimeRunner": {
+    "implemented": true,
+    "projectName": "kalm-collective-intranet",
+    "siteId": "52adadfd-1d6b-4128-9df1-575614f2f1df",
+    "branch": "codex/zoho-image-runtime-upload-20260721",
+    "localCommit": "d4581872abde441e5af9df4ca1b82683e67cfbf7",
+    "externalEndpointLive": false,
+    "secretsExposed": false,
+    "productionDeploy": false
+  }
 }
