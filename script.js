@@ -1599,18 +1599,60 @@ function renderContact() {
 }
 
 function renderPolicies() {
-  setDocumentMeta("Policies | KALM Collective", "Delivery, returns, payment and privacy information for KALM Collective customers.");
+  setDocumentMeta("Delivery, Returns & Refunds | KALM Collective", "Clear delivery, returns and refund information for KALM Collective customers.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Policies</p>
-      <h1>Customer information.</h1>
-      <p>Delivery, returns, payment and privacy details for shopping with KALM Collective.</p>
+      <h1>Delivery, returns & refunds.</h1>
+      <p>Clear customer care information for shopping with KALM Collective.</p>
     </section>
     <section class="policy-grid">
-      <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Courier delivery is available across South Africa. Standard delivery takes 2 to 5 business days after order confirmation, with express delivery available in selected areas.</p></article>
-      <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused home or wellness items in their original condition and packaging.</p></article>
-      <article class="policy-card"><h2>Payment</h2><p>Checkout supports PayFast, Ozow and EFT selections. Payment instructions are confirmed after order review, and card details are not collected on this page.</p></article>
-      <article class="policy-card"><h2>Privacy</h2><p>KALM Collective processes customer information for orders, delivery, customer care and opt-in marketing in line with POPIA.</p></article>
+      <article class="policy-card policy-card-wide" id="delivery">
+        <p class="eyebrow">Shipping policy</p>
+        <h2>Delivery across South Africa.</h2>
+        <p>We deliver orders by courier to physical street addresses in South Africa. Our standard delivery target is <strong>2 to 5 working days</strong> from confirmed payment and order processing. Working days exclude weekends and South African public holidays.</p>
+        <h3>Before dispatch</h3>
+        <ul>
+          <li>We will send order confirmation to the email address supplied at checkout. If stock is unavailable after an order is placed, we will contact you promptly and offer a refund for the affected item or order.</li>
+          <li>Any delivery charge, delivery option or qualifying delivery promotion is shown at checkout before payment is completed.</li>
+          <li>Please check your delivery address and contact details carefully. Contact <a href="mailto:hello@kalmcollective.co.za">hello@kalmcollective.co.za</a> as soon as possible if an address needs to be corrected; changes cannot be guaranteed once an order has been dispatched.</li>
+        </ul>
+        <h3>Delivery updates and delays</h3>
+        <ul>
+          <li>Where tracking is available, we will share it using the contact details provided with the order.</li>
+          <li>Delivery may take longer in remote areas or because of courier, weather, security or other circumstances outside our reasonable control. If the delivery estimate materially changes, we will keep you informed.</li>
+          <li>If your order has not arrived within the stated delivery period, please contact us with your order number so that we can investigate with the courier.</li>
+        </ul>
+      </article>
+      <article class="policy-card policy-card-wide" id="returns">
+        <p class="eyebrow">Returns & refund policy</p>
+        <h2>Returns handled fairly.</h2>
+        <p>We want you to be confident in your purchase. This policy explains our voluntary returns process and does not limit any rights you may have under applicable South African consumer-protection law.</p>
+        <h3>Unwanted or incorrect-size items</h3>
+        <ul>
+          <li>You may request a return within <strong>30 calendar days</strong> of delivery for an unworn item in its original, resaleable condition, with tags, packaging and any included accessories intact.</li>
+          <li>Please take reasonable care when trying on apparel. Items that have been worn, washed, altered, soiled or damaged after delivery may not qualify for a change-of-mind return, unless they are faulty or not as described.</li>
+          <li>For a change-of-mind return, the customer is responsible for the direct cost of returning the item unless we agree otherwise. We will confirm the return method and any cost before collection or return is arranged.</li>
+          <li>Size exchanges are subject to availability. If a replacement is not available, an eligible return may be refunded instead.</li>
+        </ul>
+        <h3>Incorrect, damaged or defective items</h3>
+        <ul>
+          <li>If we send the wrong item, an item is damaged on arrival or it does not match its description, please contact us as soon as reasonably possible with your order number and clear photographs where helpful. We will arrange the appropriate return at our cost.</li>
+          <li>For a defect that becomes apparent within six months of delivery, contact us promptly. Subject to applicable law and assessment of the item, you may be entitled to a repair, replacement or refund.</li>
+          <li>Normal wear and tear, accidental damage, misuse, poor care or unauthorised alteration are not defects.</li>
+        </ul>
+        <h3>Refund timing</h3>
+        <p>Once an eligible return has been received and assessed, we will confirm the outcome. Approved refunds are initiated to the original payment method within <strong>7 working days</strong>. Your bank or payment provider may take additional time to make the funds visible in your account.</p>
+        <p class="policy-note">To start a return, email <a href="mailto:hello@kalmcollective.co.za">hello@kalmcollective.co.za</a> with your order number, the item you would like to return and the reason for the request. Please do not send an item back before we provide return instructions.</p>
+      </article>
+      <article class="policy-card" id="payment">
+        <h2>Payment security</h2>
+        <p>Available payment options are displayed at checkout. Payments are processed through the selected secure payment provider; KALM Collective does not ask customers to send card details by email.</p>
+      </article>
+      <article class="policy-card" id="privacy">
+        <h2>Privacy</h2>
+        <p>We use customer information only as needed to process orders, arrange delivery, provide customer care and send marketing where you have opted in, in line with POPIA.</p>
+      </article>
     </section>
     ${renderFooter()}
   `;
