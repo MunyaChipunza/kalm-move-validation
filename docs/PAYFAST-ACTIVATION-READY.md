@@ -36,7 +36,7 @@ Configure these only as **secret** values, with production and preview contexts 
 - `PAYFAST_PASSPHRASE`
 - `KALM_PAYMENT_RECONCILIATION_TOKEN`
 
-Current verified state: `PAYFAST_PASSPHRASE` is present as a production-only secret; the PayFast ITN callback is enabled at the configured KALM HTTPS endpoint and PayFast's required-signature setting is enabled. Merchant ID, merchant key and reconciliation token remain intentionally unconfigured until the PayFast dashboard session is restored and provider verification completes.
+Current verified state: `PAYFAST_MERCHANT_ID`, `PAYFAST_MERCHANT_KEY` and `PAYFAST_PASSPHRASE` are present as production-only secrets; the PayFast ITN callback is enabled at the configured KALM HTTPS endpoint and PayFast's required-signature setting is enabled. The gateway remains disabled. The reconciliation token remains intentionally unconfigured until the internal operations service is ready for authenticated reconciliation access.
 
 The reconciliation token is an internal-operations credential. It may be used only by an authenticated KALM operations service to call the private reconciliation endpoint; it must never be exposed to browser JavaScript or a public dashboard.
 
@@ -62,7 +62,7 @@ Refund, chargeback and payout lifecycle actions require a separately authorised 
 PayFast has acknowledged the application, while account verification remains provider-controlled. Before any live enablement:
 
 1. Confirm the approved business profile, settlement bank details and activation status in PayFast.
-2. Rotate the merchant key if instructed by PayFast, then securely set the issued merchant ID and key in production-only Netlify secret fields.
+2. Rotate the merchant key if instructed by PayFast and replace only the production-only Netlify secret value.
 3. Add sandbox credentials to non-production contexts when issued and run one successful low-value sandbox payment.
 4. Verify the server notification, duplicate-notification handling, pending/cancelled return pages, order state and private reconciliation record.
 5. Run a distinct failed/cancelled test and verify no fulfilment state is created.
