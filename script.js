@@ -315,6 +315,7 @@ function renderRoute() {
   if (route.path.startsWith("/product/")) return renderProduct(route.path.split("/").pop(), route.params);
   if (route.path === "/cart") return renderCartPage();
   if (route.path === "/checkout") return renderCheckout();
+  if (route.path === "/payment/payfast") return renderPayFastPaymentStatus(route.params);
   if (route.path === "/contact") return renderContact();
   if (route.path === "/policies") {
     renderPolicies();
@@ -1518,9 +1519,8 @@ function renderCheckout() {
 
         <h2>Payment method</h2>
         <div class="option-grid">
-          <label class="option-card"><input type="radio" name="payment_method" value="PayFast" checked><span><strong>PayFast</strong><small>Card and instant EFT</small></span></label>
           <label class="option-card"><input type="radio" name="payment_method" value="Ozow"><span><strong>Ozow</strong><small>Instant EFT</small></span></label>
-          <label class="option-card"><input type="radio" name="payment_method" value="EFT"><span><strong>EFT</strong><small>Bank transfer</small></span></label>
+          <label class="option-card"><input type="radio" name="payment_method" value="EFT" checked><span><strong>EFT</strong><small>Bank transfer</small></span></label>
         </div>
         <p class="payment-note">Payment instructions will be confirmed after order review. Card details are not collected on this page.</p>
 
@@ -1549,9 +1549,81 @@ function renderCheckout() {
     }
     event.currentTarget.cart_summary.value = getCartSummary();
     event.currentTarget.order_total.value = String(getSubtotal());
+    if (new FormData(event.currentTarget).get("payment_method") === "PayFast") {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      void beginPayFastCheckout(event.currentTarget);
+    }
   });
   bindNetlifyForms(app);
+  void addPayFastOption(document.querySelector("[data-order-form]"));
   hydrateDeferredImages(app);
+}
+
+function renderPayFastPaymentStatus(params) {
+  setRouteIndexability(false);
+  const status = params.status === "cancelled" ? "Payment cancelled" : "Payment pending";
+  const copy = params.status === "cancelled"
+    ? "No payment has been confirmed. You can return to your bag and try again when you are ready."
+    : "We are confirming your payment securely. Your order will be updated only after PayFast sends a verified confirmation.";
+  app.innerHTML = `
+    <section class="page-hero compact payment-status-page">
+      <p class="eyebrow">Secure payment</p>
+      <h1>${escapeHtml(status)}</h1>
+      <p>${escapeHtml(copy)}</p>
+      <div class="hero-actions"><a class="button primary" href="#/cart">RETURN TO BAG</a><a class="button secondary" href="#/contact">CONTACT SUPPORT</a></div>
+    </section>
+    ${renderFooter()}
+  `;
+}
+
+async function addPayFastOption(form) {
+  if (!form) return;
+  try {
+    const response = await fetch("/api/payments/payfast/config", { cache: "no-store" });
+    if (!response.ok) return;
+    const gateway = await response.json();
+    if (!gateway?.available) return;
+    const options = form.querySelector(".option-grid");
+    if (!options || options.querySelector("[value='PayFast']")) return;
+    const option = document.createElement("label");
+    option.className = "option-card";
+    option.innerHTML = `<input type="radio" name="payment_method" value="PayFast"><span><strong>PayFast</strong><small>Card and instant EFT</small></span>`;
+    options.prepend(option);
+  } catch {
+    // Fail closed: checkout retains its established non-PayFast methods.
+  }
+}
+
+async function beginPayFastCheckout(form) {
+  const status = form.querySelector("[data-order-status]");
+  const button = form.querySelector("button[type='submit']");
+  if (!state.bag.length) {
+    if (status) status.textContent = "Add at least one item to your bag before checkout.";
+    return;
+  }
+  if (!form.reportValidity()) return;
+  if (status) status.textContent = "Preparing secure payment…";
+  if (button) button.disabled = true;
+  try {
+    const values = new FormData(form);
+    const response = await fetch("/api/payments/payfast/initiate", {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify({
+        items: state.bag.map((item) => ({ productId: item.productId, color: item.color, size: item.size, quantity: item.qty })),
+        customer: { name: values.get("name"), email: values.get("email"), phone: values.get("phone") },
+        delivery: { address: values.get("address"), suburb: values.get("suburb"), city: values.get("city"), province: values.get("province"), postalCode: values.get("postal_code") },
+        shippingMethod: values.get("shipping_method")
+      })
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || !payload.redirect) throw new Error(payload.message || "Secure payment is unavailable.");
+    window.location.assign(payload.redirect);
+  } catch (error) {
+    if (status) status.textContent = error instanceof Error ? error.message : "Secure payment is unavailable. Please choose another payment method.";
+    if (button) button.disabled = false;
+  }
 }
 
 function renderContact() {

@@ -9,7 +9,13 @@
     "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy",
     "release:verify-controls": "node tools/kalm-production-release.mjs --mode verify-controls",
     "release:test-controls": "node tools/kalm-release-control-tests.mjs",
-    "release:validate-workflows": "node tools/validate-workflows.mjs"
+    "release:validate-workflows": "node tools/validate-workflows.mjs",
+    "payfast:test": "node --test tests/payfast/payfast-core.test.mjs",
+    "payfast:security": "node scripts/check-payfast-security.mjs",
+    "payfast:activate": "node scripts/activate-payfast.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.1.6"
   },
   "devDependencies": {
     "netlify-cli": "26.2.0",

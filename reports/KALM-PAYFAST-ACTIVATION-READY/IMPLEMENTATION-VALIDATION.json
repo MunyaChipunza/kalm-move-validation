@@ -1,0 +1,28 @@
+{
+  "date": "2026-08-04",
+  "merchantOfRecord": "KALM Collective (PTY) LTD",
+  "provider": "PayFast",
+  "gatewayEnabled": false,
+  "mode": "test",
+  "credentialSet": "none",
+  "netlifySite": {
+    "name": "kalm-collective-storefront",
+    "id": "06334c13-7d82-45f1-b983-4a7295de88d8"
+  },
+  "tests": {
+    "payfastCore": { "status": "pass", "count": 29 },
+    "secretSourceScan": { "status": "pass", "findings": 0 },
+    "productionDependencyAudit": { "status": "pass", "vulnerabilities": 0 },
+    "workflowValidation": { "status": "pass" },
+    "releaseControlTests": { "status": "pass", "count": 10 },
+    "disabledEndpoint": { "status": "pass" }
+  },
+  "paystackChanged": false,
+  "productionDeployed": false,
+  "secretsRecorded": false,
+  "providerAccountStatus": "verification_pending_or_authenticated_session_required",
+  "releaseGate": {
+    "status": "blocked",
+    "reason": "pre-existing canonical legacy-content sentinel failure"
+  }
+}

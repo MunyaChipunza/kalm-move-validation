@@ -1,6 +1,9 @@
 [build]
   publish = "."
 
+[functions]
+  directory = "netlify/functions"
+
 # Review and source-lock material is never a public storefront asset. The
 # underlying audit history remains in Git, while these request paths are
 # explicitly unavailable from every production or preview deployment.
@@ -30,6 +33,12 @@
 
 [[redirects]]
   from = "/reports/KALM-MOVE-SIGNATURE-TEE/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/reports/KALM-PAYFAST-ACTIVATION-READY/*"
   to = "/404.html"
   status = 404
   force = true
@@ -129,10 +138,15 @@
   to = "/index.html"
   status = 200
 
+[[redirects]]
+  from = "/payment/*"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; form-action 'self'; upgrade-insecure-requests"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; form-action 'self' https://www.payfast.co.za https://sandbox.payfast.co.za; upgrade-insecure-requests"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
