@@ -1599,14 +1599,26 @@ function renderContact() {
 }
 
 function renderPolicies() {
-  setDocumentMeta("Delivery, Returns & Refunds | KALM Collective", "Clear delivery, returns and refund information for KALM Collective customers.");
+  setDocumentMeta("Customer policies | KALM Collective", "Delivery, returns, refund, privacy and purchase terms for KALM Collective customers.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Policies</p>
-      <h1>Delivery, returns & refunds.</h1>
-      <p>Clear customer care information for shopping with KALM Collective.</p>
+      <h1>Customer policies.</h1>
+      <p>Clear delivery, returns, refund, privacy and purchase information for shopping with KALM Collective.</p>
     </section>
     <section class="policy-grid">
+      <article class="policy-card policy-card-wide" id="terms">
+        <p class="eyebrow">Legal seller & purchase terms</p>
+        <h2>KALM COLLECTIVE (PTY) LTD.</h2>
+        <p>KALM COLLECTIVE (PTY) LTD is the legal seller of goods offered through this website and is responsible for customer care, returns and eligible refunds. For help with an order, contact <a href="mailto:hello@kalmcollective.co.za">hello@kalmcollective.co.za</a>.</p>
+        <h3>Placing an order</h3>
+        <ul>
+          <li>Prices are shown in South African rand. Any delivery charge, delivery option or qualifying delivery promotion is shown before payment is completed.</li>
+          <li>Submitting an order request does not guarantee acceptance. We may need to confirm availability, delivery details and payment before accepting an order.</li>
+          <li>Please provide accurate contact and delivery details. We will use these details for order confirmation, fulfilment and customer care.</li>
+          <li>These policies do not limit rights that customers may have under applicable South African consumer-protection law.</li>
+        </ul>
+      </article>
       <article class="policy-card policy-card-wide" id="delivery">
         <p class="eyebrow">Shipping policy</p>
         <h2>Delivery across South Africa.</h2>
@@ -1647,11 +1659,11 @@ function renderPolicies() {
       </article>
       <article class="policy-card" id="payment">
         <h2>Payment security</h2>
-        <p>Available payment options are displayed at checkout. Payments are processed through the selected secure payment provider; KALM Collective does not ask customers to send card details by email.</p>
+        <p>Available payment options are displayed at checkout. KALM COLLECTIVE (PTY) LTD does not ask customers to send card details by email. Use only the payment method presented in the checkout flow for your order.</p>
       </article>
       <article class="policy-card" id="privacy">
         <h2>Privacy</h2>
-        <p>We use customer information only as needed to process orders, arrange delivery, provide customer care and send marketing where you have opted in, in line with POPIA.</p>
+        <p>KALM COLLECTIVE (PTY) LTD is responsible for the customer information collected through this website. We use it only as needed to process orders, arrange delivery, provide customer care and send marketing where you have opted in, in line with POPIA. For privacy questions, contact <a href="mailto:hello@kalmcollective.co.za">hello@kalmcollective.co.za</a>.</p>
       </article>
     </section>
     ${renderFooter()}
@@ -3000,6 +3012,7 @@ function renderFooter() {
         `)}
         ${footerSection("Customer care", `
           <a href="#/contact">Help</a>
+          <a href="#/policies#terms">Terms</a>
           <a href="#/policies#delivery">Delivery</a>
           <a href="#/policies#returns">Returns</a>
           <a href="#/policies">Privacy</a>
@@ -3009,7 +3022,7 @@ function renderFooter() {
           <p>kalmcollective.co.za</p>
         `)}
       </div>
-      <p class="copyright">© 2026 KALM Collective. All rights reserved.</p>
+      <p class="copyright">© 2026 KALM Collective. KALM COLLECTIVE (PTY) LTD. All rights reserved.</p>
     </footer>
   `;
 }
