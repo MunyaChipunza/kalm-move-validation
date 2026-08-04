@@ -36,7 +36,7 @@ Configure these only as **secret** values, with production and preview contexts 
 - `PAYFAST_PASSPHRASE`
 - `KALM_PAYMENT_RECONCILIATION_TOKEN`
 
-Current verified state: `PAYFAST_MERCHANT_ID`, `PAYFAST_MERCHANT_KEY` and `PAYFAST_PASSPHRASE` are present as production-only secrets; the PayFast ITN callback is enabled at the configured KALM HTTPS endpoint and PayFast's required-signature setting is enabled. The gateway remains disabled. The reconciliation token remains intentionally unconfigured until the internal operations service is ready for authenticated reconciliation access.
+Current verified state: `PAYFAST_MERCHANT_ID`, `PAYFAST_MERCHANT_KEY`, `PAYFAST_PASSPHRASE` and `KALM_PAYMENT_RECONCILIATION_TOKEN` are present as production-only secrets; the PayFast ITN callback is enabled at the configured KALM HTTPS endpoint and PayFast's required-signature setting is enabled. The gateway remains disabled.
 
 The reconciliation token is an internal-operations credential. It may be used only by an authenticated KALM operations service to call the private reconciliation endpoint; it must never be exposed to browser JavaScript or a public dashboard.
 

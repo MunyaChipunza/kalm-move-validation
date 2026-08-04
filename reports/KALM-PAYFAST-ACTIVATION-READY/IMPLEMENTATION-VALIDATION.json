@@ -21,7 +21,7 @@
   "productionDeployed": false,
   "passphraseSecretConfigured": true,
   "merchantCredentialsConfigured": true,
-  "reconciliationTokenConfigured": false,
+  "reconciliationTokenConfigured": true,
   "secretsRecorded": false,
   "providerAccountStatus": "verification_pending",
   "releaseGate": {
