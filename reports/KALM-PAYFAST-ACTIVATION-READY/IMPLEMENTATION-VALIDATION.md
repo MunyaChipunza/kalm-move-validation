@@ -6,7 +6,7 @@ Scope: implementation and safe configuration only; no customer-facing PayFast pa
 ## Merchant and provider status
 
 - Merchant of record: KALM Collective (PTY) LTD, supported by the completed stock/seller transfer.
-- Provider status: PayFast account verification remains provider-controlled. The Chrome session used for configuration is signed into `chipunzamunya@gmail.com` on the correct Netlify storefront; the newly opened PayFast page required a fresh sign-in and no credentials were requested or entered.
+- Provider status: PayFast account verification remains provider-controlled. The authenticated `chipunzamunya@gmail.com` session was used to configure the PayFast developer settings; the dashboard subsequently redirected to its login page before the issued merchant ID and key could be transferred into Netlify. No credential was guessed or exposed.
 - Paystack: no Paystack environment values, routes or checkout behaviour were changed.
 
 ## Safe configuration recorded
@@ -15,10 +15,10 @@ The correct Netlify storefront project is `kalm-collective-storefront` (site ID 
 
 - feature flag disabled;
 - test mode;
-- credential set marked `none`;
 - KALM return, cancellation and server ITN callback paths.
+- passphrase-only production secret configuration; merchant credentials remain unconfigured.
 
-Merchant credentials, passphrase and reconciliation token remain unrecorded in source, Git, reports and chat.
+The PayFast security passphrase is configured in PayFast and present as a production-only Netlify secret. The PayFast ITN callback is enabled at the KALM HTTPS endpoint and the required-signature setting is enabled. Merchant ID, merchant key and reconciliation token remain unrecorded in source, Git, reports and chat.
 
 ## Implementation coverage
 
@@ -49,7 +49,7 @@ No deployment occurred. The protected release preflight is currently blocked by 
 
 ## Outstanding provider-controlled actions
 
-1. Sign in to PayFast in the `chipunzamunya@gmail.com` Chrome profile if a fresh authenticated session is required.
+1. Restore the PayFast dashboard session in the `chipunzamunya@gmail.com` Chrome profile and transfer the issued merchant ID and key into production-only Netlify secret fields.
 2. Complete provider account verification and confirm settlement/bank readiness.
-3. Create the passphrase in the approved password manager, configure secret credential values with separated production/preview contexts, and perform the documented sandbox flow.
+3. Configure sandbox credentials in non-production contexts when issued and perform the documented sandbox flow.
 4. Only after the protected production gate is clear, set the live enablement flag and approve the GitHub production environment.

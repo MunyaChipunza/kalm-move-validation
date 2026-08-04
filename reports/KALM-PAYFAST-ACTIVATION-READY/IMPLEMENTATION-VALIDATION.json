@@ -4,7 +4,7 @@
   "provider": "PayFast",
   "gatewayEnabled": false,
   "mode": "test",
-  "credentialSet": "none",
+  "credentialSet": "passphrase_only_production_secret",
   "netlifySite": {
     "name": "kalm-collective-storefront",
     "id": "06334c13-7d82-45f1-b983-4a7295de88d8"
@@ -19,8 +19,11 @@
   },
   "paystackChanged": false,
   "productionDeployed": false,
+  "passphraseSecretConfigured": true,
+  "merchantCredentialsConfigured": false,
+  "reconciliationTokenConfigured": false,
   "secretsRecorded": false,
-  "providerAccountStatus": "verification_pending_or_authenticated_session_required",
+  "providerAccountStatus": "verification_pending_dashboard_session_redirected_to_login",
   "releaseGate": {
     "status": "blocked",
     "reason": "pre-existing canonical legacy-content sentinel failure"

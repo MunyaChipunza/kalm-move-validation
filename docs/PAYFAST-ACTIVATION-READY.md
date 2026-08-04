@@ -11,7 +11,7 @@ Paystack configuration and the existing checkout choices remain untouched. PayFa
 ## Security boundaries
 
 - Merchant credentials and the PayFast passphrase belong only in secret Netlify environment variables. They must never be committed, copied into source, placed in reports, pasted into chat, or added to Google Drive.
-- Generate the PayFast passphrase in the approved password manager when the account's security settings permit it. Store it there and enter it directly in PayFast and Netlify; do not export it.
+- The PayFast security passphrase is configured in PayFast and held only as a production-only Netlify secret. It must never be exported, copied into local files or source control, or revealed through browser output.
 - Production credentials must use a production-only value context. Test credentials may be used only with `PAYFAST_MODE=test` and `PAYFAST_CREDENTIAL_SET=sandbox`.
 - `PAYFAST_ENABLED` must stay `false` until the live test and protected release gate pass. Enabling it is a separate, auditable production action.
 - Customer payment records are server-side Netlify Blobs data. Product data, source imagery and client-side state do not include payment credentials, gateway references, fees, or settlement records.
@@ -35,6 +35,8 @@ Configure these only as **secret** values, with production and preview contexts 
 - `PAYFAST_MERCHANT_KEY`
 - `PAYFAST_PASSPHRASE`
 - `KALM_PAYMENT_RECONCILIATION_TOKEN`
+
+Current verified state: `PAYFAST_PASSPHRASE` is present as a production-only secret; the PayFast ITN callback is enabled at the configured KALM HTTPS endpoint and PayFast's required-signature setting is enabled. Merchant ID, merchant key and reconciliation token remain intentionally unconfigured until the PayFast dashboard session is restored and provider verification completes.
 
 The reconciliation token is an internal-operations credential. It may be used only by an authenticated KALM operations service to call the private reconciliation endpoint; it must never be exposed to browser JavaScript or a public dashboard.
 
@@ -60,8 +62,8 @@ Refund, chargeback and payout lifecycle actions require a separately authorised 
 PayFast has acknowledged the application, while account verification remains provider-controlled. Before any live enablement:
 
 1. Confirm the approved business profile, settlement bank details and activation status in PayFast.
-2. Rotate the merchant key if instructed by PayFast, then create and store the passphrase with the approved password manager.
-3. Add sandbox credentials to non-production contexts and run one successful low-value sandbox payment.
+2. Rotate the merchant key if instructed by PayFast, then securely set the issued merchant ID and key in production-only Netlify secret fields.
+3. Add sandbox credentials to non-production contexts when issued and run one successful low-value sandbox payment.
 4. Verify the server notification, duplicate-notification handling, pending/cancelled return pages, order state and private reconciliation record.
 5. Run a distinct failed/cancelled test and verify no fulfilment state is created.
 6. After provider approval, configure live credentials only in the production context, maintain `PAYFAST_ENABLED=false`, and run the protected GitHub release validation.
