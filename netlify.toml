@@ -74,6 +74,14 @@
   status = 200
   force = true
 
+# SPA customer routes must resolve to the storefront shell in production. This
+# includes /shop because category query-string routes are used by navigation and
+# release validation.
+[[redirects]]
+  from = "/shop"
+  to = "/index.html"
+  status = 200
+
 [[redirects]]
   from = "/products/*"
   to = "/index.html"
