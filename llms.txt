@@ -8,10 +8,15 @@ KALM Collective is a South African retail storefront for the available KS Active
 - https://kalmcollective.co.za/collections/ks-active
 - https://kalmcollective.co.za/collections/sale
 - https://kalmcollective.co.za/brand/kalm-move
+- https://kalmcollective.co.za/terms.html
 
 ## Product information
 
 KS Active Archive product pages provide current descriptions, colour options, pricing and availability. KALM Move is presented as Launching Soon with product information, plain prices, wishlist and launch-notification registration; it is not purchasable.
+
+## Customer terms
+
+KALM Collective's customer Terms & Conditions page covers delivery, order cancellation, returns and refunds, together with customer-care information.
 
 ## Crawling
 
