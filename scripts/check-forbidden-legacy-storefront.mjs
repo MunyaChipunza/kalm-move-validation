@@ -4,12 +4,14 @@ import { extname, relative, resolve, sep } from "node:path";
 
 const args = parseArgs(process.argv.slice(2));
 const root = resolve(args.root || process.cwd());
+
+// This scanner protects against genuinely obsolete storefront artefacts. Future-state
+// KALM category names are intentionally allowed in source because the production
+// storefront contains non-purchasable preview and demand-capture experiences.
 const forbidden = [
-  { label: "Wellness", expression: /\bWellness\b/i },
-  { label: "Outdoor", expression: /\bOutdoor\b/i },
-  { label: "Home", expression: /\bHome\b/i },
-  { label: "Brands", expression: /\bBrands\b/i },
-  { label: "movement, outdoor routines and everyday living", expression: /movement,\s*outdoor routines and everyday living/i }
+  { label: "legacy Links path", expression: /(?:^|[\s"'`(])(?:\.\/)?Links[\\/]/i },
+  { label: "public test environment marker", expression: /\btest\s+(?:mode|environment)\b/i },
+  { label: "public preview deployment marker", expression: /\bpreview\s+deployment\b/i }
 ];
 const textExtensions = new Set([".css", ".csv", ".html", ".htm", ".js", ".json", ".mjs", ".txt", ".webmanifest", ".xml", ".svg"]);
 const excludedDirectories = new Set([".git", ".netlify", ".release-output", ".qa", "node_modules", "release", "scripts", "tools"]);

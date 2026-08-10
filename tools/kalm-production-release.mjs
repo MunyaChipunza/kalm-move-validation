@@ -14,8 +14,9 @@ const mode = args.mode || "preflight";
 const publishDir = resolve(root, args["publish-dir"] || ".release-output/kalm-production");
 const manifestPath = resolve(root, "release/kalm-production-manifest.json");
 const productionBranch = args.branch || "master";
-const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee"];
-const forbidden = ["Wellness", "Outdoor", "Home", "Brands", "movement, outdoor routines and everyday living"];
+const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee", "/terms.html"];
+const futureCategoryRoutes = ["/shop?category=home", "/shop?category=wellness", "/shop?category=outdoor"];
+const forbidden = [];
 const productionRemote = "https://github.com/MunyaChipunza/kalm-move-validation";
 const expectedNetlifySiteId = "06334c13-7d82-45f1-b983-4a7295de88d8";
 const expectedNetlifySiteName = "kalm-collective-storefront";
@@ -186,7 +187,7 @@ async function inspectGit(failures) {
 function redirectAssertions(toml, failures) {
   const redirectCount = (toml.match(/^\[\[redirects\]\]$/gm) || []).length;
   assert(redirectCount >= 12, "Redirect-rule count is implausibly low.", failures);
-  for (const expected of ["/products/*", "/collections/*", "/ks-active", "/archive-sale", "/kalm-move"]) {
+  for (const expected of ["/products/*", "/collections/*", "/ks-active", "/archive-sale", "/kalm-move", "/terms.html"]) {
     assert(toml.includes(`from = \"${expected}\"`), `Expected redirect rule is missing: ${expected}`, failures);
   }
   return redirectCount;
@@ -212,7 +213,7 @@ async function inspectCandidate(failures, sentinel) {
   const sourceToml = await exists(sourceTomlPath) ? await readFile(sourceTomlPath, "utf8") : "";
   assert(sourceToml.length > 0, "netlify.toml is missing.", failures);
   const redirectCount = redirectAssertions(sourceToml, failures);
-  const mustExist = ["index.html", "script.js", "styles.css", "products.json", "route-bootstrap.js", "netlify.toml", "assets", "branding"];
+  const mustExist = ["index.html", "script.js", "styles.css", "products.json", "route-bootstrap.js", "netlify.toml", "assets", "branding", "data/legal/terms.html"];
   for (const item of mustExist) assert(await exists(join(publishDir, item)), `Expected build asset is missing: ${item}`, failures);
   const files = await listFiles(publishDir);
   assert(files.length >= 50, `Candidate has an implausibly small file count (${files.length}).`, failures);
@@ -249,6 +250,7 @@ function contentType(path) {
 
 async function startStaticServer(directory) {
   const shortRouteRedirects = { "/ks-active": "/collections/ks-active", "/archive-sale": "/collections/sale", "/kalm-move": "/brand/kalm-move" };
+  const internalRewrites = { "/terms.html": "/data/legal/terms.html" };
   const server = createServer(async (request, response) => {
     try {
       const url = new URL(request.url || "/", "http://localhost");
@@ -257,7 +259,8 @@ async function startStaticServer(directory) {
         response.end();
         return;
       }
-      const requested = decodeURIComponent(url.pathname === "/" ? "/index.html" : url.pathname);
+      const rewrittenPath = internalRewrites[url.pathname] || url.pathname;
+      const requested = decodeURIComponent(rewrittenPath === "/" ? "/index.html" : rewrittenPath);
       const target = resolve(directory, `.${requested}`);
       if (!target.startsWith(`${directory}${process.platform === "win32" ? "\\" : "/"}`) && target !== join(directory, "index.html")) {
         response.writeHead(400).end();
@@ -284,6 +287,10 @@ function forbiddenMatches(text) {
   return matches;
 }
 
+function exposesPurchaseCta(text) {
+  return /\b(?:add to bag|buy now|checkout)\b/i.test(text);
+}
+
 async function renderedChecks(baseUrl, failures, { expectRedirects }) {
   const { chromium } = await import("playwright");
   const browser = await chromium.launch({ headless: true });
@@ -298,11 +305,32 @@ async function renderedChecks(baseUrl, failures, { expectRedirects }) {
     }
     const homepage = results.find((entry) => entry.route === "/")?.text || "";
     for (const item of ["KS Active", "Archive Sale", "KALM Move"]) assert(homepage.includes(item), `Required navigation item is missing from rendered homepage: ${item}`, failures);
+
+    const ksActive = results.find((entry) => entry.route === "/ks-active")?.text || "";
+    assert(/\bAdd to bag\b/i.test(ksActive), "KS Active commerce route no longer exposes its approved Add to bag action.", failures);
+
+    const movePreview = results.find((entry) => entry.route === "/kalm-move")?.text || "";
+    assert(!exposesPurchaseCta(movePreview), "KALM Move preview exposes a purchase or checkout CTA.", failures);
+
     const product = results.find((entry) => entry.route.includes("kalm-signature"))?.text || "";
     for (const item of ["KALM Signature Oversized Tee", "R699", "Black", "White"]) assert(product.includes(item), `Required Signature Tee fact is missing from rendered route: ${item}`, failures);
+    assert(!exposesPurchaseCta(product), "KALM Signature Tee preview exposes a purchase or checkout CTA.", failures);
+
+    for (const route of futureCategoryRoutes) {
+      const response = await desktop.goto(`${baseUrl}${route}`, { waitUntil: "networkidle" });
+      const text = await desktop.locator("body").innerText();
+      assert((response?.status() || 0) === 200, `Future-category preview route did not return HTTP 200: ${route}`, failures);
+      assert(!exposesPurchaseCta(text), `Unapproved future category exposes a purchase or checkout CTA: ${route}`, failures);
+    }
+
+    const terms = results.find((entry) => entry.route === "/terms.html")?.text || "";
+    for (const item of ["Terms & Conditions", "Delivery", "Order cancellation", "Returns", "Refunds", "KALM Collective (Pty) Ltd"]) {
+      assert(terms.includes(item), `Required customer-terms content is missing from /terms.html: ${item}`, failures);
+    }
+
     const forbiddenFound = forbiddenMatches(results.map((entry) => entry.text).join("\n"));
     assert(forbiddenFound.length === 0, `Forbidden customer-facing content rendered: ${forbiddenFound.join(", ")}`, failures);
-    assert(!/test\s*(mode|environment)|preview\s*(deployment|mode)/i.test(homepage), "Preview or test banner is rendered.", failures);
+    assert(!/test\s*(mode|environment)|preview\s*deployment/i.test(homepage), "Test or preview deployment banner is rendered.", failures);
     const mobile = await browser.newPage({ viewport: { width: 360, height: 800 } });
     await mobile.goto(`${baseUrl}/`, { waitUntil: "networkidle" });
     const menuCount = await mobile.getByRole("button", { name: "Menu" }).count();
@@ -363,6 +391,7 @@ async function validatePreflight() {
     productCount: candidate.products.length,
     variantCount: candidate.variantCount,
     requiredRoutes,
+    futureCategoryRoutes,
     forbiddenStrings: forbidden,
     legacyContentScan: { source: sourceLegacyScan, generatedOutput: outputLegacyScan },
     sourceSeparationScan: { source: sourceSeparationScan, generatedOutput: outputSeparationScan },
