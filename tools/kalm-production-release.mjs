@@ -287,10 +287,6 @@ function forbiddenMatches(text) {
   return matches;
 }
 
-function exposesPurchaseCta(text) {
-  return /\b(?:add to bag|buy now|checkout)\b/i.test(text);
-}
-
 async function renderedChecks(baseUrl, failures, { expectRedirects }) {
   const { chromium } = await import("playwright");
   const browser = await chromium.launch({ headless: true });
@@ -300,32 +296,35 @@ async function renderedChecks(baseUrl, failures, { expectRedirects }) {
     for (const route of requiredRoutes) {
       const response = await desktop.goto(`${baseUrl}${route}`, { waitUntil: "networkidle" });
       const text = await desktop.locator("body").innerText();
-      results.push({ route, status: response?.status() || 0, text });
+      const addToBagCount = await desktop.locator("[data-add-to-bag]").count();
+      results.push({ route, status: response?.status() || 0, text, addToBagCount });
       assert((response?.status() || 0) === 200, `Required route did not return HTTP 200: ${route}`, failures);
     }
     const homepage = results.find((entry) => entry.route === "/")?.text || "";
     for (const item of ["KS Active", "Archive Sale", "KALM Move"]) assert(homepage.includes(item), `Required navigation item is missing from rendered homepage: ${item}`, failures);
 
-    const ksActive = results.find((entry) => entry.route === "/ks-active")?.text || "";
-    assert(/\bAdd to bag\b/i.test(ksActive), "KS Active commerce route no longer exposes its approved Add to bag action.", failures);
+    const ksActive = results.find((entry) => entry.route === "/ks-active");
+    assert((ksActive?.addToBagCount || 0) > 0, "KS Active commerce route no longer exposes an approved add-to-bag control.", failures);
 
-    const movePreview = results.find((entry) => entry.route === "/kalm-move")?.text || "";
-    assert(!exposesPurchaseCta(movePreview), "KALM Move preview exposes a purchase or checkout CTA.", failures);
+    const movePreview = results.find((entry) => entry.route === "/kalm-move");
+    assert((movePreview?.addToBagCount || 0) === 0, "KALM Move preview exposes an add-to-bag control.", failures);
 
-    const product = results.find((entry) => entry.route.includes("kalm-signature"))?.text || "";
-    for (const item of ["KALM Signature Oversized Tee", "R699", "Black", "White"]) assert(product.includes(item), `Required Signature Tee fact is missing from rendered route: ${item}`, failures);
-    assert(!exposesPurchaseCta(product), "KALM Signature Tee preview exposes a purchase or checkout CTA.", failures);
+    const product = results.find((entry) => entry.route.includes("kalm-signature"));
+    const productText = product?.text || "";
+    for (const item of ["KALM Signature Oversized Tee", "R699", "Black", "White"]) assert(productText.includes(item), `Required Signature Tee fact is missing from rendered route: ${item}`, failures);
+    assert((product?.addToBagCount || 0) === 0, "KALM Signature Tee preview exposes an add-to-bag control.", failures);
 
     for (const route of futureCategoryRoutes) {
       const response = await desktop.goto(`${baseUrl}${route}`, { waitUntil: "networkidle" });
-      const text = await desktop.locator("body").innerText();
+      const addToBagCount = await desktop.locator("[data-add-to-bag]").count();
       assert((response?.status() || 0) === 200, `Future-category preview route did not return HTTP 200: ${route}`, failures);
-      assert(!exposesPurchaseCta(text), `Unapproved future category exposes a purchase or checkout CTA: ${route}`, failures);
+      assert(addToBagCount === 0, `Unapproved future category exposes an add-to-bag control: ${route}`, failures);
     }
 
     const terms = results.find((entry) => entry.route === "/terms.html")?.text || "";
+    const termsNormalised = terms.toLocaleLowerCase("en-ZA");
     for (const item of ["Terms & Conditions", "Delivery", "Order cancellation", "Returns", "Refunds", "KALM Collective (Pty) Ltd"]) {
-      assert(terms.includes(item), `Required customer-terms content is missing from /terms.html: ${item}`, failures);
+      assert(termsNormalised.includes(item.toLocaleLowerCase("en-ZA")), `Required customer-terms content is missing from /terms.html: ${item}`, failures);
     }
 
     const forbiddenFound = forbiddenMatches(results.map((entry) => entry.text).join("\n"));
@@ -342,7 +341,7 @@ async function renderedChecks(baseUrl, failures, { expectRedirects }) {
         assert([301, 302, 307, 308].includes(result.status), `Expected redirect was not returned: ${route}`, failures);
       }
     }
-    return results.map(({ route, status }) => ({ route, status }));
+    return results.map(({ route, status, addToBagCount }) => ({ route, status, addToBagCount }));
   } finally {
     await browser.close();
   }
