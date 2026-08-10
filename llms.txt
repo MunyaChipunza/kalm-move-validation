@@ -16,7 +16,7 @@ KS Active Archive product pages provide current descriptions, colour options, pr
 
 ## Customer terms
 
-KALM Collective's customer Terms & Conditions page, effective 10 August 2026, covers delivery, order cancellation, returns and refunds, together with customer-care information.
+KALM Collective's customer Terms & Conditions page, effective 10 August 2026, covers delivery, order cancellation, returns and refunds, together with customer-care information. The public terms URL is the authoritative customer-facing policy page for these topics.
 
 ## Crawling
 
