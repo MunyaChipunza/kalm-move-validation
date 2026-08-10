@@ -118,6 +118,7 @@ jobs:
         run: |
           test -f release/kalm-production-manifest.json
           test -f .release-output/kalm-production/.kalm-build-signature.json
+          node --check tools/kalm-production-live-smoke.mjs
           node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));const m=JSON.parse(fs.readFileSync('release/kalm-production-manifest.json','utf8'));const p=JSON.parse(fs.readFileSync('.release-output/kalm-production/.kalm-build-signature.json','utf8'));if(m.validationStatus!=='pass'||m.buildSignature!==s.expectedBuildSignature||m.publishDirectory!==s.publishDirectory||p.repository!==s.repositoryRemote||p.sourceCommitSha!=='${{ steps.source.outputs.commit }}'||p.expectedNetlifySiteId!==s.netlifySiteId||p.productionDomain!==s.productionDomain||p.criticalAssetHash!==m.criticalAssetHash) process.exit(1)"
 
       - name: Deploy approved release candidate
@@ -126,9 +127,7 @@ jobs:
 
       - name: Validate the live custom domain
         id: smoke
-        env:
-          NODE_OPTIONS: --dns-result-order=ipv4first
-        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --commit "${{ steps.source.outputs.commit }}" --retry 12
+        run: node tools/kalm-production-live-smoke.mjs --base-url "$PRODUCTION_URL" --commit "${{ steps.source.outputs.commit }}" --retry 12
 
       - name: Automatically restore previous verified deploy after failed smoke test
         id: rollback
