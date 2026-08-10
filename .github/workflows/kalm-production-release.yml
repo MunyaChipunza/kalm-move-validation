@@ -101,9 +101,11 @@ jobs:
       - name: Record current production deploy
         id: previous
         run: |
-          site="$(npx --no-install netlify api getSite --data \"{\\\"site_id\\\":\\\"$NETLIFY_SITE_ID\\\"}\")"
-          node -e "const s=JSON.parse(process.argv[1]);if(s.id!==process.env.EXPECTED_NETLIFY_SITE_ID||s.name!=='kalm-collective-storefront') process.exit(1)" "$site"
-          previous="$(npx --no-install netlify api getSite --data \"{\\\"site_id\\\":\\\"$NETLIFY_SITE_ID\\\"}\" | node -e \"let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(JSON.parse(s).published_deploy.id))\")"
+          site_data="$(node -e 'process.stdout.write(JSON.stringify({site_id: process.env.NETLIFY_SITE_ID}))')"
+          site="$(npx --no-install netlify api getSite --data "$site_data")"
+          node -e "const s=JSON.parse(process.argv[1]);if(s.id!==process.env.EXPECTED_NETLIFY_SITE_ID||s.name!=='kalm-collective-storefront'||!s.published_deploy?.id) process.exit(1)" "$site"
+          previous="$(node -e "const s=JSON.parse(process.argv[1]);console.log(s.published_deploy.id)" "$site")"
+          test -n "$previous"
           echo "deploy_id=$previous" >> "$GITHUB_OUTPUT"
 
       - name: Build and validate rendered release candidate
@@ -129,9 +131,10 @@ jobs:
       - name: Automatically restore previous verified deploy after failed smoke test
         id: rollback
         if: failure() && steps.deploy.outcome == 'success'
-        run: >-
-          npx --no-install netlify api restoreSiteDeploy
-          --data "{\"site_id\":\"$NETLIFY_SITE_ID\",\"deploy_id\":\"${{ steps.previous.outputs.deploy_id }}\"}"
+        run: |
+          export PREVIOUS_DEPLOY_ID="${{ steps.previous.outputs.deploy_id }}"
+          rollback_data="$(node -e 'process.stdout.write(JSON.stringify({site_id: process.env.NETLIFY_SITE_ID, deploy_id: process.env.PREVIOUS_DEPLOY_ID}))')"
+          npx --no-install netlify api restoreSiteDeploy --data "$rollback_data"
 
       - name: Verify rollback
         if: failure() && steps.rollback.outcome == 'success'

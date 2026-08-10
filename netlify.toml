@@ -66,6 +66,14 @@
   status = 301
   force = true
 
+# Customer-facing legal terms are stored inside the approved data publish tree,
+# but served at a stable top-level URL for customers and payment-provider review.
+[[redirects]]
+  from = "/terms.html"
+  to = "/data/legal/terms.html"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/products/*"
   to = "/index.html"
