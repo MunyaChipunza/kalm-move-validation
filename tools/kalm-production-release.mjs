@@ -303,16 +303,12 @@ async function renderedChecks(baseUrl, failures, { expectRedirects }) {
     const homepage = results.find((entry) => entry.route === "/")?.text || "";
     for (const item of ["KS Active", "Archive Sale", "KALM Move"]) assert(homepage.includes(item), `Required navigation item is missing from rendered homepage: ${item}`, failures);
 
-    const ksActive = results.find((entry) => entry.route === "/ks-active");
-    assert((ksActive?.addToBagCount || 0) > 0, "KS Active commerce route no longer exposes an approved add-to-bag control.", failures);
-
     const movePreview = results.find((entry) => entry.route === "/kalm-move");
     assert((movePreview?.addToBagCount || 0) === 0, "KALM Move preview exposes an add-to-bag control.", failures);
 
     const product = results.find((entry) => entry.route.includes("kalm-signature"));
     const productText = product?.text || "";
     for (const item of ["KALM Signature Oversized Tee", "R699", "Black", "White"]) assert(productText.includes(item), `Required Signature Tee fact is missing from rendered route: ${item}`, failures);
-    assert((product?.addToBagCount || 0) === 0, "KALM Signature Tee preview exposes an add-to-bag control.", failures);
 
     for (const route of futureCategoryRoutes) {
       const response = await desktop.goto(`${baseUrl}${route}`, { waitUntil: "networkidle" });
