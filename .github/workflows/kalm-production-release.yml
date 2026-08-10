@@ -126,6 +126,8 @@ jobs:
 
       - name: Validate the live custom domain
         id: smoke
+        env:
+          NODE_OPTIONS: --dns-result-order=ipv4first
         run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --commit "${{ steps.source.outputs.commit }}" --retry 12
 
       - name: Automatically restore previous verified deploy after failed smoke test
@@ -138,7 +140,12 @@ jobs:
 
       - name: Verify rollback
         if: failure() && steps.rollback.outcome == 'success'
-        run: node tools/kalm-production-release.mjs --mode postdeploy --base-url "$PRODUCTION_URL" --retry 12
+        run: |
+          export PREVIOUS_DEPLOY_ID="${{ steps.previous.outputs.deploy_id }}"
+          site_data="$(node -e 'process.stdout.write(JSON.stringify({site_id: process.env.NETLIFY_SITE_ID}))')"
+          site="$(npx --no-install netlify api getSite --data "$site_data")"
+          node -e "const s=JSON.parse(process.argv[1]);if(s.id!==process.env.EXPECTED_NETLIFY_SITE_ID||s.published_deploy?.id!==process.env.PREVIOUS_DEPLOY_ID) process.exit(1)" "$site"
+          curl --fail --silent --show-error --location --retry 6 --retry-all-errors --connect-timeout 10 --max-time 20 "$PRODUCTION_URL/" >/dev/null
 
       - name: Publish release audit record
         if: always()
