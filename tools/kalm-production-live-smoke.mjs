@@ -171,7 +171,7 @@ async function runAttempt(attempt) {
     assert([301, 302, 307, 308].includes(response.status), `Expected redirect was not returned: ${route} (HTTP ${response.status})`, failures);
   }
 
-  const signatureResponse = await curlRequest(`${baseUrl}/.kalm-build-signature.json`);
+  const signatureResponse = await curlRequest(`${baseUrl}/kalm-build-signature.json`);
   assert(signatureResponse.status === 200, "Production build signature is not publicly verifiable.", failures);
   if (signatureResponse.status === 200) {
     let signature = null;

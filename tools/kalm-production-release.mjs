@@ -150,7 +150,11 @@ async function inspectReleaseSentinel(failures) {
 }
 
 async function writeBuildSignature(signature) {
-  await writeFile(join(publishDir, ".kalm-build-signature.json"), JSON.stringify(signature, null, 2) + "\n");
+  // Netlify does not serve dotfiles from a published directory. This marker is
+  // intentionally public so the protected post-deploy smoke test can prove the
+  // live files came from the approved source commit. It contains provenance and
+  // integrity hashes only; no credentials or customer data.
+  await writeFile(join(publishDir, "kalm-build-signature.json"), JSON.stringify(signature, null, 2) + "\n");
 }
 
 async function runForbiddenScanner(directory, label, failures) {
@@ -436,7 +440,7 @@ async function validatePostDeploy() {
       assert(staticChecks.find((item) => item.path === "/script.js.map").response.status !== 200, "Production source map is publicly available.", attemptFailures);
       routes = await renderedChecks(baseUrl, attemptFailures, { expectRedirects: true });
       if (args.commit) {
-        const signature = await fetch(`${baseUrl}/.kalm-build-signature.json`, { redirect: "manual" });
+        const signature = await fetch(`${baseUrl}/kalm-build-signature.json`, { redirect: "manual" });
         assert(signature.status === 200, "Production build signature is not publicly verifiable.", attemptFailures);
         if (signature.status === 200) {
           const parsed = await signature.json();
