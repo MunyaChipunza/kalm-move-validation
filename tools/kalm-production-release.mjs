@@ -20,6 +20,10 @@ const forbidden = [];
 const productionRemote = "https://github.com/MunyaChipunza/kalm-move-validation";
 const expectedNetlifySiteId = "06334c13-7d82-45f1-b983-4a7295de88d8";
 const expectedNetlifySiteName = "kalm-collective-storefront";
+// Netlify post-processes detected form markup in index.html. Keep the HTML
+// route under rendered validation, while provenance hashes only static files
+// whose published bytes are preserved exactly by the CDN.
+const provenanceStaticAssets = ["script.js", "styles.css", "products.json"];
 const productionDomain = "https://kalmcollective.co.za";
 const sentinelPath = resolve(root, ".kalm-approved-release-root");
 const allowNonProductionBranch = Boolean(args["allow-non-production-branch"]);
@@ -241,7 +245,7 @@ async function inspectCandidate(failures, sentinel) {
   }
   const variantCount = products?.reduce((sum, product) => sum + (product.variants?.length || 0), 0) || 0;
   const criticalAssetHashes = {};
-  for (const asset of ["index.html", "script.js", "styles.css", "products.json"]) {
+  for (const asset of provenanceStaticAssets) {
     const path = join(publishDir, asset);
     if (await exists(path)) criticalAssetHashes[asset] = await hashFile(path);
   }
@@ -452,7 +456,7 @@ async function validatePostDeploy() {
           assert(parsed.buildSignature === "KALM_CANONICAL_STOREFRONT_RELEASE_V1", "Production signature build signature does not match.", attemptFailures);
           assert(/^[a-f0-9]{64}$/i.test(parsed.criticalAssetHash || ""), "Production signature critical asset hash is missing or invalid.", attemptFailures);
           const liveCriticalAssetHashes = {};
-          for (const path of ["/index.html", "/script.js", "/styles.css", "/products.json"]) {
+          for (const path of provenanceStaticAssets.map((asset) => `/${asset}`)) {
             const asset = await fetch(`${baseUrl}${path}`, { redirect: "manual" });
             assert(asset.status === 200, `Production critical asset is missing: ${path}`, attemptFailures);
             if (asset.status === 200) liveCriticalAssetHashes[path.slice(1)] = hashBuffer(Buffer.from(await asset.arrayBuffer()));

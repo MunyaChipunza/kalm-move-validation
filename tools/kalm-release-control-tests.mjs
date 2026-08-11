@@ -81,7 +81,9 @@ expectFail("Paystack marker", validateCandidate({ ...safe, text: { ...safe.text,
 expectFail("Munya task app marker", validateCandidate({ ...safe, text: { ...safe.text, "script.js": "kalm-collective-intranet 52adadfd-1d6b-4128-9df1-575614f2f1df" } }), "Munya task-app marker");
 expectFail("mismatched source commit", validateCandidate({ ...safe, checkedOutCommit: "cccccccccccccccccccccccccccccccccccccccc" }), "mismatched source commit");
 
-const liveAssets = { "index.html": "one", "script.js": "two", "styles.css": "three", "products.json": "four" };
+// Netlify transforms form markup in index.html; rendered route checks cover
+// that document while the provenance fixture models byte-stable static files.
+const liveAssets = { "script.js": "two", "styles.css": "three", "products.json": "four" };
 expectPass("matching deployed provenance", validateLiveSignature({
   repository: productionRemote,
   sourceCommitSha: fullCommit,

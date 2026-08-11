@@ -14,6 +14,10 @@ const retries = Math.max(1, Number(args.retry || 1));
 const productionDomain = "https://kalmcollective.co.za";
 const productionRemote = "https://github.com/MunyaChipunza/kalm-move-validation";
 const expectedNetlifySiteId = "06334c13-7d82-45f1-b983-4a7295de88d8";
+// index.html is checked by the rendered route validation. Netlify rewrites
+// detected form markup in that document, so release provenance hashes only
+// static files whose bytes remain unchanged after publishing.
+const provenanceStaticAssets = ["script.js", "styles.css", "products.json"];
 const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee", "/terms.html"];
 const futureCategoryRoutes = ["/shop?category=home", "/shop?category=wellness", "/shop?category=outdoor"];
 
@@ -186,12 +190,10 @@ async function runAttempt(attempt) {
       assert(signature.buildSignature === "KALM_CANONICAL_STOREFRONT_RELEASE_V1", "Production signature build signature does not match.", failures);
       assert(/^[a-f0-9]{64}$/i.test(signature.criticalAssetHash || ""), "Production signature critical asset hash is missing or invalid.", failures);
 
-      const liveCriticalAssetHashes = {
-        "index.html": hashBuffer(Buffer.from(homepage.body, "utf8")),
-        "script.js": hashBuffer(Buffer.from(staticResponses["/script.js"].body, "utf8")),
-        "styles.css": hashBuffer(Buffer.from(staticResponses["/styles.css"].body, "utf8")),
-        "products.json": hashBuffer(Buffer.from(staticResponses["/products.json"].body, "utf8"))
-      };
+      const liveCriticalAssetHashes = Object.fromEntries(provenanceStaticAssets.map((asset) => [
+        asset,
+        hashBuffer(Buffer.from(staticResponses[`/${asset}`].body, "utf8"))
+      ]));
       assert(hashObject(liveCriticalAssetHashes) === signature.criticalAssetHash, "Production critical asset hash does not match the live files.", failures);
     }
   }
