@@ -14,7 +14,7 @@
     <h1 class="status" id="title">Checking your payment</h1>
     <p class="detail" id="message">We will confirm your order only after PayFast’s secure payment notification has been verified.</p>
     <p id="error" hidden></p>
-    <div class="actions"><a class="button" href="/">Continue shopping</a><a class="button secondary" href="/terms.html">Terms &amp; customer care</a></div>
+    <div class="actions"><a class="button" href="/">Continue shopping</a><a class="button secondary" href="/terms.html">Terms &amp; customer care</a><a class="button secondary" id="receipt" hidden>View receipt</a></div>
   </main>
   <script>
     (() => {
@@ -24,6 +24,7 @@
       const title = document.querySelector("#title");
       const message = document.querySelector("#message");
       const error = document.querySelector("#error");
+      const receipt = document.querySelector("#receipt");
       if (!orderId || !token) { title.textContent = "Payment status unavailable"; message.textContent = "Return to KALM Collective and contact customer care if you need help with an order."; return; }
       let attempts = 0;
       async function checkStatus() {
@@ -32,7 +33,7 @@
           if (!response.ok) throw new Error("status_unavailable");
           const order = await response.json();
           const state = String(order.paymentStatus || "pending");
-          if (state === "paid") { title.textContent = "Payment confirmed"; message.textContent = "Thank you. Your payment has been verified and your order is being prepared."; return; }
+          if (state === "paid") { title.textContent = "Payment confirmed"; message.textContent = "Thank you. Your payment has been verified and your order is being prepared."; if (order.receiptUrl) { receipt.href = order.receiptUrl; receipt.hidden = false; } return; }
           if (state === "failed" || state === "cancelled") { title.textContent = "Payment not completed"; message.textContent = "No order will be fulfilled until payment is verified. You may return to KALM Collective to try again."; return; }
           title.textContent = "Payment is being confirmed";
           message.textContent = "PayFast is confirming your payment securely. This page will update automatically.";

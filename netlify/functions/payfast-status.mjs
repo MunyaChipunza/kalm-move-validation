@@ -13,6 +13,9 @@ export default async function payfastStatus(request) {
     if (!accessSecret || !validOrderAccessToken(orderId, token, accessSecret)) throw new PayFastError(403, "invalid_checkout_session", "This payment record is unavailable.");
     const order = await getOrder(orderId);
     if (!order) throw new PayFastError(404, "order_not_found", "This payment record is unavailable.");
-    return json({ orderId: order.orderId, reference: order.paymentReference, paymentStatus: order.paymentStatus, fulfilmentStatus: order.fulfilmentStatus, currency: order.currency, totalCents: order.amountCents, invoiceReference: order.invoiceReference || null, updatedAt: order.updatedAt });
+    const receiptUrl = ["paid", "partially_refunded", "refunded"].includes(order.paymentStatus)
+      ? `${url.origin}/api/orders/receipt?order_id=${encodeURIComponent(orderId)}&token=${encodeURIComponent(token)}`
+      : null;
+    return json({ orderId: order.orderId, reference: order.paymentReference, paymentStatus: order.paymentStatus, fulfilmentStatus: order.fulfilmentStatus, currency: order.currency, totalCents: order.amountCents, invoiceReference: order.invoiceReference || null, receiptUrl, updatedAt: order.updatedAt });
   } catch (error) { return safeError(error); }
 }
