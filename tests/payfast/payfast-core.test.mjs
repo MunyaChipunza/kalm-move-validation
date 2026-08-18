@@ -4,6 +4,7 @@ import {
   PAYFAST_ORDER_STATES,
   amountToCents,
   assessPayFastOrigin,
+  assertCheckoutMode,
   assertPayFastEnabled,
   buildCheckoutFields,
   canTransition,
@@ -52,6 +53,13 @@ test("KALM-specific owner-test controls take precedence over inherited generic s
   })[name]);
   assert.equal(config.checkoutMode, "owner_test");
   assert.deepEqual(config.ownerTestEmails, ["owner@example.test"]);
+});
+
+test("the source-locked launch gate permits only the authorised owner when no runtime override exists", () => {
+  const config = getPayFastConfig((name) => completeEnvironment[name]);
+  assert.equal(config.checkoutMode, "owner_test");
+  assert.doesNotThrow(() => assertCheckoutMode(config, "chipunzamunya@gmail.com"));
+  assert.throws(() => assertCheckoutMode(config, "someone-else@example.test"), /authorised launch test/);
 });
 
 function runtime(overrides = {}) {
