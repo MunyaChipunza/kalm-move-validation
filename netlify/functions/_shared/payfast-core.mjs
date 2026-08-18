@@ -1,4 +1,5 @@
 import { createHash, createHmac, randomUUID, timingSafeEqual } from "node:crypto";
+import { runtimeEnvGet } from "./runtime-env.mjs";
 
 export const PAYFAST_ORDER_STATES = Object.freeze({
   CREATED: "created",
@@ -31,7 +32,7 @@ function envValue(name, envGet = defaultEnvGet) {
 }
 
 function defaultEnvGet(name) {
-  return globalThis.Netlify?.env?.get?.(name);
+  return runtimeEnvGet(name);
 }
 
 export function getPayFastConfig(envGet = defaultEnvGet) {

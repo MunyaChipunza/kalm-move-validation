@@ -3,10 +3,11 @@ import { claimEmailBatch, completeEmail } from "./_shared/commerce-store.mjs";
 import { requireOperationsAccess } from "./_shared/operations-auth.mjs";
 import { createOrderAccessToken } from "./_shared/payfast-core.mjs";
 import { json, safeError } from "./_shared/http.mjs";
+import { runtimeEnvGet } from "./_shared/runtime-env.mjs";
 
 export const config = { path: "/api/internal/commerce/email-dispatch", method: ["POST"] };
 
-function env(name) { return String(globalThis.Netlify?.env?.get?.(name) || "").trim(); }
+function env(name) { return String(runtimeEnvGet(name) || "").trim(); }
 
 function cents(centsValue) { return new Intl.NumberFormat("en-ZA", { style: "currency", currency: "ZAR", minimumFractionDigits: 2 }).format(Number(centsValue || 0) / 100); }
 

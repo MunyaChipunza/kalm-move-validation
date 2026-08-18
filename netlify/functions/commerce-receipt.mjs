@@ -1,6 +1,7 @@
 import { PayFastError, validOrderAccessToken } from "./_shared/payfast-core.mjs";
 import { getOrder } from "./_shared/commerce-store.mjs";
 import { html, safeError } from "./_shared/http.mjs";
+import { runtimeEnvGet } from "./_shared/runtime-env.mjs";
 
 export const config = { path: "/api/orders/receipt", method: ["GET"] };
 
@@ -28,8 +29,8 @@ export default async function commerceReceipt(request) {
     const url = new URL(request.url);
     const orderId = url.searchParams.get("order_id") || "";
     const token = url.searchParams.get("token") || "";
-    const accessSecret = globalThis.Netlify?.env?.get?.("ORDER_ACCESS_SECRET")
-      || globalThis.Netlify?.env?.get?.("KALM_PAYMENT_RECONCILIATION_TOKEN");
+    const accessSecret = runtimeEnvGet("ORDER_ACCESS_SECRET")
+      || runtimeEnvGet("KALM_PAYMENT_RECONCILIATION_TOKEN");
     if (!accessSecret || !validOrderAccessToken(orderId, token, accessSecret)) throw new PayFastError(403, "invalid_receipt_session", "This receipt is unavailable.");
     const order = await getOrder(orderId);
     if (!order || !["paid", "partially_refunded", "refunded"].includes(order.paymentStatus)) throw new PayFastError(404, "receipt_not_available", "This receipt is unavailable.");

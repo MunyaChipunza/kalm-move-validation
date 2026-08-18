@@ -16,6 +16,7 @@ import {
   validateItnPayload,
   validPayFastSignature
 } from "../../netlify/functions/_shared/payfast-core.mjs";
+import { runtimeEnvGet } from "../../netlify/functions/_shared/runtime-env.mjs";
 
 const testPassphrase = "test-fixture-passphrase";
 const completeEnvironment = Object.freeze({
@@ -28,6 +29,17 @@ const completeEnvironment = Object.freeze({
   PAYFAST_RETURN_URL: "https://example.test/payment/payfast?status=pending",
   PAYFAST_CANCEL_URL: "https://example.test/payment/payfast?status=cancelled",
   PAYFAST_NOTIFY_URL: "https://example.test/api/payments/payfast/itn"
+});
+
+test("runtime configuration reads from Netlify's Functions environment", () => {
+  const previous = globalThis.Netlify;
+  globalThis.Netlify = { env: { get: (name) => name === "CHECKOUT_MODE" ? "owner_test" : undefined } };
+  try {
+    assert.equal(runtimeEnvGet("CHECKOUT_MODE"), "owner_test");
+  } finally {
+    if (previous === undefined) delete globalThis.Netlify;
+    else globalThis.Netlify = previous;
+  }
 });
 
 function runtime(overrides = {}) {
