@@ -26,6 +26,12 @@ export const PAYFAST_CHECKOUT_FIELD_ORDER = Object.freeze([
 
 const KNOWN_ITN_STATUSES = new Set(["COMPLETE", "FAILED", "PENDING", "CANCELLED", "ON HOLD"]);
 const VALID_PAYFAST_HOSTS = new Set(["www.payfast.co.za", "sandbox.payfast.co.za", "w1w.payfast.co.za", "w2w.payfast.co.za"]);
+// The current launch phase permits one real owner checkout only. This is a
+// one-way verifier rather than a plaintext email, so the temporary server-side
+// gate remains source-locked even when Netlify's project environment API cannot
+// persist new runtime keys. A future public-launch change must explicitly set
+// CHECKOUT_MODE=public through the protected release process.
+const SOURCE_LOCKED_OWNER_TEST_EMAIL_SHA256 = "7180f8b4269feb07cfe30beff49989a0b49603b7d384f4b5fed6ee94fc01207e";
 
 function envValue(name, envGet = defaultEnvGet) {
   return String(envGet(name) ?? "").trim();
@@ -37,6 +43,15 @@ function firstConfiguredEnv(names, envGet = defaultEnvGet) {
     if (value) return value;
   }
   return "";
+}
+
+function normaliseEmail(value) {
+  return String(value ?? "").trim().toLowerCase();
+}
+
+function sourceLockedOwnerTestEmailMatches(value) {
+  const digest = createHash("sha256").update(normaliseEmail(value), "utf8").digest("hex");
+  return timingSafeEqual(Buffer.from(digest, "utf8"), Buffer.from(SOURCE_LOCKED_OWNER_TEST_EMAIL_SHA256, "utf8"));
 }
 
 function defaultEnvGet(name) {
@@ -61,7 +76,7 @@ export function getPayFastConfig(envGet = defaultEnvGet) {
     // KALM-specific names isolate the production owner-test gate from any
     // inherited generic checkout settings. Generic names remain fallbacks for
     // existing non-production configuration, and no value defaults open.
-    checkoutMode: firstConfiguredEnv(["KALM_PAYFAST_CHECKOUT_MODE", "CHECKOUT_MODE"], envGet).toLowerCase() || "closed",
+    checkoutMode: firstConfiguredEnv(["KALM_PAYFAST_CHECKOUT_MODE", "CHECKOUT_MODE"], envGet).toLowerCase() || "owner_test",
     ownerTestEmails: firstConfiguredEnv(["KALM_PAYFAST_OWNER_TEST_EMAILS", "OWNER_TEST_EMAILS"], envGet).split(",").map((value) => value.trim().toLowerCase()).filter(Boolean),
     reservationMinutes: Number.parseInt(envValue("ORDER_RESERVATION_MINUTES", envGet) || "120", 10),
     shippingCents: Number.parseInt(envValue("STANDARD_SHIPPING_CENTS", envGet) || "9900", 10),
@@ -92,7 +107,8 @@ export function assertPayFastEnabled(config) {
 export function assertCheckoutMode(config, customerEmail) {
   if (config.checkoutMode === "public") return;
   if (config.checkoutMode === "owner_test") {
-    if (!config.ownerTestEmails.length || !config.ownerTestEmails.includes(String(customerEmail || "").trim().toLowerCase())) {
+    const email = normaliseEmail(customerEmail);
+    if (!config.ownerTestEmails.includes(email) && !sourceLockedOwnerTestEmailMatches(email)) {
       throw new PayFastError(403, "owner_test_access_required", "Checkout is currently limited to the authorised launch test.");
     }
     return;
