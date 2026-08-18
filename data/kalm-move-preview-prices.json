@@ -32,5 +32,6 @@
   { "productId": "kalm-move-everyday-bottle", "productName": "KALM Move Everyday Bottle", "category": "Bottles", "price": 249, "currency": "ZAR", "previewPrice": true, "status": "launching-soon", "approvedBy": "Munya", "approvalDate": "2026-07-15" },
   { "productId": "kalm-move-slim-wellness-bottle", "productName": "KALM Move Slim Wellness Bottle", "category": "Bottles", "price": 249, "currency": "ZAR", "previewPrice": true, "status": "launching-soon", "approvedBy": "Munya", "approvalDate": "2026-07-15" },
   { "productId": "kalm-move-studio-bottle", "productName": "KALM Move Studio Bottle", "category": "Bottles", "price": 249, "currency": "ZAR", "previewPrice": true, "status": "launching-soon", "approvedBy": "Munya", "approvalDate": "2026-07-15" },
-  { "productId": "kalm-move-all-day-straw-tumbler", "productName": "KALM Move All-Day Straw Tumbler", "category": "Bottles", "price": 249, "currency": "ZAR", "previewPrice": true, "status": "launching-soon", "approvedBy": "Munya", "approvalDate": "2026-07-15" }
+  { "productId": "kalm-move-all-day-straw-tumbler", "productName": "KALM Move All-Day Straw Tumbler", "category": "Bottles", "price": 249, "currency": "ZAR", "previewPrice": true, "status": "launching-soon", "approvedBy": "Munya", "approvalDate": "2026-07-15" },
+  { "productId": "KALM-TEE-SIGNATURE-001", "productName": "KALM Signature Oversized Tee", "category": "Standard performance tops", "price": 699, "currency": "ZAR", "previewPrice": true, "status": "launching-soon", "approvedBy": "Munya", "approvalDate": "2026-08-18" }
 ]

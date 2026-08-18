@@ -34,6 +34,11 @@ jobs:
           node --check tools/kalm-release-control-tests.mjs
           node --check tools/validate-workflows.mjs
           node --check scripts/check-forbidden-legacy-storefront.mjs
+          node --check netlify/functions/payfast-initiate.mjs
+          node --check netlify/functions/payfast-itn.mjs
+          node --check netlify/functions/commerce-operations.mjs
+          node --check netlify/functions/commerce-email-dispatch.mjs
+          node --check netlify/functions/marketing-preference.mjs
 
       - name: Validate workflow YAML and safety rules
         run: npm run release:validate-workflows
@@ -43,3 +48,6 @@ jobs:
 
       - name: Run deterministic release-control tests
         run: npm run release:test-controls
+
+      - name: Run commerce boundary tests
+        run: npm test

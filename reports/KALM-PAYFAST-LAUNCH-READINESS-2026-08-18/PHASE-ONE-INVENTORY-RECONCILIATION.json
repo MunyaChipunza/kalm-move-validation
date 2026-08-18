@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-08-18T12:30:05.391Z",
+  "authoritativeInventory": {
+    "path": "reports/KS-ACTIVE-ARCHIVE/FINAL-PRODUCTION-RELEASE-20260714/FINAL-INVENTORY-MANIFEST.json",
+    "sha256": "4caac3bb544407718a90bad56860d4db85d7bcfbde355e94b4295292d46e7db2",
+    "products": 14,
+    "physicalSkus": 104,
+    "physicalUnits": 111
+  },
+  "publicCatalogue": {
+    "products": 14,
+    "skus": 104
+  },
+  "serverInventorySeed": {
+    "migration": "netlify/database/migrations/20260818000200_seed_ks_active_archive_inventory.sql",
+    "expectedSkus": 104,
+    "expectedUnits": 111
+  },
+  "findings": [],
+  "status": "pass"
+}

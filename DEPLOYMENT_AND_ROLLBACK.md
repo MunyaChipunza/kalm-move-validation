@@ -1,53 +1,26 @@
-# Deployment and Rollback Notes
+# KALM Production Deployment and Rollback
 
-## Storefront Target
+## Authoritative release path
 
 - Repository: `MunyaChipunza/kalm-move-validation`
-- Branch: `master`
-- Netlify site: `kalm-collective-storefront`
-- Netlify site ID: `06334c13-7d82-45f1-b983-4a7295de88d8`
+- Production branch: `master`
+- Storefront site: `kalm-collective-storefront`
+- Storefront site ID: `06334c13-7d82-45f1-b983-4a7295de88d8`
 - Production URL: `https://kalmcollective.co.za`
 
-Never deploy this storefront to the Munya task app or intranet site.
+Production releases use **only** the protected GitHub workflow:
+`.github/workflows/kalm-production-release.yml`.
 
-## Pre-Deploy Checks
+Local Codex must never run `netlify deploy --prod`, restore a production deploy, or upload arbitrary files. The workflow locks the approved master SHA, validates release provenance and the exact site ID, records the previous deploy, deploys the generated publish directory, performs live smoke checks, and restores the previous deploy if those smoke checks fail.
 
-Run:
+## Required release gates
 
-```powershell
-node --check script.js
-node tools/validate-catalog.mjs
-git diff --check
-```
-
-Then verify:
-
-- `products.json` parses
-- image paths exist
-- variant SKUs are unique
-- unavailable variants cannot be added to bag
-- KALM Move women product galleries swipe on mobile
-- filters and sorting preserve URL state
-
-## Manual Netlify Deploy
-
-The current storefront deployment flow is manual Netlify CLI deployment from the repo root.
-
-```powershell
-netlify deploy --prod --dir . --site 06334c13-7d82-45f1-b983-4a7295de88d8
-```
+Before merging to `master`, the release candidate must pass catalogue, PayFast, inventory, workflow, source-root and rendered-preview validation. The protected production workflow then runs the same verification against the exact merged commit, followed by the live custom-domain smoke test.
 
 ## Rollback
 
-Rollback must create a new commit that restores the previous known-good catalogue or code state. Do not rewrite Git history.
+The production workflow records the previous immutable deploy and automatically restores it when a post-deploy smoke check fails. For any later rollback, create a normal corrective commit, run the same release gates, and release it through the protected workflow. Never rewrite history or use a manual Netlify production deploy.
 
-1. Identify the last known-good commit.
-2. Restore only the intended files.
-3. Run validation.
-4. Commit the rollback.
-5. Deploy to the KALM storefront site ID only.
-6. Verify live `products.json` and storefront product pages.
+## Separation
 
-## Intranet Publishing Boundary
-
-The authenticated intranet may publish to this repository only through server-side functions with private environment variables. Browser JavaScript must never receive GitHub or Netlify write tokens.
+The Munya task application and the KALM intranet are separate Netlify sites. No storefront release may target, link, deploy or restore either of them.

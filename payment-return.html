@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Payment status | KALM Collective</title>
+  <style>
+    :root{font-family:Arial,sans-serif;color:#171716;background:#f8f7f4}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px}.card{width:min(560px,100%);background:#fff;border:1px solid #dedbd5;padding:36px;box-sizing:border-box}.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.11em}.status{font-size:clamp(1.7rem,5vw,2.5rem);margin:.7rem 0}.detail{color:#585650;line-height:1.55}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.button{display:inline-block;padding:13px 16px;background:#171716;color:#fff;text-decoration:none;font-weight:700}.button.secondary{background:#fff;border:1px solid #171716;color:#171716}#error{color:#8c2417;font-weight:700}</style>
+</head>
+<body>
+  <main class="card" aria-live="polite">
+    <p class="eyebrow">KALM COLLECTIVE</p>
+    <h1 class="status" id="title">Checking your payment</h1>
+    <p class="detail" id="message">We will confirm your order only after PayFast’s secure payment notification has been verified.</p>
+    <p id="error" hidden></p>
+    <div class="actions"><a class="button" href="/">Continue shopping</a><a class="button secondary" href="/terms.html">Terms &amp; customer care</a></div>
+  </main>
+  <script>
+    (() => {
+      const query = new URLSearchParams(location.search);
+      const orderId = query.get("order_id");
+      const token = query.get("token");
+      const title = document.querySelector("#title");
+      const message = document.querySelector("#message");
+      const error = document.querySelector("#error");
+      if (!orderId || !token) { title.textContent = "Payment status unavailable"; message.textContent = "Return to KALM Collective and contact customer care if you need help with an order."; return; }
+      let attempts = 0;
+      async function checkStatus() {
+        try {
+          const response = await fetch(`/api/payments/payfast/status?order_id=${encodeURIComponent(orderId)}&token=${encodeURIComponent(token)}`, { cache: "no-store" });
+          if (!response.ok) throw new Error("status_unavailable");
+          const order = await response.json();
+          const state = String(order.paymentStatus || "pending");
+          if (state === "paid") { title.textContent = "Payment confirmed"; message.textContent = "Thank you. Your payment has been verified and your order is being prepared."; return; }
+          if (state === "failed" || state === "cancelled") { title.textContent = "Payment not completed"; message.textContent = "No order will be fulfilled until payment is verified. You may return to KALM Collective to try again."; return; }
+          title.textContent = "Payment is being confirmed";
+          message.textContent = "PayFast is confirming your payment securely. This page will update automatically.";
+          attempts += 1;
+          if (attempts < 20) setTimeout(checkStatus, 3000);
+        } catch { error.hidden = false; error.textContent = "We could not retrieve the live payment status. Please contact support@kalmcollective.co.za if you need help."; }
+      }
+      checkStatus();
+    })();
+  </script>
+</body>
+</html>

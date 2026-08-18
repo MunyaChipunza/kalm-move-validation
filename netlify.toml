@@ -1,6 +1,9 @@
 [build]
   publish = "."
 
+[functions]
+  directory = "netlify/functions"
+
 # Review and source-lock material is never a public storefront asset. The
 # underlying audit history remains in Git, while these request paths are
 # explicitly unavailable from every production or preview deployment.
@@ -131,9 +134,14 @@
   status = 200
 
 [[redirects]]
-  from = "/account"
-  to = "/index.html"
-  status = 200
+from = "/account"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/unsubscribe"
+to = "/index.html"
+status = 200
 
 [[redirects]]
   from = "/cart"

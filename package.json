@@ -4,16 +4,22 @@
   "version": "1.0.0",
   "description": "Reproducible validation tooling for protected KALM production releases.",
   "scripts": {
+    "test": "node --test tests/payfast/payfast-core.test.mjs tests/commerce/phase-one-boundary.test.mjs",
     "check:legacy-storefront": "node scripts/check-forbidden-legacy-storefront.mjs --root .",
     "release:preflight": "node tools/kalm-production-release.mjs --mode preflight",
     "release:smoke": "node tools/kalm-production-release.mjs --mode postdeploy",
     "release:verify-controls": "node tools/kalm-production-release.mjs --mode verify-controls",
     "release:test-controls": "node tools/kalm-release-control-tests.mjs",
-    "release:validate-workflows": "node tools/validate-workflows.mjs"
+    "release:validate-workflows": "node tools/validate-workflows.mjs",
+    "commerce:reconcile": "node scripts/reconcile-ks-active-commerce.mjs"
   },
   "devDependencies": {
     "netlify-cli": "26.2.0",
     "playwright": "1.55.0",
     "yaml": "^2.8.1"
+  },
+  "dependencies": {
+    "@netlify/database": "^1.1.0",
+    "nodemailer": "^9.0.5"
   }
 }

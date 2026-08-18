@@ -18,7 +18,7 @@ const expectedNetlifySiteId = "06334c13-7d82-45f1-b983-4a7295de88d8";
 // detected form markup in that document, so release provenance hashes only
 // static files whose bytes remain unchanged after publishing.
 const provenanceStaticAssets = ["script.js", "styles.css", "products.json"];
-const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee", "/terms.html"];
+const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee", "/payment-return.html", "/terms.html"];
 const futureCategoryRoutes = ["/shop?category=home", "/shop?category=wellness", "/shop?category=outdoor"];
 
 function parseArgs(argv) {
@@ -127,7 +127,7 @@ async function renderedChecks(failures) {
 
     const terms = results.find((entry) => entry.route === "/terms.html")?.text || "";
     const termsNormalised = terms.toLocaleLowerCase("en-ZA");
-    for (const item of ["Terms & Conditions", "Delivery", "Order cancellation", "Returns", "Refunds", "KALM Collective (Pty) Ltd"]) {
+    for (const item of ["Terms & Conditions", "Delivery", "Order cancellation", "Returns", "Refunds", "KALM Collective (Pty) Ltd", "support@kalmcollective.co.za"]) {
       assert(termsNormalised.includes(item.toLocaleLowerCase("en-ZA")), `Required customer-terms content is missing from /terms.html: ${item}`, failures);
     }
 

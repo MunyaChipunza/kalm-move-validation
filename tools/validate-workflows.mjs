@@ -33,10 +33,10 @@ for (const path of workflowPaths) {
   }
   if (path.endsWith("kalm-production-release.yml")) {
     const paths = readPath(parsed, ["on", "push", "paths"]) || [];
-    for (const expected of ["assets/**", "branding/**", "data/**", "404.html", "index.html", "thanks.html", "merchandising.js", "route-bootstrap.js", "script.js", "styles.css", "products.json", "netlify.toml", "robots.txt", "sitemap.xml", "site.webmanifest", "llms.txt"]) {
+    for (const expected of ["assets/**", "branding/**", "data/**", "404.html", "index.html", "payment-return.html", "thanks.html", "merchandising.js", "route-bootstrap.js", "script.js", "styles.css", "products.json", "netlify.toml", "robots.txt", "sitemap.xml", "site.webmanifest", "llms.txt", "package.json", "package-lock.json", "netlify/**", ".github/workflows/kalm-production-release.yml"]) {
       assert(paths.includes(expected), `Production release push path filter is missing ${expected}.`);
     }
-    assert(paths.every((item) => !String(item).startsWith(".github/") && !String(item).startsWith("tools/") && !String(item).startsWith("scripts/") && !String(item).endsWith(".md")), "Production release path filter includes non-storefront release-control inputs.");
+    assert(paths.every((item) => !String(item).startsWith("tools/") && !String(item).startsWith("scripts/") && !String(item).endsWith(".md") && (!String(item).startsWith(".github/") || item === ".github/workflows/kalm-production-release.yml")), "Production release path filter includes non-storefront release-control inputs.");
     assert(text.includes("Resolve approved source commit"), "Production release workflow must resolve the source commit once.");
     assert(text.includes("steps.source.outputs.commit"), "Production release workflow must reuse the resolved source commit output.");
   }
