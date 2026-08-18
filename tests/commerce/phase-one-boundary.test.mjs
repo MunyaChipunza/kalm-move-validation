@@ -48,8 +48,11 @@ test("the public checkout does not offer a bypass payment method", async () => {
 
 test("a paid order receipt is protected by the server-issued order access token", async () => {
   const status = await readFile(new URL("../../netlify/functions/payfast-status.mjs", import.meta.url), "utf8");
+  const redirect = await readFile(new URL("../../netlify/functions/payfast-redirect.mjs", import.meta.url), "utf8");
   const receipt = await readFile(new URL("../../netlify/functions/commerce-receipt.mjs", import.meta.url), "utf8");
   assert.match(status, /\["paid", "partially_refunded", "refunded"\]/);
+  assert.match(status, /KALM_PAYMENT_RECONCILIATION_TOKEN/);
+  assert.match(redirect, /KALM_PAYMENT_RECONCILIATION_TOKEN/);
   assert.match(receipt, /validOrderAccessToken\(orderId, token, accessSecret\)/);
   assert.match(receipt, /\["paid", "partially_refunded", "refunded"\]/);
   assert.match(receipt, /It is not a VAT invoice/);
