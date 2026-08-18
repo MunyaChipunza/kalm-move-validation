@@ -3,6 +3,7 @@ import { assertCheckoutMode, assertPayFastEnabled, createOrderAccessToken, creat
 import { buildAuthoritativeItems, buildCustomer, buildDelivery, buildLegalAcceptance, buildOrderDescription, KALM_SELLER, validateIdempotencyKey } from "./_shared/commerce-core.mjs";
 import { createReservedOrder, paidOrderCount, releaseExpiredReservations } from "./_shared/commerce-store.mjs";
 import { json, readJson, safeError } from "./_shared/http.mjs";
+import { runtimeEnvGet } from "./_shared/runtime-env.mjs";
 
 export const config = { path: "/api/payments/payfast/initiate", method: ["POST"] };
 
@@ -15,8 +16,8 @@ export default async function payfastInitiate(request) {
     assertCheckoutMode(runtime, customer.email);
     // Prefer a dedicated receipt/access secret. The established server-only
     // reconciliation token is a safe owner-test compatibility fallback.
-    const accessSecret = globalThis.Netlify?.env?.get?.("ORDER_ACCESS_SECRET")
-      || globalThis.Netlify?.env?.get?.("KALM_PAYMENT_RECONCILIATION_TOKEN");
+    const accessSecret = runtimeEnvGet("ORDER_ACCESS_SECRET")
+      || runtimeEnvGet("KALM_PAYMENT_RECONCILIATION_TOKEN");
     if (!accessSecret) throw new PayFastError(503, "checkout_configuration_missing", "Checkout is temporarily unavailable.");
     await releaseExpiredReservations();
     if ((await paidOrderCount()) >= runtime.firstWaveOrderCap) {
