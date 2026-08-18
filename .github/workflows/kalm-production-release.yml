@@ -92,7 +92,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - run: npx playwright install --with-deps chromium
+      # Keep the rendered-browser release gate intact while avoiding the
+      # runner-level apt dependency installation that has been hanging before
+      # candidate validation. The Chromium binary is still installed here; if
+      # a required browser library is unavailable, the existing Playwright
+      # checks fail closed before a production publish can complete.
+      - run: npx playwright install chromium
 
       - name: Verify source is the clean current production branch head
         run: |
