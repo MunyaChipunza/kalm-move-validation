@@ -31,6 +31,14 @@ function envValue(name, envGet = defaultEnvGet) {
   return String(envGet(name) ?? "").trim();
 }
 
+function firstConfiguredEnv(names, envGet = defaultEnvGet) {
+  for (const name of names) {
+    const value = envValue(name, envGet);
+    if (value) return value;
+  }
+  return "";
+}
+
 function defaultEnvGet(name) {
   return runtimeEnvGet(name);
 }
@@ -50,8 +58,11 @@ export function getPayFastConfig(envGet = defaultEnvGet) {
     cancelUrl: envValue("PAYFAST_CANCEL_URL", envGet),
     notifyUrl: envValue("PAYFAST_NOTIFY_URL", envGet),
     confirmationAddress: envValue("PAYFAST_CONFIRMATION_ADDRESS", envGet),
-    checkoutMode: envValue("CHECKOUT_MODE", envGet).toLowerCase() || "closed",
-    ownerTestEmails: envValue("OWNER_TEST_EMAILS", envGet).split(",").map((value) => value.trim().toLowerCase()).filter(Boolean),
+    // KALM-specific names isolate the production owner-test gate from any
+    // inherited generic checkout settings. Generic names remain fallbacks for
+    // existing non-production configuration, and no value defaults open.
+    checkoutMode: firstConfiguredEnv(["KALM_PAYFAST_CHECKOUT_MODE", "CHECKOUT_MODE"], envGet).toLowerCase() || "closed",
+    ownerTestEmails: firstConfiguredEnv(["KALM_PAYFAST_OWNER_TEST_EMAILS", "OWNER_TEST_EMAILS"], envGet).split(",").map((value) => value.trim().toLowerCase()).filter(Boolean),
     reservationMinutes: Number.parseInt(envValue("ORDER_RESERVATION_MINUTES", envGet) || "120", 10),
     shippingCents: Number.parseInt(envValue("STANDARD_SHIPPING_CENTS", envGet) || "9900", 10),
     firstWaveOrderCap: Number.parseInt(envValue("FIRST_WAVE_ORDER_CAP", envGet) || "20", 10)

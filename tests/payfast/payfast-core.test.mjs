@@ -42,6 +42,18 @@ test("runtime configuration reads from Netlify's Functions environment", () => {
   }
 });
 
+test("KALM-specific owner-test controls take precedence over inherited generic settings", () => {
+  const config = getPayFastConfig((name) => ({
+    ...completeEnvironment,
+    CHECKOUT_MODE: "closed",
+    OWNER_TEST_EMAILS: "legacy@example.test",
+    KALM_PAYFAST_CHECKOUT_MODE: "owner_test",
+    KALM_PAYFAST_OWNER_TEST_EMAILS: "owner@example.test"
+  })[name]);
+  assert.equal(config.checkoutMode, "owner_test");
+  assert.deepEqual(config.ownerTestEmails, ["owner@example.test"]);
+});
+
 function runtime(overrides = {}) {
   const values = { ...completeEnvironment, ...overrides };
   return getPayFastConfig((name) => values[name]);
