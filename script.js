@@ -16,12 +16,12 @@ const state = {
   currentRouteKey: "",
   scrollPositions: new Map(),
   activeLightbox: null,
-  waitlistSubmissions: new Set(),
   movePreviewPrices: new Map(),
   moveWishlist: loadMoveWishlist(),
   moveDemandEvents: loadMoveDemandEvents(),
   moveNotifySubmissions: new Set(),
-  odoPilot: null
+  odoPilot: null,
+  serverInventory: new Map()
 };
 
 const currency = new Intl.NumberFormat("en-ZA", {
@@ -61,15 +61,33 @@ async function init() {
     state.data = await catalogueResponse.json();
     const movePriceEntries = await movePriceResponse.json();
     state.movePreviewPrices = new Map(movePriceEntries.map((entry) => [entry.productId, entry]));
-    sanitizeMoveProductsFromBag();
+    sanitizeNonPhaseOneProductsFromBag();
     window.addEventListener("hashchange", renderRoute);
     window.addEventListener("popstate", renderRoute);
     renderRoute();
     renderBag();
+    refreshServerInventory();
   } catch (error) {
     document.documentElement.dataset.routeRendered = "true";
     app.innerHTML = renderEmptyState("The shop could not load. Refresh the page to try again.");
     console.error(error);
+  }
+}
+
+async function refreshServerInventory() {
+  try {
+    const response = await fetch("/api/commerce/inventory", { cache: "no-store" });
+    if (!response.ok) return;
+    const payload = await response.json();
+    if (!Array.isArray(payload.variants)) return;
+    state.serverInventory = new Map(payload.variants.map((variant) => [variant.sku, variant]));
+    if (location.hash.includes("/cart") || location.hash.includes("/checkout") || location.hash.includes("/products/")) {
+      renderRoute();
+      renderBag();
+    }
+  } catch {
+    // The server checkout still makes the authoritative availability decision.
+    // This read is only a progressive enhancement for the current page.
   }
 }
 
@@ -321,6 +339,7 @@ function renderRoute() {
     scrollToAnchor(route.anchor);
     return;
   }
+  if (route.path === "/unsubscribe") return renderUnsubscribe();
   if (route.path === "/account") return renderAccount();
   renderNotFound();
 }
@@ -584,9 +603,7 @@ function renderHome({ preserveHero = false } = {}) {
         <h2>Join the KALM Collective.</h2>
         <p>Receive new arrivals, care notes and private offers from the brand family.</p>
       </div>
-      <form name="kalm-collective-newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-newsletter-form data-netlify-ajax data-success-message="You are subscribed to KALM Collective updates.">
-        <input type="hidden" name="form-name" value="kalm-collective-newsletter">
-        <input type="hidden" name="bot-field">
+      <form data-newsletter-form data-marketing-preference-form data-success-message="You are subscribed to KALM Collective updates.">
         <input type="hidden" name="source" value="homepage">
         <label class="sr-only" for="newsletter-email">Email address</label>
         <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
@@ -1115,49 +1132,6 @@ function renderKalmOutdoorExperience(brand) {
   hydrateDeferredImages(app);
 }
 
-function getOutdoorWaitlistChoices() {
-  return [
-    ...(state.data.outdoorBundles || []).map((bundle) => ({ label: bundle.title, applianceId: bundle.compatibleAppliance || "" }))
-  ];
-}
-
-function renderOutdoorWaitlistForm({ interest = "", applianceId = "", source = "outdoor-brand-page" } = {}) {
-  const choices = getOutdoorWaitlistChoices();
-  const anchors = getOutdoorAnchorProducts();
-  const selectedInterest = interest || choices[0]?.label || "";
-  const selectedAppliance = applianceId || choices.find((choice) => choice.label === selectedInterest)?.applianceId || anchors[0]?.id || "";
-  const fieldId = `outdoor-waitlist-${source.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}`;
-  const interestField = interest
-    ? `<input type="hidden" name="accessory_or_bundle" value="${escapeAttribute(selectedInterest)}"><p class="waitlist-interest">Interest: <strong>${escapeHtml(selectedInterest)}</strong></p>`
-    : `<label for="${fieldId}-interest">Accessory or bundle<select id="${fieldId}-interest" name="accessory_or_bundle" data-waitlist-interest-select required>${choices.map((choice) => `<option value="${escapeAttribute(choice.label)}" data-appliance-id="${escapeAttribute(choice.applianceId)}" ${choice.label === selectedInterest ? "selected" : ""}>${escapeHtml(choice.label)}</option>`).join("")}</select></label>`;
-  const applianceField = applianceId
-    ? `<input type="hidden" name="compatible_appliance" value="${escapeAttribute(applianceName(selectedAppliance))}"><input type="hidden" name="compatible_appliance_id" value="${escapeAttribute(selectedAppliance)}"><p class="waitlist-interest">Compatible appliance: <strong>${escapeHtml(applianceName(selectedAppliance))}</strong></p>`
-    : `<label for="${fieldId}-appliance">Compatible appliance<select id="${fieldId}-appliance" name="compatible_appliance" data-waitlist-appliance-select required>${anchors.map((anchor) => `<option value="${escapeAttribute(anchor.title)}" data-appliance-id="${escapeAttribute(anchor.id)}" ${anchor.id === selectedAppliance ? "selected" : ""}>${escapeHtml(anchor.title)}</option>`).join("")}</select></label>`;
-  return `
-    <form class="outdoor-waitlist-form" name="kalm-outdoor-accessory-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-waitlist-form data-success-message="You are on the KALM Outdoor waitlist. We will share launch and compatibility updates when they are confirmed.">
-      <input type="hidden" name="form-name" value="kalm-outdoor-accessory-waitlist">
-      <input type="hidden" name="bot-field">
-      <input type="hidden" name="source" value="${escapeAttribute(source)}">
-      <div class="form-grid two">
-        <label for="${fieldId}-name">Name<input id="${fieldId}-name" name="name" autocomplete="name" required></label>
-        <label for="${fieldId}-email">Email<input id="${fieldId}-email" name="email" type="email" autocomplete="email" required></label>
-        <label for="${fieldId}-phone">Phone <span class="optional">(optional)</span><input id="${fieldId}-phone" name="phone" type="tel" autocomplete="tel"></label>
-        ${interestField}
-        ${applianceField}
-      </div>
-      <fieldset class="waitlist-ownership">
-        <legend>Do you already own the compatible appliance?</legend>
-        <label><input type="radio" name="owns_compatible_appliance" value="yes" required> Yes</label>
-        <label><input type="radio" name="owns_compatible_appliance" value="no"> No</label>
-        <label><input type="radio" name="owns_compatible_appliance" value="planning"> I am planning my setup</label>
-      </fieldset>
-      <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>I consent to KALM Collective using my details for KALM Outdoor launch and compatibility updates.</span></label>
-      <p class="form-status" role="status" aria-live="polite"></p>
-      <button class="button primary full" type="submit">Join waitlist</button>
-    </form>
-  `;
-}
-
 function renderComingSoonMedia(className = "") {
   return `
     <div class="coming-soon-media ${className}" aria-hidden="true">
@@ -1258,11 +1232,7 @@ function renderProduct(slug, params = new URLSearchParams()) {
           </div>
         ` : `<div class="price-line">${renderPrice(product)}</div>`}
 
-        ${comingSoon && product.comingSoonCallToAction !== false ? renderOutdoorWaitlistForm({
-          interest: product.title,
-          applianceId: product.compatibleAppliances?.[0] || "",
-          source: `outdoor-product-${product.slug}`
-        }) : !comingSoon ? `
+        ${!comingSoon ? `
           <div class="selector-row">
             <label>Colour
               <select data-color-select>
@@ -1452,6 +1422,7 @@ function renderMoveNotifyForm(product) {
 }
 
 function renderCartPage() {
+  const delivery = 99;
   setDocumentMeta("Shopping Bag | KALM Collective", "Review selected KALM Collective products before checkout.");
   app.innerHTML = `
     <section class="page-hero compact">
@@ -1466,7 +1437,8 @@ function renderCartPage() {
       <aside class="checkout-card">
         <h2>Order Summary</h2>
         <div class="summary-row"><span>Subtotal</span><strong>${formatPrice(getSubtotal())}</strong></div>
-        <div class="summary-row"><span>Delivery</span><strong>Calculated at checkout</strong></div>
+        <div class="summary-row"><span>Standard courier</span><strong>${formatPrice(delivery)}</strong></div>
+        <div class="summary-row"><span>Total payable</span><strong>${formatPrice(getSubtotal() + delivery)}</strong></div>
         <a class="button primary full" href="#/checkout">Checkout</a>
         <a class="button secondary full" href="#/shop">Continue shopping</a>
       </aside>
@@ -1478,20 +1450,18 @@ function renderCartPage() {
 
 function renderCheckout() {
   const subtotal = getSubtotal();
+  const shipping = 99;
+  const total = subtotal + shipping;
   setDocumentMeta("Checkout | KALM Collective", "Complete your KALM Collective order with delivery details, order notes and payment selection.");
   app.innerHTML = `
     <section class="page-hero compact">
       <p class="eyebrow">Checkout</p>
       <h1>Complete your order.</h1>
-      <p>Enter your details, choose delivery and select a payment method. Payment instructions will be confirmed after order review.</p>
+      <p>Review your order, provide delivery details and continue securely to PayFast.</p>
     </section>
 
     <section class="checkout-layout">
-      <form class="checkout-form panel" name="kalm-collective-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-order-form data-netlify-ajax data-clear-bag="true" data-redirect="/thanks.html" data-success-message="Order received.">
-        <input type="hidden" name="form-name" value="kalm-collective-order">
-        <input type="hidden" name="bot-field">
-        <input type="hidden" name="cart_summary" value="${escapeAttribute(getCartSummary())}">
-        <input type="hidden" name="order_total" value="${subtotal}">
+      <form class="checkout-form panel" data-payfast-checkout novalidate>
 
         <h2>Contact details</h2>
         <div class="form-grid two">
@@ -1506,51 +1476,76 @@ function renderCheckout() {
           <label>Suburb<input name="suburb" required></label>
           <label>City<input name="city" autocomplete="address-level2" required></label>
           <label>Province<input name="province" autocomplete="address-level1" required></label>
-          <label>Postal code<input name="postal_code" autocomplete="postal-code" inputmode="numeric" required></label>
+          <label>Postal code<input name="postalCode" autocomplete="postal-code" inputmode="numeric" required></label>
         </div>
 
         <h2>Shipping method</h2>
         <div class="option-grid">
-          <label class="option-card"><input type="radio" name="shipping_method" value="Standard courier" checked><span><strong>Standard courier</strong><small>2 to 5 business days</small></span></label>
-          <label class="option-card"><input type="radio" name="shipping_method" value="Express courier"><span><strong>Express courier</strong><small>1 to 2 business days</small></span></label>
-          <label class="option-card"><input type="radio" name="shipping_method" value="Collection"><span><strong>Collection</strong><small>Store pickup arrangement</small></span></label>
+          <div class="option-card"><span><strong>Standard courier — South Africa</strong><small>R99 · dispatch and delivery in 2 to 5 business days</small></span></div>
         </div>
 
         <h2>Payment method</h2>
         <div class="option-grid">
-          <label class="option-card"><input type="radio" name="payment_method" value="PayFast" checked><span><strong>PayFast</strong><small>Card and instant EFT</small></span></label>
-          <label class="option-card"><input type="radio" name="payment_method" value="Ozow"><span><strong>Ozow</strong><small>Instant EFT</small></span></label>
-          <label class="option-card"><input type="radio" name="payment_method" value="EFT"><span><strong>EFT</strong><small>Bank transfer</small></span></label>
+          <div class="option-card"><span><strong>PayFast</strong><small>You will be redirected to PayFast to complete payment securely.</small></span></div>
         </div>
-        <p class="payment-note">Payment instructions will be confirmed after order review. Card details are not collected on this page.</p>
+        <p class="payment-note">KALM Collective does not collect or store your card details. Payment is confirmed only after PayFast's verified notification reaches KALM Collective.</p>
 
-        <label>Order notes<textarea name="notes" rows="4"></textarea></label>
-        <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree that KALM Collective may process my details to complete this order and provide customer care.</span></label>
+        <h2>Before payment</h2>
+        <label class="consent"><input type="checkbox" name="terms" required> <span>I accept the <a href="/terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="deliveryPolicy" required> <span>I accept the <a href="#/policies#delivery">Delivery Policy</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="returns" required> <span>I accept the <a href="#/policies#returns">Returns &amp; Refund Policy</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="marketingConsent"> <span>I would like to receive KALM Collective news and offers. Optional.</span></label>
         <p class="form-status" data-order-status></p>
-        <button class="button primary full" type="submit">Place order</button>
+        <button class="button primary full" type="submit">Continue to PayFast</button>
       </form>
 
       <aside class="checkout-card">
         <h2>Order Summary</h2>
         <div class="order-list">${state.bag.length ? state.bag.map(renderOrderLine).join("") : renderEmptyState("Your bag is empty.")}</div>
         <div class="summary-row"><span>Subtotal</span><strong>${formatPrice(subtotal)}</strong></div>
+        <div class="summary-row"><span>Standard courier</span><strong>${formatPrice(shipping)}</strong></div>
+        <div class="summary-row"><span>Total payable</span><strong>${formatPrice(total)}</strong></div>
+        <p class="payment-note">Seller: KALM Collective (Pty) Ltd · 2025/493384/07</p>
         <a class="text-link" href="#/cart">Edit bag</a>
       </aside>
     </section>
     ${renderFooter()}
   `;
 
-  document.querySelector("[data-order-form]")?.addEventListener("submit", (event) => {
+  document.querySelector("[data-payfast-checkout]")?.addEventListener("submit", async (event) => {
+    event.preventDefault();
     const status = document.querySelector("[data-order-status]");
     if (!state.bag.length) {
-      event.preventDefault();
       status.textContent = "Add at least one item to your bag before checkout.";
       return;
     }
-    event.currentTarget.cart_summary.value = getCartSummary();
-    event.currentTarget.order_total.value = String(getSubtotal());
+    const form = event.currentTarget;
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    const submit = form.querySelector("button[type=submit]");
+    const formData = new FormData(form);
+    const payload = {
+      idempotencyKey: crypto.randomUUID(),
+      items: state.bag.map((item) => ({ sku: item.sku, quantity: item.qty })),
+      customer: { name: formData.get("name"), email: formData.get("email"), phone: formData.get("phone") },
+      delivery: { address: formData.get("address"), suburb: formData.get("suburb"), city: formData.get("city"), province: formData.get("province"), postalCode: formData.get("postalCode") },
+      legalAcceptance: { terms: formData.get("terms") === "on", delivery: formData.get("deliveryPolicy") === "on", returns: formData.get("returns") === "on" },
+      marketingConsent: formData.get("marketingConsent") === "on"
+    };
+    status.textContent = "Preparing secure payment…";
+    submit.disabled = true;
+    try {
+      const response = await fetch("/api/payments/payfast/initiate", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload) });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.redirect) throw new Error(result.message || "Checkout is temporarily unavailable.");
+      window.location.assign(result.redirect);
+    } catch (error) {
+      status.textContent = error.message || "Checkout is temporarily unavailable.";
+      submit.disabled = false;
+    }
   });
-  bindNetlifyForms(app);
   hydrateDeferredImages(app);
 }
 
@@ -1587,7 +1582,7 @@ function renderContact() {
       </form>
       <aside class="care-panel">
         <h2>Customer Care</h2>
-        <p>Email: hello@kalmcollective.co.za</p>
+        <p>Email: support@kalmcollective.co.za</p>
         <p>Hours: Monday to Friday, 09:00 to 17:00 SAST.</p>
         <p>Follow: @kalmcollective</p>
       </aside>
@@ -1607,9 +1602,9 @@ function renderPolicies() {
       <p>Delivery, returns, payment and privacy details for shopping with KALM Collective.</p>
     </section>
     <section class="policy-grid">
-      <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Courier delivery is available across South Africa. Standard delivery takes 2 to 5 business days after order confirmation, with express delivery available in selected areas.</p></article>
-      <article class="policy-card" id="returns"><h2>Returns</h2><p>Returns are accepted within 30 days on unworn apparel and unused home or wellness items in their original condition and packaging.</p></article>
-      <article class="policy-card"><h2>Payment</h2><p>Checkout supports PayFast, Ozow and EFT selections. Payment instructions are confirmed after order review, and card details are not collected on this page.</p></article>
+      <article class="policy-card" id="delivery"><h2>Delivery</h2><p>Standard courier delivery is available across South Africa for R99. Please allow 2 to 5 business days after verified payment and order confirmation.</p></article>
+      <article class="policy-card" id="returns"><h2>Returns &amp; refunds</h2><p>Eligible unused, unworn items may be returned in their original condition and packaging in line with the KALM Collective Returns &amp; Refund Policy.</p></article>
+      <article class="policy-card"><h2>Payment</h2><p>PayFast is the only payment gateway for the current launch. Card details are entered securely with PayFast and payment is confirmed server-side.</p></article>
       <article class="policy-card"><h2>Privacy</h2><p>KALM Collective processes customer information for orders, delivery, customer care and opt-in marketing in line with POPIA.</p></article>
     </section>
     ${renderFooter()}
@@ -1618,28 +1613,41 @@ function renderPolicies() {
 }
 
 function renderAccount() {
-  setDocumentMeta("Account | KALM Collective", "Use your email for KALM Collective order updates, product care and private offers.");
+  setDocumentMeta("Customer support | KALM Collective", "Customer support for KALM Collective orders, delivery and returns.");
   app.innerHTML = `
     <section class="page-hero compact">
-      <p class="eyebrow">Account</p>
-      <h1>Customer account.</h1>
-      <p>Use your email for order updates, product care and private offers.</p>
+      <p class="eyebrow">Customer support</p>
+      <h1>Need help with an order?</h1>
+      <p>For delivery, returns or order assistance, contact KALM Collective customer care.</p>
     </section>
     <section class="contact-layout">
-      <form class="panel checkout-form" name="kalm-collective-account-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" data-netlify-ajax data-success-message="Your details have been saved for KALM Collective updates.">
-        <input type="hidden" name="form-name" value="kalm-collective-account-updates">
-        <input type="hidden" name="bot-field">
-        <label>Full name<input name="name" autocomplete="name" required></label>
-        <label>Email address<input name="email" type="email" autocomplete="email" required></label>
-        <label class="consent"><input type="checkbox" name="popia_consent" value="yes" required> <span>I agree to receive KALM Collective order and product updates.</span></label>
-        <p class="form-status"></p>
-        <button class="button primary" type="submit">Continue</button>
-      </form>
+      <article class="panel checkout-form"><h2>Order support</h2><p>Email <a href="mailto:support@kalmcollective.co.za">support@kalmcollective.co.za</a> with your order reference. We use your details only to resolve your request.</p><a class="button primary" href="#/contact">CONTACT CUSTOMER CARE</a></article>
       <aside class="care-panel">
-        <h2>Benefits</h2>
-        <p>Order updates, faster checkout details and early access to KALM Collective edits.</p>
+        <h2>Customer information</h2>
+        <p><a href="/terms.html">Delivery, returns, refunds and privacy information</a> is available before checkout.</p>
       </aside>
     </section>
+    ${renderFooter()}
+  `;
+  hydrateDeferredImages(app);
+}
+
+function renderUnsubscribe() {
+  setDocumentMeta("Marketing preferences | KALM Collective", "Update your KALM Collective marketing preference.");
+  setRouteIndexability(false);
+  app.innerHTML = `
+    <section class="page-hero compact">
+      <p class="eyebrow">Marketing preferences</p>
+      <h1>Update your email preference.</h1>
+      <p>Transactional order and delivery messages are not marketing communications.</p>
+    </section>
+    <section class="contact-layout"><form class="panel checkout-form" data-marketing-preference-form data-success-message="Your marketing preference has been updated.">
+      <input type="hidden" name="source" value="unsubscribe-page">
+      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+      <p>Stop KALM Collective marketing updates for this email address.</p>
+      <button class="button primary" type="submit" data-marketing-action="unsubscribe">UNSUBSCRIBE</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form></section>
     ${renderFooter()}
   `;
   bindNetlifyForms(app);
@@ -1706,6 +1714,14 @@ function productMatchesAudience(product, audience = "all") {
 
 function isComingSoonProduct(product) {
   return isMoveLaunchingSoonProduct(product) || Boolean(product?.comingSoon) || product?.availability === "coming_soon";
+}
+
+function isPhaseOneProduct(product) {
+  return product?.brandId === "ks-active"
+    && product?.publicationStatus === "published"
+    && product?.visibility === "visible"
+    && product?.trackInventory === true
+    && product?.launchDecision === "Include";
 }
 
 function isProductPublic(product) {
@@ -1855,9 +1871,10 @@ function getProductAvailability(product) {
 
 function getStockMessage(product, color = "", size = "") {
   const variant = color || size ? findVariant(product, color, size) : null;
-  const availability = variant?.availability || getProductAvailability(product);
+  const serverVariant = variant?.sku ? state.serverInventory.get(variant.sku) : null;
+  const availability = serverVariant?.availability || variant?.availability || getProductAvailability(product);
   if (availability === "coming_soon") return "Coming soon";
-  const quantity = variant?.quantity;
+  const quantity = serverVariant ? serverVariant.availableQuantity : variant?.quantity;
   if (availability === "out_of_stock" || availability === "discontinued") return "Sold out";
   if (availability === "preorder") return "Preorder interest";
   if (availability === "low_stock" || (Number.isFinite(quantity) && quantity <= (product.lowStockThreshold || 3))) return "Low stock";
@@ -1876,6 +1893,8 @@ function findVariant(product, color = "", size = "") {
 
 function isInventoryEntryAvailable(variant) {
   if (!variant || variant.enabled === false) return false;
+  const serverVariant = variant.sku ? state.serverInventory.get(variant.sku) : null;
+  if (serverVariant && !serverVariant.available) return false;
   if (["out_of_stock", "discontinued"].includes(variant.availability)) return false;
   if (Number.isFinite(variant.quantity) && variant.quantity <= 0) return false;
   return true;
@@ -2046,7 +2065,7 @@ function renderProductCard(product, options = {}) {
         ${comingSoon ? `
           <p class="card-photo-status">${escapeHtml(product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.")}</p>
           ${product.compatibleAppliances?.[0] ? `<p class="card-compatibility">${escapeHtml(applianceName(product.compatibleAppliances[0]))}</p>` : ""}
-          ${product.comingSoonCallToAction !== false ? `<a class="button secondary full card-view-link" href="${productHref}">Join waitlist</a>` : `<a class="button secondary full card-view-link" href="${productHref}">View product</a>`}
+          <a class="button secondary full card-view-link" href="${productHref}">View product</a>
         ` : `
           <div class="price-line">${renderPrice(product)}</div>
           <p class="card-display-colour">Colour: ${escapeHtml(defaultColour)}</p>
@@ -2410,7 +2429,7 @@ function renderBag() {
 
 function addToBag(productId, selectedSize, selectedColor) {
   const product = findProduct(productId);
-  if (!product || !isProductPublic(product)) return { ok: false, message: "This product is not available." };
+  if (!product || !isPhaseOneProduct(product)) return { ok: false, message: "This product is not available for checkout." };
   if (isComingSoonProduct(product)) return { ok: false, message: "This product is coming soon. Join the waitlist for launch information." };
   if (!selectedSize || !selectedColor) return { ok: false, message: "Please choose size and colour." };
   if (!isVariantAvailable(product, selectedColor, selectedSize)) {
@@ -2419,7 +2438,9 @@ function addToBag(productId, selectedSize, selectedColor) {
   const variant = findVariant(product, selectedColor, selectedSize);
   const key = `${productId}::${selectedSize}::${selectedColor}`;
   const item = state.bag.find((entry) => entry.key === key);
-  if (variant && Number.isFinite(variant.quantity) && item && item.qty >= variant.quantity) {
+  const serverVariant = variant?.sku ? state.serverInventory.get(variant.sku) : null;
+  const availableQuantity = serverVariant ? serverVariant.availableQuantity : variant?.quantity;
+  if (Number.isFinite(availableQuantity) && item && item.qty >= availableQuantity) {
     return { ok: false, message: "No more stock is available for that variant." };
   }
   const size = selectedSize;
@@ -2444,7 +2465,9 @@ function updateQty(key, delta) {
   if (delta > 0) {
     const product = findProduct(item.productId);
     const variant = product ? findVariant(product, item.color, item.size) : null;
-    if (variant && Number.isFinite(variant.quantity) && item.qty >= variant.quantity) return;
+    const serverVariant = variant?.sku ? state.serverInventory.get(variant.sku) : null;
+    const availableQuantity = serverVariant ? serverVariant.availableQuantity : variant?.quantity;
+    if (Number.isFinite(availableQuantity) && item.qty >= availableQuantity) return;
   }
   item.qty += delta;
   if (item.qty <= 0) removeFromBag(key);
@@ -2569,16 +2592,45 @@ function bindNetlifyForms(root = document) {
     if (form.dataset.netlifyBound === "true") return;
     form.dataset.netlifyBound = "true";
     form.addEventListener("submit", submitNetlifyForm);
-    const interest = form.querySelector("[data-waitlist-interest-select]");
-    const appliance = form.querySelector("[data-waitlist-appliance-select]");
-    if (interest && appliance) {
-      interest.addEventListener("change", () => {
-        const applianceId = interest.selectedOptions[0]?.dataset.applianceId;
-        const matchingOption = [...appliance.options].find((option) => option.dataset.applianceId === applianceId);
-        if (matchingOption) appliance.value = matchingOption.value;
-      });
-    }
   });
+  root.querySelectorAll("[data-marketing-preference-form]").forEach((form) => {
+    if (form.dataset.marketingPreferenceBound === "true") return;
+    form.dataset.marketingPreferenceBound = "true";
+    form.addEventListener("submit", submitMarketingPreference);
+  });
+}
+
+async function submitMarketingPreference(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const status = form.querySelector(".form-status");
+  const button = form.querySelector("button[type='submit']");
+  const originalLabel = button?.textContent || "";
+  const data = new FormData(form);
+  const email = String(data.get("email") || "").trim();
+  const action = form.querySelector("[data-marketing-action]")?.dataset.marketingAction || "subscribe";
+  if (!email || (action === "subscribe" && data.get("popia_consent") !== "yes")) {
+    if (status) status.textContent = action === "subscribe"
+      ? "Enter an email address and confirm that you want KALM Collective updates."
+      : "Enter the email address whose marketing preference you want to update.";
+    return;
+  }
+  if (status) status.textContent = "Saving your preference…";
+  if (button) { button.disabled = true; button.textContent = "Saving"; }
+  try {
+    const response = await fetch("/api/marketing/preference", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, action, source: String(data.get("source") || "website"), consent: action === "subscribe" })
+    });
+    if (!response.ok) throw new Error(`Marketing preference request failed with ${response.status}`);
+    if (status) status.textContent = form.dataset.successMessage || "Your preference has been saved.";
+    form.reset();
+  } catch {
+    if (status) status.textContent = "We could not save your preference right now. Please try again later.";
+  } finally {
+    if (button) { button.disabled = false; button.textContent = originalLabel; }
+  }
 }
 
 function getMoveSessionId() {
@@ -2797,14 +2849,6 @@ function recordMoveNotifyRegistration(form) {
   });
 }
 
-function getWaitlistSubmissionKey(form) {
-  if (!form?.matches("[data-waitlist-form]")) return "";
-  const data = new FormData(form);
-  const email = String(data.get("email") || "").trim().toLowerCase();
-  const interest = String(data.get("accessory_or_bundle") || "").trim().toLowerCase();
-  return email && interest ? `${email}::${interest}` : "";
-}
-
 async function submitNetlifyForm(event) {
   if (event.defaultPrevented) return;
   event.preventDefault();
@@ -2813,13 +2857,8 @@ async function submitNetlifyForm(event) {
   const button = form.querySelector("button[type='submit']");
   const originalLabel = button?.textContent || "";
   const successMessage = form.dataset.successMessage || "Thanks. Your message has been received.";
-  const waitlistSubmissionKey = getWaitlistSubmissionKey(form);
   const moveNotifySubmissionKey = getMoveNotifySubmissionKey(form);
 
-  if (waitlistSubmissionKey && state.waitlistSubmissions.has(waitlistSubmissionKey)) {
-    if (status) status.textContent = "You are already on this waitlist in this browser session.";
-    return;
-  }
   if (moveNotifySubmissionKey && state.moveNotifySubmissions.has(moveNotifySubmissionKey)) {
     if (status) status.textContent = "You’re already on the list for this selection in this browser session.";
     return;
@@ -2844,7 +2883,6 @@ async function submitNetlifyForm(event) {
       state.moveNotifySubmissions.add(moveNotifySubmissionKey);
       if (status) status.textContent = "You’re on the list. We’ll let you know when KALM Move launches.";
     } else if (status) status.textContent = successMessage;
-    if (waitlistSubmissionKey) state.waitlistSubmissions.add(waitlistSubmissionKey);
     if (form.dataset.clearBag === "true") {
       state.bag = [];
       saveBag();
@@ -2854,12 +2892,8 @@ async function submitNetlifyForm(event) {
     if (form.dataset.redirect) window.location.href = form.dataset.redirect;
   } catch (error) {
     console.warn(error);
-    if (form.matches("[data-waitlist-form]")) {
-      if (status) status.textContent = "We could not add you to the waitlist right now. Please check your connection and try again.";
-    } else {
-      if (status) status.textContent = "The form could not send in this browser session. Opening the standard form submission.";
-      HTMLFormElement.prototype.submit.call(form);
-    }
+    if (status) status.textContent = "The form could not send in this browser session. Opening the standard form submission.";
+    HTMLFormElement.prototype.submit.call(form);
   } finally {
     if (button) {
       button.disabled = false;
@@ -2894,9 +2928,9 @@ function loadBag() {
   }
 }
 
-function sanitizeMoveProductsFromBag() {
+function sanitizeNonPhaseOneProductsFromBag() {
   const originalLength = state.bag.length;
-  state.bag = state.bag.filter((item) => !isMoveLaunchingSoonProduct(findProduct(item.productId)));
+  state.bag = state.bag.filter((item) => isPhaseOneProduct(findProduct(item.productId)));
   if (state.bag.length !== originalLength) saveBag();
 }
 
@@ -2937,9 +2971,9 @@ function renderFooter() {
   return `
     <footer class="site-footer">
       <div class="footer-service">
-        <span>Free delivery over R800</span>
+        <span>Standard delivery R99 · 2–5 working days</span>
         <span>30-day returns</span>
-        <span>Secure payment choices</span>
+        <span>Secure PayFast payment</span>
         <span>Customer care weekdays</span>
       </div>
       <div class="footer-grid">
@@ -2961,6 +2995,7 @@ function renderFooter() {
           <a href="#/policies#delivery">Delivery</a>
           <a href="#/policies#returns">Returns</a>
           <a href="#/policies">Privacy</a>
+          <a href="#/unsubscribe">Marketing preferences</a>
         `)}
         ${footerSection("Follow", `
           <p>@kalmcollective</p>

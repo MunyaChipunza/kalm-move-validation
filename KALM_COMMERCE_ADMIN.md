@@ -1,43 +1,17 @@
-# KALM Commerce Admin
+# KALM Commerce Operations Boundary
 
-KALM Commerce is the authenticated intranet module for managing public KALM Collective catalogue data. The public storefront remains the static storefront in this repository and continues to read `products.json`.
+The public storefront is the canonical KALM storefront repository. The KALM intranet is a separate authenticated operations surface and must not expose GitHub, Netlify, PayFast, database or SMTP secrets to the browser.
 
-## Architecture
+## Phase 1 commerce ledger
 
-- Source of truth: `products.json` in `MunyaChipunza/kalm-move-validation`.
-- Public target: `kalm-collective-storefront`, Netlify site ID `06334c13-7d82-45f1-b983-4a7295de88d8`.
-- Admin target: the authenticated KALM ops intranet.
-- Browser clients must never receive GitHub, Netlify, OpenAI, Zoho, or deployment tokens.
-- Publishing must happen through server-side intranet functions.
+The storefront uses server-side Netlify functions and a transactional Netlify Database schema for KS Active Archive orders, inventory reservations, verified PayFast payment events, fulfilment events, returns/refunds, internal email outbox and marketing preferences.
 
-## Admin Sections
+Internal operations actions require a server-only operations token and include packing, dispatch with courier/tracking, delivery confirmation, refund review, return receipt, restock decision and actual PayFast refund-reference recording. A dashboard must not claim a refund completed before the actual gateway or dashboard action is confirmed.
 
-- Dashboard: catalogue health, stock warnings, validation state and latest publish state.
-- Products: searchable catalogue list with product status, imagery and variant summaries.
-- Inventory: product and variant stock controls.
-- Media: hero, gallery and colour image checks.
-- Publishing: validation, publish readiness, deployment target and rollback status.
-- Activity Log: audit trail for catalogue changes.
+## Publishing boundary
 
-## Publishing Flow
+Catalogue changes are validated in a dedicated branch and released to `master` through the protected GitHub workflow only. The intranet may prepare records and view reconciliation data but may not execute an unrestricted Netlify production deployment.
 
-1. Admin loads the current catalogue revision.
-2. User saves a draft change.
-3. Server validates catalogue schema, images, stock and duplicate keys.
-4. Server writes an atomic Git commit to the storefront repository.
-5. Server triggers the KALM storefront Netlify deployment.
-6. Admin verifies live `products.json` and storefront render state.
+## Required separation
 
-## Required Server Environment
-
-- `KALM_STOREFRONT_GITHUB_TOKEN`
-- `KALM_STOREFRONT_REPO`
-- `KALM_STOREFRONT_BRANCH`
-- `KALM_STOREFRONT_NETLIFY_SITE_ID`
-- Optional: `KALM_STOREFRONT_NETLIFY_BUILD_HOOK_URL`
-
-Do not store actual secret values in this repository.
-
-## Current Limitation
-
-The storefront supports the inventory schema and validation now. The intranet can expose commerce screens and read catalogue health. Durable write/publish from the intranet requires the server-side GitHub and Netlify environment variables above.
+The KALM intranet and Munya task application are not the KALM storefront. Do not point a storefront deploy, PayFast return URL, payment webhook or public link at either system.

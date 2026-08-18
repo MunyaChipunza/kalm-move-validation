@@ -30,13 +30,11 @@ Current status:
 
 ## Payment
 
-The checkout UI already offers PayFast, Ozow and EFT selection. Gateway activation still needs merchant setup and credentials.
+The checkout uses PayFast only. Gateway activation still needs merchant setup and credentials.
 
 Required external inputs:
 
 - PayFast merchant account, merchant ID, merchant key and passphrase.
-- Ozow merchant account, site code, private key and API key.
-- EFT beneficiary name, bank, branch code, account number and reference format.
 - Store support email for receipts and payment support.
 
 Recommended environment variables:
@@ -45,22 +43,14 @@ Recommended environment variables:
 PAYFAST_MERCHANT_ID=
 PAYFAST_MERCHANT_KEY=
 PAYFAST_PASSPHRASE=
-OZOW_SITE_CODE=
-OZOW_PRIVATE_KEY=
-OZOW_API_KEY=
-STORE_BANK_NAME=
-STORE_BANK_ACCOUNT_NAME=
-STORE_BANK_ACCOUNT_NUMBER=
-STORE_BANK_BRANCH_CODE=
 STORE_SUPPORT_EMAIL=hello@kalmcollective.co.za
 ```
 
 Implementation steps after credentials are available:
 
-1. Add a serverless checkout endpoint for PayFast/Ozow session creation.
-2. Add payment webhook handling for successful, failed and cancelled payments.
-3. Add EFT instruction email generation using the selected order reference.
-4. Run sandbox transactions for PayFast and Ozow.
-5. Switch checkout submit from order capture to gateway redirection once payment callbacks are verified.
+1. Configure the PayFast server credentials and owner-test controls in Netlify.
+2. Verify the signed PayFast ITN and server confirmation flow using a controlled owner test.
+3. Confirm a verified payment records a single order and preserves the inventory ledger.
+4. Switch the server-only checkout mode from owner test to public only after documented acceptance.
 
 Verdict remains unchanged: KALM Move is validation-ready, not bank-ready or production-ready.

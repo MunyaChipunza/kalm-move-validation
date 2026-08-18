@@ -14,7 +14,7 @@ const mode = args.mode || "preflight";
 const publishDir = resolve(root, args["publish-dir"] || ".release-output/kalm-production");
 const manifestPath = resolve(root, "release/kalm-production-manifest.json");
 const productionBranch = args.branch || "master";
-const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee", "/terms.html"];
+const requiredRoutes = ["/", "/ks-active", "/archive-sale", "/kalm-move", "/products/kalm-signature-oversized-tee", "/terms.html", "/payment-return.html"];
 const futureCategoryRoutes = ["/shop?category=home", "/shop?category=wellness", "/shop?category=outdoor"];
 const forbidden = [];
 const productionRemote = "https://github.com/MunyaChipunza/kalm-move-validation";
@@ -88,7 +88,7 @@ async function listFiles(directory) {
 
 async function listTextFiles(directory) {
   const ignored = new Set([".git", "node_modules", ".release-output", "release", "reports", "docs", "review"]);
-  const textExtensions = new Set([".html", ".js", ".css", ".json", ".xml", ".txt", ".toml", ".md", ".webmanifest", ".yml", ".yaml"]);
+  const textExtensions = new Set([".html", ".js", ".mjs", ".css", ".json", ".xml", ".txt", ".toml", ".md", ".webmanifest", ".yml", ".yaml"]);
   const files = [];
   async function visit(current) {
     for (const entry of await readdir(current, { withFileTypes: true })) {
@@ -109,6 +109,7 @@ async function copyCandidate() {
   const allowedRootFiles = new Set([
     "404.html",
     "index.html",
+    "payment-return.html",
     "thanks.html",
     "merchandising.js",
     "route-bootstrap.js",
@@ -221,7 +222,7 @@ async function inspectCandidate(failures, sentinel) {
   const sourceToml = await exists(sourceTomlPath) ? await readFile(sourceTomlPath, "utf8") : "";
   assert(sourceToml.length > 0, "netlify.toml is missing.", failures);
   const redirectCount = redirectAssertions(sourceToml, failures);
-  const mustExist = ["index.html", "script.js", "styles.css", "products.json", "route-bootstrap.js", "netlify.toml", "assets", "branding", "data/legal/terms.html"];
+  const mustExist = ["index.html", "payment-return.html", "script.js", "styles.css", "products.json", "route-bootstrap.js", "netlify.toml", "assets", "branding", "data/legal/terms.html"];
   for (const item of mustExist) assert(await exists(join(publishDir, item)), `Expected build asset is missing: ${item}`, failures);
   const files = await listFiles(publishDir);
   assert(files.length >= 50, `Candidate has an implausibly small file count (${files.length}).`, failures);
@@ -327,7 +328,7 @@ async function renderedChecks(baseUrl, failures, { expectRedirects }) {
 
     const terms = results.find((entry) => entry.route === "/terms.html")?.text || "";
     const termsNormalised = terms.toLocaleLowerCase("en-ZA");
-    for (const item of ["Terms & Conditions", "Delivery", "Order cancellation", "Returns", "Refunds", "KALM Collective (Pty) Ltd"]) {
+    for (const item of ["Terms & Conditions", "Delivery", "Order cancellation", "Returns", "Refunds", "KALM Collective (Pty) Ltd", "support@kalmcollective.co.za"]) {
       assert(termsNormalised.includes(item.toLocaleLowerCase("en-ZA")), `Required customer-terms content is missing from /terms.html: ${item}`, failures);
     }
 
@@ -485,12 +486,11 @@ async function verifyControls() {
   const prWorkflow = await readFile(resolve(root, ".github/workflows/kalm-pr-release-control-validation.yml"), "utf8");
   const sentinel = await inspectReleaseSentinel(failures);
   assert(/push:\s*\n\s*branches:\s*\n\s*-\s*master/.test(workflow), "Release workflow does not automatically trigger on master pushes.", failures);
-  for (const expected of ["assets/**", "branding/**", "data/**", "404.html", "index.html", "thanks.html", "merchandising.js", "route-bootstrap.js", "script.js", "styles.css", "products.json", "netlify.toml", "robots.txt", "sitemap.xml", "site.webmanifest", "llms.txt"]) {
+  for (const expected of ["assets/**", "branding/**", "data/**", "404.html", "index.html", "payment-return.html", "thanks.html", "merchandising.js", "route-bootstrap.js", "script.js", "styles.css", "products.json", "netlify.toml", "robots.txt", "sitemap.xml", "site.webmanifest", "llms.txt", "package.json", "package-lock.json", "netlify/**", ".github/workflows/kalm-production-release.yml"]) {
     assert(workflow.includes(`- "${expected}"`), `Release workflow production path filter is missing: ${expected}`, failures);
   }
-  for (const prohibited of [".github/", "tools/", "scripts/", "*.md"]) {
-    assert(!workflow.includes(`- "${prohibited}`), `Release workflow production path filter includes release-control or documentation input: ${prohibited}`, failures);
-  }
+  for (const prohibited of ["tools/", "scripts/", "*.md"]) assert(!workflow.includes(`- "${prohibited}`), `Release workflow production path filter includes release-control or documentation input: ${prohibited}`, failures);
+  assert(!workflow.includes('- ".github/**"'), "Release workflow production path filter includes unrestricted workflow inputs.", failures);
   assert(workflow.includes("workflow_dispatch:"), "Release workflow does not support explicit release dispatch.", failures);
   assert(workflow.includes("environment:\n      name: production"), "Release workflow does not use the production environment for scoped credentials.", failures);
   assert(workflow.includes("EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8"), "Release workflow does not pin the exact storefront Netlify site ID.", failures);

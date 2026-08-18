@@ -1,72 +1,35 @@
-# Forms And Email Setup
+# KALM Collective Forms and Email Operations
 
-Date: 2026-07-08
+## Current Phase 1 purpose and minimisation
 
-## Provider
+Only the following customer data paths are active for the Phase 1 KS Active Archive launch:
 
-KALM Collective uses Netlify Forms for storefront forms.
+| Purpose | Route / service | Minimum data | Storage / handling |
+| --- | --- | --- |
+| Customer care | Netlify form | name, email, optional phone, topic and message | Netlify Forms; support handling only |
+| Product help | Netlify form | product, name, email and message | Netlify Forms; customer care only |
+| KALM Move launch interest | Netlify form | selected product, colour, size, email and explicit notification consent | Netlify Forms; preview-only demand capture |
+| Newsletter | `/api/marketing/preference` | email, source and explicit optional consent | Commerce database preference ledger |
+| Paid order | PayFast commerce functions | buyer contact, delivery address, legal acceptance and selected Phase 1 SKU | Commerce database; PayFast ITN is authoritative |
 
-Reason: the site is hosted on Netlify, Netlify Forms requires no public API key in the frontend, and the existing storefront already had Netlify form skeletons for order and contact capture.
+Outdoor waitlist and account-updates forms have been retired. They must not be restored without a separate privacy and commercial review.
 
-Note: `munyachipunza.com` uses Web3Forms in places, but this storefront is using Netlify Forms to avoid adding a new third-party form key or exposing any secret in client code.
+## Transactional email
 
-## Where Submissions Go
+No email is sent merely because a browser returns from PayFast. A payment-received customer email and an internal ready-to-pack alert are added to the durable outbox only after a verified PayFast ITN marks the order paid. Dispatch email is added only when operations records courier and tracking information.
 
-Submissions appear in Netlify:
+The internal email dispatcher requires server-only SMTP configuration. It is intentionally unavailable until the required KALM SMTP variables are configured in the storefront Netlify project. It must never be enabled by putting SMTP credentials in Git or browser JavaScript.
 
-`kalm-collective-storefront` -> Forms
+## Marketing preference and suppression
 
-Email notifications should be configured in the Netlify UI under:
+Marketing is optional and separate from terms, order processing and delivery notifications. The preference endpoint records an explicit opt-in or suppression state against the email address. The customer-facing preference page is `/#/unsubscribe`. Transactional order and delivery messages are not marketing.
 
-Project configuration -> Notifications -> Form submission notifications
+## Controlled test procedure
 
-Recommended recipient: `hello@kalmcollective.co.za`
+1. Use a preview or the authorised owner-test checkout mode.
+2. Submit a customer-care form and confirm it appears in the configured Netlify Forms destination.
+3. Submit the newsletter form with explicit consent; confirm the preference endpoint records the opt-in without creating an order.
+4. Withdraw the same address at `/#/unsubscribe`; confirm the preference becomes suppressed.
+5. Run the real owner payment only after PayFast ITN, database and SMTP configuration gates are confirmed. Confirm one payment-received email and one internal alert only after verified ITN.
 
-## Live Forms
-
-Verified on production deploy `6a4eb00ae3f1bc522f8f6c88`: Netlify detected the current form names below.
-
-| Form | Netlify form name | Where used | Fields |
-|---|---|---|---|
-| Contact form | `kalm-collective-contact` | `#/contact` | name, email, phone, topic, message, POPIA consent |
-| Newsletter/signup form | `kalm-collective-newsletter` | homepage newsletter panel | email, source, POPIA consent |
-| Order form | `kalm-collective-order` | `#/checkout` | name, email, phone, address, suburb, city, province, postal code, shipping method, payment method, cart summary, order total, notes, POPIA consent |
-| Product help form | `kalm-collective-product-help` | product detail pages | product, name, email, message, POPIA consent |
-| Account updates form | `kalm-collective-account-updates` | `#/account` | name, email, POPIA consent |
-
-## Order Notes
-
-Checkout includes an `Order notes` textarea.
-
-Those notes are submitted as the `notes` field in the `kalm-collective-order` Netlify form payload. The cart summary also includes product, colour, size and quantity.
-
-## Newsletter Signups
-
-Newsletter submissions use `kalm-collective-newsletter`.
-
-Fields:
-
-- `email`
-- `source`
-- `popia_consent`
-
-Current source value: `homepage`
-
-## How To Test Form Delivery
-
-1. Deploy the site to Netlify.
-2. Open `https://kalmcollective.co.za`.
-3. Submit the newsletter form with a test email.
-4. Open Netlify -> `kalm-collective-storefront` -> Forms.
-5. Confirm the `kalm-collective-newsletter` submission appears.
-6. Submit the contact form from `#/contact`.
-7. Confirm the `kalm-collective-contact` submission appears.
-8. Add a product to the bag, go to checkout, add an order note, and submit.
-9. Confirm the `kalm-collective-order` submission includes colour, size, order note and cart summary.
-
-## Important
-
-- Do not add API keys to `script.js`, `index.html`, or `products.json`.
-- Keep the hidden Netlify detection forms in `index.html`.
-- If a new JavaScript-rendered form is added, add a matching hidden skeleton form in `index.html` with the exact same `name` and fields.
-- Netlify may still list older inactive form names from previous deploys. Use the current form names in this document as the source of truth.
+No testing procedure may send a paid-order email for a failed, cancelled or browser-return-only payment.

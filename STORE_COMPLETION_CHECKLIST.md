@@ -11,9 +11,9 @@
 | Brand pages | Complete | Five brand pages with logos, hero imagery and product grids. |
 | Product pages | Complete | Product image, price, colour/size selectors, details, fit/fabric and care. |
 | Bag | Complete | Add, quantity update, remove, subtotal and drawer/page views. |
-| Checkout | Complete for structured order capture | Contact, address, shipping, PayFast/Ozow/EFT selection and order summary. |
+| Checkout | Controlled server checkout | Contact, address, R99 standard delivery, PayFast-only hand-off and ITN verification. |
 | Public copy | Complete | Removed public readiness and assistance wording. |
 | Domain | Complete | `kalmcollective.co.za` and `www.kalmcollective.co.za` are assigned to `kalm-collective-storefront`; `munya-task-app` uses its Netlify app domain. |
-| Payment gateways | External setup | PayFast/Ozow merchant credentials and EFT banking details required before gateway activation. |
+| Payment gateway | External setup | PayFast server credentials, owner test, verified ITN and launch-gate acceptance required before public activation. |
 
 Verdict remains unchanged: KALM Move is validation-ready, not bank-ready or production-ready.

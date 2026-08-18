@@ -36,7 +36,7 @@ Live form names:
 - `kalm-collective-newsletter`
 - `kalm-collective-order`
 - `kalm-collective-product-help`
-- `kalm-collective-account-updates`
+- Historical note: the `kalm-collective-account-updates` form was retired for Phase 1 data minimisation.
 
 All visible forms include POPIA consent where customer personal information is submitted.
 
@@ -50,7 +50,7 @@ Result:
 
 - No live frontend API keys found in `index.html`, `script.js`, `styles.css`, `products.json` or `netlify.toml`.
 - No production Netlify environment variables are set for `kalm-collective-storefront`.
-- Internal payment setup docs contain blank placeholder keys only, such as `OZOW_PRIVATE_KEY=`.
+- Historical payment-provider placeholders are retired. Phase 1 uses PayFast only; no alternative gateway configuration is active.
 
 ## Redirect Rules Checked
 
