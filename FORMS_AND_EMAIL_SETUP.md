@@ -16,7 +16,7 @@ Outdoor waitlist and account-updates forms have been retired. They must not be r
 
 ## Transactional email
 
-No email is sent merely because a browser returns from PayFast. A payment-received customer email and an internal ready-to-pack alert are added to the durable outbox only after a verified PayFast ITN marks the order paid. Dispatch email is added only when operations records courier and tracking information.
+No email is sent merely because a browser returns from PayFast. A payment-received customer email, including a token-protected payment-receipt link, and an internal ready-to-pack alert are added to the durable outbox only after a verified PayFast ITN marks the order paid. Dispatch email is added only when operations records courier and tracking information. The browser return page exposes the same receipt only after the server confirms a paid state; receipts state plainly that they are not VAT invoices.
 
 The internal email dispatcher requires server-only SMTP configuration. It is intentionally unavailable until the required KALM SMTP variables are configured in the storefront Netlify project. It must never be enabled by putting SMTP credentials in Git or browser JavaScript.
 

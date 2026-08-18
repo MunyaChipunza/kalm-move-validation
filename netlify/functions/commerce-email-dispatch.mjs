@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import { claimEmailBatch, completeEmail } from "./_shared/commerce-store.mjs";
 import { requireOperationsAccess } from "./_shared/operations-auth.mjs";
+import { createOrderAccessToken } from "./_shared/payfast-core.mjs";
 import { json, safeError } from "./_shared/http.mjs";
 
 export const config = { path: "/api/internal/commerce/email-dispatch", method: ["POST"] };
@@ -12,7 +13,12 @@ function cents(centsValue) { return new Intl.NumberFormat("en-ZA", { style: "cur
 function content(message) {
   const order = message.order_reference;
   if (message.message_type === "payment_received_customer") {
-    return { subject: `KALM Collective payment received — ${order}`, text: `Thank you, ${message.customer_name}. We have verified your PayFast payment of ${cents(message.total_cents)} for order ${order}. We will email you again when your order is dispatched. KALM Collective (Pty) Ltd.` };
+    const secret = env("ORDER_ACCESS_SECRET");
+    const origin = env("KALM_PUBLIC_SITE_URL") || "https://kalmcollective.co.za";
+    const receipt = secret && message.order_id
+      ? ` View your receipt: ${origin.replace(/\/$/, "")}/api/orders/receipt?order_id=${encodeURIComponent(message.order_id)}&token=${encodeURIComponent(createOrderAccessToken(message.order_id, secret))}`
+      : "";
+    return { subject: `KALM Collective payment received — ${order}`, text: `Thank you, ${message.customer_name}. We have verified your PayFast payment of ${cents(message.total_cents)} for order ${order}. We will email you again when your order is dispatched. KALM Collective (Pty) Ltd.${receipt}` };
   }
   if (message.message_type === "dispatch_customer") {
     return { subject: `KALM Collective order dispatched — ${order}`, text: `Your KALM Collective order ${order} has been marked as dispatched. Contact support@kalmcollective.co.za if you need assistance.` };

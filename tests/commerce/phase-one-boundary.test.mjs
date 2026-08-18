@@ -45,3 +45,12 @@ test("the public checkout does not offer a bypass payment method", async () => {
   assert.match(source, /Standard courier — South Africa/);
   assert.match(source, /dispatch and delivery in 2 to 5 business days/);
 });
+
+test("a paid order receipt is protected by the server-issued order access token", async () => {
+  const status = await readFile(new URL("../../netlify/functions/payfast-status.mjs", import.meta.url), "utf8");
+  const receipt = await readFile(new URL("../../netlify/functions/commerce-receipt.mjs", import.meta.url), "utf8");
+  assert.match(status, /\["paid", "partially_refunded", "refunded"\]/);
+  assert.match(receipt, /validOrderAccessToken\(orderId, token, accessSecret\)/);
+  assert.match(receipt, /\["paid", "partially_refunded", "refunded"\]/);
+  assert.match(receipt, /It is not a VAT invoice/);
+});
