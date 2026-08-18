@@ -55,6 +55,7 @@ jobs:
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      KALM_PAYFAST_OWNER_TEST_EMAIL: ${{ secrets.KALM_PAYFAST_OWNER_TEST_EMAIL }}
       EXPECTED_NETLIFY_SITE_ID: 06334c13-7d82-45f1-b983-4a7295de88d8
       PRODUCTION_URL: https://kalmcollective.co.za
       RELEASE_APPROVAL_EVENT: ${{ github.event_name == 'workflow_dispatch' && format('workflow_dispatch:{0}', github.actor) || format('merge_to_master:{0}', github.sha) }}
@@ -126,6 +127,17 @@ jobs:
           test -f .release-output/kalm-production/kalm-build-signature.json
           node --check tools/kalm-production-live-smoke.mjs
           node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('.kalm-approved-release-root','utf8'));const m=JSON.parse(fs.readFileSync('release/kalm-production-manifest.json','utf8'));const p=JSON.parse(fs.readFileSync('.release-output/kalm-production/kalm-build-signature.json','utf8'));if(m.validationStatus!=='pass'||m.buildSignature!==s.expectedBuildSignature||m.publishDirectory!==s.publishDirectory||p.repository!==s.repositoryRemote||p.sourceCommitSha!=='${{ steps.source.outputs.commit }}'||p.expectedNetlifySiteId!==s.netlifySiteId||p.productionDomain!==s.productionDomain||p.criticalAssetHash!==m.criticalAssetHash) process.exit(1)"
+
+      - name: Apply protected owner-test checkout gate
+        # The checkout state is runtime configuration, not a client-side flag.
+        # Keep the authorised tester's address in a GitHub secret and apply it
+        # only from the exact protected release workflow that also verifies the
+        # canonical source, site identity, candidate provenance and live smoke.
+        run: |
+          test -n "$KALM_PAYFAST_OWNER_TEST_EMAIL"
+          test "$NETLIFY_SITE_ID" = "$EXPECTED_NETLIFY_SITE_ID"
+          npx --no-install netlify env:set KALM_PAYFAST_CHECKOUT_MODE owner_test --context production --scope functions runtime --force --site "$NETLIFY_SITE_ID"
+          npx --no-install netlify env:set KALM_PAYFAST_OWNER_TEST_EMAILS "$KALM_PAYFAST_OWNER_TEST_EMAIL" --context production --scope functions runtime --secret --force --site "$NETLIFY_SITE_ID"
 
       - name: Deploy approved release candidate
         id: deploy
