@@ -54,3 +54,13 @@ test("a paid order receipt is protected by the server-issued order access token"
   assert.match(receipt, /\["paid", "partially_refunded", "refunded"\]/);
   assert.match(receipt, /It is not a VAT invoice/);
 });
+
+test("verified PayFast payment queues a customer confirmation without coupling payment state to delivery", async () => {
+  const itn = await readFile(new URL("../../netlify/functions/payfast-itn.mjs", import.meta.url), "utf8");
+  const mailer = await readFile(new URL("../../netlify/functions/commerce-email-dispatch.mjs", import.meta.url), "utf8");
+  assert.match(itn, /dispatchQueuedEmails/);
+  assert.match(itn, /processed\.paid && !processed\.duplicate/);
+  assert.match(itn, /outbox retry remains available/);
+  assert.match(mailer, /blocked_configuration/);
+  assert.match(mailer, /claimEmailBatch/);
+});

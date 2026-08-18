@@ -13,7 +13,10 @@ export default async function payfastInitiate(request) {
     const body = await readJson(request);
     const customer = buildCustomer(body.customer);
     assertCheckoutMode(runtime, customer.email);
-    const accessSecret = globalThis.Netlify?.env?.get?.("ORDER_ACCESS_SECRET");
+    // Prefer a dedicated receipt/access secret. The established server-only
+    // reconciliation token is a safe owner-test compatibility fallback.
+    const accessSecret = globalThis.Netlify?.env?.get?.("ORDER_ACCESS_SECRET")
+      || globalThis.Netlify?.env?.get?.("KALM_PAYMENT_RECONCILIATION_TOKEN");
     if (!accessSecret) throw new PayFastError(503, "checkout_configuration_missing", "Checkout is temporarily unavailable.");
     await releaseExpiredReservations();
     if ((await paidOrderCount()) >= runtime.firstWaveOrderCap) {

@@ -1,5 +1,6 @@
 import { amountToCents, assertPayFastEnabled, getPayFastConfig, getPayFastValidateUrl, PayFastError, validateItnPayload } from "./_shared/payfast-core.mjs";
 import { getOrderByReference, processVerifiedItn } from "./_shared/commerce-store.mjs";
+import { dispatchQueuedEmails } from "./commerce-email-dispatch.mjs";
 import { safeError } from "./_shared/http.mjs";
 
 export const config = { path: "/api/payments/payfast/itn", method: ["POST"] };
@@ -30,7 +31,7 @@ export default async function payfastItn(request) {
     if (!(await confirmWithPayFast(rawBody, runtime.mode))) {
       throw new PayFastError(400, "server_confirmation_failed", "Server confirmation failed.");
     }
-    await processVerifiedItn({
+    const processed = await processVerifiedItn({
       orderReference: reference,
       gatewayTransactionId: data.pf_payment_id || null,
       targetState,
@@ -38,6 +39,11 @@ export default async function payfastItn(request) {
       rawPayload: rawBody,
       payfastStatus: data.payment_status
     });
+    if (processed.paid && !processed.duplicate) {
+      // A receipt-confirmation failure must not make PayFast retry a verified
+      // payment. The durable outbox retains unsent mail for a protected retry.
+      try { await dispatchQueuedEmails(); } catch { /* outbox retry remains available */ }
+    }
     return new Response("OK", { status: 200, headers: { "content-type": "text/plain", "cache-control": "no-store", "x-content-type-options": "nosniff" } });
   } catch (error) {
     const response = safeError(error);
