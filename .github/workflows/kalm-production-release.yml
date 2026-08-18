@@ -129,7 +129,10 @@ jobs:
 
       - name: Deploy approved release candidate
         id: deploy
-        run: npx --no-install netlify deploy --prod --dir .release-output/kalm-production --functions netlify/functions --site "$NETLIFY_SITE_ID" --message "GitHub protected release ${{ steps.source.outputs.commit }}"
+        # Shared function modules are part of the payment control plane. Do not
+        # allow a CLI function-cache hit to publish new static files while
+        # retaining an earlier checkout or ITN implementation.
+        run: npx --no-install netlify deploy --prod --skip-functions-cache --dir .release-output/kalm-production --functions netlify/functions --site "$NETLIFY_SITE_ID" --message "GitHub protected release ${{ steps.source.outputs.commit }}"
 
       - name: Validate the live custom domain
         id: smoke
