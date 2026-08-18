@@ -13,7 +13,7 @@ function cents(centsValue) { return new Intl.NumberFormat("en-ZA", { style: "cur
 function content(message) {
   const order = message.order_reference;
   if (message.message_type === "payment_received_customer") {
-    const secret = env("ORDER_ACCESS_SECRET");
+    const secret = env("ORDER_ACCESS_SECRET") || env("KALM_PAYMENT_RECONCILIATION_TOKEN");
     const origin = env("KALM_PUBLIC_SITE_URL") || "https://kalmcollective.co.za";
     const receipt = secret && message.order_id
       ? ` View your receipt: ${origin.replace(/\/$/, "")}/api/orders/receipt?order_id=${encodeURIComponent(message.order_id)}&token=${encodeURIComponent(createOrderAccessToken(message.order_id, secret))}`
@@ -26,29 +26,36 @@ function content(message) {
   return { subject: `KALM order ready to pack — ${order}`, text: `Verified PayFast payment received for ${order}. Total: ${cents(message.total_cents)}. Fulfilment status: ${message.fulfilment_status}. Review the order in the internal operations ledger.` };
 }
 
+export async function dispatchQueuedEmails(limit = 20) {
+  const host = env("KALM_SMTP_HOST");
+  const user = env("KALM_SMTP_USER");
+  const password = env("KALM_SMTP_PASSWORD");
+  const from = env("KALM_SMTP_FROM");
+  // Payment capture is never coupled to mail delivery. A missing mail
+  // configuration leaves the durable outbox pending for a safe retry.
+  if (!host || !user || !password || !from) return { dispatched: 0, state: "blocked_configuration", outcomes: [] };
+  const port = Number.parseInt(env("KALM_SMTP_PORT") || "587", 10);
+  const transport = nodemailer.createTransport({ host, port, secure: port === 465, auth: { user, pass: password } });
+  const messages = await claimEmailBatch(limit);
+  const outcomes = [];
+  for (const message of messages) {
+    try {
+      const mail = content(message);
+      const result = await transport.sendMail({ from, to: message.recipient, subject: mail.subject, text: mail.text });
+      await completeEmail({ emailId: message.email_id, providerMessageId: result.messageId || null });
+      outcomes.push({ emailId: message.email_id, state: "sent" });
+    } catch {
+      await completeEmail({ emailId: message.email_id, failureCode: "delivery_failed" });
+      outcomes.push({ emailId: message.email_id, state: "failed" });
+    }
+  }
+  return { dispatched: outcomes.filter((outcome) => outcome.state === "sent").length, outcomes };
+}
+
 export default async function commerceEmailDispatch(request) {
   try {
     requireOperationsAccess(request);
-    const host = env("KALM_SMTP_HOST");
-    const user = env("KALM_SMTP_USER");
-    const password = env("KALM_SMTP_PASSWORD");
-    const from = env("KALM_SMTP_FROM");
-    if (!host || !user || !password || !from) return json({ dispatched: 0, state: "blocked_configuration" }, { status: 503 });
-    const port = Number.parseInt(env("KALM_SMTP_PORT") || "587", 10);
-    const transport = nodemailer.createTransport({ host, port, secure: port === 465, auth: { user, pass: password } });
-    const messages = await claimEmailBatch(20);
-    const outcomes = [];
-    for (const message of messages) {
-      try {
-        const mail = content(message);
-        const result = await transport.sendMail({ from, to: message.recipient, subject: mail.subject, text: mail.text });
-        await completeEmail({ emailId: message.email_id, providerMessageId: result.messageId || null });
-        outcomes.push({ emailId: message.email_id, state: "sent" });
-      } catch {
-        await completeEmail({ emailId: message.email_id, failureCode: "delivery_failed" });
-        outcomes.push({ emailId: message.email_id, state: "failed" });
-      }
-    }
-    return json({ dispatched: outcomes.filter((outcome) => outcome.state === "sent").length, outcomes });
+    const result = await dispatchQueuedEmails();
+    return json(result, { status: result.state === "blocked_configuration" ? 503 : 200 });
   } catch (error) { return safeError(error); }
 }
