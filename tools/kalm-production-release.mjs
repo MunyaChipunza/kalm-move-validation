@@ -87,8 +87,12 @@ async function listFiles(directory) {
 }
 
 async function listTextFiles(directory) {
-  const ignored = new Set([".git", "node_modules", ".release-output", "release", "reports", "docs", "review"]);
-  const textExtensions = new Set([".html", ".js", ".mjs", ".css", ".json", ".xml", ".txt", ".toml", ".md", ".webmanifest", ".yml", ".yaml"]);
+  // Scan executable or publishable runtime material. Documentation, tests and
+  // release-control tools intentionally contain hostile-secret test markers
+  // and task-application names; treating those as public runtime would make
+  // the safety check both noisy and less trustworthy.
+  const ignored = new Set([".git", "node_modules", ".release-output", "release", "reports", "docs", "review", "tools", "scripts", "tests"]);
+  const textExtensions = new Set([".html", ".js", ".mjs", ".css", ".json", ".xml", ".txt", ".toml", ".webmanifest", ".yml", ".yaml"]);
   const files = [];
   async function visit(current) {
     for (const entry of await readdir(current, { withFileTypes: true })) {
