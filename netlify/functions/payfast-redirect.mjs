@@ -15,7 +15,8 @@ export default async function payfastRedirect(request) {
     const url = new URL(request.url);
     const orderId = url.searchParams.get("order_id") || "";
     const token = url.searchParams.get("token") || "";
-    const accessSecret = globalThis.Netlify?.env?.get?.("ORDER_ACCESS_SECRET");
+    const accessSecret = globalThis.Netlify?.env?.get?.("ORDER_ACCESS_SECRET")
+      || globalThis.Netlify?.env?.get?.("KALM_PAYMENT_RECONCILIATION_TOKEN");
     if (!accessSecret || !validOrderAccessToken(orderId, token, accessSecret)) throw new PayFastError(403, "invalid_checkout_session", "This checkout session is no longer available.");
     const order = await getOrder(orderId);
     if (!order) throw new PayFastError(404, "order_not_found", "This checkout session is no longer available.");
