@@ -56,7 +56,23 @@ const result = {
   status: findings.some((finding) => finding.level === "error") ? "fail" : "pass"
 };
 
-await mkdir(dirname(outputPath), { recursive: true });
-await writeFile(outputPath, `${JSON.stringify(result, null, 2)}\n`);
-console.log(JSON.stringify({ status: result.status, products: result.authoritativeInventory.products, physicalSkus: result.authoritativeInventory.physicalSkus, physicalUnits: result.authoritativeInventory.physicalUnits, findings: findings.length, output: outputPath }, null, 2));
+// A successful repeat reconciliation must not make a release tree dirty only
+// because its evidence timestamp changed. Write the report when the evidence is
+// new or materially different; use --refresh-evidence to intentionally record
+// a later validation timestamp.
+let evidenceUpdated = false;
+const refreshEvidence = process.argv.includes("--refresh-evidence");
+try {
+  const existing = JSON.parse(await readFile(outputPath, "utf8"));
+  const comparableExisting = { ...existing, checkedAt: null };
+  const comparableResult = { ...result, checkedAt: null };
+  evidenceUpdated = refreshEvidence || JSON.stringify(comparableExisting) !== JSON.stringify(comparableResult);
+} catch {
+  evidenceUpdated = true;
+}
+if (evidenceUpdated) {
+  await mkdir(dirname(outputPath), { recursive: true });
+  await writeFile(outputPath, `${JSON.stringify(result, null, 2)}\n`);
+}
+console.log(JSON.stringify({ status: result.status, products: result.authoritativeInventory.products, physicalSkus: result.authoritativeInventory.physicalSkus, physicalUnits: result.authoritativeInventory.physicalUnits, findings: findings.length, evidenceUpdated, output: outputPath }, null, 2));
 if (result.status !== "pass") process.exit(1);
