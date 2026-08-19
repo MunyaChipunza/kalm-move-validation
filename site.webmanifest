@@ -10,8 +10,13 @@
   "theme_color": "#111111",
   "icons": [
     {
-      "src": "assets/branding/kalm-collective/kalm-collective-logo.png",
-      "sizes": "1563x1563",
+      "src": "/assets/branding/kalm-collective/kalm-collective-favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/branding/kalm-collective/kalm-collective-favicon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
