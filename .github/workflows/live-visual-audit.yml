@@ -1,0 +1,52 @@
+name: Live Visual Audit
+
+on:
+  push:
+    branches:
+      - audit/live-visual-20260711
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        batch: [0, 1, 2, 3, 4, 5]
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Capture live website batch
+        env:
+          AUDIT_BASE_URL: https://kalmcollective.co.za
+          AUDIT_OUTPUT_DIR: audit-output
+          AUDIT_BATCH_INDEX: ${{ matrix.batch }}
+          AUDIT_BATCH_COUNT: 6
+        run: node tools/live-visual-audit.mjs
+
+      - name: Upload visual audit batch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kalm-live-visual-audit-${{ matrix.batch }}
+          path: audit-output
+          if-no-files-found: warn
+          retention-days: 7
