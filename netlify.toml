@@ -164,6 +164,13 @@ status = 200
     X-Frame-Options = "DENY"
 
 [[headers]]
+  # The payment redirect performs a documented cross-origin POST to PayFast.
+  # Keep every other page restricted to same-origin form submissions.
+  for = "/api/payments/payfast/redirect"
+  [headers.values]
+    Content-Security-Policy = "default-src 'none'; base-uri 'none'; form-action https://www.payfast.co.za https://sandbox.payfast.co.za; script-src 'unsafe-inline'; style-src 'none'; frame-ancestors 'none'"
+
+[[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
