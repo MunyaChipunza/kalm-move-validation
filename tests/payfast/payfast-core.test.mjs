@@ -227,6 +227,17 @@ test("checkout fields use a server-owned total and signature", () => {
   assert.match(new Map(fields).get("signature"), /^[a-f0-9]{32}$/);
 });
 
+test("checkout fields sign custom fields before confirmation options", () => {
+  const fields = buildCheckoutFields({ orderId: "ord_test", paymentReference: "KALM-test", amountCents: 49900, description: "1 KALM Collective item", customer: { name: "Test Buyer", email: "buyer@example.test", phone: "" } }, runtime());
+  const signedFields = fields.slice(0, -1);
+  assert.deepEqual(signedFields.map(([key]) => key), [
+    "merchant_id", "merchant_key", "return_url", "cancel_url", "notify_url",
+    "name_first", "name_last", "email_address", "m_payment_id", "amount",
+    "item_name", "item_description", "custom_str1", "email_confirmation"
+  ]);
+  assert.equal(new Map(fields).get("signature"), createPayFastSignature(signedFields, testPassphrase));
+});
+
 test("checkout source offers PayFast only and uses the protected server initiation route", async () => {
   const source = await (await import("node:fs/promises")).readFile(new URL("../../script.js", import.meta.url), "utf8");
   assert.match(source, /\/api\/payments\/payfast\/initiate/);
