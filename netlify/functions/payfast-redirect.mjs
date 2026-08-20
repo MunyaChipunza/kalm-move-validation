@@ -25,7 +25,7 @@ export default async function payfastRedirect(request) {
     const nextOrder = await markAwaitingGateway(orderId);
     const fields = buildCheckoutFields(nextOrder, runtime);
     const inputs = fields.map(([name, value]) => `<input type="hidden" name="${escapeHtml(name)}" value="${escapeHtml(value)}">`).join("");
-    return html(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="referrer" content="no-referrer"><title>Redirecting to secure payment</title></head><body><main><p>Redirecting to secure payment…</p></main><form id="payfast" method="post" action="${getPayFastProcessUrl(runtime.mode)}">${inputs}</form><script>document.getElementById('payfast').submit();</script></body></html>`, 200, {
+    return html(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="referrer" content="no-referrer"><title>Redirecting to secure payment</title></head><body><main><p>Redirecting to secure payment…</p></main><form id="payfast" method="post" action="${getPayFastProcessUrl(runtime.mode)}">${inputs}<button type="submit">Continue to secure payment</button></form><script>document.getElementById('payfast').submit();</script></body></html>`, 200, {
       // This one-hop response alone permits the documented gateway hand-off.
       // The static storefront retains its restrictive CSP.
       "content-security-policy": "default-src 'none'; base-uri 'none'; form-action https://www.payfast.co.za https://sandbox.payfast.co.za; script-src 'unsafe-inline'; style-src 'none'; frame-ancestors 'none'"
