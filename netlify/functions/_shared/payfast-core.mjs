@@ -20,8 +20,10 @@ export const PAYFAST_ORDER_STATES = Object.freeze({
 export const PAYFAST_CHECKOUT_FIELD_ORDER = Object.freeze([
   "merchant_id", "merchant_key", "return_url", "cancel_url", "notify_url",
   "name_first", "name_last", "email_address", "cell_number", "m_payment_id",
-  "amount", "item_name", "item_description", "email_confirmation",
-  "confirmation_address", "payment_method", "custom_str1", "custom_str2"
+  "amount", "item_name", "item_description",
+  "custom_int1", "custom_int2", "custom_int3", "custom_int4", "custom_int5",
+  "custom_str1", "custom_str2", "custom_str3", "custom_str4", "custom_str5",
+  "email_confirmation", "confirmation_address", "payment_method"
 ]);
 
 const KNOWN_ITN_STATUSES = new Set(["COMPLETE", "FAILED", "PENDING", "CANCELLED", "ON HOLD"]);
