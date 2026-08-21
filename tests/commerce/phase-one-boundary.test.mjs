@@ -45,7 +45,7 @@ test("the public checkout does not offer a bypass payment method", async () => {
   const source = await readFile(new URL("../../script.js", import.meta.url), "utf8");
   assert.match(source, /\/api\/payments\/payfast\/initiate/);
   assert.doesNotMatch(source, /value="Ozow"|value="EFT"|value="Paystack"/);
-  assert.match(source, /getDeliveryDescription\(\)/);\n  assert.match(source, /dispatch and delivery in 2 to 5 business days/);
+  assert.match(source, /getDeliveryDescription\(\)/);
   assert.match(source, /dispatch and delivery in 2 to 5 business days/);
 });
 
