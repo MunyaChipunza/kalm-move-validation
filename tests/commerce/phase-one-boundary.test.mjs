@@ -21,6 +21,9 @@ test("the server accepts only a reconciled SKU and refuses client-invented inven
   const result = buildAuthoritativeItems([{ sku: allowed.sku, quantity: 1 }]);
   assert.equal(result[0].sku, allowed.sku);
   assert.equal(result[0].unitPriceCents, allowed.unitPriceCents);
+  const ownerTest = buildAuthoritativeItems([{ sku: "KALM-TEE-SIGNATURE-TEST-01", quantity: 1 }], { checkoutMode: "owner_test" });
+  assert.equal(ownerTest[0].unitPriceCents, 100);
+  assert.throws(() => buildAuthoritativeItems([{ sku: "KALM-TEE-SIGNATURE-TEST-01", quantity: 1 }]), PayFastError);
   assert.throws(() => buildAuthoritativeItems([{ sku: "KALM-TEE-SIGNATURE-001-BLK-M", quantity: 1 }]), PayFastError);
   assert.throws(() => buildAuthoritativeItems([{ sku: allowed.sku, quantity: 0 }]), PayFastError);
 });
