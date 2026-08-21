@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { assertCheckoutMode, assertPayFastEnabled, createOrderAccessToken, createPaymentReference, getPayFastConfig, PayFastError } from "./_shared/payfast-core.mjs";
-import { buildAuthoritativeItems, buildCustomer, buildDelivery, buildLegalAcceptance, buildOrderDescription, KALM_SELLER, validateIdempotencyKey } from "./_shared/commerce-core.mjs";
+import { buildAuthoritativeItems, buildCustomer, buildDelivery, buildLegalAcceptance, buildOrderDescription, hasOwnerTestItems, isExclusiveOwnerTestOrder, KALM_SELLER, OWNER_TEST_SHIPPING_CENTS, validateIdempotencyKey } from "./_shared/commerce-core.mjs";
 import { createReservedOrder, paidOrderCount, releaseExpiredReservations } from "./_shared/commerce-store.mjs";
 import { json, readJson, safeError } from "./_shared/http.mjs";
 import { runtimeEnvGet } from "./_shared/runtime-env.mjs";
@@ -23,7 +23,11 @@ export default async function payfastInitiate(request) {
     if ((await paidOrderCount()) >= runtime.firstWaveOrderCap) {
       throw new PayFastError(503, "first_wave_review", "Checkout is temporarily paused while the first launch orders are reviewed.");
     }
-    const items = buildAuthoritativeItems(body.items);
+    const items = buildAuthoritativeItems(body.items, { checkoutMode: runtime.checkoutMode });
+    if (hasOwnerTestItems(items) && !isExclusiveOwnerTestOrder(items)) {
+      throw new PayFastError(400, "owner_test_order_mixed", "Complete owner payment test variants in separate orders.");
+    }
+    const shippingCents = isExclusiveOwnerTestOrder(items) ? OWNER_TEST_SHIPPING_CENTS : runtime.shippingCents;
     const delivery = buildDelivery(body.delivery);
     const legalAcceptance = buildLegalAcceptance(body.legalAcceptance);
     const idempotencyKey = validateIdempotencyKey(body.idempotencyKey);
@@ -37,7 +41,7 @@ export default async function payfastInitiate(request) {
       customer,
       delivery,
       items,
-      shippingCents: runtime.shippingCents,
+      shippingCents,
       legalAcceptance,
       marketingConsent: body.marketingConsent === true,
       reservationMinutes: runtime.reservationMinutes
