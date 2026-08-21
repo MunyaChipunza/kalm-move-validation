@@ -26,7 +26,7 @@ const completeEnvironment = Object.freeze({
   PAYFAST_CREDENTIAL_SET: "sandbox",
   PAYFAST_MERCHANT_ID: "test-merchant-id",
   PAYFAST_MERCHANT_KEY: "test-merchant-key",
-  PAYFAST_PASSPHRASE: testPassphrase,
+  KALM_PAYFAST_PASSPHRASE: testPassphrase,
   PAYFAST_RETURN_URL: "https://example.test/payment/payfast?status=pending",
   PAYFAST_CANCEL_URL: "https://example.test/payment/payfast?status=cancelled",
   PAYFAST_NOTIFY_URL: "https://example.test/api/payments/payfast/itn"
