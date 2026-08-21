@@ -74,7 +74,7 @@ export function getPayFastConfig(envGet = defaultEnvGet) {
     credentialSet,
     merchantId: envValue("PAYFAST_MERCHANT_ID", envGet),
     merchantKey: envValue("PAYFAST_MERCHANT_KEY", envGet),
-    passphrase: envValue("PAYFAST_PASSPHRASE", envGet),
+    passphrase: firstConfiguredEnv(["KALM_PAYFAST_PASSPHRASE", "PAYFAST_PASSPHRASE"], envGet),
     returnUrl: envValue("PAYFAST_RETURN_URL", envGet),
     cancelUrl: envValue("PAYFAST_CANCEL_URL", envGet),
     notifyUrl: envValue("PAYFAST_NOTIFY_URL", envGet),
