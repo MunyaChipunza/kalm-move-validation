@@ -1,0 +1,9 @@
+-- Owner-test payment variants only. These rows are isolated from the reconciled physical inventory and are never accepted in public checkout.
+INSERT INTO commerce_inventory (sku, product_id, product_code, product_name, product_slug, colour, size, unit_price_cents, available_quantity, authority_source, source_hash)
+VALUES
+('KALM-TEE-SIGNATURE-TEST-01', 'kalm-move-owner-payment-test', 'TEST-01', 'KALM Signature Tee — Owner Payment Test', 'kalm-signature-tee-owner-payment-test', 'Black', 'Test 01', 100, 1, 'Owner-authorised live payment and transactional-email test', 'owner-payment-test-20260821'),
+('KALM-TEE-SIGNATURE-TEST-02', 'kalm-move-owner-payment-test', 'TEST-02', 'KALM Signature Tee — Owner Payment Test', 'kalm-signature-tee-owner-payment-test', 'Black', 'Test 02', 100, 1, 'Owner-authorised live payment and transactional-email test', 'owner-payment-test-20260821'),
+('KALM-TEE-SIGNATURE-TEST-03', 'kalm-move-owner-payment-test', 'TEST-03', 'KALM Signature Tee — Owner Payment Test', 'kalm-signature-tee-owner-payment-test', 'Black', 'Test 03', 100, 1, 'Owner-authorised live payment and transactional-email test', 'owner-payment-test-20260821'),
+('KALM-TEE-SIGNATURE-TEST-04', 'kalm-move-owner-payment-test', 'TEST-04', 'KALM Signature Tee — Owner Payment Test', 'kalm-signature-tee-owner-payment-test', 'Black', 'Test 04', 100, 1, 'Owner-authorised live payment and transactional-email test', 'owner-payment-test-20260821'),
+('KALM-TEE-SIGNATURE-TEST-05', 'kalm-move-owner-payment-test', 'TEST-05', 'KALM Signature Tee — Owner Payment Test', 'kalm-signature-tee-owner-payment-test', 'Black', 'Test 05', 100, 1, 'Owner-authorised live payment and transactional-email test', 'owner-payment-test-20260821')
+ON CONFLICT (sku) DO NOTHING;
