@@ -1180,7 +1180,7 @@ function renderKalmMoveSubcategories() {
 
 function renderProduct(slug, params = new URLSearchParams()) {
   const product = state.data.products.find((item) => item.slug === slug);
-  if (!product || !isProductPublic(product)) return renderNotFound();
+  if (!product || (!isProductPublic(product) && !isOwnerTestRoute(product, params))) return renderNotFound();
   if (isMoveLaunchingSoonProduct(product)) return renderMoveLaunchingSoonProduct(product, params);
   const comingSoon = isComingSoonProduct(product);
   const comingSoonMessage = product.comingSoonMessage || product.conceptImageDisclosure || product.photographyStatus || "Coming soon.";
@@ -1422,7 +1422,7 @@ function renderMoveNotifyForm(product) {
 }
 
 function renderCartPage() {
-  const delivery = 99;
+  const delivery = getDeliveryCharge();
   setDocumentMeta("Shopping Bag | KALM Collective", "Review selected KALM Collective products before checkout.");
   app.innerHTML = `
     <section class="page-hero compact">
@@ -1437,7 +1437,7 @@ function renderCartPage() {
       <aside class="checkout-card">
         <h2>Order Summary</h2>
         <div class="summary-row"><span>Subtotal</span><strong>${formatPrice(getSubtotal())}</strong></div>
-        <div class="summary-row"><span>Standard courier</span><strong>${formatPrice(delivery)}</strong></div>
+        <div class="summary-row"><span>${escapeHtml(getDeliveryLabel())}</span><strong>${formatPrice(delivery)}</strong></div>
         <div class="summary-row"><span>Total payable</span><strong>${formatPrice(getSubtotal() + delivery)}</strong></div>
         <a class="button primary full" href="#/checkout">Checkout</a>
         <a class="button secondary full" href="#/shop">Continue shopping</a>
@@ -1450,7 +1450,7 @@ function renderCartPage() {
 
 function renderCheckout() {
   const subtotal = getSubtotal();
-  const shipping = 99;
+  const shipping = getDeliveryCharge();
   const total = subtotal + shipping;
   setDocumentMeta("Checkout | KALM Collective", "Complete your KALM Collective order with delivery details, order notes and payment selection.");
   app.innerHTML = `
@@ -1481,7 +1481,7 @@ function renderCheckout() {
 
         <h2>Shipping method</h2>
         <div class="option-grid">
-          <div class="option-card"><span><strong>Standard courier — South Africa</strong><small>R99 · dispatch and delivery in 2 to 5 business days</small></span></div>
+          <div class="option-card"><span><strong>${escapeHtml(getDeliveryLabel())} — South Africa</strong><small>${escapeHtml(getDeliveryDescription())}</small></span></div>
         </div>
 
         <h2>Payment method</h2>
@@ -1503,7 +1503,7 @@ function renderCheckout() {
         <h2>Order Summary</h2>
         <div class="order-list">${state.bag.length ? state.bag.map(renderOrderLine).join("") : renderEmptyState("Your bag is empty.")}</div>
         <div class="summary-row"><span>Subtotal</span><strong>${formatPrice(subtotal)}</strong></div>
-        <div class="summary-row"><span>Standard courier</span><strong>${formatPrice(shipping)}</strong></div>
+        <div class="summary-row"><span>${escapeHtml(getDeliveryLabel())}</span><strong>${formatPrice(shipping)}</strong></div>
         <div class="summary-row"><span>Total payable</span><strong>${formatPrice(total)}</strong></div>
         <p class="payment-note">Seller: KALM Collective (Pty) Ltd · 2025/493384/07</p>
         <a class="text-link" href="#/cart">Edit bag</a>
@@ -1724,6 +1724,35 @@ function isPhaseOneProduct(product) {
     && product?.launchDecision === "Include";
 }
 
+function isOwnerTestProduct(product) {
+  return product?.id === "kalm-move-owner-payment-test" && product?.ownerTestOnly === true;
+}
+
+function isOwnerTestRoute(product, params = new URLSearchParams()) {
+  return isOwnerTestProduct(product) && params.get("owner_test") === "1";
+}
+
+function isCheckoutProduct(product) {
+  return isPhaseOneProduct(product) || isOwnerTestProduct(product);
+}
+
+function isExclusiveOwnerTestBag() {
+  return state.bag.length > 0 && state.bag.every((item) => isOwnerTestProduct(findProduct(item.productId)));
+}
+
+function getDeliveryCharge() {
+  return isExclusiveOwnerTestBag() ? 100 : 99;
+}
+
+function getDeliveryLabel() {
+  return isExclusiveOwnerTestBag() ? "Owner payment test delivery" : "Standard courier";
+}
+
+function getDeliveryDescription() {
+  return isExclusiveOwnerTestBag()
+    ? "R100 · payment-flow test only"
+    : "R99 · dispatch and delivery in 2 to 5 business days";
+}
 function isProductPublic(product) {
   if (!product) return false;
   if (!["ks-active", "kalm-move"].includes(product.brandId)) return false;
@@ -1857,7 +1886,7 @@ function buildActiveFilters(filterState) {
 }
 
 function getProductAvailability(product) {
-  if (!isProductPublic(product)) return "discontinued";
+  if (!isProductPublic(product) && !isOwnerTestProduct(product)) return "discontinued";
   if (isComingSoonProduct(product)) return "coming_soon";
   const variants = (product.variants || []).filter((variant) => variant.enabled !== false);
   if (!variants.length) return product.availability || "in_stock";
@@ -2429,7 +2458,9 @@ function renderBag() {
 
 function addToBag(productId, selectedSize, selectedColor) {
   const product = findProduct(productId);
-  if (!product || !isPhaseOneProduct(product)) return { ok: false, message: "This product is not available for checkout." };
+  if (!product || !isCheckoutProduct(product)) return { ok: false, message: "This product is not available for checkout." };
+  const hasOwnerTestItem = state.bag.some((item) => isOwnerTestProduct(findProduct(item.productId)));
+  if (hasOwnerTestItem !== isOwnerTestProduct(product) && state.bag.length) return { ok: false, message: "Complete owner payment test variants in separate orders." };
   if (isComingSoonProduct(product)) return { ok: false, message: "This product is coming soon. Join the waitlist for launch information." };
   if (!selectedSize || !selectedColor) return { ok: false, message: "Please choose size and colour." };
   if (!isVariantAvailable(product, selectedColor, selectedSize)) {
@@ -2930,7 +2961,7 @@ function loadBag() {
 
 function sanitizeNonPhaseOneProductsFromBag() {
   const originalLength = state.bag.length;
-  state.bag = state.bag.filter((item) => isPhaseOneProduct(findProduct(item.productId)));
+  state.bag = state.bag.filter((item) => isCheckoutProduct(findProduct(item.productId)));
   if (state.bag.length !== originalLength) saveBag();
 }
 
