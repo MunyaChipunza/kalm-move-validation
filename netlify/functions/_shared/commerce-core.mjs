@@ -48,6 +48,30 @@ for (const row of inventoryManifest.variants || []) {
 
 export const PHASE_ONE_VARIANTS = Object.freeze([...VARIANT_BY_SKU.values()]);
 export const PHASE_ONE_PRODUCT_IDS = Object.freeze([...new Set(PHASE_ONE_VARIANTS.map((variant) => variant.productId))]);
+export const OWNER_TEST_PRODUCT_ID = "kalm-move-owner-payment-test";
+export const OWNER_TEST_SHIPPING_CENTS = 10_000;
+export const OWNER_TEST_VARIANTS = Object.freeze([
+  "01", "02", "03", "04", "05"
+].map((number) => Object.freeze({
+  sku: `KALM-TEE-SIGNATURE-TEST-${number}`,
+  productId: OWNER_TEST_PRODUCT_ID,
+  productCode: `TEST-${number}`,
+  productName: "KALM Signature Tee — Owner Payment Test",
+  productSlug: "kalm-signature-tee-owner-payment-test",
+  colour: "Black",
+  size: `Test ${number}`,
+  quantity: 1,
+  unitPriceCents: 100
+})));
+const OWNER_TEST_VARIANT_BY_SKU = new Map(OWNER_TEST_VARIANTS.map((variant) => [variant.sku, variant]));
+
+export function hasOwnerTestItems(items) {
+  return Array.isArray(items) && items.some((item) => OWNER_TEST_VARIANT_BY_SKU.has(item?.sku));
+}
+
+export function isExclusiveOwnerTestOrder(items) {
+  return Array.isArray(items) && items.length > 0 && items.every((item) => OWNER_TEST_VARIANT_BY_SKU.has(item?.sku));
+}
 
 function cleanText(value, maximum = 180) {
   return String(value || "").trim().replace(/\s+/g, " ").slice(0, maximum);
@@ -57,7 +81,7 @@ function validEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || "").trim());
 }
 
-export function buildAuthoritativeItems(requestedItems) {
+export function buildAuthoritativeItems(requestedItems, { checkoutMode = "" } = {}) {
   if (!Array.isArray(requestedItems) || requestedItems.length === 0 || requestedItems.length > 20) {
     throw new PayFastError(400, "invalid_cart", "Your bag needs at least one available item.");
   }
@@ -65,7 +89,7 @@ export function buildAuthoritativeItems(requestedItems) {
   const items = requestedItems.map((requested) => {
     const sku = cleanText(requested?.sku, 120);
     const quantity = Number(requested?.quantity);
-    const authoritative = VARIANT_BY_SKU.get(sku);
+    const authoritative = VARIANT_BY_SKU.get(sku) || (checkoutMode === "owner_test" ? OWNER_TEST_VARIANT_BY_SKU.get(sku) : null);
     if (!authoritative || !Number.isInteger(quantity) || quantity < 1 || quantity > 10 || seen.has(sku)) {
       throw new PayFastError(400, "unavailable_variant", "One or more selected variants are not available.");
     }
