@@ -15391,6 +15391,62 @@
         { "sku": "KALM-TEE-SIGNATURE-001-WHT-XL", "colour": "White", "size": "XL", "quantity": null, "availability": "in_stock", "enabled": true },
         { "sku": "KALM-TEE-SIGNATURE-001-WHT-2XL", "colour": "White", "size": "2XL", "quantity": null, "availability": "in_stock", "enabled": true }
       ]
+    },    {
+      "id": "kalm-move-owner-payment-test",
+      "brand": "KALM Move",
+      "brandId": "kalm-move",
+      "parentBrand": "KALM Collective",
+      "collection": "KALM Move",
+      "category": "Owner payment test",
+      "department": "Move",
+      "gender": "Unisex",
+      "type": "Owner-only payment test variant",
+      "audiences": ["women", "men"],
+      "title": "KALM Signature Tee — Owner Payment Test",
+      "slug": "kalm-signature-tee-owner-payment-test",
+      "price": 1,
+      "currency": "ZAR",
+      "colors": ["Black"],
+      "sizes": ["Test 01", "Test 02", "Test 03", "Test 04", "Test 05"],
+      "stockLabel": "OWNER TEST",
+      "image": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",
+      "description": "Owner-only payment test item. Not offered for public sale.",
+      "longDescription": "This temporary KALM Signature Tee test item exists only to validate the live PayFast order and transactional-email flow. It is not listed in the public storefront.",
+      "detailBullets": ["R1 item price", "R100 payment-test delivery charge", "Five single-use checkout variants"],
+      "fitNotes": "This is a payment-flow test item only.",
+      "fabric": "Existing KALM Signature Tee presentation asset.",
+      "care": "No physical item is fulfilled for this test.",
+      "sizeGuide": "Select one numbered test variant for each separate checkout.",
+      "deliveryGuidance": "The R100 charge is a payment-flow test delivery charge.",
+      "returnsGuidance": "No physical item is fulfilled for this owner test.",
+      "tags": ["owner-test", "payment-test", "signature-tee"],
+      "badge": "OWNER TEST",
+      "ctaLabel": "Add test variant",
+      "metaTitle": "KALM Owner Payment Test",
+      "metaDescription": "Owner-only KALM payment test route.",
+      "variantImages": {
+        "Black": {
+          "hero": "assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp",
+          "gallery": ["assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp"]
+        }
+      },
+      "gallery": ["assets/images/products/kalm-collective/kalm-signature-oversized-tee/black/male-front.webp"],
+      "publicationStatus": "draft",
+      "visibility": "hidden",
+      "trackInventory": true,
+      "inventoryPolicy": "allow",
+      "availability": "in_stock",
+      "ownerTestOnly": true,
+      "updatedAt": "2026-08-21T00:00:00+02:00",
+      "updatedBy": "codex-owner-payment-test",
+      "skuRoot": "KALM-TEE-SIGNATURE-TEST",
+      "variants": [
+        {"sku": "KALM-TEE-SIGNATURE-TEST-01", "colour": "Black", "size": "Test 01", "quantity": 1, "availability": "in_stock", "enabled": true},
+        {"sku": "KALM-TEE-SIGNATURE-TEST-02", "colour": "Black", "size": "Test 02", "quantity": 1, "availability": "in_stock", "enabled": true},
+        {"sku": "KALM-TEE-SIGNATURE-TEST-03", "colour": "Black", "size": "Test 03", "quantity": 1, "availability": "in_stock", "enabled": true},
+        {"sku": "KALM-TEE-SIGNATURE-TEST-04", "colour": "Black", "size": "Test 04", "quantity": 1, "availability": "in_stock", "enabled": true},
+        {"sku": "KALM-TEE-SIGNATURE-TEST-05", "colour": "Black", "size": "Test 05", "quantity": 1, "availability": "in_stock", "enabled": true}
+      ]
     }
   ],
   "outdoorBundles": [
