@@ -49,7 +49,7 @@ for (const row of inventoryManifest.variants || []) {
 export const PHASE_ONE_VARIANTS = Object.freeze([...VARIANT_BY_SKU.values()]);
 export const PHASE_ONE_PRODUCT_IDS = Object.freeze([...new Set(PHASE_ONE_VARIANTS.map((variant) => variant.productId))]);
 export const OWNER_TEST_PRODUCT_ID = "kalm-move-owner-payment-test";
-export const OWNER_TEST_SHIPPING_CENTS = 10_000;
+export const OWNER_TEST_SHIPPING_CENTS = 0;
 export const OWNER_TEST_VARIANTS = Object.freeze([
   "01", "02", "03", "04", "05"
 ].map((number) => Object.freeze({
